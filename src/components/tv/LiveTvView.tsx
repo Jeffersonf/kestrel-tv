@@ -1,8 +1,9 @@
 import React, { useState, useEffect, useMemo, useRef } from 'react';
-import { Search, Tv, Heart, Radio, RefreshCw, X, RotateCcw } from 'lucide-react';
+import { Search, Tv, Heart, Radio, X, RotateCcw } from 'lucide-react';
 import type { Channel } from '../../types';
 import { catalogService } from '../../services/catalogService';
 import { storageService } from '../../services/storageService';
+import { FALLBACK_CHANNELS } from '../../services/fallbackChannels';
 import { ChannelCard } from './ChannelCard';
 import { VideoPlayer } from '../player/VideoPlayer';
 
@@ -15,8 +16,8 @@ function normalizeText(text: string): string {
 }
 
 export const LiveTvView: React.FC = () => {
-  const [channels, setChannels] = useState<Channel[]>([]);
-  const [isLoading, setIsLoading] = useState(true);
+  // Inicialização instantânea síncrona com o catálogo pré-embutido (zero delay)
+  const [channels, setChannels] = useState<Channel[]>(() => FALLBACK_CHANNELS);
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedCategory, setSelectedCategory] = useState<string>('Todos');
   const [selectedChannel, setSelectedChannel] = useState<Channel | null>(null);
@@ -25,17 +26,17 @@ export const LiveTvView: React.FC = () => {
 
   const playerContainerRef = useRef<HTMLDivElement>(null);
 
-  const loadChannels = () => {
-    setIsLoading(true);
+  const refreshChannels = () => {
     catalogService.fetchChannels().then((data) => {
-      setChannels(data);
-      setIsLoading(false);
+      if (data && data.length > 0) {
+        setChannels(data);
+      }
     });
   };
 
   useEffect(() => {
     setFavorites(storageService.getFavoriteChannels());
-    loadChannels();
+    refreshChannels();
   }, []);
 
   const categories = useMemo(() => {
@@ -115,7 +116,7 @@ export const LiveTvView: React.FC = () => {
             <Search className="w-4 h-4 text-zinc-500 absolute left-3 top-1/2 -translate-y-1/2" />
             <input
               type="text"
-              placeholder="Buscar qualquer canal (ex: Globo, ESPN, SBT)..."
+              placeholder="Buscar canal (ex: SporTV, Premiere, Globo, SBT)..."
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
               className="w-full pl-9 pr-8 py-2 bg-zinc-900 border border-white/10 rounded-xl text-xs text-zinc-100 placeholder:text-zinc-500 focus:outline-none focus:border-red-500/50 focus:ring-1 focus:ring-red-500/50 transition-all"
@@ -165,7 +166,7 @@ export const LiveTvView: React.FC = () => {
               className={`px-3 py-1.5 rounded-xl text-xs font-medium whitespace-nowrap transition-all flex items-center gap-1.5 ${
                 selectedCategory === cat
                   ? 'bg-red-600 text-white shadow-lg shadow-red-600/25'
-                  : 'bg-zinc-900 border border-white/5 text-zinc-400 hover:text-white hover:bg-zinc-800'
+                : 'bg-zinc-900 border border-white/5 text-zinc-400 hover:text-white hover:bg-zinc-800'
               }`}
             >
               <span>{cat}</span>
@@ -197,12 +198,7 @@ export const LiveTvView: React.FC = () => {
       )}
 
       {/* Channel Grid */}
-      {isLoading ? (
-        <div className="py-24 flex flex-col items-center justify-center gap-3">
-          <RefreshCw className="w-8 h-8 text-red-500 animate-spin" />
-          <p className="text-xs text-zinc-400 font-medium">Carregando catálogo de canais...</p>
-        </div>
-      ) : filteredChannels.length === 0 ? (
+      {filteredChannels.length === 0 ? (
         <div className="py-20 text-center flex flex-col items-center justify-center gap-3 bg-zinc-900/40 rounded-3xl border border-white/5 p-8">
           <Tv className="w-10 h-10 text-zinc-600" />
           <p className="text-sm font-semibold text-zinc-300">Nenhum canal encontrado</p>
@@ -216,7 +212,7 @@ export const LiveTvView: React.FC = () => {
               setSearchQuery('');
               setSelectedCategory('Todos');
               setOnlyFavorites(false);
-              loadChannels();
+              refreshChannels();
             }}
             className="px-4 py-2 bg-zinc-800 hover:bg-zinc-700 text-zinc-200 text-xs font-semibold rounded-xl flex items-center gap-2 mt-2 transition-colors"
           >
