@@ -29,7 +29,7 @@ export const SettingsModal: React.FC = () => {
             Ajustes e Configurações
           </h2>
           <p className="text-xs text-zinc-400 mt-1">
-            Personalize as fontes de catálogo, controle de proxy CORS e parâmetros da aplicação.
+            Personalize as fontes de catálogo, controle de proxy de streaming e parâmetros da aplicação.
           </p>
         </div>
 
@@ -39,9 +39,9 @@ export const SettingsModal: React.FC = () => {
             <div className="flex items-center gap-2.5">
               <Shield className="w-4 h-4 text-red-400" />
               <div>
-                <h4 className="text-xs font-semibold text-white">Proxy CORS Automático</h4>
+                <h4 className="text-xs font-semibold text-white">Proxy CORS & Streaming Seguro</h4>
                 <p className="text-[11px] text-zinc-400">
-                  Redireciona streams HTTP bloqueados por Mixed Content quando executado em HTTPS (ex: GitHub Pages).
+                  Permite carregar canais e vídeos HTTP em conexões HTTPS (GitHub Pages) sem bloqueios do navegador.
                 </p>
               </div>
             </div>
@@ -60,14 +60,14 @@ export const SettingsModal: React.FC = () => {
           {settings.useProxy && (
             <div className="pt-2 border-t border-white/5">
               <label className="text-[11px] font-semibold text-zinc-400 block mb-1">
-                URL do Proxy (prefixo antes do link do stream):
+                Servidor Proxy de Streaming:
               </label>
               <input
                 type="text"
                 value={settings.proxyUrl}
                 onChange={(e) => setSettings({ ...settings, proxyUrl: e.target.value })}
-                placeholder="https://api.allorigins.win/raw?url="
-                className="w-full px-3 py-2 bg-zinc-900 border border-white/10 rounded-xl text-xs text-zinc-200 focus:outline-none focus:border-red-500"
+                placeholder="https://saimo-tv.pages.dev/api/proxy?url="
+                className="w-full px-3 py-2 bg-zinc-900 border border-white/10 rounded-xl text-xs text-zinc-200 focus:outline-none focus:border-red-500 font-mono"
               />
             </div>
           )}
@@ -88,7 +88,7 @@ export const SettingsModal: React.FC = () => {
               type="text"
               value={settings.channelCatalogUrl}
               onChange={(e) => setSettings({ ...settings, channelCatalogUrl: e.target.value })}
-              className="w-full px-3.5 py-2 bg-zinc-950 border border-white/10 rounded-xl text-xs text-zinc-200 focus:outline-none focus:border-red-500"
+              className="w-full px-3.5 py-2 bg-zinc-950 border border-white/10 rounded-xl text-xs text-zinc-200 focus:outline-none focus:border-red-500 font-mono"
             />
           </div>
 
@@ -100,7 +100,7 @@ export const SettingsModal: React.FC = () => {
               type="text"
               value={settings.vodCatalogUrl}
               onChange={(e) => setSettings({ ...settings, vodCatalogUrl: e.target.value })}
-              className="w-full px-3.5 py-2 bg-zinc-950 border border-white/10 rounded-xl text-xs text-zinc-200 focus:outline-none focus:border-red-500"
+              className="w-full px-3.5 py-2 bg-zinc-950 border border-white/10 rounded-xl text-xs text-zinc-200 focus:outline-none focus:border-red-500 font-mono"
             />
           </div>
         </div>

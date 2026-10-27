@@ -1,6 +1,6 @@
 import type { AppSettings, PlaybackProgress } from '../types';
 
-const SETTINGS_KEY = 'kestrel_settings_v1';
+const SETTINGS_KEY = 'kestrel_settings_v2';
 const FAVORITES_CHANNELS_KEY = 'kestrel_fav_channels_v1';
 const FAVORITES_VOD_KEY = 'kestrel_fav_vod_v1';
 const PROGRESS_PREFIX = 'kestrel_progress_';
@@ -8,15 +8,24 @@ const PROGRESS_PREFIX = 'kestrel_progress_';
 export const DEFAULT_SETTINGS: AppSettings = {
   channelCatalogUrl: 'https://canais-saimo.pages.dev/catalogo.txt',
   vodCatalogUrl: 'https://filmes-saimo.pages.dev/',
-  proxyUrl: 'https://api.allorigins.win/raw?url=',
-  useProxy: false,
+  proxyUrl: 'https://saimo-tv.pages.dev/api/proxy?url=',
+  useProxy: true,
 };
 
 export const storageService = {
   getSettings(): AppSettings {
     try {
       const data = localStorage.getItem(SETTINGS_KEY);
-      if (data) return { ...DEFAULT_SETTINGS, ...JSON.parse(data) };
+      if (data) {
+        const parsed = JSON.parse(data);
+        // Garantir que proxies desatualizados como allorigins sejam migrados
+        if (!parsed.proxyUrl || parsed.proxyUrl.includes('allorigins') || !parsed.useProxy) {
+          parsed.proxyUrl = DEFAULT_SETTINGS.proxyUrl;
+          parsed.useProxy = true;
+          this.saveSettings(parsed);
+        }
+        return { ...DEFAULT_SETTINGS, ...parsed };
+      }
     } catch (e) {
       console.warn('Erro ao ler settings:', e);
     }

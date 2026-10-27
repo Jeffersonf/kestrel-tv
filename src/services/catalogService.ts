@@ -4,6 +4,37 @@ import { storageService } from './storageService';
 let baseVodServers: Record<number, string> = {};
 let cachedChannels: Channel[] | null = null;
 let cachedBusca: { title: string; isSeries: boolean; letter: string; year: string }[] | null = null;
+let disabledHosts = new Set<string>();
+let disabledHostsLoaded = false;
+
+async function loadDisabledHosts(): Promise<void> {
+  if (disabledHostsLoaded) return;
+  try {
+    const res = await fetch('https://saimo-tv.pages.dev/fontes-desativadas.json');
+    if (res.ok) {
+      const data = await res.json();
+      if (Array.isArray(data.desativados)) {
+        for (const h of data.desativados) {
+          if (typeof h === 'string') disabledHosts.add(h.trim().toLowerCase());
+        }
+      }
+    }
+  } catch (e) {
+    console.warn('Não foi possível carregar fontes desativadas:', e);
+  } finally {
+    disabledHostsLoaded = true;
+  }
+}
+
+function isHostDisabled(urlStr: string): boolean {
+  if (!urlStr || disabledHosts.size === 0) return false;
+  try {
+    const host = new URL(urlStr).hostname.toLowerCase();
+    return disabledHosts.has(host);
+  } catch {
+    return false;
+  }
+}
 
 function resolveStreamUrl(token: string): string {
   if (token.startsWith('http://') || token.startsWith('https://')) {
@@ -21,6 +52,8 @@ function resolveStreamUrl(token: string): string {
 export const catalogService = {
   async fetchChannels(): Promise<Channel[]> {
     if (cachedChannels) return cachedChannels;
+
+    await loadDisabledHosts();
 
     const { channelCatalogUrl } = storageService.getSettings();
     try {
@@ -46,7 +79,7 @@ export const catalogService = {
 
         if (key === 'canal') {
           if (currentChannel && currentChannel.name) {
-            if (currentSource && currentSource.url) {
+            if (currentSource && currentSource.url && !isHostDisabled(currentSource.url)) {
               currentChannel.sources = currentChannel.sources || [];
               currentChannel.sources.push(currentSource as ChannelSource);
             }
@@ -70,7 +103,7 @@ export const catalogService = {
         } else if (key === 'logo') {
           currentChannel.logo = value;
         } else if (key === 'fonte') {
-          if (currentSource && currentSource.url) {
+          if (currentSource && currentSource.url && !isHostDisabled(currentSource.url)) {
             currentChannel.sources = currentChannel.sources || [];
             currentChannel.sources.push(currentSource as ChannelSource);
           }
@@ -86,7 +119,7 @@ export const catalogService = {
 
       // Final channel push
       if (currentChannel && currentChannel.name) {
-        if (currentSource && currentSource.url) {
+        if (currentSource && currentSource.url && !isHostDisabled(currentSource.url)) {
           currentChannel.sources = currentChannel.sources || [];
           currentChannel.sources.push(currentSource as ChannelSource);
         }
@@ -126,6 +159,8 @@ export const catalogService = {
 
   async fetchMoviesByLetter(letter: string): Promise<MediaItem[]> {
     await this.initVodBases();
+    await loadDisabledHosts();
+
     const { vodCatalogUrl } = storageService.getSettings();
     const encodedLetter = letter === '#' ? '%23' : letter;
     try {
@@ -146,7 +181,10 @@ export const catalogService = {
           if (eqIdx <= 0) continue;
           const version = token.slice(0, eqIdx);
           const rawUrls = token.slice(eqIdx + 1).split(',').filter(Boolean);
-          const resolvedUrls = rawUrls.map(resolveStreamUrl).filter(Boolean);
+          const resolvedUrls = rawUrls
+            .map(resolveStreamUrl)
+            .filter((u) => u && !isHostDisabled(u));
+
           if (resolvedUrls.length > 0) {
             sourcesMap[version] = resolvedUrls;
           }
@@ -209,6 +247,8 @@ export const catalogService = {
 
   async fetchSeriesEpisodes(letter: string, chunk: number, title: string, year?: string): Promise<SeriesEpisode[]> {
     await this.initVodBases();
+    await loadDisabledHosts();
+
     const { vodCatalogUrl } = storageService.getSettings();
     const encodedLetter = letter === '#' ? '%23' : letter;
     try {
@@ -238,7 +278,9 @@ export const catalogService = {
         const episode = Number(parts[1]) || 0;
         const version = parts[2] || 'dub';
         const rawUrls = parts[3].split(',').filter(Boolean);
-        const resolved = rawUrls.map(resolveStreamUrl).filter(Boolean);
+        const resolved = rawUrls
+          .map(resolveStreamUrl)
+          .filter((u) => u && !isHostDisabled(u));
 
         if (resolved.length > 0) {
           episodes.push({ season, episode, version, urls: resolved });

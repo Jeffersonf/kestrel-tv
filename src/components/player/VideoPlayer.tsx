@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState, useCallback } from 'react';
 import Hls from 'hls.js';
 import { 
   Play, Pause, Volume2, VolumeX, Maximize, Minimize, 
-  RotateCcw, AlertCircle, RefreshCw, Layers, Check
+  RotateCcw, AlertCircle, RefreshCw, Layers, Check, ExternalLink
 } from 'lucide-react';
 import type { ChannelSource } from '../../types';
 import { proxyService } from '../../services/proxyService';
@@ -36,10 +36,12 @@ export const VideoPlayer: React.FC<VideoPlayerProps> = ({
   const [isFullscreen, setIsFullscreen] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
   const [errorMsg, setErrorMsg] = useState<string | null>(null);
+  const [statusNotice, setStatusNotice] = useState<string | null>(null);
   const [showControls, setShowControls] = useState(true);
   const [showSourceMenu, setShowSourceMenu] = useState(false);
 
   const controlsTimeoutRef = useRef<number | null>(null);
+  const loadTimeoutRef = useRef<number | null>(null);
 
   // Normalizar fontes para ChannelSource
   const normalizedSources: ChannelSource[] = sources.map((s, idx) => {
@@ -56,10 +58,11 @@ export const VideoPlayer: React.FC<VideoPlayerProps> = ({
 
   const handleNextSource = useCallback(() => {
     if (currentSourceIndex < normalizedSources.length - 1) {
-      console.log(`Alternando para fonte seguinte: ${currentSourceIndex + 1}`);
-      setCurrentSourceIndex(prev => prev + 1);
+      const nextIdx = currentSourceIndex + 1;
+      setStatusNotice(`Fonte ${currentSourceIndex + 1} indisponível. Conectando à Fonte ${nextIdx + 1}...`);
+      setCurrentSourceIndex(nextIdx);
     } else {
-      setErrorMsg('Todas as fontes disponíveis falharam para este canal/título.');
+      setErrorMsg('Não foi possível reproduzir este conteúdo em nenhuma das fontes disponíveis.');
       setIsLoading(false);
     }
   }, [currentSourceIndex, normalizedSources.length]);
@@ -73,12 +76,23 @@ export const VideoPlayer: React.FC<VideoPlayerProps> = ({
     setErrorMsg(null);
 
     const rawUrl = activeSource.url;
-    const streamUrl = proxyService.wrapStreamUrl(rawUrl, activeSource.referer);
+    const streamUrl = proxyService.wrapStreamUrl(rawUrl, activeSource.referer, activeSource.agent);
 
     if (hlsRef.current) {
       hlsRef.current.destroy();
       hlsRef.current = null;
     }
+
+    // Limpar timeout anterior
+    if (loadTimeoutRef.current) window.clearTimeout(loadTimeoutRef.current);
+
+    // Timeout de 8 segundos para fallback automático se travar no carregamento
+    loadTimeoutRef.current = window.setTimeout(() => {
+      if (video.paused && video.readyState < 2) {
+        console.warn('Timeout de carregamento excedido na fonte atual.');
+        handleNextSource();
+      }
+    }, 8000);
 
     const isHls = streamUrl.includes('.m3u8') || streamUrl.includes('.txt') || isLive;
 
@@ -87,6 +101,9 @@ export const VideoPlayer: React.FC<VideoPlayerProps> = ({
         enableWorker: true,
         lowLatencyMode: true,
         backBufferLength: 60,
+        manifestLoadingTimeOut: 10000,
+        levelLoadingTimeOut: 10000,
+        fragLoadingTimeOut: 15000,
       });
       hlsRef.current = hls;
 
@@ -95,29 +112,60 @@ export const VideoPlayer: React.FC<VideoPlayerProps> = ({
 
       hls.on(Hls.Events.MANIFEST_PARSED, () => {
         setIsLoading(false);
+        setStatusNotice(null);
+        if (loadTimeoutRef.current) window.clearTimeout(loadTimeoutRef.current);
         video.play().catch(() => setIsPlaying(false));
       });
 
       hls.on(Hls.Events.ERROR, (_, data) => {
         if (data.fatal) {
-          console.warn('Erro fatal no HLS:', data.type, data.details);
-          hls.destroy();
-          hlsRef.current = null;
-          handleNextSource();
+          console.warn('HLS Fatal Error:', data.type, data.details);
+          switch (data.type) {
+            case Hls.ErrorTypes.NETWORK_ERROR:
+              // Tenta recarregar uma vez antes de passar para a próxima fonte
+              try {
+                hls.startLoad();
+              } catch {
+                hls.destroy();
+                hlsRef.current = null;
+                handleNextSource();
+              }
+              break;
+            case Hls.ErrorTypes.MEDIA_ERROR:
+              try {
+                hls.recoverMediaError();
+              } catch {
+                hls.destroy();
+                hlsRef.current = null;
+                handleNextSource();
+              }
+              break;
+            default:
+              hls.destroy();
+              hlsRef.current = null;
+              handleNextSource();
+              break;
+          }
         }
       });
     } else if (video.canPlayType('application/vnd.apple.mpegurl') && isHls) {
-      // Suporte nativo Safari iOS / Mac
+      // Suporte nativo Safari iOS / macOS
       video.src = streamUrl;
       video.addEventListener('loadedmetadata', () => {
         setIsLoading(false);
+        setStatusNotice(null);
+        if (loadTimeoutRef.current) window.clearTimeout(loadTimeoutRef.current);
         video.play().catch(() => setIsPlaying(false));
       }, { once: true });
     } else {
-      // HTML5 video direto (MP4, WebM)
+      // Vídeo HTML5 direto (MP4, WebM)
       video.src = streamUrl;
       video.load();
-      video.play().catch(() => setIsPlaying(false));
+      video.play().then(() => {
+        setIsLoading(false);
+        setStatusNotice(null);
+        if (loadTimeoutRef.current) window.clearTimeout(loadTimeoutRef.current);
+      }).catch(() => setIsPlaying(false));
     }
 
     // Retomar progresso se for VOD
@@ -129,6 +177,7 @@ export const VideoPlayer: React.FC<VideoPlayerProps> = ({
     }
 
     return () => {
+      if (loadTimeoutRef.current) window.clearTimeout(loadTimeoutRef.current);
       if (hlsRef.current) {
         hlsRef.current.destroy();
         hlsRef.current = null;
@@ -212,33 +261,6 @@ export const VideoPlayer: React.FC<VideoPlayerProps> = ({
     return `${m}:${s.toString().padStart(2, '0')}`;
   };
 
-  // Atalhos de teclado
-  useEffect(() => {
-    const handleKeyDown = (e: KeyboardEvent) => {
-      if (e.target instanceof HTMLInputElement || e.target instanceof HTMLTextAreaElement) return;
-      if (e.code === 'Space') {
-        e.preventDefault();
-        togglePlay();
-      } else if (e.code === 'KeyF') {
-        e.preventDefault();
-        toggleFullscreen();
-      } else if (e.code === 'KeyM') {
-        e.preventDefault();
-        toggleMute();
-      } else if (e.code === 'ArrowRight' && !isLive && videoRef.current) {
-        e.preventDefault();
-        videoRef.current.currentTime = Math.min(videoRef.current.duration, videoRef.current.currentTime + 10);
-      } else if (e.code === 'ArrowLeft' && !isLive && videoRef.current) {
-        e.preventDefault();
-        videoRef.current.currentTime = Math.max(0, videoRef.current.currentTime - 10);
-      } else if (e.code === 'Escape' && onClose && !document.fullscreenElement) {
-        onClose();
-      }
-    };
-    window.addEventListener('keydown', handleKeyDown);
-    return () => window.removeEventListener('keydown', handleKeyDown);
-  }, [onClose, isLive]);
-
   return (
     <div 
       ref={containerRef}
@@ -258,35 +280,47 @@ export const VideoPlayer: React.FC<VideoPlayerProps> = ({
           }
         }}
         onWaiting={() => setIsLoading(true)}
-        onPlaying={() => setIsLoading(false)}
+        onPlaying={() => { setIsLoading(false); setStatusNotice(null); }}
         onError={() => handleNextSource()}
         playsInline
       />
 
-      {/* Loading Spinner */}
+      {/* Loading Spinner & Status Notice */}
       {isLoading && (
-        <div className="absolute inset-0 flex items-center justify-center bg-black/40 backdrop-blur-sm pointer-events-none">
-          <div className="flex flex-col items-center gap-3">
+        <div className="absolute inset-0 flex items-center justify-center bg-black/50 backdrop-blur-sm pointer-events-none z-15">
+          <div className="flex flex-col items-center gap-3 text-center px-4">
             <RefreshCw className="w-8 h-8 text-red-500 animate-spin" />
-            <span className="text-xs font-medium text-zinc-300">Carregando transmissão...</span>
+            <span className="text-xs font-semibold text-zinc-200">
+              {statusNotice || `Conectando (${activeSource.name || `Fonte ${currentSourceIndex + 1}`})...`}
+            </span>
           </div>
         </div>
       )}
 
-      {/* Error Message */}
+      {/* Error Message with External Player Fallback */}
       {errorMsg && (
-        <div className="absolute inset-0 flex items-center justify-center bg-zinc-950/90 p-6 z-20">
+        <div className="absolute inset-0 flex items-center justify-center bg-zinc-950/95 p-6 z-20">
           <div className="max-w-md text-center flex flex-col items-center gap-3">
             <AlertCircle className="w-10 h-10 text-red-500" />
-            <h3 className="text-base font-semibold text-white">Falha na Reprodução</h3>
+            <h3 className="text-base font-semibold text-white">Transmissão Indisponível</h3>
             <p className="text-xs text-zinc-400">{errorMsg}</p>
-            <div className="flex gap-2 mt-2">
+            <div className="flex flex-wrap gap-2 justify-center mt-2">
               <button 
                 onClick={() => { setCurrentSourceIndex(0); setErrorMsg(null); }}
-                className="px-3 py-1.5 bg-red-600 hover:bg-red-500 text-white text-xs font-semibold rounded-lg flex items-center gap-1.5"
+                className="px-3.5 py-1.5 bg-red-600 hover:bg-red-500 text-white text-xs font-semibold rounded-lg flex items-center gap-1.5"
               >
                 <RotateCcw className="w-3.5 h-3.5" /> Tentar novamente
               </button>
+              {activeSource?.url && (
+                <a 
+                  href={activeSource.url}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="px-3 py-1.5 bg-zinc-800 hover:bg-zinc-700 text-zinc-200 text-xs font-medium rounded-lg flex items-center gap-1.5"
+                >
+                  <ExternalLink className="w-3.5 h-3.5" /> Abrir link direto
+                </a>
+              )}
               {onClose && (
                 <button 
                   onClick={onClose}
