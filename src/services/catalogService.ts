@@ -1,16 +1,18 @@
 import type { Channel, ChannelSource, MediaItem, SeriesEpisode } from '../types';
 import { storageService } from './storageService';
+import { FALLBACK_CHANNELS } from './fallbackChannels';
 
 let baseVodServers: Record<number, string> = {};
 let cachedChannels: Channel[] | null = null;
 let cachedBusca: { title: string; isSeries: boolean; letter: string; year: string }[] | null = null;
 let disabledHosts = new Set<string>();
-let disabledHostsLoaded = false;
 
 async function loadDisabledHosts(): Promise<void> {
-  if (disabledHostsLoaded) return;
   try {
-    const res = await fetch('https://saimo-tv.pages.dev/fontes-desativadas.json');
+    const controller = new AbortController();
+    const timeout = setTimeout(() => controller.abort(), 4000);
+    const res = await fetch('https://saimo-tv.pages.dev/fontes-desativadas.json', { signal: controller.signal });
+    clearTimeout(timeout);
     if (res.ok) {
       const data = await res.json();
       if (Array.isArray(data.desativados)) {
@@ -19,10 +21,8 @@ async function loadDisabledHosts(): Promise<void> {
         }
       }
     }
-  } catch (e) {
-    console.warn('Não foi possível carregar fontes desativadas:', e);
-  } finally {
-    disabledHostsLoaded = true;
+  } catch {
+    // Falha silenciosa para não travar o carregamento dos canais
   }
 }
 
@@ -34,6 +34,88 @@ function isHostDisabled(urlStr: string): boolean {
   } catch {
     return false;
   }
+}
+
+function parseChannelsFromText(text: string): Channel[] {
+  const channels: Channel[] = [];
+  let currentChannel: Partial<Channel> | null = null;
+  let currentSource: Partial<ChannelSource> | null = null;
+
+  const lines = text.split('\n');
+
+  for (let rawLine of lines) {
+    const line = rawLine.trim();
+    if (!line || line.startsWith('#')) continue;
+
+    const sepIndex = line.indexOf(':');
+    if (sepIndex === -1) continue;
+
+    const key = line.slice(0, sepIndex).trim().toLowerCase();
+    const value = line.slice(sepIndex + 1).trim();
+
+    if (key === 'canal') {
+      if (currentChannel && currentChannel.name) {
+        if (currentSource && currentSource.url) {
+          currentChannel.sources = currentChannel.sources || [];
+          currentChannel.sources.push(currentSource as ChannelSource);
+        }
+        if (currentChannel.sources && currentChannel.sources.length > 0) {
+          // Reordena: fontes não desativadas primeiro
+          currentChannel.sources.sort((a, b) => {
+            const aDis = isHostDisabled(a.url) ? 1 : 0;
+            const bDis = isHostDisabled(b.url) ? 1 : 0;
+            return aDis - bDis;
+          });
+          channels.push(currentChannel as Channel);
+        }
+      }
+
+      currentChannel = {
+        id: `ch_${channels.length + 1}_${encodeURIComponent(value.toLowerCase())}`,
+        name: value,
+        category: 'Variedades',
+        logo: '',
+        sources: [],
+      };
+      currentSource = null;
+    } else if (!currentChannel) {
+      continue;
+    } else if (key === 'categoria') {
+      currentChannel.category = value;
+    } else if (key === 'logo') {
+      currentChannel.logo = value;
+    } else if (key === 'fonte') {
+      if (currentSource && currentSource.url) {
+        currentChannel.sources = currentChannel.sources || [];
+        currentChannel.sources.push(currentSource as ChannelSource);
+      }
+      currentSource = { url: value };
+    } else if (currentSource) {
+      if (key === 'nome') currentSource.name = value;
+      else if (key === 'qualidade') currentSource.quality = value;
+      else if (key === 'referer') currentSource.referer = value;
+      else if (key === 'agente') currentSource.agent = value;
+      else if (key === 'chave') currentSource.clearKey = value;
+    }
+  }
+
+  // Final channel push
+  if (currentChannel && currentChannel.name) {
+    if (currentSource && currentSource.url) {
+      currentChannel.sources = currentChannel.sources || [];
+      currentChannel.sources.push(currentSource as ChannelSource);
+    }
+    if (currentChannel.sources && currentChannel.sources.length > 0) {
+      currentChannel.sources.sort((a, b) => {
+        const aDis = isHostDisabled(a.url) ? 1 : 0;
+        const bDis = isHostDisabled(b.url) ? 1 : 0;
+        return aDis - bDis;
+      });
+      channels.push(currentChannel as Channel);
+    }
+  }
+
+  return channels;
 }
 
 function resolveStreamUrl(token: string): string {
@@ -51,89 +133,69 @@ function resolveStreamUrl(token: string): string {
 
 export const catalogService = {
   async fetchChannels(): Promise<Channel[]> {
-    if (cachedChannels) return cachedChannels;
+    if (cachedChannels && cachedChannels.length > 0) return cachedChannels;
 
-    await loadDisabledHosts();
+    // Inicia busca de hosts desativados em background
+    loadDisabledHosts().catch(() => {});
 
-    const { channelCatalogUrl } = storageService.getSettings();
+    const { channelCatalogUrl, proxyUrl, useProxy } = storageService.getSettings();
+
+    // 1. Tentar carregar online diretamente
     try {
-      const res = await fetch(channelCatalogUrl);
-      if (!res.ok) throw new Error(`Falha ao buscar catálogo de canais: ${res.status}`);
-      const text = await res.text();
+      const controller = new AbortController();
+      const timeout = setTimeout(() => controller.abort(), 6000);
+      const res = await fetch(channelCatalogUrl, { signal: controller.signal });
+      clearTimeout(timeout);
 
-      const channels: Channel[] = [];
-      let currentChannel: Partial<Channel> | null = null;
-      let currentSource: Partial<ChannelSource> | null = null;
-
-      const lines = text.split('\n');
-
-      for (let rawLine of lines) {
-        const line = rawLine.trim();
-        if (!line || line.startsWith('#')) continue;
-
-        const sepIndex = line.indexOf(':');
-        if (sepIndex === -1) continue;
-
-        const key = line.slice(0, sepIndex).trim().toLowerCase();
-        const value = line.slice(sepIndex + 1).trim();
-
-        if (key === 'canal') {
-          if (currentChannel && currentChannel.name) {
-            if (currentSource && currentSource.url && !isHostDisabled(currentSource.url)) {
-              currentChannel.sources = currentChannel.sources || [];
-              currentChannel.sources.push(currentSource as ChannelSource);
-            }
-            if (currentChannel.sources && currentChannel.sources.length > 0) {
-              channels.push(currentChannel as Channel);
-            }
-          }
-
-          currentChannel = {
-            id: `ch_${channels.length + 1}_${encodeURIComponent(value.toLowerCase())}`,
-            name: value,
-            category: 'Variedades',
-            logo: '',
-            sources: [],
-          };
-          currentSource = null;
-        } else if (!currentChannel) {
-          continue;
-        } else if (key === 'categoria') {
-          currentChannel.category = value;
-        } else if (key === 'logo') {
-          currentChannel.logo = value;
-        } else if (key === 'fonte') {
-          if (currentSource && currentSource.url && !isHostDisabled(currentSource.url)) {
-            currentChannel.sources = currentChannel.sources || [];
-            currentChannel.sources.push(currentSource as ChannelSource);
-          }
-          currentSource = { url: value };
-        } else if (currentSource) {
-          if (key === 'nome') currentSource.name = value;
-          else if (key === 'qualidade') currentSource.quality = value;
-          else if (key === 'referer') currentSource.referer = value;
-          else if (key === 'agente') currentSource.agent = value;
-          else if (key === 'chave') currentSource.clearKey = value;
+      if (res.ok) {
+        const text = await res.text();
+        const parsed = parseChannelsFromText(text);
+        if (parsed.length > 0) {
+          cachedChannels = parsed;
+          try {
+            localStorage.setItem('kestrel_cached_catalogo', text);
+          } catch {}
+          return parsed;
         }
       }
-
-      // Final channel push
-      if (currentChannel && currentChannel.name) {
-        if (currentSource && currentSource.url && !isHostDisabled(currentSource.url)) {
-          currentChannel.sources = currentChannel.sources || [];
-          currentChannel.sources.push(currentSource as ChannelSource);
-        }
-        if (currentChannel.sources && currentChannel.sources.length > 0) {
-          channels.push(currentChannel as Channel);
-        }
-      }
-
-      cachedChannels = channels;
-      return channels;
     } catch (e) {
-      console.error('Erro ao buscar canais:', e);
-      return [];
+      console.warn('Falha na busca direta do catálogo, tentando via proxy:', e);
     }
+
+    // 2. Tentar via proxy se a conexão direta falhar
+    if (useProxy && proxyUrl) {
+      try {
+        const proxyFetchUrl = `${proxyUrl}${encodeURIComponent(channelCatalogUrl)}`;
+        const res = await fetch(proxyFetchUrl);
+        if (res.ok) {
+          const text = await res.text();
+          const parsed = parseChannelsFromText(text);
+          if (parsed.length > 0) {
+            cachedChannels = parsed;
+            return parsed;
+          }
+        }
+      } catch (e) {
+        console.warn('Falha na busca via proxy:', e);
+      }
+    }
+
+    // 3. Tentar carregar do cache local
+    try {
+      const savedText = localStorage.getItem('kestrel_cached_catalogo');
+      if (savedText) {
+        const parsed = parseChannelsFromText(savedText);
+        if (parsed.length > 0) {
+          cachedChannels = parsed;
+          return parsed;
+        }
+      }
+    } catch {}
+
+    // 4. Fallback garantido: lista interna embutida de alta disponibilidade
+    console.info('Carregando catálogo fallback embutido...');
+    cachedChannels = FALLBACK_CHANNELS;
+    return FALLBACK_CHANNELS;
   },
 
   async initVodBases(): Promise<void> {
@@ -183,9 +245,11 @@ export const catalogService = {
           const rawUrls = token.slice(eqIdx + 1).split(',').filter(Boolean);
           const resolvedUrls = rawUrls
             .map(resolveStreamUrl)
-            .filter((u) => u && !isHostDisabled(u));
+            .filter(Boolean);
 
           if (resolvedUrls.length > 0) {
+            // Reordena: fontes ativas primeiro
+            resolvedUrls.sort((a, b) => (isHostDisabled(a) ? 1 : 0) - (isHostDisabled(b) ? 1 : 0));
             sourcesMap[version] = resolvedUrls;
           }
         }
@@ -280,9 +344,10 @@ export const catalogService = {
         const rawUrls = parts[3].split(',').filter(Boolean);
         const resolved = rawUrls
           .map(resolveStreamUrl)
-          .filter((u) => u && !isHostDisabled(u));
+          .filter(Boolean);
 
         if (resolved.length > 0) {
+          resolved.sort((a, b) => (isHostDisabled(a) ? 1 : 0) - (isHostDisabled(b) ? 1 : 0));
           episodes.push({ season, episode, version, urls: resolved });
         }
       }

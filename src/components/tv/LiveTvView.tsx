@@ -1,10 +1,18 @@
 import React, { useState, useEffect, useMemo, useRef } from 'react';
-import { Search, Tv, Heart, Radio, RefreshCw, X } from 'lucide-react';
+import { Search, Tv, Heart, Radio, RefreshCw, X, RotateCcw } from 'lucide-react';
 import type { Channel } from '../../types';
 import { catalogService } from '../../services/catalogService';
 import { storageService } from '../../services/storageService';
 import { ChannelCard } from './ChannelCard';
 import { VideoPlayer } from '../player/VideoPlayer';
+
+function normalizeText(text: string): string {
+  return text
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .toLowerCase()
+    .trim();
+}
 
 export const LiveTvView: React.FC = () => {
   const [channels, setChannels] = useState<Channel[]>([]);
@@ -17,12 +25,17 @@ export const LiveTvView: React.FC = () => {
 
   const playerContainerRef = useRef<HTMLDivElement>(null);
 
-  useEffect(() => {
-    setFavorites(storageService.getFavoriteChannels());
+  const loadChannels = () => {
+    setIsLoading(true);
     catalogService.fetchChannels().then((data) => {
       setChannels(data);
       setIsLoading(false);
     });
+  };
+
+  useEffect(() => {
+    setFavorites(storageService.getFavoriteChannels());
+    loadChannels();
   }, []);
 
   const categories = useMemo(() => {
@@ -41,15 +54,16 @@ export const LiveTvView: React.FC = () => {
       result = result.filter((ch) => favSet.has(ch.id));
     }
 
-    if (selectedCategory !== 'Todos') {
-      result = result.filter((ch) => ch.category === selectedCategory);
-    }
-
+    // Se houver busca ativa, pesquisa em TODOS os canais ignorando a aba de categoria atual
     if (searchQuery.trim()) {
-      const q = searchQuery.toLowerCase().trim();
-      result = result.filter(
-        (ch) => ch.name.toLowerCase().includes(q) || ch.category.toLowerCase().includes(q)
-      );
+      const q = normalizeText(searchQuery);
+      result = result.filter((ch) => {
+        const nameNorm = normalizeText(ch.name);
+        const catNorm = normalizeText(ch.category);
+        return nameNorm.includes(q) || catNorm.includes(q);
+      });
+    } else if (selectedCategory !== 'Todos') {
+      result = result.filter((ch) => ch.category === selectedCategory);
     }
 
     return result;
@@ -101,7 +115,7 @@ export const LiveTvView: React.FC = () => {
             <Search className="w-4 h-4 text-zinc-500 absolute left-3 top-1/2 -translate-y-1/2" />
             <input
               type="text"
-              placeholder="Buscar canal ou categoria..."
+              placeholder="Buscar qualquer canal (ex: Globo, ESPN, SBT)..."
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
               className="w-full pl-9 pr-8 py-2 bg-zinc-900 border border-white/10 rounded-xl text-xs text-zinc-100 placeholder:text-zinc-500 focus:outline-none focus:border-red-500/50 focus:ring-1 focus:ring-red-500/50 transition-all"
@@ -130,40 +144,57 @@ export const LiveTvView: React.FC = () => {
         </div>
       </div>
 
-      {/* Category Pills */}
-      <div className="flex items-center gap-1.5 overflow-x-auto pb-2 scrollbar-none">
-        <button
-          onClick={() => setSelectedCategory('Todos')}
-          className={`px-3.5 py-1.5 rounded-xl text-xs font-semibold whitespace-nowrap transition-all ${
-            selectedCategory === 'Todos'
-              ? 'bg-red-600 text-white shadow-lg shadow-red-600/25'
-              : 'bg-zinc-900 border border-white/5 text-zinc-400 hover:text-white hover:bg-zinc-800'
-          }`}
-        >
-          Todos ({channels.length})
-        </button>
-
-        {categories.map(([cat, count]) => (
+      {/* Category Pills (Hidden while searching to avoid confusion) */}
+      {!searchQuery && (
+        <div className="flex items-center gap-1.5 overflow-x-auto pb-2 scrollbar-none">
           <button
-            key={cat}
-            onClick={() => setSelectedCategory(cat)}
-            className={`px-3 py-1.5 rounded-xl text-xs font-medium whitespace-nowrap transition-all flex items-center gap-1.5 ${
-              selectedCategory === cat
+            onClick={() => setSelectedCategory('Todos')}
+            className={`px-3.5 py-1.5 rounded-xl text-xs font-semibold whitespace-nowrap transition-all ${
+              selectedCategory === 'Todos'
                 ? 'bg-red-600 text-white shadow-lg shadow-red-600/25'
                 : 'bg-zinc-900 border border-white/5 text-zinc-400 hover:text-white hover:bg-zinc-800'
             }`}
           >
-            <span>{cat}</span>
-            <span
-              className={`text-[10px] px-1.5 py-0.2 rounded-full ${
-                selectedCategory === cat ? 'bg-white/20 text-white' : 'bg-zinc-800 text-zinc-500'
+            Todos ({channels.length})
+          </button>
+
+          {categories.map(([cat, count]) => (
+            <button
+              key={cat}
+              onClick={() => setSelectedCategory(cat)}
+              className={`px-3 py-1.5 rounded-xl text-xs font-medium whitespace-nowrap transition-all flex items-center gap-1.5 ${
+                selectedCategory === cat
+                  ? 'bg-red-600 text-white shadow-lg shadow-red-600/25'
+                  : 'bg-zinc-900 border border-white/5 text-zinc-400 hover:text-white hover:bg-zinc-800'
               }`}
             >
-              {count}
-            </span>
+              <span>{cat}</span>
+              <span
+                className={`text-[10px] px-1.5 py-0.2 rounded-full ${
+                  selectedCategory === cat ? 'bg-white/20 text-white' : 'bg-zinc-800 text-zinc-500'
+                }`}
+              >
+                {count}
+              </span>
+            </button>
+          ))}
+        </div>
+      )}
+
+      {/* Search Header Banner */}
+      {searchQuery.trim() && (
+        <div className="flex items-center justify-between text-xs text-zinc-400 px-1">
+          <span>
+            Buscando por: <b className="text-white">"{searchQuery}"</b> em todos os canais ({filteredChannels.length} encontrados)
+          </span>
+          <button
+            onClick={() => setSearchQuery('')}
+            className="text-red-400 hover:text-red-300 font-medium"
+          >
+            Limpar busca
           </button>
-        ))}
-      </div>
+        </div>
+      )}
 
       {/* Channel Grid */}
       {isLoading ? (
@@ -172,10 +203,26 @@ export const LiveTvView: React.FC = () => {
           <p className="text-xs text-zinc-400 font-medium">Carregando catálogo de canais...</p>
         </div>
       ) : filteredChannels.length === 0 ? (
-        <div className="py-20 text-center flex flex-col items-center justify-center gap-2 bg-zinc-900/40 rounded-3xl border border-white/5 p-8">
+        <div className="py-20 text-center flex flex-col items-center justify-center gap-3 bg-zinc-900/40 rounded-3xl border border-white/5 p-8">
           <Tv className="w-10 h-10 text-zinc-600" />
           <p className="text-sm font-semibold text-zinc-300">Nenhum canal encontrado</p>
-          <p className="text-xs text-zinc-500">Tente buscar por outro termo ou categoria.</p>
+          <p className="text-xs text-zinc-500 max-w-sm">
+            {searchQuery
+              ? `Nenhum canal corresponde a "${searchQuery}". Tente outro termo.`
+              : 'Não foi possível carregar a lista de canais.'}
+          </p>
+          <button
+            onClick={() => {
+              setSearchQuery('');
+              setSelectedCategory('Todos');
+              setOnlyFavorites(false);
+              loadChannels();
+            }}
+            className="px-4 py-2 bg-zinc-800 hover:bg-zinc-700 text-zinc-200 text-xs font-semibold rounded-xl flex items-center gap-2 mt-2 transition-colors"
+          >
+            <RotateCcw className="w-3.5 h-3.5" />
+            Recarregar Catálogo
+          </button>
         </div>
       ) : (
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-3 md:gap-4">
