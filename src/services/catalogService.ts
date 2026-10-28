@@ -25,6 +25,12 @@ async function loadDisabledHosts(): Promise<void> {
   } catch {
     // Falha silenciosa para não travar o carregamento dos canais
   }
+  // Bloqueia hosts 403 e desativados conhecidos
+  disabledHosts.add('corruptx.org');
+  disabledHosts.add('desativado.invalid');
+  disabledHosts.add('hubby.cx');
+  disabledHosts.add('up.kiwi');
+  disabledHosts.add('tvonhdbr.com');
 }
 
 function isHostDisabled(urlStr: string): boolean {
@@ -264,8 +270,15 @@ export const catalogService = {
             .filter(Boolean);
 
           if (resolvedUrls.length > 0) {
-            // Reordena: fontes ativas primeiro
-            resolvedUrls.sort((a, b) => (isHostDisabled(a) ? 1 : 0) - (isHostDisabled(b) ? 1 : 0));
+            // Reordena: fontes ativas primeiro, priorizando servidores de alta disponibilidade
+            resolvedUrls.sort((a, b) => {
+              const aDis = isHostDisabled(a) ? 1 : 0;
+              const bDis = isHostDisabled(b) ? 1 : 0;
+              if (aDis !== bDis) return aDis - bDis;
+              const aGood = a.includes('dbonline') || a.includes('/api/stream') ? 0 : 1;
+              const bGood = b.includes('dbonline') || b.includes('/api/stream') ? 0 : 1;
+              return aGood - bGood;
+            });
             sourcesMap[version] = resolvedUrls;
           }
         }

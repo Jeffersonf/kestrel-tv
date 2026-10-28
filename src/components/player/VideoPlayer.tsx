@@ -173,11 +173,23 @@ export const VideoPlayer: React.FC<VideoPlayerProps> = ({
     } else {
       video.src = streamUrl;
       video.load();
-      video.play().then(() => {
+
+      const handleLoadedData = () => {
         setIsLoading(false);
         setStatusNotice(null);
         if (loadTimeoutRef.current) window.clearTimeout(loadTimeoutRef.current);
-      }).catch(() => setIsPlaying(false));
+        video.play().catch(() => setIsPlaying(false));
+      };
+
+      const handleVideoError = () => {
+        console.warn('Erro ao reproduzir vídeo na fonte:', streamUrl);
+        handleNextSource();
+      };
+
+      video.addEventListener('loadeddata', handleLoadedData, { once: true });
+      video.addEventListener('canplay', handleLoadedData, { once: true });
+      video.addEventListener('error', handleVideoError, { once: true });
+      video.play().catch(() => {});
     }
 
     if (mediaId && !isLive) {

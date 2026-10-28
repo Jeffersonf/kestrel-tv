@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Settings, Shield, RefreshCw, Check, Globe, Lock, KeyRound, Unlock, Zap, Download, Smartphone } from 'lucide-react';
+import { Settings, Shield, RefreshCw, Check, Globe, Zap, Download, Smartphone } from 'lucide-react';
 import { usePwaInstall } from '../../hooks/usePwaInstall';
 import { storageService, DEFAULT_SETTINGS } from '../../services/storageService';
 import type { AppSettings } from '../../types';
@@ -7,15 +7,10 @@ import type { AppSettings } from '../../types';
 export const SettingsModal: React.FC = () => {
   const [settings, setSettings] = useState<AppSettings>(() => storageService.getSettings());
   const [savedSuccess, setSavedSuccess] = useState(false);
-  const [adultPin, setAdultPin] = useState(() => storageService.getAdultPin());
-  const [isAdultUnlocked, setIsAdultUnlocked] = useState(() => storageService.isAdultUnlocked());
   const { isInstalled, promptInstall } = usePwaInstall();
 
   const handleSave = () => {
     storageService.saveSettings(settings);
-    if (adultPin && adultPin.length === 4 && /^\d{4}$/.test(adultPin)) {
-      storageService.setAdultPin(adultPin);
-    }
     setSavedSuccess(true);
     setTimeout(() => setSavedSuccess(false), 2500);
   };
@@ -23,27 +18,8 @@ export const SettingsModal: React.FC = () => {
   const handleReset = () => {
     setSettings(DEFAULT_SETTINGS);
     storageService.saveSettings(DEFAULT_SETTINGS);
-    storageService.setAdultPin('0000');
-    setAdultPin('0000');
     setSavedSuccess(true);
     setTimeout(() => setSavedSuccess(false), 2500);
-  };
-
-  const toggleAdultMode = () => {
-    if (isAdultUnlocked) {
-      storageService.lockAdult();
-      setIsAdultUnlocked(false);
-    } else {
-      const pinPrompt = prompt('Digite o PIN de 4 dígitos para desbloquear o modo adulto:');
-      if (pinPrompt) {
-        if (storageService.unlockAdult(pinPrompt)) {
-          setIsAdultUnlocked(true);
-          alert('Modo Adulto (+18) desbloqueado com sucesso!');
-        } else {
-          alert('PIN incorreto!');
-        }
-      }
-    }
   };
 
   return (
@@ -55,50 +31,8 @@ export const SettingsModal: React.FC = () => {
             Ajustes e Configurações
           </h2>
           <p className="text-xs text-zinc-400 mt-1">
-            Personalize as fontes de catálogo independentes, controle parental (+18) e parâmetros de proxy.
+            Personalize as fontes de catálogo independentes, economia de cota e parâmetros de streaming.
           </p>
-        </div>
-
-        {/* Parental Control Section */}
-        <div className="p-4.5 rounded-2xl bg-zinc-950 border border-white/5 space-y-3">
-          <div className="flex items-center justify-between">
-            <div className="flex items-center gap-2.5">
-              <Lock className="w-4 h-4 text-rose-400" />
-              <div>
-                <h4 className="text-xs font-semibold text-white">Controle Parental (+18)</h4>
-                <p className="text-[11px] text-zinc-400">
-                  Proteja a exibição dos canais adultos com uma senha PIN numérica de 4 dígitos.
-                </p>
-              </div>
-            </div>
-
-            <button
-              onClick={toggleAdultMode}
-              className={`px-3 py-1.5 rounded-xl border text-xs font-semibold flex items-center gap-1.5 transition-all ${
-                isAdultUnlocked
-                  ? 'bg-rose-500/20 text-rose-300 border-rose-500/40 hover:bg-rose-500/30'
-                  : 'bg-zinc-900 border-white/10 text-zinc-400 hover:text-white'
-              }`}
-            >
-              {isAdultUnlocked ? <Unlock className="w-3.5 h-3.5" /> : <Lock className="w-3.5 h-3.5" />}
-              <span>{isAdultUnlocked ? 'Bloquear (+18)' : 'Desbloquear (+18)'}</span>
-            </button>
-          </div>
-
-          <div className="pt-2 border-t border-white/5 flex items-center justify-between gap-4">
-            <div className="flex items-center gap-2 text-xs text-zinc-300">
-              <KeyRound className="w-4 h-4 text-zinc-500" />
-              <span>Senha PIN atual (4 dígitos):</span>
-            </div>
-            <input
-              type="password"
-              maxLength={4}
-              value={adultPin}
-              onChange={(e) => setAdultPin(e.target.value)}
-              placeholder="0000"
-              className="w-24 px-3 py-1.5 bg-zinc-900 border border-white/10 rounded-xl text-xs text-white text-center font-mono tracking-widest focus:outline-none focus:border-red-500"
-            />
-          </div>
         </div>
 
         {/* Proxy Section */}

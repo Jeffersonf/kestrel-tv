@@ -2,7 +2,7 @@ import React, { useState, useEffect, useMemo, useRef } from 'react';
 import { 
   Search, Tv, Heart, Radio, X, RotateCcw, 
   Trophy, Film, Globe, Compass, Sparkles, Music, 
-  Layers, Lock, Unlock, ShieldAlert,
+  Layers, ShieldAlert,
   PanelRightClose, PanelRightOpen, Play, ChevronLeft, ChevronRight
 } from 'lucide-react';
 import type { Channel } from '../../types';
@@ -12,7 +12,6 @@ import { FALLBACK_CHANNELS } from '../../services/fallbackChannels';
 import { ChannelCard } from './ChannelCard';
 import { VideoPlayer } from '../player/VideoPlayer';
 import { HeroSpotlight } from './HeroSpotlight';
-import { PinModal } from '../modals/PinModal';
 import { Pagination } from '../common/Pagination';
 
 const CHANNELS_PER_PAGE = 24;
@@ -56,8 +55,6 @@ export const LiveTvView: React.FC = () => {
   const [selectedChannel, setSelectedChannel] = useState<Channel | null>(null);
   const [favorites, setFavorites] = useState<string[]>([]);
   const [onlyFavorites, setOnlyFavorites] = useState(false);
-  const [isAdultUnlocked, setIsAdultUnlocked] = useState(() => storageService.isAdultUnlocked());
-  const [isPinModalOpen, setIsPinModalOpen] = useState(false);
 
   // Paginação da grade principal
   const [currentPage, setCurrentPage] = useState(1);
@@ -81,12 +78,6 @@ export const LiveTvView: React.FC = () => {
   useEffect(() => {
     setFavorites(storageService.getFavoriteChannels());
     refreshChannels();
-
-    const handleAdultChange = () => {
-      setIsAdultUnlocked(storageService.isAdultUnlocked());
-    };
-    window.addEventListener('kestrel_adult_state_change', handleAdultChange);
-    return () => window.removeEventListener('kestrel_adult_state_change', handleAdultChange);
   }, []);
 
   // Resetar página quando filtros mudam
@@ -98,26 +89,20 @@ export const LiveTvView: React.FC = () => {
     setSidebarPage(1);
   }, [sidebarSearch, sidebarCategory]);
 
-  // Lista de canais visíveis respeitando o filtro de segurança parental (+18)
+  // Lista de canais visíveis na TV pública (Canais Adultos vivem exclusivamente no Secret Vault #0000)
   const visibleChannels = useMemo(() => {
-    if (isAdultUnlocked) return channels;
     return channels.filter((ch) => ch.category !== 'Adulto (+18)');
-  }, [channels, isAdultUnlocked]);
+  }, [channels]);
 
   // Contagem de categorias
   const categories = useMemo(() => {
     const cats = new Map<string, number>();
     for (const ch of visibleChannels) {
+      if (ch.category === 'Adulto (+18)') continue;
       cats.set(ch.category, (cats.get(ch.category) || 0) + 1);
     }
-    if (!isAdultUnlocked) {
-      const adultCount = channels.filter((ch) => ch.category === 'Adulto (+18)').length;
-      if (adultCount > 0) {
-        cats.set('Adulto (+18)', adultCount);
-      }
-    }
     return Array.from(cats.entries()).sort((a, b) => {
-      const order = ['Jogos & Esportes', 'Filmes e Séries', 'TV Aberta', 'Notícias', 'Infantil', 'Documentários', 'Variedades', 'Músicas', 'Adulto (+18)'];
+      const order = ['Jogos & Esportes', 'Filmes e Séries', 'TV Aberta', 'Notícias', 'Infantil', 'Documentários', 'Variedades', 'Músicas'];
       const idxA = order.indexOf(a[0]);
       const idxB = order.indexOf(b[0]);
       if (idxA !== -1 && idxB !== -1) return idxA - idxB;
@@ -125,7 +110,7 @@ export const LiveTvView: React.FC = () => {
       if (idxB !== -1) return 1;
       return b[1] - a[1];
     });
-  }, [visibleChannels, channels, isAdultUnlocked]);
+  }, [visibleChannels]);
 
   // Canais filtrados por busca, favoritos e categoria (Grade Principal)
   const filteredChannels = useMemo(() => {
@@ -190,10 +175,6 @@ export const LiveTvView: React.FC = () => {
   };
 
   const handleCategoryClick = (cat: string) => {
-    if (cat === 'Adulto (+18)' && !isAdultUnlocked) {
-      setIsPinModalOpen(true);
-      return;
-    }
     setSelectedCategory(cat);
   };
 
@@ -394,28 +375,6 @@ export const LiveTvView: React.FC = () => {
         />
       )}
 
-      {/* Adult Mode Unlocked Alert Banner */}
-      {isAdultUnlocked && (
-        <div className="flex items-center justify-between px-4 py-2.5 rounded-2xl bg-rose-500/10 border border-rose-500/30 text-rose-300 text-xs">
-          <div className="flex items-center gap-2">
-            <Unlock className="w-4 h-4 text-rose-400" />
-            <span>
-              <b>Modo Adulto (+18) Desbloqueado:</b> Os canais adultos estão visíveis na grade.
-            </span>
-          </div>
-          <button
-            onClick={() => {
-              storageService.lockAdult();
-              setSelectedCategory('Todos');
-            }}
-            className="px-3 py-1 rounded-xl bg-rose-500/20 hover:bg-rose-500/30 text-rose-200 font-semibold flex items-center gap-1.5 transition-colors"
-          >
-            <Lock className="w-3.5 h-3.5" />
-            Bloquear Agora
-          </button>
-        </div>
-      )}
-
       {/* Header & Controls */}
       <div className="flex flex-col md:flex-row gap-4 items-start md:items-center justify-between pt-2">
         <div>
@@ -484,9 +443,6 @@ export const LiveTvView: React.FC = () => {
           </button>
 
           {categories.map(([cat, count]) => {
-            const isAdultCat = cat === 'Adulto (+18)';
-            const isLocked = isAdultCat && !isAdultUnlocked;
-
             return (
               <button
                 key={cat}
@@ -494,23 +450,19 @@ export const LiveTvView: React.FC = () => {
                 className={`px-3.5 py-2 rounded-2xl text-xs font-semibold whitespace-nowrap transition-all duration-200 flex items-center gap-2 border ${
                   selectedCategory === cat
                     ? 'bg-red-600 text-white border-red-500 shadow-lg shadow-red-600/30'
-                    : isAdultCat && isLocked
-                    ? 'bg-zinc-950 border-rose-500/30 text-rose-300 hover:border-rose-500/50'
                     : 'bg-zinc-900/90 border-white/10 text-zinc-400 hover:text-white hover:bg-zinc-800'
                 }`}
               >
-                {isAdultCat && isLocked ? <Lock className="w-3.5 h-3.5 text-rose-400" /> : getCategoryIcon(cat)}
+                {getCategoryIcon(cat)}
                 <span>{cat}</span>
                 <span
                   className={`text-[10px] px-1.5 py-0.2 rounded-full font-bold ${
                     selectedCategory === cat
                       ? 'bg-white/20 text-white'
-                      : isAdultCat && isLocked
-                      ? 'bg-rose-500/20 text-rose-300'
                       : 'bg-zinc-800 text-zinc-500'
                   }`}
                 >
-                  {isLocked ? 'PIN' : count}
+                  {count}
                 </span>
               </button>
             );
@@ -586,16 +538,6 @@ export const LiveTvView: React.FC = () => {
           />
         </>
       )}
-
-      {/* Pin Modal for Parental Access */}
-      <PinModal
-        isOpen={isPinModalOpen}
-        onClose={() => setIsPinModalOpen(false)}
-        onSuccess={() => {
-          setIsAdultUnlocked(true);
-          setSelectedCategory('Adulto (+18)');
-        }}
-      />
     </div>
   );
 };

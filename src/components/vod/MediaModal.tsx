@@ -61,7 +61,22 @@ export const MediaModal: React.FC<MediaModalProps> = ({ item, meta, onClose }) =
 
   const handlePlayMovie = () => {
     if (!item.sources) return;
-    const sources = item.sources[selectedVersion] || Object.values(item.sources)[0] || [];
+    let sources = item.sources[selectedVersion] || Object.values(item.sources)[0] || [];
+    
+    // Se não tiver fontes ou for TMDB, garante fallback direto no Saimo VOD
+    if (sources.length === 0 && item.id.startsWith('tmdb_')) {
+      const tmdbId = item.id.replace('tmdb_', '');
+      sources = [
+        `https://saimo-tv.pages.dev/api/stream?tipo=movie&id=${tmdbId}&versao=${selectedVersion}`,
+        `https://saimo-tv.pages.dev/api/stream?tipo=movie&id=${tmdbId}&versao=dub`
+      ];
+    }
+
+    if (sources.length === 0) {
+      alert('Nenhuma fonte de reprodução disponível para este filme no momento.');
+      return;
+    }
+
     setActivePlayback({
       title: `${item.title} (${selectedVersion.toUpperCase()})`,
       sources,

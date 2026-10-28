@@ -1,8 +1,6 @@
-import React, { useState, useEffect } from 'react';
-import { Radio, Film, Tv, Heart, Settings, Play, Lock, Unlock, Download } from 'lucide-react';
+import React from 'react';
+import { Radio, Film, Tv, Heart, Settings, Play, Download } from 'lucide-react';
 import { usePwaInstall } from '../../hooks/usePwaInstall';
-import { storageService } from '../../services/storageService';
-import { PinModal } from '../modals/PinModal';
 
 export type NavTab = 'tv' | 'movies' | 'series' | 'favorites' | 'settings';
 
@@ -17,26 +15,7 @@ export const Header: React.FC<HeaderProps> = ({
   onTabChange,
   favoritesCount,
 }) => {
-  const [isAdultUnlocked, setIsAdultUnlocked] = useState(() => storageService.isAdultUnlocked());
-  const [isPinModalOpen, setIsPinModalOpen] = useState(false);
   const { isInstalled, promptInstall } = usePwaInstall();
-
-  useEffect(() => {
-    const handleStateChange = () => {
-      setIsAdultUnlocked(storageService.isAdultUnlocked());
-    };
-    window.addEventListener('kestrel_adult_state_change', handleStateChange);
-    return () => window.removeEventListener('kestrel_adult_state_change', handleStateChange);
-  }, []);
-
-  const handleAdultToggle = () => {
-    if (isAdultUnlocked) {
-      storageService.lockAdult();
-      setIsAdultUnlocked(false);
-    } else {
-      setIsPinModalOpen(true);
-    }
-  };
 
   return (
     <>
@@ -127,29 +106,6 @@ export const Header: React.FC<HeaderProps> = ({
               </button>
             )}
 
-            {/* Adult PIN Toggle Pill */}
-            <button
-              onClick={handleAdultToggle}
-              className={`px-3 py-1.5 rounded-xl border text-xs font-semibold flex items-center gap-1.5 transition-all shadow-sm ${
-                isAdultUnlocked
-                  ? 'bg-rose-500/15 border-rose-500/40 text-rose-300 hover:bg-rose-500/25'
-                  : 'bg-zinc-900 border-white/10 text-zinc-400 hover:text-white hover:bg-zinc-800'
-              }`}
-              title={isAdultUnlocked ? 'Bloquear modo adulto (+18)' : 'Desbloquear canais adultos (+18) com PIN'}
-            >
-              {isAdultUnlocked ? (
-                <>
-                  <Unlock className="w-3.5 h-3.5 text-rose-400" />
-                  <span className="hidden sm:inline">+18 Ativo</span>
-                </>
-              ) : (
-                <>
-                  <Lock className="w-3.5 h-3.5 text-zinc-400" />
-                  <span className="hidden sm:inline">+18 Bloqueado</span>
-                </>
-              )}
-            </button>
-
             {/* Online Status Pill */}
             <div className="hidden lg:flex items-center gap-2 px-3 py-1.5 bg-zinc-900 border border-white/10 rounded-xl">
               <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
@@ -207,15 +163,6 @@ export const Header: React.FC<HeaderProps> = ({
           </button>
         </div>
       </header>
-
-      {/* Parental PIN Modal */}
-      <PinModal
-        isOpen={isPinModalOpen}
-        onClose={() => setIsPinModalOpen(false)}
-        onSuccess={() => {
-          setIsAdultUnlocked(true);
-        }}
-      />
     </>
   );
 };

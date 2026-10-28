@@ -117,6 +117,13 @@ export const proxyService = {
   isCorsFriendlyStream(url: string): boolean {
     if (!url) return false;
     const lower = url.toLowerCase();
+
+    // URLs de api/stream NUNCA podem ser consideradas direct friendly porque
+    // redirecionam via 302 para http:// gerando bloqueio imediato de Mixed Content!
+    if (lower.includes('/api/stream') || lower.includes('api/proxy')) {
+      return false;
+    }
+
     return (
       lower.includes('.amagi.tv') ||
       lower.includes('.otteravision.com') ||
@@ -125,9 +132,8 @@ export const proxyService = {
       lower.includes('.akamaized.net') ||
       lower.includes('pluto.tv') ||
       lower.includes('jmp2.uk') ||
-      lower.includes('.workers.dev') ||
+      (lower.includes('.workers.dev') && lower.startsWith('https://')) ||
       lower.includes('.r2.dev') ||
-      lower.includes('.pages.dev') ||
       lower.includes('.jmvstream.com') ||
       lower.includes('.ichibansys.com') ||
       lower.includes('github.io') ||
@@ -143,6 +149,9 @@ export const proxyService = {
   needsProxy(url: string): boolean {
     if (!url) return false;
     const lower = url.toLowerCase();
+
+    // Endpoints de streaming da API do Saimo sempre precisam do proxy para resolver o 302 em HTTPS
+    if (lower.includes('/api/stream')) return true;
 
     // CDNs oficiais com CORS aberto nunca precisam de proxy se forem HTTPS
     if (lower.startsWith('https://') && this.isCorsFriendlyStream(lower)) {
@@ -199,7 +208,7 @@ export const proxyService = {
   },
 
   /**
-   * Prepara lista de fontes (direta + proxied) otimizada para Zero Cota
+   * Prepara lista de fontes (direta + proxied) otimizada para Zero Cota e VOD
    */
   expandSources(sources: (ChannelSource | string)[]): { name: string; url: string; referer?: string; agent?: string; isProxied: boolean }[] {
     const list: { name: string; url: string; referer?: string; agent?: string; isProxied: boolean }[] = [];
@@ -213,6 +222,19 @@ export const proxyService = {
       const baseName = src.name || `Fonte ${idx + 1}${src.quality ? ` (${src.quality})` : ''}`;
       const isHttps = rawUrl.startsWith('https://');
       const isCors = this.isCorsFriendlyStream(rawUrl);
+
+      // CASO ESPECIAL: /api/stream de Filmes e Séries
+      // Sempre deve passar pelo proxy para que o Cloudflare resolva o redirect 302 em HTTPS com suporte a Range bytes!
+      if (rawUrl.includes('/api/stream')) {
+        list.push({
+          name: `${baseName} (Servidor VOD HD)`,
+          url: this.wrapStreamUrl(rawUrl, src.referer, src.agent),
+          referer: src.referer,
+          agent: src.agent,
+          isProxied: true,
+        });
+        return;
+      }
 
       // CASO 1: Stream HTTPS com CORS liberado (CazéTV, Pluto TV, Samsung TV Plus, Akamai, etc.)
       // -> Zero Cota garantido! Toca direto sem passar por nenhum proxy.
