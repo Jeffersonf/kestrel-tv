@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Header, type NavTab } from './components/layout/Header';
-import { SmartTvView } from './components/tv/SmartTvView';
+import { LiveTvView } from './components/tv/LiveTvView';
 import { FootballHub } from './components/football/FootballHub';
 import { VodView } from './components/vod/VodView';
 import { FavoritesView } from './components/layout/FavoritesView';
@@ -71,7 +71,6 @@ export function App() {
   }, []);
 
   const handleCloseAdultHub = () => {
-    // Remove o fragmento 0000 da URL discretamente sem recarregar
     try {
       history.replaceState(null, '', window.location.pathname);
     } catch {
@@ -86,8 +85,8 @@ export function App() {
   };
 
   return (
-    <div className="min-h-screen bg-[#09090b] text-zinc-100 flex flex-col font-sans selection:bg-red-600/30 selection:text-white">
-      {/* Top Header */}
+    <div className="min-h-screen bg-[#070a13] text-zinc-100 flex flex-col font-sans selection:bg-red-600/30 selection:text-white">
+      {/* Top Header (Sky+ Style) */}
       <Header
         activeTab={activeTab}
         onTabChange={(tab) => setActiveTab(tab)}
@@ -97,10 +96,9 @@ export function App() {
       {/* Main View Area */}
       <main className="flex-1 pb-16">
         {activeTab === 'tv' && (
-          <SmartTvView
-            onOpenFootball={() => setActiveTab('football')}
-            overrideChannelKeyword={overrideChannelKeyword}
-            onClearOverrideChannel={() => setOverrideChannelKeyword(null)}
+          <LiveTvView
+            overrideKeyword={overrideChannelKeyword}
+            onClearOverrideKeyword={() => setOverrideChannelKeyword(null)}
           />
         )}
         {activeTab === 'football' && (
@@ -117,15 +115,15 @@ export function App() {
       )}
 
       {/* Footer */}
-      <footer className="border-t border-white/5 py-6 px-4 text-center text-xs text-zinc-500 bg-zinc-950">
+      <footer className="border-t border-white/5 py-6 px-4 text-center text-xs text-zinc-500 bg-[#05070d]">
         <div className="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-3">
           <div className="flex items-center gap-2">
-            <span className="font-bold text-zinc-300">kestrelTV</span>
+            <span className="font-black text-zinc-200">kestrel+</span>
             <span>•</span>
-            <span>Smart TV & Live Sports Player</span>
+            <span className="text-zinc-400">Plataforma de Streaming e TV ao Vivo</span>
           </div>
-          <p className="text-[11px] text-zinc-600">
-            Design de Smart TV com zapping de canal, grade ao vivo do Santos FC e transmissões HLS/MP4.
+          <p className="text-[11px] text-zinc-500">
+            Interface moderna inspirada no design Sky+ com suporte a múltiplos servidores HLS e VOD.
           </p>
         </div>
       </footer>

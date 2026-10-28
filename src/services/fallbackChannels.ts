@@ -1529,18 +1529,16 @@ export const FALLBACK_CHANNELS: Channel[] = [
     "logo": "https://img.faz-o-eli.online/ae.png",
     "sources": [
       {
-        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/88b8aefdec5f0ef1cdc7477e04e7cdfa/error.txt",
-        "quality": "Qualidade não informada",
-        "referer": "https://w7.embedtv.cc/",
-        "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
-      },
-      {
-        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/ae/ae.m3u8",
-        "quality": "FHD · 1920x1080"
-      },
-      {
         "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1MDg2Lm0zdTg.m3u8",
         "quality": "FHD"
+      },
+      {
+        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1MDg3Lm0zdTg.m3u8",
+        "quality": "HD"
+      },
+      {
+        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1MDg4Lm0zdTg.m3u8",
+        "quality": "SD"
       },
       {
         "url": "http://64.31.23.207:80/59471019/60849037/518547.m3u8",
@@ -1553,6 +1551,45 @@ export const FALLBACK_CHANNELS: Channel[] = [
       {
         "url": "http://64.31.23.207:80/59471019/60849037/518549.m3u8",
         "quality": "HD · 1280x720"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/81599.ts",
+        "name": "Fonte 21 (Ramys)",
+        "quality": "1080p FHD"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/13497.ts",
+        "name": "Fonte 22 (Ramys)"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/23156.ts",
+        "name": "Fonte 23 (Ramys)",
+        "quality": "1080p FHD"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/23157.ts",
+        "name": "Fonte 24 (Ramys)",
+        "quality": "720p HD"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/35224.ts",
+        "name": "Fonte 25 (Ramys)",
+        "quality": "720p HD"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/35225.ts",
+        "name": "Fonte 26 (Ramys)",
+        "quality": "720p HD"
+      },
+      {
+        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/ae/ae.m3u8",
+        "quality": "FHD · 1920x1080"
+      },
+      {
+        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/88b8aefdec5f0ef1cdc7477e04e7cdfa/error.txt",
+        "quality": "Qualidade não informada",
+        "referer": "https://w7.embedtv.cc/",
+        "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
       },
       {
         "url": "http://vaiagora.vip:80/live/5q8VUj/5BeUd8/90647.m3u8",
@@ -1601,43 +1638,6 @@ export const FALLBACK_CHANNELS: Channel[] = [
       {
         "url": "http://corruptx.org:80/live/hfp5ejnrey/zq0u3kzads/23157.m3u8",
         "quality": "HD"
-      },
-      {
-        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1MDg3Lm0zdTg.m3u8",
-        "quality": "HD"
-      },
-      {
-        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1MDg4Lm0zdTg.m3u8",
-        "quality": "SD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/81599.ts",
-        "name": "Fonte 21 (Ramys)",
-        "quality": "1080p FHD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/13497.ts",
-        "name": "Fonte 22 (Ramys)"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/23156.ts",
-        "name": "Fonte 23 (Ramys)",
-        "quality": "1080p FHD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/23157.ts",
-        "name": "Fonte 24 (Ramys)",
-        "quality": "720p HD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/35224.ts",
-        "name": "Fonte 25 (Ramys)",
-        "quality": "720p HD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/35225.ts",
-        "name": "Fonte 26 (Ramys)",
-        "quality": "720p HD"
       }
     ]
   },
@@ -1648,35 +1648,21 @@ export const FALLBACK_CHANNELS: Channel[] = [
     "logo": "https://img.faz-o-eli.online/animalplanet.png",
     "sources": [
       {
-        "url": "https://aws.s13-s1001604.lat/stream/b334d79db281e34cdadd49b0feff5c9d/animalplanet.m3u8",
-        "quality": "HD · 1280x720",
-        "referer": "https://meufut.top/animal-planet",
-        "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
-      },
-      {
-        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/847c797790cf3e5db3f674499481eb6e/error.txt",
-        "quality": "Qualidade não informada",
-        "referer": "https://w7.embedtv.cc/",
-        "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
-      },
-      {
         "url": "https://dadinhodetapioca.fun/play/animalplanet.html",
         "quality": "FHD",
         "referer": "https://dadinhodetapioca.fun/"
       },
       {
-        "url": "https://aws.s13-s1001604.lat/stream/f8aeec6dfc86c2ab66efa1ee0dcf88cf/animalplanet.m3u8",
-        "quality": "FHD · 1920x1080",
-        "referer": "https://meufut.top/animal-planet",
-        "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
-      },
-      {
-        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/animalplanet/animalplanet.m3u8",
-        "quality": "HD · 1280x720"
-      },
-      {
         "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1MDA2Lm0zdTg.m3u8",
         "quality": "FHD"
+      },
+      {
+        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1MDA3Lm0zdTg.m3u8",
+        "quality": "HD"
+      },
+      {
+        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1MDA4Lm0zdTg.m3u8",
+        "quality": "SD"
       },
       {
         "url": "http://64.31.23.207:80/59471019/60849037/296619.m3u8",
@@ -1693,6 +1679,51 @@ export const FALLBACK_CHANNELS: Channel[] = [
       {
         "url": "http://64.31.23.207:80/59471019/60849037/324374.m3u8",
         "quality": "FHD · 1920x1080"
+      },
+      {
+        "url": "http://332nr7hbfu.xyz:80/live/999913/S3CvUB/71774.m3u8",
+        "quality": "FHD · 1920x1080"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/304490.ts",
+        "name": "Fonte 28 (Ramys)",
+        "quality": "1080p FHD"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/304493.ts",
+        "name": "Fonte 29 (Ramys)"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/304491.ts",
+        "name": "Fonte 30 (Ramys)",
+        "quality": "1080p FHD"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/304492.ts",
+        "name": "Fonte 31 (Ramys)",
+        "quality": "720p HD"
+      },
+      {
+        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/animalplanet/animalplanet.m3u8",
+        "quality": "HD · 1280x720"
+      },
+      {
+        "url": "https://aws.s13-s1001604.lat/stream/b334d79db281e34cdadd49b0feff5c9d/animalplanet.m3u8",
+        "quality": "HD · 1280x720",
+        "referer": "https://meufut.top/animal-planet",
+        "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
+      },
+      {
+        "url": "https://aws.s13-s1001604.lat/stream/f8aeec6dfc86c2ab66efa1ee0dcf88cf/animalplanet.m3u8",
+        "quality": "FHD · 1920x1080",
+        "referer": "https://meufut.top/animal-planet",
+        "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
+      },
+      {
+        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/847c797790cf3e5db3f674499481eb6e/error.txt",
+        "quality": "Qualidade não informada",
+        "referer": "https://w7.embedtv.cc/",
+        "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
       },
       {
         "url": "http://vaiagora.vip:80/live/5q8VUj/5BeUd8/71774.m3u8",
@@ -1749,37 +1780,6 @@ export const FALLBACK_CHANNELS: Channel[] = [
       {
         "url": "http://corruptx.org:80/live/hfp5ejnrey/zq0u3kzads/304492.m3u8",
         "quality": "HD"
-      },
-      {
-        "url": "http://332nr7hbfu.xyz:80/live/999913/S3CvUB/71774.m3u8",
-        "quality": "FHD · 1920x1080"
-      },
-      {
-        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1MDA3Lm0zdTg.m3u8",
-        "quality": "HD"
-      },
-      {
-        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1MDA4Lm0zdTg.m3u8",
-        "quality": "SD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/304490.ts",
-        "name": "Fonte 28 (Ramys)",
-        "quality": "1080p FHD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/304493.ts",
-        "name": "Fonte 29 (Ramys)"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/304491.ts",
-        "name": "Fonte 30 (Ramys)",
-        "quality": "1080p FHD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/304492.ts",
-        "name": "Fonte 31 (Ramys)",
-        "quality": "720p HD"
       }
     ]
   },
@@ -1789,6 +1789,14 @@ export const FALLBACK_CHANNELS: Channel[] = [
     "category": "Documentários",
     "logo": "https://img.faz-o-eli.online/curta.png",
     "sources": [
+      {
+        "url": "http://332nr7hbfu.xyz:80/live/999913/S3CvUB/71855.m3u8",
+        "quality": "FHD · 1920x1080"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/12948.ts",
+        "name": "Fonte 13 (Ramys)"
+      },
       {
         "url": "http://vaiagora.vip:80/live/5q8VUj/5BeUd8/71855.m3u8",
         "quality": "FHD"
@@ -1832,14 +1840,6 @@ export const FALLBACK_CHANNELS: Channel[] = [
       {
         "url": "http://corruptx.org:80/live/hfp5ejnrey/zq0u3kzads/12948.m3u8",
         "quality": "FHD · 1920x1080"
-      },
-      {
-        "url": "http://332nr7hbfu.xyz:80/live/999913/S3CvUB/71855.m3u8",
-        "quality": "FHD · 1920x1080"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/12948.ts",
-        "name": "Fonte 13 (Ramys)"
       }
     ]
   },
@@ -1850,39 +1850,25 @@ export const FALLBACK_CHANNELS: Channel[] = [
     "logo": "https://img.faz-o-eli.online/discoverychannel.png",
     "sources": [
       {
-        "url": "https://aws.s13-s1001604.lat/stream/abda9d242318532ccceeb60faa73e3cf/discoverychannel.m3u8",
-        "quality": "HD · 1280x720",
-        "referer": "https://meufut.top/discovery-channel",
-        "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
-      },
-      {
-        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/ef788417269a3b916fa9b954c8136d38/error.txt",
-        "quality": "Qualidade não informada",
-        "referer": "https://w7.embedtv.cc/",
-        "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
-      },
-      {
         "url": "https://dadinhodetapioca.fun/play/discoverychannel.html",
         "quality": "FHD",
         "referer": "https://dadinhodetapioca.fun/"
       },
       {
-        "url": "https://aws.s13-s1001604.lat/stream/a1d16892ebba8e03b94f103b89c154c0/discoverychannel.m3u8",
-        "quality": "HD · 1280x720",
-        "referer": "https://meufut.top/discovery-channel",
-        "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
+        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1MDE4Lm0zdTg.m3u8",
+        "quality": "FHD"
+      },
+      {
+        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1MDE5Lm0zdTg.m3u8",
+        "quality": "HD"
+      },
+      {
+        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1MDIwLm0zdTg.m3u8",
+        "quality": "SD"
       },
       {
         "url": "http://138.204.86.4:8080/DISCOVERY_HD/index.m3u8",
         "quality": "HD · 1280x720"
-      },
-      {
-        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/discoverychannel/discoverychannel.m3u8",
-        "quality": "Qualidade não informada"
-      },
-      {
-        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1MDE4Lm0zdTg.m3u8",
-        "quality": "FHD"
       },
       {
         "url": "http://64.31.23.207:80/59471019/60849037/297936.m3u8",
@@ -1899,6 +1885,65 @@ export const FALLBACK_CHANNELS: Channel[] = [
       {
         "url": "http://64.31.23.207:80/59471019/60849037/324381.m3u8",
         "quality": "SD · 852x480"
+      },
+      {
+        "url": "http://332nr7hbfu.xyz:80/live/999913/S3CvUB/71862.m3u8",
+        "quality": "FHD · 1920x1080"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/91396.ts",
+        "name": "Fonte 30 (Ramys)",
+        "quality": "1080p FHD"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/13508.ts",
+        "name": "Fonte 31 (Ramys)"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/43928.ts",
+        "name": "Fonte 32 (Ramys)"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/8735.ts",
+        "name": "Fonte 33 (Ramys)",
+        "quality": "1080p FHD"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/131176.ts",
+        "name": "Fonte 34 (Ramys)",
+        "quality": "1080p FHD"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/8736.ts",
+        "name": "Fonte 35 (Ramys)",
+        "quality": "720p HD"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/30148.ts",
+        "name": "Fonte 36 (Ramys)",
+        "quality": "720p HD"
+      },
+      {
+        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/discoverychannel/discoverychannel.m3u8",
+        "quality": "Qualidade não informada"
+      },
+      {
+        "url": "https://aws.s13-s1001604.lat/stream/abda9d242318532ccceeb60faa73e3cf/discoverychannel.m3u8",
+        "quality": "HD · 1280x720",
+        "referer": "https://meufut.top/discovery-channel",
+        "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
+      },
+      {
+        "url": "https://aws.s13-s1001604.lat/stream/a1d16892ebba8e03b94f103b89c154c0/discoverychannel.m3u8",
+        "quality": "HD · 1280x720",
+        "referer": "https://meufut.top/discovery-channel",
+        "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
+      },
+      {
+        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/ef788417269a3b916fa9b954c8136d38/error.txt",
+        "quality": "Qualidade não informada",
+        "referer": "https://w7.embedtv.cc/",
+        "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
       },
       {
         "url": "http://vaiagora.vip:80/live/5q8VUj/5BeUd8/71862.m3u8",
@@ -1959,51 +2004,6 @@ export const FALLBACK_CHANNELS: Channel[] = [
       {
         "url": "http://corruptx.org:80/live/hfp5ejnrey/zq0u3kzads/30148.m3u8",
         "quality": "HD"
-      },
-      {
-        "url": "http://332nr7hbfu.xyz:80/live/999913/S3CvUB/71862.m3u8",
-        "quality": "FHD · 1920x1080"
-      },
-      {
-        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1MDE5Lm0zdTg.m3u8",
-        "quality": "HD"
-      },
-      {
-        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1MDIwLm0zdTg.m3u8",
-        "quality": "SD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/91396.ts",
-        "name": "Fonte 30 (Ramys)",
-        "quality": "1080p FHD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/13508.ts",
-        "name": "Fonte 31 (Ramys)"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/43928.ts",
-        "name": "Fonte 32 (Ramys)"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/8735.ts",
-        "name": "Fonte 33 (Ramys)",
-        "quality": "1080p FHD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/131176.ts",
-        "name": "Fonte 34 (Ramys)",
-        "quality": "1080p FHD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/8736.ts",
-        "name": "Fonte 35 (Ramys)",
-        "quality": "720p HD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/30148.ts",
-        "name": "Fonte 36 (Ramys)",
-        "quality": "720p HD"
       }
     ]
   },
@@ -2036,16 +2036,6 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "quality": "HD · 1280x720"
       },
       {
-        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/discoveryhh/discoveryhh.m3u8",
-        "quality": "Qualidade não informada"
-      },
-      {
-        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/ece60d9c347f933fa902bf2b6f53de49/error.txt",
-        "quality": "Qualidade não informada",
-        "referer": "https://w7.embedtv.cc/",
-        "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
-      },
-      {
         "url": "http://64.31.23.207:80/59471019/60849037/297939.m3u8",
         "quality": "FHD · 1920x1080"
       },
@@ -2072,6 +2062,40 @@ export const FALLBACK_CHANNELS: Channel[] = [
       {
         "url": "http://64.31.23.207:80/59471019/60849037/518555.m3u8",
         "quality": "SD · 768x432"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/91397.ts",
+        "name": "Fonte 28 (Ramys)",
+        "quality": "1080p FHD"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/20757.ts",
+        "name": "Fonte 29 (Ramys)"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/8739.ts",
+        "name": "Fonte 30 (Ramys)",
+        "quality": "1080p FHD"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/8740.ts",
+        "name": "Fonte 31 (Ramys)",
+        "quality": "720p HD"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/30149.ts",
+        "name": "Fonte 32 (Ramys)",
+        "quality": "720p HD"
+      },
+      {
+        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/discoveryhh/discoveryhh.m3u8",
+        "quality": "Qualidade não informada"
+      },
+      {
+        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/ece60d9c347f933fa902bf2b6f53de49/error.txt",
+        "quality": "Qualidade não informada",
+        "referer": "https://w7.embedtv.cc/",
+        "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
       },
       {
         "url": "http://vaiagora.vip:80/live/5q8VUj/5BeUd8/90251.m3u8",
@@ -2136,30 +2160,6 @@ export const FALLBACK_CHANNELS: Channel[] = [
       {
         "url": "http://corruptx.org:80/live/hfp5ejnrey/zq0u3kzads/30149.m3u8",
         "quality": "HD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/91397.ts",
-        "name": "Fonte 28 (Ramys)",
-        "quality": "1080p FHD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/20757.ts",
-        "name": "Fonte 29 (Ramys)"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/8739.ts",
-        "name": "Fonte 30 (Ramys)",
-        "quality": "1080p FHD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/8740.ts",
-        "name": "Fonte 31 (Ramys)",
-        "quality": "720p HD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/30149.ts",
-        "name": "Fonte 32 (Ramys)",
-        "quality": "720p HD"
       }
     ]
   },
@@ -2170,12 +2170,6 @@ export const FALLBACK_CHANNELS: Channel[] = [
     "logo": "https://mondrian.claro.com.br/channels/inverse/investigacao-discovery.png",
     "sources": [
       {
-        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/66aef9f85005844bd5ef797a080b44e7/error.txt",
-        "quality": "Qualidade não informada",
-        "referer": "https://w7.embedtv.cc/",
-        "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
-      },
-      {
         "url": "https://dadinhodetapioca.fun/play/discoveryid.html",
         "quality": "FHD",
         "referer": "https://dadinhodetapioca.fun/"
@@ -2183,10 +2177,6 @@ export const FALLBACK_CHANNELS: Channel[] = [
       {
         "url": "http://45.162.64.114/DISCOVERY_ID/index.m3u8",
         "quality": "HD · 1280x720"
-      },
-      {
-        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/discoveryid/discoveryid.m3u8",
-        "quality": "Qualidade não informada"
       },
       {
         "url": "http://138.204.86.4:8080/ID_HD/index.m3u8",
@@ -2199,6 +2189,16 @@ export const FALLBACK_CHANNELS: Channel[] = [
       {
         "url": "http://64.31.23.207:80/59471019/60849037/297950.m3u8",
         "quality": "SD · 960x540"
+      },
+      {
+        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/discoveryid/discoveryid.m3u8",
+        "quality": "Qualidade não informada"
+      },
+      {
+        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/66aef9f85005844bd5ef797a080b44e7/error.txt",
+        "quality": "Qualidade não informada",
+        "referer": "https://w7.embedtv.cc/",
+        "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
       },
       {
         "url": "http://vaiagora.vip:80/live/5q8VUj/5BeUd8/72150.m3u8",
@@ -2261,15 +2261,68 @@ export const FALLBACK_CHANNELS: Channel[] = [
     "logo": "https://img.faz-o-eli.online/discoverykids.png",
     "sources": [
       {
+        "url": "https://dadinhodetapioca.fun/play/discoverykids.html",
+        "quality": "FHD",
+        "referer": "https://dadinhodetapioca.fun/"
+      },
+      {
+        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1NDA3Lm0zdTg.m3u8",
+        "quality": "FHD"
+      },
+      {
+        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1NDA4Lm0zdTg.m3u8",
+        "quality": "HD"
+      },
+      {
+        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1NDA5Lm0zdTg.m3u8",
+        "quality": "SD"
+      },
+      {
+        "url": "http://138.204.86.4:8080/DISCOVERY_KIDS_HD/index.m3u8",
+        "quality": "HD · 1280x720"
+      },
+      {
+        "url": "http://64.31.23.207:80/59471019/60849037/297946.m3u8",
+        "quality": "HD · 1280x720"
+      },
+      {
+        "url": "http://45.185.11.126:8000/play/a0ad/index.m3u8",
+        "quality": "FHD · 1920x1080"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/125440.ts",
+        "name": "Fonte 27 (Ramys)",
+        "quality": "1080p FHD"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/8742.ts",
+        "name": "Fonte 28 (Ramys)",
+        "quality": "1080p FHD"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/8743.ts",
+        "name": "Fonte 29 (Ramys)",
+        "quality": "720p HD"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/38017.ts",
+        "name": "Fonte 30 (Ramys)",
+        "quality": "720p HD"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/38018.ts",
+        "name": "Fonte 31 (Ramys)",
+        "quality": "720p HD"
+      },
+      {
+        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/discoverykids/discoverykids.m3u8",
+        "quality": "Qualidade não informada"
+      },
+      {
         "url": "https://aws.s13-s1001604.lat/stream/86c15a533bf883acfde634c9b2077da0/discoverykids.m3u8",
         "quality": "HD · 1280x720",
         "referer": "https://meufut.top/discovery-kids",
         "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
-      },
-      {
-        "url": "https://dadinhodetapioca.fun/play/discoverykids.html",
-        "quality": "FHD",
-        "referer": "https://dadinhodetapioca.fun/"
       },
       {
         "url": "https://aws.s13-s1001604.lat/stream/5a43285f2c9b46548851d73ff8ae7190/discoverykids.m3u8",
@@ -2278,26 +2331,10 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
       },
       {
-        "url": "http://138.204.86.4:8080/DISCOVERY_KIDS_HD/index.m3u8",
-        "quality": "HD · 1280x720"
-      },
-      {
-        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/discoverykids/discoverykids.m3u8",
-        "quality": "Qualidade não informada"
-      },
-      {
-        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1NDA3Lm0zdTg.m3u8",
-        "quality": "FHD"
-      },
-      {
         "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/0ce2f30af691ebeb0eab4d07b031c907/error.txt",
         "quality": "Qualidade não informada",
         "referer": "https://w7.embedtv.cc/",
         "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
-      },
-      {
-        "url": "http://64.31.23.207:80/59471019/60849037/297946.m3u8",
-        "quality": "HD · 1280x720"
       },
       {
         "url": "http://vaiagora.vip:80/live/5q8VUj/5BeUd8/90250.m3u8",
@@ -2358,43 +2395,6 @@ export const FALLBACK_CHANNELS: Channel[] = [
       {
         "url": "http://corruptx.org:80/live/hfp5ejnrey/zq0u3kzads/38018.m3u8",
         "quality": "HD"
-      },
-      {
-        "url": "http://45.185.11.126:8000/play/a0ad/index.m3u8",
-        "quality": "FHD · 1920x1080"
-      },
-      {
-        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1NDA4Lm0zdTg.m3u8",
-        "quality": "HD"
-      },
-      {
-        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1NDA5Lm0zdTg.m3u8",
-        "quality": "SD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/125440.ts",
-        "name": "Fonte 27 (Ramys)",
-        "quality": "1080p FHD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/8742.ts",
-        "name": "Fonte 28 (Ramys)",
-        "quality": "1080p FHD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/8743.ts",
-        "name": "Fonte 29 (Ramys)",
-        "quality": "720p HD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/38017.ts",
-        "name": "Fonte 30 (Ramys)",
-        "quality": "720p HD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/38018.ts",
-        "name": "Fonte 31 (Ramys)",
-        "quality": "720p HD"
       }
     ]
   },
@@ -2410,26 +2410,67 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "referer": "https://dadinhodetapioca.fun/"
       },
       {
+        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1MDI2Lm0zdTg.m3u8",
+        "quality": "FHD"
+      },
+      {
+        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1MDI3Lm0zdTg.m3u8",
+        "quality": "HD"
+      },
+      {
+        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1MDI4Lm0zdTg.m3u8",
+        "quality": "SD"
+      },
+      {
         "url": "http://138.204.86.4:8080/DISCOVERY_SCIENCE_HD/index.m3u8",
         "quality": "HD · 1280x720"
+      },
+      {
+        "url": "http://64.31.23.207:80/59471019/60849037/297951.m3u8",
+        "quality": "FHD · 1920x1080"
+      },
+      {
+        "url": "http://332nr7hbfu.xyz:80/live/999913/S3CvUB/71877.m3u8",
+        "quality": "HD · 1280x720"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/91402.ts",
+        "name": "Fonte 26 (Ramys)",
+        "quality": "1080p FHD"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/13509.ts",
+        "name": "Fonte 27 (Ramys)"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/8745.ts",
+        "name": "Fonte 28 (Ramys)",
+        "quality": "1080p FHD"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/8746.ts",
+        "name": "Fonte 29 (Ramys)",
+        "quality": "720p HD"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/93903.ts",
+        "name": "Fonte 30 (Ramys)",
+        "quality": "720p HD"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/30151.ts",
+        "name": "Fonte 31 (Ramys)",
+        "quality": "720p HD"
       },
       {
         "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/discoveryscience/discoveryscience.m3u8",
         "quality": "Qualidade não informada"
       },
       {
-        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1MDI2Lm0zdTg.m3u8",
-        "quality": "FHD"
-      },
-      {
         "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/906736bd7449e0b498e4d470b0f68b1e/error.txt",
         "quality": "Qualidade não informada",
         "referer": "https://w7.embedtv.cc/",
         "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
-      },
-      {
-        "url": "http://64.31.23.207:80/59471019/60849037/297951.m3u8",
-        "quality": "FHD · 1920x1080"
       },
       {
         "url": "http://vaiagora.vip:80/live/5q8VUj/5BeUd8/103511.m3u8",
@@ -2494,47 +2535,6 @@ export const FALLBACK_CHANNELS: Channel[] = [
       {
         "url": "http://corruptx.org:80/live/hfp5ejnrey/zq0u3kzads/30151.m3u8",
         "quality": "HD"
-      },
-      {
-        "url": "http://332nr7hbfu.xyz:80/live/999913/S3CvUB/71877.m3u8",
-        "quality": "HD · 1280x720"
-      },
-      {
-        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1MDI3Lm0zdTg.m3u8",
-        "quality": "HD"
-      },
-      {
-        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1MDI4Lm0zdTg.m3u8",
-        "quality": "SD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/91402.ts",
-        "name": "Fonte 26 (Ramys)",
-        "quality": "1080p FHD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/13509.ts",
-        "name": "Fonte 27 (Ramys)"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/8745.ts",
-        "name": "Fonte 28 (Ramys)",
-        "quality": "1080p FHD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/8746.ts",
-        "name": "Fonte 29 (Ramys)",
-        "quality": "720p HD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/93903.ts",
-        "name": "Fonte 30 (Ramys)",
-        "quality": "720p HD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/30151.ts",
-        "name": "Fonte 31 (Ramys)",
-        "quality": "720p HD"
       }
     ]
   },
@@ -2550,22 +2550,20 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "referer": "https://dadinhodetapioca.fun/"
       },
       {
-        "url": "http://138.204.86.4:8080/DISCOVERY_THEATER_HD/index.m3u8",
-        "quality": "HD · 1280x720"
-      },
-      {
-        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/discoverytheather/discoverytheather.m3u8",
-        "quality": "Qualidade não informada"
-      },
-      {
         "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1MDMwLm0zdTg.m3u8",
         "quality": "FHD"
       },
       {
-        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/53bc92aa7cade39f054816d89f5d24bd/error.txt",
-        "quality": "Qualidade não informada",
-        "referer": "https://w7.embedtv.cc/",
-        "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
+        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1MDMxLm0zdTg.m3u8",
+        "quality": "HD"
+      },
+      {
+        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1MDMyLm0zdTg.m3u8",
+        "quality": "SD"
+      },
+      {
+        "url": "http://138.204.86.4:8080/DISCOVERY_THEATER_HD/index.m3u8",
+        "quality": "HD · 1280x720"
       },
       {
         "url": "http://64.31.23.207:80/59471019/60849037/297954.m3u8",
@@ -2574,6 +2572,49 @@ export const FALLBACK_CHANNELS: Channel[] = [
       {
         "url": "http://64.31.23.207:80/59471019/60849037/297956.m3u8",
         "quality": "SD · 768x432"
+      },
+      {
+        "url": "http://45.185.11.126:8000/play/a085/index.m3u8",
+        "quality": "FHD · 1920x1080"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/91401.ts",
+        "name": "Fonte 27 (Ramys)",
+        "quality": "1080p FHD"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/13510.ts",
+        "name": "Fonte 28 (Ramys)"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/8748.ts",
+        "name": "Fonte 29 (Ramys)",
+        "quality": "1080p FHD"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/8751.ts",
+        "name": "Fonte 30 (Ramys)",
+        "quality": "720p HD"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/93904.ts",
+        "name": "Fonte 31 (Ramys)",
+        "quality": "720p HD"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/30153.ts",
+        "name": "Fonte 32 (Ramys)",
+        "quality": "720p HD"
+      },
+      {
+        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/discoverytheather/discoverytheather.m3u8",
+        "quality": "Qualidade não informada"
+      },
+      {
+        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/53bc92aa7cade39f054816d89f5d24bd/error.txt",
+        "quality": "Qualidade não informada",
+        "referer": "https://w7.embedtv.cc/",
+        "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
       },
       {
         "url": "http://vaiagora.vip:80/live/5q8VUj/5BeUd8/103510.m3u8",
@@ -2638,47 +2679,6 @@ export const FALLBACK_CHANNELS: Channel[] = [
       {
         "url": "http://corruptx.org:80/live/hfp5ejnrey/zq0u3kzads/30153.m3u8",
         "quality": "HD"
-      },
-      {
-        "url": "http://45.185.11.126:8000/play/a085/index.m3u8",
-        "quality": "FHD · 1920x1080"
-      },
-      {
-        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1MDMxLm0zdTg.m3u8",
-        "quality": "HD"
-      },
-      {
-        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1MDMyLm0zdTg.m3u8",
-        "quality": "SD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/91401.ts",
-        "name": "Fonte 27 (Ramys)",
-        "quality": "1080p FHD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/13510.ts",
-        "name": "Fonte 28 (Ramys)"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/8748.ts",
-        "name": "Fonte 29 (Ramys)",
-        "quality": "1080p FHD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/8751.ts",
-        "name": "Fonte 30 (Ramys)",
-        "quality": "720p HD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/93904.ts",
-        "name": "Fonte 31 (Ramys)",
-        "quality": "720p HD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/30153.ts",
-        "name": "Fonte 32 (Ramys)",
-        "quality": "720p HD"
       }
     ]
   },
@@ -2716,38 +2716,24 @@ export const FALLBACK_CHANNELS: Channel[] = [
     "logo": "https://img.faz-o-eli.online/discoveryturbo.png",
     "sources": [
       {
-        "url": "https://aws.s13-s1001604.lat/stream/2e2f7fcdd9620e2618134f77cfb70e16/discoveryturbo.m3u8",
-        "quality": "HD · 1280x720",
-        "referer": "https://meufut.top/discovery-turbo",
-        "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
+        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1MDM0Lm0zdTg.m3u8",
+        "quality": "FHD"
+      },
+      {
+        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1MDM1Lm0zdTg.m3u8",
+        "quality": "HD"
+      },
+      {
+        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1MDM2Lm0zdTg.m3u8",
+        "quality": "SD"
       },
       {
         "url": "http://45.162.64.114/DISCOVERY_TURBO/index.m3u8",
         "quality": "HD · 1280x720"
       },
       {
-        "url": "https://aws.s13-s1001604.lat/stream/509a51408c36ab03ff0b43e6f4d571bc/discoveryturbo.m3u8",
-        "quality": "HD · 1280x720",
-        "referer": "https://meufut.top/discovery-turbo",
-        "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
-      },
-      {
-        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/discoveryturbo/discoveryturbo.m3u8",
-        "quality": "Qualidade não informada"
-      },
-      {
         "url": "http://138.204.86.4:8080/DISCOVERY_TURBO_HD/index.m3u8",
         "quality": "HD · 1280x720"
-      },
-      {
-        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1MDM0Lm0zdTg.m3u8",
-        "quality": "FHD"
-      },
-      {
-        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/40eb11d05b4b31fccaadda44f0192c96/error.txt",
-        "quality": "Qualidade não informada",
-        "referer": "https://w7.embedtv.cc/",
-        "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
       },
       {
         "url": "http://64.31.23.207:80/59471019/60849037/297942.m3u8",
@@ -2776,6 +2762,61 @@ export const FALLBACK_CHANNELS: Channel[] = [
       {
         "url": "http://64.31.23.207:80/59471019/60849037/518558.m3u8",
         "quality": "SD · 768x432"
+      },
+      {
+        "url": "http://45.185.11.126:8000/play/a07z/index.m3u8",
+        "quality": "FHD · 1920x1080"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/91399.ts",
+        "name": "Fonte 32 (Ramys)",
+        "quality": "1080p FHD"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/13512.ts",
+        "name": "Fonte 33 (Ramys)"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/8755.ts",
+        "name": "Fonte 34 (Ramys)",
+        "quality": "1080p FHD"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/8756.ts",
+        "name": "Fonte 35 (Ramys)",
+        "quality": "720p HD"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/30156.ts",
+        "name": "Fonte 36 (Ramys)",
+        "quality": "720p HD"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/30155.ts",
+        "name": "Fonte 37 (Ramys)",
+        "quality": "720p HD"
+      },
+      {
+        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/discoveryturbo/discoveryturbo.m3u8",
+        "quality": "Qualidade não informada"
+      },
+      {
+        "url": "https://aws.s13-s1001604.lat/stream/2e2f7fcdd9620e2618134f77cfb70e16/discoveryturbo.m3u8",
+        "quality": "HD · 1280x720",
+        "referer": "https://meufut.top/discovery-turbo",
+        "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
+      },
+      {
+        "url": "https://aws.s13-s1001604.lat/stream/509a51408c36ab03ff0b43e6f4d571bc/discoveryturbo.m3u8",
+        "quality": "HD · 1280x720",
+        "referer": "https://meufut.top/discovery-turbo",
+        "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
+      },
+      {
+        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/40eb11d05b4b31fccaadda44f0192c96/error.txt",
+        "quality": "Qualidade não informada",
+        "referer": "https://w7.embedtv.cc/",
+        "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
       },
       {
         "url": "http://vaiagora.vip:80/live/5q8VUj/5BeUd8/90641.m3u8",
@@ -2832,47 +2873,6 @@ export const FALLBACK_CHANNELS: Channel[] = [
       {
         "url": "http://corruptx.org:80/live/hfp5ejnrey/zq0u3kzads/30155.m3u8",
         "quality": "HD"
-      },
-      {
-        "url": "http://45.185.11.126:8000/play/a07z/index.m3u8",
-        "quality": "FHD · 1920x1080"
-      },
-      {
-        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1MDM1Lm0zdTg.m3u8",
-        "quality": "HD"
-      },
-      {
-        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1MDM2Lm0zdTg.m3u8",
-        "quality": "SD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/91399.ts",
-        "name": "Fonte 32 (Ramys)",
-        "quality": "1080p FHD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/13512.ts",
-        "name": "Fonte 33 (Ramys)"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/8755.ts",
-        "name": "Fonte 34 (Ramys)",
-        "quality": "1080p FHD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/8756.ts",
-        "name": "Fonte 35 (Ramys)",
-        "quality": "720p HD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/30156.ts",
-        "name": "Fonte 36 (Ramys)",
-        "quality": "720p HD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/30155.ts",
-        "name": "Fonte 37 (Ramys)",
-        "quality": "720p HD"
       }
     ]
   },
@@ -2888,20 +2888,61 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "referer": "https://dadinhodetapioca.fun/"
       },
       {
-        "url": "http://45.162.64.114/DISCOVERY_WORLD/index.m3u8",
-        "quality": "HD · 1280x720"
+        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1MDM4Lm0zdTg.m3u8",
+        "quality": "FHD"
       },
       {
-        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/discoveryworld/discoveryworld.m3u8",
-        "quality": "Qualidade não informada"
+        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1MDM5Lm0zdTg.m3u8",
+        "quality": "HD"
+      },
+      {
+        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1MDQwLm0zdTg.m3u8",
+        "quality": "SD"
+      },
+      {
+        "url": "http://45.162.64.114/DISCOVERY_WORLD/index.m3u8",
+        "quality": "HD · 1280x720"
       },
       {
         "url": "http://138.204.86.4:8080/DISCOVERY_WORLD_HD/index.m3u8",
         "quality": "HD · 1280x720"
       },
       {
-        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1MDM4Lm0zdTg.m3u8",
-        "quality": "FHD"
+        "url": "http://332nr7hbfu.xyz:80/live/999913/S3CvUB/71887.m3u8",
+        "quality": "FHD · 1920x1080"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/91398.ts",
+        "name": "Fonte 26 (Ramys)",
+        "quality": "1080p FHD"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/13513.ts",
+        "name": "Fonte 27 (Ramys)"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/8758.ts",
+        "name": "Fonte 28 (Ramys)",
+        "quality": "1080p FHD"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/8759.ts",
+        "name": "Fonte 29 (Ramys)",
+        "quality": "720p HD"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/93905.ts",
+        "name": "Fonte 30 (Ramys)",
+        "quality": "720p HD"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/30157.ts",
+        "name": "Fonte 31 (Ramys)",
+        "quality": "720p HD"
+      },
+      {
+        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/discoveryworld/discoveryworld.m3u8",
+        "quality": "Qualidade não informada"
       },
       {
         "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/12071a9b4b353521e7ba660c30e4428d/error.txt",
@@ -2972,47 +3013,6 @@ export const FALLBACK_CHANNELS: Channel[] = [
       {
         "url": "http://corruptx.org:80/live/hfp5ejnrey/zq0u3kzads/30157.m3u8",
         "quality": "HD"
-      },
-      {
-        "url": "http://332nr7hbfu.xyz:80/live/999913/S3CvUB/71887.m3u8",
-        "quality": "FHD · 1920x1080"
-      },
-      {
-        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1MDM5Lm0zdTg.m3u8",
-        "quality": "HD"
-      },
-      {
-        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1MDQwLm0zdTg.m3u8",
-        "quality": "SD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/91398.ts",
-        "name": "Fonte 26 (Ramys)",
-        "quality": "1080p FHD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/13513.ts",
-        "name": "Fonte 27 (Ramys)"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/8758.ts",
-        "name": "Fonte 28 (Ramys)",
-        "quality": "1080p FHD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/8759.ts",
-        "name": "Fonte 29 (Ramys)",
-        "quality": "720p HD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/93905.ts",
-        "name": "Fonte 30 (Ramys)",
-        "quality": "720p HD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/30157.ts",
-        "name": "Fonte 31 (Ramys)",
-        "quality": "720p HD"
       }
     ]
   },
@@ -3023,39 +3023,25 @@ export const FALLBACK_CHANNELS: Channel[] = [
     "logo": "https://img.faz-o-eli.online/history.png",
     "sources": [
       {
-        "url": "https://aws.s13-s1001604.lat/stream/575a47cf188e44f46687363629749b7f/history.m3u8",
-        "quality": "HD · 1280x720",
-        "referer": "https://meufut.top/history",
-        "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
-      },
-      {
-        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/03b263d45890d365b1c558fbfb2540d9/error.txt",
-        "quality": "Qualidade não informada",
-        "referer": "https://w7.embedtv.cc/",
-        "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
-      },
-      {
         "url": "https://dadinhodetapioca.fun/play/history.html",
         "quality": "FHD",
         "referer": "https://dadinhodetapioca.fun/"
       },
       {
-        "url": "https://aws.s13-s1001604.lat/stream/b7f760cafffad9e253824034a05a8138/history.m3u8",
-        "quality": "HD · 1280x720",
-        "referer": "https://meufut.top/history",
-        "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
+        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1MDUwLm0zdTg.m3u8",
+        "quality": "FHD"
+      },
+      {
+        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1MDUxLm0zdTg.m3u8",
+        "quality": "HD"
+      },
+      {
+        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1MDUyLm0zdTg.m3u8",
+        "quality": "SD"
       },
       {
         "url": "http://138.204.86.4:8080/HISTORY_HD/index.m3u8",
         "quality": "HD · 1280x720"
-      },
-      {
-        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/history/history.m3u8",
-        "quality": "Qualidade não informada"
-      },
-      {
-        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1MDUwLm0zdTg.m3u8",
-        "quality": "FHD"
       },
       {
         "url": "http://46.151.196.223:14410",
@@ -3080,6 +3066,51 @@ export const FALLBACK_CHANNELS: Channel[] = [
       {
         "url": "http://64.31.23.207:80/59471019/60849037/296615.m3u8",
         "quality": "SD · 768x432"
+      },
+      {
+        "url": "http://45.185.11.126:8000/play/a0al/index.m3u8",
+        "quality": "FHD · 1920x1080"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/304495.ts",
+        "name": "Fonte 31 (Ramys)",
+        "quality": "1080p FHD"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/304497.ts",
+        "name": "Fonte 32 (Ramys)"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/304494.ts",
+        "name": "Fonte 33 (Ramys)",
+        "quality": "1080p FHD"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/304496.ts",
+        "name": "Fonte 34 (Ramys)",
+        "quality": "720p HD"
+      },
+      {
+        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/history/history.m3u8",
+        "quality": "Qualidade não informada"
+      },
+      {
+        "url": "https://aws.s13-s1001604.lat/stream/575a47cf188e44f46687363629749b7f/history.m3u8",
+        "quality": "HD · 1280x720",
+        "referer": "https://meufut.top/history",
+        "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
+      },
+      {
+        "url": "https://aws.s13-s1001604.lat/stream/b7f760cafffad9e253824034a05a8138/history.m3u8",
+        "quality": "HD · 1280x720",
+        "referer": "https://meufut.top/history",
+        "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
+      },
+      {
+        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/03b263d45890d365b1c558fbfb2540d9/error.txt",
+        "quality": "Qualidade não informada",
+        "referer": "https://w7.embedtv.cc/",
+        "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
       },
       {
         "url": "http://vaiagora.vip:80/live/5q8VUj/5BeUd8/90244.m3u8",
@@ -3136,37 +3167,6 @@ export const FALLBACK_CHANNELS: Channel[] = [
       {
         "url": "http://corruptx.org:80/live/hfp5ejnrey/zq0u3kzads/304496.m3u8",
         "quality": "HD"
-      },
-      {
-        "url": "http://45.185.11.126:8000/play/a0al/index.m3u8",
-        "quality": "FHD · 1920x1080"
-      },
-      {
-        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1MDUxLm0zdTg.m3u8",
-        "quality": "HD"
-      },
-      {
-        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1MDUyLm0zdTg.m3u8",
-        "quality": "SD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/304495.ts",
-        "name": "Fonte 31 (Ramys)",
-        "quality": "1080p FHD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/304497.ts",
-        "name": "Fonte 32 (Ramys)"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/304494.ts",
-        "name": "Fonte 33 (Ramys)",
-        "quality": "1080p FHD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/304496.ts",
-        "name": "Fonte 34 (Ramys)",
-        "quality": "720p HD"
       }
     ]
   },
@@ -3177,19 +3177,9 @@ export const FALLBACK_CHANNELS: Channel[] = [
     "logo": "https://img.faz-o-eli.online/history2.png",
     "sources": [
       {
-        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/d3f60f62492ba516571cb0c2e1986bb9/error.txt",
-        "quality": "Qualidade não informada",
-        "referer": "https://w7.embedtv.cc/",
-        "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
-      },
-      {
         "url": "https://dadinhodetapioca.fun/play/history2.html",
         "quality": "FHD",
         "referer": "https://dadinhodetapioca.fun/"
-      },
-      {
-        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/history2/history2.m3u8",
-        "quality": "Qualidade não informada"
       },
       {
         "url": "http://64.31.23.207:80/59471019/60849037/296617.m3u8",
@@ -3198,6 +3188,35 @@ export const FALLBACK_CHANNELS: Channel[] = [
       {
         "url": "http://64.31.23.207:80/59471019/60849037/296618.m3u8",
         "quality": "SD · 768x432"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/304499.ts",
+        "name": "Fonte 18 (Ramys)",
+        "quality": "1080p FHD"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/304501.ts",
+        "name": "Fonte 19 (Ramys)"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/304498.ts",
+        "name": "Fonte 20 (Ramys)",
+        "quality": "1080p FHD"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/304500.ts",
+        "name": "Fonte 21 (Ramys)",
+        "quality": "720p HD"
+      },
+      {
+        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/history2/history2.m3u8",
+        "quality": "Qualidade não informada"
+      },
+      {
+        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/d3f60f62492ba516571cb0c2e1986bb9/error.txt",
+        "quality": "Qualidade não informada",
+        "referer": "https://w7.embedtv.cc/",
+        "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
       },
       {
         "url": "http://vaiagora.vip:80/live/5q8VUj/5BeUd8/90245.m3u8",
@@ -3246,25 +3265,6 @@ export const FALLBACK_CHANNELS: Channel[] = [
       {
         "url": "http://corruptx.org:80/live/hfp5ejnrey/zq0u3kzads/304500.m3u8",
         "quality": "HD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/304499.ts",
-        "name": "Fonte 18 (Ramys)",
-        "quality": "1080p FHD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/304501.ts",
-        "name": "Fonte 19 (Ramys)"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/304498.ts",
-        "name": "Fonte 20 (Ramys)",
-        "quality": "1080p FHD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/304500.ts",
-        "name": "Fonte 21 (Ramys)",
-        "quality": "720p HD"
       }
     ]
   },
@@ -3320,23 +3320,64 @@ export const FALLBACK_CHANNELS: Channel[] = [
     "logo": "https://img.faz-o-eli.online/amc.png",
     "sources": [
       {
-        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/bd2aca80ba2bb4c9c7d58b110dd9f96c/error.txt",
-        "quality": "Qualidade não informada",
-        "referer": "https://w7.embedtv.cc/",
-        "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
-      },
-      {
         "url": "https://dadinhodetapioca.fun/play/amc.html",
         "quality": "FHD",
         "referer": "https://dadinhodetapioca.fun/"
+      },
+      {
+        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1Mjk0Lm0zdTg.m3u8",
+        "quality": "FHD"
+      },
+      {
+        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1Mjk1Lm0zdTg.m3u8",
+        "quality": "HD"
+      },
+      {
+        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1Mjk2Lm0zdTg.m3u8",
+        "quality": "SD"
+      },
+      {
+        "url": "http://45.185.11.126:8000/play/a06s/index.m3u8",
+        "quality": "FHD · 1920x1080"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/81601.ts",
+        "name": "Fonte 22 (Ramys)",
+        "quality": "1080p FHD"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/13498.ts",
+        "name": "Fonte 23 (Ramys)"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/23687.ts",
+        "name": "Fonte 24 (Ramys)",
+        "quality": "1080p FHD"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/23688.ts",
+        "name": "Fonte 25 (Ramys)",
+        "quality": "720p HD"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/35226.ts",
+        "name": "Fonte 26 (Ramys)",
+        "quality": "720p HD"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/35227.ts",
+        "name": "Fonte 27 (Ramys)",
+        "quality": "720p HD"
       },
       {
         "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/amc/amc.m3u8",
         "quality": "HD · 1280x720"
       },
       {
-        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1Mjk0Lm0zdTg.m3u8",
-        "quality": "FHD"
+        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/bd2aca80ba2bb4c9c7d58b110dd9f96c/error.txt",
+        "quality": "Qualidade não informada",
+        "referer": "https://w7.embedtv.cc/",
+        "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
       },
       {
         "url": "http://vaiagora.vip:80/live/5q8VUj/5BeUd8/90646.m3u8",
@@ -3393,47 +3434,6 @@ export const FALLBACK_CHANNELS: Channel[] = [
       {
         "url": "http://corruptx.org:80/live/hfp5ejnrey/zq0u3kzads/23688.m3u8",
         "quality": "HD"
-      },
-      {
-        "url": "http://45.185.11.126:8000/play/a06s/index.m3u8",
-        "quality": "FHD · 1920x1080"
-      },
-      {
-        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1Mjk1Lm0zdTg.m3u8",
-        "quality": "HD"
-      },
-      {
-        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1Mjk2Lm0zdTg.m3u8",
-        "quality": "SD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/81601.ts",
-        "name": "Fonte 22 (Ramys)",
-        "quality": "1080p FHD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/13498.ts",
-        "name": "Fonte 23 (Ramys)"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/23687.ts",
-        "name": "Fonte 24 (Ramys)",
-        "quality": "1080p FHD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/23688.ts",
-        "name": "Fonte 25 (Ramys)",
-        "quality": "720p HD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/35226.ts",
-        "name": "Fonte 26 (Ramys)",
-        "quality": "720p HD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/35227.ts",
-        "name": "Fonte 27 (Ramys)",
-        "quality": "720p HD"
       }
     ]
   },
@@ -3468,27 +3468,25 @@ export const FALLBACK_CHANNELS: Channel[] = [
     "logo": "https://img.faz-o-eli.online/axn.png",
     "sources": [
       {
-        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/808f75177af4a3cf8fd010cbc3433db2/error.txt",
-        "quality": "Qualidade não informada",
-        "referer": "https://w7.embedtv.cc/",
-        "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
-      },
-      {
         "url": "https://dadinhodetapioca.fun/play/axn.html",
         "quality": "FHD",
         "referer": "https://dadinhodetapioca.fun/"
       },
       {
-        "url": "http://138.204.86.4:8080/AXN_HD/index.m3u8",
-        "quality": "HD · 1280x720"
-      },
-      {
-        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/axn/axn.m3u8",
-        "quality": "HD · 1280x720"
-      },
-      {
         "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1Mjk4Lm0zdTg.m3u8",
         "quality": "FHD"
+      },
+      {
+        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1Mjk5Lm0zdTg.m3u8",
+        "quality": "HD"
+      },
+      {
+        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1MzAwLm0zdTg.m3u8",
+        "quality": "SD"
+      },
+      {
+        "url": "http://138.204.86.4:8080/AXN_HD/index.m3u8",
+        "quality": "HD · 1280x720"
       },
       {
         "url": "http://170.83.16.50/AXN/index.m3u8",
@@ -3497,6 +3495,57 @@ export const FALLBACK_CHANNELS: Channel[] = [
       {
         "url": "http://170.83.49.66:8083/AXNHD/index.m3u8",
         "quality": "FHD · 1920x1080"
+      },
+      {
+        "url": "http://332nr7hbfu.xyz:80/live/999913/S3CvUB/71783.m3u8",
+        "quality": "HD · 1280x720"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/81600.ts",
+        "name": "Fonte 25 (Ramys)",
+        "quality": "1080p FHD"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/13500.ts",
+        "name": "Fonte 26 (Ramys)"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/23691.ts",
+        "name": "Fonte 27 (Ramys)",
+        "quality": "1080p FHD"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/23692.ts",
+        "name": "Fonte 28 (Ramys)",
+        "quality": "720p HD"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/35228.ts",
+        "name": "Fonte 29 (Ramys)",
+        "quality": "720p HD"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/35229.ts",
+        "name": "Fonte 30 (Ramys)",
+        "quality": "720p HD"
+      },
+      {
+        "url": "http://znty.dyndns.org:5010/hls/axn.m3u8",
+        "name": "Fonte 31 (IPTV-ORG)"
+      },
+      {
+        "url": "http://188.115.15.121:8000/play/a02z",
+        "name": "Fonte 32 (IPTV-ORG)"
+      },
+      {
+        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/axn/axn.m3u8",
+        "quality": "HD · 1280x720"
+      },
+      {
+        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/808f75177af4a3cf8fd010cbc3433db2/error.txt",
+        "quality": "Qualidade não informada",
+        "referer": "https://w7.embedtv.cc/",
+        "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
       },
       {
         "url": "http://vaiagora.vip:80/live/5q8VUj/5BeUd8/90645.m3u8",
@@ -3553,55 +3602,6 @@ export const FALLBACK_CHANNELS: Channel[] = [
       {
         "url": "http://corruptx.org:80/live/hfp5ejnrey/zq0u3kzads/23692.m3u8",
         "quality": "HD"
-      },
-      {
-        "url": "http://332nr7hbfu.xyz:80/live/999913/S3CvUB/71783.m3u8",
-        "quality": "HD · 1280x720"
-      },
-      {
-        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1Mjk5Lm0zdTg.m3u8",
-        "quality": "HD"
-      },
-      {
-        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1MzAwLm0zdTg.m3u8",
-        "quality": "SD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/81600.ts",
-        "name": "Fonte 25 (Ramys)",
-        "quality": "1080p FHD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/13500.ts",
-        "name": "Fonte 26 (Ramys)"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/23691.ts",
-        "name": "Fonte 27 (Ramys)",
-        "quality": "1080p FHD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/23692.ts",
-        "name": "Fonte 28 (Ramys)",
-        "quality": "720p HD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/35228.ts",
-        "name": "Fonte 29 (Ramys)",
-        "quality": "720p HD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/35229.ts",
-        "name": "Fonte 30 (Ramys)",
-        "quality": "720p HD"
-      },
-      {
-        "url": "http://znty.dyndns.org:5010/hls/axn.m3u8",
-        "name": "Fonte 31 (IPTV-ORG)"
-      },
-      {
-        "url": "http://188.115.15.121:8000/play/a02z",
-        "name": "Fonte 32 (IPTV-ORG)"
       }
     ]
   },
@@ -3623,6 +3623,10 @@ export const FALLBACK_CHANNELS: Channel[] = [
     "category": "Filmes e Séries",
     "logo": "",
     "sources": [
+      {
+        "url": "http://332nr7hbfu.xyz:80/live/999913/S3CvUB/317063.m3u8",
+        "quality": "FHD · 1920x1080"
+      },
       {
         "url": "http://vaiagora.vip:80/live/5q8VUj/5BeUd8/317063.m3u8",
         "quality": "FHD"
@@ -3646,10 +3650,6 @@ export const FALLBACK_CHANNELS: Channel[] = [
       {
         "url": "http://vivlar.me:80/live/497238/KK8Kdy/317065.m3u8",
         "quality": "SD"
-      },
-      {
-        "url": "http://332nr7hbfu.xyz:80/live/999913/S3CvUB/317063.m3u8",
-        "quality": "FHD · 1920x1080"
       }
     ]
   },
@@ -3662,6 +3662,43 @@ export const FALLBACK_CHANNELS: Channel[] = [
       {
         "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1MzAyLm0zdTg.m3u8",
         "quality": "FHD"
+      },
+      {
+        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1MzAzLm0zdTg.m3u8",
+        "quality": "HD"
+      },
+      {
+        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1MzA0Lm0zdTg.m3u8",
+        "quality": "SD"
+      },
+      {
+        "url": "http://332nr7hbfu.xyz:80/live/999913/S3CvUB/71816.m3u8",
+        "quality": "FHD · 1920x1080"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/107979.ts",
+        "name": "Fonte 16 (Ramys)",
+        "quality": "1080p FHD"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/8691.ts",
+        "name": "Fonte 17 (Ramys)",
+        "quality": "1080p FHD"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/8692.ts",
+        "name": "Fonte 18 (Ramys)",
+        "quality": "720p HD"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/35230.ts",
+        "name": "Fonte 19 (Ramys)",
+        "quality": "720p HD"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/35231.ts",
+        "name": "Fonte 20 (Ramys)",
+        "quality": "720p HD"
       },
       {
         "url": "http://vaiagora.vip:80/live/5q8VUj/5BeUd8/103518.m3u8",
@@ -3706,43 +3743,6 @@ export const FALLBACK_CHANNELS: Channel[] = [
       {
         "url": "http://corruptx.org:80/live/hfp5ejnrey/zq0u3kzads/107979.m3u8",
         "quality": "FHD"
-      },
-      {
-        "url": "http://332nr7hbfu.xyz:80/live/999913/S3CvUB/71816.m3u8",
-        "quality": "FHD · 1920x1080"
-      },
-      {
-        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1MzAzLm0zdTg.m3u8",
-        "quality": "HD"
-      },
-      {
-        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1MzA0Lm0zdTg.m3u8",
-        "quality": "SD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/107979.ts",
-        "name": "Fonte 16 (Ramys)",
-        "quality": "1080p FHD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/8691.ts",
-        "name": "Fonte 17 (Ramys)",
-        "quality": "1080p FHD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/8692.ts",
-        "name": "Fonte 18 (Ramys)",
-        "quality": "720p HD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/35230.ts",
-        "name": "Fonte 19 (Ramys)",
-        "quality": "720p HD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/35231.ts",
-        "name": "Fonte 20 (Ramys)",
-        "quality": "720p HD"
       }
     ]
   },
@@ -3753,12 +3753,12 @@ export const FALLBACK_CHANNELS: Channel[] = [
     "logo": "http://www.fontedecanais.dev/logos/canais/cinesky.png",
     "sources": [
       {
-        "url": "http://corruptx.org:80/live/hfp5ejnrey/zq0u3kzads/13071.m3u8",
-        "quality": "Qualidade não informada"
-      },
-      {
         "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/13071.ts",
         "name": "Fonte 2 (Ramys)"
+      },
+      {
+        "url": "http://corruptx.org:80/live/hfp5ejnrey/zq0u3kzads/13071.m3u8",
+        "quality": "Qualidade não informada"
       }
     ]
   },
@@ -3769,12 +3769,12 @@ export const FALLBACK_CHANNELS: Channel[] = [
     "logo": "http://www.fontedecanais.org/logos/canais/cinesky.png",
     "sources": [
       {
-        "url": "http://corruptx.org:80/live/hfp5ejnrey/zq0u3kzads/13072.m3u8",
-        "quality": "HD · 1920x804"
-      },
-      {
         "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/13072.ts",
         "name": "Fonte 2 (Ramys)"
+      },
+      {
+        "url": "http://corruptx.org:80/live/hfp5ejnrey/zq0u3kzads/13072.m3u8",
+        "quality": "HD · 1920x804"
       }
     ]
   },
@@ -3785,12 +3785,12 @@ export const FALLBACK_CHANNELS: Channel[] = [
     "logo": "http://www.fontedecanais.org/logos/canais/cinesky.png",
     "sources": [
       {
-        "url": "http://corruptx.org:80/live/hfp5ejnrey/zq0u3kzads/13073.m3u8",
-        "quality": "HD · 1920x800"
-      },
-      {
         "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/13073.ts",
         "name": "Fonte 2 (Ramys)"
+      },
+      {
+        "url": "http://corruptx.org:80/live/hfp5ejnrey/zq0u3kzads/13073.m3u8",
+        "quality": "HD · 1920x800"
       }
     ]
   },
@@ -3801,12 +3801,12 @@ export const FALLBACK_CHANNELS: Channel[] = [
     "logo": "http://www.fontedecanais.org/logos/canais/cinesky.png",
     "sources": [
       {
-        "url": "http://corruptx.org:80/live/hfp5ejnrey/zq0u3kzads/13075.m3u8",
-        "quality": "FHD · 1920x1080"
-      },
-      {
         "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/13075.ts",
         "name": "Fonte 2 (Ramys)"
+      },
+      {
+        "url": "http://corruptx.org:80/live/hfp5ejnrey/zq0u3kzads/13075.m3u8",
+        "quality": "FHD · 1920x1080"
       }
     ]
   },
@@ -3817,7 +3817,56 @@ export const FALLBACK_CHANNELS: Channel[] = [
     "logo": "https://img.faz-o-eli.online/cinemax.png",
     "sources": [
       {
+        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1MzA5Lm0zdTg.m3u8",
+        "quality": "FHD"
+      },
+      {
+        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1MzEwLm0zdTg.m3u8",
+        "quality": "HD"
+      },
+      {
+        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1MzExLm0zdTg.m3u8",
+        "quality": "SD"
+      },
+      {
         "url": "http://138.204.86.4:8080/CINEMAX/index.m3u8",
+        "quality": "HD · 1280x720"
+      },
+      {
+        "url": "http://45.185.11.126:8000/play/a081/index.m3u8",
+        "quality": "FHD · 1920x1080"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/107978.ts",
+        "name": "Fonte 22 (Ramys)",
+        "quality": "1080p FHD"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/13505.ts",
+        "name": "Fonte 23 (Ramys)"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/8708.ts",
+        "name": "Fonte 24 (Ramys)",
+        "quality": "1080p FHD"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/8709.ts",
+        "name": "Fonte 25 (Ramys)",
+        "quality": "720p HD"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/35232.ts",
+        "name": "Fonte 26 (Ramys)",
+        "quality": "720p HD"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/35233.ts",
+        "name": "Fonte 27 (Ramys)",
+        "quality": "720p HD"
+      },
+      {
+        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/cinemax/cinemax.m3u8",
         "quality": "HD · 1280x720"
       },
       {
@@ -3825,14 +3874,6 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "quality": "Qualidade não informada",
         "referer": "https://w7.embedtv.cc/",
         "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
-      },
-      {
-        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/cinemax/cinemax.m3u8",
-        "quality": "HD · 1280x720"
-      },
-      {
-        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1MzA5Lm0zdTg.m3u8",
-        "quality": "FHD"
       },
       {
         "url": "http://vaiagora.vip:80/live/5q8VUj/5BeUd8/90643.m3u8",
@@ -3889,47 +3930,6 @@ export const FALLBACK_CHANNELS: Channel[] = [
       {
         "url": "http://corruptx.org:80/live/hfp5ejnrey/zq0u3kzads/8709.m3u8",
         "quality": "HD"
-      },
-      {
-        "url": "http://45.185.11.126:8000/play/a081/index.m3u8",
-        "quality": "FHD · 1920x1080"
-      },
-      {
-        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1MzEwLm0zdTg.m3u8",
-        "quality": "HD"
-      },
-      {
-        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1MzExLm0zdTg.m3u8",
-        "quality": "SD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/107978.ts",
-        "name": "Fonte 22 (Ramys)",
-        "quality": "1080p FHD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/13505.ts",
-        "name": "Fonte 23 (Ramys)"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/8708.ts",
-        "name": "Fonte 24 (Ramys)",
-        "quality": "1080p FHD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/8709.ts",
-        "name": "Fonte 25 (Ramys)",
-        "quality": "720p HD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/35232.ts",
-        "name": "Fonte 26 (Ramys)",
-        "quality": "720p HD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/35233.ts",
-        "name": "Fonte 27 (Ramys)",
-        "quality": "720p HD"
       }
     ]
   },
@@ -3952,14 +3952,14 @@ export const FALLBACK_CHANNELS: Channel[] = [
     "logo": "https://vipcanais.net/images/disneyplus.png",
     "sources": [
       {
+        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/disneyplus1/disneyplus1.m3u8",
+        "quality": "Qualidade não informada"
+      },
+      {
         "url": "https://aws.s13-s1001604.lat/stream/2eecadabcdddd90849d70c752a70c0e0/disneyplus1.m3u8",
         "quality": "HD · 1280x720",
         "referer": "https://meufut.top/disney-plus",
         "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
-      },
-      {
-        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/disneyplus1/disneyplus1.m3u8",
-        "quality": "Qualidade não informada"
       }
     ]
   },
@@ -3993,6 +3993,14 @@ export const FALLBACK_CHANNELS: Channel[] = [
     "category": "Filmes e Séries",
     "logo": "https://img.faz-o-eli.online/filmarts.png",
     "sources": [
+      {
+        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzYwNzA4Lm0zdTg.m3u8",
+        "quality": "HD"
+      },
+      {
+        "url": "http://332nr7hbfu.xyz:80/live/999913/S3CvUB/104914.m3u8",
+        "quality": "FHD · 1920x1080"
+      },
       {
         "url": "http://vaiagora.vip:80/live/5q8VUj/5BeUd8/104914.m3u8",
         "quality": "FHD"
@@ -4032,14 +4040,6 @@ export const FALLBACK_CHANNELS: Channel[] = [
       {
         "url": "http://vivlar.me:80/live/497238/KK8Kdy/104916.m3u8",
         "quality": "SD"
-      },
-      {
-        "url": "http://332nr7hbfu.xyz:80/live/999913/S3CvUB/104914.m3u8",
-        "quality": "FHD · 1920x1080"
-      },
-      {
-        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzYwNzA4Lm0zdTg.m3u8",
-        "quality": "HD"
       }
     ]
   },
@@ -4074,27 +4074,25 @@ export const FALLBACK_CHANNELS: Channel[] = [
     "logo": "https://img.faz-o-eli.online/hbo.png",
     "sources": [
       {
-        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/692c8a457cfd6bc868cfea12ca938214/error.txt",
-        "quality": "Qualidade não informada",
-        "referer": "https://w7.embedtv.cc/",
-        "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
-      },
-      {
         "url": "https://dadinhodetapioca.fun/play/hbo.html",
         "quality": "FHD",
         "referer": "https://dadinhodetapioca.fun/"
       },
       {
-        "url": "http://138.204.86.4:8080/HBO/index.m3u8",
-        "quality": "HD · 1280x720"
-      },
-      {
-        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/hbo/hbo.m3u8",
-        "quality": "HD · 1280x720"
-      },
-      {
         "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1NTQyLm0zdTg.m3u8",
         "quality": "FHD"
+      },
+      {
+        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1NTQzLm0zdTg.m3u8",
+        "quality": "HD"
+      },
+      {
+        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1NTQ0Lm0zdTg.m3u8",
+        "quality": "SD"
+      },
+      {
+        "url": "http://138.204.86.4:8080/HBO/index.m3u8",
+        "quality": "HD · 1280x720"
       },
       {
         "url": "http://64.31.23.207:80/59471019/60849037/514107.m3u8",
@@ -4103,6 +4101,45 @@ export const FALLBACK_CHANNELS: Channel[] = [
       {
         "url": "http://64.31.23.207:80/59471019/60849037/514108.m3u8",
         "quality": "HD · 1280x720"
+      },
+      {
+        "url": "http://332nr7hbfu.xyz:80/live/999913/S3CvUB/72133.m3u8",
+        "quality": "SD · 852x480"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/94381.ts",
+        "name": "Fonte 32 (Ramys)",
+        "quality": "1080p FHD"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/8902.ts",
+        "name": "Fonte 33 (Ramys)",
+        "quality": "1080p FHD"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/8903.ts",
+        "name": "Fonte 34 (Ramys)",
+        "quality": "720p HD"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/31862.ts",
+        "name": "Fonte 35 (Ramys)",
+        "quality": "720p HD"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/31863.ts",
+        "name": "Fonte 36 (Ramys)",
+        "quality": "720p HD"
+      },
+      {
+        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/hbo/hbo.m3u8",
+        "quality": "HD · 1280x720"
+      },
+      {
+        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/692c8a457cfd6bc868cfea12ca938214/error.txt",
+        "quality": "Qualidade não informada",
+        "referer": "https://w7.embedtv.cc/",
+        "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
       },
       {
         "url": "http://vaiagora.vip:80/live/5q8VUj/5BeUd8/90247.m3u8",
@@ -4187,43 +4224,6 @@ export const FALLBACK_CHANNELS: Channel[] = [
       {
         "url": "http://corruptx.org:80/live/hfp5ejnrey/zq0u3kzads/31863.m3u8",
         "quality": "HD"
-      },
-      {
-        "url": "http://332nr7hbfu.xyz:80/live/999913/S3CvUB/72133.m3u8",
-        "quality": "SD · 852x480"
-      },
-      {
-        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1NTQzLm0zdTg.m3u8",
-        "quality": "HD"
-      },
-      {
-        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1NTQ0Lm0zdTg.m3u8",
-        "quality": "SD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/94381.ts",
-        "name": "Fonte 32 (Ramys)",
-        "quality": "1080p FHD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/8902.ts",
-        "name": "Fonte 33 (Ramys)",
-        "quality": "1080p FHD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/8903.ts",
-        "name": "Fonte 34 (Ramys)",
-        "quality": "720p HD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/31862.ts",
-        "name": "Fonte 35 (Ramys)",
-        "quality": "720p HD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/31863.ts",
-        "name": "Fonte 36 (Ramys)",
-        "quality": "720p HD"
       }
     ]
   },
@@ -4271,27 +4271,25 @@ export const FALLBACK_CHANNELS: Channel[] = [
     "logo": "https://img.faz-o-eli.online/hbofamily.png",
     "sources": [
       {
-        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/b861516da26de936d373b90c7bddd8a8/error.txt",
-        "quality": "Qualidade não informada",
-        "referer": "https://w7.embedtv.cc/",
-        "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
-      },
-      {
         "url": "https://dadinhodetapioca.fun/play/hbofamily.html",
         "quality": "FHD",
         "referer": "https://dadinhodetapioca.fun/"
       },
       {
-        "url": "http://138.204.86.4:8080/HBO_FAMILY/index.m3u8",
-        "quality": "HD · 1280x720"
-      },
-      {
-        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/hbofamily/hbofamily.m3u8",
-        "quality": "FHD · 1920x1080"
-      },
-      {
         "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1NTUwLm0zdTg.m3u8",
         "quality": "FHD"
+      },
+      {
+        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1NTUxLm0zdTg.m3u8",
+        "quality": "HD"
+      },
+      {
+        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1NTUyLm0zdTg.m3u8",
+        "quality": "SD"
+      },
+      {
+        "url": "http://138.204.86.4:8080/HBO_FAMILY/index.m3u8",
+        "quality": "HD · 1280x720"
       },
       {
         "url": "http://64.31.23.207:80/59471019/60849037/514113.m3u8",
@@ -4300,6 +4298,49 @@ export const FALLBACK_CHANNELS: Channel[] = [
       {
         "url": "http://64.31.23.207:80/59471019/60849037/514114.m3u8",
         "quality": "HD · 1280x720"
+      },
+      {
+        "url": "http://332nr7hbfu.xyz:80/live/999913/S3CvUB/72114.m3u8",
+        "quality": "FHD · 1920x1080"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/94383.ts",
+        "name": "Fonte 25 (Ramys)",
+        "quality": "1080p FHD"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/13530.ts",
+        "name": "Fonte 26 (Ramys)"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/8901.ts",
+        "name": "Fonte 27 (Ramys)",
+        "quality": "1080p FHD"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/8900.ts",
+        "name": "Fonte 28 (Ramys)",
+        "quality": "720p HD"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/31860.ts",
+        "name": "Fonte 29 (Ramys)",
+        "quality": "720p HD"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/31861.ts",
+        "name": "Fonte 30 (Ramys)",
+        "quality": "720p HD"
+      },
+      {
+        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/hbofamily/hbofamily.m3u8",
+        "quality": "FHD · 1920x1080"
+      },
+      {
+        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/b861516da26de936d373b90c7bddd8a8/error.txt",
+        "quality": "Qualidade não informada",
+        "referer": "https://w7.embedtv.cc/",
+        "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
       },
       {
         "url": "http://vaiagora.vip:80/live/5q8VUj/5BeUd8/90637.m3u8",
@@ -4356,47 +4397,6 @@ export const FALLBACK_CHANNELS: Channel[] = [
       {
         "url": "http://corruptx.org:80/live/hfp5ejnrey/zq0u3kzads/31861.m3u8",
         "quality": "HD"
-      },
-      {
-        "url": "http://332nr7hbfu.xyz:80/live/999913/S3CvUB/72114.m3u8",
-        "quality": "FHD · 1920x1080"
-      },
-      {
-        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1NTUxLm0zdTg.m3u8",
-        "quality": "HD"
-      },
-      {
-        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1NTUyLm0zdTg.m3u8",
-        "quality": "SD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/94383.ts",
-        "name": "Fonte 25 (Ramys)",
-        "quality": "1080p FHD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/13530.ts",
-        "name": "Fonte 26 (Ramys)"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/8901.ts",
-        "name": "Fonte 27 (Ramys)",
-        "quality": "1080p FHD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/8900.ts",
-        "name": "Fonte 28 (Ramys)",
-        "quality": "720p HD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/31860.ts",
-        "name": "Fonte 29 (Ramys)",
-        "quality": "720p HD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/31861.ts",
-        "name": "Fonte 30 (Ramys)",
-        "quality": "720p HD"
       }
     ]
   },
@@ -4407,22 +4407,20 @@ export const FALLBACK_CHANNELS: Channel[] = [
     "logo": "https://img.faz-o-eli.online/hbomundi.png",
     "sources": [
       {
-        "url": "http://138.204.86.4:8080/HBO_MUNDI_HD/index.m3u8",
-        "quality": "HD · 1280x720"
-      },
-      {
-        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/e6576acf6dd245e12a66873869982f6c/error.txt",
-        "quality": "Qualidade não informada",
-        "referer": "https://w7.embedtv.cc/",
-        "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
-      },
-      {
-        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/hbomundi/hbomundi.m3u8",
-        "quality": "HD · 1280x720"
-      },
-      {
         "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1NTU0Lm0zdTg.m3u8",
         "quality": "FHD"
+      },
+      {
+        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1NTU1Lm0zdTg.m3u8",
+        "quality": "HD"
+      },
+      {
+        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1NTU2Lm0zdTg.m3u8",
+        "quality": "SD"
+      },
+      {
+        "url": "http://138.204.86.4:8080/HBO_MUNDI_HD/index.m3u8",
+        "quality": "HD · 1280x720"
       },
       {
         "url": "http://64.31.23.207:80/59471019/60849037/514116.m3u8",
@@ -4431,6 +4429,49 @@ export const FALLBACK_CHANNELS: Channel[] = [
       {
         "url": "http://64.31.23.207:80/59471019/60849037/514117.m3u8",
         "quality": "HD · 1280x720"
+      },
+      {
+        "url": "http://332nr7hbfu.xyz:80/live/999913/S3CvUB/72123.m3u8",
+        "quality": "HD · 1280x720"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/94384.ts",
+        "name": "Fonte 30 (Ramys)",
+        "quality": "1080p FHD"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/13531.ts",
+        "name": "Fonte 31 (Ramys)"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/8904.ts",
+        "name": "Fonte 32 (Ramys)",
+        "quality": "1080p FHD"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/8905.ts",
+        "name": "Fonte 33 (Ramys)",
+        "quality": "720p HD"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/31864.ts",
+        "name": "Fonte 34 (Ramys)",
+        "quality": "720p HD"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/93900.ts",
+        "name": "Fonte 35 (Ramys)",
+        "quality": "720p HD"
+      },
+      {
+        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/hbomundi/hbomundi.m3u8",
+        "quality": "HD · 1280x720"
+      },
+      {
+        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/e6576acf6dd245e12a66873869982f6c/error.txt",
+        "quality": "Qualidade não informada",
+        "referer": "https://w7.embedtv.cc/",
+        "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
       },
       {
         "url": "http://vaiagora.vip:80/live/5q8VUj/5BeUd8/103496.m3u8",
@@ -4511,47 +4552,6 @@ export const FALLBACK_CHANNELS: Channel[] = [
       {
         "url": "http://corruptx.org:80/live/hfp5ejnrey/zq0u3kzads/93900.m3u8",
         "quality": "HD"
-      },
-      {
-        "url": "http://332nr7hbfu.xyz:80/live/999913/S3CvUB/72123.m3u8",
-        "quality": "HD · 1280x720"
-      },
-      {
-        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1NTU1Lm0zdTg.m3u8",
-        "quality": "HD"
-      },
-      {
-        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1NTU2Lm0zdTg.m3u8",
-        "quality": "SD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/94384.ts",
-        "name": "Fonte 30 (Ramys)",
-        "quality": "1080p FHD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/13531.ts",
-        "name": "Fonte 31 (Ramys)"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/8904.ts",
-        "name": "Fonte 32 (Ramys)",
-        "quality": "1080p FHD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/8905.ts",
-        "name": "Fonte 33 (Ramys)",
-        "quality": "720p HD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/31864.ts",
-        "name": "Fonte 34 (Ramys)",
-        "quality": "720p HD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/93900.ts",
-        "name": "Fonte 35 (Ramys)",
-        "quality": "720p HD"
       }
     ]
   },
@@ -4562,27 +4562,25 @@ export const FALLBACK_CHANNELS: Channel[] = [
     "logo": "https://img.faz-o-eli.online/hboplus.png",
     "sources": [
       {
-        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/142cdbde27f344bcf3ae8eab9454dc81/error.txt",
-        "quality": "Qualidade não informada",
-        "referer": "https://w7.embedtv.cc/",
-        "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
-      },
-      {
         "url": "https://dadinhodetapioca.fun/play/hboplus.html",
         "quality": "FHD",
         "referer": "https://dadinhodetapioca.fun/"
       },
       {
-        "url": "http://138.204.86.4:8080/HBO_PLUS/index.m3u8",
-        "quality": "HD · 1280x720"
-      },
-      {
-        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/hboplus/hboplus.m3u8",
-        "quality": "FHD · 1920x1080"
-      },
-      {
         "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1NTU4Lm0zdTg.m3u8",
         "quality": "FHD"
+      },
+      {
+        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1NTU5Lm0zdTg.m3u8",
+        "quality": "HD"
+      },
+      {
+        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1NTYwLm0zdTg.m3u8",
+        "quality": "SD"
+      },
+      {
+        "url": "http://138.204.86.4:8080/HBO_PLUS/index.m3u8",
+        "quality": "HD · 1280x720"
       },
       {
         "url": "http://64.31.23.207:80/59471019/60849037/514119.m3u8",
@@ -4591,6 +4589,41 @@ export const FALLBACK_CHANNELS: Channel[] = [
       {
         "url": "http://64.31.23.207:80/59471019/60849037/514120.m3u8",
         "quality": "HD · 1280x720"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/94385.ts",
+        "name": "Fonte 31 (Ramys)",
+        "quality": "1080p FHD"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/24592.ts",
+        "name": "Fonte 32 (Ramys)",
+        "quality": "1080p FHD"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/11771.ts",
+        "name": "Fonte 33 (Ramys)",
+        "quality": "720p HD"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/31865.ts",
+        "name": "Fonte 34 (Ramys)",
+        "quality": "720p HD"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/31866.ts",
+        "name": "Fonte 35 (Ramys)",
+        "quality": "720p HD"
+      },
+      {
+        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/hboplus/hboplus.m3u8",
+        "quality": "FHD · 1920x1080"
+      },
+      {
+        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/142cdbde27f344bcf3ae8eab9454dc81/error.txt",
+        "quality": "Qualidade não informada",
+        "referer": "https://w7.embedtv.cc/",
+        "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
       },
       {
         "url": "http://vaiagora.vip:80/live/5q8VUj/5BeUd8/90635.m3u8",
@@ -4675,39 +4708,6 @@ export const FALLBACK_CHANNELS: Channel[] = [
       {
         "url": "http://corruptx.org:80/live/hfp5ejnrey/zq0u3kzads/31866.m3u8",
         "quality": "HD"
-      },
-      {
-        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1NTU5Lm0zdTg.m3u8",
-        "quality": "HD"
-      },
-      {
-        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1NTYwLm0zdTg.m3u8",
-        "quality": "SD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/94385.ts",
-        "name": "Fonte 31 (Ramys)",
-        "quality": "1080p FHD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/24592.ts",
-        "name": "Fonte 32 (Ramys)",
-        "quality": "1080p FHD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/11771.ts",
-        "name": "Fonte 33 (Ramys)",
-        "quality": "720p HD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/31865.ts",
-        "name": "Fonte 34 (Ramys)",
-        "quality": "720p HD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/31866.ts",
-        "name": "Fonte 35 (Ramys)",
-        "quality": "720p HD"
       }
     ]
   },
@@ -4718,27 +4718,25 @@ export const FALLBACK_CHANNELS: Channel[] = [
     "logo": "https://img.faz-o-eli.online/hbopop.png",
     "sources": [
       {
-        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/2565c251ab74219a03e4b4fdb879e1ac/error.txt",
-        "quality": "Qualidade não informada",
-        "referer": "https://w7.embedtv.cc/",
-        "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
-      },
-      {
         "url": "https://dadinhodetapioca.fun/play/hbopop.html",
         "quality": "FHD",
         "referer": "https://dadinhodetapioca.fun/"
       },
       {
-        "url": "http://138.204.86.4:8080/HBO_POP_HD/index.m3u8",
-        "quality": "HD · 1280x720"
-      },
-      {
-        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/hbopop/hbopop.m3u8",
-        "quality": "HD · 1280x720"
-      },
-      {
         "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1NTYyLm0zdTg.m3u8",
         "quality": "FHD"
+      },
+      {
+        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1NTYzLm0zdTg.m3u8",
+        "quality": "HD"
+      },
+      {
+        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1NTY0Lm0zdTg.m3u8",
+        "quality": "SD"
+      },
+      {
+        "url": "http://138.204.86.4:8080/HBO_POP_HD/index.m3u8",
+        "quality": "HD · 1280x720"
       },
       {
         "url": "http://64.31.23.207:80/59471019/60849037/514122.m3u8",
@@ -4747,6 +4745,49 @@ export const FALLBACK_CHANNELS: Channel[] = [
       {
         "url": "http://64.31.23.207:80/59471019/60849037/514123.m3u8",
         "quality": "HD · 1280x720"
+      },
+      {
+        "url": "http://45.185.11.126:8000/play/a08s/index.m3u8",
+        "quality": "FHD · 1920x1080"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/94386.ts",
+        "name": "Fonte 33 (Ramys)",
+        "quality": "1080p FHD"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/13533.ts",
+        "name": "Fonte 34 (Ramys)"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/24593.ts",
+        "name": "Fonte 35 (Ramys)",
+        "quality": "1080p FHD"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/8911.ts",
+        "name": "Fonte 36 (Ramys)",
+        "quality": "720p HD"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/31867.ts",
+        "name": "Fonte 37 (Ramys)",
+        "quality": "720p HD"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/93901.ts",
+        "name": "Fonte 38 (Ramys)",
+        "quality": "720p HD"
+      },
+      {
+        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/hbopop/hbopop.m3u8",
+        "quality": "HD · 1280x720"
+      },
+      {
+        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/2565c251ab74219a03e4b4fdb879e1ac/error.txt",
+        "quality": "Qualidade não informada",
+        "referer": "https://w7.embedtv.cc/",
+        "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
       },
       {
         "url": "http://vaiagora.vip:80/live/5q8VUj/5BeUd8/103495.m3u8",
@@ -4835,47 +4876,6 @@ export const FALLBACK_CHANNELS: Channel[] = [
       {
         "url": "http://corruptx.org:80/live/hfp5ejnrey/zq0u3kzads/93901.m3u8",
         "quality": "HD"
-      },
-      {
-        "url": "http://45.185.11.126:8000/play/a08s/index.m3u8",
-        "quality": "FHD · 1920x1080"
-      },
-      {
-        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1NTYzLm0zdTg.m3u8",
-        "quality": "HD"
-      },
-      {
-        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1NTY0Lm0zdTg.m3u8",
-        "quality": "SD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/94386.ts",
-        "name": "Fonte 33 (Ramys)",
-        "quality": "1080p FHD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/13533.ts",
-        "name": "Fonte 34 (Ramys)"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/24593.ts",
-        "name": "Fonte 35 (Ramys)",
-        "quality": "1080p FHD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/8911.ts",
-        "name": "Fonte 36 (Ramys)",
-        "quality": "720p HD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/31867.ts",
-        "name": "Fonte 37 (Ramys)",
-        "quality": "720p HD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/93901.ts",
-        "name": "Fonte 38 (Ramys)",
-        "quality": "720p HD"
       }
     ]
   },
@@ -4891,12 +4891,20 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "referer": "https://dadinhodetapioca.fun/"
       },
       {
-        "url": "http://138.204.86.4:8080/HBO_SIGNATURE/index.m3u8",
-        "quality": "HD · 1280x720"
-      },
-      {
         "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1NTY2Lm0zdTg.m3u8",
         "quality": "FHD"
+      },
+      {
+        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1NTY3Lm0zdTg.m3u8",
+        "quality": "HD"
+      },
+      {
+        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1NTY4Lm0zdTg.m3u8",
+        "quality": "SD"
+      },
+      {
+        "url": "http://138.204.86.4:8080/HBO_SIGNATURE/index.m3u8",
+        "quality": "HD · 1280x720"
       },
       {
         "url": "http://64.31.23.207:80/59471019/60849037/514125.m3u8",
@@ -4905,6 +4913,39 @@ export const FALLBACK_CHANNELS: Channel[] = [
       {
         "url": "http://64.31.23.207:80/59471019/60849037/514126.m3u8",
         "quality": "HD · 1280x720"
+      },
+      {
+        "url": "http://332nr7hbfu.xyz:80/live/999913/S3CvUB/72134.m3u8",
+        "quality": "FHD · 1920x1080"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/94387.ts",
+        "name": "Fonte 29 (Ramys)",
+        "quality": "1080p FHD"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/13534.ts",
+        "name": "Fonte 30 (Ramys)"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/8912.ts",
+        "name": "Fonte 31 (Ramys)",
+        "quality": "1080p FHD"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/8914.ts",
+        "name": "Fonte 32 (Ramys)",
+        "quality": "720p HD"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/31868.ts",
+        "name": "Fonte 33 (Ramys)",
+        "quality": "720p HD"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/31869.ts",
+        "name": "Fonte 34 (Ramys)",
+        "quality": "720p HD"
       },
       {
         "url": "http://vaiagora.vip:80/live/5q8VUj/5BeUd8/72134.m3u8",
@@ -4985,47 +5026,6 @@ export const FALLBACK_CHANNELS: Channel[] = [
       {
         "url": "http://corruptx.org:80/live/hfp5ejnrey/zq0u3kzads/31869.m3u8",
         "quality": "HD"
-      },
-      {
-        "url": "http://332nr7hbfu.xyz:80/live/999913/S3CvUB/72134.m3u8",
-        "quality": "FHD · 1920x1080"
-      },
-      {
-        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1NTY3Lm0zdTg.m3u8",
-        "quality": "HD"
-      },
-      {
-        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1NTY4Lm0zdTg.m3u8",
-        "quality": "SD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/94387.ts",
-        "name": "Fonte 29 (Ramys)",
-        "quality": "1080p FHD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/13534.ts",
-        "name": "Fonte 30 (Ramys)"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/8912.ts",
-        "name": "Fonte 31 (Ramys)",
-        "quality": "1080p FHD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/8914.ts",
-        "name": "Fonte 32 (Ramys)",
-        "quality": "720p HD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/31868.ts",
-        "name": "Fonte 33 (Ramys)",
-        "quality": "720p HD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/31869.ts",
-        "name": "Fonte 34 (Ramys)",
-        "quality": "720p HD"
       }
     ]
   },
@@ -5041,20 +5041,51 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "referer": "https://dadinhodetapioca.fun/"
       },
       {
-        "url": "http://64.31.23.207:80/59471019/60849037/514128.m3u8",
-        "quality": "FHD · 1920x1080"
-      },
-      {
-        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/hboxtreme/hboxtreme.m3u8",
-        "quality": "Qualidade não informada"
-      },
-      {
         "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1NTcwLm0zdTg.m3u8",
         "quality": "FHD"
       },
       {
+        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1NTcxLm0zdTg.m3u8",
+        "quality": "HD"
+      },
+      {
+        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1NTcyLm0zdTg.m3u8",
+        "quality": "SD"
+      },
+      {
+        "url": "http://64.31.23.207:80/59471019/60849037/514128.m3u8",
+        "quality": "FHD · 1920x1080"
+      },
+      {
         "url": "http://64.31.23.207:80/59471019/60849037/514129.m3u8",
         "quality": "HD · 1280x720"
+      },
+      {
+        "url": "http://45.185.11.126:8000/play/a083/index.m3u8",
+        "quality": "FHD · 1920x1080"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/13536.ts",
+        "name": "Fonte 29 (Ramys)"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/13535.ts",
+        "name": "Fonte 30 (Ramys)",
+        "quality": "1080p FHD"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/8916.ts",
+        "name": "Fonte 31 (Ramys)",
+        "quality": "720p HD"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/31870.ts",
+        "name": "Fonte 32 (Ramys)",
+        "quality": "720p HD"
+      },
+      {
+        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/hboxtreme/hboxtreme.m3u8",
+        "quality": "Qualidade não informada"
       },
       {
         "url": "http://vaiagora.vip:80/live/5q8VUj/5BeUd8/90636.m3u8",
@@ -5135,37 +5166,6 @@ export const FALLBACK_CHANNELS: Channel[] = [
       {
         "url": "http://corruptx.org:80/live/hfp5ejnrey/zq0u3kzads/31870.m3u8",
         "quality": "HD"
-      },
-      {
-        "url": "http://45.185.11.126:8000/play/a083/index.m3u8",
-        "quality": "FHD · 1920x1080"
-      },
-      {
-        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1NTcxLm0zdTg.m3u8",
-        "quality": "HD"
-      },
-      {
-        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1NTcyLm0zdTg.m3u8",
-        "quality": "SD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/13536.ts",
-        "name": "Fonte 29 (Ramys)"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/13535.ts",
-        "name": "Fonte 30 (Ramys)",
-        "quality": "1080p FHD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/8916.ts",
-        "name": "Fonte 31 (Ramys)",
-        "quality": "720p HD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/31870.ts",
-        "name": "Fonte 32 (Ramys)",
-        "quality": "720p HD"
       }
     ]
   },
@@ -5176,27 +5176,25 @@ export const FALLBACK_CHANNELS: Channel[] = [
     "logo": "https://img.faz-o-eli.online/hbo2.png",
     "sources": [
       {
-        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/575460dfdaaba6fc03cb2b7224662909/error.txt",
-        "quality": "Qualidade não informada",
-        "referer": "https://w7.embedtv.cc/",
-        "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
-      },
-      {
         "url": "https://dadinhodetapioca.fun/play/hbo2.html",
         "quality": "FHD",
         "referer": "https://dadinhodetapioca.fun/"
       },
       {
-        "url": "http://138.204.86.4:8080/HBO2/index.m3u8",
-        "quality": "HD · 1280x720"
-      },
-      {
-        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/hbo2/hbo2.m3u8",
-        "quality": "HD · 1280x720"
-      },
-      {
         "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1NTQ2Lm0zdTg.m3u8",
         "quality": "FHD"
+      },
+      {
+        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1NTQ3Lm0zdTg.m3u8",
+        "quality": "HD"
+      },
+      {
+        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1NTQ4Lm0zdTg.m3u8",
+        "quality": "SD"
+      },
+      {
+        "url": "http://138.204.86.4:8080/HBO2/index.m3u8",
+        "quality": "HD · 1280x720"
       },
       {
         "url": "http://64.31.23.207:80/59471019/60849037/514110.m3u8",
@@ -5205,6 +5203,20 @@ export const FALLBACK_CHANNELS: Channel[] = [
       {
         "url": "http://64.31.23.207:80/59471019/60849037/514111.m3u8",
         "quality": "HD · 1280x720"
+      },
+      {
+        "url": "http://45.185.11.126:8000/play/a08o/index.m3u8",
+        "quality": "FHD · 1920x1080"
+      },
+      {
+        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/hbo2/hbo2.m3u8",
+        "quality": "HD · 1280x720"
+      },
+      {
+        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/575460dfdaaba6fc03cb2b7224662909/error.txt",
+        "quality": "Qualidade não informada",
+        "referer": "https://w7.embedtv.cc/",
+        "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
       },
       {
         "url": "http://vaiagora.vip:80/live/5q8VUj/5BeUd8/90246.m3u8",
@@ -5269,18 +5281,6 @@ export const FALLBACK_CHANNELS: Channel[] = [
       {
         "url": "http://corruptx.org:80/live/hfp5ejnrey/zq0u3kzads/93899.m3u8",
         "quality": "HD"
-      },
-      {
-        "url": "http://45.185.11.126:8000/play/a08o/index.m3u8",
-        "quality": "FHD · 1920x1080"
-      },
-      {
-        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1NTQ3Lm0zdTg.m3u8",
-        "quality": "HD"
-      },
-      {
-        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1NTQ4Lm0zdTg.m3u8",
-        "quality": "SD"
       }
     ]
   },
@@ -5307,6 +5307,14 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "quality": "FHD"
       },
       {
+        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1MTE1Lm0zdTg.m3u8",
+        "quality": "HD"
+      },
+      {
+        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1MTE2Lm0zdTg.m3u8",
+        "quality": "SD"
+      },
+      {
         "url": "http://64.31.23.207:80/59471019/60849037/518571.m3u8",
         "quality": "HD · 1280x720"
       },
@@ -5317,6 +5325,24 @@ export const FALLBACK_CHANNELS: Channel[] = [
       {
         "url": "http://64.31.23.207:80/59471019/60849037/518573.m3u8",
         "quality": "SD · 960x540"
+      },
+      {
+        "url": "http://332nr7hbfu.xyz:80/live/999913/S3CvUB/72154.m3u8",
+        "quality": "FHD · 1920x1080"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/8943.ts",
+        "name": "Fonte 21 (Ramys)",
+        "quality": "1080p FHD"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/8944.ts",
+        "name": "Fonte 22 (Ramys)",
+        "quality": "720p HD"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/13538.ts",
+        "name": "Fonte 23 (Ramys)"
       },
       {
         "url": "http://vaiagora.vip:80/live/5q8VUj/5BeUd8/103492.m3u8",
@@ -5369,32 +5395,6 @@ export const FALLBACK_CHANNELS: Channel[] = [
       {
         "url": "http://corruptx.org:80/live/hfp5ejnrey/zq0u3kzads/13538.m3u8",
         "quality": "FHD · 1920x1080"
-      },
-      {
-        "url": "http://332nr7hbfu.xyz:80/live/999913/S3CvUB/72154.m3u8",
-        "quality": "FHD · 1920x1080"
-      },
-      {
-        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1MTE1Lm0zdTg.m3u8",
-        "quality": "HD"
-      },
-      {
-        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1MTE2Lm0zdTg.m3u8",
-        "quality": "SD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/8943.ts",
-        "name": "Fonte 21 (Ramys)",
-        "quality": "1080p FHD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/8944.ts",
-        "name": "Fonte 22 (Ramys)",
-        "quality": "720p HD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/13538.ts",
-        "name": "Fonte 23 (Ramys)"
       }
     ]
   },
@@ -5425,6 +5425,10 @@ export const FALLBACK_CHANNELS: Channel[] = [
     "logo": "http://www.fontedecanais.gs/logos/canais/max.png",
     "sources": [
       {
+        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1MTgyLm0zdTg.m3u8",
+        "quality": "HD"
+      },
+      {
         "url": "http://64.31.23.207:80/59471019/60849037/3460234.m3u8",
         "quality": "HD · 1280x720"
       },
@@ -5434,10 +5438,6 @@ export const FALLBACK_CHANNELS: Channel[] = [
       },
       {
         "url": "http://corruptx.org:80/live/hfp5ejnrey/zq0u3kzads/594010.m3u8",
-        "quality": "HD"
-      },
-      {
-        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1MTgyLm0zdTg.m3u8",
         "quality": "HD"
       }
     ]
@@ -5449,16 +5449,16 @@ export const FALLBACK_CHANNELS: Channel[] = [
     "logo": "https://img.faz-o-eli.online/max.png",
     "sources": [
       {
+        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1MTgzLm0zdTg.m3u8",
+        "quality": "HD"
+      },
+      {
         "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/max3/max3.m3u8",
         "quality": "FHD · 1920x1080"
       },
       {
         "url": "http://corruptx.org:80/live/hfp5ejnrey/zq0u3kzads/594011.m3u8",
         "quality": "FHD"
-      },
-      {
-        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1MTgzLm0zdTg.m3u8",
-        "quality": "HD"
       }
     ]
   },
@@ -5493,7 +5493,66 @@ export const FALLBACK_CHANNELS: Channel[] = [
     "logo": "https://img.faz-o-eli.online/megapix.png",
     "sources": [
       {
+        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1MzE3Lm0zdTg.m3u8",
+        "quality": "FHD"
+      },
+      {
+        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1MzE4Lm0zdTg.m3u8",
+        "quality": "HD"
+      },
+      {
+        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1MzE5Lm0zdTg.m3u8",
+        "quality": "SD"
+      },
+      {
+        "url": "http://79.127.238.228:14592",
+        "quality": "HD · 1280x720"
+      },
+      {
+        "url": "http://45.185.11.126:8000/play/a057/index.m3u8",
+        "quality": "FHD · 1920x1080"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/107982.ts",
+        "name": "Fonte 29 (Ramys)",
+        "quality": "1080p FHD"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/43933.ts",
+        "name": "Fonte 30 (Ramys)"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/8961.ts",
+        "name": "Fonte 31 (Ramys)",
+        "quality": "1080p FHD"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/8962.ts",
+        "name": "Fonte 32 (Ramys)",
+        "quality": "720p HD"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/35238.ts",
+        "name": "Fonte 33 (Ramys)",
+        "quality": "720p HD"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/35239.ts",
+        "name": "Fonte 34 (Ramys)",
+        "quality": "720p HD"
+      },
+      {
+        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/megapix/megapix.m3u8",
+        "quality": "HD · 1280x720"
+      },
+      {
         "url": "https://aws.s13-s1001604.lat/stream/4449454c379f5034e01629ff759af317/megapix.m3u8",
+        "quality": "HD · 1280x720",
+        "referer": "https://meufut.top/megapix",
+        "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
+      },
+      {
+        "url": "https://aws.s13-s1001604.lat/stream/cc13f77891f8b4080db512be42439d82/megapix.m3u8",
         "quality": "HD · 1280x720",
         "referer": "https://meufut.top/megapix",
         "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
@@ -5505,25 +5564,7 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
       },
       {
-        "url": "https://aws.s13-s1001604.lat/stream/cc13f77891f8b4080db512be42439d82/megapix.m3u8",
-        "quality": "HD · 1280x720",
-        "referer": "https://meufut.top/megapix",
-        "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
-      },
-      {
-        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/megapix/megapix.m3u8",
-        "quality": "HD · 1280x720"
-      },
-      {
         "url": "https://16-5-0-235.sslip.io/megapix/index.m3u8"
-      },
-      {
-        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1MzE3Lm0zdTg.m3u8",
-        "quality": "FHD"
-      },
-      {
-        "url": "http://79.127.238.228:14592",
-        "quality": "HD · 1280x720"
       },
       {
         "url": "http://vaiagora.vip:80/live/5q8VUj/5BeUd8/72166.m3u8",
@@ -5596,47 +5637,6 @@ export const FALLBACK_CHANNELS: Channel[] = [
       {
         "url": "http://corruptx.org:80/live/hfp5ejnrey/zq0u3kzads/8962.m3u8",
         "quality": "HD"
-      },
-      {
-        "url": "http://45.185.11.126:8000/play/a057/index.m3u8",
-        "quality": "FHD · 1920x1080"
-      },
-      {
-        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1MzE4Lm0zdTg.m3u8",
-        "quality": "HD"
-      },
-      {
-        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1MzE5Lm0zdTg.m3u8",
-        "quality": "SD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/107982.ts",
-        "name": "Fonte 29 (Ramys)",
-        "quality": "1080p FHD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/43933.ts",
-        "name": "Fonte 30 (Ramys)"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/8961.ts",
-        "name": "Fonte 31 (Ramys)",
-        "quality": "1080p FHD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/8962.ts",
-        "name": "Fonte 32 (Ramys)",
-        "quality": "720p HD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/35238.ts",
-        "name": "Fonte 33 (Ramys)",
-        "quality": "720p HD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/35239.ts",
-        "name": "Fonte 34 (Ramys)",
-        "quality": "720p HD"
       }
     ]
   },
@@ -5707,6 +5707,14 @@ export const FALLBACK_CHANNELS: Channel[] = [
     "logo": "https://vipcanais.net/images/paramountplus.png",
     "sources": [
       {
+        "url": "http://332nr7hbfu.xyz:80/live/999913/S3CvUB/72992.m3u8",
+        "quality": "SD · 852x480"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/295699.ts",
+        "name": "Fonte 8 (Ramys)"
+      },
+      {
         "url": "http://vaiagora.vip:80/live/5q8VUj/5BeUd8/103521.m3u8",
         "quality": "4K"
       },
@@ -5729,14 +5737,6 @@ export const FALLBACK_CHANNELS: Channel[] = [
       {
         "url": "http://vivlar.me:80/live/497238/KK8Kdy/72992.m3u8",
         "quality": "SD"
-      },
-      {
-        "url": "http://332nr7hbfu.xyz:80/live/999913/S3CvUB/72992.m3u8",
-        "quality": "SD · 852x480"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/295699.ts",
-        "name": "Fonte 8 (Ramys)"
       }
     ]
   },
@@ -5807,6 +5807,10 @@ export const FALLBACK_CHANNELS: Channel[] = [
     "logo": "https://mondrian.claro.com.br/channels/inverse/paramount-network.png",
     "sources": [
       {
+        "url": "http://332nr7hbfu.xyz:80/live/999913/S3CvUB/72219.m3u8",
+        "quality": "HD · 1280x720"
+      },
+      {
         "url": "http://vaiagora.vip:80/live/5q8VUj/5BeUd8/72217.m3u8",
         "quality": "FHD"
       },
@@ -5817,10 +5821,6 @@ export const FALLBACK_CHANNELS: Channel[] = [
       {
         "url": "http://vivlar.me:80/live/497238/KK8Kdy/72219.m3u8",
         "quality": "HD"
-      },
-      {
-        "url": "http://332nr7hbfu.xyz:80/live/999913/S3CvUB/72219.m3u8",
-        "quality": "HD · 1280x720"
       }
     ]
   },
@@ -5835,14 +5835,14 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "quality": "HD"
       },
       {
+        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/paramountplus/paramountplus.m3u8",
+        "quality": "Qualidade não informada"
+      },
+      {
         "url": "https://aws.s13-s1001604.lat/stream/a3039490692b08e47bbd910816bcd954/paramountplus.m3u8",
         "quality": "HD · 1280x720",
         "referer": "https://meufut.top/paramount-plus-1789450199",
         "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
-      },
-      {
-        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/paramountplus/paramountplus.m3u8",
-        "quality": "Qualidade não informada"
       }
     ]
   },
@@ -6041,6 +6041,26 @@ export const FALLBACK_CHANNELS: Channel[] = [
     "logo": "https://img.faz-o-eli.online/sonychannel.png",
     "sources": [
       {
+        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1MzI1Lm0zdTg.m3u8",
+        "quality": "FHD"
+      },
+      {
+        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1MzI2Lm0zdTg.m3u8",
+        "quality": "HD"
+      },
+      {
+        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1MzI3Lm0zdTg.m3u8",
+        "quality": "SD"
+      },
+      {
+        "url": "https://cdn-5.nxplay.com.br/SONY_CHANNEL/index.m3u8",
+        "name": "Fonte 21 (IPTV-ORG)"
+      },
+      {
+        "url": "http://170.83.16.50/SONY_CHANNEL/index.m3u8",
+        "quality": "HD · 1280x720"
+      },
+      {
         "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/sonychannel/sonychannel.m3u8",
         "quality": "HD · 1280x720"
       },
@@ -6049,14 +6069,6 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "quality": "Qualidade não informada",
         "referer": "https://w7.embedtv.cc/",
         "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
-      },
-      {
-        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1MzI1Lm0zdTg.m3u8",
-        "quality": "FHD"
-      },
-      {
-        "url": "http://170.83.16.50/SONY_CHANNEL/index.m3u8",
-        "quality": "HD · 1280x720"
       },
       {
         "url": "http://vaiagora.vip:80/live/5q8VUj/5BeUd8/103517.m3u8",
@@ -6113,18 +6125,6 @@ export const FALLBACK_CHANNELS: Channel[] = [
       {
         "url": "http://corruptx.org:80/live/hfp5ejnrey/zq0u3kzads/9099.m3u8",
         "quality": "HD"
-      },
-      {
-        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1MzI2Lm0zdTg.m3u8",
-        "quality": "HD"
-      },
-      {
-        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1MzI3Lm0zdTg.m3u8",
-        "quality": "SD"
-      },
-      {
-        "url": "https://cdn-5.nxplay.com.br/SONY_CHANNEL/index.m3u8",
-        "name": "Fonte 21 (IPTV-ORG)"
       }
     ]
   },
@@ -6172,6 +6172,10 @@ export const FALLBACK_CHANNELS: Channel[] = [
     "logo": "https://www.tvlogo.org/brazil/sony-movies-br.png",
     "sources": [
       {
+        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzYwNzIyLm0zdTg.m3u8",
+        "quality": "HD"
+      },
+      {
         "url": "http://45.162.64.114/SONY_MOVIES/index.m3u8",
         "quality": "HD · 1280x720"
       },
@@ -6182,10 +6186,6 @@ export const FALLBACK_CHANNELS: Channel[] = [
       {
         "url": "http://168.197.104.22/SONY_MOVIES/index.m3u8",
         "quality": "HD · 1280x720"
-      },
-      {
-        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzYwNzIyLm0zdTg.m3u8",
-        "quality": "HD"
       },
       {
         "url": "http://170.83.16.50/SONY_MOVIES/index.m3u8",
@@ -6301,7 +6301,71 @@ export const FALLBACK_CHANNELS: Channel[] = [
     "logo": "https://img.faz-o-eli.online/space.png",
     "sources": [
       {
+        "url": "https://dadinhodetapioca.fun/play/space.html",
+        "quality": "FHD",
+        "referer": "https://dadinhodetapioca.fun/"
+      },
+      {
+        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1MzI5Lm0zdTg.m3u8",
+        "quality": "FHD"
+      },
+      {
+        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1MzMwLm0zdTg.m3u8",
+        "quality": "HD"
+      },
+      {
+        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1MzMxLm0zdTg.m3u8",
+        "quality": "SD"
+      },
+      {
+        "url": "http://45.162.64.114/SPACE/index.m3u8",
+        "quality": "HD · 1280x720"
+      },
+      {
+        "url": "http://138.204.86.4:8080/SPACE_HD/index.m3u8",
+        "quality": "HD · 1280x720"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/108181.ts",
+        "name": "Fonte 21 (Ramys)",
+        "quality": "1080p FHD"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/13585.ts",
+        "name": "Fonte 22 (Ramys)"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/9101.ts",
+        "name": "Fonte 23 (Ramys)",
+        "quality": "1080p FHD"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/9102.ts",
+        "name": "Fonte 24 (Ramys)",
+        "quality": "720p HD"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/35244.ts",
+        "name": "Fonte 25 (Ramys)",
+        "quality": "720p HD"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/35245.ts",
+        "name": "Fonte 26 (Ramys)",
+        "quality": "720p HD"
+      },
+      {
+        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/space/space.m3u8",
+        "quality": "HD · 1280x720"
+      },
+      {
         "url": "https://aws.s13-s1001604.lat/stream/167cfc64b5af287be1f19fb996d5c7ac/space.m3u8",
+        "quality": "HD · 1280x720",
+        "referer": "https://meufut.top/space",
+        "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
+      },
+      {
+        "url": "https://aws.s13-s1001604.lat/stream/3fb10b8d8fb288ba13970fe302430da2/space.m3u8",
         "quality": "HD · 1280x720",
         "referer": "https://meufut.top/space",
         "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
@@ -6311,33 +6375,6 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "quality": "Qualidade não informada",
         "referer": "https://w7.embedtv.cc/",
         "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
-      },
-      {
-        "url": "https://dadinhodetapioca.fun/play/space.html",
-        "quality": "FHD",
-        "referer": "https://dadinhodetapioca.fun/"
-      },
-      {
-        "url": "https://aws.s13-s1001604.lat/stream/3fb10b8d8fb288ba13970fe302430da2/space.m3u8",
-        "quality": "HD · 1280x720",
-        "referer": "https://meufut.top/space",
-        "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
-      },
-      {
-        "url": "http://45.162.64.114/SPACE/index.m3u8",
-        "quality": "HD · 1280x720"
-      },
-      {
-        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/space/space.m3u8",
-        "quality": "HD · 1280x720"
-      },
-      {
-        "url": "http://138.204.86.4:8080/SPACE_HD/index.m3u8",
-        "quality": "HD · 1280x720"
-      },
-      {
-        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1MzI5Lm0zdTg.m3u8",
-        "quality": "FHD"
       },
       {
         "url": "http://vaiagora.vip:80/live/5q8VUj/5BeUd8/72317.m3u8",
@@ -6378,43 +6415,6 @@ export const FALLBACK_CHANNELS: Channel[] = [
       {
         "url": "http://corruptx.org:80/live/hfp5ejnrey/zq0u3kzads/9102.m3u8",
         "quality": "HD"
-      },
-      {
-        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1MzMwLm0zdTg.m3u8",
-        "quality": "HD"
-      },
-      {
-        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1MzMxLm0zdTg.m3u8",
-        "quality": "SD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/108181.ts",
-        "name": "Fonte 21 (Ramys)",
-        "quality": "1080p FHD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/13585.ts",
-        "name": "Fonte 22 (Ramys)"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/9101.ts",
-        "name": "Fonte 23 (Ramys)",
-        "quality": "1080p FHD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/9102.ts",
-        "name": "Fonte 24 (Ramys)",
-        "quality": "720p HD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/35244.ts",
-        "name": "Fonte 25 (Ramys)",
-        "quality": "720p HD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/35245.ts",
-        "name": "Fonte 26 (Ramys)",
-        "quality": "720p HD"
       }
     ]
   },
@@ -6449,12 +6449,12 @@ export const FALLBACK_CHANNELS: Channel[] = [
     "logo": "https://img.faz-o-eli.online/starchannel.png",
     "sources": [
       {
-        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/starchannel/starchannel.m3u8",
-        "quality": "Qualidade não informada"
-      },
-      {
         "url": "http://znty.dyndns.org:5010/hls/fox.m3u8",
         "name": "Fonte 2 (IPTV-ORG)"
+      },
+      {
+        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/starchannel/starchannel.m3u8",
+        "quality": "Qualidade não informada"
       }
     ]
   },
@@ -6465,22 +6465,59 @@ export const FALLBACK_CHANNELS: Channel[] = [
     "logo": "https://img.faz-o-eli.online/studiouniversal.png",
     "sources": [
       {
-        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/c4982046a69006ed190cad060acd88a4/error.txt",
-        "quality": "Qualidade não informada",
-        "referer": "https://w7.embedtv.cc/",
-        "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
+        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1MzM3Lm0zdTg.m3u8",
+        "quality": "FHD"
+      },
+      {
+        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1MzM4Lm0zdTg.m3u8",
+        "quality": "HD"
+      },
+      {
+        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1MzM5Lm0zdTg.m3u8",
+        "quality": "SD"
+      },
+      {
+        "url": "http://64.31.23.207:80/59471019/60849037/324392.m3u8",
+        "quality": "HD · 1280x720"
+      },
+      {
+        "url": "http://332nr7hbfu.xyz:80/live/999913/S3CvUB/72334.m3u8",
+        "quality": "FHD · 1920x1080"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/108183.ts",
+        "name": "Fonte 21 (Ramys)",
+        "quality": "1080p FHD"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/9115.ts",
+        "name": "Fonte 22 (Ramys)",
+        "quality": "1080p FHD"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/9117.ts",
+        "name": "Fonte 23 (Ramys)",
+        "quality": "720p HD"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/35246.ts",
+        "name": "Fonte 24 (Ramys)",
+        "quality": "720p HD"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/35247.ts",
+        "name": "Fonte 25 (Ramys)",
+        "quality": "720p HD"
       },
       {
         "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/studiouniversal/studiouniversal.m3u8",
         "quality": "HD · 1280x720"
       },
       {
-        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1MzM3Lm0zdTg.m3u8",
-        "quality": "FHD"
-      },
-      {
-        "url": "http://64.31.23.207:80/59471019/60849037/324392.m3u8",
-        "quality": "HD · 1280x720"
+        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/c4982046a69006ed190cad060acd88a4/error.txt",
+        "quality": "Qualidade não informada",
+        "referer": "https://w7.embedtv.cc/",
+        "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
       },
       {
         "url": "http://vaiagora.vip:80/live/5q8VUj/5BeUd8/103467.m3u8",
@@ -6533,43 +6570,6 @@ export const FALLBACK_CHANNELS: Channel[] = [
       {
         "url": "http://corruptx.org:80/live/hfp5ejnrey/zq0u3kzads/9117.m3u8",
         "quality": "HD"
-      },
-      {
-        "url": "http://332nr7hbfu.xyz:80/live/999913/S3CvUB/72334.m3u8",
-        "quality": "FHD · 1920x1080"
-      },
-      {
-        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1MzM4Lm0zdTg.m3u8",
-        "quality": "HD"
-      },
-      {
-        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1MzM5Lm0zdTg.m3u8",
-        "quality": "SD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/108183.ts",
-        "name": "Fonte 21 (Ramys)",
-        "quality": "1080p FHD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/9115.ts",
-        "name": "Fonte 22 (Ramys)",
-        "quality": "1080p FHD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/9117.ts",
-        "name": "Fonte 23 (Ramys)",
-        "quality": "720p HD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/35246.ts",
-        "name": "Fonte 24 (Ramys)",
-        "quality": "720p HD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/35247.ts",
-        "name": "Fonte 25 (Ramys)",
-        "quality": "720p HD"
       }
     ]
   },
@@ -6580,22 +6580,8 @@ export const FALLBACK_CHANNELS: Channel[] = [
     "logo": "https://img.faz-o-eli.online/tcm.png",
     "sources": [
       {
-        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/tcm/tcm.m3u8",
-        "quality": "Qualidade não informada"
-      },
-      {
-        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/256f1f08c9e0040fbfa0d775b232926a/error.txt",
-        "quality": "Qualidade não informada",
-        "referer": "https://w7.embedtv.cc/",
-        "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
-      },
-      {
         "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1MzQ1Lm0zdTg.m3u8",
         "quality": "FHD"
-      },
-      {
-        "url": "http://corruptx.org:80/live/hfp5ejnrey/zq0u3kzads/9124.m3u8",
-        "quality": "HD"
       },
       {
         "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1MzQ2Lm0zdTg.m3u8",
@@ -6609,6 +6595,20 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/9124.ts",
         "name": "Fonte 7 (Ramys)",
         "quality": "720p HD"
+      },
+      {
+        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/tcm/tcm.m3u8",
+        "quality": "Qualidade não informada"
+      },
+      {
+        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/256f1f08c9e0040fbfa0d775b232926a/error.txt",
+        "quality": "Qualidade não informada",
+        "referer": "https://w7.embedtv.cc/",
+        "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
+      },
+      {
+        "url": "http://corruptx.org:80/live/hfp5ejnrey/zq0u3kzads/9124.m3u8",
+        "quality": "HD"
       }
     ]
   },
@@ -6619,27 +6619,72 @@ export const FALLBACK_CHANNELS: Channel[] = [
     "logo": "https://img.faz-o-eli.online/telecineaction.png",
     "sources": [
       {
-        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/19169227b38228adaf6515f4075c6255/error.txt",
-        "quality": "Qualidade não informada",
-        "referer": "https://w7.embedtv.cc/",
-        "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
-      },
-      {
         "url": "https://dadinhodetapioca.fun/play/telecineaction.html",
         "quality": "FHD",
         "referer": "https://dadinhodetapioca.fun/"
-      },
-      {
-        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/telecineaction/telecineaction.m3u8",
-        "quality": "HD · 1280x720"
       },
       {
         "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzQ4Mzc3Lm0zdTg.m3u8",
         "quality": "FHD"
       },
       {
+        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzQ4Mzc4Lm0zdTg.m3u8",
+        "quality": "HD"
+      },
+      {
+        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzQ4Mzc5Lm0zdTg.m3u8",
+        "quality": "SD"
+      },
+      {
         "url": "http://64.31.23.207:80/59471019/60849037/324393.m3u8",
         "quality": "FHD · 1920x1080"
+      },
+      {
+        "url": "http://45.185.11.126:8000/play/a058/index.m3u8",
+        "quality": "FHD · 1920x1080"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/94375.ts",
+        "name": "Fonte 31 (Ramys)",
+        "quality": "1080p FHD"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/24533.ts",
+        "name": "Fonte 32 (Ramys)"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/9126.ts",
+        "name": "Fonte 33 (Ramys)",
+        "quality": "1080p FHD"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/9127.ts",
+        "name": "Fonte 34 (Ramys)",
+        "quality": "720p HD"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/30134.ts",
+        "name": "Fonte 35 (Ramys)",
+        "quality": "720p HD"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/30135.ts",
+        "name": "Fonte 36 (Ramys)",
+        "quality": "720p HD"
+      },
+      {
+        "url": "http://46.151.196.223:14326/",
+        "name": "Fonte 37 (IPTV-ORG)"
+      },
+      {
+        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/telecineaction/telecineaction.m3u8",
+        "quality": "HD · 1280x720"
+      },
+      {
+        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/19169227b38228adaf6515f4075c6255/error.txt",
+        "quality": "Qualidade não informada",
+        "referer": "https://w7.embedtv.cc/",
+        "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
       },
       {
         "url": "http://vaiagora.vip:80/live/5q8VUj/5BeUd8/90239.m3u8",
@@ -6728,51 +6773,6 @@ export const FALLBACK_CHANNELS: Channel[] = [
       {
         "url": "http://corruptx.org:80/live/hfp5ejnrey/zq0u3kzads/30135.m3u8",
         "quality": "HD"
-      },
-      {
-        "url": "http://45.185.11.126:8000/play/a058/index.m3u8",
-        "quality": "FHD · 1920x1080"
-      },
-      {
-        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzQ4Mzc4Lm0zdTg.m3u8",
-        "quality": "HD"
-      },
-      {
-        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzQ4Mzc5Lm0zdTg.m3u8",
-        "quality": "SD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/94375.ts",
-        "name": "Fonte 31 (Ramys)",
-        "quality": "1080p FHD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/24533.ts",
-        "name": "Fonte 32 (Ramys)"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/9126.ts",
-        "name": "Fonte 33 (Ramys)",
-        "quality": "1080p FHD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/9127.ts",
-        "name": "Fonte 34 (Ramys)",
-        "quality": "720p HD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/30134.ts",
-        "name": "Fonte 35 (Ramys)",
-        "quality": "720p HD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/30135.ts",
-        "name": "Fonte 36 (Ramys)",
-        "quality": "720p HD"
-      },
-      {
-        "url": "http://46.151.196.223:14326/",
-        "name": "Fonte 37 (IPTV-ORG)"
       }
     ]
   },
@@ -6788,22 +6788,63 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "referer": "https://dadinhodetapioca.fun/"
       },
       {
-        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/6596e0d29e070ed4106e35cd57d181d2/error.txt",
-        "quality": "Qualidade não informada",
-        "referer": "https://w7.embedtv.cc/",
-        "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
+        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzQ4MzgwLm0zdTg.m3u8",
+        "quality": "FHD"
+      },
+      {
+        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzQ4MzgxLm0zdTg.m3u8",
+        "quality": "HD"
+      },
+      {
+        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzQ4MzgyLm0zdTg.m3u8",
+        "quality": "SD"
+      },
+      {
+        "url": "http://64.31.23.207:80/59471019/60849037/324394.m3u8",
+        "quality": "FHD · 1920x1080"
+      },
+      {
+        "url": "http://45.185.11.126:8000/play/a05a/index.m3u8",
+        "quality": "FHD · 1920x1080"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/94376.ts",
+        "name": "Fonte 27 (Ramys)",
+        "quality": "1080p FHD"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/24534.ts",
+        "name": "Fonte 28 (Ramys)"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/11770.ts",
+        "name": "Fonte 29 (Ramys)",
+        "quality": "1080p FHD"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/9128.ts",
+        "name": "Fonte 30 (Ramys)",
+        "quality": "720p HD"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/30136.ts",
+        "name": "Fonte 31 (Ramys)",
+        "quality": "720p HD"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/30137.ts",
+        "name": "Fonte 32 (Ramys)",
+        "quality": "720p HD"
       },
       {
         "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/telecinecult/telecinecult.m3u8",
         "quality": "HD · 1280x720"
       },
       {
-        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzQ4MzgwLm0zdTg.m3u8",
-        "quality": "FHD"
-      },
-      {
-        "url": "http://64.31.23.207:80/59471019/60849037/324394.m3u8",
-        "quality": "FHD · 1920x1080"
+        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/6596e0d29e070ed4106e35cd57d181d2/error.txt",
+        "quality": "Qualidade não informada",
+        "referer": "https://w7.embedtv.cc/",
+        "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
       },
       {
         "url": "http://vaiagora.vip:80/live/5q8VUj/5BeUd8/103456.m3u8",
@@ -6876,47 +6917,6 @@ export const FALLBACK_CHANNELS: Channel[] = [
       {
         "url": "http://corruptx.org:80/live/hfp5ejnrey/zq0u3kzads/30137.m3u8",
         "quality": "HD"
-      },
-      {
-        "url": "http://45.185.11.126:8000/play/a05a/index.m3u8",
-        "quality": "FHD · 1920x1080"
-      },
-      {
-        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzQ4MzgxLm0zdTg.m3u8",
-        "quality": "HD"
-      },
-      {
-        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzQ4MzgyLm0zdTg.m3u8",
-        "quality": "SD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/94376.ts",
-        "name": "Fonte 27 (Ramys)",
-        "quality": "1080p FHD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/24534.ts",
-        "name": "Fonte 28 (Ramys)"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/11770.ts",
-        "name": "Fonte 29 (Ramys)",
-        "quality": "1080p FHD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/9128.ts",
-        "name": "Fonte 30 (Ramys)",
-        "quality": "720p HD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/30136.ts",
-        "name": "Fonte 31 (Ramys)",
-        "quality": "720p HD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/30137.ts",
-        "name": "Fonte 32 (Ramys)",
-        "quality": "720p HD"
       }
     ]
   },
@@ -6927,6 +6927,55 @@ export const FALLBACK_CHANNELS: Channel[] = [
     "logo": "https://img.faz-o-eli.online/telecinefun.png",
     "sources": [
       {
+        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzQ4MzgzLm0zdTg.m3u8",
+        "quality": "FHD"
+      },
+      {
+        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzQ4Mzg0Lm0zdTg.m3u8",
+        "quality": "HD"
+      },
+      {
+        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzQ4Mzg1Lm0zdTg.m3u8",
+        "quality": "SD"
+      },
+      {
+        "url": "http://64.31.23.207:80/59471019/60849037/324395.m3u8",
+        "quality": "FHD · 1920x1080"
+      },
+      {
+        "url": "http://45.185.11.126:8000/play/a059/index.m3u8",
+        "quality": "FHD · 1920x1080"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/94377.ts",
+        "name": "Fonte 28 (Ramys)",
+        "quality": "1080p FHD"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/24535.ts",
+        "name": "Fonte 29 (Ramys)"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/9129.ts",
+        "name": "Fonte 30 (Ramys)",
+        "quality": "1080p FHD"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/9130.ts",
+        "name": "Fonte 31 (Ramys)",
+        "quality": "720p HD"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/30138.ts",
+        "name": "Fonte 32 (Ramys)",
+        "quality": "720p HD"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/30139.ts",
+        "name": "Fonte 33 (Ramys)",
+        "quality": "720p HD"
+      },
+      {
         "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/telecinefun/telecinefun.m3u8",
         "quality": "HD · 1280x720"
       },
@@ -6935,14 +6984,6 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "quality": "Qualidade não informada",
         "referer": "https://w7.embedtv.cc/",
         "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
-      },
-      {
-        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzQ4MzgzLm0zdTg.m3u8",
-        "quality": "FHD"
-      },
-      {
-        "url": "http://64.31.23.207:80/59471019/60849037/324395.m3u8",
-        "quality": "FHD · 1920x1080"
       },
       {
         "url": "http://vaiagora.vip:80/live/5q8VUj/5BeUd8/72354.m3u8",
@@ -7023,47 +7064,6 @@ export const FALLBACK_CHANNELS: Channel[] = [
       {
         "url": "http://corruptx.org:80/live/hfp5ejnrey/zq0u3kzads/30139.m3u8",
         "quality": "HD"
-      },
-      {
-        "url": "http://45.185.11.126:8000/play/a059/index.m3u8",
-        "quality": "FHD · 1920x1080"
-      },
-      {
-        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzQ4Mzg0Lm0zdTg.m3u8",
-        "quality": "HD"
-      },
-      {
-        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzQ4Mzg1Lm0zdTg.m3u8",
-        "quality": "SD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/94377.ts",
-        "name": "Fonte 28 (Ramys)",
-        "quality": "1080p FHD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/24535.ts",
-        "name": "Fonte 29 (Ramys)"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/9129.ts",
-        "name": "Fonte 30 (Ramys)",
-        "quality": "1080p FHD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/9130.ts",
-        "name": "Fonte 31 (Ramys)",
-        "quality": "720p HD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/30138.ts",
-        "name": "Fonte 32 (Ramys)",
-        "quality": "720p HD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/30139.ts",
-        "name": "Fonte 33 (Ramys)",
-        "quality": "720p HD"
       }
     ]
   },
@@ -7079,12 +7079,45 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "referer": "https://dadinhodetapioca.fun/"
       },
       {
-        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/telecinepipoca/telecinepipoca.m3u8",
-        "quality": "HD · 1280x720"
-      },
-      {
         "url": "http://64.31.23.207:80/59471019/60849037/324396.m3u8",
         "quality": "FHD · 1920x1080"
+      },
+      {
+        "url": "http://45.185.11.126:8000/play/a08g/index.m3u8",
+        "quality": "FHD · 1920x1080"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/94378.ts",
+        "name": "Fonte 25 (Ramys)",
+        "quality": "1080p FHD"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/24536.ts",
+        "name": "Fonte 26 (Ramys)"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/9131.ts",
+        "name": "Fonte 27 (Ramys)",
+        "quality": "1080p FHD"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/9132.ts",
+        "name": "Fonte 28 (Ramys)",
+        "quality": "720p HD"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/30140.ts",
+        "name": "Fonte 29 (Ramys)",
+        "quality": "720p HD"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/30141.ts",
+        "name": "Fonte 30 (Ramys)",
+        "quality": "720p HD"
+      },
+      {
+        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/telecinepipoca/telecinepipoca.m3u8",
+        "quality": "HD · 1280x720"
       },
       {
         "url": "http://vaiagora.vip:80/live/5q8VUj/5BeUd8/72358.m3u8",
@@ -7165,39 +7198,6 @@ export const FALLBACK_CHANNELS: Channel[] = [
       {
         "url": "http://corruptx.org:80/live/hfp5ejnrey/zq0u3kzads/30141.m3u8",
         "quality": "HD"
-      },
-      {
-        "url": "http://45.185.11.126:8000/play/a08g/index.m3u8",
-        "quality": "FHD · 1920x1080"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/94378.ts",
-        "name": "Fonte 25 (Ramys)",
-        "quality": "1080p FHD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/24536.ts",
-        "name": "Fonte 26 (Ramys)"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/9131.ts",
-        "name": "Fonte 27 (Ramys)",
-        "quality": "1080p FHD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/9132.ts",
-        "name": "Fonte 28 (Ramys)",
-        "quality": "720p HD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/30140.ts",
-        "name": "Fonte 29 (Ramys)",
-        "quality": "720p HD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/30141.ts",
-        "name": "Fonte 30 (Ramys)",
-        "quality": "720p HD"
       }
     ]
   },
@@ -7213,22 +7213,58 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "referer": "https://dadinhodetapioca.fun/"
       },
       {
-        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/a47100046c32c6403466555d35dd55fb/error.txt",
-        "quality": "Qualidade não informada",
-        "referer": "https://w7.embedtv.cc/",
-        "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
+        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzQ4Mzc0Lm0zdTg.m3u8",
+        "quality": "FHD"
+      },
+      {
+        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzQ4Mzc1Lm0zdTg.m3u8",
+        "quality": "HD"
+      },
+      {
+        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzQ4Mzc2Lm0zdTg.m3u8",
+        "quality": "SD"
+      },
+      {
+        "url": "http://64.31.23.207:80/59471019/60849037/324397.m3u8",
+        "quality": "FHD · 1920x1080"
+      },
+      {
+        "url": "http://332nr7hbfu.xyz:80/live/999913/S3CvUB/72362.m3u8",
+        "quality": "FHD · 1920x1080"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/94379.ts",
+        "name": "Fonte 30 (Ramys)",
+        "quality": "1080p FHD"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/24537.ts",
+        "name": "Fonte 31 (Ramys)"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/9133.ts",
+        "name": "Fonte 32 (Ramys)",
+        "quality": "1080p FHD"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/9134.ts",
+        "name": "Fonte 33 (Ramys)",
+        "quality": "720p HD"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/30142.ts",
+        "name": "Fonte 34 (Ramys)",
+        "quality": "720p HD"
       },
       {
         "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/telecinepremium/telecinepremium.m3u8",
         "quality": "HD · 1280x720"
       },
       {
-        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzQ4Mzc0Lm0zdTg.m3u8",
-        "quality": "FHD"
-      },
-      {
-        "url": "http://64.31.23.207:80/59471019/60849037/324397.m3u8",
-        "quality": "FHD · 1920x1080"
+        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/a47100046c32c6403466555d35dd55fb/error.txt",
+        "quality": "Qualidade não informada",
+        "referer": "https://w7.embedtv.cc/",
+        "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
       },
       {
         "url": "http://vaiagora.vip:80/live/5q8VUj/5BeUd8/90237.m3u8",
@@ -7313,42 +7349,6 @@ export const FALLBACK_CHANNELS: Channel[] = [
       {
         "url": "http://corruptx.org:80/live/hfp5ejnrey/zq0u3kzads/30142.m3u8",
         "quality": "HD"
-      },
-      {
-        "url": "http://332nr7hbfu.xyz:80/live/999913/S3CvUB/72362.m3u8",
-        "quality": "FHD · 1920x1080"
-      },
-      {
-        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzQ4Mzc1Lm0zdTg.m3u8",
-        "quality": "HD"
-      },
-      {
-        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzQ4Mzc2Lm0zdTg.m3u8",
-        "quality": "SD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/94379.ts",
-        "name": "Fonte 30 (Ramys)",
-        "quality": "1080p FHD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/24537.ts",
-        "name": "Fonte 31 (Ramys)"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/9133.ts",
-        "name": "Fonte 32 (Ramys)",
-        "quality": "1080p FHD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/9134.ts",
-        "name": "Fonte 33 (Ramys)",
-        "quality": "720p HD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/30142.ts",
-        "name": "Fonte 34 (Ramys)",
-        "quality": "720p HD"
       }
     ]
   },
@@ -7364,22 +7364,59 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "referer": "https://dadinhodetapioca.fun/"
       },
       {
-        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/bb5d21dc07a14ff3f69f97e23ea72499/error.txt",
-        "quality": "Qualidade não informada",
-        "referer": "https://w7.embedtv.cc/",
-        "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
+        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzQ4Mzg5Lm0zdTg.m3u8",
+        "quality": "FHD"
+      },
+      {
+        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzQ4MzkwLm0zdTg.m3u8",
+        "quality": "HD"
+      },
+      {
+        "url": "http://64.31.23.207:80/59471019/60849037/324398.m3u8",
+        "quality": "FHD · 1920x1080"
+      },
+      {
+        "url": "http://332nr7hbfu.xyz:80/live/999913/S3CvUB/72366.m3u8",
+        "quality": "FHD · 1920x1080"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/94380.ts",
+        "name": "Fonte 30 (Ramys)",
+        "quality": "1080p FHD"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/24538.ts",
+        "name": "Fonte 31 (Ramys)"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/9135.ts",
+        "name": "Fonte 32 (Ramys)",
+        "quality": "1080p FHD"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/9136.ts",
+        "name": "Fonte 33 (Ramys)",
+        "quality": "720p HD"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/30144.ts",
+        "name": "Fonte 34 (Ramys)",
+        "quality": "720p HD"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/30145.ts",
+        "name": "Fonte 35 (Ramys)",
+        "quality": "720p HD"
       },
       {
         "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/telecinetouch/telecinetouch.m3u8",
         "quality": "HD · 1280x720"
       },
       {
-        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzQ4Mzg5Lm0zdTg.m3u8",
-        "quality": "FHD"
-      },
-      {
-        "url": "http://64.31.23.207:80/59471019/60849037/324398.m3u8",
-        "quality": "FHD · 1920x1080"
+        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/bb5d21dc07a14ff3f69f97e23ea72499/error.txt",
+        "quality": "Qualidade não informada",
+        "referer": "https://w7.embedtv.cc/",
+        "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
       },
       {
         "url": "http://vaiagora.vip:80/live/5q8VUj/5BeUd8/103454.m3u8",
@@ -7468,43 +7505,6 @@ export const FALLBACK_CHANNELS: Channel[] = [
       {
         "url": "http://corruptx.org:80/live/hfp5ejnrey/zq0u3kzads/30145.m3u8",
         "quality": "HD"
-      },
-      {
-        "url": "http://332nr7hbfu.xyz:80/live/999913/S3CvUB/72366.m3u8",
-        "quality": "FHD · 1920x1080"
-      },
-      {
-        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzQ4MzkwLm0zdTg.m3u8",
-        "quality": "HD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/94380.ts",
-        "name": "Fonte 30 (Ramys)",
-        "quality": "1080p FHD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/24538.ts",
-        "name": "Fonte 31 (Ramys)"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/9135.ts",
-        "name": "Fonte 32 (Ramys)",
-        "quality": "1080p FHD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/9136.ts",
-        "name": "Fonte 33 (Ramys)",
-        "quality": "720p HD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/30144.ts",
-        "name": "Fonte 34 (Ramys)",
-        "quality": "720p HD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/30145.ts",
-        "name": "Fonte 35 (Ramys)",
-        "quality": "720p HD"
       }
     ]
   },
@@ -7520,8 +7520,57 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "referer": "https://dadinhodetapioca.fun/"
       },
       {
+        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1MzQ4Lm0zdTg.m3u8",
+        "quality": "FHD"
+      },
+      {
+        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1MzQ5Lm0zdTg.m3u8",
+        "quality": "HD"
+      },
+      {
+        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1MzUwLm0zdTg.m3u8",
+        "quality": "SD"
+      },
+      {
         "url": "http://45.162.64.114/TNT/index.m3u8",
         "quality": "HD · 1280x720"
+      },
+      {
+        "url": "http://138.204.86.4:8080/TNT_HD/index.m3u8",
+        "quality": "HD · 1280x720"
+      },
+      {
+        "url": "http://332nr7hbfu.xyz:80/live/999913/S3CvUB/72375.m3u8",
+        "quality": "FHD · 1920x1080"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/594019.ts",
+        "name": "Fonte 30 (Ramys)",
+        "quality": "1080p FHD"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/594020.ts",
+        "name": "Fonte 31 (Ramys)",
+        "quality": "1080p FHD"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/594021.ts",
+        "name": "Fonte 32 (Ramys)"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/594023.ts",
+        "name": "Fonte 33 (Ramys)",
+        "quality": "720p HD"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/594024.ts",
+        "name": "Fonte 34 (Ramys)",
+        "quality": "720p HD"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/594025.ts",
+        "name": "Fonte 35 (Ramys)",
+        "quality": "720p HD"
       },
       {
         "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/tnt/tnt.m3u8",
@@ -7529,14 +7578,6 @@ export const FALLBACK_CHANNELS: Channel[] = [
       },
       {
         "url": "https://16-5-0-235.sslip.io/tnt/index.m3u8"
-      },
-      {
-        "url": "http://138.204.86.4:8080/TNT_HD/index.m3u8",
-        "quality": "HD · 1280x720"
-      },
-      {
-        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1MzQ4Lm0zdTg.m3u8",
-        "quality": "FHD"
       },
       {
         "url": "http://vaiagora.vip:80/live/5q8VUj/5BeUd8/72377.m3u8",
@@ -7617,47 +7658,6 @@ export const FALLBACK_CHANNELS: Channel[] = [
       {
         "url": "http://corruptx.org:80/live/hfp5ejnrey/zq0u3kzads/594023.m3u8",
         "quality": "HD"
-      },
-      {
-        "url": "http://332nr7hbfu.xyz:80/live/999913/S3CvUB/72375.m3u8",
-        "quality": "FHD · 1920x1080"
-      },
-      {
-        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1MzQ5Lm0zdTg.m3u8",
-        "quality": "HD"
-      },
-      {
-        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1MzUwLm0zdTg.m3u8",
-        "quality": "SD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/594019.ts",
-        "name": "Fonte 30 (Ramys)",
-        "quality": "1080p FHD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/594020.ts",
-        "name": "Fonte 31 (Ramys)",
-        "quality": "1080p FHD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/594021.ts",
-        "name": "Fonte 32 (Ramys)"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/594023.ts",
-        "name": "Fonte 33 (Ramys)",
-        "quality": "720p HD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/594024.ts",
-        "name": "Fonte 34 (Ramys)",
-        "quality": "720p HD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/594025.ts",
-        "name": "Fonte 35 (Ramys)",
-        "quality": "720p HD"
       }
     ]
   },
@@ -7673,18 +7673,44 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "referer": "https://dadinhodetapioca.fun/"
       },
       {
-        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/01b14977b5d3d47312eb06081c5ffc53/error.txt",
-        "quality": "Qualidade não informada",
-        "referer": "https://w7.embedtv.cc/",
-        "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
+        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1MzUyLm0zdTg.m3u8",
+        "quality": "FHD"
+      },
+      {
+        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1MzUzLm0zdTg.m3u8",
+        "quality": "HD"
+      },
+      {
+        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1MzU0Lm0zdTg.m3u8",
+        "quality": "SD"
+      },
+      {
+        "url": "http://332nr7hbfu.xyz:80/live/999913/S3CvUB/72342.m3u8",
+        "quality": "FHD · 1920x1080"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/275101.ts",
+        "name": "Fonte 22 (Ramys)"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/275103.ts",
+        "name": "Fonte 23 (Ramys)",
+        "quality": "1080p FHD"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/275104.ts",
+        "name": "Fonte 24 (Ramys)",
+        "quality": "720p HD"
       },
       {
         "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/tntnovelas/tntnovelas.m3u8",
         "quality": "HD · 1280x720"
       },
       {
-        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1MzUyLm0zdTg.m3u8",
-        "quality": "FHD"
+        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/01b14977b5d3d47312eb06081c5ffc53/error.txt",
+        "quality": "Qualidade não informada",
+        "referer": "https://w7.embedtv.cc/",
+        "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
       },
       {
         "url": "http://vaiagora.vip:80/live/5q8VUj/5BeUd8/103466.m3u8",
@@ -7741,32 +7767,6 @@ export const FALLBACK_CHANNELS: Channel[] = [
       {
         "url": "http://corruptx.org:80/live/hfp5ejnrey/zq0u3kzads/275104.m3u8",
         "quality": "HD"
-      },
-      {
-        "url": "http://332nr7hbfu.xyz:80/live/999913/S3CvUB/72342.m3u8",
-        "quality": "FHD · 1920x1080"
-      },
-      {
-        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1MzUzLm0zdTg.m3u8",
-        "quality": "HD"
-      },
-      {
-        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1MzU0Lm0zdTg.m3u8",
-        "quality": "SD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/275101.ts",
-        "name": "Fonte 22 (Ramys)"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/275103.ts",
-        "name": "Fonte 23 (Ramys)",
-        "quality": "1080p FHD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/275104.ts",
-        "name": "Fonte 24 (Ramys)",
-        "quality": "720p HD"
       }
     ]
   },
@@ -7790,7 +7790,63 @@ export const FALLBACK_CHANNELS: Channel[] = [
     "logo": "https://img.faz-o-eli.online/tntseries.png",
     "sources": [
       {
+        "url": "https://dadinhodetapioca.fun/play/tntseries.html",
+        "quality": "FHD",
+        "referer": "https://dadinhodetapioca.fun/"
+      },
+      {
+        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1MzU2Lm0zdTg.m3u8",
+        "quality": "FHD"
+      },
+      {
+        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1MzU3Lm0zdTg.m3u8",
+        "quality": "HD"
+      },
+      {
+        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1MzU4Lm0zdTg.m3u8",
+        "quality": "SD"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/108184.ts",
+        "name": "Fonte 27 (Ramys)",
+        "quality": "1080p FHD"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/24156.ts",
+        "name": "Fonte 28 (Ramys)"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/9144.ts",
+        "name": "Fonte 29 (Ramys)",
+        "quality": "1080p FHD"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/9145.ts",
+        "name": "Fonte 30 (Ramys)",
+        "quality": "720p HD"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/35254.ts",
+        "name": "Fonte 31 (Ramys)",
+        "quality": "720p HD"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/35255.ts",
+        "name": "Fonte 32 (Ramys)",
+        "quality": "720p HD"
+      },
+      {
+        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/tntseries/tntseries.m3u8",
+        "quality": "SD · 1024x576"
+      },
+      {
         "url": "https://aws.s13-s1001604.lat/stream/53cae8d46c86aceec5a3928339017e1b/tntseries.m3u8",
+        "quality": "HD · 1280x720",
+        "referer": "https://meufut.top/tnt-series",
+        "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
+      },
+      {
+        "url": "https://aws.s13-s1001604.lat/stream/a80e0d116d93c753db030e98deedf0a2/tntseries.m3u8",
         "quality": "HD · 1280x720",
         "referer": "https://meufut.top/tnt-series",
         "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
@@ -7800,25 +7856,6 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "quality": "Qualidade não informada",
         "referer": "https://w7.embedtv.cc/",
         "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
-      },
-      {
-        "url": "https://dadinhodetapioca.fun/play/tntseries.html",
-        "quality": "FHD",
-        "referer": "https://dadinhodetapioca.fun/"
-      },
-      {
-        "url": "https://aws.s13-s1001604.lat/stream/a80e0d116d93c753db030e98deedf0a2/tntseries.m3u8",
-        "quality": "HD · 1280x720",
-        "referer": "https://meufut.top/tnt-series",
-        "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
-      },
-      {
-        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/tntseries/tntseries.m3u8",
-        "quality": "SD · 1024x576"
-      },
-      {
-        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1MzU2Lm0zdTg.m3u8",
-        "quality": "FHD"
       },
       {
         "url": "http://vaiagora.vip:80/live/5q8VUj/5BeUd8/72382.m3u8",
@@ -7891,43 +7928,6 @@ export const FALLBACK_CHANNELS: Channel[] = [
       {
         "url": "http://corruptx.org:80/live/hfp5ejnrey/zq0u3kzads/9145.m3u8",
         "quality": "HD"
-      },
-      {
-        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1MzU3Lm0zdTg.m3u8",
-        "quality": "HD"
-      },
-      {
-        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1MzU4Lm0zdTg.m3u8",
-        "quality": "SD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/108184.ts",
-        "name": "Fonte 27 (Ramys)",
-        "quality": "1080p FHD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/24156.ts",
-        "name": "Fonte 28 (Ramys)"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/9144.ts",
-        "name": "Fonte 29 (Ramys)",
-        "quality": "1080p FHD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/9145.ts",
-        "name": "Fonte 30 (Ramys)",
-        "quality": "720p HD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/35254.ts",
-        "name": "Fonte 31 (Ramys)",
-        "quality": "720p HD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/35255.ts",
-        "name": "Fonte 32 (Ramys)",
-        "quality": "720p HD"
       }
     ]
   },
@@ -7987,6 +7987,10 @@ export const FALLBACK_CHANNELS: Channel[] = [
     "logo": "https://mondrian.claro.com.br/channels/inverse/universal-reality.png",
     "sources": [
       {
+        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvMTc1MjMyNC5tM3U4.m3u8",
+        "quality": "HD"
+      },
+      {
         "url": "http://64.31.23.207:80/59471019/60849037/518601.m3u8",
         "quality": "FHD · 1920x1080"
       },
@@ -8001,10 +8005,6 @@ export const FALLBACK_CHANNELS: Channel[] = [
       {
         "url": "http://45.185.11.126:8000/play/a08c/index.m3u8",
         "quality": "FHD · 1920x1080"
-      },
-      {
-        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvMTc1MjMyNC5tM3U4.m3u8",
-        "quality": "HD"
       }
     ]
   },
@@ -8015,15 +8015,37 @@ export const FALLBACK_CHANNELS: Channel[] = [
     "logo": "https://img.faz-o-eli.online/universaltv.png",
     "sources": [
       {
+        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1MzYwLm0zdTg.m3u8",
+        "quality": "FHD"
+      },
+      {
+        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1MzYxLm0zdTg.m3u8",
+        "quality": "HD"
+      },
+      {
+        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1MzYyLm0zdTg.m3u8",
+        "quality": "SD"
+      },
+      {
+        "url": "https://getcdn.clarocdn.com.br/Content/Channel/SPOUNVHD/dsc3/manifest.mpd",
+        "quality": "Qualidade não informada"
+      },
+      {
+        "url": "http://64.31.23.207:80/59471019/60849037/324399.m3u8",
+        "quality": "FHD · 1920x1080"
+      },
+      {
+        "url": "http://45.185.11.126:8000/play/a0af/index.m3u8",
+        "quality": "FHD · 1920x1080"
+      },
+      {
+        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/universaltv/universaltv.m3u8",
+        "quality": "HD · 1280x720"
+      },
+      {
         "url": "https://aws.s13-s1001604.lat/stream/ed870f00aff7cf8192af3737e301669f/universaltv.m3u8",
         "quality": "HD · 1280x720",
         "referer": "https://meufut.top/universal-tv",
-        "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
-      },
-      {
-        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/d8a16e530b281f562699d07a63bcfb19/error.txt",
-        "quality": "Qualidade não informada",
-        "referer": "https://w7.embedtv.cc/",
         "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
       },
       {
@@ -8033,20 +8055,10 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
       },
       {
-        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/universaltv/universaltv.m3u8",
-        "quality": "HD · 1280x720"
-      },
-      {
-        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1MzYwLm0zdTg.m3u8",
-        "quality": "FHD"
-      },
-      {
-        "url": "https://getcdn.clarocdn.com.br/Content/Channel/SPOUNVHD/dsc3/manifest.mpd",
-        "quality": "Qualidade não informada"
-      },
-      {
-        "url": "http://64.31.23.207:80/59471019/60849037/324399.m3u8",
-        "quality": "FHD · 1920x1080"
+        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/d8a16e530b281f562699d07a63bcfb19/error.txt",
+        "quality": "Qualidade não informada",
+        "referer": "https://w7.embedtv.cc/",
+        "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
       },
       {
         "url": "http://vaiagora.vip:80/live/5q8VUj/5BeUd8/90632.m3u8",
@@ -8099,18 +8111,6 @@ export const FALLBACK_CHANNELS: Channel[] = [
       {
         "url": "http://corruptx.org:80/live/hfp5ejnrey/zq0u3kzads/35256.m3u8",
         "quality": "HD"
-      },
-      {
-        "url": "http://45.185.11.126:8000/play/a0af/index.m3u8",
-        "quality": "FHD · 1920x1080"
-      },
-      {
-        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1MzYxLm0zdTg.m3u8",
-        "quality": "HD"
-      },
-      {
-        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1MzYyLm0zdTg.m3u8",
-        "quality": "SD"
       }
     ]
   },
@@ -8131,6 +8131,10 @@ export const FALLBACK_CHANNELS: Channel[] = [
       {
         "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL3BhbGRpLnBybzo4MC9saXZlL3RvbmluaG8wMi9DYjQ5ODAzNy83MjM0MS5tM3U4.m3u8",
         "quality": "SD"
+      },
+      {
+        "url": "http://190.197.41.183/USA_NETWORK/index.m3u8",
+        "name": "Fonte 12 (IPTV-ORG)"
       },
       {
         "url": "http://vaiagora.vip:80/live/5q8VUj/5BeUd8/72338.m3u8",
@@ -8163,10 +8167,6 @@ export const FALLBACK_CHANNELS: Channel[] = [
       {
         "url": "http://vivlar.me:80/live/497238/KK8Kdy/72341.m3u8",
         "quality": "SD"
-      },
-      {
-        "url": "http://190.197.41.183/USA_NETWORK/index.m3u8",
-        "name": "Fonte 12 (IPTV-ORG)"
       }
     ]
   },
@@ -8182,14 +8182,43 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "referer": "https://dadinhodetapioca.fun/"
       },
       {
-        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/3aec09245d4b83b891d69d078790428a/error.txt",
-        "quality": "Qualidade não informada",
-        "referer": "https://w7.embedtv.cc/",
-        "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/107981.ts",
+        "name": "Fonte 22 (Ramys)",
+        "quality": "1080p FHD"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/21684.ts",
+        "name": "Fonte 23 (Ramys)"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/9219.ts",
+        "name": "Fonte 24 (Ramys)",
+        "quality": "1080p FHD"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/9220.ts",
+        "name": "Fonte 25 (Ramys)",
+        "quality": "720p HD"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/35258.ts",
+        "name": "Fonte 26 (Ramys)",
+        "quality": "720p HD"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/35259.ts",
+        "name": "Fonte 27 (Ramys)",
+        "quality": "720p HD"
       },
       {
         "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/warnerchannel/warnerchannel.m3u8",
         "quality": "HD · 1280x720"
+      },
+      {
+        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/3aec09245d4b83b891d69d078790428a/error.txt",
+        "quality": "Qualidade não informada",
+        "referer": "https://w7.embedtv.cc/",
+        "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
       },
       {
         "url": "http://vaiagora.vip:80/live/5q8VUj/5BeUd8/72431.m3u8",
@@ -8262,35 +8291,6 @@ export const FALLBACK_CHANNELS: Channel[] = [
       {
         "url": "http://corruptx.org:80/live/hfp5ejnrey/zq0u3kzads/9220.m3u8",
         "quality": "HD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/107981.ts",
-        "name": "Fonte 22 (Ramys)",
-        "quality": "1080p FHD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/21684.ts",
-        "name": "Fonte 23 (Ramys)"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/9219.ts",
-        "name": "Fonte 24 (Ramys)",
-        "quality": "1080p FHD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/9220.ts",
-        "name": "Fonte 25 (Ramys)",
-        "quality": "720p HD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/35258.ts",
-        "name": "Fonte 26 (Ramys)",
-        "quality": "720p HD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/35259.ts",
-        "name": "Fonte 27 (Ramys)",
-        "quality": "720p HD"
       }
     ]
   },
@@ -8301,14 +8301,14 @@ export const FALLBACK_CHANNELS: Channel[] = [
     "logo": "https://img.faz-o-eli.online/24h.png",
     "sources": [
       {
+        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/24h_naruto/24h_naruto.m3u8",
+        "quality": "Qualidade não informada"
+      },
+      {
         "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/2b02da29160d63be1c25959087679733/error.txt",
         "quality": "Qualidade não informada",
         "referer": "https://w7.embedtv.cc/",
         "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
-      },
-      {
-        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/24h_naruto/24h_naruto.m3u8",
-        "quality": "Qualidade não informada"
       }
     ]
   },
@@ -8500,39 +8500,25 @@ export const FALLBACK_CHANNELS: Channel[] = [
     "logo": "https://img.faz-o-eli.online/cartoonnetwork.png",
     "sources": [
       {
-        "url": "https://aws.s13-s1001604.lat/stream/f20eee8ca370156a3e6ee41459384861/cartoonnetwork.m3u8",
-        "quality": "HD · 1280x720",
-        "referer": "https://meufut.top/cartoon-network",
-        "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
-      },
-      {
-        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/b9399cc1add67ffa4a4fb3ef51335b36/error.txt",
-        "quality": "Qualidade não informada",
-        "referer": "https://w7.embedtv.cc/",
-        "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
-      },
-      {
         "url": "https://dadinhodetapioca.fun/play/cartoonnetwork.html",
         "quality": "FHD",
         "referer": "https://dadinhodetapioca.fun/"
       },
       {
-        "url": "https://aws.s13-s1001604.lat/stream/2a5902a94396cefa6fe0ce92ba674726/cartoonnetwork.m3u8",
-        "quality": "HD · 1280x720",
-        "referer": "https://meufut.top/cartoon-network",
-        "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
+        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1Mzk5Lm0zdTg.m3u8",
+        "quality": "FHD"
+      },
+      {
+        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1NDAwLm0zdTg.m3u8",
+        "quality": "HD"
+      },
+      {
+        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1NDAxLm0zdTg.m3u8",
+        "quality": "SD"
       },
       {
         "url": "http://45.162.64.114/CARTOON_NETWORK/index.m3u8",
         "quality": "HD · 1280x720"
-      },
-      {
-        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/cartoonnetwork/cartoonnetwork.m3u8",
-        "quality": "HD · 1280x720"
-      },
-      {
-        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1Mzk5Lm0zdTg.m3u8",
-        "quality": "FHD"
       },
       {
         "url": "http://64.31.23.207:80/59471019/60849037/1882622.m3u8",
@@ -8545,6 +8531,42 @@ export const FALLBACK_CHANNELS: Channel[] = [
       {
         "url": "http://64.31.23.207:80/59471019/60849037/1882624.m3u8",
         "quality": "HD · 1280x720"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/13504.ts",
+        "name": "Fonte 27 (Ramys)"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/8698.ts",
+        "name": "Fonte 28 (Ramys)",
+        "quality": "1080p FHD"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/8699.ts",
+        "name": "Fonte 29 (Ramys)",
+        "quality": "720p HD"
+      },
+      {
+        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/cartoonnetwork/cartoonnetwork.m3u8",
+        "quality": "HD · 1280x720"
+      },
+      {
+        "url": "https://aws.s13-s1001604.lat/stream/f20eee8ca370156a3e6ee41459384861/cartoonnetwork.m3u8",
+        "quality": "HD · 1280x720",
+        "referer": "https://meufut.top/cartoon-network",
+        "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
+      },
+      {
+        "url": "https://aws.s13-s1001604.lat/stream/2a5902a94396cefa6fe0ce92ba674726/cartoonnetwork.m3u8",
+        "quality": "HD · 1280x720",
+        "referer": "https://meufut.top/cartoon-network",
+        "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
+      },
+      {
+        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/b9399cc1add67ffa4a4fb3ef51335b36/error.txt",
+        "quality": "Qualidade não informada",
+        "referer": "https://w7.embedtv.cc/",
+        "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
       },
       {
         "url": "http://vaiagora.vip:80/live/5q8VUj/5BeUd8/71830.m3u8",
@@ -8601,28 +8623,6 @@ export const FALLBACK_CHANNELS: Channel[] = [
       {
         "url": "http://corruptx.org:80/live/hfp5ejnrey/zq0u3kzads/38016.m3u8",
         "quality": "HD"
-      },
-      {
-        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1NDAwLm0zdTg.m3u8",
-        "quality": "HD"
-      },
-      {
-        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1NDAxLm0zdTg.m3u8",
-        "quality": "SD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/13504.ts",
-        "name": "Fonte 27 (Ramys)"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/8698.ts",
-        "name": "Fonte 28 (Ramys)",
-        "quality": "1080p FHD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/8699.ts",
-        "name": "Fonte 29 (Ramys)",
-        "quality": "720p HD"
       }
     ]
   },
@@ -8765,30 +8765,21 @@ export const FALLBACK_CHANNELS: Channel[] = [
     "logo": "https://img.faz-o-eli.online/cartoonito.png",
     "sources": [
       {
-        "url": "https://aws.s13-s1001604.lat/stream/06fb008bc2fe2c3944c72e0c3ca551d4/cartoonito.m3u8",
-        "quality": "HD · 1280x720",
-        "referer": "https://meufut.top/cartoonito",
-        "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
-      },
-      {
-        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/e71f498def2db9ccef02e6e33f1fb454/error.txt",
-        "quality": "Qualidade não informada",
-        "referer": "https://w7.embedtv.cc/",
-        "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
-      },
-      {
-        "url": "https://aws.s13-s1001604.lat/stream/25787f329c85c3fee8876507d3b3778a/cartoonito.m3u8",
-        "quality": "HD · 1280x720",
-        "referer": "https://meufut.top/cartoonito",
-        "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
-      },
-      {
-        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/cartoonito/cartoonito.m3u8",
-        "quality": "HD · 1280x720"
-      },
-      {
         "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1NDAzLm0zdTg.m3u8",
         "quality": "FHD"
+      },
+      {
+        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1NDA0Lm0zdTg.m3u8",
+        "quality": "HD"
+      },
+      {
+        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1NDA1Lm0zdTg.m3u8",
+        "quality": "SD"
+      },
+      {
+        "url": "https://boing.akamaized.net/6380673432112/eu-central-1/6284318116001/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJob3N0Ijoib3dwbnN1LmVncmVzcy5haGc3NmwiLCJhY2NvdW50X2lkIjoiNjI4NDMxODExNjAwMSIsImVobiI6ImJvaW5nLmFrYW1haXplZC5uZXQiLCJpc3MiOiJibGl2ZS1wbGF5YmFjay1zb3VyY2UtYXBpIiwic3ViIjoicGF0aG1hcHRva2VuIiwiYXVkIjpbIjYyODQzMTgxMTYwMDEiXSwianRpIjoiNjM4MDY3MzQzMjExMiJ9.WACYETOZxZYmZHRpxwRrATxVZQBdSoeaWdfhtLKx1kI/playlist-hls.m3u8",
+        "name": "Fonte 29 (IPTV-ORG)",
+        "quality": "720p HD"
       },
       {
         "url": "http://64.31.23.207:80/59471019/60849037/1882631.m3u8",
@@ -8801,6 +8792,56 @@ export const FALLBACK_CHANNELS: Channel[] = [
       {
         "url": "http://64.31.23.207:80/59471019/60849037/1882633.m3u8",
         "quality": "SD · 960x540"
+      },
+      {
+        "url": "http://45.185.11.126:8000/play/a0ae/index.m3u8",
+        "quality": "FHD · 1920x1080"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/13503.ts",
+        "name": "Fonte 24 (Ramys)"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/8687.ts",
+        "name": "Fonte 25 (Ramys)",
+        "quality": "1080p FHD"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/8688.ts",
+        "name": "Fonte 26 (Ramys)",
+        "quality": "720p HD"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/38013.ts",
+        "name": "Fonte 27 (Ramys)",
+        "quality": "720p HD"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/106287.ts",
+        "name": "Fonte 28 (Ramys)",
+        "quality": "720p HD"
+      },
+      {
+        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/cartoonito/cartoonito.m3u8",
+        "quality": "HD · 1280x720"
+      },
+      {
+        "url": "https://aws.s13-s1001604.lat/stream/06fb008bc2fe2c3944c72e0c3ca551d4/cartoonito.m3u8",
+        "quality": "HD · 1280x720",
+        "referer": "https://meufut.top/cartoonito",
+        "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
+      },
+      {
+        "url": "https://aws.s13-s1001604.lat/stream/25787f329c85c3fee8876507d3b3778a/cartoonito.m3u8",
+        "quality": "HD · 1280x720",
+        "referer": "https://meufut.top/cartoonito",
+        "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
+      },
+      {
+        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/e71f498def2db9ccef02e6e33f1fb454/error.txt",
+        "quality": "Qualidade não informada",
+        "referer": "https://w7.embedtv.cc/",
+        "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
       },
       {
         "url": "http://vaiagora.vip:80/live/5q8VUj/5BeUd8/90644.m3u8",
@@ -8849,47 +8890,6 @@ export const FALLBACK_CHANNELS: Channel[] = [
       {
         "url": "http://corruptx.org:80/live/hfp5ejnrey/zq0u3kzads/106287.m3u8",
         "quality": "HD"
-      },
-      {
-        "url": "http://45.185.11.126:8000/play/a0ae/index.m3u8",
-        "quality": "FHD · 1920x1080"
-      },
-      {
-        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1NDA0Lm0zdTg.m3u8",
-        "quality": "HD"
-      },
-      {
-        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1NDA1Lm0zdTg.m3u8",
-        "quality": "SD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/13503.ts",
-        "name": "Fonte 24 (Ramys)"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/8687.ts",
-        "name": "Fonte 25 (Ramys)",
-        "quality": "1080p FHD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/8688.ts",
-        "name": "Fonte 26 (Ramys)",
-        "quality": "720p HD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/38013.ts",
-        "name": "Fonte 27 (Ramys)",
-        "quality": "720p HD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/106287.ts",
-        "name": "Fonte 28 (Ramys)",
-        "quality": "720p HD"
-      },
-      {
-        "url": "https://boing.akamaized.net/6380673432112/eu-central-1/6284318116001/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJob3N0Ijoib3dwbnN1LmVncmVzcy5haGc3NmwiLCJhY2NvdW50X2lkIjoiNjI4NDMxODExNjAwMSIsImVobiI6ImJvaW5nLmFrYW1haXplZC5uZXQiLCJpc3MiOiJibGl2ZS1wbGF5YmFjay1zb3VyY2UtYXBpIiwic3ViIjoicGF0aG1hcHRva2VuIiwiYXVkIjpbIjYyODQzMTgxMTYwMDEiXSwianRpIjoiNjM4MDY3MzQzMjExMiJ9.WACYETOZxZYmZHRpxwRrATxVZQBdSoeaWdfhtLKx1kI/playlist-hls.m3u8",
-        "name": "Fonte 29 (IPTV-ORG)",
-        "quality": "720p HD"
       }
     ]
   },
@@ -9091,6 +9091,14 @@ export const FALLBACK_CHANNELS: Channel[] = [
     "logo": "https://upload.wikimedia.org/wikipedia/commons/c/c0/DumDum_logo.svg",
     "sources": [
       {
+        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1NDM2Lm0zdTg.m3u8",
+        "quality": "HD"
+      },
+      {
+        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1NDM3Lm0zdTg.m3u8",
+        "quality": "SD"
+      },
+      {
         "url": "http://45.162.64.114/ZOOMOO_KIDS/index.m3u8",
         "quality": "HD · 1280x720"
       },
@@ -9105,14 +9113,6 @@ export const FALLBACK_CHANNELS: Channel[] = [
       {
         "url": "http://45.185.11.126:8000/play/a078/index.m3u8",
         "quality": "FHD · 1920x1080"
-      },
-      {
-        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1NDM2Lm0zdTg.m3u8",
-        "quality": "HD"
-      },
-      {
-        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1NDM3Lm0zdTg.m3u8",
-        "quality": "SD"
       }
     ]
   },
@@ -9151,18 +9151,16 @@ export const FALLBACK_CHANNELS: Channel[] = [
     "logo": "https://img.faz-o-eli.online/gloob.png",
     "sources": [
       {
-        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/edb0d7b92ee7ce5d95d97aa1590706de/error.txt",
-        "quality": "Qualidade não informada",
-        "referer": "https://w7.embedtv.cc/",
-        "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
-      },
-      {
-        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/gloob/gloob.m3u8",
-        "quality": "HD · 1280x720"
-      },
-      {
         "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1NDE1Lm0zdTg.m3u8",
         "quality": "FHD"
+      },
+      {
+        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1NDE2Lm0zdTg.m3u8",
+        "quality": "HD"
+      },
+      {
+        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1NDE3Lm0zdTg.m3u8",
+        "quality": "SD"
       },
       {
         "url": "http://64.31.23.207:80/59471019/60849037/1882625.m3u8",
@@ -9175,6 +9173,38 @@ export const FALLBACK_CHANNELS: Channel[] = [
       {
         "url": "http://64.31.23.207:80/59471019/60849037/1882627.m3u8",
         "quality": "SD · 960x540"
+      },
+      {
+        "url": "http://332nr7hbfu.xyz:80/live/999913/S3CvUB/131153.m3u8",
+        "quality": "FHD · 1920x1080"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/13526.ts",
+        "name": "Fonte 21 (Ramys)"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/8888.ts",
+        "name": "Fonte 22 (Ramys)",
+        "quality": "720p HD"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/8887.ts",
+        "name": "Fonte 23 (Ramys)",
+        "quality": "1080p FHD"
+      },
+      {
+        "url": "http://45.235.0.78/Gloob/playlist.m3u8",
+        "name": "Fonte 24 (IPTV-ORG)"
+      },
+      {
+        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/gloob/gloob.m3u8",
+        "quality": "HD · 1280x720"
+      },
+      {
+        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/edb0d7b92ee7ce5d95d97aa1590706de/error.txt",
+        "quality": "Qualidade não informada",
+        "referer": "https://w7.embedtv.cc/",
+        "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
       },
       {
         "url": "http://vaiagora.vip:80/live/5q8VUj/5BeUd8/131153.m3u8",
@@ -9219,36 +9249,6 @@ export const FALLBACK_CHANNELS: Channel[] = [
       {
         "url": "http://corruptx.org:80/live/hfp5ejnrey/zq0u3kzads/8887.m3u8",
         "quality": "FHD"
-      },
-      {
-        "url": "http://332nr7hbfu.xyz:80/live/999913/S3CvUB/131153.m3u8",
-        "quality": "FHD · 1920x1080"
-      },
-      {
-        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1NDE2Lm0zdTg.m3u8",
-        "quality": "HD"
-      },
-      {
-        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1NDE3Lm0zdTg.m3u8",
-        "quality": "SD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/13526.ts",
-        "name": "Fonte 21 (Ramys)"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/8888.ts",
-        "name": "Fonte 22 (Ramys)",
-        "quality": "720p HD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/8887.ts",
-        "name": "Fonte 23 (Ramys)",
-        "quality": "1080p FHD"
-      },
-      {
-        "url": "http://45.235.0.78/Gloob/playlist.m3u8",
-        "name": "Fonte 24 (IPTV-ORG)"
       }
     ]
   },
@@ -9263,6 +9263,14 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "quality": "FHD"
       },
       {
+        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1NDIwLm0zdTg.m3u8",
+        "quality": "HD"
+      },
+      {
+        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1NDIxLm0zdTg.m3u8",
+        "quality": "SD"
+      },
+      {
         "url": "http://64.31.23.207:80/59471019/60849037/1882628.m3u8",
         "quality": "HD · 1280x720"
       },
@@ -9273,6 +9281,19 @@ export const FALLBACK_CHANNELS: Channel[] = [
       {
         "url": "http://64.31.23.207:80/59471019/60849037/1882630.m3u8",
         "quality": "HD · 1280x720"
+      },
+      {
+        "url": "http://332nr7hbfu.xyz:80/live/999913/S3CvUB/90631.m3u8",
+        "quality": "FHD · 1920x1080"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/69036.ts",
+        "name": "Fonte 20 (Ramys)"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/69037.ts",
+        "name": "Fonte 21 (Ramys)",
+        "quality": "720p HD"
       },
       {
         "url": "http://vaiagora.vip:80/live/5q8VUj/5BeUd8/103497.m3u8",
@@ -9321,27 +9342,6 @@ export const FALLBACK_CHANNELS: Channel[] = [
       {
         "url": "http://corruptx.org:80/live/hfp5ejnrey/zq0u3kzads/69037.m3u8",
         "quality": "HD"
-      },
-      {
-        "url": "http://332nr7hbfu.xyz:80/live/999913/S3CvUB/90631.m3u8",
-        "quality": "FHD · 1920x1080"
-      },
-      {
-        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1NDIwLm0zdTg.m3u8",
-        "quality": "HD"
-      },
-      {
-        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1NDIxLm0zdTg.m3u8",
-        "quality": "SD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/69036.ts",
-        "name": "Fonte 20 (Ramys)"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/69037.ts",
-        "name": "Fonte 21 (Ramys)",
-        "quality": "720p HD"
       }
     ]
   },
@@ -10164,13 +10164,17 @@ export const FALLBACK_CHANNELS: Channel[] = [
     "logo": "https://mondrian.claro.com.br/channels/inverse/tooncast.png",
     "sources": [
       {
-        "url": "http://170.83.16.50:80/TOONCAST/index.m3u8",
-        "quality": "HD · 1280x720"
-      },
-      {
         "url": "https://dadinhodetapioca.fun/play/tooncast.html",
         "quality": "FHD",
         "referer": "https://dadinhodetapioca.fun/"
+      },
+      {
+        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1NDMzLm0zdTg.m3u8",
+        "quality": "SD"
+      },
+      {
+        "url": "http://170.83.16.50:80/TOONCAST/index.m3u8",
+        "quality": "HD · 1280x720"
       },
       {
         "url": "http://64.31.23.207:80/59471019/60849037/1882638.m3u8",
@@ -10185,22 +10189,6 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "quality": "HD · 1280x720"
       },
       {
-        "url": "http://corruptx.org:80/live/hfp5ejnrey/zq0u3kzads/125444.m3u8",
-        "quality": "FHD · 1920x1080"
-      },
-      {
-        "url": "http://corruptx.org:80/live/hfp5ejnrey/zq0u3kzads/125443.m3u8",
-        "quality": "FHD"
-      },
-      {
-        "url": "http://corruptx.org:80/live/hfp5ejnrey/zq0u3kzads/9150.m3u8",
-        "quality": "HD"
-      },
-      {
-        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1NDMzLm0zdTg.m3u8",
-        "quality": "SD"
-      },
-      {
         "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/125443.ts",
         "name": "Fonte 10 (Ramys)",
         "quality": "1080p FHD"
@@ -10213,6 +10201,18 @@ export const FALLBACK_CHANNELS: Channel[] = [
       {
         "url": "http://38.134.250.110:8000/play/a01t/index.m3u8",
         "name": "Fonte 12 (IPTV-ORG)"
+      },
+      {
+        "url": "http://corruptx.org:80/live/hfp5ejnrey/zq0u3kzads/125444.m3u8",
+        "quality": "FHD · 1920x1080"
+      },
+      {
+        "url": "http://corruptx.org:80/live/hfp5ejnrey/zq0u3kzads/125443.m3u8",
+        "quality": "FHD"
+      },
+      {
+        "url": "http://corruptx.org:80/live/hfp5ejnrey/zq0u3kzads/9150.m3u8",
+        "quality": "HD"
       }
     ]
   },
@@ -10247,6 +10247,10 @@ export const FALLBACK_CHANNELS: Channel[] = [
     "logo": "https://logos.imperioapps.top/TV_RA_TIM_BUM.png",
     "sources": [
       {
+        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzQ0OTgyLm0zdTg.m3u8",
+        "quality": "HD"
+      },
+      {
         "url": "http://64.31.23.207:80/59471019/60849037/1882634.m3u8",
         "quality": "FHD · 1920x1080"
       },
@@ -10257,6 +10261,10 @@ export const FALLBACK_CHANNELS: Channel[] = [
       {
         "url": "http://64.31.23.207:80/59471019/60849037/1882636.m3u8",
         "quality": "HD · 1280x720"
+      },
+      {
+        "url": "http://332nr7hbfu.xyz:80/live/999913/S3CvUB/72412.m3u8",
+        "quality": "FHD · 1920x1080"
       },
       {
         "url": "http://vaiagora.vip:80/live/5q8VUj/5BeUd8/103458.m3u8",
@@ -10301,14 +10309,6 @@ export const FALLBACK_CHANNELS: Channel[] = [
       {
         "url": "http://corruptx.org:80/live/hfp5ejnrey/zq0u3kzads/9193.m3u8",
         "quality": "FHD · 1920x1080"
-      },
-      {
-        "url": "http://332nr7hbfu.xyz:80/live/999913/S3CvUB/72412.m3u8",
-        "quality": "FHD · 1920x1080"
-      },
-      {
-        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzQ0OTgyLm0zdTg.m3u8",
-        "quality": "HD"
       }
     ]
   },
@@ -10379,6 +10379,15 @@ export const FALLBACK_CHANNELS: Channel[] = [
     "logo": "https://img.faz-o-eli.online/zoomoo.png",
     "sources": [
       {
+        "url": "http://332nr7hbfu.xyz:80/live/999913/S3CvUB/104934.m3u8",
+        "quality": "FHD · 1920x1080"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/9230.ts",
+        "name": "Fonte 13 (Ramys)",
+        "quality": "720p HD"
+      },
+      {
         "url": "http://vaiagora.vip:80/live/5q8VUj/5BeUd8/178533.m3u8",
         "quality": "4K"
       },
@@ -10421,15 +10430,6 @@ export const FALLBACK_CHANNELS: Channel[] = [
       {
         "url": "http://corruptx.org:80/live/hfp5ejnrey/zq0u3kzads/9230.m3u8",
         "quality": "HD"
-      },
-      {
-        "url": "http://332nr7hbfu.xyz:80/live/999913/S3CvUB/104934.m3u8",
-        "quality": "FHD · 1920x1080"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/9230.ts",
-        "name": "Fonte 13 (Ramys)",
-        "quality": "720p HD"
       }
     ]
   },
@@ -10440,15 +10440,13 @@ export const FALLBACK_CHANNELS: Channel[] = [
     "logo": "https://img.faz-o-eli.online/afazenda2.png",
     "sources": [
       {
+        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/afazenda/afazenda.m3u8",
+        "quality": "Qualidade não informada"
+      },
+      {
         "url": "https://aws.s13-s1001604.lat/stream/820fef4ff510e9724f894c3b408b9a93/afazenda.m3u8",
         "quality": "HD · 1280x720",
         "referer": "https://meufut.top/a-fazenda-18",
-        "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
-      },
-      {
-        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/cdc44d393ff177c1b80ecf2248667bdd/error.txt",
-        "quality": "Qualidade não informada",
-        "referer": "https://w7.embedtv.cc/",
         "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
       },
       {
@@ -10458,8 +10456,10 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
       },
       {
-        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/afazenda/afazenda.m3u8",
-        "quality": "Qualidade não informada"
+        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/cdc44d393ff177c1b80ecf2248667bdd/error.txt",
+        "quality": "Qualidade não informada",
+        "referer": "https://w7.embedtv.cc/",
+        "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
       },
       {
         "url": "http://corruptx.org:80/live/hfp5ejnrey/zq0u3kzads/2470061.m3u8",
@@ -10474,14 +10474,14 @@ export const FALLBACK_CHANNELS: Channel[] = [
     "logo": "https://img.faz-o-eli.online/afazenda2.png",
     "sources": [
       {
+        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/afazenda2/afazenda2.m3u8",
+        "quality": "Qualidade não informada"
+      },
+      {
         "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/2c5b175edd80868ef2d3c8c8a5cd5362/error.txt",
         "quality": "Qualidade não informada",
         "referer": "https://w7.embedtv.cc/",
         "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
-      },
-      {
-        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/afazenda2/afazenda2.m3u8",
-        "quality": "Qualidade não informada"
       },
       {
         "url": "http://corruptx.org:80/live/hfp5ejnrey/zq0u3kzads/2470062.m3u8",
@@ -10496,14 +10496,14 @@ export const FALLBACK_CHANNELS: Channel[] = [
     "logo": "https://img.faz-o-eli.online/afazenda2.png",
     "sources": [
       {
+        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/afazenda3/afazenda3.m3u8",
+        "quality": "Qualidade não informada"
+      },
+      {
         "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/d0211c7944e91ed9fd2d2dd835552a5a/error.txt",
         "quality": "Qualidade não informada",
         "referer": "https://w7.embedtv.cc/",
         "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
-      },
-      {
-        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/afazenda3/afazenda3.m3u8",
-        "quality": "Qualidade não informada"
       },
       {
         "url": "http://corruptx.org:80/live/hfp5ejnrey/zq0u3kzads/2470063.m3u8",
@@ -10518,14 +10518,14 @@ export const FALLBACK_CHANNELS: Channel[] = [
     "logo": "https://img.faz-o-eli.online/afazenda2.png",
     "sources": [
       {
+        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/afazenda4/afazenda4.m3u8",
+        "quality": "Qualidade não informada"
+      },
+      {
         "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/560c69af814fdfb21c8df00814a4d537/error.txt",
         "quality": "Qualidade não informada",
         "referer": "https://w7.embedtv.cc/",
         "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
-      },
-      {
-        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/afazenda4/afazenda4.m3u8",
-        "quality": "Qualidade não informada"
       },
       {
         "url": "http://corruptx.org:80/live/hfp5ejnrey/zq0u3kzads/2470064.m3u8",
@@ -10540,14 +10540,14 @@ export const FALLBACK_CHANNELS: Channel[] = [
     "logo": "https://img.faz-o-eli.online/afazenda2.png",
     "sources": [
       {
+        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/afazenda5/afazenda5.m3u8",
+        "quality": "Qualidade não informada"
+      },
+      {
         "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/3e4a116cb2ae9acc19d5bd9bbab7398b/error.txt",
         "quality": "Qualidade não informada",
         "referer": "https://w7.embedtv.cc/",
         "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
-      },
-      {
-        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/afazenda5/afazenda5.m3u8",
-        "quality": "Qualidade não informada"
       },
       {
         "url": "http://corruptx.org:80/live/hfp5ejnrey/zq0u3kzads/2470065.m3u8",
@@ -10562,12 +10562,12 @@ export const FALLBACK_CHANNELS: Channel[] = [
     "logo": "https://img.faz-o-eli.online/primevideo.png",
     "sources": [
       {
-        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/primevideo/primevideo.m3u8",
-        "quality": "FHD · 1920x1080"
-      },
-      {
         "url": "http://64.31.23.207:80/59471019/60849037/3460179.m3u8",
         "quality": "HD · 1280x720"
+      },
+      {
+        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/primevideo/primevideo.m3u8",
+        "quality": "FHD · 1920x1080"
       },
       {
         "url": "http://corruptx.org:80/live/hfp5ejnrey/zq0u3kzads/292698.m3u8",
@@ -10582,12 +10582,12 @@ export const FALLBACK_CHANNELS: Channel[] = [
     "logo": "https://img.faz-o-eli.online/primevideo.png",
     "sources": [
       {
-        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/primevideo2/primevideo2.m3u8",
-        "quality": "FHD · 1920x1080"
-      },
-      {
         "url": "http://64.31.23.207:80/59471019/60849037/3460180.m3u8",
         "quality": "HD · 1280x720"
+      },
+      {
+        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/primevideo2/primevideo2.m3u8",
+        "quality": "FHD · 1920x1080"
       },
       {
         "url": "http://corruptx.org:80/live/hfp5ejnrey/zq0u3kzads/121180.m3u8",
@@ -10658,38 +10658,17 @@ export const FALLBACK_CHANNELS: Channel[] = [
     "logo": "https://img.faz-o-eli.online/bandsports.png",
     "sources": [
       {
-        "url": "https://aws.s13-s1001604.lat/stream/01465ed93fe93c584f3cce07f12b3f5e/bandsports.m3u8",
-        "quality": "HD · 1280x720",
-        "referer": "https://meufut.top/band-sports",
-        "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
-      },
-      {
         "url": "https://dadinhodetapioca.fun/play/bandsports.html",
         "quality": "FHD",
         "referer": "https://dadinhodetapioca.fun/"
       },
       {
-        "url": "https://aws.s13-s1001604.lat/stream/63959f42a8a5be2c41cdcb84fe993800/bandsports.m3u8",
-        "quality": "HD · 1280x720",
-        "referer": "https://meufut.top/band-sports",
-        "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
+        "url": "https://cdn-5.nxplay.com.br/BAND_SPORTS/index.m3u8",
+        "name": "Fonte 33 (IPTV-ORG)"
       },
       {
         "url": "http://45.162.64.114/BAND_SPORTS/index.m3u8",
         "quality": "HD · 1280x720"
-      },
-      {
-        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/bandsports/bandsports.m3u8",
-        "quality": "HD · 1280x720"
-      },
-      {
-        "url": "https://16-5-0-235.sslip.io/bandsports/index.m3u8"
-      },
-      {
-        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/aa99fb2d8839271b568aecf9f8a2fb6b/error.txt",
-        "quality": "Qualidade não informada",
-        "referer": "https://w7.embedtv.cc/",
-        "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
       },
       {
         "url": "http://170.83.16.50/BAND_SPORTS/index.m3u8",
@@ -10714,6 +10693,60 @@ export const FALLBACK_CHANNELS: Channel[] = [
       {
         "url": "http://64.31.23.207:80/59471019/60849037/3460154.m3u8",
         "quality": "SD · 768x432"
+      },
+      {
+        "url": "http://332nr7hbfu.xyz:80/live/999913/S3CvUB/71801.m3u8",
+        "quality": "FHD · 1920x1080"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/81585.ts",
+        "name": "Fonte 28 (Ramys)",
+        "quality": "1080p FHD"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/8661.ts",
+        "name": "Fonte 29 (Ramys)",
+        "quality": "1080p FHD"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/8662.ts",
+        "name": "Fonte 30 (Ramys)",
+        "quality": "720p HD"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/30064.ts",
+        "name": "Fonte 31 (Ramys)",
+        "quality": "720p HD"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/26724.ts",
+        "name": "Fonte 32 (Ramys)",
+        "quality": "720p HD"
+      },
+      {
+        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/bandsports/bandsports.m3u8",
+        "quality": "HD · 1280x720"
+      },
+      {
+        "url": "https://aws.s13-s1001604.lat/stream/01465ed93fe93c584f3cce07f12b3f5e/bandsports.m3u8",
+        "quality": "HD · 1280x720",
+        "referer": "https://meufut.top/band-sports",
+        "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
+      },
+      {
+        "url": "https://aws.s13-s1001604.lat/stream/63959f42a8a5be2c41cdcb84fe993800/bandsports.m3u8",
+        "quality": "HD · 1280x720",
+        "referer": "https://meufut.top/band-sports",
+        "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
+      },
+      {
+        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/aa99fb2d8839271b568aecf9f8a2fb6b/error.txt",
+        "quality": "Qualidade não informada",
+        "referer": "https://w7.embedtv.cc/",
+        "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
+      },
+      {
+        "url": "https://16-5-0-235.sslip.io/bandsports/index.m3u8"
       },
       {
         "url": "http://vaiagora.vip:80/live/5q8VUj/5BeUd8/71801.m3u8",
@@ -10766,39 +10799,6 @@ export const FALLBACK_CHANNELS: Channel[] = [
       {
         "url": "http://corruptx.org:80/live/hfp5ejnrey/zq0u3kzads/26724.m3u8",
         "quality": "HD"
-      },
-      {
-        "url": "http://332nr7hbfu.xyz:80/live/999913/S3CvUB/71801.m3u8",
-        "quality": "FHD · 1920x1080"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/81585.ts",
-        "name": "Fonte 28 (Ramys)",
-        "quality": "1080p FHD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/8661.ts",
-        "name": "Fonte 29 (Ramys)",
-        "quality": "1080p FHD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/8662.ts",
-        "name": "Fonte 30 (Ramys)",
-        "quality": "720p HD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/30064.ts",
-        "name": "Fonte 31 (Ramys)",
-        "quality": "720p HD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/26724.ts",
-        "name": "Fonte 32 (Ramys)",
-        "quality": "720p HD"
-      },
-      {
-        "url": "https://cdn-5.nxplay.com.br/BAND_SPORTS/index.m3u8",
-        "name": "Fonte 33 (IPTV-ORG)"
       }
     ]
   },
@@ -10881,16 +10881,6 @@ export const FALLBACK_CHANNELS: Channel[] = [
     "logo": "https://img.faz-o-eli.online/off.png",
     "sources": [
       {
-        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/95c0c4c76d7121191d8c2164d9ba6de3/error.txt",
-        "quality": "Qualidade não informada",
-        "referer": "https://w7.embedtv.cc/",
-        "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
-      },
-      {
-        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/off/off.m3u8",
-        "quality": "HD · 1280x720"
-      },
-      {
         "url": "http://64.31.23.207:80/59471019/60849037/518583.m3u8",
         "quality": "FHD · 1920x1080"
       },
@@ -10901,6 +10891,24 @@ export const FALLBACK_CHANNELS: Channel[] = [
       {
         "url": "http://64.31.23.207:80/59471019/60849037/518585.m3u8",
         "quality": "SD · 960x540"
+      },
+      {
+        "url": "http://45.185.11.126:8000/play/a07t/index.m3u8",
+        "quality": "FHD · 1920x1080"
+      },
+      {
+        "url": "http://170.82.202.31/OFF/index.m3u8",
+        "name": "Fonte 18 (IPTV-ORG)"
+      },
+      {
+        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/off/off.m3u8",
+        "quality": "HD · 1280x720"
+      },
+      {
+        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/95c0c4c76d7121191d8c2164d9ba6de3/error.txt",
+        "quality": "Qualidade não informada",
+        "referer": "https://w7.embedtv.cc/",
+        "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
       },
       {
         "url": "http://vaiagora.vip:80/live/5q8VUj/5BeUd8/72209.m3u8",
@@ -10945,14 +10953,6 @@ export const FALLBACK_CHANNELS: Channel[] = [
       {
         "url": "http://corruptx.org:80/live/hfp5ejnrey/zq0u3kzads/8998.m3u8",
         "quality": "HD"
-      },
-      {
-        "url": "http://45.185.11.126:8000/play/a07t/index.m3u8",
-        "quality": "FHD · 1920x1080"
-      },
-      {
-        "url": "http://170.82.202.31/OFF/index.m3u8",
-        "name": "Fonte 18 (IPTV-ORG)"
       }
     ]
   },
@@ -11022,14 +11022,14 @@ export const FALLBACK_CHANNELS: Channel[] = [
     "logo": "https://img.faz-o-eli.online/cazetv.png",
     "sources": [
       {
+        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/caze1/caze1.m3u8",
+        "quality": "FHD · 1920x1080"
+      },
+      {
         "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/d131c9322a9dbfe8ea7ff5c9fa7ea1ed/error.txt",
         "quality": "Qualidade não informada",
         "referer": "https://w7.embedtv.cc/",
         "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
-      },
-      {
-        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/caze1/caze1.m3u8",
-        "quality": "FHD · 1920x1080"
       },
       {
         "url": "http://corruptx.org:80/live/hfp5ejnrey/zq0u3kzads/227520.m3u8",
@@ -11052,18 +11052,18 @@ export const FALLBACK_CHANNELS: Channel[] = [
     "logo": "https://img.faz-o-eli.online/cazetv.png",
     "sources": [
       {
-        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/125ceb72d65dce89d343e6b1bcda90ec/error.txt",
-        "quality": "Qualidade não informada",
-        "referer": "https://w7.embedtv.cc/",
-        "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
+        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL3BhbGRpLnBybzo4MC9saXZlL3RvbmluaG8wMi9DYjQ5ODAzNy8zODQ0NjMubTN1OA.m3u8",
+        "quality": "FHD"
       },
       {
         "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/caze2/caze2.m3u8",
         "quality": "FHD · 1920x1080"
       },
       {
-        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL3BhbGRpLnBybzo4MC9saXZlL3RvbmluaG8wMi9DYjQ5ODAzNy8zODQ0NjMubTN1OA.m3u8",
-        "quality": "FHD"
+        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/125ceb72d65dce89d343e6b1bcda90ec/error.txt",
+        "quality": "Qualidade não informada",
+        "referer": "https://w7.embedtv.cc/",
+        "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
       }
     ]
   },
@@ -11086,33 +11086,16 @@ export const FALLBACK_CHANNELS: Channel[] = [
     "logo": "https://img.faz-o-eli.online/combate.png",
     "sources": [
       {
-        "url": "https://aws.s13-s1001604.lat/stream/7d57bfa6e9334f879ac96923e91f97f4/combate.m3u8",
-        "quality": "HD · 1280x720",
-        "referer": "https://meufut.top/combate",
-        "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
-      },
-      {
-        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/c269edc69ec6a971ebf980eab5ffdf0e/error.txt",
-        "quality": "Qualidade não informada",
-        "referer": "https://w7.embedtv.cc/",
-        "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
-      },
-      {
-        "url": "https://aws.s13-s1001604.lat/stream/a223f90f63881dde78c7f0bb46488689/combate.m3u8",
-        "quality": "HD · 1280x720",
-        "referer": "https://meufut.top/combate",
-        "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
-      },
-      {
-        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/combate/combate.m3u8",
-        "quality": "Qualidade não informada"
-      },
-      {
-        "url": "https://16-5-0-235.sslip.io/combate/index.m3u8"
-      },
-      {
         "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1NTE0Lm0zdTg.m3u8",
         "quality": "FHD"
+      },
+      {
+        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1NTE1Lm0zdTg.m3u8",
+        "quality": "HD"
+      },
+      {
+        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1NTE2Lm0zdTg.m3u8",
+        "quality": "SD"
       },
       {
         "url": "http://64.31.23.207:80/59471019/60849037/297542.m3u8",
@@ -11125,6 +11108,68 @@ export const FALLBACK_CHANNELS: Channel[] = [
       {
         "url": "http://64.31.23.207:80/59471019/60849037/297544.m3u8",
         "quality": "SD · 768x432"
+      },
+      {
+        "url": "http://332nr7hbfu.xyz:80/live/999913/S3CvUB/71846.m3u8",
+        "quality": "SD · 768x432"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/81586.ts",
+        "name": "Fonte 29 (Ramys)",
+        "quality": "1080p FHD"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/13506.ts",
+        "name": "Fonte 30 (Ramys)"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/8714.ts",
+        "name": "Fonte 31 (Ramys)",
+        "quality": "1080p FHD"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/8716.ts",
+        "name": "Fonte 32 (Ramys)",
+        "quality": "720p HD"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/30066.ts",
+        "name": "Fonte 33 (Ramys)",
+        "quality": "720p HD"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/30067.ts",
+        "name": "Fonte 34 (Ramys)",
+        "quality": "720p HD"
+      },
+      {
+        "url": "http://143.14.134.107/167/index.m3u8",
+        "name": "Fonte 35 (IPTV-ORG)"
+      },
+      {
+        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/combate/combate.m3u8",
+        "quality": "Qualidade não informada"
+      },
+      {
+        "url": "https://aws.s13-s1001604.lat/stream/7d57bfa6e9334f879ac96923e91f97f4/combate.m3u8",
+        "quality": "HD · 1280x720",
+        "referer": "https://meufut.top/combate",
+        "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
+      },
+      {
+        "url": "https://aws.s13-s1001604.lat/stream/a223f90f63881dde78c7f0bb46488689/combate.m3u8",
+        "quality": "HD · 1280x720",
+        "referer": "https://meufut.top/combate",
+        "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
+      },
+      {
+        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/c269edc69ec6a971ebf980eab5ffdf0e/error.txt",
+        "quality": "Qualidade não informada",
+        "referer": "https://w7.embedtv.cc/",
+        "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
+      },
+      {
+        "url": "https://16-5-0-235.sslip.io/combate/index.m3u8"
       },
       {
         "url": "http://vaiagora.vip:80/live/5q8VUj/5BeUd8/71844.m3u8",
@@ -11189,51 +11234,6 @@ export const FALLBACK_CHANNELS: Channel[] = [
       {
         "url": "http://corruptx.org:80/live/hfp5ejnrey/zq0u3kzads/30067.m3u8",
         "quality": "HD"
-      },
-      {
-        "url": "http://332nr7hbfu.xyz:80/live/999913/S3CvUB/71846.m3u8",
-        "quality": "SD · 768x432"
-      },
-      {
-        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1NTE1Lm0zdTg.m3u8",
-        "quality": "HD"
-      },
-      {
-        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1NTE2Lm0zdTg.m3u8",
-        "quality": "SD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/81586.ts",
-        "name": "Fonte 29 (Ramys)",
-        "quality": "1080p FHD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/13506.ts",
-        "name": "Fonte 30 (Ramys)"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/8714.ts",
-        "name": "Fonte 31 (Ramys)",
-        "quality": "1080p FHD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/8716.ts",
-        "name": "Fonte 32 (Ramys)",
-        "quality": "720p HD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/30066.ts",
-        "name": "Fonte 33 (Ramys)",
-        "quality": "720p HD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/30067.ts",
-        "name": "Fonte 34 (Ramys)",
-        "quality": "720p HD"
-      },
-      {
-        "url": "http://143.14.134.107/167/index.m3u8",
-        "name": "Fonte 35 (IPTV-ORG)"
       }
     ]
   },
@@ -11389,41 +11389,28 @@ export const FALLBACK_CHANNELS: Channel[] = [
     "logo": "https://img.faz-o-eli.online/espn.png",
     "sources": [
       {
-        "url": "https://aws.s13-s1001604.lat/stream/48cae3919e89e385e3789102c01f9a97/espn.m3u8",
-        "quality": "HD · 1280x720 @ 60fps",
-        "referer": "https://meufut.top/espn",
-        "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
+        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL3BhbGRpLnBybzo4MC9saXZlL3RvbmluaG8wMi9DYjQ5ODAzNy83MTkxMS5tM3U4.m3u8",
+        "quality": "FHD · 1920x1080"
       },
       {
-        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/b5effc33c1848e4f0ff6f89295642e20/error.txt",
-        "quality": "Qualidade não informada",
-        "referer": "https://w7.embedtv.cc/",
-        "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
+        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL3BhbGRpLnBybzo4MC9saXZlL3RvbmluaG8wMi9DYjQ5ODAzNy85MDY0MC5tM3U4.m3u8",
+        "quality": "FHD · 1920x1080"
+      },
+      {
+        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL3BhbGRpLnBybzo4MC9saXZlL3RvbmluaG8wMi9DYjQ5ODAzNy83MTkxMy5tM3U4.m3u8",
+        "quality": "HD · 1280x720"
+      },
+      {
+        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL3BhbGRpLnBybzo4MC9saXZlL3RvbmluaG8wMi9DYjQ5ODAzNy83MTkxNC5tM3U4.m3u8",
+        "quality": "SD · 852x480"
       },
       {
         "url": "http://45.162.64.114/ESPN_BRASIL/index.m3u8",
         "quality": "HD · 1280x720"
       },
       {
-        "url": "https://aws.s13-s1001604.lat/stream/dbf76b5a3f66249763951288cbd98053/espn.m3u8",
-        "quality": "HD · 1280x720",
-        "referer": "https://meufut.top/espn",
-        "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
-      },
-      {
-        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/espn/espn.m3u8",
-        "quality": "HD · 1280x720"
-      },
-      {
-        "url": "https://16-5-0-235.sslip.io/espn/index.m3u8"
-      },
-      {
         "url": "http://138.204.86.4:8080/ESPN_HD/index.m3u8",
         "quality": "HD · 1280x720"
-      },
-      {
-        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL3BhbGRpLnBybzo4MC9saXZlL3RvbmluaG8wMi9DYjQ5ODAzNy83MTkxMS5tM3U4.m3u8",
-        "quality": "FHD · 1920x1080"
       },
       {
         "url": "http://181.78.197.59:8000/play/a07z/index.m3u8",
@@ -11442,16 +11429,62 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "quality": "SD · 768x432"
       },
       {
-        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL3BhbGRpLnBybzo4MC9saXZlL3RvbmluaG8wMi9DYjQ5ODAzNy85MDY0MC5tM3U4.m3u8",
-        "quality": "FHD · 1920x1080"
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/598912.ts",
+        "name": "Fonte 32 (Ramys)",
+        "quality": "1080p FHD"
       },
       {
-        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL3BhbGRpLnBybzo4MC9saXZlL3RvbmluaG8wMi9DYjQ5ODAzNy83MTkxMy5tM3U4.m3u8",
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/598913.ts",
+        "name": "Fonte 33 (Ramys)"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/598914.ts",
+        "name": "Fonte 34 (Ramys)",
+        "quality": "1080p FHD"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/598916.ts",
+        "name": "Fonte 35 (Ramys)",
+        "quality": "720p HD"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/598917.ts",
+        "name": "Fonte 36 (Ramys)",
+        "quality": "720p HD"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/598918.ts",
+        "name": "Fonte 37 (Ramys)",
+        "quality": "720p HD"
+      },
+      {
+        "url": "http://190.83.2.182:8090/ESPN/index.m3u8",
+        "name": "Fonte 38 (IPTV-ORG)"
+      },
+      {
+        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/espn/espn.m3u8",
         "quality": "HD · 1280x720"
       },
       {
-        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL3BhbGRpLnBybzo4MC9saXZlL3RvbmluaG8wMi9DYjQ5ODAzNy83MTkxNC5tM3U4.m3u8",
-        "quality": "SD · 852x480"
+        "url": "https://aws.s13-s1001604.lat/stream/48cae3919e89e385e3789102c01f9a97/espn.m3u8",
+        "quality": "HD · 1280x720 @ 60fps",
+        "referer": "https://meufut.top/espn",
+        "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
+      },
+      {
+        "url": "https://aws.s13-s1001604.lat/stream/dbf76b5a3f66249763951288cbd98053/espn.m3u8",
+        "quality": "HD · 1280x720",
+        "referer": "https://meufut.top/espn",
+        "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
+      },
+      {
+        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/b5effc33c1848e4f0ff6f89295642e20/error.txt",
+        "quality": "Qualidade não informada",
+        "referer": "https://w7.embedtv.cc/",
+        "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
+      },
+      {
+        "url": "https://16-5-0-235.sslip.io/espn/index.m3u8"
       },
       {
         "url": "http://vaiagora.vip:80/live/5q8VUj/5BeUd8/90640.m3u8",
@@ -11516,39 +11549,6 @@ export const FALLBACK_CHANNELS: Channel[] = [
       {
         "url": "http://corruptx.org:80/live/hfp5ejnrey/zq0u3kzads/598918.m3u8",
         "quality": "HD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/598912.ts",
-        "name": "Fonte 32 (Ramys)",
-        "quality": "1080p FHD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/598913.ts",
-        "name": "Fonte 33 (Ramys)"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/598914.ts",
-        "name": "Fonte 34 (Ramys)",
-        "quality": "1080p FHD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/598916.ts",
-        "name": "Fonte 35 (Ramys)",
-        "quality": "720p HD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/598917.ts",
-        "name": "Fonte 36 (Ramys)",
-        "quality": "720p HD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/598918.ts",
-        "name": "Fonte 37 (Ramys)",
-        "quality": "720p HD"
-      },
-      {
-        "url": "http://190.83.2.182:8090/ESPN/index.m3u8",
-        "name": "Fonte 38 (IPTV-ORG)"
       }
     ]
   },
@@ -11588,21 +11588,20 @@ export const FALLBACK_CHANNELS: Channel[] = [
     "logo": "https://img.faz-o-eli.online/espn2.png",
     "sources": [
       {
+        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1NTIzLm0zdTg.m3u8",
+        "quality": "HD"
+      },
+      {
+        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1NTIyLm0zdTg.m3u8",
+        "quality": "HD"
+      },
+      {
+        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1NTI0Lm0zdTg.m3u8",
+        "quality": "SD"
+      },
+      {
         "url": "http://138.204.86.4:8080/ESPN2_HD/index.m3u8",
         "quality": "HD · 1280x720"
-      },
-      {
-        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/62f5abcce049f75e52031599456334dc/error.txt",
-        "quality": "Qualidade não informada",
-        "referer": "https://w7.embedtv.cc/",
-        "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
-      },
-      {
-        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/espn2/espn2.m3u8",
-        "quality": "HD · 1280x720"
-      },
-      {
-        "url": "https://16-5-0-235.sslip.io/espn2/index.m3u8"
       },
       {
         "url": "http://64.31.23.207:80/59471019/60849037/3460185.m3u8",
@@ -11615,6 +11614,52 @@ export const FALLBACK_CHANNELS: Channel[] = [
       {
         "url": "http://64.31.23.207:80/59471019/60849037/3460187.m3u8",
         "quality": "SD · 768x432"
+      },
+      {
+        "url": "http://332nr7hbfu.xyz:80/live/999913/S3CvUB/71919.m3u8",
+        "quality": "FHD · 1920x1080"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/81587.ts",
+        "name": "Fonte 24 (Ramys)",
+        "quality": "1080p FHD"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/13519.ts",
+        "name": "Fonte 25 (Ramys)"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/8786.ts",
+        "name": "Fonte 26 (Ramys)",
+        "quality": "720p HD"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/131131.ts",
+        "name": "Fonte 27 (Ramys)",
+        "quality": "1080p FHD"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/30072.ts",
+        "name": "Fonte 28 (Ramys)",
+        "quality": "720p HD"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/30071.ts",
+        "name": "Fonte 29 (Ramys)",
+        "quality": "720p HD"
+      },
+      {
+        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/espn2/espn2.m3u8",
+        "quality": "HD · 1280x720"
+      },
+      {
+        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/62f5abcce049f75e52031599456334dc/error.txt",
+        "quality": "Qualidade não informada",
+        "referer": "https://w7.embedtv.cc/",
+        "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
+      },
+      {
+        "url": "https://16-5-0-235.sslip.io/espn2/index.m3u8"
       },
       {
         "url": "http://vaiagora.vip:80/live/5q8VUj/5BeUd8/71920.m3u8",
@@ -11663,51 +11708,6 @@ export const FALLBACK_CHANNELS: Channel[] = [
       {
         "url": "http://corruptx.org:80/live/hfp5ejnrey/zq0u3kzads/30071.m3u8",
         "quality": "HD"
-      },
-      {
-        "url": "http://332nr7hbfu.xyz:80/live/999913/S3CvUB/71919.m3u8",
-        "quality": "FHD · 1920x1080"
-      },
-      {
-        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1NTIzLm0zdTg.m3u8",
-        "quality": "HD"
-      },
-      {
-        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1NTIyLm0zdTg.m3u8",
-        "quality": "HD"
-      },
-      {
-        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1NTI0Lm0zdTg.m3u8",
-        "quality": "SD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/81587.ts",
-        "name": "Fonte 24 (Ramys)",
-        "quality": "1080p FHD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/13519.ts",
-        "name": "Fonte 25 (Ramys)"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/8786.ts",
-        "name": "Fonte 26 (Ramys)",
-        "quality": "720p HD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/131131.ts",
-        "name": "Fonte 27 (Ramys)",
-        "quality": "1080p FHD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/30072.ts",
-        "name": "Fonte 28 (Ramys)",
-        "quality": "720p HD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/30071.ts",
-        "name": "Fonte 29 (Ramys)",
-        "quality": "720p HD"
       }
     ]
   },
@@ -11755,21 +11755,20 @@ export const FALLBACK_CHANNELS: Channel[] = [
     "logo": "https://img.faz-o-eli.online/espn3.png",
     "sources": [
       {
+        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1NTI3Lm0zdTg.m3u8",
+        "quality": "HD"
+      },
+      {
+        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1NTI2Lm0zdTg.m3u8",
+        "quality": "HD"
+      },
+      {
+        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1NTI4Lm0zdTg.m3u8",
+        "quality": "SD"
+      },
+      {
         "url": "http://138.204.86.4:8080/ESPN3_HD/index.m3u8",
         "quality": "HD · 1280x720"
-      },
-      {
-        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/aca83578cae37dbea69ce93da97efa5f/error.txt",
-        "quality": "Qualidade não informada",
-        "referer": "https://w7.embedtv.cc/",
-        "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
-      },
-      {
-        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/espn3/espn3.m3u8",
-        "quality": "HD · 1280x720"
-      },
-      {
-        "url": "https://16-5-0-235.sslip.io/espn3/index.m3u8"
       },
       {
         "url": "http://181.78.197.59:8000/play/a081/index.m3u8",
@@ -11782,6 +11781,61 @@ export const FALLBACK_CHANNELS: Channel[] = [
       {
         "url": "http://64.31.23.207:80/59471019/60849037/3460190.m3u8",
         "quality": "SD · 768x432"
+      },
+      {
+        "url": "http://332nr7hbfu.xyz:80/live/999913/S3CvUB/71907.m3u8",
+        "quality": "FHD · 1920x1080"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/81588.ts",
+        "name": "Fonte 27 (Ramys)",
+        "quality": "1080p FHD"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/13520.ts",
+        "name": "Fonte 28 (Ramys)"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/8788.ts",
+        "name": "Fonte 29 (Ramys)",
+        "quality": "1080p FHD"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/131132.ts",
+        "name": "Fonte 30 (Ramys)",
+        "quality": "1080p FHD"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/8787.ts",
+        "name": "Fonte 31 (Ramys)",
+        "quality": "720p HD"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/30073.ts",
+        "name": "Fonte 32 (Ramys)",
+        "quality": "720p HD"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/30074.ts",
+        "name": "Fonte 33 (Ramys)",
+        "quality": "720p HD"
+      },
+      {
+        "url": "http://190.83.2.182:8090/ESPN3/index.m3u8",
+        "name": "Fonte 34 (IPTV-ORG)"
+      },
+      {
+        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/espn3/espn3.m3u8",
+        "quality": "HD · 1280x720"
+      },
+      {
+        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/aca83578cae37dbea69ce93da97efa5f/error.txt",
+        "quality": "Qualidade não informada",
+        "referer": "https://w7.embedtv.cc/",
+        "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
+      },
+      {
+        "url": "https://16-5-0-235.sslip.io/espn3/index.m3u8"
       },
       {
         "url": "http://vaiagora.vip:80/live/5q8VUj/5BeUd8/103504.m3u8",
@@ -11842,60 +11896,6 @@ export const FALLBACK_CHANNELS: Channel[] = [
       {
         "url": "http://corruptx.org:80/live/hfp5ejnrey/zq0u3kzads/30074.m3u8",
         "quality": "HD"
-      },
-      {
-        "url": "http://332nr7hbfu.xyz:80/live/999913/S3CvUB/71907.m3u8",
-        "quality": "FHD · 1920x1080"
-      },
-      {
-        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1NTI3Lm0zdTg.m3u8",
-        "quality": "HD"
-      },
-      {
-        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1NTI2Lm0zdTg.m3u8",
-        "quality": "HD"
-      },
-      {
-        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1NTI4Lm0zdTg.m3u8",
-        "quality": "SD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/81588.ts",
-        "name": "Fonte 27 (Ramys)",
-        "quality": "1080p FHD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/13520.ts",
-        "name": "Fonte 28 (Ramys)"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/8788.ts",
-        "name": "Fonte 29 (Ramys)",
-        "quality": "1080p FHD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/131132.ts",
-        "name": "Fonte 30 (Ramys)",
-        "quality": "1080p FHD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/8787.ts",
-        "name": "Fonte 31 (Ramys)",
-        "quality": "720p HD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/30073.ts",
-        "name": "Fonte 32 (Ramys)",
-        "quality": "720p HD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/30074.ts",
-        "name": "Fonte 33 (Ramys)",
-        "quality": "720p HD"
-      },
-      {
-        "url": "http://190.83.2.182:8090/ESPN3/index.m3u8",
-        "name": "Fonte 34 (IPTV-ORG)"
       }
     ]
   },
@@ -11930,21 +11930,20 @@ export const FALLBACK_CHANNELS: Channel[] = [
     "logo": "https://img.faz-o-eli.online/espn4.png",
     "sources": [
       {
+        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1NTMxLm0zdTg.m3u8",
+        "quality": "HD"
+      },
+      {
+        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1NTMwLm0zdTg.m3u8",
+        "quality": "HD"
+      },
+      {
+        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1NTMyLm0zdTg.m3u8",
+        "quality": "SD"
+      },
+      {
         "url": "http://45.162.64.114/ESPN_4/index.m3u8",
         "quality": "HD · 1280x720"
-      },
-      {
-        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/e0c88bb2a1753c87f83b2b01e269b51a/error.txt",
-        "quality": "Qualidade não informada",
-        "referer": "https://w7.embedtv.cc/",
-        "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
-      },
-      {
-        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/espn4/espn4.m3u8",
-        "quality": "HD · 1280x720"
-      },
-      {
-        "url": "https://16-5-0-235.sslip.io/espn4/index.m3u8"
       },
       {
         "url": "http://138.204.86.4:8080/ESPN4_HD/index.m3u8",
@@ -11965,6 +11964,52 @@ export const FALLBACK_CHANNELS: Channel[] = [
       {
         "url": "http://64.31.23.207:80/59471019/60849037/3460193.m3u8",
         "quality": "SD · 768x432"
+      },
+      {
+        "url": "http://45.185.11.126:8000/play/a05m/index.m3u8",
+        "quality": "HD · 1280x720"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/81578.ts",
+        "name": "Fonte 30 (Ramys)",
+        "quality": "1080p FHD"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/21647.ts",
+        "name": "Fonte 31 (Ramys)"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/8828.ts",
+        "name": "Fonte 32 (Ramys)",
+        "quality": "1080p FHD"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/20947.ts",
+        "name": "Fonte 33 (Ramys)",
+        "quality": "720p HD"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/30083.ts",
+        "name": "Fonte 34 (Ramys)",
+        "quality": "720p HD"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/30082.ts",
+        "name": "Fonte 35 (Ramys)",
+        "quality": "720p HD"
+      },
+      {
+        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/espn4/espn4.m3u8",
+        "quality": "HD · 1280x720"
+      },
+      {
+        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/e0c88bb2a1753c87f83b2b01e269b51a/error.txt",
+        "quality": "Qualidade não informada",
+        "referer": "https://w7.embedtv.cc/",
+        "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
+      },
+      {
+        "url": "https://16-5-0-235.sslip.io/espn4/index.m3u8"
       },
       {
         "url": "http://vaiagora.vip:80/live/5q8VUj/5BeUd8/71959.m3u8",
@@ -12029,51 +12074,6 @@ export const FALLBACK_CHANNELS: Channel[] = [
       {
         "url": "http://corruptx.org:80/live/hfp5ejnrey/zq0u3kzads/30082.m3u8",
         "quality": "HD"
-      },
-      {
-        "url": "http://45.185.11.126:8000/play/a05m/index.m3u8",
-        "quality": "HD · 1280x720"
-      },
-      {
-        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1NTMxLm0zdTg.m3u8",
-        "quality": "HD"
-      },
-      {
-        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1NTMwLm0zdTg.m3u8",
-        "quality": "HD"
-      },
-      {
-        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1NTMyLm0zdTg.m3u8",
-        "quality": "SD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/81578.ts",
-        "name": "Fonte 30 (Ramys)",
-        "quality": "1080p FHD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/21647.ts",
-        "name": "Fonte 31 (Ramys)"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/8828.ts",
-        "name": "Fonte 32 (Ramys)",
-        "quality": "1080p FHD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/20947.ts",
-        "name": "Fonte 33 (Ramys)",
-        "quality": "720p HD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/30083.ts",
-        "name": "Fonte 34 (Ramys)",
-        "quality": "720p HD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/30082.ts",
-        "name": "Fonte 35 (Ramys)",
-        "quality": "720p HD"
       }
     ]
   },
@@ -12108,21 +12108,20 @@ export const FALLBACK_CHANNELS: Channel[] = [
     "logo": "https://img.faz-o-eli.online/espn5.png",
     "sources": [
       {
-        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/433c11bcf1d5ec34721d8de73245ca76/error.txt",
-        "quality": "Qualidade não informada",
-        "referer": "https://w7.embedtv.cc/",
-        "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
-      },
-      {
-        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/espn5/espn5.m3u8",
-        "quality": "HD · 1280x720"
-      },
-      {
-        "url": "https://16-5-0-235.sslip.io/espn5/index.m3u8"
-      },
-      {
         "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1NTM0Lm0zdTg.m3u8",
         "quality": "FHD"
+      },
+      {
+        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1NTM1Lm0zdTg.m3u8",
+        "quality": "HD"
+      },
+      {
+        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvMTgxMDUzMS5tM3U4.m3u8",
+        "quality": "HD"
+      },
+      {
+        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1NTM2Lm0zdTg.m3u8",
+        "quality": "SD"
       },
       {
         "url": "http://64.31.23.207:80/59471019/60849037/3460194.m3u8",
@@ -12131,6 +12130,52 @@ export const FALLBACK_CHANNELS: Channel[] = [
       {
         "url": "http://64.31.23.207:80/59471019/60849037/3460195.m3u8",
         "quality": "HD · 1280x720"
+      },
+      {
+        "url": "http://45.185.11.126:8000/play/a05n/index.m3u8",
+        "quality": "HD · 1280x720"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/81594.ts",
+        "name": "Fonte 23 (Ramys)",
+        "quality": "1080p FHD"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/20946.ts",
+        "name": "Fonte 24 (Ramys)"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/8826.ts",
+        "name": "Fonte 25 (Ramys)",
+        "quality": "1080p FHD"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/8827.ts",
+        "name": "Fonte 26 (Ramys)",
+        "quality": "720p HD"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/30081.ts",
+        "name": "Fonte 27 (Ramys)",
+        "quality": "720p HD"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/30084.ts",
+        "name": "Fonte 28 (Ramys)",
+        "quality": "720p HD"
+      },
+      {
+        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/espn5/espn5.m3u8",
+        "quality": "HD · 1280x720"
+      },
+      {
+        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/433c11bcf1d5ec34721d8de73245ca76/error.txt",
+        "quality": "Qualidade não informada",
+        "referer": "https://w7.embedtv.cc/",
+        "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
+      },
+      {
+        "url": "https://16-5-0-235.sslip.io/espn5/index.m3u8"
       },
       {
         "url": "http://vaiagora.vip:80/live/5q8VUj/5BeUd8/71952.m3u8",
@@ -12179,51 +12224,6 @@ export const FALLBACK_CHANNELS: Channel[] = [
       {
         "url": "http://corruptx.org:80/live/hfp5ejnrey/zq0u3kzads/30084.m3u8",
         "quality": "HD"
-      },
-      {
-        "url": "http://45.185.11.126:8000/play/a05n/index.m3u8",
-        "quality": "HD · 1280x720"
-      },
-      {
-        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1NTM1Lm0zdTg.m3u8",
-        "quality": "HD"
-      },
-      {
-        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvMTgxMDUzMS5tM3U4.m3u8",
-        "quality": "HD"
-      },
-      {
-        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1NTM2Lm0zdTg.m3u8",
-        "quality": "SD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/81594.ts",
-        "name": "Fonte 23 (Ramys)",
-        "quality": "1080p FHD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/20946.ts",
-        "name": "Fonte 24 (Ramys)"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/8826.ts",
-        "name": "Fonte 25 (Ramys)",
-        "quality": "1080p FHD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/8827.ts",
-        "name": "Fonte 26 (Ramys)",
-        "quality": "720p HD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/30081.ts",
-        "name": "Fonte 27 (Ramys)",
-        "quality": "720p HD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/30084.ts",
-        "name": "Fonte 28 (Ramys)",
-        "quality": "720p HD"
       }
     ]
   },
@@ -12246,17 +12246,16 @@ export const FALLBACK_CHANNELS: Channel[] = [
     "logo": "https://img.faz-o-eli.online/espn6.png",
     "sources": [
       {
-        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/6e5b147da553df9bd66bfecf362267ef/error.txt",
-        "quality": "Qualidade não informada",
-        "referer": "https://w7.embedtv.cc/",
-        "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
+        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1NTM5Lm0zdTg.m3u8",
+        "quality": "HD"
       },
       {
-        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/espn6/espn6.m3u8",
-        "quality": "HD · 1280x720"
+        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1NTM4Lm0zdTg.m3u8",
+        "quality": "HD"
       },
       {
-        "url": "https://16-5-0-235.sslip.io/espn6/index.m3u8"
+        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1NTQwLm0zdTg.m3u8",
+        "quality": "SD"
       },
       {
         "url": "http://64.31.23.207:80/59471019/60849037/3460197.m3u8",
@@ -12265,6 +12264,43 @@ export const FALLBACK_CHANNELS: Channel[] = [
       {
         "url": "http://64.31.23.207:80/59471019/60849037/3460198.m3u8",
         "quality": "HD · 1280x720"
+      },
+      {
+        "url": "http://45.185.11.126:8000/play/a084/index.m3u8",
+        "quality": "HD · 1280x720"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/81590.ts",
+        "name": "Fonte 22 (Ramys)",
+        "quality": "1080p FHD"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/131138.ts",
+        "name": "Fonte 23 (Ramys)",
+        "quality": "1080p FHD"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/8794.ts",
+        "name": "Fonte 24 (Ramys)",
+        "quality": "720p HD"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/30077.ts",
+        "name": "Fonte 25 (Ramys)",
+        "quality": "720p HD"
+      },
+      {
+        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/espn6/espn6.m3u8",
+        "quality": "HD · 1280x720"
+      },
+      {
+        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/6e5b147da553df9bd66bfecf362267ef/error.txt",
+        "quality": "Qualidade não informada",
+        "referer": "https://w7.embedtv.cc/",
+        "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
+      },
+      {
+        "url": "https://16-5-0-235.sslip.io/espn6/index.m3u8"
       },
       {
         "url": "http://vaiagora.vip:80/live/5q8VUj/5BeUd8/71915.m3u8",
@@ -12313,42 +12349,6 @@ export const FALLBACK_CHANNELS: Channel[] = [
       {
         "url": "http://corruptx.org:80/live/hfp5ejnrey/zq0u3kzads/30077.m3u8",
         "quality": "HD"
-      },
-      {
-        "url": "http://45.185.11.126:8000/play/a084/index.m3u8",
-        "quality": "HD · 1280x720"
-      },
-      {
-        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1NTM5Lm0zdTg.m3u8",
-        "quality": "HD"
-      },
-      {
-        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1NTM4Lm0zdTg.m3u8",
-        "quality": "HD"
-      },
-      {
-        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1NTQwLm0zdTg.m3u8",
-        "quality": "SD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/81590.ts",
-        "name": "Fonte 22 (Ramys)",
-        "quality": "1080p FHD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/131138.ts",
-        "name": "Fonte 23 (Ramys)",
-        "quality": "1080p FHD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/8794.ts",
-        "name": "Fonte 24 (Ramys)",
-        "quality": "720p HD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/30077.ts",
-        "name": "Fonte 25 (Ramys)",
-        "quality": "720p HD"
       }
     ]
   },
@@ -12470,12 +12470,12 @@ export const FALLBACK_CHANNELS: Channel[] = [
     "logo": "",
     "sources": [
       {
-        "url": "http://vivlar.me:80/live/497238/KK8Kdy/247976.m3u8",
-        "quality": "FHD"
-      },
-      {
         "url": "http://332nr7hbfu.xyz:80/live/999913/S3CvUB/247976.m3u8",
         "quality": "FHD · 1920x1080"
+      },
+      {
+        "url": "http://vivlar.me:80/live/497238/KK8Kdy/247976.m3u8",
+        "quality": "FHD"
       }
     ]
   },
@@ -12665,12 +12665,16 @@ export const FALLBACK_CHANNELS: Channel[] = [
     "logo": "https://mondrian.claro.com.br/channels/inverse/fish-tv.png",
     "sources": [
       {
-        "url": "http://45.162.64.114/FISH_TV/index.m3u8",
-        "quality": "HD · 1280x720"
-      },
-      {
         "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1MTAyLm0zdTg.m3u8",
         "quality": "FHD"
+      },
+      {
+        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1MTA0Lm0zdTg.m3u8",
+        "quality": "SD"
+      },
+      {
+        "url": "http://45.162.64.114/FISH_TV/index.m3u8",
+        "quality": "HD · 1280x720"
       },
       {
         "url": "http://168.197.104.22/FISH_TV/index.m3u8",
@@ -12679,6 +12683,24 @@ export const FALLBACK_CHANNELS: Channel[] = [
       {
         "url": "http://170.83.16.50/FISH_TV/index.m3u8",
         "quality": "HD · 1280x720"
+      },
+      {
+        "url": "http://332nr7hbfu.xyz:80/live/999913/S3CvUB/71928.m3u8",
+        "quality": "FHD · 1920x1080"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/8807.ts",
+        "name": "Fonte 16 (Ramys)",
+        "quality": "1080p FHD"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/8808.ts",
+        "name": "Fonte 17 (Ramys)",
+        "quality": "720p HD"
+      },
+      {
+        "url": "http://190.128.214.97:64333/play/a006/index.m3u8",
+        "name": "Fonte 18 (IPTV-ORG)"
       },
       {
         "url": "http://vaiagora.vip:80/live/5q8VUj/5BeUd8/103502.m3u8",
@@ -12715,28 +12737,6 @@ export const FALLBACK_CHANNELS: Channel[] = [
       {
         "url": "http://corruptx.org:80/live/hfp5ejnrey/zq0u3kzads/8808.m3u8",
         "quality": "HD"
-      },
-      {
-        "url": "http://332nr7hbfu.xyz:80/live/999913/S3CvUB/71928.m3u8",
-        "quality": "FHD · 1920x1080"
-      },
-      {
-        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1MTA0Lm0zdTg.m3u8",
-        "quality": "SD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/8807.ts",
-        "name": "Fonte 16 (Ramys)",
-        "quality": "1080p FHD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/8808.ts",
-        "name": "Fonte 17 (Ramys)",
-        "quality": "720p HD"
-      },
-      {
-        "url": "http://190.128.214.97:64333/play/a006/index.m3u8",
-        "name": "Fonte 18 (IPTV-ORG)"
       }
     ]
   },
@@ -12781,15 +12781,23 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
       },
       {
+        "url": "https://amg00716-globo-amg00716c1-tcl-br-9495.playouts.now.amagi.tv/playlist.m3u8",
+        "quality": "FHD · 1920x1080"
+      },
+      {
         "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvMjExODE2MC5tM3U4.m3u8",
         "quality": "FHD"
       },
       {
-        "url": "https://dfr80qz435crc.cloudfront.net/EFGH/Amagi/Globo/GE_Fast_BR/GE_Fast.m3u8",
-        "quality": "FHD · 1920x1080"
+        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvOTY1NDAwLm0zdTg.m3u8",
+        "quality": "HD"
       },
       {
-        "url": "https://amg00716-globo-amg00716c1-tcl-br-9495.playouts.now.amagi.tv/playlist.m3u8",
+        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvMjExODE2MS5tM3U4.m3u8",
+        "quality": "SD"
+      },
+      {
+        "url": "https://dfr80qz435crc.cloudfront.net/EFGH/Amagi/Globo/GE_Fast_BR/GE_Fast.m3u8",
         "quality": "FHD · 1920x1080"
       },
       {
@@ -12805,25 +12813,17 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "quality": "SD · 768x432"
       },
       {
-        "url": "http://corruptx.org:80/live/hfp5ejnrey/zq0u3kzads/1139277.m3u8",
-        "quality": "FHD"
-      },
-      {
         "url": "http://45.185.11.126:8000/play/a08v/index.m3u8",
         "quality": "FHD · 1920x1080"
-      },
-      {
-        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvOTY1NDAwLm0zdTg.m3u8",
-        "quality": "HD"
-      },
-      {
-        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvMjExODE2MS5tM3U4.m3u8",
-        "quality": "SD"
       },
       {
         "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/1139277.ts",
         "name": "Fonte 13 (Ramys)",
         "quality": "1080p FHD"
+      },
+      {
+        "url": "http://corruptx.org:80/live/hfp5ejnrey/zq0u3kzads/1139277.m3u8",
+        "quality": "FHD"
       }
     ]
   },
@@ -13094,8 +13094,15 @@ export const FALLBACK_CHANNELS: Channel[] = [
     "logo": "https://mondrian.claro.com.br/channels/inverse/nsports.png",
     "sources": [
       {
+        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzU3ODA4Lm0zdTg.m3u8",
+        "quality": "HD"
+      },
+      {
         "url": "https://ogc-nsprt-tcl-roku-syndication.otteravision.com/ogc/nsprt/nsprt.m3u8",
         "quality": "FHD · 1920x1080"
+      },
+      {
+        "url": "https://ogc-nsprt-tcl-roku-syndication.otteravision.com/ogc/nsprt/nsprt_720p.m3u8"
       },
       {
         "url": "http://64.31.23.207:80/59471019/60849037/3460165.m3u8",
@@ -13104,13 +13111,6 @@ export const FALLBACK_CHANNELS: Channel[] = [
       {
         "url": "http://64.31.23.207:80/59471019/60849037/3460166.m3u8",
         "quality": "HD · 1280x720"
-      },
-      {
-        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzU3ODA4Lm0zdTg.m3u8",
-        "quality": "HD"
-      },
-      {
-        "url": "https://ogc-nsprt-tcl-roku-syndication.otteravision.com/ogc/nsprt/nsprt_720p.m3u8"
       }
     ]
   },
@@ -13145,6 +13145,10 @@ export const FALLBACK_CHANNELS: Channel[] = [
     "logo": "https://i.imgur.com/ynW8fZF.png",
     "sources": [
       {
+        "url": "http://332nr7hbfu.xyz:80/live/999913/S3CvUB/140516.m3u8",
+        "quality": "FHD · 1920x1080"
+      },
+      {
         "url": "http://vaiagora.vip:80/live/5q8VUj/5BeUd8/140516.m3u8",
         "quality": "FHD"
       },
@@ -13167,10 +13171,6 @@ export const FALLBACK_CHANNELS: Channel[] = [
       {
         "url": "http://vivlar.me:80/live/497238/KK8Kdy/140518.m3u8",
         "quality": "SD"
-      },
-      {
-        "url": "http://332nr7hbfu.xyz:80/live/999913/S3CvUB/140516.m3u8",
-        "quality": "FHD · 1920x1080"
       }
     ]
   },
@@ -13309,14 +13309,14 @@ export const FALLBACK_CHANNELS: Channel[] = [
     "logo": "https://img.faz-o-eli.online/paramountplus.png",
     "sources": [
       {
+        "url": "http://64.31.23.207:80/59471019/60849037/3460273.m3u8",
+        "quality": "HD · 1280x720"
+      },
+      {
         "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/d167ace822e2ab6c2dffe84fe531f854/error.txt",
         "quality": "Qualidade não informada",
         "referer": "https://w7.embedtv.cc/",
         "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
-      },
-      {
-        "url": "http://64.31.23.207:80/59471019/60849037/3460273.m3u8",
-        "quality": "HD · 1280x720"
       }
     ]
   },
@@ -13411,10 +13411,62 @@ export const FALLBACK_CHANNELS: Channel[] = [
     "logo": "https://img.faz-o-eli.online/premiere.png",
     "sources": [
       {
-        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/53642c8dfee785c9212c3adc0d9026c7/error.txt",
-        "quality": "Qualidade não informada",
-        "referer": "https://w7.embedtv.cc/",
-        "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
+        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzQ4MzQwLm0zdTg.m3u8",
+        "quality": "FHD"
+      },
+      {
+        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzQ4MzQxLm0zdTg.m3u8",
+        "quality": "HD"
+      },
+      {
+        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvMjEyNzA0NS5tM3U4.m3u8",
+        "quality": "HD"
+      },
+      {
+        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzQ4MzQyLm0zdTg.m3u8",
+        "quality": "SD"
+      },
+      {
+        "url": "http://64.31.23.207:80/59471019/60849037/3460212.m3u8",
+        "quality": "HD · 1280x720"
+      },
+      {
+        "url": "http://64.31.23.207:80/59471019/60849037/3460213.m3u8",
+        "quality": "HD · 1280x720"
+      },
+      {
+        "url": "http://332nr7hbfu.xyz:80/live/999913/S3CvUB/72237.m3u8",
+        "quality": "FHD · 1920x1080"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/81582.ts",
+        "name": "Fonte 26 (Ramys)",
+        "quality": "1080p FHD"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/9022.ts",
+        "name": "Fonte 27 (Ramys)",
+        "quality": "1080p FHD"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/13576.ts",
+        "name": "Fonte 28 (Ramys)",
+        "quality": "1080p FHD"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/69097.ts",
+        "name": "Fonte 29 (Ramys)",
+        "quality": "1080p FHD"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/69028.ts",
+        "name": "Fonte 30 (Ramys)",
+        "quality": "720p HD"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/69029.ts",
+        "name": "Fonte 31 (Ramys)",
+        "quality": "720p HD"
       },
       {
         "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/premiere2/premiere2.m3u8",
@@ -13425,19 +13477,13 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "quality": "Qualidade não informada"
       },
       {
+        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/53642c8dfee785c9212c3adc0d9026c7/error.txt",
+        "quality": "Qualidade não informada",
+        "referer": "https://w7.embedtv.cc/",
+        "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
+      },
+      {
         "url": "https://16-5-0-235.sslip.io/premiere2/index.m3u8"
-      },
-      {
-        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzQ4MzQwLm0zdTg.m3u8",
-        "quality": "FHD"
-      },
-      {
-        "url": "http://64.31.23.207:80/59471019/60849037/3460212.m3u8",
-        "quality": "HD · 1280x720"
-      },
-      {
-        "url": "http://64.31.23.207:80/59471019/60849037/3460213.m3u8",
-        "quality": "HD · 1280x720"
       },
       {
         "url": "http://vaiagora.vip:80/live/5q8VUj/5BeUd8/72237.m3u8",
@@ -13494,52 +13540,6 @@ export const FALLBACK_CHANNELS: Channel[] = [
       {
         "url": "http://corruptx.org:80/live/hfp5ejnrey/zq0u3kzads/69029.m3u8",
         "quality": "HD"
-      },
-      {
-        "url": "http://332nr7hbfu.xyz:80/live/999913/S3CvUB/72237.m3u8",
-        "quality": "FHD · 1920x1080"
-      },
-      {
-        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzQ4MzQxLm0zdTg.m3u8",
-        "quality": "HD"
-      },
-      {
-        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvMjEyNzA0NS5tM3U4.m3u8",
-        "quality": "HD"
-      },
-      {
-        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzQ4MzQyLm0zdTg.m3u8",
-        "quality": "SD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/81582.ts",
-        "name": "Fonte 26 (Ramys)",
-        "quality": "1080p FHD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/9022.ts",
-        "name": "Fonte 27 (Ramys)",
-        "quality": "1080p FHD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/13576.ts",
-        "name": "Fonte 28 (Ramys)",
-        "quality": "1080p FHD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/69097.ts",
-        "name": "Fonte 29 (Ramys)",
-        "quality": "1080p FHD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/69028.ts",
-        "name": "Fonte 30 (Ramys)",
-        "quality": "720p HD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/69029.ts",
-        "name": "Fonte 31 (Ramys)",
-        "quality": "720p HD"
       }
     ]
   },
@@ -13550,21 +13550,20 @@ export const FALLBACK_CHANNELS: Channel[] = [
     "logo": "https://img.faz-o-eli.online/premiere.png",
     "sources": [
       {
-        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/9a34ec0bc8346d28e5f07c52d79f1c05/error.txt",
-        "quality": "Qualidade não informada",
-        "referer": "https://w7.embedtv.cc/",
-        "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
-      },
-      {
-        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/premiere3/premiere3.m3u8",
-        "quality": "HD · 1280x720"
-      },
-      {
-        "url": "https://16-5-0-235.sslip.io/premiere3/index.m3u8"
-      },
-      {
         "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzQ4MzQzLm0zdTg.m3u8",
         "quality": "FHD"
+      },
+      {
+        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzQ4MzQ0Lm0zdTg.m3u8",
+        "quality": "HD"
+      },
+      {
+        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvMjEyNzA0Ni5tM3U4.m3u8",
+        "quality": "HD"
+      },
+      {
+        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzQ4MzQ1Lm0zdTg.m3u8",
+        "quality": "SD"
       },
       {
         "url": "http://64.31.23.207:80/59471019/60849037/3460215.m3u8",
@@ -13573,6 +13572,53 @@ export const FALLBACK_CHANNELS: Channel[] = [
       {
         "url": "http://64.31.23.207:80/59471019/60849037/3460217.m3u8",
         "quality": "SD · 960x540"
+      },
+      {
+        "url": "http://332nr7hbfu.xyz:80/live/999913/S3CvUB/72241.m3u8",
+        "quality": "FHD · 1920x1080"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/81583.ts",
+        "name": "Fonte 27 (Ramys)",
+        "quality": "1080p FHD"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/13577.ts",
+        "name": "Fonte 28 (Ramys)",
+        "quality": "1080p FHD"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/69030.ts",
+        "name": "Fonte 29 (Ramys)",
+        "quality": "1080p FHD"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/69031.ts",
+        "name": "Fonte 30 (Ramys)",
+        "quality": "720p HD"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/30051.ts",
+        "name": "Fonte 31 (Ramys)",
+        "quality": "720p HD"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/9026.ts",
+        "name": "Fonte 32 (Ramys)",
+        "quality": "720p HD"
+      },
+      {
+        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/premiere3/premiere3.m3u8",
+        "quality": "HD · 1280x720"
+      },
+      {
+        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/9a34ec0bc8346d28e5f07c52d79f1c05/error.txt",
+        "quality": "Qualidade não informada",
+        "referer": "https://w7.embedtv.cc/",
+        "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
+      },
+      {
+        "url": "https://16-5-0-235.sslip.io/premiere3/index.m3u8"
       },
       {
         "url": "http://vaiagora.vip:80/live/5q8VUj/5BeUd8/103481.m3u8",
@@ -13637,52 +13683,6 @@ export const FALLBACK_CHANNELS: Channel[] = [
       {
         "url": "http://corruptx.org:80/live/hfp5ejnrey/zq0u3kzads/9026.m3u8",
         "quality": "HD"
-      },
-      {
-        "url": "http://332nr7hbfu.xyz:80/live/999913/S3CvUB/72241.m3u8",
-        "quality": "FHD · 1920x1080"
-      },
-      {
-        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzQ4MzQ0Lm0zdTg.m3u8",
-        "quality": "HD"
-      },
-      {
-        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvMjEyNzA0Ni5tM3U4.m3u8",
-        "quality": "HD"
-      },
-      {
-        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzQ4MzQ1Lm0zdTg.m3u8",
-        "quality": "SD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/81583.ts",
-        "name": "Fonte 27 (Ramys)",
-        "quality": "1080p FHD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/13577.ts",
-        "name": "Fonte 28 (Ramys)",
-        "quality": "1080p FHD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/69030.ts",
-        "name": "Fonte 29 (Ramys)",
-        "quality": "1080p FHD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/69031.ts",
-        "name": "Fonte 30 (Ramys)",
-        "quality": "720p HD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/30051.ts",
-        "name": "Fonte 31 (Ramys)",
-        "quality": "720p HD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/9026.ts",
-        "name": "Fonte 32 (Ramys)",
-        "quality": "720p HD"
       }
     ]
   },
@@ -13693,25 +13693,71 @@ export const FALLBACK_CHANNELS: Channel[] = [
     "logo": "https://img.faz-o-eli.online/premiere.png",
     "sources": [
       {
-        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/f6406f6ac40d211c11d4bee1f77799f1/error.txt",
-        "quality": "Qualidade não informada",
-        "referer": "https://w7.embedtv.cc/",
-        "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
+        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzQ4MzQ2Lm0zdTg.m3u8",
+        "quality": "FHD"
+      },
+      {
+        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzQ4MzQ3Lm0zdTg.m3u8",
+        "quality": "HD"
+      },
+      {
+        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvMjEyNzA0Ny5tM3U4.m3u8",
+        "quality": "HD"
+      },
+      {
+        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzQ4MzQ4Lm0zdTg.m3u8",
+        "quality": "SD"
+      },
+      {
+        "url": "http://64.31.23.207:80/59471019/60849037/3460218.m3u8",
+        "quality": "HD · 1280x720"
+      },
+      {
+        "url": "http://332nr7hbfu.xyz:80/live/999913/S3CvUB/72245.m3u8",
+        "quality": "FHD · 1920x1080"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/81616.ts",
+        "name": "Fonte 25 (Ramys)",
+        "quality": "1080p FHD"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/108295.ts",
+        "name": "Fonte 26 (Ramys)",
+        "quality": "1080p FHD"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/108296.ts",
+        "name": "Fonte 27 (Ramys)",
+        "quality": "1080p FHD"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/108297.ts",
+        "name": "Fonte 28 (Ramys)",
+        "quality": "720p HD"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/108298.ts",
+        "name": "Fonte 29 (Ramys)",
+        "quality": "720p HD"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/108300.ts",
+        "name": "Fonte 30 (Ramys)",
+        "quality": "720p HD"
       },
       {
         "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/premiere4/premiere4.m3u8",
         "quality": "HD · 1280x720"
       },
       {
+        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/f6406f6ac40d211c11d4bee1f77799f1/error.txt",
+        "quality": "Qualidade não informada",
+        "referer": "https://w7.embedtv.cc/",
+        "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
+      },
+      {
         "url": "https://16-5-0-235.sslip.io/premiere4/index.m3u8"
-      },
-      {
-        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzQ4MzQ2Lm0zdTg.m3u8",
-        "quality": "FHD"
-      },
-      {
-        "url": "http://64.31.23.207:80/59471019/60849037/3460218.m3u8",
-        "quality": "HD · 1280x720"
       },
       {
         "url": "http://vaiagora.vip:80/live/5q8VUj/5BeUd8/103480.m3u8",
@@ -13772,52 +13818,6 @@ export const FALLBACK_CHANNELS: Channel[] = [
       {
         "url": "http://corruptx.org:80/live/hfp5ejnrey/zq0u3kzads/108300.m3u8",
         "quality": "HD"
-      },
-      {
-        "url": "http://332nr7hbfu.xyz:80/live/999913/S3CvUB/72245.m3u8",
-        "quality": "FHD · 1920x1080"
-      },
-      {
-        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzQ4MzQ3Lm0zdTg.m3u8",
-        "quality": "HD"
-      },
-      {
-        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvMjEyNzA0Ny5tM3U4.m3u8",
-        "quality": "HD"
-      },
-      {
-        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzQ4MzQ4Lm0zdTg.m3u8",
-        "quality": "SD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/81616.ts",
-        "name": "Fonte 25 (Ramys)",
-        "quality": "1080p FHD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/108295.ts",
-        "name": "Fonte 26 (Ramys)",
-        "quality": "1080p FHD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/108296.ts",
-        "name": "Fonte 27 (Ramys)",
-        "quality": "1080p FHD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/108297.ts",
-        "name": "Fonte 28 (Ramys)",
-        "quality": "720p HD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/108298.ts",
-        "name": "Fonte 29 (Ramys)",
-        "quality": "720p HD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/108300.ts",
-        "name": "Fonte 30 (Ramys)",
-        "quality": "720p HD"
       }
     ]
   },
@@ -13828,30 +13828,81 @@ export const FALLBACK_CHANNELS: Channel[] = [
     "logo": "https://img.faz-o-eli.online/premiere.png",
     "sources": [
       {
-        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/dbb05abf5ba0263b0895b8ad62a06a7a/error.txt",
-        "quality": "Qualidade não informada",
-        "referer": "https://w7.embedtv.cc/",
-        "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
-      },
-      {
         "url": "https://dadinhodetapioca.fun/play/premiere5.html",
         "quality": "FHD",
         "referer": "https://dadinhodetapioca.fun/"
-      },
-      {
-        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/premiere5/premiere5.m3u8",
-        "quality": "HD · 1280x720"
-      },
-      {
-        "url": "https://16-5-0-235.sslip.io/premiere5/index.m3u8"
       },
       {
         "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzQ4MzQ5Lm0zdTg.m3u8",
         "quality": "FHD"
       },
       {
+        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzQ4MzUwLm0zdTg.m3u8",
+        "quality": "HD"
+      },
+      {
+        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvMjEyNzA0OC5tM3U4.m3u8",
+        "quality": "HD"
+      },
+      {
+        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzQ4MzUxLm0zdTg.m3u8",
+        "quality": "SD"
+      },
+      {
         "url": "http://64.31.23.207:80/59471019/60849037/3460221.m3u8",
         "quality": "HD · 1280x720"
+      },
+      {
+        "url": "http://332nr7hbfu.xyz:80/live/999913/S3CvUB/72249.m3u8",
+        "quality": "FHD · 1920x1080"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/82751.ts",
+        "name": "Fonte 28 (Ramys)",
+        "quality": "1080p FHD"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/108301.ts",
+        "name": "Fonte 29 (Ramys)",
+        "quality": "1080p FHD"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/108302.ts",
+        "name": "Fonte 30 (Ramys)",
+        "quality": "1080p FHD"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/108305.ts",
+        "name": "Fonte 31 (Ramys)",
+        "quality": "1080p FHD"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/108303.ts",
+        "name": "Fonte 32 (Ramys)",
+        "quality": "720p HD"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/108304.ts",
+        "name": "Fonte 33 (Ramys)",
+        "quality": "720p HD"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/108306.ts",
+        "name": "Fonte 34 (Ramys)",
+        "quality": "720p HD"
+      },
+      {
+        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/premiere5/premiere5.m3u8",
+        "quality": "HD · 1280x720"
+      },
+      {
+        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/dbb05abf5ba0263b0895b8ad62a06a7a/error.txt",
+        "quality": "Qualidade não informada",
+        "referer": "https://w7.embedtv.cc/",
+        "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
+      },
+      {
+        "url": "https://16-5-0-235.sslip.io/premiere5/index.m3u8"
       },
       {
         "url": "http://vaiagora.vip:80/live/5q8VUj/5BeUd8/103479.m3u8",
@@ -13920,57 +13971,6 @@ export const FALLBACK_CHANNELS: Channel[] = [
       {
         "url": "http://corruptx.org:80/live/hfp5ejnrey/zq0u3kzads/108306.m3u8",
         "quality": "HD"
-      },
-      {
-        "url": "http://332nr7hbfu.xyz:80/live/999913/S3CvUB/72249.m3u8",
-        "quality": "FHD · 1920x1080"
-      },
-      {
-        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzQ4MzUwLm0zdTg.m3u8",
-        "quality": "HD"
-      },
-      {
-        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvMjEyNzA0OC5tM3U4.m3u8",
-        "quality": "HD"
-      },
-      {
-        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzQ4MzUxLm0zdTg.m3u8",
-        "quality": "SD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/82751.ts",
-        "name": "Fonte 28 (Ramys)",
-        "quality": "1080p FHD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/108301.ts",
-        "name": "Fonte 29 (Ramys)",
-        "quality": "1080p FHD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/108302.ts",
-        "name": "Fonte 30 (Ramys)",
-        "quality": "1080p FHD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/108305.ts",
-        "name": "Fonte 31 (Ramys)",
-        "quality": "1080p FHD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/108303.ts",
-        "name": "Fonte 32 (Ramys)",
-        "quality": "720p HD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/108304.ts",
-        "name": "Fonte 33 (Ramys)",
-        "quality": "720p HD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/108306.ts",
-        "name": "Fonte 34 (Ramys)",
-        "quality": "720p HD"
       }
     ]
   },
@@ -13981,19 +13981,24 @@ export const FALLBACK_CHANNELS: Channel[] = [
     "logo": "https://mondrian.claro.com.br/channels/inverse/premiere.png",
     "sources": [
       {
-        "url": "http://64.31.23.207:80/59471019/60849037/3460224.m3u8",
-        "quality": "HD · 1280x720"
-      },
-      {
-        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/premiere6/premiere6.m3u8",
-        "quality": "HD · 1280x720"
-      },
-      {
-        "url": "https://16-5-0-235.sslip.io/premiere6/index.m3u8"
-      },
-      {
         "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzQ4MzUyLm0zdTg.m3u8",
         "quality": "FHD"
+      },
+      {
+        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzQ4MzUzLm0zdTg.m3u8",
+        "quality": "HD"
+      },
+      {
+        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvMjEyNzA0OS5tM3U4.m3u8",
+        "quality": "HD"
+      },
+      {
+        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzQ4MzU0Lm0zdTg.m3u8",
+        "quality": "SD"
+      },
+      {
+        "url": "http://64.31.23.207:80/59471019/60849037/3460224.m3u8",
+        "quality": "HD · 1280x720"
       },
       {
         "url": "http://64.31.23.207:80/59471019/60849037/3460225.m3u8",
@@ -14002,6 +14007,42 @@ export const FALLBACK_CHANNELS: Channel[] = [
       {
         "url": "http://64.31.23.207:80/59471019/60849037/3460226.m3u8",
         "quality": "SD · 960x540"
+      },
+      {
+        "url": "http://45.185.11.126:8000/play/a05j/index.m3u8",
+        "quality": "FHD · 1920x1080"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/82753.ts",
+        "name": "Fonte 26 (Ramys)",
+        "quality": "1080p FHD"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/108307.ts",
+        "name": "Fonte 27 (Ramys)",
+        "quality": "1080p FHD"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/108308.ts",
+        "name": "Fonte 28 (Ramys)",
+        "quality": "1080p FHD"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/108309.ts",
+        "name": "Fonte 29 (Ramys)",
+        "quality": "720p HD"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/108310.ts",
+        "name": "Fonte 30 (Ramys)",
+        "quality": "720p HD"
+      },
+      {
+        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/premiere6/premiere6.m3u8",
+        "quality": "HD · 1280x720"
+      },
+      {
+        "url": "https://16-5-0-235.sslip.io/premiere6/index.m3u8"
       },
       {
         "url": "http://vaiagora.vip:80/live/5q8VUj/5BeUd8/103478.m3u8",
@@ -14062,47 +14103,6 @@ export const FALLBACK_CHANNELS: Channel[] = [
       {
         "url": "http://corruptx.org:80/live/hfp5ejnrey/zq0u3kzads/108310.m3u8",
         "quality": "HD"
-      },
-      {
-        "url": "http://45.185.11.126:8000/play/a05j/index.m3u8",
-        "quality": "FHD · 1920x1080"
-      },
-      {
-        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzQ4MzUzLm0zdTg.m3u8",
-        "quality": "HD"
-      },
-      {
-        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvMjEyNzA0OS5tM3U4.m3u8",
-        "quality": "HD"
-      },
-      {
-        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzQ4MzU0Lm0zdTg.m3u8",
-        "quality": "SD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/82753.ts",
-        "name": "Fonte 26 (Ramys)",
-        "quality": "1080p FHD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/108307.ts",
-        "name": "Fonte 27 (Ramys)",
-        "quality": "1080p FHD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/108308.ts",
-        "name": "Fonte 28 (Ramys)",
-        "quality": "1080p FHD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/108309.ts",
-        "name": "Fonte 29 (Ramys)",
-        "quality": "720p HD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/108310.ts",
-        "name": "Fonte 30 (Ramys)",
-        "quality": "720p HD"
       }
     ]
   },
@@ -14113,15 +14113,20 @@ export const FALLBACK_CHANNELS: Channel[] = [
     "logo": "https://img.faz-o-eli.online/premiere.png",
     "sources": [
       {
-        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/premiere7/premiere7.m3u8",
-        "quality": "HD · 1280x720"
-      },
-      {
-        "url": "https://16-5-0-235.sslip.io/premiere7/index.m3u8"
-      },
-      {
         "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzQ4MzU1Lm0zdTg.m3u8",
         "quality": "FHD"
+      },
+      {
+        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzQ4MzU2Lm0zdTg.m3u8",
+        "quality": "HD"
+      },
+      {
+        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvMjEyNzA1MC5tM3U4.m3u8",
+        "quality": "HD"
+      },
+      {
+        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzQ4MzU3Lm0zdTg.m3u8",
+        "quality": "SD"
       },
       {
         "url": "http://64.31.23.207:80/59471019/60849037/3460227.m3u8",
@@ -14134,6 +14139,42 @@ export const FALLBACK_CHANNELS: Channel[] = [
       {
         "url": "http://64.31.23.207:80/59471019/60849037/3460229.m3u8",
         "quality": "SD · 960x540"
+      },
+      {
+        "url": "http://45.185.11.126:8000/play/a05k/index.m3u8",
+        "quality": "FHD · 1920x1080"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/108313.ts",
+        "name": "Fonte 24 (Ramys)",
+        "quality": "1080p FHD"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/108314.ts",
+        "name": "Fonte 25 (Ramys)",
+        "quality": "1080p FHD"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/108317.ts",
+        "name": "Fonte 26 (Ramys)",
+        "quality": "1080p FHD"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/108315.ts",
+        "name": "Fonte 27 (Ramys)",
+        "quality": "720p HD"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/108316.ts",
+        "name": "Fonte 28 (Ramys)",
+        "quality": "720p HD"
+      },
+      {
+        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/premiere7/premiere7.m3u8",
+        "quality": "HD · 1280x720"
+      },
+      {
+        "url": "https://16-5-0-235.sslip.io/premiere7/index.m3u8"
       },
       {
         "url": "http://vaiagora.vip:80/live/5q8VUj/5BeUd8/103477.m3u8",
@@ -14186,47 +14227,6 @@ export const FALLBACK_CHANNELS: Channel[] = [
       {
         "url": "http://corruptx.org:80/live/hfp5ejnrey/zq0u3kzads/108316.m3u8",
         "quality": "HD"
-      },
-      {
-        "url": "http://45.185.11.126:8000/play/a05k/index.m3u8",
-        "quality": "FHD · 1920x1080"
-      },
-      {
-        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzQ4MzU2Lm0zdTg.m3u8",
-        "quality": "HD"
-      },
-      {
-        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvMjEyNzA1MC5tM3U4.m3u8",
-        "quality": "HD"
-      },
-      {
-        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzQ4MzU3Lm0zdTg.m3u8",
-        "quality": "SD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/108313.ts",
-        "name": "Fonte 24 (Ramys)",
-        "quality": "1080p FHD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/108314.ts",
-        "name": "Fonte 25 (Ramys)",
-        "quality": "1080p FHD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/108317.ts",
-        "name": "Fonte 26 (Ramys)",
-        "quality": "1080p FHD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/108315.ts",
-        "name": "Fonte 27 (Ramys)",
-        "quality": "720p HD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/108316.ts",
-        "name": "Fonte 28 (Ramys)",
-        "quality": "720p HD"
       }
     ]
   },
@@ -14237,27 +14237,8 @@ export const FALLBACK_CHANNELS: Channel[] = [
     "logo": "https://mondrian.claro.com.br/channels/inverse/premiere.png",
     "sources": [
       {
-        "url": "http://64.31.23.207:80/59471019/60849037/3460230.m3u8",
-        "quality": "HD · 1280x720"
-      },
-      {
-        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/premiere8/premiere8.m3u8",
-        "quality": "HD · 1280x720"
-      },
-      {
-        "url": "https://16-5-0-235.sslip.io/premiere8/index.m3u8"
-      },
-      {
         "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL3BhbGRpLnBybzo4MC9saXZlL3RvbmluaG8wMi9DYjQ5ODAzNy8xODAxNTgubTN1OA.m3u8",
         "quality": "FHD · 1920x1080"
-      },
-      {
-        "url": "http://64.31.23.207:80/59471019/60849037/3460231.m3u8",
-        "quality": "HD · 1280x720"
-      },
-      {
-        "url": "http://64.31.23.207:80/59471019/60849037/3460232.m3u8",
-        "quality": "SD · 960x540"
       },
       {
         "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL3BhbGRpLnBybzo4MC9saXZlL3RvbmluaG8wMi9DYjQ5ODAzNy8xODAxNjIubTN1OA.m3u8",
@@ -14270,6 +14251,39 @@ export const FALLBACK_CHANNELS: Channel[] = [
       {
         "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL3BhbGRpLnBybzo4MC9saXZlL3RvbmluaG8wMi9DYjQ5ODAzNy8xODAxNjAubTN1OA.m3u8",
         "quality": "SD"
+      },
+      {
+        "url": "http://64.31.23.207:80/59471019/60849037/3460230.m3u8",
+        "quality": "HD · 1280x720"
+      },
+      {
+        "url": "http://64.31.23.207:80/59471019/60849037/3460231.m3u8",
+        "quality": "HD · 1280x720"
+      },
+      {
+        "url": "http://64.31.23.207:80/59471019/60849037/3460232.m3u8",
+        "quality": "SD · 960x540"
+      },
+      {
+        "url": "http://45.185.11.126:8000/play/a05l/index.m3u8",
+        "quality": "FHD · 1920x1080"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/13582.ts",
+        "name": "Fonte 23 (Ramys)",
+        "quality": "1080p FHD"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/9036.ts",
+        "name": "Fonte 24 (Ramys)",
+        "quality": "720p HD"
+      },
+      {
+        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/premiere8/premiere8.m3u8",
+        "quality": "HD · 1280x720"
+      },
+      {
+        "url": "https://16-5-0-235.sslip.io/premiere8/index.m3u8"
       },
       {
         "url": "http://vaiagora.vip:80/live/5q8VUj/5BeUd8/180162.m3u8",
@@ -14318,20 +14332,6 @@ export const FALLBACK_CHANNELS: Channel[] = [
       {
         "url": "http://corruptx.org:80/live/hfp5ejnrey/zq0u3kzads/9036.m3u8",
         "quality": "HD"
-      },
-      {
-        "url": "http://45.185.11.126:8000/play/a05l/index.m3u8",
-        "quality": "FHD · 1920x1080"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/13582.ts",
-        "name": "Fonte 23 (Ramys)",
-        "quality": "1080p FHD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/9036.ts",
-        "name": "Fonte 24 (Ramys)",
-        "quality": "720p HD"
       }
     ]
   },
@@ -14342,13 +14342,13 @@ export const FALLBACK_CHANNELS: Channel[] = [
     "logo": "http://1.bp.blogspot.com/-9NsHz_itoFc/Xk70dxuLv7I/AAAAAAAACGQ/wCExIoJZ8xgbleziCR-Guhr-AkuLgFhVQCLcBGAsYHQ/s1600/premiere_2.png",
     "sources": [
       {
-        "url": "http://corruptx.org:80/live/hfp5ejnrey/zq0u3kzads/30063.m3u8",
-        "quality": "FHD"
-      },
-      {
         "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/30063.ts",
         "name": "Fonte 2 (Ramys)",
         "quality": "1080p FHD"
+      },
+      {
+        "url": "http://corruptx.org:80/live/hfp5ejnrey/zq0u3kzads/30063.m3u8",
+        "quality": "FHD"
       }
     ]
   },
@@ -14359,30 +14359,9 @@ export const FALLBACK_CHANNELS: Channel[] = [
     "logo": "https://img.faz-o-eli.online/premiere.png",
     "sources": [
       {
-        "url": "https://aws.s13-s1001604.lat/stream/20963c6e5d27cc11975d36a05dcb1484/premiere.m3u8",
-        "quality": "HD · 1280x720",
-        "referer": "https://meufut.top/premiere",
-        "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
-      },
-      {
-        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/23868c7d5fa2918f720058576d31584a/error.txt",
-        "quality": "Qualidade não informada",
-        "referer": "https://w7.embedtv.cc/",
-        "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
-      },
-      {
         "url": "https://dadinhodetapioca.fun/play/premiereclubes.html",
         "quality": "FHD",
         "referer": "https://dadinhodetapioca.fun/"
-      },
-      {
-        "url": "https://aws.s13-s1001604.lat/stream/5e65f671ec576e6450321263a220056f/premiere.m3u8",
-        "quality": "HD · 1280x720",
-        "referer": "https://meufut.top/premiere",
-        "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
-      },
-      {
-        "url": "https://16-5-0-235.sslip.io/premiereclubes/index.m3u8"
       },
       {
         "url": "http://64.31.23.207:80/59471019/60849037/324401.m3u8",
@@ -14395,6 +14374,55 @@ export const FALLBACK_CHANNELS: Channel[] = [
       {
         "url": "http://64.31.23.207:80/59471019/60849037/3460211.m3u8",
         "quality": "FHD · 1920x1080"
+      },
+      {
+        "url": "http://45.185.11.126:8000/play/a06g/index.m3u8",
+        "quality": "FHD · 1920x1080"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/125438.ts",
+        "name": "Fonte 23 (Ramys)",
+        "quality": "1080p FHD"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/9037.ts",
+        "name": "Fonte 24 (Ramys)",
+        "quality": "1080p FHD"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/54902.ts",
+        "name": "Fonte 25 (Ramys)",
+        "quality": "1080p FHD"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/94194.ts",
+        "name": "Fonte 26 (Ramys)",
+        "quality": "720p HD"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/13583.ts",
+        "name": "Fonte 27 (Ramys)"
+      },
+      {
+        "url": "https://aws.s13-s1001604.lat/stream/20963c6e5d27cc11975d36a05dcb1484/premiere.m3u8",
+        "quality": "HD · 1280x720",
+        "referer": "https://meufut.top/premiere",
+        "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
+      },
+      {
+        "url": "https://aws.s13-s1001604.lat/stream/5e65f671ec576e6450321263a220056f/premiere.m3u8",
+        "quality": "HD · 1280x720",
+        "referer": "https://meufut.top/premiere",
+        "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
+      },
+      {
+        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/23868c7d5fa2918f720058576d31584a/error.txt",
+        "quality": "Qualidade não informada",
+        "referer": "https://w7.embedtv.cc/",
+        "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
+      },
+      {
+        "url": "https://16-5-0-235.sslip.io/premiereclubes/index.m3u8"
       },
       {
         "url": "http://vaiagora.vip:80/live/5q8VUj/5BeUd8/72262.m3u8",
@@ -14447,34 +14475,6 @@ export const FALLBACK_CHANNELS: Channel[] = [
       {
         "url": "http://corruptx.org:80/live/hfp5ejnrey/zq0u3kzads/13583.m3u8",
         "quality": "HD · 1280x720"
-      },
-      {
-        "url": "http://45.185.11.126:8000/play/a06g/index.m3u8",
-        "quality": "FHD · 1920x1080"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/125438.ts",
-        "name": "Fonte 23 (Ramys)",
-        "quality": "1080p FHD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/9037.ts",
-        "name": "Fonte 24 (Ramys)",
-        "quality": "1080p FHD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/54902.ts",
-        "name": "Fonte 25 (Ramys)",
-        "quality": "1080p FHD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/94194.ts",
-        "name": "Fonte 26 (Ramys)",
-        "quality": "720p HD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/13583.ts",
-        "name": "Fonte 27 (Ramys)"
       }
     ]
   },
@@ -14485,14 +14485,14 @@ export const FALLBACK_CHANNELS: Channel[] = [
     "logo": "https://img.faz-o-eli.online/pt_abola.png",
     "sources": [
       {
+        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/pt_abola/pt_abola.m3u8",
+        "quality": "Qualidade não informada"
+      },
+      {
         "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/039811f38852528561f62c3046e6701f/error.txt",
         "quality": "Qualidade não informada",
         "referer": "https://w7.embedtv.cc/",
         "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
-      },
-      {
-        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/pt_abola/pt_abola.m3u8",
-        "quality": "Qualidade não informada"
       }
     ]
   },
@@ -14503,14 +14503,14 @@ export const FALLBACK_CHANNELS: Channel[] = [
     "logo": "https://img.faz-o-eli.online/pt_benficatv.prev.png",
     "sources": [
       {
+        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/pt_benficatv/pt_benficatv.m3u8",
+        "quality": "Qualidade não informada"
+      },
+      {
         "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/80019bbd22a1c4987edd7810ccf410cc/error.txt",
         "quality": "Qualidade não informada",
         "referer": "https://w7.embedtv.cc/",
         "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
-      },
-      {
-        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/pt_benficatv/pt_benficatv.m3u8",
-        "quality": "Qualidade não informada"
       }
     ]
   },
@@ -14521,14 +14521,14 @@ export const FALLBACK_CHANNELS: Channel[] = [
     "logo": "https://img.faz-o-eli.online/pt_canal11.prev.png",
     "sources": [
       {
+        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/pt_canal11/pt_canal11.m3u8",
+        "quality": "Qualidade não informada"
+      },
+      {
         "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/04f16dd33cbeefd803b8c58d7f927f9b/error.txt",
         "quality": "Qualidade não informada",
         "referer": "https://w7.embedtv.cc/",
         "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
-      },
-      {
-        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/pt_canal11/pt_canal11.m3u8",
-        "quality": "Qualidade não informada"
       }
     ]
   },
@@ -14539,14 +14539,14 @@ export const FALLBACK_CHANNELS: Channel[] = [
     "logo": "https://img.faz-o-eli.online/pt_eleven1.prev.png",
     "sources": [
       {
+        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/pt_eleven1/pt_eleven1.m3u8",
+        "quality": "Qualidade não informada"
+      },
+      {
         "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/11495a4f12c1f88292dfce0078846221/error.txt",
         "quality": "Qualidade não informada",
         "referer": "https://w7.embedtv.cc/",
         "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
-      },
-      {
-        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/pt_eleven1/pt_eleven1.m3u8",
-        "quality": "Qualidade não informada"
       }
     ]
   },
@@ -14557,14 +14557,14 @@ export const FALLBACK_CHANNELS: Channel[] = [
     "logo": "https://img.faz-o-eli.online/pt_eleven2.prev.png",
     "sources": [
       {
+        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/pt_eleven2/pt_eleven2.m3u8",
+        "quality": "Qualidade não informada"
+      },
+      {
         "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/5f7e7a01290473667a2cdbd4cdf9d2a0/error.txt",
         "quality": "Qualidade não informada",
         "referer": "https://w7.embedtv.cc/",
         "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
-      },
-      {
-        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/pt_eleven2/pt_eleven2.m3u8",
-        "quality": "Qualidade não informada"
       }
     ]
   },
@@ -14575,14 +14575,14 @@ export const FALLBACK_CHANNELS: Channel[] = [
     "logo": "https://img.faz-o-eli.online/pt_eleven3.prev.png",
     "sources": [
       {
+        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/pt_eleven3/pt_eleven3.m3u8",
+        "quality": "Qualidade não informada"
+      },
+      {
         "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/4e9892ed2cd2facdf283b426f15a5dbf/error.txt",
         "quality": "Qualidade não informada",
         "referer": "https://w7.embedtv.cc/",
         "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
-      },
-      {
-        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/pt_eleven3/pt_eleven3.m3u8",
-        "quality": "Qualidade não informada"
       }
     ]
   },
@@ -14593,14 +14593,14 @@ export const FALLBACK_CHANNELS: Channel[] = [
     "logo": "https://img.faz-o-eli.online/sportv.png",
     "sources": [
       {
+        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/pt_sportv1/pt_sportv1.m3u8",
+        "quality": "Qualidade não informada"
+      },
+      {
         "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/e5a3aab5250ee8d0be4400972cceb704/error.txt",
         "quality": "Qualidade não informada",
         "referer": "https://w7.embedtv.cc/",
         "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
-      },
-      {
-        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/pt_sportv1/pt_sportv1.m3u8",
-        "quality": "Qualidade não informada"
       }
     ]
   },
@@ -14611,14 +14611,14 @@ export const FALLBACK_CHANNELS: Channel[] = [
     "logo": "https://img.faz-o-eli.online/sportv.png",
     "sources": [
       {
+        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/pt_sportv2/pt_sportv2.m3u8",
+        "quality": "Qualidade não informada"
+      },
+      {
         "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/640368350ec7b17351a19cf23e863e61/error.txt",
         "quality": "Qualidade não informada",
         "referer": "https://w7.embedtv.cc/",
         "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
-      },
-      {
-        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/pt_sportv2/pt_sportv2.m3u8",
-        "quality": "Qualidade não informada"
       }
     ]
   },
@@ -14629,14 +14629,14 @@ export const FALLBACK_CHANNELS: Channel[] = [
     "logo": "https://img.faz-o-eli.online/sportv.png",
     "sources": [
       {
+        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/pt_sportv3/pt_sportv3.m3u8",
+        "quality": "Qualidade não informada"
+      },
+      {
         "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/13e7e3a1a41b29730f3b5761253d3a16/error.txt",
         "quality": "Qualidade não informada",
         "referer": "https://w7.embedtv.cc/",
         "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
-      },
-      {
-        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/pt_sportv3/pt_sportv3.m3u8",
-        "quality": "Qualidade não informada"
       }
     ]
   },
@@ -14647,14 +14647,14 @@ export const FALLBACK_CHANNELS: Channel[] = [
     "logo": "https://img.faz-o-eli.online/sportv.png",
     "sources": [
       {
+        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/pt_sportv4/pt_sportv4.m3u8",
+        "quality": "Qualidade não informada"
+      },
+      {
         "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/a9227e8e94d10a26760af844de3f328f/error.txt",
         "quality": "Qualidade não informada",
         "referer": "https://w7.embedtv.cc/",
         "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
-      },
-      {
-        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/pt_sportv4/pt_sportv4.m3u8",
-        "quality": "Qualidade não informada"
       }
     ]
   },
@@ -14665,14 +14665,14 @@ export const FALLBACK_CHANNELS: Channel[] = [
     "logo": "https://img.faz-o-eli.online/sportv.png",
     "sources": [
       {
+        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/pt_sportv5/pt_sportv5.m3u8",
+        "quality": "Qualidade não informada"
+      },
+      {
         "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/0fecb2ec5984cc8bd303ce18e7afdbf2/error.txt",
         "quality": "Qualidade não informada",
         "referer": "https://w7.embedtv.cc/",
         "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
-      },
-      {
-        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/pt_sportv5/pt_sportv5.m3u8",
-        "quality": "Qualidade não informada"
       }
     ]
   },
@@ -14683,14 +14683,14 @@ export const FALLBACK_CHANNELS: Channel[] = [
     "logo": "https://img.faz-o-eli.online/sportv.png",
     "sources": [
       {
+        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/pt_sportv6/pt_sportv6.m3u8",
+        "quality": "Qualidade não informada"
+      },
+      {
         "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/c32eb4cfab719f478c533cc1d4156b4f/error.txt",
         "quality": "Qualidade não informada",
         "referer": "https://w7.embedtv.cc/",
         "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
-      },
-      {
-        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/pt_sportv6/pt_sportv6.m3u8",
-        "quality": "Qualidade não informada"
       }
     ]
   },
@@ -14701,14 +14701,14 @@ export const FALLBACK_CHANNELS: Channel[] = [
     "logo": "https://img.faz-o-eli.online/sportv.png",
     "sources": [
       {
+        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/pt_sportv7/pt_sportv7.m3u8",
+        "quality": "Qualidade não informada"
+      },
+      {
         "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/789019e66da5de28faa4845480861b44/error.txt",
         "quality": "Qualidade não informada",
         "referer": "https://w7.embedtv.cc/",
         "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
-      },
-      {
-        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/pt_sportv7/pt_sportv7.m3u8",
-        "quality": "Qualidade não informada"
       }
     ]
   },
@@ -14779,38 +14779,25 @@ export const FALLBACK_CHANNELS: Channel[] = [
     "logo": "https://img.faz-o-eli.online/sportv.png",
     "sources": [
       {
-        "url": "https://aws.s13-s1001604.lat/stream/f809a47c8a40c3642b96a3df2c2e563c/sportv.m3u8",
-        "quality": "HD · 1280x720",
-        "referer": "https://meufut.top/sportv",
-        "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
-      },
-      {
-        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/d4b93407c8e2e95b00d9cae0990d47ae/error.txt",
-        "quality": "Qualidade não informada",
-        "referer": "https://w7.embedtv.cc/",
-        "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
-      },
-      {
         "url": "https://dadinhodetapioca.fun/play/sportv.html",
         "quality": "FHD",
         "referer": "https://dadinhodetapioca.fun/"
       },
       {
-        "url": "https://aws.s13-s1001604.lat/stream/df68c287a5e76abe2df09d30cb0e9b37/sportv.m3u8",
-        "quality": "HD · 1280x720",
-        "referer": "https://meufut.top/sportv",
-        "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
-      },
-      {
-        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/sportv/sportv.m3u8",
-        "quality": "FHD · 1920x1080"
-      },
-      {
-        "url": "https://16-5-0-235.sslip.io/sportv/index.m3u8"
-      },
-      {
         "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL3BhbGRpLnBybzo4MC9saXZlL3RvbmluaG8wMi9DYjQ5ODAzNy83MjMyOS5tM3U4.m3u8",
         "quality": "FHD · 1920x1080"
+      },
+      {
+        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL3BhbGRpLnBybzo4MC9saXZlL3RvbmluaG8wMi9DYjQ5ODAzNy8xMzExODgubTN1OA.m3u8",
+        "quality": "FHD · 1920x1080"
+      },
+      {
+        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL3BhbGRpLnBybzo4MC9saXZlL3RvbmluaG8wMi9DYjQ5ODAzNy83MjMzMi5tM3U4.m3u8",
+        "quality": "HD · 1280x720"
+      },
+      {
+        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL3BhbGRpLnBybzo4MC9saXZlL3RvbmluaG8wMi9DYjQ5ODAzNy8xMzExMzIubTN1OA.m3u8",
+        "quality": "SD · 852x480"
       },
       {
         "url": "http://64.31.23.207:80/59471019/60849037/324391.m3u8",
@@ -14825,16 +14812,62 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "quality": "Qualidade não informada"
       },
       {
-        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL3BhbGRpLnBybzo4MC9saXZlL3RvbmluaG8wMi9DYjQ5ODAzNy8xMzExODgubTN1OA.m3u8",
+        "url": "http://332nr7hbfu.xyz:80/live/999913/S3CvUB/131132.m3u8",
+        "quality": "SD · 852x480"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/81591.ts",
+        "name": "Fonte 31 (Ramys)",
+        "quality": "1080p FHD"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/69096.ts",
+        "name": "Fonte 32 (Ramys)"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/9107.ts",
+        "name": "Fonte 33 (Ramys)",
+        "quality": "1080p FHD"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/9111.ts",
+        "name": "Fonte 34 (Ramys)",
+        "quality": "720p HD"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/30126.ts",
+        "name": "Fonte 35 (Ramys)",
+        "quality": "720p HD"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/30127.ts",
+        "name": "Fonte 36 (Ramys)",
+        "quality": "720p HD"
+      },
+      {
+        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/sportv/sportv.m3u8",
         "quality": "FHD · 1920x1080"
       },
       {
-        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL3BhbGRpLnBybzo4MC9saXZlL3RvbmluaG8wMi9DYjQ5ODAzNy83MjMzMi5tM3U4.m3u8",
-        "quality": "HD · 1280x720"
+        "url": "https://aws.s13-s1001604.lat/stream/f809a47c8a40c3642b96a3df2c2e563c/sportv.m3u8",
+        "quality": "HD · 1280x720",
+        "referer": "https://meufut.top/sportv",
+        "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
       },
       {
-        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL3BhbGRpLnBybzo4MC9saXZlL3RvbmluaG8wMi9DYjQ5ODAzNy8xMzExMzIubTN1OA.m3u8",
-        "quality": "SD · 852x480"
+        "url": "https://aws.s13-s1001604.lat/stream/df68c287a5e76abe2df09d30cb0e9b37/sportv.m3u8",
+        "quality": "HD · 1280x720",
+        "referer": "https://meufut.top/sportv",
+        "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
+      },
+      {
+        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/d4b93407c8e2e95b00d9cae0990d47ae/error.txt",
+        "quality": "Qualidade não informada",
+        "referer": "https://w7.embedtv.cc/",
+        "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
+      },
+      {
+        "url": "https://16-5-0-235.sslip.io/sportv/index.m3u8"
       },
       {
         "url": "http://vaiagora.vip:80/live/5q8VUj/5BeUd8/131188.m3u8",
@@ -14899,39 +14932,6 @@ export const FALLBACK_CHANNELS: Channel[] = [
       {
         "url": "http://corruptx.org:80/live/hfp5ejnrey/zq0u3kzads/30127.m3u8",
         "quality": "HD"
-      },
-      {
-        "url": "http://332nr7hbfu.xyz:80/live/999913/S3CvUB/131132.m3u8",
-        "quality": "SD · 852x480"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/81591.ts",
-        "name": "Fonte 31 (Ramys)",
-        "quality": "1080p FHD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/69096.ts",
-        "name": "Fonte 32 (Ramys)"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/9107.ts",
-        "name": "Fonte 33 (Ramys)",
-        "quality": "1080p FHD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/9111.ts",
-        "name": "Fonte 34 (Ramys)",
-        "quality": "720p HD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/30126.ts",
-        "name": "Fonte 35 (Ramys)",
-        "quality": "720p HD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/30127.ts",
-        "name": "Fonte 36 (Ramys)",
-        "quality": "720p HD"
       }
     ]
   },
@@ -14942,26 +14942,25 @@ export const FALLBACK_CHANNELS: Channel[] = [
     "logo": "https://img.faz-o-eli.online/sportv2.png",
     "sources": [
       {
-        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/583376e665ab4a7be7696a48f7485c14/error.txt",
-        "quality": "Qualidade não informada",
-        "referer": "https://w7.embedtv.cc/",
-        "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
-      },
-      {
         "url": "https://dadinhodetapioca.fun/play/sportv2.html",
         "quality": "FHD",
         "referer": "https://dadinhodetapioca.fun/"
       },
       {
-        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/sportv2/sportv2.m3u8",
-        "quality": "HD · 1280x720"
-      },
-      {
-        "url": "https://16-5-0-235.sslip.io/sportv2/index.m3u8"
-      },
-      {
         "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI0NzM4Lm0zdTg.m3u8",
         "quality": "FHD"
+      },
+      {
+        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI0NzM5Lm0zdTg.m3u8",
+        "quality": "HD"
+      },
+      {
+        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvMTgwNTYyNy5tM3U4.m3u8",
+        "quality": "HD"
+      },
+      {
+        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI0NzQwLm0zdTg.m3u8",
+        "quality": "SD"
       },
       {
         "url": "http://64.31.23.207:80/59471019/60849037/3460203.m3u8",
@@ -14970,6 +14969,56 @@ export const FALLBACK_CHANNELS: Channel[] = [
       {
         "url": "http://64.31.23.207:80/59471019/60849037/3460204.m3u8",
         "quality": "HD · 1280x720"
+      },
+      {
+        "url": "http://45.185.11.126:8000/play/a05f/index.m3u8",
+        "quality": "FHD · 1920x1080"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/81592.ts",
+        "name": "Fonte 23 (Ramys)",
+        "quality": "1080p FHD"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/13586.ts",
+        "name": "Fonte 24 (Ramys)"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/9103.ts",
+        "name": "Fonte 25 (Ramys)",
+        "quality": "1080p FHD"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/9104.ts",
+        "name": "Fonte 26 (Ramys)",
+        "quality": "720p HD"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/30122.ts",
+        "name": "Fonte 27 (Ramys)",
+        "quality": "720p HD"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/30123.ts",
+        "name": "Fonte 28 (Ramys)",
+        "quality": "720p HD"
+      },
+      {
+        "url": "http://195.178.110.110/sportv2/index.m3u8",
+        "name": "Fonte 29 (IPTV-ORG)"
+      },
+      {
+        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/sportv2/sportv2.m3u8",
+        "quality": "HD · 1280x720"
+      },
+      {
+        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/583376e665ab4a7be7696a48f7485c14/error.txt",
+        "quality": "Qualidade não informada",
+        "referer": "https://w7.embedtv.cc/",
+        "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
+      },
+      {
+        "url": "https://16-5-0-235.sslip.io/sportv2/index.m3u8"
       },
       {
         "url": "http://vaiagora.vip:80/live/5q8VUj/5BeUd8/103472.m3u8",
@@ -15014,55 +15063,6 @@ export const FALLBACK_CHANNELS: Channel[] = [
       {
         "url": "http://corruptx.org:80/live/hfp5ejnrey/zq0u3kzads/30123.m3u8",
         "quality": "HD"
-      },
-      {
-        "url": "http://45.185.11.126:8000/play/a05f/index.m3u8",
-        "quality": "FHD · 1920x1080"
-      },
-      {
-        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI0NzM5Lm0zdTg.m3u8",
-        "quality": "HD"
-      },
-      {
-        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvMTgwNTYyNy5tM3U4.m3u8",
-        "quality": "HD"
-      },
-      {
-        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI0NzQwLm0zdTg.m3u8",
-        "quality": "SD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/81592.ts",
-        "name": "Fonte 23 (Ramys)",
-        "quality": "1080p FHD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/13586.ts",
-        "name": "Fonte 24 (Ramys)"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/9103.ts",
-        "name": "Fonte 25 (Ramys)",
-        "quality": "1080p FHD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/9104.ts",
-        "name": "Fonte 26 (Ramys)",
-        "quality": "720p HD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/30122.ts",
-        "name": "Fonte 27 (Ramys)",
-        "quality": "720p HD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/30123.ts",
-        "name": "Fonte 28 (Ramys)",
-        "quality": "720p HD"
-      },
-      {
-        "url": "http://195.178.110.110/sportv2/index.m3u8",
-        "name": "Fonte 29 (IPTV-ORG)"
       }
     ]
   },
@@ -15073,26 +15073,25 @@ export const FALLBACK_CHANNELS: Channel[] = [
     "logo": "https://img.faz-o-eli.online/sportv3.png",
     "sources": [
       {
-        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/f91e4cbe649600e698fd671e2a8d7ea0/error.txt",
-        "quality": "Qualidade não informada",
-        "referer": "https://w7.embedtv.cc/",
-        "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
-      },
-      {
         "url": "https://dadinhodetapioca.fun/play/sportv3.html",
         "quality": "FHD",
         "referer": "https://dadinhodetapioca.fun/"
       },
       {
-        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/sportv3/sportv3.m3u8",
-        "quality": "HD · 1280x720"
-      },
-      {
-        "url": "https://16-5-0-235.sslip.io/sportv3/index.m3u8"
-      },
-      {
         "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI0NzQyLm0zdTg.m3u8",
         "quality": "FHD"
+      },
+      {
+        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI0NzQzLm0zdTg.m3u8",
+        "quality": "HD"
+      },
+      {
+        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvMTgwNTYzMC5tM3U4.m3u8",
+        "quality": "HD"
+      },
+      {
+        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI0NzQ0Lm0zdTg.m3u8",
+        "quality": "SD"
       },
       {
         "url": "http://64.31.23.207:80/59471019/60849037/3460206.m3u8",
@@ -15101,6 +15100,56 @@ export const FALLBACK_CHANNELS: Channel[] = [
       {
         "url": "http://64.31.23.207:80/59471019/60849037/3460207.m3u8",
         "quality": "HD · 1280x720"
+      },
+      {
+        "url": "http://45.185.11.126:8000/play/a06v/index.m3u8",
+        "quality": "FHD · 1920x1080"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/81593.ts",
+        "name": "Fonte 26 (Ramys)",
+        "quality": "1080p FHD"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/9106.ts",
+        "name": "Fonte 27 (Ramys)",
+        "quality": "720p HD"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/9105.ts",
+        "name": "Fonte 28 (Ramys)",
+        "quality": "1080p FHD"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/30124.ts",
+        "name": "Fonte 29 (Ramys)",
+        "quality": "720p HD"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/30125.ts",
+        "name": "Fonte 30 (Ramys)",
+        "quality": "720p HD"
+      },
+      {
+        "url": "http://170.83.49.66:8083/SPORTV3HD/index.m3u8",
+        "name": "Fonte 31 (IPTV-ORG)"
+      },
+      {
+        "url": "http://195.178.110.110/sportv3/index.m3u8",
+        "name": "Fonte 32 (IPTV-ORG)"
+      },
+      {
+        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/sportv3/sportv3.m3u8",
+        "quality": "HD · 1280x720"
+      },
+      {
+        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/f91e4cbe649600e698fd671e2a8d7ea0/error.txt",
+        "quality": "Qualidade não informada",
+        "referer": "https://w7.embedtv.cc/",
+        "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
+      },
+      {
+        "url": "https://16-5-0-235.sslip.io/sportv3/index.m3u8"
       },
       {
         "url": "http://vaiagora.vip:80/live/5q8VUj/5BeUd8/72325.m3u8",
@@ -15157,55 +15206,6 @@ export const FALLBACK_CHANNELS: Channel[] = [
       {
         "url": "http://corruptx.org:80/live/hfp5ejnrey/zq0u3kzads/30124.m3u8",
         "quality": "HD"
-      },
-      {
-        "url": "http://45.185.11.126:8000/play/a06v/index.m3u8",
-        "quality": "FHD · 1920x1080"
-      },
-      {
-        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI0NzQzLm0zdTg.m3u8",
-        "quality": "HD"
-      },
-      {
-        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvMTgwNTYzMC5tM3U4.m3u8",
-        "quality": "HD"
-      },
-      {
-        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI0NzQ0Lm0zdTg.m3u8",
-        "quality": "SD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/81593.ts",
-        "name": "Fonte 26 (Ramys)",
-        "quality": "1080p FHD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/9106.ts",
-        "name": "Fonte 27 (Ramys)",
-        "quality": "720p HD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/9105.ts",
-        "name": "Fonte 28 (Ramys)",
-        "quality": "1080p FHD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/30124.ts",
-        "name": "Fonte 29 (Ramys)",
-        "quality": "720p HD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/30125.ts",
-        "name": "Fonte 30 (Ramys)",
-        "quality": "720p HD"
-      },
-      {
-        "url": "http://170.83.49.66:8083/SPORTV3HD/index.m3u8",
-        "name": "Fonte 31 (IPTV-ORG)"
-      },
-      {
-        "url": "http://195.178.110.110/sportv3/index.m3u8",
-        "name": "Fonte 32 (IPTV-ORG)"
       }
     ]
   },
@@ -15215,10 +15215,6 @@ export const FALLBACK_CHANNELS: Channel[] = [
     "category": "Jogos & Esportes",
     "logo": "https://img.faz-o-eli.online/sportv4.png",
     "sources": [
-      {
-        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/sportv4/sportv4.m3u8",
-        "quality": "Qualidade não informada"
-      },
       {
         "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL3BhbGRpLnBybzo4MC9saXZlL3RvbmluaG8wMi9DYjQ5ODAzNy8yNzYwODkubTN1OA.m3u8",
         "quality": "FHD"
@@ -15234,6 +15230,15 @@ export const FALLBACK_CHANNELS: Channel[] = [
       {
         "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL3BhbGRpLnBybzo4MC9saXZlL3RvbmluaG8wMi9DYjQ5ODAzNy8yNzYwOTEubTN1OA.m3u8",
         "quality": "SD"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/570369.ts",
+        "name": "Fonte 11 (Ramys)",
+        "quality": "1080p FHD"
+      },
+      {
+        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/sportv4/sportv4.m3u8",
+        "quality": "Qualidade não informada"
       },
       {
         "url": "http://vaiagora.vip:80/live/5q8VUj/5BeUd8/276092.m3u8",
@@ -15254,11 +15259,6 @@ export const FALLBACK_CHANNELS: Channel[] = [
       {
         "url": "http://corruptx.org:80/live/hfp5ejnrey/zq0u3kzads/570369.m3u8",
         "quality": "FHD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/570369.ts",
-        "name": "Fonte 11 (Ramys)",
-        "quality": "1080p FHD"
       }
     ]
   },
@@ -15274,16 +15274,16 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "referer": "https://dadinhodetapioca.fun/"
       },
       {
-        "url": "http://corruptx.org:80/live/hfp5ejnrey/zq0u3kzads/1165167.m3u8",
-        "quality": "HD · 1280x720"
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/1165167.ts",
+        "name": "Fonte 4 (Ramys)"
       },
       {
         "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/sportynetplus3/sportynetplus3.m3u8",
         "quality": "Qualidade não informada"
       },
       {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/1165167.ts",
-        "name": "Fonte 4 (Ramys)"
+        "url": "http://corruptx.org:80/live/hfp5ejnrey/zq0u3kzads/1165167.m3u8",
+        "quality": "HD · 1280x720"
       }
     ]
   },
@@ -15294,18 +15294,18 @@ export const FALLBACK_CHANNELS: Channel[] = [
     "logo": "https://img.faz-o-eli.online/sportynet.png",
     "sources": [
       {
-        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/a4902683ba7d47f944a3d8987447f169/error.txt",
-        "quality": "Qualidade não informada",
-        "referer": "https://w7.embedtv.cc/",
-        "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
-      },
-      {
         "url": "http://64.31.23.207:80/59471019/60849037/3460158.m3u8",
         "quality": "HD · 1280x720"
       },
       {
         "url": "http://64.31.23.207:80/59471019/60849037/3460269.m3u8",
         "quality": "HD · 1280x720"
+      },
+      {
+        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/a4902683ba7d47f944a3d8987447f169/error.txt",
+        "quality": "Qualidade não informada",
+        "referer": "https://w7.embedtv.cc/",
+        "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
       },
       {
         "url": "http://vaiagora.vip:80/live/5q8VUj/5BeUd8/184572.m3u8",
@@ -15348,6 +15348,10 @@ export const FALLBACK_CHANNELS: Channel[] = [
     "logo": "https://img.faz-o-eli.online/sportynet.png",
     "sources": [
       {
+        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzU3ODAyLm0zdTg.m3u8",
+        "quality": "HD"
+      },
+      {
         "url": "http://vaiagora.vip:80/live/5q8VUj/5BeUd8/184584.m3u8",
         "quality": "FHD"
       },
@@ -15370,10 +15374,6 @@ export const FALLBACK_CHANNELS: Channel[] = [
       {
         "url": "http://vivlar.me:80/live/497238/KK8Kdy/184586.m3u8",
         "quality": "SD"
-      },
-      {
-        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzU3ODAyLm0zdTg.m3u8",
-        "quality": "HD"
       }
     ]
   },
@@ -15384,18 +15384,18 @@ export const FALLBACK_CHANNELS: Channel[] = [
     "logo": "https://img.faz-o-eli.online/sportynet.png",
     "sources": [
       {
-        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/a3644ff901247b7d612e184ac04b9436/error.txt",
-        "quality": "Qualidade não informada",
-        "referer": "https://w7.embedtv.cc/",
-        "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
+        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzU3Nzk5Lm0zdTg.m3u8",
+        "quality": "HD"
       },
       {
         "url": "http://332nr7hbfu.xyz:80/live/999913/S3CvUB/184570.m3u8",
         "quality": "HD · 1280x720"
       },
       {
-        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzU3Nzk5Lm0zdTg.m3u8",
-        "quality": "HD"
+        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/a3644ff901247b7d612e184ac04b9436/error.txt",
+        "quality": "Qualidade não informada",
+        "referer": "https://w7.embedtv.cc/",
+        "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
       }
     ]
   },
@@ -15406,14 +15406,14 @@ export const FALLBACK_CHANNELS: Channel[] = [
     "logo": "https://img.faz-o-eli.online/sportynet.png",
     "sources": [
       {
+        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzU3ODAwLm0zdTg.m3u8",
+        "quality": "HD"
+      },
+      {
         "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/f9da9645ae351af80a912350a13739b8/error.txt",
         "quality": "Qualidade não informada",
         "referer": "https://w7.embedtv.cc/",
         "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
-      },
-      {
-        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzU3ODAwLm0zdTg.m3u8",
-        "quality": "HD"
       }
     ]
   },
@@ -15424,6 +15424,10 @@ export const FALLBACK_CHANNELS: Channel[] = [
     "logo": "https://img.faz-o-eli.online/sportynet.png",
     "sources": [
       {
+        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzU3ODAxLm0zdTg.m3u8",
+        "quality": "HD"
+      },
+      {
         "url": "http://332nr7hbfu.xyz:80/live/999913/S3CvUB/184580.m3u8",
         "quality": "FHD · 1920x1080"
       },
@@ -15432,10 +15436,6 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "quality": "Qualidade não informada",
         "referer": "https://w7.embedtv.cc/",
         "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
-      },
-      {
-        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzU3ODAxLm0zdTg.m3u8",
-        "quality": "HD"
       }
     ]
   },
@@ -15458,14 +15458,14 @@ export const FALLBACK_CHANNELS: Channel[] = [
     "logo": "https://img.faz-o-eli.online/ufcfightpass.png",
     "sources": [
       {
+        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/ufcfightpass/ufcfightpass.m3u8",
+        "quality": "Qualidade não informada"
+      },
+      {
         "url": "https://aws.s13-s1001604.lat/stream/08a88b58b4cce722ea16074fd446a37c/ufcfightpass.m3u8",
         "quality": "HD · 1280x720",
         "referer": "https://meufut.top/ufc-fight-pass",
         "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
-      },
-      {
-        "url": "http://vaiagora.vip:80/live/5q8VUj/5BeUd8/184046.m3u8",
-        "quality": "FHD"
       },
       {
         "url": "https://aws.s13-s1001604.lat/stream/36357fc78b7c6b935fe4542eecbbfa8d/ufcfightpass.m3u8",
@@ -15474,8 +15474,8 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
       },
       {
-        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/ufcfightpass/ufcfightpass.m3u8",
-        "quality": "Qualidade não informada"
+        "url": "http://vaiagora.vip:80/live/5q8VUj/5BeUd8/184046.m3u8",
+        "quality": "FHD"
       },
       {
         "url": "http://vaiagora.vip:80/live/5q8VUj/5BeUd8/184047.m3u8",
@@ -15510,14 +15510,14 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "quality": "HD · 1280x720"
       },
       {
+        "url": "http://64.31.23.207:80/59471019/60849037/297548.m3u8",
+        "quality": "HD · 1280x720"
+      },
+      {
         "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/f8e7528d650ddf40f813ff09721ef3a6/error.txt",
         "quality": "Qualidade não informada",
         "referer": "https://w7.embedtv.cc/",
         "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
-      },
-      {
-        "url": "http://64.31.23.207:80/59471019/60849037/297548.m3u8",
-        "quality": "HD · 1280x720"
       },
       {
         "url": "http://corruptx.org:80/live/hfp5ejnrey/zq0u3kzads/2403505.m3u8",
@@ -15560,12 +15560,20 @@ export const FALLBACK_CHANNELS: Channel[] = [
     "logo": "https://mondrian.claro.com.br/channels/inverse/woohoo.png",
     "sources": [
       {
-        "url": "http://45.162.64.114/WOOHOO/index.m3u8",
-        "quality": "HD · 1280x720"
-      },
-      {
         "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1MTUzLm0zdTg.m3u8",
         "quality": "FHD"
+      },
+      {
+        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1MTU0Lm0zdTg.m3u8",
+        "quality": "HD"
+      },
+      {
+        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1MTU1Lm0zdTg.m3u8",
+        "quality": "SD"
+      },
+      {
+        "url": "http://45.162.64.114/WOOHOO/index.m3u8",
+        "quality": "HD · 1280x720"
       },
       {
         "url": "http://168.197.104.22/WOOHOO/index.m3u8",
@@ -15574,6 +15582,24 @@ export const FALLBACK_CHANNELS: Channel[] = [
       {
         "url": "http://170.83.16.50/WOOHOO/index.m3u8",
         "quality": "HD · 1280x720"
+      },
+      {
+        "url": "http://332nr7hbfu.xyz:80/live/999913/S3CvUB/72437.m3u8",
+        "quality": "HD · 1280x720"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/125448.ts",
+        "name": "Fonte 19 (Ramys)",
+        "quality": "1080p FHD"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/9224.ts",
+        "name": "Fonte 20 (Ramys)",
+        "quality": "720p HD"
+      },
+      {
+        "url": "http://186.219.52.187/woohoo/index.m3u8",
+        "name": "Fonte 21 (IPTV-ORG)"
       },
       {
         "url": "http://vaiagora.vip:80/live/5q8VUj/5BeUd8/103449.m3u8",
@@ -15618,32 +15644,6 @@ export const FALLBACK_CHANNELS: Channel[] = [
       {
         "url": "http://corruptx.org:80/live/hfp5ejnrey/zq0u3kzads/9224.m3u8",
         "quality": "HD"
-      },
-      {
-        "url": "http://332nr7hbfu.xyz:80/live/999913/S3CvUB/72437.m3u8",
-        "quality": "HD · 1280x720"
-      },
-      {
-        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1MTU0Lm0zdTg.m3u8",
-        "quality": "HD"
-      },
-      {
-        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1MTU1Lm0zdTg.m3u8",
-        "quality": "SD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/125448.ts",
-        "name": "Fonte 19 (Ramys)",
-        "quality": "1080p FHD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/9224.ts",
-        "name": "Fonte 20 (Ramys)",
-        "quality": "720p HD"
-      },
-      {
-        "url": "http://186.219.52.187/woohoo/index.m3u8",
-        "name": "Fonte 21 (IPTV-ORG)"
       }
     ]
   },
@@ -15654,7 +15654,38 @@ export const FALLBACK_CHANNELS: Channel[] = [
     "logo": "https://img.faz-o-eli.online/xsports.png",
     "sources": [
       {
+        "url": "https://dadinhodetapioca.fun/play/xsports.html",
+        "quality": "FHD",
+        "referer": "https://dadinhodetapioca.fun/"
+      },
+      {
+        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvMTgxMTcyOS5tM3U4.m3u8",
+        "quality": "HD"
+      },
+      {
+        "url": "http://64.31.23.207:80/59471019/60849037/3460262.m3u8",
+        "quality": "HD · 1280x720"
+      },
+      {
+        "url": "http://64.31.23.207:80/59471019/60849037/3460263.m3u8",
+        "quality": "HD · 1280x720"
+      },
+      {
+        "url": "http://332nr7hbfu.xyz:80/live/999913/S3CvUB/340450.m3u8",
+        "quality": "HD · 1280x720"
+      },
+      {
+        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/xsports/xsports.m3u8",
+        "quality": "HD · 1280x720"
+      },
+      {
         "url": "https://aws.s13-s1001604.lat/stream/ab55903cd13c40853a7fead247e75e80/xsports.m3u8",
+        "quality": "HD · 1280x720",
+        "referer": "https://meufut.top/xsports",
+        "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
+      },
+      {
+        "url": "https://aws.s13-s1001604.lat/stream/142daec49214213d83df632a3ae41d10/xsports.m3u8",
         "quality": "HD · 1280x720",
         "referer": "https://meufut.top/xsports",
         "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
@@ -15664,29 +15695,6 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "quality": "Qualidade não informada",
         "referer": "https://w7.embedtv.cc/",
         "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
-      },
-      {
-        "url": "https://dadinhodetapioca.fun/play/xsports.html",
-        "quality": "FHD",
-        "referer": "https://dadinhodetapioca.fun/"
-      },
-      {
-        "url": "https://aws.s13-s1001604.lat/stream/142daec49214213d83df632a3ae41d10/xsports.m3u8",
-        "quality": "HD · 1280x720",
-        "referer": "https://meufut.top/xsports",
-        "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
-      },
-      {
-        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/xsports/xsports.m3u8",
-        "quality": "HD · 1280x720"
-      },
-      {
-        "url": "http://64.31.23.207:80/59471019/60849037/3460262.m3u8",
-        "quality": "HD · 1280x720"
-      },
-      {
-        "url": "http://64.31.23.207:80/59471019/60849037/3460263.m3u8",
-        "quality": "HD · 1280x720"
       },
       {
         "url": "http://vaiagora.vip:80/live/5q8VUj/5BeUd8/340450.m3u8",
@@ -15715,14 +15723,6 @@ export const FALLBACK_CHANNELS: Channel[] = [
       {
         "url": "http://corruptx.org:80/live/hfp5ejnrey/zq0u3kzads/631631.m3u8",
         "quality": "FHD"
-      },
-      {
-        "url": "http://332nr7hbfu.xyz:80/live/999913/S3CvUB/340450.m3u8",
-        "quality": "HD · 1280x720"
-      },
-      {
-        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvMTgxMTcyOS5tM3U4.m3u8",
-        "quality": "HD"
       }
     ]
   },
@@ -15781,14 +15781,14 @@ export const FALLBACK_CHANNELS: Channel[] = [
     "logo": "https://img.faz-o-eli.online/mtv.png",
     "sources": [
       {
+        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/mtv/mtv.m3u8",
+        "quality": "FHD · 1536x1024"
+      },
+      {
         "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/b76fa08b992b542d15b3cc2505e5a44b/error.txt",
         "quality": "Qualidade não informada",
         "referer": "https://w7.embedtv.cc/",
         "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
-      },
-      {
-        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/mtv/mtv.m3u8",
-        "quality": "FHD · 1536x1024"
       },
       {
         "url": "https://16-5-0-235.sslip.io/mtv/index.m3u8"
@@ -15934,10 +15934,50 @@ export const FALLBACK_CHANNELS: Channel[] = [
     "logo": "https://img.faz-o-eli.online/multishow.png",
     "sources": [
       {
-        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/a2bb656cdb461a7db6d90e934fdc74b2/error.txt",
-        "quality": "Qualidade não informada",
-        "referer": "https://w7.embedtv.cc/",
-        "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
+        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1MTMwLm0zdTg.m3u8",
+        "quality": "FHD"
+      },
+      {
+        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1MTMxLm0zdTg.m3u8",
+        "quality": "HD"
+      },
+      {
+        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1MTMyLm0zdTg.m3u8",
+        "quality": "SD"
+      },
+      {
+        "url": "http://64.31.23.207:80/59471019/60849037/518580.m3u8",
+        "quality": "FHD · 1920x1080"
+      },
+      {
+        "url": "http://64.31.23.207:80/59471019/60849037/518581.m3u8",
+        "quality": "HD · 1280x720"
+      },
+      {
+        "url": "http://64.31.23.207:80/59471019/60849037/518582.m3u8",
+        "quality": "SD · 768x432"
+      },
+      {
+        "url": "http://332nr7hbfu.xyz:80/live/999913/S3CvUB/131193.m3u8",
+        "quality": "FHD · 1920x1080"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/13540.ts",
+        "name": "Fonte 24 (Ramys)"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/8974.ts",
+        "name": "Fonte 25 (Ramys)",
+        "quality": "720p HD"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/8975.ts",
+        "name": "Fonte 26 (Ramys)",
+        "quality": "1080p FHD"
+      },
+      {
+        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/multishow/multishow.m3u8",
+        "quality": "HD · 1280x720"
       },
       {
         "url": "https://aws.s13-s1001604.lat/stream/20aa200451a750a1367af30f8268595a/multishow.m3u8",
@@ -15952,27 +15992,13 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
       },
       {
-        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/multishow/multishow.m3u8",
-        "quality": "HD · 1280x720"
+        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/a2bb656cdb461a7db6d90e934fdc74b2/error.txt",
+        "quality": "Qualidade não informada",
+        "referer": "https://w7.embedtv.cc/",
+        "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
       },
       {
         "url": "https://16-5-0-235.sslip.io/multishow/index.m3u8"
-      },
-      {
-        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1MTMwLm0zdTg.m3u8",
-        "quality": "FHD"
-      },
-      {
-        "url": "http://64.31.23.207:80/59471019/60849037/518580.m3u8",
-        "quality": "FHD · 1920x1080"
-      },
-      {
-        "url": "http://64.31.23.207:80/59471019/60849037/518581.m3u8",
-        "quality": "HD · 1280x720"
-      },
-      {
-        "url": "http://64.31.23.207:80/59471019/60849037/518582.m3u8",
-        "quality": "SD · 768x432"
       },
       {
         "url": "http://vaiagora.vip:80/live/5q8VUj/5BeUd8/131138.m3u8",
@@ -16017,32 +16043,6 @@ export const FALLBACK_CHANNELS: Channel[] = [
       {
         "url": "http://corruptx.org:80/live/hfp5ejnrey/zq0u3kzads/8975.m3u8",
         "quality": "FHD"
-      },
-      {
-        "url": "http://332nr7hbfu.xyz:80/live/999913/S3CvUB/131193.m3u8",
-        "quality": "FHD · 1920x1080"
-      },
-      {
-        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1MTMxLm0zdTg.m3u8",
-        "quality": "HD"
-      },
-      {
-        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1MTMyLm0zdTg.m3u8",
-        "quality": "SD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/13540.ts",
-        "name": "Fonte 24 (Ramys)"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/8974.ts",
-        "name": "Fonte 25 (Ramys)",
-        "quality": "720p HD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/8975.ts",
-        "name": "Fonte 26 (Ramys)",
-        "quality": "1080p FHD"
       }
     ]
   },
@@ -16057,14 +16057,6 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "quality": "FHD"
       },
       {
-        "url": "http://168.197.104.22/MUSIC/index.m3u8",
-        "quality": "HD · 1280x720"
-      },
-      {
-        "url": "http://170.83.49.66:8083/MUSICBOXBRASILHD/index.m3u8",
-        "quality": "HD · 1280x720"
-      },
-      {
         "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL3BhbGRpLnBybzo4MC9saXZlL3RvbmluaG8wMi9DYjQ5ODAzNy8xMDM0ODcubTN1OA.m3u8",
         "quality": "4K"
       },
@@ -16075,6 +16067,18 @@ export const FALLBACK_CHANNELS: Channel[] = [
       {
         "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL3BhbGRpLnBybzo4MC9saXZlL3RvbmluaG8wMi9DYjQ5ODAzNy83MjE4Ny5tM3U4.m3u8",
         "quality": "SD"
+      },
+      {
+        "url": "http://168.197.104.22/MUSIC/index.m3u8",
+        "quality": "HD · 1280x720"
+      },
+      {
+        "url": "http://170.83.49.66:8083/MUSICBOXBRASILHD/index.m3u8",
+        "quality": "HD · 1280x720"
+      },
+      {
+        "url": "http://332nr7hbfu.xyz:80/live/999913/S3CvUB/72184.m3u8",
+        "quality": "FHD · 1920x1080"
       },
       {
         "url": "http://vaiagora.vip:80/live/5q8VUj/5BeUd8/103487.m3u8",
@@ -16115,10 +16119,6 @@ export const FALLBACK_CHANNELS: Channel[] = [
       {
         "url": "http://vivlar.me:80/live/497238/KK8Kdy/72187.m3u8",
         "quality": "SD"
-      },
-      {
-        "url": "http://332nr7hbfu.xyz:80/live/999913/S3CvUB/72184.m3u8",
-        "quality": "FHD · 1920x1080"
       }
     ]
   },
@@ -16337,6 +16337,10 @@ export const FALLBACK_CHANNELS: Channel[] = [
     "logo": "",
     "sources": [
       {
+        "url": "http://332nr7hbfu.xyz:80/live/999913/S3CvUB/295477.m3u8",
+        "quality": "FHD · 1920x1080"
+      },
+      {
         "url": "http://vaiagora.vip:80/live/5q8VUj/5BeUd8/295477.m3u8",
         "quality": "FHD"
       },
@@ -16375,10 +16379,6 @@ export const FALLBACK_CHANNELS: Channel[] = [
       {
         "url": "http://vivlar.me:80/live/497238/KK8Kdy/295481.m3u8",
         "quality": "FHD"
-      },
-      {
-        "url": "http://332nr7hbfu.xyz:80/live/999913/S3CvUB/295477.m3u8",
-        "quality": "FHD · 1920x1080"
       }
     ]
   },
@@ -16389,18 +16389,78 @@ export const FALLBACK_CHANNELS: Channel[] = [
     "logo": "https://img.faz-o-eli.online/cnnbrasil.png",
     "sources": [
       {
-        "url": "https://aws.s13-s1001604.lat/stream/4b31648104a3eabb9f1982ff6513147d/cnnbrasil.m3u8",
-        "quality": "HD · 1280x720",
-        "referer": "https://meufut.top/cnn-brasil",
-        "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
+        "url": "https://amg01391-sbtinfast-amg01391c4-lg-br-4597.playouts.now.amagi.tv/playlist/amg01391-addigital-cnnbrasil-lgbr/playlist.m3u8",
+        "quality": "Qualidade não informada"
+      },
+      {
+        "url": "https://amg01391-sbtinfast-amg01391c4-lg-br-4597.playouts.now.amagi.tv/ts-us-e2-n2/playlist/amg01391-addigital-cnnbrasil-lgbr/cb573e1e7b6c608d84c83f60cef24282967b3dcb0e6c886470af4a9765d97800dbe8ae84ae5b910c4c9e1fc061017d360439cd1dd56c49c1da63b820743c4b21fdcde00080dd0d0cb1df11292ca36265299a7369cc350f7bd2ec5a2f803ebe764c53cb017c593f88f258a8744cc59e0a957f39e8fc8b307b24455a9c5a43e6a64ed6abb64244dd6ebfb102488b2f57f38117ced415e9d48746cf128627ec159cc4f196da11d7d28c32f85ee7360d5b762e988421a12e3cdcabf2e3842f1052243c67a4c5b1ec4f268f4b3124929df89e15319753eb5fec5338ae14900fa53d8f79a30aa69b3ec8577e6c23335083d15a7332acedaf99b9415b2cba49c39bbf404ce39f277948895dd9372737da9aa171d49445c6e671c2dc036c70de7d9c9094e523964cde88487292e054d24c634366160b855ceda96cd416ed79bdc21c1bfb2c2eb0b75ade8fd552312d1ac8d01e9c2412b7df8494cc4e15fe204a0aa630821b3265c2623827a535afce752ca8361a89300afe5a1e8956b3ed7fa2e988b346739ef6f36fd323afb903d9f3428e683f520dfab20f57574370d5a137586237930bb49d9aa1440806ede5c4b195006f496a4112298fe5a821cedc8e7953468f0354151e7a209f0ad266c81309517ebb79fd984925d5487157a9cd5670536f84c7a28e81c2b82d9876d0ddf22a203d4d19d31601216b93fbcd6ef4364f716d4ec2684046ae0c4e4dfa9faab4c0d78eaf7b923c8c04fe968932a6a54d2d6641655a4e274dd8/197/1920x1080_7582265/index.m3u8"
+      },
+      {
+        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1NDY0Lm0zdTg.m3u8",
+        "quality": "FHD"
+      },
+      {
+        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1NDY1Lm0zdTg.m3u8",
+        "quality": "HD"
+      },
+      {
+        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1NDY2Lm0zdTg.m3u8",
+        "quality": "SD"
       },
       {
         "url": "https://d25usgadhphvwi.cloudfront.net/hls/stv-plus1920x1080/playlist.m3u8",
         "quality": "HD · 1280x720"
       },
       {
+        "url": "https://d25usgadhphvwi.cloudfront.net/hls/main.m3u8",
+        "name": "Fonte 34 (IPTV-ORG)"
+      },
+      {
         "url": "http://45.162.64.114/CNN_BRASIL/index.m3u8",
         "quality": "HD · 1280x720"
+      },
+      {
+        "url": "http://64.31.23.207:80/59471019/60849037/324379.m3u8",
+        "quality": "FHD · 1920x1080"
+      },
+      {
+        "url": "http://332nr7hbfu.xyz:80/live/999913/S3CvUB/71840.m3u8",
+        "quality": "SD · 852x480"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/81597.ts",
+        "name": "Fonte 29 (Ramys)",
+        "quality": "1080p FHD"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/8711.ts",
+        "name": "Fonte 30 (Ramys)",
+        "quality": "1080p FHD"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/8712.ts",
+        "name": "Fonte 31 (Ramys)",
+        "quality": "720p HD"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/30166.ts",
+        "name": "Fonte 32 (Ramys)",
+        "quality": "720p HD"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/30167.ts",
+        "name": "Fonte 33 (Ramys)",
+        "quality": "720p HD"
+      },
+      {
+        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/cnnbrasil/cnnbrasil.m3u8",
+        "quality": "HD · 1280x720"
+      },
+      {
+        "url": "https://aws.s13-s1001604.lat/stream/4b31648104a3eabb9f1982ff6513147d/cnnbrasil.m3u8",
+        "quality": "HD · 1280x720",
+        "referer": "https://meufut.top/cnn-brasil",
+        "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
       },
       {
         "url": "https://aws.s13-s1001604.lat/stream/84fb36b0e1e31ed913812068f8b0e7e0/cnnbrasil.m3u8",
@@ -16409,26 +16469,10 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
       },
       {
-        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/cnnbrasil/cnnbrasil.m3u8",
-        "quality": "HD · 1280x720"
-      },
-      {
-        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1NDY0Lm0zdTg.m3u8",
-        "quality": "FHD"
-      },
-      {
         "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/07c3fcccfd4cdc050020dd59b9697e40/error.txt",
         "quality": "Qualidade não informada",
         "referer": "https://w7.embedtv.cc/",
         "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
-      },
-      {
-        "url": "https://amg01391-sbtinfast-amg01391c4-lg-br-4597.playouts.now.amagi.tv/playlist/amg01391-addigital-cnnbrasil-lgbr/playlist.m3u8",
-        "quality": "Qualidade não informada"
-      },
-      {
-        "url": "http://64.31.23.207:80/59471019/60849037/324379.m3u8",
-        "quality": "FHD · 1920x1080"
       },
       {
         "url": "http://vaiagora.vip:80/live/5q8VUj/5BeUd8/71798.m3u8",
@@ -16489,50 +16533,6 @@ export const FALLBACK_CHANNELS: Channel[] = [
       {
         "url": "http://corruptx.org:80/live/hfp5ejnrey/zq0u3kzads/30167.m3u8",
         "quality": "HD"
-      },
-      {
-        "url": "http://332nr7hbfu.xyz:80/live/999913/S3CvUB/71840.m3u8",
-        "quality": "SD · 852x480"
-      },
-      {
-        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1NDY1Lm0zdTg.m3u8",
-        "quality": "HD"
-      },
-      {
-        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1NDY2Lm0zdTg.m3u8",
-        "quality": "SD"
-      },
-      {
-        "url": "https://amg01391-sbtinfast-amg01391c4-lg-br-4597.playouts.now.amagi.tv/ts-us-e2-n2/playlist/amg01391-addigital-cnnbrasil-lgbr/cb573e1e7b6c608d84c83f60cef24282967b3dcb0e6c886470af4a9765d97800dbe8ae84ae5b910c4c9e1fc061017d360439cd1dd56c49c1da63b820743c4b21fdcde00080dd0d0cb1df11292ca36265299a7369cc350f7bd2ec5a2f803ebe764c53cb017c593f88f258a8744cc59e0a957f39e8fc8b307b24455a9c5a43e6a64ed6abb64244dd6ebfb102488b2f57f38117ced415e9d48746cf128627ec159cc4f196da11d7d28c32f85ee7360d5b762e988421a12e3cdcabf2e3842f1052243c67a4c5b1ec4f268f4b3124929df89e15319753eb5fec5338ae14900fa53d8f79a30aa69b3ec8577e6c23335083d15a7332acedaf99b9415b2cba49c39bbf404ce39f277948895dd9372737da9aa171d49445c6e671c2dc036c70de7d9c9094e523964cde88487292e054d24c634366160b855ceda96cd416ed79bdc21c1bfb2c2eb0b75ade8fd552312d1ac8d01e9c2412b7df8494cc4e15fe204a0aa630821b3265c2623827a535afce752ca8361a89300afe5a1e8956b3ed7fa2e988b346739ef6f36fd323afb903d9f3428e683f520dfab20f57574370d5a137586237930bb49d9aa1440806ede5c4b195006f496a4112298fe5a821cedc8e7953468f0354151e7a209f0ad266c81309517ebb79fd984925d5487157a9cd5670536f84c7a28e81c2b82d9876d0ddf22a203d4d19d31601216b93fbcd6ef4364f716d4ec2684046ae0c4e4dfa9faab4c0d78eaf7b923c8c04fe968932a6a54d2d6641655a4e274dd8/197/1920x1080_7582265/index.m3u8"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/81597.ts",
-        "name": "Fonte 29 (Ramys)",
-        "quality": "1080p FHD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/8711.ts",
-        "name": "Fonte 30 (Ramys)",
-        "quality": "1080p FHD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/8712.ts",
-        "name": "Fonte 31 (Ramys)",
-        "quality": "720p HD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/30166.ts",
-        "name": "Fonte 32 (Ramys)",
-        "quality": "720p HD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/30167.ts",
-        "name": "Fonte 33 (Ramys)",
-        "quality": "720p HD"
-      },
-      {
-        "url": "https://d25usgadhphvwi.cloudfront.net/hls/main.m3u8",
-        "name": "Fonte 34 (IPTV-ORG)"
       }
     ]
   },
@@ -16543,12 +16543,12 @@ export const FALLBACK_CHANNELS: Channel[] = [
     "logo": "https://mondrian.claro.com.br/channels/inverse/cnn-brasil-money.png",
     "sources": [
       {
-        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL3BhbGRpLnBybzo4MC9saXZlL3RvbmluaG8wMi9DYjQ5ODAzNy8yOTU0ODIubTN1OA.m3u8",
-        "quality": "FHD · 1920x1080"
-      },
-      {
         "url": "https://amg01391-amg01391c57-amgplt0026.playout.now3.amagi.tv/playlist/amg01391-amg01391c57-amgplt0026/playlist.m3u8",
         "quality": "Qualidade não informada"
+      },
+      {
+        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL3BhbGRpLnBybzo4MC9saXZlL3RvbmluaG8wMi9DYjQ5ODAzNy8yOTU0ODIubTN1OA.m3u8",
+        "quality": "FHD · 1920x1080"
       },
       {
         "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL3BhbGRpLnBybzo4MC9saXZlL3RvbmluaG8wMi9DYjQ5ODAzNy8yOTU0ODYubTN1OA.m3u8",
@@ -16561,6 +16561,10 @@ export const FALLBACK_CHANNELS: Channel[] = [
       {
         "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL3BhbGRpLnBybzo4MC9saXZlL3RvbmluaG8wMi9DYjQ5ODAzNy8yOTU0ODQubTN1OA.m3u8",
         "quality": "SD · 852x480"
+      },
+      {
+        "url": "http://332nr7hbfu.xyz:80/live/999913/S3CvUB/295482.m3u8",
+        "quality": "FHD · 1920x1080"
       },
       {
         "url": "http://vaiagora.vip:80/live/5q8VUj/5BeUd8/295482.m3u8",
@@ -16601,10 +16605,6 @@ export const FALLBACK_CHANNELS: Channel[] = [
       {
         "url": "http://vivlar.me:80/live/497238/KK8Kdy/295486.m3u8",
         "quality": "4K"
-      },
-      {
-        "url": "http://332nr7hbfu.xyz:80/live/999913/S3CvUB/295482.m3u8",
-        "quality": "FHD · 1920x1080"
       }
     ]
   },
@@ -16626,6 +16626,14 @@ export const FALLBACK_CHANNELS: Channel[] = [
     "category": "Notícias",
     "logo": "",
     "sources": [
+      {
+        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvMTc1MjMyNy5tM3U4.m3u8",
+        "quality": "HD"
+      },
+      {
+        "url": "http://332nr7hbfu.xyz:80/live/999913/S3CvUB/104910.m3u8",
+        "quality": "FHD · 1920x1080"
+      },
       {
         "url": "http://vaiagora.vip:80/live/5q8VUj/5BeUd8/104910.m3u8",
         "quality": "FHD"
@@ -16657,14 +16665,6 @@ export const FALLBACK_CHANNELS: Channel[] = [
       {
         "url": "http://vivlar.me:80/live/497238/KK8Kdy/104912.m3u8",
         "quality": "SD"
-      },
-      {
-        "url": "http://332nr7hbfu.xyz:80/live/999913/S3CvUB/104910.m3u8",
-        "quality": "FHD · 1920x1080"
-      },
-      {
-        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvMTc1MjMyNy5tM3U4.m3u8",
-        "quality": "HD"
       }
     ]
   },
@@ -16698,6 +16698,10 @@ export const FALLBACK_CHANNELS: Channel[] = [
     "category": "Notícias",
     "logo": "https://mondrian.claro.com.br/channels/inverse/france-24.png",
     "sources": [
+      {
+        "url": "http://332nr7hbfu.xyz:80/live/999913/S3CvUB/104906.m3u8",
+        "quality": "FHD · 1920x1080"
+      },
       {
         "url": "http://vaiagora.vip:80/live/5q8VUj/5BeUd8/103500.m3u8",
         "quality": "4K"
@@ -16733,10 +16737,6 @@ export const FALLBACK_CHANNELS: Channel[] = [
       {
         "url": "http://vivlar.me:80/live/497238/KK8Kdy/104941.m3u8",
         "quality": "SD"
-      },
-      {
-        "url": "http://332nr7hbfu.xyz:80/live/999913/S3CvUB/104906.m3u8",
-        "quality": "FHD · 1920x1080"
       }
     ]
   },
@@ -16765,12 +16765,27 @@ export const FALLBACK_CHANNELS: Channel[] = [
     "logo": "https://www.tvlogo.org/brazil/jovem-pan-news-br.png",
     "sources": [
       {
+        "url": "https://amg01391-sbtinfast-amg01391c3-lg-us-8995.playouts.now.amagi.tv/playlist/amg01391-addigital-jovempan-lgus/playlist.m3u8",
+        "quality": "Qualidade não informada"
+      },
+      {
+        "url": "https://amg01391-amg01391c3-tcl-spain-5038.playouts.now.amagi.tv/playlist1080-p.m3u8"
+      },
+      {
         "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1NDcyLm0zdTg.m3u8",
         "quality": "FHD"
       },
       {
-        "url": "https://amg01391-sbtinfast-amg01391c3-lg-us-8995.playouts.now.amagi.tv/playlist/amg01391-addigital-jovempan-lgus/playlist.m3u8",
-        "quality": "Qualidade não informada"
+        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1NDczLm0zdTg.m3u8",
+        "quality": "HD"
+      },
+      {
+        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1NDc0Lm0zdTg.m3u8",
+        "quality": "SD"
+      },
+      {
+        "url": "https://jmp2.uk/plu-6317ba014d4d040007227f72.m3u8",
+        "name": "Fonte 23 (Pluto)"
       },
       {
         "url": "http://170.83.49.66:8083/JOVEMPANNEWSHD/index.m3u8",
@@ -16783,6 +16798,16 @@ export const FALLBACK_CHANNELS: Channel[] = [
       {
         "url": "http://64.31.23.207:80/59471019/60849037/324388.m3u8",
         "quality": "HD · 1280x720"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/108191.ts",
+        "name": "Fonte 21 (Ramys)",
+        "quality": "1080p FHD"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/107918.ts",
+        "name": "Fonte 22 (Ramys)",
+        "quality": "720p HD"
       },
       {
         "url": "http://vaiagora.vip:80/live/5q8VUj/5BeUd8/134021.m3u8",
@@ -16831,31 +16856,6 @@ export const FALLBACK_CHANNELS: Channel[] = [
       {
         "url": "http://corruptx.org:80/live/hfp5ejnrey/zq0u3kzads/167985.m3u8",
         "quality": "HD"
-      },
-      {
-        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1NDczLm0zdTg.m3u8",
-        "quality": "HD"
-      },
-      {
-        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1NDc0Lm0zdTg.m3u8",
-        "quality": "SD"
-      },
-      {
-        "url": "https://amg01391-amg01391c3-tcl-spain-5038.playouts.now.amagi.tv/playlist1080-p.m3u8"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/108191.ts",
-        "name": "Fonte 21 (Ramys)",
-        "quality": "1080p FHD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/107918.ts",
-        "name": "Fonte 22 (Ramys)",
-        "quality": "720p HD"
-      },
-      {
-        "url": "https://jmp2.uk/plu-6317ba014d4d040007227f72.m3u8",
-        "name": "Fonte 23 (Pluto)"
       }
     ]
   },
@@ -16945,12 +16945,12 @@ export const FALLBACK_CHANNELS: Channel[] = [
     "logo": "",
     "sources": [
       {
-        "url": "http://45.162.230.234:1935/agrobrasiltv/agrobrasiltv/playlist.m3u8",
-        "name": "Fonte 1 (IPTV-ORG)"
-      },
-      {
         "url": "https://server.flixtv.com.br/agrobrasiltv/agrobrasiltv/playlist.m3u8",
         "name": "Fonte 2 (IPTV-ORG)"
+      },
+      {
+        "url": "http://45.162.230.234:1935/agrobrasiltv/agrobrasiltv/playlist.m3u8",
+        "name": "Fonte 1 (IPTV-ORG)"
       }
     ]
   },
@@ -16960,6 +16960,10 @@ export const FALLBACK_CHANNELS: Channel[] = [
     "category": "TV Aberta",
     "logo": "",
     "sources": [
+      {
+        "url": "https://aovivo.equipea.com.br:5443/aovivort/streams/pshRLrnv6isXq7RG4747567774043229.m3u8",
+        "name": "Fonte 5 (IPTV-ORG)"
+      },
       {
         "url": "http://45.162.64.114/AGRO_CANAL/index.m3u8",
         "name": "Fonte 1 (IPTV-ORG)"
@@ -16975,10 +16979,6 @@ export const FALLBACK_CHANNELS: Channel[] = [
       {
         "url": "http://186.219.52.187/agro_canal/index.m3u8",
         "name": "Fonte 4 (IPTV-ORG)"
-      },
-      {
-        "url": "https://aovivo.equipea.com.br:5443/aovivort/streams/pshRLrnv6isXq7RG4747567774043229.m3u8",
-        "name": "Fonte 5 (IPTV-ORG)"
       }
     ]
   },
@@ -17089,25 +17089,20 @@ export const FALLBACK_CHANNELS: Channel[] = [
     "logo": "https://mondrian.claro.com.br/channels/inverse/band.png",
     "sources": [
       {
-        "url": "https://aws.s13-s1001604.lat/stream/730ac1333b65dfb93db561cc2a4f2a53/bandsp.m3u8",
-        "quality": "HD · 1280x720",
-        "referer": "https://meufut.top/band",
-        "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
+        "url": "https://dadinhodetapioca.fun/play/band.html",
+        "quality": "FHD",
+        "referer": "https://dadinhodetapioca.fun/"
       },
       {
         "url": "https://vipwaytvcdn.multtv.tv.br:5444/TVThathi_Band/index.m3u8",
         "quality": "HD · 1280x720"
       },
       {
-        "url": "https://dadinhodetapioca.fun/play/band.html",
-        "quality": "FHD",
-        "referer": "https://dadinhodetapioca.fun/"
+        "url": "https://vipwaytvcdn.multtv.tv.br:5444/TVThathi_Band/720p/index.m3u8"
       },
       {
-        "url": "https://aws.s13-s1001604.lat/stream/07796236cd172aa71cce222d1f7e3864/bandsp.m3u8",
-        "quality": "HD · 1280x720",
-        "referer": "https://meufut.top/band",
-        "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
+        "url": "https://media.cdntvms.com.br/band_sat/index.m3u8",
+        "name": "Fonte 11 (IPTV-ORG)"
       },
       {
         "url": "http://138.204.86.4:8080/BAND_HD/index.m3u8",
@@ -17126,15 +17121,20 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "quality": "FHD · 1920x1080"
       },
       {
-        "url": "https://vipwaytvcdn.multtv.tv.br:5444/TVThathi_Band/720p/index.m3u8"
-      },
-      {
         "url": "http://170.84.165.204/BAND_HD/index.m3u8",
         "name": "Fonte 10 (IPTV-ORG)"
       },
       {
-        "url": "https://media.cdntvms.com.br/band_sat/index.m3u8",
-        "name": "Fonte 11 (IPTV-ORG)"
+        "url": "https://aws.s13-s1001604.lat/stream/730ac1333b65dfb93db561cc2a4f2a53/bandsp.m3u8",
+        "quality": "HD · 1280x720",
+        "referer": "https://meufut.top/band",
+        "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
+      },
+      {
+        "url": "https://aws.s13-s1001604.lat/stream/07796236cd172aa71cce222d1f7e3864/bandsp.m3u8",
+        "quality": "HD · 1280x720",
+        "referer": "https://meufut.top/band",
+        "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
       }
     ]
   },
@@ -17170,13 +17170,13 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "quality": "HD · 1280x720"
       },
       {
-        "url": "http://corruptx.org:80/live/hfp5ejnrey/zq0u3kzads/20522.m3u8",
-        "quality": "HD"
-      },
-      {
         "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/20522.ts",
         "name": "Fonte 4 (Ramys)",
         "quality": "720p HD"
+      },
+      {
+        "url": "http://corruptx.org:80/live/hfp5ejnrey/zq0u3kzads/20522.m3u8",
+        "quality": "HD"
       }
     ]
   },
@@ -17224,22 +17224,20 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "referer": "https://dadinhodetapioca.fun/"
       },
       {
-        "url": "http://45.162.64.114/BAND_NEWS/index.m3u8",
-        "quality": "HD · 1280x720"
-      },
-      {
-        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/bandnews/bandnews.m3u8",
-        "quality": "HD · 1280x720"
-      },
-      {
         "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1NDYwLm0zdTg.m3u8",
         "quality": "FHD"
       },
       {
-        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/0e889a39ba6232f8651b18ddb7e4968f/error.txt",
-        "quality": "Qualidade não informada",
-        "referer": "https://w7.embedtv.cc/",
-        "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
+        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1NDYxLm0zdTg.m3u8",
+        "quality": "HD"
+      },
+      {
+        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1NDYyLm0zdTg.m3u8",
+        "quality": "SD"
+      },
+      {
+        "url": "http://45.162.64.114/BAND_NEWS/index.m3u8",
+        "quality": "HD · 1280x720"
       },
       {
         "url": "http://45.177.114.115/BAND_NEWS/index.m3u8",
@@ -17248,6 +17246,40 @@ export const FALLBACK_CHANNELS: Channel[] = [
       {
         "url": "http://168.197.104.22/BAND_NEWS/index.m3u8",
         "quality": "HD · 1280x720"
+      },
+      {
+        "url": "http://332nr7hbfu.xyz:80/live/999913/S3CvUB/71789.m3u8",
+        "quality": "FHD · 1920x1080"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/81596.ts",
+        "name": "Fonte 23 (Ramys)",
+        "quality": "1080p FHD"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/108367.ts",
+        "name": "Fonte 24 (Ramys)",
+        "quality": "1080p FHD"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/11769.ts",
+        "name": "Fonte 25 (Ramys)",
+        "quality": "720p HD"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/30171.ts",
+        "name": "Fonte 26 (Ramys)",
+        "quality": "720p HD"
+      },
+      {
+        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/bandnews/bandnews.m3u8",
+        "quality": "HD · 1280x720"
+      },
+      {
+        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/0e889a39ba6232f8651b18ddb7e4968f/error.txt",
+        "quality": "Qualidade não informada",
+        "referer": "https://w7.embedtv.cc/",
+        "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
       },
       {
         "url": "http://vaiagora.vip:80/live/5q8VUj/5BeUd8/103526.m3u8",
@@ -17296,38 +17328,6 @@ export const FALLBACK_CHANNELS: Channel[] = [
       {
         "url": "http://corruptx.org:80/live/hfp5ejnrey/zq0u3kzads/30171.m3u8",
         "quality": "HD"
-      },
-      {
-        "url": "http://332nr7hbfu.xyz:80/live/999913/S3CvUB/71789.m3u8",
-        "quality": "FHD · 1920x1080"
-      },
-      {
-        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1NDYxLm0zdTg.m3u8",
-        "quality": "HD"
-      },
-      {
-        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1NDYyLm0zdTg.m3u8",
-        "quality": "SD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/81596.ts",
-        "name": "Fonte 23 (Ramys)",
-        "quality": "1080p FHD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/108367.ts",
-        "name": "Fonte 24 (Ramys)",
-        "quality": "1080p FHD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/11769.ts",
-        "name": "Fonte 25 (Ramys)",
-        "quality": "720p HD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/30171.ts",
-        "name": "Fonte 26 (Ramys)",
-        "quality": "720p HD"
       }
     ]
   },
@@ -17366,26 +17366,26 @@ export const FALLBACK_CHANNELS: Channel[] = [
     "logo": "https://img.faz-o-eli.online/band.png",
     "sources": [
       {
-        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/f41e6cefa7867e5419e4c64e0e6ce0ff/error.txt",
-        "quality": "Qualidade não informada",
-        "referer": "https://w7.embedtv.cc/",
-        "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
+        "url": "http://64.31.23.207:80/59471019/60849037/324366.m3u8",
+        "quality": "HD · 1280x720"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/20524.ts",
+        "name": "Fonte 5 (Ramys)"
       },
       {
         "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/bandrj/bandrj.m3u8",
         "quality": "Qualidade não informada"
       },
       {
-        "url": "http://64.31.23.207:80/59471019/60849037/324366.m3u8",
-        "quality": "HD · 1280x720"
+        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/f41e6cefa7867e5419e4c64e0e6ce0ff/error.txt",
+        "quality": "Qualidade não informada",
+        "referer": "https://w7.embedtv.cc/",
+        "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
       },
       {
         "url": "http://corruptx.org:80/live/hfp5ejnrey/zq0u3kzads/20524.m3u8",
         "quality": "HD · 1280x720"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/20524.ts",
-        "name": "Fonte 5 (Ramys)"
       }
     ]
   },
@@ -17396,12 +17396,12 @@ export const FALLBACK_CHANNELS: Channel[] = [
     "logo": "http://www.fontedecanais.me/logos/canais/band.png",
     "sources": [
       {
-        "url": "http://64.31.23.207:80/59471019/60849037/324367.m3u8",
-        "quality": "HD · 1280x720"
-      },
-      {
         "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvMTgwNTM5NC5tM3U4.m3u8",
         "quality": "HD"
+      },
+      {
+        "url": "http://64.31.23.207:80/59471019/60849037/324367.m3u8",
+        "quality": "HD · 1280x720"
       }
     ]
   },
@@ -17412,21 +17412,21 @@ export const FALLBACK_CHANNELS: Channel[] = [
     "logo": "https://mondrian.claro.com.br/channels/inverse/band.png",
     "sources": [
       {
-        "url": "http://64.31.23.207:80/59471019/60849037/324368.m3u8",
-        "quality": "FHD · 1920x1080"
-      },
-      {
-        "url": "http://corruptx.org:80/live/hfp5ejnrey/zq0u3kzads/72575.m3u8",
-        "quality": "HD"
-      },
-      {
         "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvODE2MDI2Lm0zdTg.m3u8",
         "quality": "HD"
+      },
+      {
+        "url": "http://64.31.23.207:80/59471019/60849037/324368.m3u8",
+        "quality": "FHD · 1920x1080"
       },
       {
         "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/72575.ts",
         "name": "Fonte 4 (Ramys)",
         "quality": "720p HD"
+      },
+      {
+        "url": "http://corruptx.org:80/live/hfp5ejnrey/zq0u3kzads/72575.m3u8",
+        "quality": "HD"
       }
     ]
   },
@@ -17449,18 +17449,16 @@ export const FALLBACK_CHANNELS: Channel[] = [
     "logo": "https://img.faz-o-eli.online/band.png",
     "sources": [
       {
-        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/3f1c855b96d44f101844fe6c0f3a4169/error.txt",
-        "quality": "Qualidade não informada",
-        "referer": "https://w7.embedtv.cc/",
-        "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
-      },
-      {
-        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/bandsp/bandsp.m3u8",
-        "quality": "HD · 1280x720"
-      },
-      {
         "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvMjIwNjc5MC5tM3U4.m3u8",
         "quality": "FHD"
+      },
+      {
+        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvOTgxNzcyLm0zdTg.m3u8",
+        "quality": "HD"
+      },
+      {
+        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvMjIwNjc4OS5tM3U4.m3u8",
+        "quality": "HD"
       },
       {
         "url": "http://64.31.23.207:80/59471019/60849037/324371.m3u8",
@@ -17469,6 +17467,45 @@ export const FALLBACK_CHANNELS: Channel[] = [
       {
         "url": "http://64.31.23.207:80/59471019/60849037/324372.m3u8",
         "quality": "HD · 1280x720"
+      },
+      {
+        "url": "http://332nr7hbfu.xyz:80/live/999913/S3CvUB/79311.m3u8",
+        "quality": "FHD · 1920x1080"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/107926.ts",
+        "name": "Fonte 20 (Ramys)",
+        "quality": "1080p FHD"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/20525.ts",
+        "name": "Fonte 21 (Ramys)",
+        "quality": "1080p FHD"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/43031.ts",
+        "name": "Fonte 22 (Ramys)",
+        "quality": "1080p FHD"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/8660.ts",
+        "name": "Fonte 23 (Ramys)",
+        "quality": "720p HD"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/31029.ts",
+        "name": "Fonte 24 (Ramys)",
+        "quality": "720p HD"
+      },
+      {
+        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/bandsp/bandsp.m3u8",
+        "quality": "HD · 1280x720"
+      },
+      {
+        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/3f1c855b96d44f101844fe6c0f3a4169/error.txt",
+        "quality": "Qualidade não informada",
+        "referer": "https://w7.embedtv.cc/",
+        "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
       },
       {
         "url": "http://vaiagora.vip:80/live/5q8VUj/5BeUd8/104943.m3u8",
@@ -17513,43 +17550,6 @@ export const FALLBACK_CHANNELS: Channel[] = [
       {
         "url": "http://corruptx.org:80/live/hfp5ejnrey/zq0u3kzads/31029.m3u8",
         "quality": "HD"
-      },
-      {
-        "url": "http://332nr7hbfu.xyz:80/live/999913/S3CvUB/79311.m3u8",
-        "quality": "FHD · 1920x1080"
-      },
-      {
-        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvOTgxNzcyLm0zdTg.m3u8",
-        "quality": "HD"
-      },
-      {
-        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvMjIwNjc4OS5tM3U4.m3u8",
-        "quality": "HD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/107926.ts",
-        "name": "Fonte 20 (Ramys)",
-        "quality": "1080p FHD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/20525.ts",
-        "name": "Fonte 21 (Ramys)",
-        "quality": "1080p FHD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/43031.ts",
-        "name": "Fonte 22 (Ramys)",
-        "quality": "1080p FHD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/8660.ts",
-        "name": "Fonte 23 (Ramys)",
-        "quality": "720p HD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/31029.ts",
-        "name": "Fonte 24 (Ramys)",
-        "quality": "720p HD"
       }
     ]
   },
@@ -17724,11 +17724,11 @@ export const FALLBACK_CHANNELS: Channel[] = [
     "logo": "https://i.imgur.com/OOB7nrS.png",
     "sources": [
       {
-        "url": "http://45.162.64.114/CANAL_EDUCACAO/index.m3u8",
+        "url": "https://canaleducacao-stream.ebc.com.br/index.m3u8",
         "quality": "HD · 1280x720"
       },
       {
-        "url": "https://canaleducacao-stream.ebc.com.br/index.m3u8",
+        "url": "http://45.162.64.114/CANAL_EDUCACAO/index.m3u8",
         "quality": "HD · 1280x720"
       },
       {
@@ -17800,16 +17800,16 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "quality": "HD · 1280x720"
       },
       {
+        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzYwNzAzLm0zdTg.m3u8",
+        "quality": "HD"
+      },
+      {
         "url": "http://45.177.114.115/TV_BRASIL_2/index.m3u8",
         "quality": "FHD · 1920x1080"
       },
       {
         "url": "http://168.197.104.22/TV_BRASIL_2/index.m3u8",
         "quality": "HD · 1280x720"
-      },
-      {
-        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzYwNzAzLm0zdTg.m3u8",
-        "quality": "HD"
       }
     ]
   },
@@ -17904,17 +17904,15 @@ export const FALLBACK_CHANNELS: Channel[] = [
     "logo": "https://img.faz-o-eli.online/cancaonova.png",
     "sources": [
       {
-        "url": "https://aws.s13-s1001604.lat/stream/1cb75bb4be68b0dc0dd73008d7a35faa/cancaonova.m3u8",
-        "quality": "HD · 1280x720",
-        "referer": "https://meufut.top/cancao-nova",
-        "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
+        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzQwNTY4Lm0zdTg.m3u8",
+        "quality": "HD"
+      },
+      {
+        "url": "https://5c65286fc6ace.streamlock.net/cancaonova/CancaoNova.stream_720p/playlist.m3u8",
+        "quality": "HD"
       },
       {
         "url": "http://45.162.64.114/CANCAO_NOVA/index.m3u8",
-        "quality": "HD · 1280x720"
-      },
-      {
-        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/cancaonova/cancaonova.m3u8",
         "quality": "HD · 1280x720"
       },
       {
@@ -17922,12 +17920,28 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "quality": "HD · 1280x720"
       },
       {
-        "url": "https://5c65286fc6ace.streamlock.net/cancaonova/CancaoNova.stream_720p/playlist.m3u8",
-        "quality": "HD"
-      },
-      {
         "url": "http://168.197.104.22/CANCAO_NOVA/index.m3u8",
         "quality": "HD · 1280x720"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/117823.ts",
+        "name": "Fonte 12 (Ramys)",
+        "quality": "1080p FHD"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/117824.ts",
+        "name": "Fonte 13 (Ramys)",
+        "quality": "720p HD"
+      },
+      {
+        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/cancaonova/cancaonova.m3u8",
+        "quality": "HD · 1280x720"
+      },
+      {
+        "url": "https://aws.s13-s1001604.lat/stream/1cb75bb4be68b0dc0dd73008d7a35faa/cancaonova.m3u8",
+        "quality": "HD · 1280x720",
+        "referer": "https://meufut.top/cancao-nova",
+        "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
       },
       {
         "url": "http://vaiagora.vip:80/live/5q8VUj/5BeUd8/72404.m3u8",
@@ -17944,20 +17958,6 @@ export const FALLBACK_CHANNELS: Channel[] = [
       {
         "url": "http://corruptx.org:80/live/hfp5ejnrey/zq0u3kzads/117824.m3u8",
         "quality": "HD"
-      },
-      {
-        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzQwNTY4Lm0zdTg.m3u8",
-        "quality": "HD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/117823.ts",
-        "name": "Fonte 12 (Ramys)",
-        "quality": "1080p FHD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/117824.ts",
-        "name": "Fonte 13 (Ramys)",
-        "quality": "720p HD"
       }
     ]
   },
@@ -18316,12 +18316,20 @@ export const FALLBACK_CHANNELS: Channel[] = [
     "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Canal_Futura.png/960px-Canal_Futura.png",
     "sources": [
       {
+        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1MDY5Lm0zdTg.m3u8",
+        "quality": "HD"
+      },
+      {
         "url": "http://168.197.104.22/FUTURA/index.m3u8",
         "quality": "HD · 1280x720"
       },
       {
         "url": "http://170.83.49.66:8083/FUTURAHD/index.m3u8",
         "quality": "HD · 1280x720"
+      },
+      {
+        "url": "http://332nr7hbfu.xyz:80/live/999913/S3CvUB/71962.m3u8",
+        "quality": "FHD · 1920x1080"
       },
       {
         "url": "http://vaiagora.vip:80/live/5q8VUj/5BeUd8/103499.m3u8",
@@ -18362,14 +18370,6 @@ export const FALLBACK_CHANNELS: Channel[] = [
       {
         "url": "http://vivlar.me:80/live/497238/KK8Kdy/71965.m3u8",
         "quality": "SD"
-      },
-      {
-        "url": "http://332nr7hbfu.xyz:80/live/999913/S3CvUB/71962.m3u8",
-        "quality": "FHD · 1920x1080"
-      },
-      {
-        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1MDY5Lm0zdTg.m3u8",
-        "quality": "HD"
       }
     ]
   },
@@ -18420,14 +18420,14 @@ export const FALLBACK_CHANNELS: Channel[] = [
     "logo": "https://img.faz-o-eli.online/globosp.png",
     "sources": [
       {
+        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/globoam/globoam.m3u8",
+        "quality": "Qualidade não informada"
+      },
+      {
         "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/0864306316555512a8114d9e3a2af6e1/error.txt",
         "quality": "Qualidade não informada",
         "referer": "https://w7.embedtv.cc/",
         "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
-      },
-      {
-        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/globoam/globoam.m3u8",
-        "quality": "Qualidade não informada"
       }
     ]
   },
@@ -18450,14 +18450,14 @@ export const FALLBACK_CHANNELS: Channel[] = [
     "logo": "https://img.faz-o-eli.online/globosp.png",
     "sources": [
       {
+        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/globoce/globoce.m3u8",
+        "quality": "Qualidade não informada"
+      },
+      {
         "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/f0d091a0016011d3c87d91ff377452ea/error.txt",
         "quality": "Qualidade não informada",
         "referer": "https://w7.embedtv.cc/",
         "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
-      },
-      {
-        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/globoce/globoce.m3u8",
-        "quality": "Qualidade não informada"
       }
     ]
   },
@@ -18468,14 +18468,14 @@ export const FALLBACK_CHANNELS: Channel[] = [
     "logo": "https://img.faz-o-eli.online/globosp.png",
     "sources": [
       {
+        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/globodf/globodf.m3u8",
+        "quality": "HD · 1280x720"
+      },
+      {
         "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/9a31ec5c099675d9db9f81ad1e6cf0a1/error.txt",
         "quality": "Qualidade não informada",
         "referer": "https://w7.embedtv.cc/",
         "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
-      },
-      {
-        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/globodf/globodf.m3u8",
-        "quality": "HD · 1280x720"
       },
       {
         "url": "http://vaiagora.vip:80/live/5q8VUj/5BeUd8/131151.m3u8",
@@ -18510,14 +18510,14 @@ export const FALLBACK_CHANNELS: Channel[] = [
     "logo": "https://img.faz-o-eli.online/globosp.png",
     "sources": [
       {
+        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/globoes/globoes.m3u8",
+        "quality": "HD · 1280x720"
+      },
+      {
         "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/79dea27a5437aeba56cc9cfebd304507/error.txt",
         "quality": "Qualidade não informada",
         "referer": "https://w7.embedtv.cc/",
         "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
-      },
-      {
-        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/globoes/globoes.m3u8",
-        "quality": "HD · 1280x720"
       }
     ]
   },
@@ -18528,14 +18528,14 @@ export const FALLBACK_CHANNELS: Channel[] = [
     "logo": "https://img.faz-o-eli.online/globosp.png",
     "sources": [
       {
+        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/globogo/globogo.m3u8",
+        "quality": "Qualidade não informada"
+      },
+      {
         "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/f92160390194ae37c9806bf81d31315f/error.txt",
         "quality": "Qualidade não informada",
         "referer": "https://w7.embedtv.cc/",
         "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
-      },
-      {
-        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/globogo/globogo.m3u8",
-        "quality": "Qualidade não informada"
       }
     ]
   },
@@ -18546,14 +18546,14 @@ export const FALLBACK_CHANNELS: Channel[] = [
     "logo": "https://img.faz-o-eli.online/globosp.png",
     "sources": [
       {
+        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/globomg/globomg.m3u8",
+        "quality": "FHD · 1920x1080"
+      },
+      {
         "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/d286ed1e1b23af65df45cfb8baad2c88/error.txt",
         "quality": "Qualidade não informada",
         "referer": "https://w7.embedtv.cc/",
         "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
-      },
-      {
-        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/globomg/globomg.m3u8",
-        "quality": "FHD · 1920x1080"
       },
       {
         "url": "http://vaiagora.vip:80/live/5q8VUj/5BeUd8/131200.m3u8",
@@ -18633,14 +18633,14 @@ export const FALLBACK_CHANNELS: Channel[] = [
     "logo": "https://img.faz-o-eli.online/globosp.png",
     "sources": [
       {
+        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/globopb/globopb.m3u8",
+        "quality": "Qualidade não informada"
+      },
+      {
         "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/8a94b0691085966c3e82a6e2d138e70e/error.txt",
         "quality": "Qualidade não informada",
         "referer": "https://w7.embedtv.cc/",
         "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
-      },
-      {
-        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/globopb/globopb.m3u8",
-        "quality": "Qualidade não informada"
       }
     ]
   },
@@ -18651,14 +18651,14 @@ export const FALLBACK_CHANNELS: Channel[] = [
     "logo": "https://img.faz-o-eli.online/globosp.png",
     "sources": [
       {
+        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/globope/globope.m3u8",
+        "quality": "Qualidade não informada"
+      },
+      {
         "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/c75ec72cac11b0291256a248f108d060/error.txt",
         "quality": "Qualidade não informada",
         "referer": "https://w7.embedtv.cc/",
         "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
-      },
-      {
-        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/globope/globope.m3u8",
-        "quality": "Qualidade não informada"
       }
     ]
   },
@@ -18668,19 +18668,6 @@ export const FALLBACK_CHANNELS: Channel[] = [
     "category": "TV Aberta",
     "logo": "https://img.faz-o-eli.online/globorj.png",
     "sources": [
-      {
-        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/431c543a298242c49342f3bfbd603873/error.txt",
-        "quality": "Qualidade não informada",
-        "referer": "https://w7.embedtv.cc/",
-        "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
-      },
-      {
-        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/globorj/globorj.m3u8",
-        "quality": "FHD · 1920x1080"
-      },
-      {
-        "url": "https://16-5-0-235.sslip.io/globorj/index.m3u8"
-      },
       {
         "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL3BhbGRpLnBybzo4MC9saXZlL3RvbmluaG8wMi9DYjQ5ODAzNy83MjAyNS5tM3U4.m3u8",
         "quality": "FHD"
@@ -18692,6 +18679,23 @@ export const FALLBACK_CHANNELS: Channel[] = [
       {
         "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL3BhbGRpLnBybzo4MC9saXZlL3RvbmluaG8wMi9DYjQ5ODAzNy8xMzExODIubTN1OA.m3u8",
         "quality": "SD"
+      },
+      {
+        "url": "http://332nr7hbfu.xyz:80/live/999913/S3CvUB/72025.m3u8",
+        "quality": "FHD · 1920x1080"
+      },
+      {
+        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/globorj/globorj.m3u8",
+        "quality": "FHD · 1920x1080"
+      },
+      {
+        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/431c543a298242c49342f3bfbd603873/error.txt",
+        "quality": "Qualidade não informada",
+        "referer": "https://w7.embedtv.cc/",
+        "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
+      },
+      {
+        "url": "https://16-5-0-235.sslip.io/globorj/index.m3u8"
       },
       {
         "url": "http://vaiagora.vip:80/live/5q8VUj/5BeUd8/72025.m3u8",
@@ -18728,10 +18732,6 @@ export const FALLBACK_CHANNELS: Channel[] = [
       {
         "url": "http://corruptx.org:80/live/hfp5ejnrey/zq0u3kzads/1168921.m3u8",
         "quality": "HD"
-      },
-      {
-        "url": "http://332nr7hbfu.xyz:80/live/999913/S3CvUB/72025.m3u8",
-        "quality": "FHD · 1920x1080"
       }
     ]
   },
@@ -18742,14 +18742,14 @@ export const FALLBACK_CHANNELS: Channel[] = [
     "logo": "https://img.faz-o-eli.online/globosp.png",
     "sources": [
       {
+        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/globors/globors.m3u8",
+        "quality": "FHD · 1920x1080"
+      },
+      {
         "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/0e2cb283612d134c82f6650b428aa030/error.txt",
         "quality": "Qualidade não informada",
         "referer": "https://w7.embedtv.cc/",
         "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
-      },
-      {
-        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/globors/globors.m3u8",
-        "quality": "FHD · 1920x1080"
       }
     ]
   },
@@ -18759,6 +18759,30 @@ export const FALLBACK_CHANNELS: Channel[] = [
     "category": "TV Aberta",
     "logo": "https://img.faz-o-eli.online/globosp.png",
     "sources": [
+      {
+        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL3BhbGRpLnBybzo4MC9saXZlL3RvbmluaG8wMi9DYjQ5ODAzNy83MjA0MC5tM3U4.m3u8",
+        "quality": "FHD · 1920x1080"
+      },
+      {
+        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL3BhbGRpLnBybzo4MC9saXZlL3RvbmluaG8wMi9DYjQ5ODAzNy8xMzEyMTIubTN1OA.m3u8",
+        "quality": "HD · 1280x720"
+      },
+      {
+        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL3BhbGRpLnBybzo4MC9saXZlL3RvbmluaG8wMi9DYjQ5ODAzNy83MjA0Mi5tM3U4.m3u8",
+        "quality": "SD · 852x480"
+      },
+      {
+        "url": "http://64.31.23.207:80/59471019/60849037/324386.m3u8",
+        "quality": "FHD · 1920x1080"
+      },
+      {
+        "url": "http://332nr7hbfu.xyz:80/live/999913/S3CvUB/72040.m3u8",
+        "quality": "FHD · 1920x1080"
+      },
+      {
+        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/globosp/globosp.m3u8",
+        "quality": "FHD · 1920x1080"
+      },
       {
         "url": "https://aws.s13-s1001604.lat/stream/25c389d4965f4166247f2280886f5cba/globosp.m3u8",
         "quality": "HD · 1280x720",
@@ -18772,27 +18796,7 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
       },
       {
-        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/globosp/globosp.m3u8",
-        "quality": "FHD · 1920x1080"
-      },
-      {
         "url": "https://16-5-0-235.sslip.io/globosp/index.m3u8"
-      },
-      {
-        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL3BhbGRpLnBybzo4MC9saXZlL3RvbmluaG8wMi9DYjQ5ODAzNy83MjA0MC5tM3U4.m3u8",
-        "quality": "FHD · 1920x1080"
-      },
-      {
-        "url": "http://64.31.23.207:80/59471019/60849037/324386.m3u8",
-        "quality": "FHD · 1920x1080"
-      },
-      {
-        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL3BhbGRpLnBybzo4MC9saXZlL3RvbmluaG8wMi9DYjQ5ODAzNy8xMzEyMTIubTN1OA.m3u8",
-        "quality": "HD · 1280x720"
-      },
-      {
-        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL3BhbGRpLnBybzo4MC9saXZlL3RvbmluaG8wMi9DYjQ5ODAzNy83MjA0Mi5tM3U4.m3u8",
-        "quality": "SD · 852x480"
       },
       {
         "url": "http://vaiagora.vip:80/live/5q8VUj/5BeUd8/72040.m3u8",
@@ -18829,10 +18833,6 @@ export const FALLBACK_CHANNELS: Channel[] = [
       {
         "url": "http://corruptx.org:80/live/hfp5ejnrey/zq0u3kzads/1168918.m3u8",
         "quality": "HD"
-      },
-      {
-        "url": "http://332nr7hbfu.xyz:80/live/999913/S3CvUB/72040.m3u8",
-        "quality": "FHD · 1920x1080"
       }
     ]
   },
@@ -18843,7 +18843,41 @@ export const FALLBACK_CHANNELS: Channel[] = [
     "logo": "https://img.faz-o-eli.online/globonews.png",
     "sources": [
       {
+        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1NDY5Lm0zdTg.m3u8",
+        "quality": "FHD"
+      },
+      {
+        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1NDcwLm0zdTg.m3u8",
+        "quality": "HD"
+      },
+      {
+        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1NDcxLm0zdTg.m3u8",
+        "quality": "SD"
+      },
+      {
+        "url": "http://79.127.238.228:14093",
+        "quality": "HD · 1280x720"
+      },
+      {
+        "url": "http://64.31.23.207:80/59471019/60849037/324385.m3u8",
+        "quality": "HD · 1280x720"
+      },
+      {
+        "url": "http://45.185.11.126:8000/play/a08d/index.m3u8",
+        "quality": "FHD · 1920x1080"
+      },
+      {
+        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/globonews/globonews.m3u8",
+        "quality": "HD · 1280x720"
+      },
+      {
         "url": "https://aws.s13-s1001604.lat/stream/f40b5972e5f78e715aaf2034cdaac946/globonews.m3u8",
+        "quality": "HD · 1280x720",
+        "referer": "https://meufut.top/globo-news",
+        "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
+      },
+      {
+        "url": "https://aws.s13-s1001604.lat/stream/6ca0fa6a24a397e4b47dc8d32fb23e44/globonews.m3u8",
         "quality": "HD · 1280x720",
         "referer": "https://meufut.top/globo-news",
         "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
@@ -18855,29 +18889,7 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
       },
       {
-        "url": "https://aws.s13-s1001604.lat/stream/6ca0fa6a24a397e4b47dc8d32fb23e44/globonews.m3u8",
-        "quality": "HD · 1280x720",
-        "referer": "https://meufut.top/globo-news",
-        "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
-      },
-      {
-        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/globonews/globonews.m3u8",
-        "quality": "HD · 1280x720"
-      },
-      {
         "url": "https://16-5-0-235.sslip.io/globonews/index.m3u8"
-      },
-      {
-        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1NDY5Lm0zdTg.m3u8",
-        "quality": "FHD"
-      },
-      {
-        "url": "http://79.127.238.228:14093",
-        "quality": "HD · 1280x720"
-      },
-      {
-        "url": "http://64.31.23.207:80/59471019/60849037/324385.m3u8",
-        "quality": "HD · 1280x720"
       },
       {
         "url": "http://vaiagora.vip:80/live/5q8VUj/5BeUd8/90248.m3u8",
@@ -18942,18 +18954,6 @@ export const FALLBACK_CHANNELS: Channel[] = [
       {
         "url": "http://corruptx.org:80/live/hfp5ejnrey/zq0u3kzads/30169.m3u8",
         "quality": "HD"
-      },
-      {
-        "url": "http://45.185.11.126:8000/play/a08d/index.m3u8",
-        "quality": "FHD · 1920x1080"
-      },
-      {
-        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1NDcwLm0zdTg.m3u8",
-        "quality": "HD"
-      },
-      {
-        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1NDcxLm0zdTg.m3u8",
-        "quality": "SD"
       }
     ]
   },
@@ -18964,18 +18964,16 @@ export const FALLBACK_CHANNELS: Channel[] = [
     "logo": "https://img.faz-o-eli.online/globonovelas.prev.png",
     "sources": [
       {
-        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/55a9732537da5a058ab4fedb2904cf80/error.txt",
-        "quality": "Qualidade não informada",
-        "referer": "https://w7.embedtv.cc/",
-        "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
-      },
-      {
-        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/globonovelas/globonovelas.m3u8",
-        "quality": "Qualidade não informada"
-      },
-      {
         "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1MTQ5Lm0zdTg.m3u8",
         "quality": "FHD"
+      },
+      {
+        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1MTUwLm0zdTg.m3u8",
+        "quality": "HD"
+      },
+      {
+        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1MTUxLm0zdTg.m3u8",
+        "quality": "SD"
       },
       {
         "url": "http://79.127.238.228:14455",
@@ -18996,6 +18994,24 @@ export const FALLBACK_CHANNELS: Channel[] = [
       {
         "url": "http://64.31.23.207:80/59471019/60849037/518597.m3u8",
         "quality": "SD · 960x540"
+      },
+      {
+        "url": "http://332nr7hbfu.xyz:80/live/999913/S3CvUB/103450.m3u8",
+        "quality": "FHD · 1920x1080"
+      },
+      {
+        "url": "http://170.82.202.31/Viva/index.m3u8",
+        "name": "Fonte 28 (IPTV-ORG)"
+      },
+      {
+        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/globonovelas/globonovelas.m3u8",
+        "quality": "Qualidade não informada"
+      },
+      {
+        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/55a9732537da5a058ab4fedb2904cf80/error.txt",
+        "quality": "Qualidade não informada",
+        "referer": "https://w7.embedtv.cc/",
+        "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
       },
       {
         "url": "http://vaiagora.vip:80/live/5q8VUj/5BeUd8/103450.m3u8",
@@ -19060,22 +19076,6 @@ export const FALLBACK_CHANNELS: Channel[] = [
       {
         "url": "http://corruptx.org:80/live/hfp5ejnrey/zq0u3kzads/33453.m3u8",
         "quality": "HD"
-      },
-      {
-        "url": "http://332nr7hbfu.xyz:80/live/999913/S3CvUB/103450.m3u8",
-        "quality": "FHD · 1920x1080"
-      },
-      {
-        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1MTUwLm0zdTg.m3u8",
-        "quality": "HD"
-      },
-      {
-        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1MTUxLm0zdTg.m3u8",
-        "quality": "SD"
-      },
-      {
-        "url": "http://170.82.202.31/Viva/index.m3u8",
-        "name": "Fonte 28 (IPTV-ORG)"
       }
     ]
   },
@@ -19355,6 +19355,10 @@ export const FALLBACK_CHANNELS: Channel[] = [
     "logo": "",
     "sources": [
       {
+        "url": "https://isaocorp.cloudecast.com/playtv/index.m3u8",
+        "name": "Fonte 4 (IPTV-ORG)"
+      },
+      {
         "url": "http://45.162.64.114/PLAY_TV/index.m3u8",
         "name": "Fonte 1 (IPTV-ORG)"
       },
@@ -19365,10 +19369,6 @@ export const FALLBACK_CHANNELS: Channel[] = [
       {
         "url": "http://168.197.104.22/PLAY_TV/index.m3u8",
         "name": "Fonte 3 (IPTV-ORG)"
-      },
-      {
-        "url": "https://isaocorp.cloudecast.com/playtv/index.m3u8",
-        "name": "Fonte 4 (IPTV-ORG)"
       }
     ]
   },
@@ -19379,20 +19379,20 @@ export const FALLBACK_CHANNELS: Channel[] = [
     "logo": "https://i.imgur.com/Ikrj3lk.png",
     "sources": [
       {
-        "url": "http://45.162.64.114/PLAY_TV/index.m3u8",
-        "quality": "HD · 1280x720"
+        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzYwNzEyLm0zdTg.m3u8",
+        "quality": "HD"
       },
       {
         "url": "https://isaocorp.cloudecast.com/playtv/index.m3u8",
         "quality": "FHD · 1920x1080"
       },
       {
-        "url": "http://45.177.114.115/PLAY_TV/index.m3u8",
+        "url": "http://45.162.64.114/PLAY_TV/index.m3u8",
         "quality": "HD · 1280x720"
       },
       {
-        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzYwNzEyLm0zdTg.m3u8",
-        "quality": "HD"
+        "url": "http://45.177.114.115/PLAY_TV/index.m3u8",
+        "quality": "HD · 1280x720"
       }
     ]
   },
@@ -19484,16 +19484,16 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "quality": "HD · 1280x720"
       },
       {
+        "url": "https://media.cdntvms.com.br/record_nacional_sat/index.m3u8",
+        "name": "Fonte 8 (IPTV-ORG)"
+      },
+      {
         "url": "http://138.204.86.4:8080/RECORD/index.m3u8",
         "quality": "FHD · 1920x1080"
       },
       {
         "url": "http://79.127.238.228:14057",
         "quality": "HD · 1280x720"
-      },
-      {
-        "url": "http://corruptx.org:80/live/hfp5ejnrey/zq0u3kzads/35842.m3u8",
-        "quality": "HD"
       },
       {
         "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/35842.ts",
@@ -19505,8 +19505,8 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "name": "Fonte 7 (IPTV-ORG)"
       },
       {
-        "url": "https://media.cdntvms.com.br/record_nacional_sat/index.m3u8",
-        "name": "Fonte 8 (IPTV-ORG)"
+        "url": "http://corruptx.org:80/live/hfp5ejnrey/zq0u3kzads/35842.m3u8",
+        "quality": "HD"
       }
     ]
   },
@@ -19614,14 +19614,14 @@ export const FALLBACK_CHANNELS: Channel[] = [
     "logo": "https://img.faz-o-eli.online/record.png",
     "sources": [
       {
+        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/recordmg/recordmg.m3u8",
+        "quality": "HD · 1280x720"
+      },
+      {
         "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/c7d142437fb572b09b99c3d15961484a/error.txt",
         "quality": "Qualidade não informada",
         "referer": "https://w7.embedtv.cc/",
         "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
-      },
-      {
-        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/recordmg/recordmg.m3u8",
-        "quality": "HD · 1280x720"
       },
       {
         "url": "http://corruptx.org:80/live/hfp5ejnrey/zq0u3kzads/9055.m3u8",
@@ -19657,8 +19657,16 @@ export const FALLBACK_CHANNELS: Channel[] = [
     "logo": "https://mondrian.claro.com.br/channels/inverse/recordnews.png",
     "sources": [
       {
-        "url": "http://45.162.64.114/RECORD_NEWS/index.m3u8",
-        "quality": "FHD · 1920x1080"
+        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1NDc2Lm0zdTg.m3u8",
+        "quality": "FHD"
+      },
+      {
+        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1NDc3Lm0zdTg.m3u8",
+        "quality": "HD"
+      },
+      {
+        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1NDc4Lm0zdTg.m3u8",
+        "quality": "SD"
       },
       {
         "url": "https://rnw-rn-samsungtvplus.otteravision.com/rnw/rn/rnw_rn.m3u8",
@@ -19671,16 +19679,62 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
       },
       {
-        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1NDc2Lm0zdTg.m3u8",
-        "quality": "FHD"
-      },
-      {
         "url": "https://rnw-rn.otteravision.com/rnw/rn/rnw_rn.m3u8",
         "quality": "HD · 1280x720"
       },
       {
+        "url": "https://rnw-rn-soultv.otteravision.com/rnw/rn/rnw_rn.m3u8",
+        "quality": "HD · 1280x720"
+      },
+      {
+        "url": "https://run-rnw-rn.otteravision.com/rnw/rn/rnw_rn_720p_high.m3u8"
+      },
+      {
+        "url": "https://stream.ads.ottera.tv/playlist.m3u8?network_id=2116",
+        "name": "Fonte 32 (IPTV-ORG)"
+      },
+      {
+        "url": "http://45.162.64.114/RECORD_NEWS/index.m3u8",
+        "quality": "FHD · 1920x1080"
+      },
+      {
         "url": "http://45.177.114.115/RECORD_NEWS/index.m3u8",
         "quality": "FHD · 1920x1080"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/9058.ts",
+        "name": "Fonte 24 (Ramys)",
+        "quality": "1080p FHD"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/9057.ts",
+        "name": "Fonte 25 (Ramys)",
+        "quality": "720p HD"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/30170.ts",
+        "name": "Fonte 26 (Ramys)",
+        "quality": "720p HD"
+      },
+      {
+        "url": "http://168.197.104.22/RECORD_NEWS/index.m3u8",
+        "name": "Fonte 27 (IPTV-ORG)"
+      },
+      {
+        "url": "http://170.83.16.50/RECORD_NEWS/index.m3u8",
+        "name": "Fonte 28 (IPTV-ORG)"
+      },
+      {
+        "url": "http://170.83.49.66:8083/RECORDNEWSHD/index.m3u8",
+        "name": "Fonte 29 (IPTV-ORG)"
+      },
+      {
+        "url": "http://170.84.165.204/Record_news/index.m3u8",
+        "name": "Fonte 30 (IPTV-ORG)"
+      },
+      {
+        "url": "http://186.219.52.187/record_news/index.m3u8",
+        "name": "Fonte 31 (IPTV-ORG)"
       },
       {
         "url": "http://vaiagora.vip:80/live/5q8VUj/5BeUd8/178523.m3u8",
@@ -19733,60 +19787,6 @@ export const FALLBACK_CHANNELS: Channel[] = [
       {
         "url": "http://corruptx.org:80/live/hfp5ejnrey/zq0u3kzads/30170.m3u8",
         "quality": "HD"
-      },
-      {
-        "url": "https://rnw-rn-soultv.otteravision.com/rnw/rn/rnw_rn.m3u8",
-        "quality": "HD · 1280x720"
-      },
-      {
-        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1NDc3Lm0zdTg.m3u8",
-        "quality": "HD"
-      },
-      {
-        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1NDc4Lm0zdTg.m3u8",
-        "quality": "SD"
-      },
-      {
-        "url": "https://run-rnw-rn.otteravision.com/rnw/rn/rnw_rn_720p_high.m3u8"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/9058.ts",
-        "name": "Fonte 24 (Ramys)",
-        "quality": "1080p FHD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/9057.ts",
-        "name": "Fonte 25 (Ramys)",
-        "quality": "720p HD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/30170.ts",
-        "name": "Fonte 26 (Ramys)",
-        "quality": "720p HD"
-      },
-      {
-        "url": "http://168.197.104.22/RECORD_NEWS/index.m3u8",
-        "name": "Fonte 27 (IPTV-ORG)"
-      },
-      {
-        "url": "http://170.83.16.50/RECORD_NEWS/index.m3u8",
-        "name": "Fonte 28 (IPTV-ORG)"
-      },
-      {
-        "url": "http://170.83.49.66:8083/RECORDNEWSHD/index.m3u8",
-        "name": "Fonte 29 (IPTV-ORG)"
-      },
-      {
-        "url": "http://170.84.165.204/Record_news/index.m3u8",
-        "name": "Fonte 30 (IPTV-ORG)"
-      },
-      {
-        "url": "http://186.219.52.187/record_news/index.m3u8",
-        "name": "Fonte 31 (IPTV-ORG)"
-      },
-      {
-        "url": "https://stream.ads.ottera.tv/playlist.m3u8?network_id=2116",
-        "name": "Fonte 32 (IPTV-ORG)"
       }
     ]
   },
@@ -19822,28 +19822,6 @@ export const FALLBACK_CHANNELS: Channel[] = [
     "logo": "https://img.faz-o-eli.online/record.png",
     "sources": [
       {
-        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/0d95cee9d6175371148e1be107a69410/error.txt",
-        "quality": "Qualidade não informada",
-        "referer": "https://w7.embedtv.cc/",
-        "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
-      },
-      {
-        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/recordrj/recordrj.m3u8",
-        "quality": "HD · 1280x720"
-      },
-      {
-        "url": "http://corruptx.org:80/live/hfp5ejnrey/zq0u3kzads/106095.m3u8",
-        "quality": "FHD · 1920x1080"
-      },
-      {
-        "url": "http://corruptx.org:80/live/hfp5ejnrey/zq0u3kzads/71697.m3u8",
-        "quality": "FHD"
-      },
-      {
-        "url": "http://corruptx.org:80/live/hfp5ejnrey/zq0u3kzads/9063.m3u8",
-        "quality": "HD"
-      },
-      {
         "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/106095.ts",
         "name": "Fonte 6 (Ramys)"
       },
@@ -19856,6 +19834,28 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/9063.ts",
         "name": "Fonte 8 (Ramys)",
         "quality": "720p HD"
+      },
+      {
+        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/recordrj/recordrj.m3u8",
+        "quality": "HD · 1280x720"
+      },
+      {
+        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/0d95cee9d6175371148e1be107a69410/error.txt",
+        "quality": "Qualidade não informada",
+        "referer": "https://w7.embedtv.cc/",
+        "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
+      },
+      {
+        "url": "http://corruptx.org:80/live/hfp5ejnrey/zq0u3kzads/106095.m3u8",
+        "quality": "FHD · 1920x1080"
+      },
+      {
+        "url": "http://corruptx.org:80/live/hfp5ejnrey/zq0u3kzads/71697.m3u8",
+        "quality": "FHD"
+      },
+      {
+        "url": "http://corruptx.org:80/live/hfp5ejnrey/zq0u3kzads/9063.m3u8",
+        "quality": "HD"
       }
     ]
   },
@@ -19920,18 +19920,38 @@ export const FALLBACK_CHANNELS: Channel[] = [
     "logo": "https://img.faz-o-eli.online/record.png",
     "sources": [
       {
-        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/2512c21ec640403f7e9cd87e2ea3e0f7/error.txt",
-        "quality": "Qualidade não informada",
-        "referer": "https://w7.embedtv.cc/",
-        "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
+        "url": "http://64.31.23.207:80/59471019/60849037/324389.m3u8",
+        "quality": "FHD · 1920x1080"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/82755.ts",
+        "name": "Fonte 14 (Ramys)",
+        "quality": "1080p FHD"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/9068.ts",
+        "name": "Fonte 15 (Ramys)",
+        "quality": "1080p FHD"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/12888.ts",
+        "name": "Fonte 16 (Ramys)",
+        "quality": "720p HD"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/38065.ts",
+        "name": "Fonte 17 (Ramys)",
+        "quality": "720p HD"
       },
       {
         "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/recordsp/recordsp.m3u8",
         "quality": "HD · 1280x720"
       },
       {
-        "url": "http://64.31.23.207:80/59471019/60849037/324389.m3u8",
-        "quality": "FHD · 1920x1080"
+        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/2512c21ec640403f7e9cd87e2ea3e0f7/error.txt",
+        "quality": "Qualidade não informada",
+        "referer": "https://w7.embedtv.cc/",
+        "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
       },
       {
         "url": "http://vaiagora.vip:80/live/5q8VUj/5BeUd8/77654.m3u8",
@@ -19972,26 +19992,6 @@ export const FALLBACK_CHANNELS: Channel[] = [
       {
         "url": "http://corruptx.org:80/live/hfp5ejnrey/zq0u3kzads/38065.m3u8",
         "quality": "HD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/82755.ts",
-        "name": "Fonte 14 (Ramys)",
-        "quality": "1080p FHD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/9068.ts",
-        "name": "Fonte 15 (Ramys)",
-        "quality": "1080p FHD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/12888.ts",
-        "name": "Fonte 16 (Ramys)",
-        "quality": "720p HD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/38065.ts",
-        "name": "Fonte 17 (Ramys)",
-        "quality": "720p HD"
       }
     ]
   },
@@ -20149,23 +20149,23 @@ export const FALLBACK_CHANNELS: Channel[] = [
     "logo": "https://i.imgur.com/TXJKwzZ.png",
     "sources": [
       {
-        "url": "https://redebrasil.nuvemplay.live/hls/stream.m3u8",
-        "quality": "HD · 1280x720"
-      },
-      {
         "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvMjEwODc3NS5tM3U4.m3u8",
         "quality": "HD"
+      },
+      {
+        "url": "https://redebrasil.nuvemplay.live/hls/stream.m3u8",
+        "quality": "HD · 1280x720"
       },
       {
         "url": "https://video09.logicahost.com.br/redebrasiloficial/redebrasiloficial/playlist.m3u8"
       },
       {
-        "url": "http://170.84.165.204/REDEBRASIL/index.m3u8",
-        "name": "Fonte 4 (IPTV-ORG)"
-      },
-      {
         "url": "https://cdn-tiva-video09-logicahost-com-br.smartbit.co/redebrasiloficial/redebrasiloficial/playlist.m3u8",
         "name": "Fonte 5 (IPTV-ORG)"
+      },
+      {
+        "url": "http://170.84.165.204/REDEBRASIL/index.m3u8",
+        "name": "Fonte 4 (IPTV-ORG)"
       }
     ]
   },
@@ -20376,8 +20376,8 @@ export const FALLBACK_CHANNELS: Channel[] = [
     "logo": "https://i.imgur.com/ZJgD38F.png",
     "sources": [
       {
-        "url": "http://45.162.64.114/REDE_TV/index.m3u8",
-        "quality": "HD · 1280x720"
+        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1MDczLm0zdTg.m3u8",
+        "quality": "HD"
       },
       {
         "url": "https://tv01.zas.media:1936/redetvparana/redetvparana/playlist.m3u8",
@@ -20386,20 +20386,20 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
       },
       {
+        "url": "https://tv01.zas.media:1936/redetvparana/redetvparana/chunklist_w1074634538.m3u8",
+        "quality": "FHD · 1920x1080"
+      },
+      {
+        "url": "http://45.162.64.114/REDE_TV/index.m3u8",
+        "quality": "HD · 1280x720"
+      },
+      {
         "url": "http://168.197.104.22/REDE_TV/index.m3u8",
         "quality": "HD · 1280x720"
       },
       {
         "url": "http://170.83.16.50/REDE_TV/index.m3u8",
         "quality": "HD · 1280x720"
-      },
-      {
-        "url": "https://tv01.zas.media:1936/redetvparana/redetvparana/chunklist_w1074634538.m3u8",
-        "quality": "FHD · 1920x1080"
-      },
-      {
-        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1MDczLm0zdTg.m3u8",
-        "quality": "HD"
       },
       {
         "url": "http://170.83.49.66:8083/REDETVHD/index.m3u8",
@@ -20442,18 +20442,20 @@ export const FALLBACK_CHANNELS: Channel[] = [
     "logo": "https://img.faz-o-eli.online/redevida.png",
     "sources": [
       {
-        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/f0a68c15591a6aac1f8c46bd4455c771/error.txt",
-        "quality": "Qualidade não informada",
-        "referer": "https://w7.embedtv.cc/",
-        "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
+        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzQwNTc1Lm0zdTg.m3u8",
+        "quality": "HD"
       },
       {
         "url": "https://d12e4o88jd8gex.cloudfront.net/out/v1/cea3de0b76ac4e82ab8ee0fd3f17ce12/index.m3u8",
         "quality": "HD · 1280x720"
       },
       {
-        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/redevida/redevida.m3u8",
+        "url": "https://d12e4o88jd8gex.cloudfront.net/out/v1/cea3de0b76ac4e82ab8ee0fd3f17ce12/index_1.m3u8",
         "quality": "HD · 1280x720"
+      },
+      {
+        "url": "https://cdn-5.nxplay.com.br/REDE_VIDA/index.m3u8",
+        "name": "Fonte 22 (IPTV-ORG)"
       },
       {
         "url": "http://46.151.196.223:14244",
@@ -20466,6 +20468,29 @@ export const FALLBACK_CHANNELS: Channel[] = [
       {
         "url": "http://186.219.52.187/rede_vida/index.m3u8",
         "quality": "SD · 720x576"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/69259.ts",
+        "name": "Fonte 19 (Ramys)"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/9076.ts",
+        "name": "Fonte 20 (Ramys)",
+        "quality": "720p HD"
+      },
+      {
+        "url": "http://170.84.165.204/REDEVIDA_HD/index.m3u8",
+        "name": "Fonte 21 (IPTV-ORG)"
+      },
+      {
+        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/redevida/redevida.m3u8",
+        "quality": "HD · 1280x720"
+      },
+      {
+        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/f0a68c15591a6aac1f8c46bd4455c771/error.txt",
+        "quality": "Qualidade não informada",
+        "referer": "https://w7.embedtv.cc/",
+        "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
       },
       {
         "url": "http://vaiagora.vip:80/live/5q8VUj/5BeUd8/103475.m3u8",
@@ -20506,31 +20531,6 @@ export const FALLBACK_CHANNELS: Channel[] = [
       {
         "url": "http://corruptx.org:80/live/hfp5ejnrey/zq0u3kzads/9076.m3u8",
         "quality": "HD"
-      },
-      {
-        "url": "https://d12e4o88jd8gex.cloudfront.net/out/v1/cea3de0b76ac4e82ab8ee0fd3f17ce12/index_1.m3u8",
-        "quality": "HD · 1280x720"
-      },
-      {
-        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzQwNTc1Lm0zdTg.m3u8",
-        "quality": "HD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/69259.ts",
-        "name": "Fonte 19 (Ramys)"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/9076.ts",
-        "name": "Fonte 20 (Ramys)",
-        "quality": "720p HD"
-      },
-      {
-        "url": "http://170.84.165.204/REDEVIDA_HD/index.m3u8",
-        "name": "Fonte 21 (IPTV-ORG)"
-      },
-      {
-        "url": "https://cdn-5.nxplay.com.br/REDE_VIDA/index.m3u8",
-        "name": "Fonte 22 (IPTV-ORG)"
       }
     ]
   },
@@ -20540,6 +20540,14 @@ export const FALLBACK_CHANNELS: Channel[] = [
     "category": "TV Aberta",
     "logo": "https://www.tvlogo.org/brazil/rede-tv-br.png",
     "sources": [
+      {
+        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1MDczLm0zdTg.m3u8",
+        "quality": "HD"
+      },
+      {
+        "url": "https://tv01.zas.media:1936/redetvparana/redetvparana/chunklist_w1074634538.m3u8",
+        "quality": "FHD · 1920x1080"
+      },
       {
         "url": "http://45.162.64.114/REDE_TV/index.m3u8",
         "quality": "HD · 1280x720"
@@ -20551,14 +20559,6 @@ export const FALLBACK_CHANNELS: Channel[] = [
       {
         "url": "http://170.83.16.50/REDE_TV/index.m3u8",
         "quality": "HD · 1280x720"
-      },
-      {
-        "url": "https://tv01.zas.media:1936/redetvparana/redetvparana/chunklist_w1074634538.m3u8",
-        "quality": "FHD · 1920x1080"
-      },
-      {
-        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1MDczLm0zdTg.m3u8",
-        "quality": "HD"
       },
       {
         "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/9074.ts",
@@ -20617,6 +20617,10 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "name": "Fonte 1 (IPTV-ORG)"
       },
       {
+        "url": "https://cdn-5.nxplay.com.br/RIT_TV/index.m3u8",
+        "name": "Fonte 5 (IPTV-ORG)"
+      },
+      {
         "url": "http://45.177.114.115/RIT_TV/index.m3u8",
         "name": "Fonte 2 (IPTV-ORG)"
       },
@@ -20627,10 +20631,6 @@ export const FALLBACK_CHANNELS: Channel[] = [
       {
         "url": "http://170.84.165.204/RIT_TV/index.m3u8",
         "name": "Fonte 4 (IPTV-ORG)"
-      },
-      {
-        "url": "https://cdn-5.nxplay.com.br/RIT_TV/index.m3u8",
-        "name": "Fonte 5 (IPTV-ORG)"
       }
     ]
   },
@@ -20665,16 +20665,16 @@ export const FALLBACK_CHANNELS: Channel[] = [
     "logo": "https://mondrian.claro.com.br/channels/inverse/sbt.png",
     "sources": [
       {
-        "url": "http://138.204.86.4:8080/SBT_HD/index.m3u8",
-        "quality": "HD · 1280x720"
-      },
-      {
         "url": "https://aovivo.maissbt.com/indexMobile.m3u8",
         "quality": "HD · 1280x720"
       },
       {
         "url": "https://6836041ea1117.streamlock.net/cverde/cverde/playlist.m3u8",
         "quality": "FHD · 1920x1080"
+      },
+      {
+        "url": "http://138.204.86.4:8080/SBT_HD/index.m3u8",
+        "quality": "HD · 1280x720"
       },
       {
         "url": "http://64.31.23.207:80/59471019/60849037/324290.m3u8",
@@ -20687,30 +20687,6 @@ export const FALLBACK_CHANNELS: Channel[] = [
       {
         "url": "http://64.31.23.207:80/59471019/60849037/324390.m3u8",
         "quality": "FHD · 1920x1080"
-      },
-      {
-        "url": "http://corruptx.org:80/live/hfp5ejnrey/zq0u3kzads/9082.m3u8",
-        "quality": "FHD"
-      },
-      {
-        "url": "http://corruptx.org:80/live/hfp5ejnrey/zq0u3kzads/81580.m3u8",
-        "quality": "FHD"
-      },
-      {
-        "url": "http://corruptx.org:80/live/hfp5ejnrey/zq0u3kzads/81610.m3u8",
-        "quality": "FHD"
-      },
-      {
-        "url": "http://corruptx.org:80/live/hfp5ejnrey/zq0u3kzads/26722.m3u8",
-        "quality": "HD · 1280x720"
-      },
-      {
-        "url": "http://corruptx.org:80/live/hfp5ejnrey/zq0u3kzads/9084.m3u8",
-        "quality": "HD"
-      },
-      {
-        "url": "http://corruptx.org:80/live/hfp5ejnrey/zq0u3kzads/30120.m3u8",
-        "quality": "HD"
       },
       {
         "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/9082.ts",
@@ -20740,6 +20716,30 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/30120.ts",
         "name": "Fonte 18 (Ramys)",
         "quality": "720p HD"
+      },
+      {
+        "url": "http://corruptx.org:80/live/hfp5ejnrey/zq0u3kzads/9082.m3u8",
+        "quality": "FHD"
+      },
+      {
+        "url": "http://corruptx.org:80/live/hfp5ejnrey/zq0u3kzads/81580.m3u8",
+        "quality": "FHD"
+      },
+      {
+        "url": "http://corruptx.org:80/live/hfp5ejnrey/zq0u3kzads/81610.m3u8",
+        "quality": "FHD"
+      },
+      {
+        "url": "http://corruptx.org:80/live/hfp5ejnrey/zq0u3kzads/26722.m3u8",
+        "quality": "HD · 1280x720"
+      },
+      {
+        "url": "http://corruptx.org:80/live/hfp5ejnrey/zq0u3kzads/9084.m3u8",
+        "quality": "HD"
+      },
+      {
+        "url": "http://corruptx.org:80/live/hfp5ejnrey/zq0u3kzads/30120.m3u8",
+        "quality": "HD"
       }
     ]
   },
@@ -20791,11 +20791,11 @@ export const FALLBACK_CHANNELS: Channel[] = [
     "logo": "http://www.fontedecanais.me/logos/canais/sbt.png",
     "sources": [
       {
-        "url": "http://64.31.23.207:80/59471019/60849037/324288.m3u8",
+        "url": "https://cdn.live.br1.jmvstream.com/w/LVW-9359/LVW9359_XSyReL0QVf/playlist.m3u8",
         "quality": "FHD · 1920x1080"
       },
       {
-        "url": "https://cdn.live.br1.jmvstream.com/w/LVW-9359/LVW9359_XSyReL0QVf/playlist.m3u8",
+        "url": "http://64.31.23.207:80/59471019/60849037/324288.m3u8",
         "quality": "FHD · 1920x1080"
       }
     ]
@@ -20932,27 +20932,19 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "quality": "HD · 1280x720"
       },
       {
-        "url": "https://dai.google.com/linear/hls/event/1XSOdtQ0SH2G8OEmEfGgjQ/master.m3u8",
-        "quality": "HD · 1280x720"
-      },
-      {
-        "url": "http://corruptx.org:80/live/hfp5ejnrey/zq0u3kzads/1129618.m3u8",
-        "quality": "FHD"
-      },
-      {
-        "url": "http://corruptx.org:80/live/hfp5ejnrey/zq0u3kzads/1129619.m3u8",
-        "quality": "FHD"
-      },
-      {
-        "url": "http://45.185.11.126:8000/play/a0a7/index.m3u8",
-        "quality": "FHD · 1920x1080"
+        "url": "https://sbtnews.maissbt.com/3.m3u8"
       },
       {
         "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvMjE0NjU0MS5tM3U4.m3u8",
         "quality": "HD"
       },
       {
-        "url": "https://sbtnews.maissbt.com/3.m3u8"
+        "url": "https://dai.google.com/linear/hls/event/1XSOdtQ0SH2G8OEmEfGgjQ/master.m3u8",
+        "quality": "HD · 1280x720"
+      },
+      {
+        "url": "http://45.185.11.126:8000/play/a0a7/index.m3u8",
+        "quality": "FHD · 1920x1080"
       },
       {
         "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/1129618.ts",
@@ -20963,6 +20955,14 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/1129619.ts",
         "name": "Fonte 9 (Ramys)",
         "quality": "1080p FHD"
+      },
+      {
+        "url": "http://corruptx.org:80/live/hfp5ejnrey/zq0u3kzads/1129618.m3u8",
+        "quality": "FHD"
+      },
+      {
+        "url": "http://corruptx.org:80/live/hfp5ejnrey/zq0u3kzads/1129619.m3u8",
+        "quality": "FHD"
       }
     ]
   },
@@ -21043,18 +21043,16 @@ export const FALLBACK_CHANNELS: Channel[] = [
     "logo": "https://img.faz-o-eli.online/sbt.png",
     "sources": [
       {
-        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/9ea3501e9658e2f75a3cecd8d3836029/error.txt",
-        "quality": "Qualidade não informada",
-        "referer": "https://w7.embedtv.cc/",
-        "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
-      },
-      {
-        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/sbtrj/sbtrj.m3u8",
-        "quality": "FHD · 1920x1080"
-      },
-      {
         "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL3BhbGRpLnBybzo4MC9saXZlL3RvbmluaG8wMi9DYjQ5ODAzNy8xMDg2ODEubTN1OA.m3u8",
         "quality": "FHD"
+      },
+      {
+        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL3BhbGRpLnBybzo4MC9saXZlL3RvbmluaG8wMi9DYjQ5ODAzNy8xMDg2ODIubTN1OA.m3u8",
+        "quality": "HD"
+      },
+      {
+        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL3BhbGRpLnBybzo4MC9saXZlL3RvbmluaG8wMi9DYjQ5ODAzNy8xMDg2ODMubTN1OA.m3u8",
+        "quality": "SD"
       },
       {
         "url": "http://64.31.23.207:80/59471019/60849037/324302.m3u8",
@@ -21065,12 +21063,28 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "quality": "FHD · 1920x1080"
       },
       {
-        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL3BhbGRpLnBybzo4MC9saXZlL3RvbmluaG8wMi9DYjQ5ODAzNy8xMDg2ODIubTN1OA.m3u8",
-        "quality": "HD"
+        "url": "http://332nr7hbfu.xyz:80/live/999913/S3CvUB/108682.m3u8",
+        "quality": "HD · 1280x720"
       },
       {
-        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL3BhbGRpLnBybzo4MC9saXZlL3RvbmluaG8wMi9DYjQ5ODAzNy8xMDg2ODMubTN1OA.m3u8",
-        "quality": "SD"
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/131563.ts",
+        "name": "Fonte 16 (Ramys)",
+        "quality": "1080p FHD"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/35844.ts",
+        "name": "Fonte 17 (Ramys)",
+        "quality": "720p HD"
+      },
+      {
+        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/sbtrj/sbtrj.m3u8",
+        "quality": "FHD · 1920x1080"
+      },
+      {
+        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/9ea3501e9658e2f75a3cecd8d3836029/error.txt",
+        "quality": "Qualidade não informada",
+        "referer": "https://w7.embedtv.cc/",
+        "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
       },
       {
         "url": "http://vaiagora.vip:80/live/5q8VUj/5BeUd8/108681.m3u8",
@@ -21099,20 +21113,6 @@ export const FALLBACK_CHANNELS: Channel[] = [
       {
         "url": "http://corruptx.org:80/live/hfp5ejnrey/zq0u3kzads/35844.m3u8",
         "quality": "HD"
-      },
-      {
-        "url": "http://332nr7hbfu.xyz:80/live/999913/S3CvUB/108682.m3u8",
-        "quality": "HD · 1280x720"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/131563.ts",
-        "name": "Fonte 16 (Ramys)",
-        "quality": "1080p FHD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/35844.ts",
-        "name": "Fonte 17 (Ramys)",
-        "quality": "720p HD"
       }
     ]
   },
@@ -21148,18 +21148,16 @@ export const FALLBACK_CHANNELS: Channel[] = [
     "logo": "https://img.faz-o-eli.online/sbt.png",
     "sources": [
       {
-        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/6482664b5e9285db5996ad4185782f54/error.txt",
-        "quality": "Qualidade não informada",
-        "referer": "https://w7.embedtv.cc/",
-        "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
-      },
-      {
-        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/sbtsp/sbtsp.m3u8",
-        "quality": "FHD · 1920x1080"
-      },
-      {
         "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL3BhbGRpLnBybzo4MC9saXZlL3RvbmluaG8wMi9DYjQ5ODAzNy83Nzk2My5tM3U4.m3u8",
         "quality": "FHD"
+      },
+      {
+        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL3BhbGRpLnBybzo4MC9saXZlL3RvbmluaG8wMi9DYjQ5ODAzNy83MjU5OC5tM3U4.m3u8",
+        "quality": "HD"
+      },
+      {
+        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL3BhbGRpLnBybzo4MC9saXZlL3RvbmluaG8wMi9DYjQ5ODAzNy83Nzk2NC5tM3U4.m3u8",
+        "quality": "SD"
       },
       {
         "url": "http://64.31.23.207:80/59471019/60849037/324307.m3u8",
@@ -21170,12 +21168,18 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "quality": "HD · 1280x720"
       },
       {
-        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL3BhbGRpLnBybzo4MC9saXZlL3RvbmluaG8wMi9DYjQ5ODAzNy83MjU5OC5tM3U4.m3u8",
-        "quality": "HD"
+        "url": "http://332nr7hbfu.xyz:80/live/999913/S3CvUB/77963.m3u8",
+        "quality": "FHD · 1920x1080"
       },
       {
-        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL3BhbGRpLnBybzo4MC9saXZlL3RvbmluaG8wMi9DYjQ5ODAzNy83Nzk2NC5tM3U4.m3u8",
-        "quality": "SD"
+        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/sbtsp/sbtsp.m3u8",
+        "quality": "FHD · 1920x1080"
+      },
+      {
+        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/6482664b5e9285db5996ad4185782f54/error.txt",
+        "quality": "Qualidade não informada",
+        "referer": "https://w7.embedtv.cc/",
+        "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
       },
       {
         "url": "http://vaiagora.vip:80/live/5q8VUj/5BeUd8/77963.m3u8",
@@ -21208,10 +21212,6 @@ export const FALLBACK_CHANNELS: Channel[] = [
       {
         "url": "http://vivlar.me:80/live/497238/KK8Kdy/77964.m3u8",
         "quality": "SD"
-      },
-      {
-        "url": "http://332nr7hbfu.xyz:80/live/999913/S3CvUB/77963.m3u8",
-        "quality": "FHD · 1920x1080"
       }
     ]
   },
@@ -21246,6 +21246,10 @@ export const FALLBACK_CHANNELS: Channel[] = [
     "logo": "https://i.imgur.com/Mu8O6CV.png",
     "sources": [
       {
+        "url": "https://slbps-ml-sambatech.akamaized.net/samba-live/2472/7424/8a00fe7cc36ac263b2c3e9324497d5ff/video/93a9920d-1b24-4c5e-a7d2-63d5489f59b5_index.m3u8",
+        "name": "Fonte 4 (IPTV-ORG)"
+      },
+      {
         "url": "http://45.162.64.114/SESC_TV/index.m3u8",
         "quality": "HD · 1280x720"
       },
@@ -21256,10 +21260,6 @@ export const FALLBACK_CHANNELS: Channel[] = [
       {
         "url": "http://186.219.52.187/sesc_tv/index.m3u8",
         "quality": "SD · 720x576"
-      },
-      {
-        "url": "https://slbps-ml-sambatech.akamaized.net/samba-live/2472/7424/8a00fe7cc36ac263b2c3e9324497d5ff/video/93a9920d-1b24-4c5e-a7d2-63d5489f59b5_index.m3u8",
-        "name": "Fonte 4 (IPTV-ORG)"
       }
     ]
   },
@@ -21469,18 +21469,22 @@ export const FALLBACK_CHANNELS: Channel[] = [
     "logo": "https://mondrian.claro.com.br/channels/inverse/tv-aparecida.png",
     "sources": [
       {
+        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzQwNTc5Lm0zdTg.m3u8",
+        "quality": "HD"
+      },
+      {
         "url": "https://cdn.live.br1.jmvstream.com/w/LVW-9716/LVW9716_HbtQtezcaw/playlist.m3u8",
         "quality": "FHD · 1920x1080",
         "referer": "https://meufut.top/aparecida",
         "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
       },
       {
-        "url": "http://45.162.64.114/TV_APARECIDA/index.m3u8",
-        "quality": "HD · 1280x720"
+        "url": "https://cdn.jmvstream.com/w/LVW-9716/LVW9716_HbtQtezcaw/playlist.m3u8",
+        "quality": "FHD · 1920x1080"
       },
       {
-        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/aparecida/aparecida.m3u8",
-        "quality": "Qualidade não informada"
+        "url": "http://45.162.64.114/TV_APARECIDA/index.m3u8",
+        "quality": "HD · 1280x720"
       },
       {
         "url": "http://45.177.114.115/TV_APARECIDA_HD/index.m3u8",
@@ -21489,6 +21493,28 @@ export const FALLBACK_CHANNELS: Channel[] = [
       {
         "url": "http://168.197.104.22/TV_APARECIDA/index.m3u8",
         "quality": "HD · 1280x720"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/66680.ts",
+        "name": "Fonte 19 (Ramys)",
+        "quality": "1080p FHD"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/30147.ts",
+        "name": "Fonte 20 (Ramys)",
+        "quality": "720p HD"
+      },
+      {
+        "url": "http://170.83.16.50/TV_APARECIDA/index.m3u8",
+        "name": "Fonte 21 (IPTV-ORG)"
+      },
+      {
+        "url": "http://170.83.49.66:8083/TVAPARECIDAHD/index.m3u8",
+        "name": "Fonte 22 (IPTV-ORG)"
+      },
+      {
+        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/aparecida/aparecida.m3u8",
+        "quality": "Qualidade não informada"
       },
       {
         "url": "http://vaiagora.vip:80/live/5q8VUj/5BeUd8/103464.m3u8",
@@ -21533,32 +21559,6 @@ export const FALLBACK_CHANNELS: Channel[] = [
       {
         "url": "http://corruptx.org:80/live/hfp5ejnrey/zq0u3kzads/30147.m3u8",
         "quality": "HD"
-      },
-      {
-        "url": "https://cdn.jmvstream.com/w/LVW-9716/LVW9716_HbtQtezcaw/playlist.m3u8",
-        "quality": "FHD · 1920x1080"
-      },
-      {
-        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzQwNTc5Lm0zdTg.m3u8",
-        "quality": "HD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/66680.ts",
-        "name": "Fonte 19 (Ramys)",
-        "quality": "1080p FHD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/30147.ts",
-        "name": "Fonte 20 (Ramys)",
-        "quality": "720p HD"
-      },
-      {
-        "url": "http://170.83.16.50/TV_APARECIDA/index.m3u8",
-        "name": "Fonte 21 (IPTV-ORG)"
-      },
-      {
-        "url": "http://170.83.49.66:8083/TVAPARECIDAHD/index.m3u8",
-        "name": "Fonte 22 (IPTV-ORG)"
       }
     ]
   },
@@ -21633,12 +21633,12 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "name": "Fonte 1 (IPTV-ORG)"
       },
       {
-        "url": "http://tv02.logicahost.com.br:1935/tvdigitalbirigui/tvdigitalbirigui/live.m3u8",
-        "name": "Fonte 2 (IPTV-ORG)"
-      },
-      {
         "url": "https://59f2354c05961.streamlock.net:1443/tvdigitalbirigui/tvdigitalbirigui/playlist.m3u8",
         "name": "Fonte 3 (IPTV-ORG)"
+      },
+      {
+        "url": "http://tv02.logicahost.com.br:1935/tvdigitalbirigui/tvdigitalbirigui/live.m3u8",
+        "name": "Fonte 2 (IPTV-ORG)"
       }
     ]
   },
@@ -21661,6 +21661,35 @@ export const FALLBACK_CHANNELS: Channel[] = [
       {
         "url": "http://45.177.114.115/TV_BRASIL/index.m3u8",
         "quality": "FHD · 1920x1080"
+      },
+      {
+        "url": "http://332nr7hbfu.xyz:80/live/999913/S3CvUB/71816.m3u8",
+        "quality": "FHD · 1920x1080"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/43030.ts",
+        "name": "Fonte 15 (Ramys)",
+        "quality": "1080p FHD"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/33013.ts",
+        "name": "Fonte 16 (Ramys)"
+      },
+      {
+        "url": "http://168.197.104.22/TV_BRASIL/index.m3u8",
+        "name": "Fonte 17 (IPTV-ORG)"
+      },
+      {
+        "url": "http://170.83.49.66:8083/TVBRASILHD/index.m3u8",
+        "name": "Fonte 18 (IPTV-ORG)"
+      },
+      {
+        "url": "http://170.84.165.204/TVBRASIL/index.m3u8",
+        "name": "Fonte 19 (IPTV-ORG)"
+      },
+      {
+        "url": "http://186.219.52.187/tv_brasil/index.m3u8",
+        "name": "Fonte 20 (IPTV-ORG)"
       },
       {
         "url": "http://vaiagora.vip:80/live/5q8VUj/5BeUd8/103463.m3u8",
@@ -21701,35 +21730,6 @@ export const FALLBACK_CHANNELS: Channel[] = [
       {
         "url": "http://corruptx.org:80/live/hfp5ejnrey/zq0u3kzads/33013.m3u8",
         "quality": "HD · 1280x720"
-      },
-      {
-        "url": "http://332nr7hbfu.xyz:80/live/999913/S3CvUB/71816.m3u8",
-        "quality": "FHD · 1920x1080"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/43030.ts",
-        "name": "Fonte 15 (Ramys)",
-        "quality": "1080p FHD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/33013.ts",
-        "name": "Fonte 16 (Ramys)"
-      },
-      {
-        "url": "http://168.197.104.22/TV_BRASIL/index.m3u8",
-        "name": "Fonte 17 (IPTV-ORG)"
-      },
-      {
-        "url": "http://170.83.49.66:8083/TVBRASILHD/index.m3u8",
-        "name": "Fonte 18 (IPTV-ORG)"
-      },
-      {
-        "url": "http://170.84.165.204/TVBRASIL/index.m3u8",
-        "name": "Fonte 19 (IPTV-ORG)"
-      },
-      {
-        "url": "http://186.219.52.187/tv_brasil/index.m3u8",
-        "name": "Fonte 20 (IPTV-ORG)"
       }
     ]
   },
@@ -21764,28 +21764,28 @@ export const FALLBACK_CHANNELS: Channel[] = [
     "logo": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/brazil/tv-camara-br.png",
     "sources": [
       {
-        "url": "http://45.162.64.114/TV_CAMARA/index.m3u8",
-        "quality": "SD · 718x480"
+        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1MDgwLm0zdTg.m3u8",
+        "quality": "HD"
       },
       {
         "url": "https://stream3.camara.gov.br/tv1/manifest.m3u8",
         "quality": "FHD · 1920x1080"
       },
       {
+        "url": "http://45.162.64.114/TV_CAMARA/index.m3u8",
+        "quality": "SD · 718x480"
+      },
+      {
         "url": "http://168.197.104.22/TV_CAMARA/index.m3u8",
         "quality": "SD · 718x480"
       },
       {
-        "url": "http://corruptx.org:80/live/hfp5ejnrey/zq0u3kzads/69905.m3u8",
-        "quality": "HD · 1280x720"
-      },
-      {
-        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1MDgwLm0zdTg.m3u8",
-        "quality": "HD"
-      },
-      {
         "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/69905.ts",
         "name": "Fonte 6 (Ramys)"
+      },
+      {
+        "url": "http://corruptx.org:80/live/hfp5ejnrey/zq0u3kzads/69905.m3u8",
+        "quality": "HD · 1280x720"
       }
     ]
   },
@@ -21916,6 +21916,54 @@ export const FALLBACK_CHANNELS: Channel[] = [
     "logo": "https://img.faz-o-eli.online/cultura.png",
     "sources": [
       {
+        "url": "https://v-us-01.wisestream.io/memfs/e8740862-7a1f-45f3-acb2-4f357e144059.m3u8",
+        "quality": "FHD · 1920x1080"
+      },
+      {
+        "url": "https://player-tvcultura.stream.uol.com.br/live/tvcultura.m3u8",
+        "quality": "SD · 960x540"
+      },
+      {
+        "url": "https://5b33b873179a2.streamlock.net:1443/live/livestream/playlist.m3u8",
+        "quality": "FHD · 1920x1080"
+      },
+      {
+        "url": "https://cdn-5.nxplay.com.br/TV_CULTURA/index.m3u8",
+        "name": "Fonte 20 (IPTV-ORG)"
+      },
+      {
+        "url": "https://jmp2.uk/plu-62e010e6cd663f0007e57dc8.m3u8",
+        "name": "Fonte 21 (Pluto)"
+      },
+      {
+        "url": "http://45.162.64.114/TV_CULTURA/index.m3u8",
+        "name": "Fonte 14 (IPTV-ORG)"
+      },
+      {
+        "url": "http://45.177.114.115/TV_CULTURA/index.m3u8",
+        "name": "Fonte 15 (IPTV-ORG)"
+      },
+      {
+        "url": "http://168.197.104.22/TV_CULTURA/index.m3u8",
+        "name": "Fonte 16 (IPTV-ORG)"
+      },
+      {
+        "url": "http://170.83.16.50/CULTURA/index.m3u8",
+        "name": "Fonte 17 (IPTV-ORG)"
+      },
+      {
+        "url": "http://170.84.165.204/CULTURA_HD/index.m3u8",
+        "name": "Fonte 18 (IPTV-ORG)"
+      },
+      {
+        "url": "http://186.219.52.187/cultura/index.m3u8",
+        "name": "Fonte 19 (IPTV-ORG)"
+      },
+      {
+        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/cultura/cultura.m3u8",
+        "quality": "HD · 1280x720"
+      },
+      {
         "url": "https://aws.s13-s1001604.lat/stream/c866aa18d1af50ecd63c81e37aa0eb67/cultura.m3u8",
         "quality": "HD · 1280x720",
         "referer": "https://meufut.top/cultura",
@@ -21926,18 +21974,6 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "quality": "Qualidade não informada",
         "referer": "https://w7.embedtv.cc/",
         "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
-      },
-      {
-        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/cultura/cultura.m3u8",
-        "quality": "HD · 1280x720"
-      },
-      {
-        "url": "https://v-us-01.wisestream.io/memfs/e8740862-7a1f-45f3-acb2-4f357e144059.m3u8",
-        "quality": "FHD · 1920x1080"
-      },
-      {
-        "url": "https://player-tvcultura.stream.uol.com.br/live/tvcultura.m3u8",
-        "quality": "SD · 960x540"
       },
       {
         "url": "http://vaiagora.vip:80/live/5q8VUj/5BeUd8/103513.m3u8",
@@ -21966,42 +22002,6 @@ export const FALLBACK_CHANNELS: Channel[] = [
       {
         "url": "http://vivlar.me:80/live/497238/KK8Kdy/71854.m3u8",
         "quality": "SD"
-      },
-      {
-        "url": "https://5b33b873179a2.streamlock.net:1443/live/livestream/playlist.m3u8",
-        "quality": "FHD · 1920x1080"
-      },
-      {
-        "url": "http://45.162.64.114/TV_CULTURA/index.m3u8",
-        "name": "Fonte 14 (IPTV-ORG)"
-      },
-      {
-        "url": "http://45.177.114.115/TV_CULTURA/index.m3u8",
-        "name": "Fonte 15 (IPTV-ORG)"
-      },
-      {
-        "url": "http://168.197.104.22/TV_CULTURA/index.m3u8",
-        "name": "Fonte 16 (IPTV-ORG)"
-      },
-      {
-        "url": "http://170.83.16.50/CULTURA/index.m3u8",
-        "name": "Fonte 17 (IPTV-ORG)"
-      },
-      {
-        "url": "http://170.84.165.204/CULTURA_HD/index.m3u8",
-        "name": "Fonte 18 (IPTV-ORG)"
-      },
-      {
-        "url": "http://186.219.52.187/cultura/index.m3u8",
-        "name": "Fonte 19 (IPTV-ORG)"
-      },
-      {
-        "url": "https://cdn-5.nxplay.com.br/TV_CULTURA/index.m3u8",
-        "name": "Fonte 20 (IPTV-ORG)"
-      },
-      {
-        "url": "https://jmp2.uk/plu-62e010e6cd663f0007e57dc8.m3u8",
-        "name": "Fonte 21 (Pluto)"
       }
     ]
   },
@@ -22036,16 +22036,16 @@ export const FALLBACK_CHANNELS: Channel[] = [
     "logo": "",
     "sources": [
       {
-        "url": "http://tv02.logicahost.com.br:1935/pascoal/pascoal/live.m3u8",
-        "name": "Fonte 1 (IPTV-ORG)"
-      },
-      {
         "url": "https://59f2354c05961.streamlock.net:1443/pascoal/_definst_/pascoal/playlist.m3u8",
         "name": "Fonte 2 (IPTV-ORG)"
       },
       {
         "url": "https://59f2354c05961.streamlock.net:1443/pascoal/pascoal/playlist.m3u8",
         "name": "Fonte 3 (IPTV-ORG)"
+      },
+      {
+        "url": "http://tv02.logicahost.com.br:1935/pascoal/pascoal/live.m3u8",
+        "name": "Fonte 1 (IPTV-ORG)"
       }
     ]
   },
@@ -22152,6 +22152,17 @@ export const FALLBACK_CHANNELS: Channel[] = [
     "logo": "https://mondrian.claro.com.br/channels/inverse/tv-gazeta.png",
     "sources": [
       {
+        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzU5MDExLm0zdTg.m3u8",
+        "quality": "HD"
+      },
+      {
+        "url": "https://video08.logicahost.com.br/tvc21/tvc21/chunklist_w930922724.m3u8"
+      },
+      {
+        "url": "https://tv.nuvemplay.live/hls/40gtv/stream.m3u8",
+        "name": "Fonte 9 (IPTV-ORG)"
+      },
+      {
         "url": "http://45.162.64.114/GAZETA/index.m3u8",
         "quality": "FHD · 1920x1080"
       },
@@ -22164,17 +22175,6 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "quality": "FHD · 1920x1080"
       },
       {
-        "url": "http://corruptx.org:80/live/hfp5ejnrey/zq0u3kzads/67852.m3u8",
-        "quality": "HD · 1280x720"
-      },
-      {
-        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzU5MDExLm0zdTg.m3u8",
-        "quality": "HD"
-      },
-      {
-        "url": "https://video08.logicahost.com.br/tvc21/tvc21/chunklist_w930922724.m3u8"
-      },
-      {
         "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/67852.ts",
         "name": "Fonte 7 (Ramys)"
       },
@@ -22183,8 +22183,8 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "name": "Fonte 8 (IPTV-ORG)"
       },
       {
-        "url": "https://tv.nuvemplay.live/hls/40gtv/stream.m3u8",
-        "name": "Fonte 9 (IPTV-ORG)"
+        "url": "http://corruptx.org:80/live/hfp5ejnrey/zq0u3kzads/67852.m3u8",
+        "quality": "HD · 1280x720"
       }
     ]
   },
@@ -22231,12 +22231,12 @@ export const FALLBACK_CHANNELS: Channel[] = [
     "logo": "",
     "sources": [
       {
-        "url": "http://170.84.165.204/Globo_HD/index.m3u8",
-        "name": "Fonte 1 (IPTV-ORG)"
-      },
-      {
         "url": "https://cdn-5.nxplay.com.br/GLOBO_SP_TK/index.m3u8",
         "name": "Fonte 2 (IPTV-ORG)"
+      },
+      {
+        "url": "http://170.84.165.204/Globo_HD/index.m3u8",
+        "name": "Fonte 1 (IPTV-ORG)"
       }
     ]
   },
@@ -22319,6 +22319,10 @@ export const FALLBACK_CHANNELS: Channel[] = [
     "logo": "https://mondrian.claro.com.br/channels/inverse/tv-justica.png",
     "sources": [
       {
+        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzYwNzI2Lm0zdTg.m3u8",
+        "quality": "HD"
+      },
+      {
         "url": "http://45.162.64.114/TV_JUSTICA/index.m3u8",
         "quality": "HD · 1280x720"
       },
@@ -22331,16 +22335,12 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "quality": "HD · 1280x720"
       },
       {
-        "url": "http://corruptx.org:80/live/hfp5ejnrey/zq0u3kzads/69907.m3u8",
-        "quality": "HD · 1280x720"
-      },
-      {
-        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzYwNzI2Lm0zdTg.m3u8",
-        "quality": "HD"
-      },
-      {
         "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/69907.ts",
         "name": "Fonte 6 (Ramys)"
+      },
+      {
+        "url": "http://corruptx.org:80/live/hfp5ejnrey/zq0u3kzads/69907.m3u8",
+        "quality": "HD · 1280x720"
       }
     ]
   },
@@ -22595,6 +22595,10 @@ export const FALLBACK_CHANNELS: Channel[] = [
     "logo": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/brazil/tv-senado-br.png",
     "sources": [
       {
+        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1MDg0Lm0zdTg.m3u8",
+        "quality": "HD"
+      },
+      {
         "url": "http://45.162.64.114/TV_SENADO/index.m3u8",
         "quality": "SD · 718x480"
       },
@@ -22605,14 +22609,6 @@ export const FALLBACK_CHANNELS: Channel[] = [
       {
         "url": "http://170.83.16.50/TV_SENADO/index.m3u8",
         "quality": "HD · 1310x720"
-      },
-      {
-        "url": "http://corruptx.org:80/live/hfp5ejnrey/zq0u3kzads/69027.m3u8",
-        "quality": "HD"
-      },
-      {
-        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1MDg0Lm0zdTg.m3u8",
-        "quality": "HD"
       },
       {
         "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/69027.ts",
@@ -22626,6 +22622,10 @@ export const FALLBACK_CHANNELS: Channel[] = [
       {
         "url": "http://186.219.52.187/tv_senado/index.m3u8",
         "name": "Fonte 8 (IPTV-ORG)"
+      },
+      {
+        "url": "http://corruptx.org:80/live/hfp5ejnrey/zq0u3kzads/69027.m3u8",
+        "quality": "HD"
       }
     ]
   },
@@ -22864,12 +22864,12 @@ export const FALLBACK_CHANNELS: Channel[] = [
     "logo": "http://i.imgur.com/IWGyp65.jpeg",
     "sources": [
       {
-        "url": "http://streaming.procergs.com.br:1935/tve/stve/playlist.m3u8",
-        "quality": "FHD · 1920x1080"
-      },
-      {
         "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvMTQ0NjcyMS5tM3U4.m3u8",
         "quality": "HD"
+      },
+      {
+        "url": "http://streaming.procergs.com.br:1935/tve/stve/playlist.m3u8",
+        "quality": "FHD · 1920x1080"
       }
     ]
   },
@@ -22880,12 +22880,12 @@ export const FALLBACK_CHANNELS: Channel[] = [
     "logo": "",
     "sources": [
       {
-        "url": "http://streaming.procergs.com.br:1935/tve/stve/playlist.m3u8",
-        "name": "Fonte 1 (IPTV-ORG)"
-      },
-      {
         "url": "https://streaming.procergs.com.br:8443/tve/stve/playlist.m3u8",
         "name": "Fonte 2 (IPTV-ORG)"
+      },
+      {
+        "url": "http://streaming.procergs.com.br:1935/tve/stve/playlist.m3u8",
+        "name": "Fonte 1 (IPTV-ORG)"
       }
     ]
   },
@@ -23096,12 +23096,18 @@ export const FALLBACK_CHANNELS: Channel[] = [
     "logo": "https://img.faz-o-eli.online/24h.png",
     "sources": [
       {
-        "url": "http://vivlar.me:80/live/497238/KK8Kdy/137139.m3u8",
-        "quality": "SD · 640x480"
-      },
-      {
         "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/24h_chaves/24h_chaves.m3u8",
         "quality": "Qualidade não informada"
+      },
+      {
+        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/191facaf2db19660ead85260f17833fe/error.txt",
+        "quality": "Qualidade não informada",
+        "referer": "https://w7.embedtv.cc/",
+        "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
+      },
+      {
+        "url": "http://vivlar.me:80/live/497238/KK8Kdy/137139.m3u8",
+        "quality": "SD · 640x480"
       },
       {
         "url": "http://vivlar.me:80/live/497238/KK8Kdy/137140.m3u8",
@@ -23126,12 +23132,6 @@ export const FALLBACK_CHANNELS: Channel[] = [
       {
         "url": "http://vivlar.me:80/live/497238/KK8Kdy/137145.m3u8",
         "quality": "SD · 640x480"
-      },
-      {
-        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/191facaf2db19660ead85260f17833fe/error.txt",
-        "quality": "Qualidade não informada",
-        "referer": "https://w7.embedtv.cc/",
-        "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
       },
       {
         "url": "http://vaiagora.vip:80/live/5q8VUj/5BeUd8/137139.m3u8",
@@ -23178,15 +23178,13 @@ export const FALLBACK_CHANNELS: Channel[] = [
     "logo": "https://img.faz-o-eli.online/24h.png",
     "sources": [
       {
+        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/24h_dragonball/24h_dragonball.m3u8",
+        "quality": "Qualidade não informada"
+      },
+      {
         "url": "https://aws.s13-s1001604.lat/stream/52e5b4e936ba314127ebe4742e6ae12f/24h_dragonball.m3u8",
         "quality": "HD · 1280x720",
         "referer": "https://meufut.top/dragon-ball-z",
-        "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
-      },
-      {
-        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/97b3bd64ce4065d8d841b2172416ff45/error.txt",
-        "quality": "Qualidade não informada",
-        "referer": "https://w7.embedtv.cc/",
         "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
       },
       {
@@ -23196,8 +23194,10 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
       },
       {
-        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/24h_dragonball/24h_dragonball.m3u8",
-        "quality": "Qualidade não informada"
+        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/97b3bd64ce4065d8d841b2172416ff45/error.txt",
+        "quality": "Qualidade não informada",
+        "referer": "https://w7.embedtv.cc/",
+        "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
       },
       {
         "url": "http://corruptx.org:80/live/hfp5ejnrey/zq0u3kzads/1169226.m3u8",
@@ -23212,12 +23212,18 @@ export const FALLBACK_CHANNELS: Channel[] = [
     "logo": "https://img.faz-o-eli.online/24h.png",
     "sources": [
       {
-        "url": "http://vivlar.me:80/live/497238/KK8Kdy/138814.m3u8",
-        "quality": "HD · 1280x720"
-      },
-      {
         "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/24h_friends/24h_friends.m3u8",
         "quality": "Qualidade não informada"
+      },
+      {
+        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/d77b9a31678546e0a1eb70374fbbd805/error.txt",
+        "quality": "Qualidade não informada",
+        "referer": "https://w7.embedtv.cc/",
+        "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
+      },
+      {
+        "url": "http://vivlar.me:80/live/497238/KK8Kdy/138814.m3u8",
+        "quality": "HD · 1280x720"
       },
       {
         "url": "http://vivlar.me:80/live/497238/KK8Kdy/138815.m3u8",
@@ -23254,12 +23260,6 @@ export const FALLBACK_CHANNELS: Channel[] = [
       {
         "url": "http://vivlar.me:80/live/497238/KK8Kdy/138823.m3u8",
         "quality": "HD · 1280x720"
-      },
-      {
-        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/d77b9a31678546e0a1eb70374fbbd805/error.txt",
-        "quality": "Qualidade não informada",
-        "referer": "https://w7.embedtv.cc/",
-        "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
       },
       {
         "url": "http://vaiagora.vip:80/live/5q8VUj/5BeUd8/138814.m3u8",
@@ -23310,7 +23310,17 @@ export const FALLBACK_CHANNELS: Channel[] = [
     "logo": "https://img.faz-o-eli.online/24h.png",
     "sources": [
       {
+        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/24h_simpsons/24h_simpsons.m3u8",
+        "quality": "Qualidade não informada"
+      },
+      {
         "url": "https://aws.s13-s1001604.lat/stream/2efddc40d3e9b9d781d88441ec82e8ce/24h_simpsons.m3u8",
+        "quality": "HD · 1280x720",
+        "referer": "https://meufut.top/os-simpsons",
+        "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
+      },
+      {
+        "url": "https://aws.s13-s1001604.lat/stream/a9b54966fcd76b7b3266654910bb96e0/24h_simpsons.m3u8",
         "quality": "HD · 1280x720",
         "referer": "https://meufut.top/os-simpsons",
         "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
@@ -23324,16 +23334,6 @@ export const FALLBACK_CHANNELS: Channel[] = [
       {
         "url": "http://vivlar.me:80/live/497238/KK8Kdy/135601.m3u8",
         "quality": "HD · 1280x720"
-      },
-      {
-        "url": "https://aws.s13-s1001604.lat/stream/a9b54966fcd76b7b3266654910bb96e0/24h_simpsons.m3u8",
-        "quality": "HD · 1280x720",
-        "referer": "https://meufut.top/os-simpsons",
-        "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
-      },
-      {
-        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/24h_simpsons/24h_simpsons.m3u8",
-        "quality": "Qualidade não informada"
       },
       {
         "url": "http://vivlar.me:80/live/497238/KK8Kdy/135600.m3u8",
@@ -23614,7 +23614,7 @@ export const FALLBACK_CHANNELS: Channel[] = [
     "logo": "https://img.faz-o-eli.online/24h.png",
     "sources": [
       {
-        "url": "http://vivlar.me:80/live/497238/KK8Kdy/136821.m3u8",
+        "url": "http://332nr7hbfu.xyz:80/live/999913/S3CvUB/136821.m3u8",
         "quality": "SD · 640x480"
       },
       {
@@ -23628,11 +23628,11 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
       },
       {
-        "url": "http://vaiagora.vip:80/live/5q8VUj/5BeUd8/136821.m3u8",
+        "url": "http://vivlar.me:80/live/497238/KK8Kdy/136821.m3u8",
         "quality": "SD · 640x480"
       },
       {
-        "url": "http://332nr7hbfu.xyz:80/live/999913/S3CvUB/136821.m3u8",
+        "url": "http://vaiagora.vip:80/live/5q8VUj/5BeUd8/136821.m3u8",
         "quality": "SD · 640x480"
       }
     ]
@@ -23644,14 +23644,14 @@ export const FALLBACK_CHANNELS: Channel[] = [
     "logo": "https://img.faz-o-eli.online/24h.png",
     "sources": [
       {
+        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/24h_odeiachris/24h_odeiachris.m3u8",
+        "quality": "Qualidade não informada"
+      },
+      {
         "url": "https://aws.s13-s1001604.lat/stream/02bde299980d2c1a30e472930d0a76d8/24h_odeiachris.m3u8",
         "quality": "HD · 1280x720",
         "referer": "https://meufut.top/todo-mundo-odeia-o-cris",
         "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
-      },
-      {
-        "url": "http://vivlar.me:80/live/497238/KK8Kdy/135469.m3u8",
-        "quality": "HD · 1280x720"
       },
       {
         "url": "https://aws.s13-s1001604.lat/stream/9c7232930a640d377b286e2bfa30a03e/24h_odeiachris.m3u8",
@@ -23660,8 +23660,14 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
       },
       {
-        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/24h_odeiachris/24h_odeiachris.m3u8",
-        "quality": "Qualidade não informada"
+        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/1830d00b7498222e2b34831696a9869b/error.txt",
+        "quality": "Qualidade não informada",
+        "referer": "https://w7.embedtv.cc/",
+        "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
+      },
+      {
+        "url": "http://vivlar.me:80/live/497238/KK8Kdy/135469.m3u8",
+        "quality": "HD · 1280x720"
       },
       {
         "url": "http://vivlar.me:80/live/497238/KK8Kdy/135470.m3u8",
@@ -23674,12 +23680,6 @@ export const FALLBACK_CHANNELS: Channel[] = [
       {
         "url": "http://vivlar.me:80/live/497238/KK8Kdy/135472.m3u8",
         "quality": "HD · 1280x720"
-      },
-      {
-        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/1830d00b7498222e2b34831696a9869b/error.txt",
-        "quality": "Qualidade não informada",
-        "referer": "https://w7.embedtv.cc/",
-        "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
       },
       {
         "url": "http://vaiagora.vip:80/live/5q8VUj/5BeUd8/135469.m3u8",
@@ -24002,7 +24002,38 @@ export const FALLBACK_CHANNELS: Channel[] = [
     "logo": "https://img.faz-o-eli.online/adultswim.png",
     "sources": [
       {
+        "url": "https://dadinhodetapioca.fun/play/adultswim.html",
+        "quality": "FHD",
+        "referer": "https://dadinhodetapioca.fun/"
+      },
+      {
+        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzQyMDQ5Lm0zdTg.m3u8",
+        "quality": "HD"
+      },
+      {
+        "url": "http://64.31.23.207:80/59471019/60849037/518592.m3u8",
+        "quality": "HD · 1280x720"
+      },
+      {
+        "url": "http://64.31.23.207:80/59471019/60849037/518594.m3u8",
+        "quality": "SD · 768x432"
+      },
+      {
+        "url": "http://45.185.11.126:8000/play/a06m/index.m3u8",
+        "quality": "FHD · 1920x1080"
+      },
+      {
+        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/adultswim/adultswim.m3u8",
+        "quality": "HD · 1280x720"
+      },
+      {
         "url": "https://aws.s13-s1001604.lat/stream/1167fe66d918c2b48a68300d5dd8d4ca/adultswim.m3u8",
+        "quality": "HD · 1280x720",
+        "referer": "https://meufut.top/adultswim",
+        "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
+      },
+      {
+        "url": "https://aws.s13-s1001604.lat/stream/155c57d887e879fa1e273477160c90cc/adultswim.m3u8",
         "quality": "HD · 1280x720",
         "referer": "https://meufut.top/adultswim",
         "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
@@ -24012,29 +24043,6 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "quality": "Qualidade não informada",
         "referer": "https://w7.embedtv.cc/",
         "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
-      },
-      {
-        "url": "https://dadinhodetapioca.fun/play/adultswim.html",
-        "quality": "FHD",
-        "referer": "https://dadinhodetapioca.fun/"
-      },
-      {
-        "url": "https://aws.s13-s1001604.lat/stream/155c57d887e879fa1e273477160c90cc/adultswim.m3u8",
-        "quality": "HD · 1280x720",
-        "referer": "https://meufut.top/adultswim",
-        "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
-      },
-      {
-        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/adultswim/adultswim.m3u8",
-        "quality": "HD · 1280x720"
-      },
-      {
-        "url": "http://64.31.23.207:80/59471019/60849037/518592.m3u8",
-        "quality": "HD · 1280x720"
-      },
-      {
-        "url": "http://64.31.23.207:80/59471019/60849037/518594.m3u8",
-        "quality": "SD · 768x432"
       },
       {
         "url": "http://vaiagora.vip:80/live/5q8VUj/5BeUd8/251957.m3u8",
@@ -24075,14 +24083,6 @@ export const FALLBACK_CHANNELS: Channel[] = [
       {
         "url": "http://vivlar.me:80/live/497238/KK8Kdy/251961.m3u8",
         "quality": "FHD · 1920x1080"
-      },
-      {
-        "url": "http://45.185.11.126:8000/play/a06m/index.m3u8",
-        "quality": "FHD · 1920x1080"
-      },
-      {
-        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzQyMDQ5Lm0zdTg.m3u8",
-        "quality": "HD"
       }
     ]
   },
@@ -24092,6 +24092,14 @@ export const FALLBACK_CHANNELS: Channel[] = [
     "category": "Variedades",
     "logo": "https://img.faz-o-eli.online/24h.png",
     "sources": [
+      {
+        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL3BhbGRpLnBybzo4MC9saXZlL3RvbmluaG8wMi9DYjQ5ODAzNy8xNTA0ODgubTN1OA.m3u8",
+        "quality": "Qualidade não informada"
+      },
+      {
+        "url": "http://64.31.23.207:80/59471019/60849037/2945300.m3u8",
+        "quality": "HD · 1280x720"
+      },
       {
         "url": "http://vivlar.me:80/live/497238/KK8Kdy/150488.m3u8",
         "quality": "HD · 1280x720"
@@ -24103,14 +24111,6 @@ export const FALLBACK_CHANNELS: Channel[] = [
       {
         "url": "http://vivlar.me:80/live/497238/KK8Kdy/150490.m3u8",
         "quality": "HD · 1280x720"
-      },
-      {
-        "url": "http://64.31.23.207:80/59471019/60849037/2945300.m3u8",
-        "quality": "HD · 1280x720"
-      },
-      {
-        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL3BhbGRpLnBybzo4MC9saXZlL3RvbmluaG8wMi9DYjQ5ODAzNy8xNTA0ODgubTN1OA.m3u8",
-        "quality": "Qualidade não informada"
       },
       {
         "url": "http://vaiagora.vip:80/live/5q8VUj/5BeUd8/150488.m3u8",
@@ -24133,20 +24133,8 @@ export const FALLBACK_CHANNELS: Channel[] = [
     "logo": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/brazil/agro-mais-br.png",
     "sources": [
       {
-        "url": "http://45.162.64.114/AGROMAIS/index.m3u8",
-        "quality": "HD · 1280x720"
-      },
-      {
         "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL3BhbGRpLnBybzo4MC9saXZlL3RvbmluaG8wMi9DYjQ5ODAzNy83MTc2NC5tM3U4.m3u8",
         "quality": "FHD"
-      },
-      {
-        "url": "http://45.177.114.115/agromais/index.m3u8",
-        "quality": "FHD · 1920x1080"
-      },
-      {
-        "url": "http://45.177.114.115/AGROMAIS_HD/index.m3u8",
-        "quality": "FHD · 1920x1080"
       },
       {
         "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL3BhbGRpLnBybzo4MC9saXZlL3RvbmluaG8wMi9DYjQ5ODAzNy8xMDM1MzIubTN1OA.m3u8",
@@ -24159,6 +24147,22 @@ export const FALLBACK_CHANNELS: Channel[] = [
       {
         "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL3BhbGRpLnBybzo4MC9saXZlL3RvbmluaG8wMi9DYjQ5ODAzNy83MTc2Ny5tM3U4.m3u8",
         "quality": "SD"
+      },
+      {
+        "url": "http://45.162.64.114/AGROMAIS/index.m3u8",
+        "quality": "HD · 1280x720"
+      },
+      {
+        "url": "http://45.177.114.115/agromais/index.m3u8",
+        "quality": "FHD · 1920x1080"
+      },
+      {
+        "url": "http://45.177.114.115/AGROMAIS_HD/index.m3u8",
+        "quality": "FHD · 1920x1080"
+      },
+      {
+        "url": "http://332nr7hbfu.xyz:80/live/999913/S3CvUB/71764.m3u8",
+        "quality": "FHD · 1920x1080"
       },
       {
         "url": "http://vaiagora.vip:80/live/5q8VUj/5BeUd8/71764.m3u8",
@@ -24191,10 +24195,6 @@ export const FALLBACK_CHANNELS: Channel[] = [
       {
         "url": "http://vivlar.me:80/live/497238/KK8Kdy/71767.m3u8",
         "quality": "SD"
-      },
-      {
-        "url": "http://332nr7hbfu.xyz:80/live/999913/S3CvUB/71764.m3u8",
-        "quality": "FHD · 1920x1080"
       }
     ]
   },
@@ -24389,6 +24389,10 @@ export const FALLBACK_CHANNELS: Channel[] = [
     "logo": "https://mondrian.claro.com.br/channels/inverse/arte1.png",
     "sources": [
       {
+        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvMTQ1NDM3Mi5tM3U4.m3u8",
+        "quality": "HD"
+      },
+      {
         "url": "http://45.162.64.114/ARTE1/index.m3u8",
         "quality": "HD · 1280x720"
       },
@@ -24399,6 +24403,24 @@ export const FALLBACK_CHANNELS: Channel[] = [
       {
         "url": "http://168.197.104.22/ARTE1/index.m3u8",
         "quality": "HD · 1280x720"
+      },
+      {
+        "url": "http://332nr7hbfu.xyz:80/live/999913/S3CvUB/71777.m3u8",
+        "quality": "HD · 1280x720"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/67511.ts",
+        "name": "Fonte 18 (Ramys)",
+        "quality": "720p HD"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/67512.ts",
+        "name": "Fonte 19 (Ramys)",
+        "quality": "1080p FHD"
+      },
+      {
+        "url": "http://170.83.16.50/ARTE_1/index.m3u8",
+        "name": "Fonte 20 (IPTV-ORG)"
       },
       {
         "url": "http://vaiagora.vip:80/live/5q8VUj/5BeUd8/103531.m3u8",
@@ -24447,28 +24469,6 @@ export const FALLBACK_CHANNELS: Channel[] = [
       {
         "url": "http://corruptx.org:80/live/hfp5ejnrey/zq0u3kzads/67512.m3u8",
         "quality": "FHD"
-      },
-      {
-        "url": "http://332nr7hbfu.xyz:80/live/999913/S3CvUB/71777.m3u8",
-        "quality": "HD · 1280x720"
-      },
-      {
-        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvMTQ1NDM3Mi5tM3U4.m3u8",
-        "quality": "HD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/67511.ts",
-        "name": "Fonte 18 (Ramys)",
-        "quality": "720p HD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/67512.ts",
-        "name": "Fonte 19 (Ramys)",
-        "quality": "1080p FHD"
-      },
-      {
-        "url": "http://170.83.16.50/ARTE_1/index.m3u8",
-        "name": "Fonte 20 (IPTV-ORG)"
       }
     ]
   },
@@ -24764,12 +24764,43 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "quality": "FHD"
       },
       {
+        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1MDkxLm0zdTg.m3u8",
+        "quality": "HD"
+      },
+      {
+        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1MDkyLm0zdTg.m3u8",
+        "quality": "SD"
+      },
+      {
         "url": "http://64.31.23.207:80/59471019/60849037/518551.m3u8",
         "quality": "HD · 1280x720"
       },
       {
         "url": "http://64.31.23.207:80/59471019/60849037/518552.m3u8",
         "quality": "SD · 960x540"
+      },
+      {
+        "url": "http://45.185.11.126:8000/play/a07w/index.m3u8",
+        "quality": "FHD · 1920x1080"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/107985.ts",
+        "name": "Fonte 21 (Ramys)",
+        "quality": "1080p FHD"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/13502.ts",
+        "name": "Fonte 22 (Ramys)"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/8680.ts",
+        "name": "Fonte 23 (Ramys)",
+        "quality": "1080p FHD"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/8681.ts",
+        "name": "Fonte 24 (Ramys)",
+        "quality": "720p HD"
       },
       {
         "url": "http://vaiagora.vip:80/live/5q8VUj/5BeUd8/103527.m3u8",
@@ -24826,37 +24857,6 @@ export const FALLBACK_CHANNELS: Channel[] = [
       {
         "url": "http://corruptx.org:80/live/hfp5ejnrey/zq0u3kzads/8681.m3u8",
         "quality": "HD"
-      },
-      {
-        "url": "http://45.185.11.126:8000/play/a07w/index.m3u8",
-        "quality": "FHD · 1920x1080"
-      },
-      {
-        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1MDkxLm0zdTg.m3u8",
-        "quality": "HD"
-      },
-      {
-        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1MDkyLm0zdTg.m3u8",
-        "quality": "SD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/107985.ts",
-        "name": "Fonte 21 (Ramys)",
-        "quality": "1080p FHD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/13502.ts",
-        "name": "Fonte 22 (Ramys)"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/8680.ts",
-        "name": "Fonte 23 (Ramys)",
-        "quality": "1080p FHD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/8681.ts",
-        "name": "Fonte 24 (Ramys)",
-        "quality": "720p HD"
       }
     ]
   },
@@ -24878,6 +24878,14 @@ export const FALLBACK_CHANNELS: Channel[] = [
     "category": "Variedades",
     "logo": "https://images.pluto.tv/channels/62545c0b002f4b0007688b61/colorLogoPNG.png",
     "sources": [
+      {
+        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL3BhbGRpLnBybzo4MC9saXZlL3RvbmluaG8wMi9DYjQ5ODAzNy8xMzgwNjUubTN1OA.m3u8",
+        "quality": "Qualidade não informada"
+      },
+      {
+        "url": "https://jmp2.uk/plu-62545c0b002f4b0007688b61.m3u8",
+        "quality": "HD · 1280x720"
+      },
       {
         "url": "http://vivlar.me:80/live/497238/KK8Kdy/138065.m3u8",
         "quality": "HD · 1280x962"
@@ -24921,14 +24929,6 @@ export const FALLBACK_CHANNELS: Channel[] = [
       {
         "url": "http://vivlar.me:80/live/497238/KK8Kdy/138075.m3u8",
         "quality": "HD · 1280x720"
-      },
-      {
-        "url": "https://jmp2.uk/plu-62545c0b002f4b0007688b61.m3u8",
-        "quality": "HD · 1280x720"
-      },
-      {
-        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL3BhbGRpLnBybzo4MC9saXZlL3RvbmluaG8wMi9DYjQ5ODAzNy8xMzgwNjUubTN1OA.m3u8",
-        "quality": "Qualidade não informada"
       },
       {
         "url": "http://vaiagora.vip:80/live/5q8VUj/5BeUd8/138065.m3u8",
@@ -25047,11 +25047,11 @@ export const FALLBACK_CHANNELS: Channel[] = [
     "logo": "",
     "sources": [
       {
-        "url": "http://45.162.64.114/AGRO_CANAL/index.m3u8",
+        "url": "https://aovivo.equipea.com.br:5443/aovivort/streams/pshRLrnv6isXq7RG4747567774043229.m3u8",
         "quality": "HD · 1280x720"
       },
       {
-        "url": "https://aovivo.equipea.com.br:5443/aovivort/streams/pshRLrnv6isXq7RG4747567774043229.m3u8",
+        "url": "http://45.162.64.114/AGRO_CANAL/index.m3u8",
         "quality": "HD · 1280x720"
       },
       {
@@ -25067,6 +25067,10 @@ export const FALLBACK_CHANNELS: Channel[] = [
     "logo": "https://i.imgur.com/pVM5MhS.png",
     "sources": [
       {
+        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1MDYzLm0zdTg.m3u8",
+        "quality": "HD"
+      },
+      {
         "url": "http://45.162.64.114/CANAL_DO_BOI/index.m3u8",
         "quality": "HD · 1280x720"
       },
@@ -25077,6 +25081,22 @@ export const FALLBACK_CHANNELS: Channel[] = [
       {
         "url": "http://170.83.16.50/CANAL_DO_BOI/index.m3u8",
         "quality": "HD · 1280x720"
+      },
+      {
+        "url": "http://332nr7hbfu.xyz:80/live/999913/S3CvUB/71820.m3u8",
+        "quality": "FHD · 1920x1080"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/89852.ts",
+        "name": "Fonte 12 (Ramys)"
+      },
+      {
+        "url": "http://170.83.49.66:8083/CANALDOBOIHD/index.m3u8",
+        "name": "Fonte 13 (IPTV-ORG)"
+      },
+      {
+        "url": "http://186.219.52.187/canal_do_boi/index.m3u8",
+        "name": "Fonte 14 (IPTV-ORG)"
       },
       {
         "url": "http://vaiagora.vip:80/live/5q8VUj/5BeUd8/71820.m3u8",
@@ -25101,26 +25121,6 @@ export const FALLBACK_CHANNELS: Channel[] = [
       {
         "url": "http://corruptx.org:80/live/hfp5ejnrey/zq0u3kzads/89852.m3u8",
         "quality": "SD · 852x480"
-      },
-      {
-        "url": "http://332nr7hbfu.xyz:80/live/999913/S3CvUB/71820.m3u8",
-        "quality": "FHD · 1920x1080"
-      },
-      {
-        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1MDYzLm0zdTg.m3u8",
-        "quality": "HD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/89852.ts",
-        "name": "Fonte 12 (Ramys)"
-      },
-      {
-        "url": "http://170.83.49.66:8083/CANALDOBOIHD/index.m3u8",
-        "name": "Fonte 13 (IPTV-ORG)"
-      },
-      {
-        "url": "http://186.219.52.187/canal_do_boi/index.m3u8",
-        "name": "Fonte 14 (IPTV-ORG)"
       }
     ]
   },
@@ -25131,12 +25131,20 @@ export const FALLBACK_CHANNELS: Channel[] = [
     "logo": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/brazil/canal-rural-br.png",
     "sources": [
       {
+        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1MDY0Lm0zdTg.m3u8",
+        "quality": "HD"
+      },
+      {
         "url": "http://170.83.49.66:8083/CANALRURALHD/index.m3u8",
         "quality": "HD · 1280x720"
       },
       {
         "url": "http://186.219.52.187/canal_rural/index.m3u8",
         "quality": "HD · 1280x720"
+      },
+      {
+        "url": "http://332nr7hbfu.xyz:80/live/999913/S3CvUB/178512.m3u8",
+        "quality": "FHD · 1920x1080"
       },
       {
         "url": "http://vaiagora.vip:80/live/5q8VUj/5BeUd8/178516.m3u8",
@@ -25185,14 +25193,6 @@ export const FALLBACK_CHANNELS: Channel[] = [
       {
         "url": "http://vivlar.me:80/live/497238/KK8Kdy/178514.m3u8",
         "quality": "SD"
-      },
-      {
-        "url": "http://332nr7hbfu.xyz:80/live/999913/S3CvUB/178512.m3u8",
-        "quality": "FHD · 1920x1080"
-      },
-      {
-        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1MDY0Lm0zdTg.m3u8",
-        "quality": "HD"
       }
     ]
   },
@@ -25918,6 +25918,10 @@ export const FALLBACK_CHANNELS: Channel[] = [
     "logo": "https://mondrian.claro.com.br/channels/inverse/dog-tv.png",
     "sources": [
       {
+        "url": "http://332nr7hbfu.xyz:80/live/999913/S3CvUB/76922.m3u8",
+        "quality": "FHD · 1920x1080"
+      },
+      {
         "url": "http://vaiagora.vip:80/live/5q8VUj/5BeUd8/178517.m3u8",
         "quality": "4K"
       },
@@ -25952,10 +25956,6 @@ export const FALLBACK_CHANNELS: Channel[] = [
       {
         "url": "http://vivlar.me:80/live/497238/KK8Kdy/104908.m3u8",
         "quality": "SD"
-      },
-      {
-        "url": "http://332nr7hbfu.xyz:80/live/999913/S3CvUB/76922.m3u8",
-        "quality": "FHD · 1920x1080"
       }
     ]
   },
@@ -26202,6 +26202,14 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "quality": "FHD"
       },
       {
+        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1MDk5Lm0zdTg.m3u8",
+        "quality": "HD"
+      },
+      {
+        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1MTAwLm0zdTg.m3u8",
+        "quality": "SD"
+      },
+      {
         "url": "https://video49.mais.uol.com.br/live/4503.mpd",
         "quality": "Qualidade não informada"
       },
@@ -26216,6 +26224,10 @@ export const FALLBACK_CHANNELS: Channel[] = [
       {
         "url": "http://64.31.23.207:80/59471019/60849037/518561.m3u8",
         "quality": "HD · 1280x720"
+      },
+      {
+        "url": "http://332nr7hbfu.xyz:80/live/999913/S3CvUB/103506.m3u8",
+        "quality": "FHD · 1920x1080"
       },
       {
         "url": "http://vaiagora.vip:80/live/5q8VUj/5BeUd8/103506.m3u8",
@@ -26264,18 +26276,6 @@ export const FALLBACK_CHANNELS: Channel[] = [
       {
         "url": "http://corruptx.org:80/live/hfp5ejnrey/zq0u3kzads/8783.m3u8",
         "quality": "HD"
-      },
-      {
-        "url": "http://332nr7hbfu.xyz:80/live/999913/S3CvUB/103506.m3u8",
-        "quality": "FHD · 1920x1080"
-      },
-      {
-        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1MDk5Lm0zdTg.m3u8",
-        "quality": "HD"
-      },
-      {
-        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1MTAwLm0zdTg.m3u8",
-        "quality": "SD"
       }
     ]
   },
@@ -26747,6 +26747,14 @@ export const FALLBACK_CHANNELS: Channel[] = [
     "logo": "https://i.imgur.com/1jtRh4S.png",
     "sources": [
       {
+        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzYwNzA3Lm0zdTg.m3u8",
+        "quality": "HD"
+      },
+      {
+        "url": "http://332nr7hbfu.xyz:80/live/999913/S3CvUB/71924.m3u8",
+        "quality": "FHD · 1920x1080"
+      },
+      {
         "url": "http://vaiagora.vip:80/live/5q8VUj/5BeUd8/103503.m3u8",
         "quality": "4K"
       },
@@ -26781,14 +26789,6 @@ export const FALLBACK_CHANNELS: Channel[] = [
       {
         "url": "http://vivlar.me:80/live/497238/KK8Kdy/71927.m3u8",
         "quality": "SD"
-      },
-      {
-        "url": "http://332nr7hbfu.xyz:80/live/999913/S3CvUB/71924.m3u8",
-        "quality": "FHD · 1920x1080"
-      },
-      {
-        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzYwNzA3Lm0zdTg.m3u8",
-        "quality": "HD"
       }
     ]
   },
@@ -26883,15 +26883,53 @@ export const FALLBACK_CHANNELS: Channel[] = [
     "logo": "https://img.faz-o-eli.online/foodnetwork.png",
     "sources": [
       {
+        "url": "https://dadinhodetapioca.fun/play/foodnetwork.html",
+        "quality": "FHD",
+        "referer": "https://dadinhodetapioca.fun/"
+      },
+      {
+        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1MTA2Lm0zdTg.m3u8",
+        "quality": "FHD"
+      },
+      {
+        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1MTA3Lm0zdTg.m3u8",
+        "quality": "HD"
+      },
+      {
+        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1MTA4Lm0zdTg.m3u8",
+        "quality": "SD"
+      },
+      {
+        "url": "http://64.31.23.207:80/59471019/60849037/518566.m3u8",
+        "quality": "HD · 1280x720"
+      },
+      {
+        "url": "http://64.31.23.207:80/59471019/60849037/518567.m3u8",
+        "quality": "SD · 768x432"
+      },
+      {
+        "url": "http://45.185.11.126:8000/play/a06j/index.m3u8",
+        "quality": "FHD · 1920x1080"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/8811.ts",
+        "name": "Fonte 25 (Ramys)",
+        "quality": "1080p FHD"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/8810.ts",
+        "name": "Fonte 26 (Ramys)",
+        "quality": "720p HD"
+      },
+      {
+        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/foodnetwork/foodnetwork.m3u8",
+        "quality": "HD · 1280x720"
+      },
+      {
         "url": "https://aws.s13-s1001604.lat/stream/1cabec2a5257e1af7f711a4c7fd32a1e/foodnetwork.m3u8",
         "quality": "HD · 1280x720",
         "referer": "https://meufut.top/foodnetwork",
         "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
-      },
-      {
-        "url": "https://dadinhodetapioca.fun/play/foodnetwork.html",
-        "quality": "FHD",
-        "referer": "https://dadinhodetapioca.fun/"
       },
       {
         "url": "https://aws.s13-s1001604.lat/stream/8975189bb51c75df99a767cdecf542d0/foodnetwork.m3u8",
@@ -26904,22 +26942,6 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "quality": "Qualidade não informada",
         "referer": "https://w7.embedtv.cc/",
         "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
-      },
-      {
-        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/foodnetwork/foodnetwork.m3u8",
-        "quality": "HD · 1280x720"
-      },
-      {
-        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1MTA2Lm0zdTg.m3u8",
-        "quality": "FHD"
-      },
-      {
-        "url": "http://64.31.23.207:80/59471019/60849037/518566.m3u8",
-        "quality": "HD · 1280x720"
-      },
-      {
-        "url": "http://64.31.23.207:80/59471019/60849037/518567.m3u8",
-        "quality": "SD · 768x432"
       },
       {
         "url": "http://vaiagora.vip:80/live/5q8VUj/5BeUd8/103501.m3u8",
@@ -26972,28 +26994,6 @@ export const FALLBACK_CHANNELS: Channel[] = [
       {
         "url": "http://corruptx.org:80/live/hfp5ejnrey/zq0u3kzads/8810.m3u8",
         "quality": "HD"
-      },
-      {
-        "url": "http://45.185.11.126:8000/play/a06j/index.m3u8",
-        "quality": "FHD · 1920x1080"
-      },
-      {
-        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1MTA3Lm0zdTg.m3u8",
-        "quality": "HD"
-      },
-      {
-        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1MTA4Lm0zdTg.m3u8",
-        "quality": "SD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/8811.ts",
-        "name": "Fonte 25 (Ramys)",
-        "quality": "1080p FHD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/8810.ts",
-        "name": "Fonte 26 (Ramys)",
-        "quality": "720p HD"
       }
     ]
   },
@@ -27280,21 +27280,16 @@ export const FALLBACK_CHANNELS: Channel[] = [
     "logo": "https://img.faz-o-eli.online/gnt.png",
     "sources": [
       {
-        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/384dccb02044b9703602763a4a514e04/error.txt",
-        "quality": "Qualidade não informada",
-        "referer": "https://w7.embedtv.cc/",
-        "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
-      },
-      {
-        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/gnt/gnt.m3u8",
-        "quality": "HD · 1280x720"
-      },
-      {
-        "url": "https://16-5-0-235.sslip.io/gnt/index.m3u8"
-      },
-      {
         "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1MTEwLm0zdTg.m3u8",
         "quality": "FHD"
+      },
+      {
+        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1MTExLm0zdTg.m3u8",
+        "quality": "HD"
+      },
+      {
+        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1MTEyLm0zdTg.m3u8",
+        "quality": "SD"
       },
       {
         "url": "http://79.127.238.228:14402",
@@ -27315,6 +27310,56 @@ export const FALLBACK_CHANNELS: Channel[] = [
       {
         "url": "http://64.31.23.207:80/59471019/60849037/518570.m3u8",
         "quality": "SD · 960x540"
+      },
+      {
+        "url": "http://45.185.11.126:8000/play/a079/index.m3u8",
+        "quality": "FHD · 1920x1080"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/107984.ts",
+        "name": "Fonte 29 (Ramys)",
+        "quality": "1080p FHD"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/13527.ts",
+        "name": "Fonte 30 (Ramys)"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/8891.ts",
+        "name": "Fonte 31 (Ramys)",
+        "quality": "1080p FHD"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/8890.ts",
+        "name": "Fonte 32 (Ramys)",
+        "quality": "720p HD"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/66901.ts",
+        "name": "Fonte 33 (Ramys)",
+        "quality": "720p HD"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/66902.ts",
+        "name": "Fonte 34 (Ramys)",
+        "quality": "720p HD"
+      },
+      {
+        "url": "http://170.82.202.31/GNT/index.m3u8",
+        "name": "Fonte 35 (IPTV-ORG)"
+      },
+      {
+        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/gnt/gnt.m3u8",
+        "quality": "HD · 1280x720"
+      },
+      {
+        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/384dccb02044b9703602763a4a514e04/error.txt",
+        "quality": "Qualidade não informada",
+        "referer": "https://w7.embedtv.cc/",
+        "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
+      },
+      {
+        "url": "https://16-5-0-235.sslip.io/gnt/index.m3u8"
       },
       {
         "url": "http://vaiagora.vip:80/live/5q8VUj/5BeUd8/90638.m3u8",
@@ -27379,51 +27424,6 @@ export const FALLBACK_CHANNELS: Channel[] = [
       {
         "url": "http://corruptx.org:80/live/hfp5ejnrey/zq0u3kzads/66902.m3u8",
         "quality": "HD"
-      },
-      {
-        "url": "http://45.185.11.126:8000/play/a079/index.m3u8",
-        "quality": "FHD · 1920x1080"
-      },
-      {
-        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1MTExLm0zdTg.m3u8",
-        "quality": "HD"
-      },
-      {
-        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1MTEyLm0zdTg.m3u8",
-        "quality": "SD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/107984.ts",
-        "name": "Fonte 29 (Ramys)",
-        "quality": "1080p FHD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/13527.ts",
-        "name": "Fonte 30 (Ramys)"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/8891.ts",
-        "name": "Fonte 31 (Ramys)",
-        "quality": "1080p FHD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/8890.ts",
-        "name": "Fonte 32 (Ramys)",
-        "quality": "720p HD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/66901.ts",
-        "name": "Fonte 33 (Ramys)",
-        "quality": "720p HD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/66902.ts",
-        "name": "Fonte 34 (Ramys)",
-        "quality": "720p HD"
-      },
-      {
-        "url": "http://170.82.202.31/GNT/index.m3u8",
-        "name": "Fonte 35 (IPTV-ORG)"
       }
     ]
   },
@@ -27510,15 +27510,50 @@ export const FALLBACK_CHANNELS: Channel[] = [
     "logo": "https://img.faz-o-eli.online/hgtv.png",
     "sources": [
       {
+        "url": "https://dadinhodetapioca.fun/play/hgtv.html",
+        "quality": "FHD",
+        "referer": "https://dadinhodetapioca.fun/"
+      },
+      {
+        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1MDQ2Lm0zdTg.m3u8",
+        "quality": "FHD"
+      },
+      {
+        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1MDQ3Lm0zdTg.m3u8",
+        "quality": "HD"
+      },
+      {
+        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1MDQ4Lm0zdTg.m3u8",
+        "quality": "SD"
+      },
+      {
+        "url": "http://332nr7hbfu.xyz:80/live/999913/S3CvUB/72142.m3u8",
+        "quality": "FHD · 1920x1080"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/304506.ts",
+        "name": "Fonte 23 (Ramys)",
+        "quality": "1080p FHD"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/304507.ts",
+        "name": "Fonte 24 (Ramys)",
+        "quality": "1080p FHD"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/304508.ts",
+        "name": "Fonte 25 (Ramys)",
+        "quality": "720p HD"
+      },
+      {
+        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/hgtv/hgtv.m3u8",
+        "quality": "Qualidade não informada"
+      },
+      {
         "url": "https://aws.s13-s1001604.lat/stream/83388f6af00a1e30e6a19d56af52fd76/hgtv.m3u8",
         "quality": "HD · 1280x720",
         "referer": "https://meufut.top/hgtv",
         "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
-      },
-      {
-        "url": "https://dadinhodetapioca.fun/play/hgtv.html",
-        "quality": "FHD",
-        "referer": "https://dadinhodetapioca.fun/"
       },
       {
         "url": "https://aws.s13-s1001604.lat/stream/0b7ed4f2d49df88f285464007159254d/hgtv.m3u8",
@@ -27531,14 +27566,6 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "quality": "Qualidade não informada",
         "referer": "https://w7.embedtv.cc/",
         "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
-      },
-      {
-        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/hgtv/hgtv.m3u8",
-        "quality": "Qualidade não informada"
-      },
-      {
-        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1MDQ2Lm0zdTg.m3u8",
-        "quality": "FHD"
       },
       {
         "url": "http://vaiagora.vip:80/live/5q8VUj/5BeUd8/103493.m3u8",
@@ -27591,33 +27618,6 @@ export const FALLBACK_CHANNELS: Channel[] = [
       {
         "url": "http://corruptx.org:80/live/hfp5ejnrey/zq0u3kzads/304508.m3u8",
         "quality": "HD"
-      },
-      {
-        "url": "http://332nr7hbfu.xyz:80/live/999913/S3CvUB/72142.m3u8",
-        "quality": "FHD · 1920x1080"
-      },
-      {
-        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1MDQ3Lm0zdTg.m3u8",
-        "quality": "HD"
-      },
-      {
-        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1MDQ4Lm0zdTg.m3u8",
-        "quality": "SD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/304506.ts",
-        "name": "Fonte 23 (Ramys)",
-        "quality": "1080p FHD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/304507.ts",
-        "name": "Fonte 24 (Ramys)",
-        "quality": "1080p FHD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/304508.ts",
-        "name": "Fonte 25 (Ramys)",
-        "quality": "720p HD"
       }
     ]
   },
@@ -28776,6 +28776,10 @@ export const FALLBACK_CHANNELS: Channel[] = [
     "logo": "https://mondrian.claro.com.br/channels/inverse/markket.png",
     "sources": [
       {
+        "url": "http://332nr7hbfu.xyz:80/live/999913/S3CvUB/164030.m3u8",
+        "quality": "FHD · 1920x1080"
+      },
+      {
         "url": "http://vaiagora.vip:80/live/5q8VUj/5BeUd8/164026.m3u8",
         "quality": "4K"
       },
@@ -28814,10 +28818,6 @@ export const FALLBACK_CHANNELS: Channel[] = [
       {
         "url": "http://vivlar.me:80/live/497238/KK8Kdy/164027.m3u8",
         "quality": "FHD"
-      },
-      {
-        "url": "http://332nr7hbfu.xyz:80/live/999913/S3CvUB/164030.m3u8",
-        "quality": "FHD · 1920x1080"
       }
     ]
   },
@@ -28831,12 +28831,12 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "https://amg00627-amg00627c9-runtime-latam-2613.playouts.now.amagi.tv/ts-us-w2-n1/playlist/amg00627-banijayfast-masterchefbrazil-runtimelatam/cb543d167c6c618784cb3760cef342a0f94b1fde1d6988693eb5518975d1073edce2a59caa08ff16388f1ede7f0a66413a3e951fda77118fd87eb141453c5728cfffe729a2c05616b7db083429b56a062a866a68ac39437ed0e21f48a238b6720a5aa82a66443d80b846ac7352db80148b61299bce8c37683f03409a5e5afba358b38ab50a5ad969a1af1c56953145f59647c0dd4ebdd4d20883448e7fa7099c93a68ace42d381c77efc02b036510f7a2fc98528cbfbb5d7b0eb01b321c2493c7c77d4e1f5dc5c3d9c4e4f2e8095a98c448fdd4a1447fb0d04b4158c47c411876eb800a4e034d1c52c03f0204bcef7f8a228e0d5a19ff73a71c90e6a7e5bbc011eaac66e1174c86298122a2d9cf28173eea645c7e673d5e62e7559b158362bb90a43b810f4f8fc9ba8aec6bf9d083f4209079454a19b22e828d24798cf062d5377e3ccf048e989c3573c6e4ec9d5108453538ed28587d019288a4e2f1ab930970b5e2cfb3d622ab176b9826a38c0662b952531fe6f308269f5ac63a0f48cab556df596ec6acb42c3f94adeff09ac2d1b5c01b8fd651f66446fdfe36342612c930bb49d9aaf274933edf1ccecc91c6d546e59015acbc7e377d4df957953468f03683006657dfc33df67db0f5e136e984ea1cb2740c5577163b6dd703733419fcba38e94d9cc50c716fec6fe2b20285665a9496b036ad4b3cd14bd0f42707e52971c262499024949fe9ad9effad13a9b7c05109ca8a6054b0f3f8d3f8d662d6d5d57dc5c82626e/145/1920x1080_6046040/index.m3u8"
       },
       {
-        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/masterchef/masterchef.m3u8",
-        "quality": "Qualidade não informada"
-      },
-      {
         "url": "https://jmp2.uk/plu-6077045b6031bd00078de127.m3u8",
         "name": "Fonte 3 (Pluto)"
+      },
+      {
+        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/masterchef/masterchef.m3u8",
+        "quality": "Qualidade não informada"
       }
     ]
   },
@@ -29071,12 +29071,34 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "quality": "FHD"
       },
       {
+        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1MTE5Lm0zdTg.m3u8",
+        "quality": "HD"
+      },
+      {
+        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1MTIwLm0zdTg.m3u8",
+        "quality": "SD"
+      },
+      {
         "url": "http://64.31.23.207:80/59471019/60849037/518575.m3u8",
         "quality": "HD · 1280x720"
       },
       {
         "url": "http://64.31.23.207:80/59471019/60849037/518576.m3u8",
         "quality": "SD · 960x540"
+      },
+      {
+        "url": "http://332nr7hbfu.xyz:80/live/999913/S3CvUB/72164.m3u8",
+        "quality": "HD · 1280x720"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/8883.ts",
+        "name": "Fonte 18 (Ramys)",
+        "quality": "1080p FHD"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/92649.ts",
+        "name": "Fonte 19 (Ramys)",
+        "quality": "720p HD"
       },
       {
         "url": "http://vaiagora.vip:80/live/5q8VUj/5BeUd8/103488.m3u8",
@@ -29121,28 +29143,6 @@ export const FALLBACK_CHANNELS: Channel[] = [
       {
         "url": "http://corruptx.org:80/live/hfp5ejnrey/zq0u3kzads/92649.m3u8",
         "quality": "HD"
-      },
-      {
-        "url": "http://332nr7hbfu.xyz:80/live/999913/S3CvUB/72164.m3u8",
-        "quality": "HD · 1280x720"
-      },
-      {
-        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1MTE5Lm0zdTg.m3u8",
-        "quality": "HD"
-      },
-      {
-        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1MTIwLm0zdTg.m3u8",
-        "quality": "SD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/8883.ts",
-        "name": "Fonte 18 (Ramys)",
-        "quality": "1080p FHD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/92649.ts",
-        "name": "Fonte 19 (Ramys)",
-        "quality": "720p HD"
       }
     ]
   },
@@ -30451,6 +30451,10 @@ export const FALLBACK_CHANNELS: Channel[] = [
     "logo": "https://img.faz-o-eli.online/primeboxbrazil.png",
     "sources": [
       {
+        "url": "http://332nr7hbfu.xyz:80/live/999913/S3CvUB/72269.m3u8",
+        "quality": "HD · 1280x720"
+      },
+      {
         "url": "http://vaiagora.vip:80/live/5q8VUj/5BeUd8/103476.m3u8",
         "quality": "4K"
       },
@@ -30481,10 +30485,6 @@ export const FALLBACK_CHANNELS: Channel[] = [
       {
         "url": "http://vivlar.me:80/live/497238/KK8Kdy/72270.m3u8",
         "quality": "SD"
-      },
-      {
-        "url": "http://332nr7hbfu.xyz:80/live/999913/S3CvUB/72269.m3u8",
-        "quality": "HD · 1280x720"
       }
     ]
   },
@@ -30803,6 +30803,10 @@ export const FALLBACK_CHANNELS: Channel[] = [
     "logo": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/brazil/rede-gospel-br.png",
     "sources": [
       {
+        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvMjEzNDk4Mi5tM3U4.m3u8",
+        "quality": "HD"
+      },
+      {
         "url": "https://cdn.live.br1.jmvstream.com/w/LVW-8719/LVW8719_AcLVAxWy5J/playlist.m3u8",
         "quality": "HD · 1280x720"
       },
@@ -30813,6 +30817,15 @@ export const FALLBACK_CHANNELS: Channel[] = [
       {
         "url": "http://45.177.114.115/REDE_GOSPEL/index.m3u8",
         "quality": "HD · 1280x720"
+      },
+      {
+        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/9069.ts",
+        "name": "Fonte 16 (Ramys)",
+        "quality": "1080p FHD"
+      },
+      {
+        "url": "http://170.83.49.66:8083/REDEGOSPELHD/index.m3u8",
+        "name": "Fonte 17 (IPTV-ORG)"
       },
       {
         "url": "http://vaiagora.vip:80/live/5q8VUj/5BeUd8/178531.m3u8",
@@ -30857,19 +30870,6 @@ export const FALLBACK_CHANNELS: Channel[] = [
       {
         "url": "http://corruptx.org:80/live/hfp5ejnrey/zq0u3kzads/9069.m3u8",
         "quality": "FHD"
-      },
-      {
-        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvMjEzNDk4Mi5tM3U4.m3u8",
-        "quality": "HD"
-      },
-      {
-        "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/9069.ts",
-        "name": "Fonte 16 (Ramys)",
-        "quality": "1080p FHD"
-      },
-      {
-        "url": "http://170.83.49.66:8083/REDEGOSPELHD/index.m3u8",
-        "name": "Fonte 17 (IPTV-ORG)"
       }
     ]
   },
@@ -30933,15 +30933,15 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "quality": "FHD · 1920x1080"
       },
       {
+        "url": "https://stream.ecast.com.br/rit-tv/tracks-v1a1/mono.m3u8"
+      },
+      {
         "url": "http://45.177.114.115/RIT_TV/index.m3u8",
         "quality": "HD · 1080x720"
       },
       {
         "url": "http://170.83.49.66:8083/RITHD/index.m3u8",
         "quality": "HD · 1280x720"
-      },
-      {
-        "url": "https://stream.ecast.com.br/rit-tv/tracks-v1a1/mono.m3u8"
       }
     ]
   },
@@ -31100,6 +31100,14 @@ export const FALLBACK_CHANNELS: Channel[] = [
     "logo": "https://mondrian.claro.com.br/channels/inverse/sabor-e-arte.png",
     "sources": [
       {
+        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvMTc1MjMyMC5tM3U4.m3u8",
+        "quality": "HD"
+      },
+      {
+        "url": "http://332nr7hbfu.xyz:80/live/999913/S3CvUB/112016.m3u8",
+        "quality": "HD · 1280x720"
+      },
+      {
         "url": "http://vaiagora.vip:80/live/5q8VUj/5BeUd8/112017.m3u8",
         "quality": "FHD"
       },
@@ -31130,14 +31138,6 @@ export const FALLBACK_CHANNELS: Channel[] = [
       {
         "url": "http://vivlar.me:80/live/497238/KK8Kdy/112015.m3u8",
         "quality": "SD"
-      },
-      {
-        "url": "http://332nr7hbfu.xyz:80/live/999913/S3CvUB/112016.m3u8",
-        "quality": "HD · 1280x720"
-      },
-      {
-        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvMTc1MjMyMC5tM3U4.m3u8",
-        "quality": "HD"
       }
     ]
   },
@@ -32640,12 +32640,12 @@ export const FALLBACK_CHANNELS: Channel[] = [
     "logo": "https://www.tvlogo.org/brazil/terraviva-br.png",
     "sources": [
       {
-        "url": "http://45.162.64.114/TERRAVIVA/index.m3u8",
-        "quality": "HD · 1080x720"
-      },
-      {
         "url": "https://9ada494d.wurl.com/master/f36d25e7e52f1ba8d7e56eb859c636563214f541/TEctYnJfVXBseW5rLU5ld2NvX0hMUw/playlist.m3u8",
         "quality": "HD · 1280x720"
+      },
+      {
+        "url": "http://45.162.64.114/TERRAVIVA/index.m3u8",
+        "quality": "HD · 1080x720"
       },
       {
         "url": "http://45.177.114.115/TERRAVIVA/index.m3u8",
@@ -32821,16 +32821,6 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "referer": "https://dadinhodetapioca.fun/"
       },
       {
-        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/948f4308cc7317ec0f826b1fd26f1afe/error.txt",
-        "quality": "Qualidade não informada",
-        "referer": "https://w7.embedtv.cc/",
-        "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
-      },
-      {
-        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/tlc/tlc.m3u8",
-        "quality": "Qualidade não informada"
-      },
-      {
         "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1MTM4Lm0zdTg.m3u8",
         "quality": "FHD"
       },
@@ -32849,6 +32839,20 @@ export const FALLBACK_CHANNELS: Channel[] = [
       {
         "url": "http://64.31.23.207:80/59471019/60849037/518588.m3u8",
         "quality": "SD · 768x432"
+      },
+      {
+        "url": "http://332nr7hbfu.xyz:80/live/999913/S3CvUB/72371.m3u8",
+        "quality": "FHD · 1920x1080"
+      },
+      {
+        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/tlc/tlc.m3u8",
+        "quality": "Qualidade não informada"
+      },
+      {
+        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/948f4308cc7317ec0f826b1fd26f1afe/error.txt",
+        "quality": "Qualidade não informada",
+        "referer": "https://w7.embedtv.cc/",
+        "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
       },
       {
         "url": "http://vaiagora.vip:80/live/5q8VUj/5BeUd8/103465.m3u8",
@@ -32905,10 +32909,6 @@ export const FALLBACK_CHANNELS: Channel[] = [
       {
         "url": "http://corruptx.org:80/live/hfp5ejnrey/zq0u3kzads/8754.m3u8",
         "quality": "HD"
-      },
-      {
-        "url": "http://332nr7hbfu.xyz:80/live/999913/S3CvUB/72371.m3u8",
-        "quality": "FHD · 1920x1080"
       }
     ]
   },
@@ -33007,12 +33007,12 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "quality": "HD · 1280x720"
       },
       {
-        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL3BhbGRpLnBybzo4MC9saXZlL3RvbmluaG8wMi9DYjQ5ODAzNy83MjM4Ni5tM3U4.m3u8",
-        "quality": "FHD"
-      },
-      {
         "url": "https://cdn-uw2-prod.tsv2.amagi.tv/linear/amg01131-tracetv-tracebrazuca-samsungbr/playlist.m3u8",
         "quality": "Qualidade não informada"
+      },
+      {
+        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL3BhbGRpLnBybzo4MC9saXZlL3RvbmluaG8wMi9DYjQ5ODAzNy83MjM4Ni5tM3U4.m3u8",
+        "quality": "FHD"
       },
       {
         "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL3BhbGRpLnBybzo4MC9saXZlL3RvbmluaG8wMi9DYjQ5ODAzNy8xMDM0NTMubTN1OA.m3u8",
@@ -33025,6 +33025,10 @@ export const FALLBACK_CHANNELS: Channel[] = [
       {
         "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL3BhbGRpLnBybzo4MC9saXZlL3RvbmluaG8wMi9DYjQ5ODAzNy83MjM4OS5tM3U4.m3u8",
         "quality": "SD"
+      },
+      {
+        "url": "http://332nr7hbfu.xyz:80/live/999913/S3CvUB/72386.m3u8",
+        "quality": "FHD · 1920x1080"
       },
       {
         "url": "http://vaiagora.vip:80/live/5q8VUj/5BeUd8/103453.m3u8",
@@ -33065,10 +33069,6 @@ export const FALLBACK_CHANNELS: Channel[] = [
       {
         "url": "http://vivlar.me:80/live/497238/KK8Kdy/72389.m3u8",
         "quality": "SD"
-      },
-      {
-        "url": "http://332nr7hbfu.xyz:80/live/999913/S3CvUB/72386.m3u8",
-        "quality": "FHD · 1920x1080"
       }
     ]
   },
@@ -33111,14 +33111,6 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "quality": "FHD"
       },
       {
-        "url": "http://168.197.104.22/TRAVEL_BOX_BRASIL/index.m3u8",
-        "quality": "HD · 1280x720"
-      },
-      {
-        "url": "http://170.83.49.66:8083/TRAVELBOXHD/index.m3u8",
-        "quality": "HD · 1280x720"
-      },
-      {
         "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL3BhbGRpLnBybzo4MC9saXZlL3RvbmluaG8wMi9DYjQ5ODAzNy8xMDM0NTIubTN1OA.m3u8",
         "quality": "4K"
       },
@@ -33129,6 +33121,18 @@ export const FALLBACK_CHANNELS: Channel[] = [
       {
         "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL3BhbGRpLnBybzo4MC9saXZlL3RvbmluaG8wMi9DYjQ5ODAzNy83MjM5My5tM3U4.m3u8",
         "quality": "SD"
+      },
+      {
+        "url": "http://168.197.104.22/TRAVEL_BOX_BRASIL/index.m3u8",
+        "quality": "HD · 1280x720"
+      },
+      {
+        "url": "http://170.83.49.66:8083/TRAVELBOXHD/index.m3u8",
+        "quality": "HD · 1280x720"
+      },
+      {
+        "url": "http://332nr7hbfu.xyz:80/live/999913/S3CvUB/72393.m3u8",
+        "quality": "SD · 852x480"
       },
       {
         "url": "http://vaiagora.vip:80/live/5q8VUj/5BeUd8/72391.m3u8",
@@ -33157,10 +33161,6 @@ export const FALLBACK_CHANNELS: Channel[] = [
       {
         "url": "http://vivlar.me:80/live/497238/KK8Kdy/72393.m3u8",
         "quality": "SD"
-      },
-      {
-        "url": "http://332nr7hbfu.xyz:80/live/999913/S3CvUB/72393.m3u8",
-        "quality": "SD · 852x480"
       }
     ]
   },
@@ -33280,6 +33280,18 @@ export const FALLBACK_CHANNELS: Channel[] = [
     "logo": "https://i.imgur.com/IrYR7Kp.png",
     "sources": [
       {
+        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzQwNTgyLm0zdTg.m3u8",
+        "quality": "HD"
+      },
+      {
+        "url": "https://cdn-tiva-tvevangelizar-brasilstream-com-br.smartbit.co/hls/tvevangelizar/index.m3u8",
+        "name": "Fonte 9 (IPTV-ORG)"
+      },
+      {
+        "url": "https://5f593df7851db.streamlock.net/evangelizar/tv/playlist.m3u8",
+        "name": "Fonte 10 (IPTV-ORG)"
+      },
+      {
         "url": "http://45.162.64.114/EVANGELIZAR/index.m3u8",
         "quality": "HD · 1280x720"
       },
@@ -33290,14 +33302,6 @@ export const FALLBACK_CHANNELS: Channel[] = [
       {
         "url": "http://170.83.16.50/TV_EVANGELIZAR/index.m3u8",
         "quality": "HD · 1280x720"
-      },
-      {
-        "url": "http://corruptx.org:80/live/hfp5ejnrey/zq0u3kzads/69257.m3u8",
-        "quality": "HD"
-      },
-      {
-        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzQwNTgyLm0zdTg.m3u8",
-        "quality": "HD"
       },
       {
         "url": "http://governosptx.org:80/3llohwk4g9/kwf099q30o/69257.ts",
@@ -33313,12 +33317,8 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "name": "Fonte 8 (IPTV-ORG)"
       },
       {
-        "url": "https://cdn-tiva-tvevangelizar-brasilstream-com-br.smartbit.co/hls/tvevangelizar/index.m3u8",
-        "name": "Fonte 9 (IPTV-ORG)"
-      },
-      {
-        "url": "https://5f593df7851db.streamlock.net/evangelizar/tv/playlist.m3u8",
-        "name": "Fonte 10 (IPTV-ORG)"
+        "url": "http://corruptx.org:80/live/hfp5ejnrey/zq0u3kzads/69257.m3u8",
+        "quality": "HD"
       }
     ]
   },
@@ -33401,11 +33401,15 @@ export const FALLBACK_CHANNELS: Channel[] = [
     "logo": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/brazil/novo-tempo-br.png",
     "sources": [
       {
-        "url": "http://45.162.64.114/NOVO_TEMPO/index.m3u8",
-        "quality": "HD · 1280x720"
+        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzQwNTg0Lm0zdTg.m3u8",
+        "quality": "HD"
       },
       {
         "url": "https://streamtv.novotempo.com/CDN-TV-PT/smil:tvnovotempo.smil/playlist.m3u8",
+        "quality": "HD · 1280x720"
+      },
+      {
+        "url": "http://45.162.64.114/NOVO_TEMPO/index.m3u8",
         "quality": "HD · 1280x720"
       },
       {
@@ -33415,6 +33419,10 @@ export const FALLBACK_CHANNELS: Channel[] = [
       {
         "url": "http://186.219.52.187/novo_tempo/index.m3u8",
         "quality": "HD · 1280x720"
+      },
+      {
+        "url": "http://332nr7hbfu.xyz:80/live/999913/S3CvUB/72408.m3u8",
+        "quality": "Qualidade não informada"
       },
       {
         "url": "http://vaiagora.vip:80/live/5q8VUj/5BeUd8/103459.m3u8",
@@ -33455,14 +33463,6 @@ export const FALLBACK_CHANNELS: Channel[] = [
       {
         "url": "http://vivlar.me:80/live/497238/KK8Kdy/72411.m3u8",
         "quality": "SD"
-      },
-      {
-        "url": "http://332nr7hbfu.xyz:80/live/999913/S3CvUB/72408.m3u8",
-        "quality": "Qualidade não informada"
-      },
-      {
-        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzQwNTg0Lm0zdTg.m3u8",
-        "quality": "HD"
       }
     ]
   },
@@ -33473,28 +33473,40 @@ export const FALLBACK_CHANNELS: Channel[] = [
     "logo": "https://img.faz-o-eli.online/tvpaieterno.png",
     "sources": [
       {
+        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzQwNTg2Lm0zdTg.m3u8",
+        "quality": "HD"
+      },
+      {
         "url": "https://video09.logicahost.com.br/paieterno/paieterno/playlist.m3u8",
         "quality": "FHD · 1920x1080",
         "referer": "https://meufut.top/tv-pai-eterno",
         "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
       },
       {
-        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/895d4048b0486a18da15f15e91c18589/error.txt",
-        "quality": "Qualidade não informada",
-        "referer": "https://w7.embedtv.cc/",
-        "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
+        "url": "https://video09.logicahost.com.br/paieterno/paieterno/chunklist_w1610240856.m3u8",
+        "quality": "FHD · 1920x1080"
       },
       {
         "url": "http://45.162.64.114/TV_PAI_ETERNO/index.m3u8",
         "quality": "HD · 1280x720"
       },
       {
+        "url": "http://168.197.104.22/TV_PAI_ETERNO/index.m3u8",
+        "quality": "HD · 1280x720"
+      },
+      {
+        "url": "http://186.219.52.187/pai_eterno/index.m3u8",
+        "name": "Fonte 12 (IPTV-ORG)"
+      },
+      {
         "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/tvpaieterno/tvpaieterno.m3u8",
         "quality": "HD · 1280x720"
       },
       {
-        "url": "http://168.197.104.22/TV_PAI_ETERNO/index.m3u8",
-        "quality": "HD · 1280x720"
+        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/895d4048b0486a18da15f15e91c18589/error.txt",
+        "quality": "Qualidade não informada",
+        "referer": "https://w7.embedtv.cc/",
+        "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
       },
       {
         "url": "http://vaiagora.vip:80/live/5q8VUj/5BeUd8/72214.m3u8",
@@ -33511,18 +33523,6 @@ export const FALLBACK_CHANNELS: Channel[] = [
       {
         "url": "http://corruptx.org:80/live/hfp5ejnrey/zq0u3kzads/1165872.m3u8",
         "quality": "HD"
-      },
-      {
-        "url": "https://video09.logicahost.com.br/paieterno/paieterno/chunklist_w1610240856.m3u8",
-        "quality": "FHD · 1920x1080"
-      },
-      {
-        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzQwNTg2Lm0zdTg.m3u8",
-        "quality": "HD"
-      },
-      {
-        "url": "http://186.219.52.187/pai_eterno/index.m3u8",
-        "name": "Fonte 12 (IPTV-ORG)"
       }
     ]
   },
@@ -34108,12 +34108,12 @@ export const FALLBACK_CHANNELS: Channel[] = [
     "logo": "https://i.imgur.com/Tl6aW2u.png",
     "sources": [
       {
-        "url": "https://jmp2.uk/plu-63988a50be012600070f5db3.m3u8",
-        "name": "Fonte 1 (Pluto)"
-      },
-      {
         "url": "https://amg01796-amg01796c19-rakuten-gb-7486.playouts.now.amagi.tv/playlist/amg01796-fastmediafast-yugioh2en-rakutengb/playlist.m3u8",
         "name": "Fonte 2 (IPTV-ORG)"
+      },
+      {
+        "url": "https://jmp2.uk/plu-63988a50be012600070f5db3.m3u8",
+        "name": "Fonte 1 (Pluto)"
       }
     ]
   },

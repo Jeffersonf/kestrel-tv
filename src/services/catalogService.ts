@@ -31,6 +31,25 @@ async function loadDisabledHosts(): Promise<void> {
   disabledHosts.add('hubby.cx');
   disabledHosts.add('up.kiwi');
   disabledHosts.add('tvonhdbr.com');
+  disabledHosts.add('aws.s13-s1001604.lat');
+  disabledHosts.add('s23-cloudfront-net.lat');
+  disabledHosts.add('s25-cloudfront-net.lat');
+  disabledHosts.add('16-5-0-235.sslip.io');
+}
+
+export function scoreSource(url: string): number {
+  if (!url) return 0;
+  const u = url.toLowerCase();
+  if (u.includes('dadinhodetapioca.fun')) return 100;
+  if (u.includes('maissbt.com') || u.includes('ebc.com.br') || u.includes('amagi.tv')) return 95;
+  if (u.includes('squareweb.app') || u.includes('frostview')) return 70;
+  if (u.includes('bbroot.com')) return 10;
+  if (u.includes('aws.s13-s1001604.lat')) return 5;
+  if (u.includes('s23-cloudfront-net.lat') || u.includes('s25-cloudfront-net.lat')) return 4;
+  if (u.includes('16-5-0-235.sslip.io')) return 3;
+  if (u.includes('vaiagora.vip') || u.includes('vivlar.me') || u.includes('corruptx.org')) return 2;
+  if (u.startsWith('https://')) return 50;
+  return 30;
 }
 
 function isHostDisabled(urlStr: string): boolean {
@@ -71,7 +90,8 @@ function parseChannelsFromText(text: string): Channel[] {
           currentChannel.sources.sort((a, b) => {
             const aDis = isHostDisabled(a.url) ? 1 : 0;
             const bDis = isHostDisabled(b.url) ? 1 : 0;
-            return aDis - bDis;
+            if (aDis !== bDis) return aDis - bDis;
+            return scoreSource(b.url) - scoreSource(a.url);
           });
           channels.push(currentChannel as Channel);
         }
