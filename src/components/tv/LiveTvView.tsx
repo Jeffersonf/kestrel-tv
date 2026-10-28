@@ -2,7 +2,8 @@ import React, { useState, useEffect, useMemo, useRef } from 'react';
 import { 
   Search, Tv, Heart, Radio, X, RotateCcw, 
   Trophy, Film, Globe, Compass, Sparkles, Music, 
-  Layers, Lock, Unlock, ShieldAlert
+  Layers, Lock, Unlock, ShieldAlert,
+  PanelRightClose, PanelRightOpen, Play, ChevronLeft, ChevronRight
 } from 'lucide-react';
 import type { Channel } from '../../types';
 import { catalogService } from '../../services/catalogService';
@@ -12,6 +13,10 @@ import { ChannelCard } from './ChannelCard';
 import { VideoPlayer } from '../player/VideoPlayer';
 import { HeroSpotlight } from './HeroSpotlight';
 import { PinModal } from '../modals/PinModal';
+import { Pagination } from '../common/Pagination';
+
+const CHANNELS_PER_PAGE = 24;
+const SIDEBAR_CHANNELS_PER_PAGE = 10;
 
 function normalizeText(text: string): string {
   return text
@@ -54,6 +59,15 @@ export const LiveTvView: React.FC = () => {
   const [isAdultUnlocked, setIsAdultUnlocked] = useState(() => storageService.isAdultUnlocked());
   const [isPinModalOpen, setIsPinModalOpen] = useState(false);
 
+  // Paginação da grade principal
+  const [currentPage, setCurrentPage] = useState(1);
+
+  // Menu Lateral (Sidebar)
+  const [isSidebarOpen, setIsSidebarOpen] = useState(true);
+  const [sidebarSearch, setSidebarSearch] = useState('');
+  const [sidebarCategory, setSidebarCategory] = useState('Todos');
+  const [sidebarPage, setSidebarPage] = useState(1);
+
   const playerContainerRef = useRef<HTMLDivElement>(null);
 
   const refreshChannels = () => {
@@ -75,6 +89,15 @@ export const LiveTvView: React.FC = () => {
     return () => window.removeEventListener('kestrel_adult_state_change', handleAdultChange);
   }, []);
 
+  // Resetar página quando filtros mudam
+  useEffect(() => {
+    setCurrentPage(1);
+  }, [searchQuery, selectedCategory, onlyFavorites]);
+
+  useEffect(() => {
+    setSidebarPage(1);
+  }, [sidebarSearch, sidebarCategory]);
+
   // Lista de canais visíveis respeitando o filtro de segurança parental (+18)
   const visibleChannels = useMemo(() => {
     if (isAdultUnlocked) return channels;
@@ -87,7 +110,6 @@ export const LiveTvView: React.FC = () => {
     for (const ch of visibleChannels) {
       cats.set(ch.category, (cats.get(ch.category) || 0) + 1);
     }
-    // Se o modo adulto estiver bloqueado, adiciona a categoria com cadeado para o usuário poder desbloquear
     if (!isAdultUnlocked) {
       const adultCount = channels.filter((ch) => ch.category === 'Adulto (+18)').length;
       if (adultCount > 0) {
@@ -95,7 +117,6 @@ export const LiveTvView: React.FC = () => {
       }
     }
     return Array.from(cats.entries()).sort((a, b) => {
-      // Priorizar Jogos & Esportes, Filmes e TV Aberta no topo
       const order = ['Jogos & Esportes', 'Filmes e Séries', 'TV Aberta', 'Notícias', 'Infantil', 'Documentários', 'Variedades', 'Músicas', 'Adulto (+18)'];
       const idxA = order.indexOf(a[0]);
       const idxB = order.indexOf(b[0]);
@@ -106,7 +127,7 @@ export const LiveTvView: React.FC = () => {
     });
   }, [visibleChannels, channels, isAdultUnlocked]);
 
-  // Canais filtrados por busca, favoritos e categoria
+  // Canais filtrados por busca, favoritos e categoria (Grade Principal)
   const filteredChannels = useMemo(() => {
     let result = visibleChannels;
 
@@ -128,6 +149,38 @@ export const LiveTvView: React.FC = () => {
 
     return result;
   }, [visibleChannels, selectedCategory, searchQuery, onlyFavorites, favorites]);
+
+  // Paginação da Grade Principal
+  const paginatedChannels = useMemo(() => {
+    const start = (currentPage - 1) * CHANNELS_PER_PAGE;
+    return filteredChannels.slice(start, start + CHANNELS_PER_PAGE);
+  }, [filteredChannels, currentPage]);
+
+  // Canais filtrados especificamente para o Menu Lateral (Sidebar)
+  const sidebarFilteredChannels = useMemo(() => {
+    let result = visibleChannels;
+
+    if (sidebarCategory !== 'Todos') {
+      result = result.filter((ch) => ch.category === sidebarCategory);
+    }
+
+    if (sidebarSearch.trim()) {
+      const q = normalizeText(sidebarSearch);
+      result = result.filter((ch) => {
+        const nameNorm = normalizeText(ch.name);
+        return nameNorm.includes(q);
+      });
+    }
+
+    return result;
+  }, [visibleChannels, sidebarCategory, sidebarSearch]);
+
+  // Paginação do Menu Lateral
+  const sidebarTotalPages = Math.ceil(sidebarFilteredChannels.length / SIDEBAR_CHANNELS_PER_PAGE) || 1;
+  const paginatedSidebarChannels = useMemo(() => {
+    const start = (sidebarPage - 1) * SIDEBAR_CHANNELS_PER_PAGE;
+    return sidebarFilteredChannels.slice(start, start + SIDEBAR_CHANNELS_PER_PAGE);
+  }, [sidebarFilteredChannels, sidebarPage]);
 
   const handleSelectChannel = (channel: Channel) => {
     setSelectedChannel(channel);
@@ -151,21 +204,187 @@ export const LiveTvView: React.FC = () => {
 
   return (
     <div className="flex flex-col gap-6 w-full max-w-7xl mx-auto px-4 md:px-6 py-6 animate-in fade-in duration-300">
-      {/* Active Player Box */}
+      {/* Active Player & Sidebar Split Area */}
       <div ref={playerContainerRef}>
         {selectedChannel && (
-          <div className="flex flex-col gap-3 mb-8 bg-zinc-900/90 border border-white/10 p-3 md:p-5 rounded-3xl backdrop-blur-2xl shadow-2xl animate-in zoom-in-95 duration-200">
-            <VideoPlayer
-              title={selectedChannel.name}
-              sources={selectedChannel.sources}
-              isLive={true}
-              onClose={() => setSelectedChannel(null)}
-            />
+          <div className="flex flex-col lg:flex-row gap-5 mb-8 items-start">
+            {/* Main Video Player Container */}
+            <div className="flex-1 min-w-0 w-full bg-zinc-900/90 border border-white/10 p-3 md:p-5 rounded-3xl backdrop-blur-2xl shadow-2xl animate-in zoom-in-95 duration-200">
+              <div className="flex items-center justify-between pb-3 mb-2 border-b border-white/5">
+                <div className="flex items-center gap-2">
+                  <span className="w-2.5 h-2.5 rounded-full bg-red-500 animate-pulse" />
+                  <span className="text-xs font-bold text-white uppercase tracking-wider">Reproduzindo Agora</span>
+                </div>
+
+                {/* Sidebar Toggle Button */}
+                <button
+                  onClick={() => setIsSidebarOpen(!isSidebarOpen)}
+                  className={`px-3 py-1.5 rounded-xl border text-xs font-semibold flex items-center gap-1.5 transition-all ${
+                    isSidebarOpen
+                      ? 'bg-red-600/20 text-red-400 border-red-500/30'
+                      : 'bg-zinc-800 hover:bg-zinc-700 text-zinc-300 border-white/10'
+                  }`}
+                  title={isSidebarOpen ? 'Ocultar menu lateral' : 'Mostrar menu lateral de canais'}
+                >
+                  {isSidebarOpen ? <PanelRightClose className="w-4 h-4" /> : <PanelRightOpen className="w-4 h-4" />}
+                  <span className="hidden sm:inline">{isSidebarOpen ? 'Ocultar Menu Lateral' : 'Abrir Menu Lateral'}</span>
+                </button>
+              </div>
+
+              <VideoPlayer
+                title={selectedChannel.name}
+                sources={selectedChannel.sources}
+                isLive={true}
+                onClose={() => setSelectedChannel(null)}
+              />
+            </div>
+
+            {/* Menu Lateral de Canais (Sidebar) */}
+            {isSidebarOpen && (
+              <div className="w-full lg:w-80 xl:w-96 flex flex-col rounded-3xl bg-zinc-900/95 border border-white/10 p-4 backdrop-blur-2xl shadow-2xl flex-shrink-0 animate-in slide-in-from-right-4 duration-300">
+                {/* Sidebar Header */}
+                <div className="flex items-center justify-between pb-3 border-b border-white/5">
+                  <div className="flex items-center gap-2">
+                    <Radio className="w-4 h-4 text-red-500 animate-pulse" />
+                    <h3 className="text-sm font-bold text-white">Menu Lateral de Canais</h3>
+                  </div>
+                  <span className="text-[10px] font-mono px-2 py-0.5 rounded-full bg-zinc-800 text-zinc-400 border border-white/5">
+                    {sidebarFilteredChannels.length} canais
+                  </span>
+                </div>
+
+                {/* Sidebar Search */}
+                <div className="relative my-3">
+                  <Search className="w-3.5 h-3.5 text-zinc-500 absolute left-3 top-1/2 -translate-y-1/2" />
+                  <input
+                    type="text"
+                    placeholder="Filtrar canal no menu..."
+                    value={sidebarSearch}
+                    onChange={(e) => setSidebarSearch(e.target.value)}
+                    className="w-full pl-8 pr-7 py-2 bg-zinc-950/80 border border-white/10 rounded-xl text-xs text-white placeholder:text-zinc-500 focus:outline-none focus:border-red-500"
+                  />
+                  {sidebarSearch && (
+                    <button
+                      onClick={() => setSidebarSearch('')}
+                      className="absolute right-2.5 top-1/2 -translate-y-1/2 text-zinc-500 hover:text-white"
+                    >
+                      <X className="w-3 h-3" />
+                    </button>
+                  )}
+                </div>
+
+                {/* Sidebar Category Pills (Mini) */}
+                <div className="flex items-center gap-1.5 overflow-x-auto pb-2 mb-2 scrollbar-none text-[11px]">
+                  <button
+                    onClick={() => setSidebarCategory('Todos')}
+                    className={`px-2.5 py-1 rounded-lg font-medium whitespace-nowrap transition-colors ${
+                      sidebarCategory === 'Todos' ? 'bg-red-600 text-white' : 'bg-zinc-800 text-zinc-400 hover:text-white'
+                    }`}
+                  >
+                    Todos
+                  </button>
+                  {['Jogos & Esportes', 'TV Aberta', 'Filmes e Séries', 'Notícias', 'Infantil'].map((cat) => (
+                    <button
+                      key={cat}
+                      onClick={() => setSidebarCategory(cat)}
+                      className={`px-2.5 py-1 rounded-lg font-medium whitespace-nowrap transition-colors ${
+                        sidebarCategory === cat ? 'bg-red-600 text-white' : 'bg-zinc-800 text-zinc-400 hover:text-white'
+                      }`}
+                    >
+                      {cat.split(' ')[0]}
+                    </button>
+                  ))}
+                </div>
+
+                {/* Sidebar Channel List */}
+                <div className="flex flex-col gap-1.5 overflow-y-auto max-h-[380px] pr-1 scrollbar-none">
+                  {paginatedSidebarChannels.map((channel) => {
+                    const isCurrent = selectedChannel.id === channel.id;
+                    const isFav = favorites.includes(channel.id);
+
+                    return (
+                      <div
+                        key={`side_${channel.id}`}
+                        onClick={() => handleSelectChannel(channel)}
+                        className={`group p-2 rounded-xl flex items-center justify-between cursor-pointer border transition-all ${
+                          isCurrent
+                            ? 'bg-red-600/20 border-red-500 text-white shadow-md'
+                            : 'bg-zinc-950/60 border-white/5 hover:bg-zinc-800/80 hover:border-white/20 text-zinc-300'
+                        }`}
+                      >
+                        <div className="flex items-center gap-2.5 min-w-0">
+                          {/* Logo */}
+                          <div className="w-8 h-8 rounded-lg bg-zinc-900 border border-white/5 flex items-center justify-center p-1 flex-shrink-0">
+                            {channel.logo ? (
+                              <img src={channel.logo} alt="" className="max-w-full max-h-full object-contain" />
+                            ) : (
+                              <Tv className="w-4 h-4 text-zinc-500" />
+                            )}
+                          </div>
+                          <div className="min-w-0">
+                            <h4 className="text-xs font-semibold truncate group-hover:text-white">
+                              {channel.name}
+                            </h4>
+                            <span className="text-[10px] text-zinc-500 truncate block">
+                              {channel.category}
+                            </span>
+                          </div>
+                        </div>
+
+                        <div className="flex items-center gap-1.5 flex-shrink-0 ml-2">
+                          <span className="text-[9px] font-mono px-1.5 py-0.5 rounded bg-zinc-900 text-zinc-400 border border-white/5">
+                            {channel.sources.length} font.
+                          </span>
+                          {isCurrent ? (
+                            <Play className="w-3.5 h-3.5 text-red-500 fill-red-500 animate-pulse" />
+                          ) : (
+                            <button
+                              onClick={(e) => {
+                                e.stopPropagation();
+                                handleToggleFavorite(channel.id);
+                              }}
+                              className={`p-1 rounded hover:bg-zinc-700 ${isFav ? 'text-red-500' : 'text-zinc-600 hover:text-zinc-300'}`}
+                            >
+                              <Heart className={`w-3 h-3 ${isFav ? 'fill-red-500' : ''}`} />
+                            </button>
+                          )}
+                        </div>
+                      </div>
+                    );
+                  })}
+                </div>
+
+                {/* Sidebar Pagination Footer */}
+                <div className="pt-3 mt-2 border-t border-white/5 flex items-center justify-between text-xs">
+                  <span className="text-[11px] text-zinc-400">
+                    Pág. {sidebarPage} de {sidebarTotalPages}
+                  </span>
+                  <div className="flex items-center gap-1">
+                    <button
+                      onClick={() => setSidebarPage((p) => Math.max(1, p - 1))}
+                      disabled={sidebarPage === 1}
+                      className="p-1.5 rounded-lg bg-zinc-800 hover:bg-zinc-700 text-zinc-300 disabled:opacity-30 disabled:pointer-events-none transition-colors"
+                      title="Página anterior"
+                    >
+                      <ChevronLeft className="w-3.5 h-3.5" />
+                    </button>
+                    <button
+                      onClick={() => setSidebarPage((p) => Math.min(sidebarTotalPages, p + 1))}
+                      disabled={sidebarPage === sidebarTotalPages}
+                      className="p-1.5 rounded-lg bg-zinc-800 hover:bg-zinc-700 text-zinc-300 disabled:opacity-30 disabled:pointer-events-none transition-colors"
+                      title="Próxima página"
+                    >
+                      <ChevronRight className="w-3.5 h-3.5" />
+                    </button>
+                  </div>
+                </div>
+              </div>
+            )}
           </div>
         )}
       </div>
 
-      {/* Hero Spotlight (Apenas quando não houver player aberto para maximizar foco) */}
+      {/* Hero Spotlight (Apenas quando não houver player aberto) */}
       {!selectedChannel && (
         <HeroSpotlight
           channels={visibleChannels}
@@ -338,18 +557,34 @@ export const LiveTvView: React.FC = () => {
           </button>
         </div>
       ) : (
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-3.5 md:gap-4.5">
-          {filteredChannels.map((channel) => (
-            <ChannelCard
-              key={channel.id}
-              channel={channel}
-              isSelected={selectedChannel?.id === channel.id}
-              isFavorite={favorites.includes(channel.id)}
-              onSelect={handleSelectChannel}
-              onToggleFavorite={handleToggleFavorite}
-            />
-          ))}
-        </div>
+        <>
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-3.5 md:gap-4.5">
+            {paginatedChannels.map((channel) => (
+              <ChannelCard
+                key={channel.id}
+                channel={channel}
+                isSelected={selectedChannel?.id === channel.id}
+                isFavorite={favorites.includes(channel.id)}
+                onSelect={handleSelectChannel}
+                onToggleFavorite={handleToggleFavorite}
+              />
+            ))}
+          </div>
+
+          {/* Paginação da Grade Principal */}
+          <Pagination
+            currentPage={currentPage}
+            totalItems={filteredChannels.length}
+            itemsPerPage={CHANNELS_PER_PAGE}
+            onPageChange={(p) => {
+              setCurrentPage(p);
+              if (playerContainerRef.current) {
+                playerContainerRef.current.scrollIntoView({ behavior: 'smooth', block: 'start' });
+              }
+            }}
+            itemLabel="canais"
+          />
+        </>
       )}
 
       {/* Pin Modal for Parental Access */}

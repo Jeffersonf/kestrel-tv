@@ -5,6 +5,7 @@ import { FALLBACK_CHANNELS } from './fallbackChannels';
 let baseVodServers: Record<number, string> = {};
 let cachedChannels: Channel[] | null = null;
 let cachedBusca: { title: string; isSeries: boolean; letter: string; year: string }[] | null = null;
+let cachedGenresData: Record<string, any[]> | null = null;
 let disabledHosts = new Set<string>();
 
 async function loadDisabledHosts(): Promise<void> {
@@ -406,5 +407,46 @@ export const catalogService = {
     return cachedBusca
       .filter((item) => item.title.toLowerCase().includes(q))
       .slice(0, 50);
+  },
+
+  async fetchGenres(): Promise<string[]> {
+    if (!cachedGenresData) {
+      try {
+        const res = await fetch('./data/generos.json');
+        if (res.ok) {
+          cachedGenresData = await res.json();
+        }
+      } catch (e) {
+        console.warn('Erro ao carregar generos.json:', e);
+      }
+    }
+    return cachedGenresData ? Object.keys(cachedGenresData) : [];
+  },
+
+  async fetchMoviesByGenre(genre: string): Promise<MediaItem[]> {
+    if (!cachedGenresData) {
+      await this.fetchGenres();
+    }
+    if (!cachedGenresData || !cachedGenresData[genre]) return [];
+
+    return cachedGenresData[genre].map((item: any) => {
+      const norm = item.title.normalize('NFKD').replace(/[\u0300-\u036f]/g, '').trim();
+      const inicial = norm.charAt(0).toUpperCase();
+      const letter = (inicial >= 'A' && inicial <= 'Z') ? inicial : '#';
+
+      return {
+        id: item.id ? `tmdb_${item.id}` : `m_${letter}_${encodeURIComponent(item.title)}`,
+        title: item.title,
+        type: item.type || 'movie',
+        year: item.year || undefined,
+        letter,
+        poster: item.poster || undefined,
+        genres: item.genres || [],
+        sources: {
+          dub: [`https://saimo-tv.pages.dev/api/stream?tipo=${item.type || 'movie'}&id=${item.id}&versao=dub`],
+          leg: [`https://saimo-tv.pages.dev/api/stream?tipo=${item.type || 'movie'}&id=${item.id}&versao=leg`]
+        }
+      };
+    });
   }
 };

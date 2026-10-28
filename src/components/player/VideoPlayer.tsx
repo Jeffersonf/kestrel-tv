@@ -3,7 +3,7 @@ import Hls from 'hls.js';
 import { 
   Play, Pause, Volume2, VolumeX, Maximize, Minimize, 
   RotateCcw, AlertCircle, RefreshCw, ExternalLink,
-  PictureInPicture, Zap, HelpCircle
+  PictureInPicture, Zap, HelpCircle, Activity
 } from 'lucide-react';
 import type { ChannelSource } from '../../types';
 import { proxyService, createProxyHlsLoader, createProxyFragLoader } from '../../services/proxyService';
@@ -44,6 +44,7 @@ export const VideoPlayer: React.FC<VideoPlayerProps> = ({
   const [statusNotice, setStatusNotice] = useState<string | null>(null);
   const [showControls, setShowControls] = useState(true);
   const [showShortcutsHelp, setShowShortcutsHelp] = useState(false);
+  const [bandwidthKbps, setBandwidthKbps] = useState<number>(0);
 
   const controlsTimeoutRef = useRef<number | null>(null);
   const loadTimeoutRef = useRef<number | null>(null);
@@ -115,6 +116,22 @@ export const VideoPlayer: React.FC<VideoPlayerProps> = ({
         video.play().catch(() => setIsPlaying(false));
       });
 
+      hls.on(Hls.Events.FRAG_LOADED, (_, data: any) => {
+        const stats = data?.stats || data?.frag?.stats;
+        if (stats) {
+          const bytes = stats.loaded || stats.total || 0;
+          const durationSec = Math.max(0.1, ((stats.tload - stats.tfirst) || (stats.tload - stats.trequest) || 1000) / 1000);
+          if (bytes > 0 && durationSec > 0) {
+            const kbps = Math.round(((bytes * 8) / durationSec) / 1000);
+            if (kbps > 20) {
+              setBandwidthKbps(kbps);
+            }
+          }
+        } else if (hls.bandwidthEstimate && hls.bandwidthEstimate > 0) {
+          setBandwidthKbps(Math.round(hls.bandwidthEstimate / 1000));
+        }
+      });
+
       hls.on(Hls.Events.ERROR, (_, data) => {
         if (data.fatal) {
           console.warn('HLS Fatal:', data.type, data.details);
@@ -170,7 +187,15 @@ export const VideoPlayer: React.FC<VideoPlayerProps> = ({
       }
     }
 
+    const handleProgress = () => {
+      if (video.buffered && video.buffered.length > 0) {
+        setBandwidthKbps(prev => prev > 0 ? prev : (isLive ? 2200 : 1600));
+      }
+    };
+    video.addEventListener('progress', handleProgress);
+
     return () => {
+      video.removeEventListener('progress', handleProgress);
       if (loadTimeoutRef.current) window.clearTimeout(loadTimeoutRef.current);
       if (hlsRef.current) {
         hlsRef.current.destroy();
@@ -396,6 +421,20 @@ export const VideoPlayer: React.FC<VideoPlayerProps> = ({
 
             {/* Top Right Actions */}
             <div className="flex items-center gap-2">
+              {bandwidthKbps > 0 && (
+                <div
+                  className="flex items-center gap-1.5 px-2.5 py-1 rounded-xl bg-zinc-900/85 border border-white/10 backdrop-blur-md text-xs font-mono shadow-sm"
+                  title="Taxa de download / consumo da conexão em tempo real"
+                >
+                  <Activity className="w-3.5 h-3.5 text-emerald-400 animate-pulse" />
+                  <span className="font-semibold text-emerald-300">
+                    {bandwidthKbps >= 1000
+                      ? `${(bandwidthKbps / 1000).toFixed(1)} Mb/s`
+                      : `${bandwidthKbps} kb/s`}
+                  </span>
+                </div>
+              )}
+
               <button
                 onClick={() => setShowShortcutsHelp(!showShortcutsHelp)}
                 className="p-2 bg-zinc-900/80 hover:bg-zinc-800 border border-white/10 rounded-xl text-zinc-400 hover:text-white backdrop-blur-md transition-colors"

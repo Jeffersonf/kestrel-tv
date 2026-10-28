@@ -1,5 +1,5 @@
-# KESTREL TV — CATALOGO INDEPENDENTE
-# 439 canais
+# KESTREL TV — CATÁLOGO INDEPENDENTE
+# Total: 434 canais
 
 canal: CazéTV (Ao Vivo)
 categoria: Jogos & Esportes
@@ -8532,11 +8532,6 @@ categoria: Adulto (+18)
 fonte: https://cdn.adultiptv.net/compilation.m3u8
 qualidade: HD · 1280x720
 
-canal: Cuckold
-categoria: Adulto (+18)
-fonte: https://cdn.adultiptv.net/cuckold.m3u8
-qualidade: HD · 1280x720
-
 canal: Fetish
 categoria: Adulto (+18)
 fonte: https://cdn.adultiptv.net/fetish.m3u8
@@ -8545,11 +8540,6 @@ qualidade: HD · 1280x720
 canal: Gangbang
 categoria: Adulto (+18)
 fonte: https://cdn.adultiptv.net/gangbang.m3u8
-qualidade: HD · 1280x720
-
-canal: Gay
-categoria: Adulto (+18)
-fonte: https://cdn.adultiptv.net/gay.m3u8
 qualidade: HD · 1280x720
 
 canal: Hardcore
@@ -8696,11 +8686,6 @@ qualidade: HD · 1280x720
 canal: Analized
 categoria: Adulto (+18)
 fonte: http://s1w8pqrh.megatv.fun/iptv/VZEVDE3KMBMVGUR9Y2EEL7EF/6168/index.m3u8
-qualidade: HD · 1280x720
-
-canal: Angel Trans
-categoria: Adulto (+18)
-fonte: http://s1w8pqrh.megatv.fun/iptv/VZEVDE3KMBMVGUR9Y2EEL7EF/6169/index.m3u8
 qualidade: HD · 1280x720
 
 canal: Babes
@@ -9049,70 +9034,6 @@ qualidade: HD · 1280x720
 fonte: http://vivlar.me:80/497238/KK8Kdy/225332.ts
 qualidade: HD · 1280x720
 
-canal: Filmes Trans
-categoria: Adulto (+18)
-logo: http://24horas.cc:80/images/f859ff8b3b8b08745491656f1dab6019.jpg
-fonte: http://vaiagora.vip:80/5q8VUj/5BeUd8/145382.ts
-qualidade: HD · 1280x720
-fonte: http://vaiagora.vip:80/5q8VUj/5BeUd8/145383.ts
-qualidade: HD · 1280x720
-fonte: http://vaiagora.vip:80/5q8VUj/5BeUd8/149546.ts
-qualidade: FHD · 1920x1080
-fonte: http://vaiagora.vip:80/5q8VUj/5BeUd8/149547.ts
-qualidade: HD · 1280x720
-fonte: http://vaiagora.vip:80/5q8VUj/5BeUd8/150117.ts
-qualidade: HD · 1280x720
-fonte: http://vaiagora.vip:80/5q8VUj/5BeUd8/155441.ts
-qualidade: HD · 1280x720
-fonte: http://vaiagora.vip:80/5q8VUj/5BeUd8/155442.ts
-qualidade: HD · 1280x720
-fonte: http://vaiagora.vip:80/5q8VUj/5BeUd8/155443.ts
-qualidade: HD · 1280x720
-fonte: http://vaiagora.vip:80/5q8VUj/5BeUd8/155444.ts
-qualidade: HD · 1280x720
-fonte: http://vaiagora.vip:80/5q8VUj/5BeUd8/155445.ts
-qualidade: HD · 1280x720
-fonte: http://vaiagora.vip:80/5q8VUj/5BeUd8/155446.ts
-qualidade: HD · 1280x720
-fonte: http://vaiagora.vip:80/5q8VUj/5BeUd8/155447.ts
-qualidade: HD · 1280x720
-fonte: http://vaiagora.vip:80/5q8VUj/5BeUd8/155448.ts
-qualidade: HD · 1280x720
-fonte: http://vaiagora.vip:80/5q8VUj/5BeUd8/155449.ts
-qualidade: HD · 1280x720
-fonte: http://vaiagora.vip:80/5q8VUj/5BeUd8/155450.ts
-qualidade: HD · 1280x720
-fonte: http://vivlar.me:80/497238/KK8Kdy/145382.ts
-qualidade: HD · 1280x720
-fonte: http://vivlar.me:80/497238/KK8Kdy/145383.ts
-qualidade: HD · 1280x720
-fonte: http://vivlar.me:80/497238/KK8Kdy/149546.ts
-qualidade: FHD · 1920x1080
-fonte: http://vivlar.me:80/497238/KK8Kdy/149547.ts
-qualidade: HD · 1280x720
-fonte: http://vivlar.me:80/497238/KK8Kdy/150117.ts
-qualidade: HD · 1280x720
-fonte: http://vivlar.me:80/497238/KK8Kdy/155441.ts
-qualidade: HD · 1280x720
-fonte: http://vivlar.me:80/497238/KK8Kdy/155442.ts
-qualidade: HD · 1280x720
-fonte: http://vivlar.me:80/497238/KK8Kdy/155443.ts
-qualidade: HD · 1280x720
-fonte: http://vivlar.me:80/497238/KK8Kdy/155444.ts
-qualidade: HD · 1280x720
-fonte: http://vivlar.me:80/497238/KK8Kdy/155445.ts
-qualidade: HD · 1280x720
-fonte: http://vivlar.me:80/497238/KK8Kdy/155446.ts
-qualidade: HD · 1280x720
-fonte: http://vivlar.me:80/497238/KK8Kdy/155447.ts
-qualidade: HD · 1280x720
-fonte: http://vivlar.me:80/497238/KK8Kdy/155448.ts
-qualidade: HD · 1280x720
-fonte: http://vivlar.me:80/497238/KK8Kdy/155449.ts
-qualidade: HD · 1280x720
-fonte: http://vivlar.me:80/497238/KK8Kdy/155450.ts
-qualidade: HD · 1280x720
-
 canal: Fuck Studies
 categoria: Adulto (+18)
 logo: http://vaiagora.vip/images/22219a38e43a2a4d58d0dd34c43a14c7.jpg
@@ -9128,18 +9049,6 @@ fonte: http://vivlar.me:80/497238/KK8Kdy/169086.ts
 qualidade: HD · 1280x720
 fonte: http://vivlar.me:80/497238/KK8Kdy/169087.ts
 qualidade: HD · 1280x720
-
-canal: Homossexual Masculino
-categoria: Adulto (+18)
-logo: http://24horas.cc:80/images/23282a88114949d0a31f5fbee6dd0733.jpg
-fonte: http://vaiagora.vip:80/5q8VUj/5BeUd8/140492.ts
-qualidade: HD · 1280x720
-fonte: http://vaiagora.vip:80/5q8VUj/5BeUd8/140493.ts
-qualidade: SD · 848x472
-fonte: http://vivlar.me:80/497238/KK8Kdy/140492.ts
-qualidade: HD · 1280x720
-fonte: http://vivlar.me:80/497238/KK8Kdy/140493.ts
-qualidade: SD · 848x472
 
 canal: Interesseiras
 categoria: Adulto (+18)

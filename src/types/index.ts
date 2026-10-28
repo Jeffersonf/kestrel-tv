@@ -20,10 +20,12 @@ export interface MediaItem {
   title: string;
   type: 'movie' | 'series';
   year?: string;
-  letter: string;
+  letter?: string;
   chunk?: number;
   episodesCount?: number;
   sources?: Record<string, string[]>;
+  poster?: string;
+  genres?: string[];
 }
 
 export interface SeriesEpisode {

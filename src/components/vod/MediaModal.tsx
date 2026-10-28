@@ -28,7 +28,7 @@ export const MediaModal: React.FC<MediaModalProps> = ({ item, meta, onClose }) =
     if (item.type === 'series') {
       setIsLoadingEpisodes(true);
       catalogService
-        .fetchSeriesEpisodes(item.letter, item.chunk || 0, item.title, item.year)
+        .fetchSeriesEpisodes(item.letter || 'A', item.chunk || 0, item.title, item.year)
         .then((eps) => {
           setEpisodes(eps);
           setIsLoadingEpisodes(false);

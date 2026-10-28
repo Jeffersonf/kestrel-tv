@@ -16750,18 +16750,6 @@ export const FALLBACK_CHANNELS: Channel[] = [
     "id": "ch_363_compilation"
   },
   {
-    "name": "Cuckold",
-    "category": "Adulto (+18)",
-    "logo": "",
-    "sources": [
-      {
-        "url": "https://cdn.adultiptv.net/cuckold.m3u8",
-        "quality": "HD · 1280x720"
-      }
-    ],
-    "id": "ch_364_cuckold"
-  },
-  {
     "name": "Fetish",
     "category": "Adulto (+18)",
     "logo": "",
@@ -16784,18 +16772,6 @@ export const FALLBACK_CHANNELS: Channel[] = [
       }
     ],
     "id": "ch_366_gangbang"
-  },
-  {
-    "name": "Gay",
-    "category": "Adulto (+18)",
-    "logo": "",
-    "sources": [
-      {
-        "url": "https://cdn.adultiptv.net/gay.m3u8",
-        "quality": "HD · 1280x720"
-      }
-    ],
-    "id": "ch_367_gay"
   },
   {
     "name": "Hardcore",
@@ -17143,18 +17119,6 @@ export const FALLBACK_CHANNELS: Channel[] = [
       }
     ],
     "id": "ch_396_analized"
-  },
-  {
-    "name": "Angel Trans",
-    "category": "Adulto (+18)",
-    "logo": "",
-    "sources": [
-      {
-        "url": "http://s1w8pqrh.megatv.fun/iptv/VZEVDE3KMBMVGUR9Y2EEL7EF/6169/index.m3u8",
-        "quality": "HD · 1280x720"
-      }
-    ],
-    "id": "ch_397_angel_trans"
   },
   {
     "name": "Babes",
@@ -17905,134 +17869,6 @@ export const FALLBACK_CHANNELS: Channel[] = [
     "id": "ch_430_filmes_adultos"
   },
   {
-    "name": "Filmes Trans",
-    "category": "Adulto (+18)",
-    "logo": "http://24horas.cc:80/images/f859ff8b3b8b08745491656f1dab6019.jpg",
-    "sources": [
-      {
-        "url": "http://vaiagora.vip:80/5q8VUj/5BeUd8/145382.ts",
-        "quality": "HD · 1280x720"
-      },
-      {
-        "url": "http://vaiagora.vip:80/5q8VUj/5BeUd8/145383.ts",
-        "quality": "HD · 1280x720"
-      },
-      {
-        "url": "http://vaiagora.vip:80/5q8VUj/5BeUd8/149546.ts",
-        "quality": "FHD · 1920x1080"
-      },
-      {
-        "url": "http://vaiagora.vip:80/5q8VUj/5BeUd8/149547.ts",
-        "quality": "HD · 1280x720"
-      },
-      {
-        "url": "http://vaiagora.vip:80/5q8VUj/5BeUd8/150117.ts",
-        "quality": "HD · 1280x720"
-      },
-      {
-        "url": "http://vaiagora.vip:80/5q8VUj/5BeUd8/155441.ts",
-        "quality": "HD · 1280x720"
-      },
-      {
-        "url": "http://vaiagora.vip:80/5q8VUj/5BeUd8/155442.ts",
-        "quality": "HD · 1280x720"
-      },
-      {
-        "url": "http://vaiagora.vip:80/5q8VUj/5BeUd8/155443.ts",
-        "quality": "HD · 1280x720"
-      },
-      {
-        "url": "http://vaiagora.vip:80/5q8VUj/5BeUd8/155444.ts",
-        "quality": "HD · 1280x720"
-      },
-      {
-        "url": "http://vaiagora.vip:80/5q8VUj/5BeUd8/155445.ts",
-        "quality": "HD · 1280x720"
-      },
-      {
-        "url": "http://vaiagora.vip:80/5q8VUj/5BeUd8/155446.ts",
-        "quality": "HD · 1280x720"
-      },
-      {
-        "url": "http://vaiagora.vip:80/5q8VUj/5BeUd8/155447.ts",
-        "quality": "HD · 1280x720"
-      },
-      {
-        "url": "http://vaiagora.vip:80/5q8VUj/5BeUd8/155448.ts",
-        "quality": "HD · 1280x720"
-      },
-      {
-        "url": "http://vaiagora.vip:80/5q8VUj/5BeUd8/155449.ts",
-        "quality": "HD · 1280x720"
-      },
-      {
-        "url": "http://vaiagora.vip:80/5q8VUj/5BeUd8/155450.ts",
-        "quality": "HD · 1280x720"
-      },
-      {
-        "url": "http://vivlar.me:80/497238/KK8Kdy/145382.ts",
-        "quality": "HD · 1280x720"
-      },
-      {
-        "url": "http://vivlar.me:80/497238/KK8Kdy/145383.ts",
-        "quality": "HD · 1280x720"
-      },
-      {
-        "url": "http://vivlar.me:80/497238/KK8Kdy/149546.ts",
-        "quality": "FHD · 1920x1080"
-      },
-      {
-        "url": "http://vivlar.me:80/497238/KK8Kdy/149547.ts",
-        "quality": "HD · 1280x720"
-      },
-      {
-        "url": "http://vivlar.me:80/497238/KK8Kdy/150117.ts",
-        "quality": "HD · 1280x720"
-      },
-      {
-        "url": "http://vivlar.me:80/497238/KK8Kdy/155441.ts",
-        "quality": "HD · 1280x720"
-      },
-      {
-        "url": "http://vivlar.me:80/497238/KK8Kdy/155442.ts",
-        "quality": "HD · 1280x720"
-      },
-      {
-        "url": "http://vivlar.me:80/497238/KK8Kdy/155443.ts",
-        "quality": "HD · 1280x720"
-      },
-      {
-        "url": "http://vivlar.me:80/497238/KK8Kdy/155444.ts",
-        "quality": "HD · 1280x720"
-      },
-      {
-        "url": "http://vivlar.me:80/497238/KK8Kdy/155445.ts",
-        "quality": "HD · 1280x720"
-      },
-      {
-        "url": "http://vivlar.me:80/497238/KK8Kdy/155446.ts",
-        "quality": "HD · 1280x720"
-      },
-      {
-        "url": "http://vivlar.me:80/497238/KK8Kdy/155447.ts",
-        "quality": "HD · 1280x720"
-      },
-      {
-        "url": "http://vivlar.me:80/497238/KK8Kdy/155448.ts",
-        "quality": "HD · 1280x720"
-      },
-      {
-        "url": "http://vivlar.me:80/497238/KK8Kdy/155449.ts",
-        "quality": "HD · 1280x720"
-      },
-      {
-        "url": "http://vivlar.me:80/497238/KK8Kdy/155450.ts",
-        "quality": "HD · 1280x720"
-      }
-    ],
-    "id": "ch_431_filmes_trans"
-  },
-  {
     "name": "Fuck Studies",
     "category": "Adulto (+18)",
     "logo": "http://vaiagora.vip/images/22219a38e43a2a4d58d0dd34c43a14c7.jpg",
@@ -18063,30 +17899,6 @@ export const FALLBACK_CHANNELS: Channel[] = [
       }
     ],
     "id": "ch_432_fuck_studies"
-  },
-  {
-    "name": "Homossexual Masculino",
-    "category": "Adulto (+18)",
-    "logo": "http://24horas.cc:80/images/23282a88114949d0a31f5fbee6dd0733.jpg",
-    "sources": [
-      {
-        "url": "http://vaiagora.vip:80/5q8VUj/5BeUd8/140492.ts",
-        "quality": "HD · 1280x720"
-      },
-      {
-        "url": "http://vaiagora.vip:80/5q8VUj/5BeUd8/140493.ts",
-        "quality": "SD · 848x472"
-      },
-      {
-        "url": "http://vivlar.me:80/497238/KK8Kdy/140492.ts",
-        "quality": "HD · 1280x720"
-      },
-      {
-        "url": "http://vivlar.me:80/497238/KK8Kdy/140493.ts",
-        "quality": "SD · 848x472"
-      }
-    ],
-    "id": "ch_433_homossexual_masculino"
   },
   {
     "name": "Interesseiras",
