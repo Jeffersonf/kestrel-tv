@@ -97,13 +97,65 @@ export function createProxyFragLoader(masterUrl: string) {
 
 export const proxyService = {
   /**
+   * Verifica se o ambiente do app permite carregar streams diretamente sem bloqueios
+   * (ex: PWA instalado em standalone, Capacitor Android com Cleartext, ou HTTP localhost)
+   */
+  isDirectEnvironment(): boolean {
+    if (typeof window === 'undefined') return false;
+    const isStandalone = 
+      (window.navigator as any).standalone === true ||
+      window.matchMedia('(display-mode: standalone)').matches ||
+      (window as any).Capacitor !== undefined ||
+      window.location.protocol === 'http:';
+    return isStandalone;
+  },
+
+  /**
+   * Verifica se o stream é de um provedor que já possui CORS liberado nativamente
+   * (Zero Cota: tocam direto em HTTPS sem proxy nenhum)
+   */
+  isCorsFriendlyStream(url: string): boolean {
+    if (!url) return false;
+    const lower = url.toLowerCase();
+    return (
+      lower.includes('.amagi.tv') ||
+      lower.includes('.otteravision.com') ||
+      lower.includes('ads.ottera.tv') ||
+      lower.includes('.wurl.tv') ||
+      lower.includes('.akamaized.net') ||
+      lower.includes('pluto.tv') ||
+      lower.includes('jmp2.uk') ||
+      lower.includes('.workers.dev') ||
+      lower.includes('.r2.dev') ||
+      lower.includes('.pages.dev') ||
+      lower.includes('.jmvstream.com') ||
+      lower.includes('.ichibansys.com') ||
+      lower.includes('github.io') ||
+      lower.includes('githubusercontent.com') ||
+      lower.includes('fastly.net') ||
+      lower.includes('dailymotion.com')
+    );
+  },
+
+  /**
    * Verifica se o link necessita obrigatoriamente de proxy
    */
   needsProxy(url: string): boolean {
     if (!url) return false;
     const lower = url.toLowerCase();
 
-    // Links HTTP sempre precisam de proxy em páginas HTTPS para evitar Mixed Content
+    // CDNs oficiais com CORS aberto nunca precisam de proxy se forem HTTPS
+    if (lower.startsWith('https://') && this.isCorsFriendlyStream(lower)) {
+      return false;
+    }
+
+    // Se estiver em modo zero cota ou ambiente PWA/App que suporta cleartext
+    const settings = storageService.getSettings();
+    if ((settings.zeroProxyMode || this.isDirectEnvironment()) && lower.startsWith('http://')) {
+      return false;
+    }
+
+    // Links HTTP sempre precisam de proxy em páginas HTTPS normais para evitar erro de Mixed Content
     if (lower.startsWith('http://')) return true;
 
     // Arquivos .txt ou streams do dadinho precisam de proxy
@@ -147,18 +199,64 @@ export const proxyService = {
   },
 
   /**
-   * Prepara lista de fontes (direta + proxied) similar à função Gp do Saimo TV
+   * Prepara lista de fontes (direta + proxied) otimizada para Zero Cota
    */
   expandSources(sources: (ChannelSource | string)[]): { name: string; url: string; referer?: string; agent?: string; isProxied: boolean }[] {
     const list: { name: string; url: string; referer?: string; agent?: string; isProxied: boolean }[] = [];
+    const settings = storageService.getSettings();
+    const isDirectEnv = this.isDirectEnvironment();
+    const preferDirect = settings.zeroProxyMode || isDirectEnv;
 
     sources.forEach((s, idx) => {
       const src: ChannelSource = typeof s === 'string' ? { url: s } : s;
       const rawUrl = src.url.trim();
       const baseName = src.name || `Fonte ${idx + 1}${src.quality ? ` (${src.quality})` : ''}`;
+      const isHttps = rawUrl.startsWith('https://');
+      const isCors = this.isCorsFriendlyStream(rawUrl);
 
-      // 1. Se o stream for HTTPS e não precisar estritamente de proxy, adiciona opção direta
-      if (rawUrl.startsWith('https://') && !this.needsProxy(rawUrl)) {
+      // CASO 1: Stream HTTPS com CORS liberado (CazéTV, Pluto TV, Samsung TV Plus, Akamai, etc.)
+      // -> Zero Cota garantido! Toca direto sem passar por nenhum proxy.
+      if (isHttps && isCors) {
+        list.push({
+          name: `${baseName} (Zero Cota - Direto)`,
+          url: rawUrl,
+          referer: src.referer,
+          agent: src.agent,
+          isProxied: false,
+        });
+        // Backup proxied caso haja alguma instabilidade na CDN
+        list.push({
+          name: `${baseName} (Proxy Backup)`,
+          url: this.wrapStreamUrl(rawUrl, src.referer, src.agent),
+          referer: src.referer,
+          agent: src.agent,
+          isProxied: true,
+        });
+        return;
+      }
+
+      // CASO 2: Modo Zero Cota ou App PWA/Capacitor ativo
+      // -> Prioriza conexão direta para evitar gastar cota Cloudflare
+      if (preferDirect) {
+        list.push({
+          name: `${baseName} (Zero Cota - Direto)`,
+          url: rawUrl,
+          referer: src.referer,
+          agent: src.agent,
+          isProxied: false,
+        });
+        list.push({
+          name: `${baseName} (Proxy CORS)`,
+          url: this.wrapStreamUrl(rawUrl, src.referer, src.agent),
+          referer: src.referer,
+          agent: src.agent,
+          isProxied: true,
+        });
+        return;
+      }
+
+      // CASO 3: Navegador Web HTTPS comum
+      if (isHttps && !this.needsProxy(rawUrl)) {
         list.push({
           name: `${baseName} (Direto)`,
           url: rawUrl,
@@ -168,7 +266,7 @@ export const proxyService = {
         });
       }
 
-      // 2. Sempre adiciona a variante roteada pelo proxy oficial com o resolver de chunks Kp
+      // Fonte primária via proxy seguro para links HTTP
       list.push({
         name: baseName,
         url: this.wrapStreamUrl(rawUrl, src.referer, src.agent),
@@ -176,6 +274,17 @@ export const proxyService = {
         agent: src.agent,
         isProxied: true,
       });
+
+      // Fonte alternativa direta PWA
+      if (rawUrl.startsWith('http://')) {
+        list.push({
+          name: `${baseName} (Direto PWA / 0 Cota)`,
+          url: rawUrl,
+          referer: src.referer,
+          agent: src.agent,
+          isProxied: false,
+        });
+      }
     });
 
     return list;

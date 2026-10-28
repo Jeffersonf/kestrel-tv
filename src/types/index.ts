@@ -58,4 +58,5 @@ export interface AppSettings {
   vodCatalogUrl: string;
   proxyUrl: string;
   useProxy: boolean;
+  zeroProxyMode?: boolean;
 }

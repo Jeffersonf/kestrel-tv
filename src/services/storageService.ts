@@ -13,6 +13,7 @@ export const DEFAULT_SETTINGS: AppSettings = {
   vodCatalogUrl: 'https://filmes-saimo.pages.dev/',
   proxyUrl: 'https://saimo-tv.pages.dev/api/proxy?url=',
   useProxy: true,
+  zeroProxyMode: false,
 };
 
 export const storageService = {

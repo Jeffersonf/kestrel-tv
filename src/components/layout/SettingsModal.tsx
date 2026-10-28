@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import { Settings, Shield, RefreshCw, Check, Globe, Lock, KeyRound, Unlock } from 'lucide-react';
+import { Settings, Shield, RefreshCw, Check, Globe, Lock, KeyRound, Unlock, Zap, Download, Smartphone } from 'lucide-react';
+import { usePwaInstall } from '../../hooks/usePwaInstall';
 import { storageService, DEFAULT_SETTINGS } from '../../services/storageService';
 import type { AppSettings } from '../../types';
 
@@ -8,6 +9,7 @@ export const SettingsModal: React.FC = () => {
   const [savedSuccess, setSavedSuccess] = useState(false);
   const [adultPin, setAdultPin] = useState(() => storageService.getAdultPin());
   const [isAdultUnlocked, setIsAdultUnlocked] = useState(() => storageService.isAdultUnlocked());
+  const { isInstalled, promptInstall } = usePwaInstall();
 
   const handleSave = () => {
     storageService.saveSettings(settings);
@@ -137,6 +139,65 @@ export const SettingsModal: React.FC = () => {
               />
             </div>
           )}
+        </div>
+
+                {/* Zero Proxy Mode & PWA Card */}
+        <div className="p-4.5 rounded-2xl bg-zinc-950 border border-emerald-500/20 space-y-4">
+          <div className="flex items-center justify-between">
+            <div className="flex items-center gap-2.5">
+              <div className="p-2 rounded-xl bg-emerald-500/10 border border-emerald-500/30 text-emerald-400">
+                <Zap className="w-4 h-4 fill-emerald-400 text-emerald-400" />
+              </div>
+              <div>
+                <div className="flex items-center gap-2">
+                  <h4 className="text-xs font-bold text-white">Modo Zero Cota Cloudflare</h4>
+                  <span className="px-2 py-0.5 rounded-full bg-emerald-500/20 text-emerald-400 border border-emerald-500/40 text-[10px] font-extrabold uppercase">
+                    Zero Custo
+                  </span>
+                </div>
+                <p className="text-[11px] text-zinc-400 mt-0.5">
+                  Prioriza conexões diretas nos canais para consumir 0 requisições do seu limite diário do Cloudflare Workers.
+                </p>
+              </div>
+            </div>
+
+            <label className="relative inline-flex items-center cursor-pointer">
+              <input
+                type="checkbox"
+                checked={!!settings.zeroProxyMode}
+                onChange={(e) => setSettings({ ...settings, zeroProxyMode: e.target.checked })}
+                className="sr-only peer"
+              />
+              <div className="w-11 h-6 bg-zinc-800 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-emerald-600"></div>
+            </label>
+          </div>
+
+          <div className="p-3 rounded-xl bg-zinc-900/60 border border-white/5 space-y-2 text-[11px] text-zinc-300">
+            <div className="flex items-start gap-2">
+              <Smartphone className="w-4 h-4 text-emerald-400 shrink-0 mt-0.5" />
+              <div>
+                <span className="font-semibold text-white">Dica de Ouro para Gastar Zero:</span>
+                <p className="text-zinc-400 mt-0.5">
+                  Ao instalar o kestrelTV como <strong>PWA no celular</strong> ou gerar o APK <strong>Android com Capacitor</strong>, seu dispositivo toca canais HTTP diretamente sem a barreira de Mixed Content. Consumo de proxy = <strong>0%</strong>!
+                </p>
+              </div>
+            </div>
+
+            <div className="pt-2 flex items-center justify-between">
+              <span className="text-[10px] text-zinc-500">
+                Status do App: {isInstalled ? '✅ Instalado (Modo Standalone Ativo)' : '🌐 Modo Navegador'}
+              </span>
+              {!isInstalled && (
+                <button
+                  type="button"
+                  onClick={promptInstall}
+                  className="px-3 py-1.5 rounded-lg bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-semibold flex items-center gap-1.5 shadow-sm transition-all"
+                >
+                  <Download className="w-3.5 h-3.5" /> Instalar Aplicativo
+                </button>
+              )}
+            </div>
+          </div>
         </div>
 
         {/* Catalogs Section */}

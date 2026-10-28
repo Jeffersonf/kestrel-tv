@@ -6,39 +6,65 @@ Disponível online via **GitHub Pages**: [https://jeffersonf.github.io/kestrel-t
 
 ---
 
-## ✨ O Que Há de Novo (Versão Independente & Aprimorada)
+## ✨ O Que Há de Novo
 
-- **⚽ Jogos e Esportes Expandidos:**
-  - Inclusão direta de canais como **CazéTV (Ao Vivo em 1080p FHD)**, **SporTV (1, 2 e 3)**, **Premiere (Clubes e canais de jogos)**, **ESPN (1 a 6 + Extra)**, **TNT Sports**, **BandSports**, **Combate**, **NSports**, **FIFA+** e **Red Bull TV**.
-  - Fontes de alta velocidade com múltiplos servidores alternativos.
+### 1. 🚀 Arquitetura Zero Custo / Zero Cota Cloudflare:
+- **Suporte Completo a PWA (Progressive Web App):**
+  - Instale com 1 clique no celular (Android / iOS) ou computador (Chrome / Edge).
+  - Ícones adaptativos em alta definição (192x192, 512x512, SVG vetorial) e Service Worker com cache inteligente do shell da aplicação.
+- **Bypass Inteligente de Proxy (CORS Nativo):**
+  - Canais oficiais e FAST (como **CazéTV**, **Pluto TV Brasil**, **Samsung TV Plus**, **NSports**, **Red Bull TV**, **Amagi**, **Ottera**, **Akamai**) agora tocam diretamente no navegador via HTTPS com CORS aberto, consumindo **0 requisições do Cloudflare**.
+- **Medidor de Conexão em Tempo Real:**
+  - Exibe a velocidade de download em tempo real (`kb/s` e `Mb/s`) diretamente na tela do player.
+  - Badge visual dinâmico identificando quando a transmissão está em **Zero Cota (Direto)** vs **Proxy CORS**.
+- **Configuração de APK Android com Capacitor (Mixed Content Liberado):**
+  - Arquivo `capacitor.config.json` pré-configurado com `cleartext: true` e `mixedContent: "always"`, permitindo que streams `http://` toquem direto no Android sem passar por nenhum proxy, com **custo R$ 0,00 e 0 requisições de proxy**.
 
-- **🔞 Modo Adulto (+18) com Controle Parental por PIN:**
-  - Seção dedicada de canais adultos (**Playboy TV, Sexy Hot, Venus, Sextreme, Hustler, Brasileirinhas, Red Hot**, webcams e mais).
-  - **Proteção Total por PIN**: Por padrão, o conteúdo +18 fica protegido e oculto de crianças.
-  - **PIN Padrão de Fábrica:** `0000` (pode ser personalizado a qualquer momento pelo menu de Ajustes ou modal de desbloqueio).
-  - Botão de bloqueio instantâneo no Header e banner de segurança.
+### 2. 📡 Super Expansão de Conteúdo (1.528 Canais Únicos):
+- **Jogos & Esportes (162 canais):** CazéTV, Premiere, SporTV (1, 2, 3), ESPN (1 a 6 + Extra), Combate, DAZN, NSports, FIFA+, Red Bull TV, BandSports, TNT Sports, canais internacionais de automobilismo, luta e futebol.
+- **TV Aberta (318 canais):** Globo (redes e afiliadas de todo o Brasil), SBT, Record, Band, TV Cultura, RedeTV, canais legislativos e TVs comunitárias regionais.
+- **Filmes e Séries (97 canais):** Telecine (Premium, Action, Touch, Pipoca, Fun, Cult), HBO, Cinemax, Paramount Network, Warner Channel, Universal TV, Sony, Space, Megapix, AXN, Studio Universal.
+- **Infantil & Anime (122 canais):** Cartoon Network, Disney, Gloob, Nickelodeon, Toonami, Naruto 24h, animes e desenhos clássicos.
+- **Pluto TV Brasil & Variedades (684 canais):** Catálogo completo 24h de reality shows, culinária, comédia, drama, documentários e produções FAST.
+- **Notícias (18 canais):** CNN Brasil, BandNews, Record News, Jovem Pan News, GloboNews, Euronews, Bloomberg.
+- **Documentários (17 canais):** Discovery Channel, NatGeo, History, Animal Planet, Discovery Science, Investigation Discovery.
+- **Músicas (30 canais):** MTV, rádios ao vivo, canais sertanejos, pop, rock e clipes 24h.
+- **Adulto +18 (80 canais com PIN 0000):** Playboy TV, Sexy Hot, Venus, Sextreme, Hustler, Red Light, Brasileirinhas, Penthouse. *(Canais de conteúdo indesejado foram estritamente removidos).*
 
-- **💎 Cópia 100% Independente:**
-  - O projeto possui seu próprio arquivo de catálogo local autônomo em `public/data/catalogo.txt` e lista M3U em `public/data/canais.m3u8` com **439 canais categorizados e corrigidos em UTF-8**.
-  - Não fica fora do ar se servidores de terceiros caírem: o app testa a cópia local e possui catálogo embutido com zero delay.
+### 3. 🛡️ Controle Parental (+18):
+- **PIN Padrão de Fábrica:** `0000` (personalizável nas Configurações).
+- Conteúdo restrito fica totalmente oculto por padrão até ser desbloqueado com autenticação segura.
 
-- **🎨 Design Cinemático Aprimorado:**
-  - **Hero Spotlight**: Destaque cinemático no topo da TV ao Vivo com transmissão em tempo real, badges de qualidade (4K, FHD), pulse "Ao Vivo" e carrossel de canais em destaque.
-  - **Category Pills**: Navegação rápida com ícones temáticos para cada categoria (Jogos & Esportes, Filmes e Séries, TV Aberta, Notícias, Infantil, Documentários, Adulto +18, Músicas).
-  - **Cards com Efeito Glassmorphism**: Badges de status ao vivo, indicação de qualidade (4K/FHD), quantidade de servidores em chip (`⚡ 5 fontes`) e hover com glow vermelho.
+### 4. 🧭 Navegação Profissional:
+- **Menu Lateral Retrátil (Drawer):** Escolha canais ao vivo sem pausar a transmissão atual.
+- **Categorização Automática de Filmes & Séries:** Filtro por Gêneros (Ação, Comédia, Suspense, Terror, Ficção, etc.).
+- **Paginação Universal Otimizada:** Carregamento ultra-rápido de páginas, evitando travamentos por renderização excessiva.
 
-- **⚡ Player de Vídeo com Controles Profissionais:**
-  - **Ambient Cinema Backlight**: Iluminação suave ao redor do vídeo.
-  - **Barra de Troca Rápida de Servidor**: Alterne entre servidores (4K, FHD, Backup) em 1 clique direto na barra do player.
-  - **Picture-in-Picture (PiP)**: Assista seus jogos em janela flutuante enquanto navega.
-  - **Fallback Inteligente com Toast**: Se uma fonte travar ou cair, o player tenta automaticamente a próxima sem quebrar a tela.
-  - **Atalhos de Teclado**:
-    - `Espaço`: Play / Pause
-    - `F`: Tela Cheia
-    - `M`: Mudo
-    - `P`: Picture-in-Picture (PiP)
-    - `S`: Próximo Servidor
-    - `Esc`: Fechar Player
+---
+
+## 📱 Como Gerar o Aplicativo Android com Capacitor (Zero Cota)
+
+Para rodar como APK nativo no celular e tocar streams HTTP diretamente com 0 chamadas de proxy:
+
+```bash
+# 1. Instale o Capacitor CLI e o pacote Android
+npm install @capacitor/core @capacitor/cli @capacitor/android
+
+# 2. Inicialize o projeto Capacitor
+npx cap init kestrelTV tv.kestrel.app --web-dir dist
+
+# 3. Compile a aplicação web
+npm run build
+
+# 4. Adicione a plataforma Android e sincronize os arquivos
+npx cap add android
+npx cap sync android
+
+# 5. Abra no Android Studio e gere seu APK
+npx cap open android
+```
+
+No Android Studio, basta clicar em **Build > Build Bundle(s) / APK(s) > Build APK(s)**.
 
 ---
 
@@ -49,6 +75,8 @@ Disponível online via **GitHub Pages**: [https://jeffersonf.github.io/kestrel-t
 - **TypeScript**
 - **Tailwind CSS**
 - **Hls.js**
+- **Capacitor 7**
+- **PWA / Service Worker**
 - **Lucide Icons**
 - **TMDB API v3**
 - **GitHub Actions & GitHub Pages**
@@ -58,27 +86,10 @@ Disponível online via **GitHub Pages**: [https://jeffersonf.github.io/kestrel-t
 ## 🚀 Como Rodar Localmente
 
 ```bash
-# Clone o repositório
 git clone https://github.com/jeffersonf/kestrel-tv.git
 cd kestrel-tv
-
-# Instale as dependências
 npm install
-
-# Inicie o servidor de desenvolvimento
 npm run dev
 ```
 
 Abra no navegador em `http://localhost:5173`.
-
----
-
-## 📦 Como Publicar Atualizações no GitHub Pages
-
-Basta fazer um commit e push para a branch `main`. A automação do **GitHub Actions** (`.github/workflows/deploy.yml`) compilará e publicará o site automaticamente:
-
-```bash
-git add .
-git commit -m "Melhorias de design, jogos, +18 e cópia independente de canais"
-git push origin main
-```

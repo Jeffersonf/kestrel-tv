@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import { Radio, Film, Tv, Heart, Settings, Play, Lock, Unlock } from 'lucide-react';
+import { Radio, Film, Tv, Heart, Settings, Play, Lock, Unlock, Download } from 'lucide-react';
+import { usePwaInstall } from '../../hooks/usePwaInstall';
 import { storageService } from '../../services/storageService';
 import { PinModal } from '../modals/PinModal';
 
@@ -18,6 +19,7 @@ export const Header: React.FC<HeaderProps> = ({
 }) => {
   const [isAdultUnlocked, setIsAdultUnlocked] = useState(() => storageService.isAdultUnlocked());
   const [isPinModalOpen, setIsPinModalOpen] = useState(false);
+  const { isInstalled, promptInstall } = usePwaInstall();
 
   useEffect(() => {
     const handleStateChange = () => {
@@ -113,6 +115,18 @@ export const Header: React.FC<HeaderProps> = ({
 
           {/* Right Actions: Adult Lock Toggle & Settings */}
           <div className="flex items-center gap-2.5">
+                        {/* Install PWA Button */}
+            {!isInstalled && (
+              <button
+                onClick={promptInstall}
+                className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-gradient-to-r from-red-600/20 to-rose-600/20 hover:from-red-600/30 hover:to-rose-600/30 border border-red-500/40 text-red-300 hover:text-white text-xs font-semibold shadow-sm transition-all active:scale-95"
+                title="Instalar App kestrelTV (Zero Cota Cloudflare & Modo Standalone)"
+              >
+                <Download className="w-3.5 h-3.5 text-red-400" />
+                <span className="hidden sm:inline">Instalar App</span>
+              </button>
+            )}
+
             {/* Adult PIN Toggle Pill */}
             <button
               onClick={handleAdultToggle}

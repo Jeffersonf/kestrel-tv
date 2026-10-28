@@ -1,0 +1,15 @@
+{
+  "appId": "tv.kestrel.app",
+  "appName": "kestrelTV",
+  "webDir": "dist",
+  "bundledWebRuntime": false,
+  "server": {
+    "androidScheme": "http",
+    "cleartext": true
+  },
+  "android": {
+    "allowMixedContent": true,
+    "mixedContent": "always",
+    "webContentsDebuggingEnabled": true
+  }
+}
