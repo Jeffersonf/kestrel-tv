@@ -1,5 +1,7 @@
-import React from 'react';
-import { Radio, Film, Tv, Heart, Settings, Play } from 'lucide-react';
+import React, { useState, useEffect } from 'react';
+import { Radio, Film, Tv, Heart, Settings, Play, Lock, Unlock } from 'lucide-react';
+import { storageService } from '../../services/storageService';
+import { PinModal } from '../modals/PinModal';
 
 export type NavTab = 'tv' | 'movies' | 'series' | 'favorites' | 'settings';
 
@@ -14,143 +16,192 @@ export const Header: React.FC<HeaderProps> = ({
   onTabChange,
   favoritesCount,
 }) => {
+  const [isAdultUnlocked, setIsAdultUnlocked] = useState(() => storageService.isAdultUnlocked());
+  const [isPinModalOpen, setIsPinModalOpen] = useState(false);
+
+  useEffect(() => {
+    const handleStateChange = () => {
+      setIsAdultUnlocked(storageService.isAdultUnlocked());
+    };
+    window.addEventListener('kestrel_adult_state_change', handleStateChange);
+    return () => window.removeEventListener('kestrel_adult_state_change', handleStateChange);
+  }, []);
+
+  const handleAdultToggle = () => {
+    if (isAdultUnlocked) {
+      storageService.lockAdult();
+      setIsAdultUnlocked(false);
+    } else {
+      setIsPinModalOpen(true);
+    }
+  };
+
   return (
-    <header className="sticky top-0 z-40 w-full bg-zinc-950/80 backdrop-blur-xl border-b border-white/5 transition-all">
-      <div className="max-w-7xl mx-auto px-4 md:px-6 h-16 flex items-center justify-between">
-        {/* Brand Logo */}
-        <div 
-          onClick={() => onTabChange('tv')}
-          className="flex items-center gap-2.5 cursor-pointer group select-none"
-        >
-          <div className="w-9 h-9 rounded-xl bg-gradient-to-br from-red-600 to-red-700 flex items-center justify-center text-white shadow-lg shadow-red-600/30 group-hover:scale-105 transition-transform">
-            <Play className="w-4 h-4 fill-white ml-0.5" />
+    <>
+      <header className="sticky top-0 z-40 w-full bg-zinc-950/85 backdrop-blur-2xl border-b border-white/10 transition-all shadow-lg shadow-black/20">
+        <div className="max-w-7xl mx-auto px-4 md:px-6 h-16 flex items-center justify-between">
+          {/* Brand Logo */}
+          <div
+            onClick={() => onTabChange('tv')}
+            className="flex items-center gap-3 cursor-pointer group select-none"
+          >
+            <div className="w-9 h-9 rounded-2xl bg-gradient-to-br from-red-600 via-red-600 to-rose-700 flex items-center justify-center text-white shadow-lg shadow-red-600/30 group-hover:scale-105 group-hover:shadow-red-600/50 transition-all duration-300">
+              <Play className="w-4 h-4 fill-white ml-0.5" />
+            </div>
+            <div className="flex flex-col">
+              <span className="text-lg font-black tracking-tight text-white leading-none">
+                kestrel<span className="text-red-500 font-extrabold">TV</span>
+              </span>
+              <span className="text-[9px] uppercase font-bold tracking-widest text-zinc-400 mt-0.5">
+                Stream & Live Player
+              </span>
+            </div>
           </div>
-          <div className="flex flex-col">
-            <span className="text-base font-extrabold tracking-tight text-white leading-none">
-              kestrel<span className="text-red-500">TV</span>
-            </span>
-            <span className="text-[9px] uppercase font-bold tracking-widest text-zinc-500 mt-0.5">
-              Stream & Live
-            </span>
+
+          {/* Desktop Navigation Tabs */}
+          <nav className="hidden md:flex items-center gap-1.5 bg-zinc-900/90 border border-white/10 p-1.5 rounded-2xl shadow-inner">
+            <button
+              onClick={() => onTabChange('tv')}
+              className={`px-4 py-2 rounded-xl text-xs font-semibold flex items-center gap-2 transition-all duration-200 ${
+                activeTab === 'tv'
+                  ? 'bg-red-600 text-white shadow-lg shadow-red-600/30 scale-100'
+                  : 'text-zinc-400 hover:text-white hover:bg-zinc-800/70'
+              }`}
+            >
+              <Radio className="w-3.5 h-3.5" /> TV ao Vivo
+            </button>
+
+            <button
+              onClick={() => onTabChange('movies')}
+              className={`px-4 py-2 rounded-xl text-xs font-semibold flex items-center gap-2 transition-all duration-200 ${
+                activeTab === 'movies'
+                  ? 'bg-red-600 text-white shadow-lg shadow-red-600/30 scale-100'
+                  : 'text-zinc-400 hover:text-white hover:bg-zinc-800/70'
+              }`}
+            >
+              <Film className="w-3.5 h-3.5" /> Filmes
+            </button>
+
+            <button
+              onClick={() => onTabChange('series')}
+              className={`px-4 py-2 rounded-xl text-xs font-semibold flex items-center gap-2 transition-all duration-200 ${
+                activeTab === 'series'
+                  ? 'bg-red-600 text-white shadow-lg shadow-red-600/30 scale-100'
+                  : 'text-zinc-400 hover:text-white hover:bg-zinc-800/70'
+              }`}
+            >
+              <Tv className="w-3.5 h-3.5" /> Séries
+            </button>
+
+            <button
+              onClick={() => onTabChange('favorites')}
+              className={`px-4 py-2 rounded-xl text-xs font-semibold flex items-center gap-2 transition-all duration-200 ${
+                activeTab === 'favorites'
+                  ? 'bg-red-600 text-white shadow-lg shadow-red-600/30 scale-100'
+                  : 'text-zinc-400 hover:text-white hover:bg-zinc-800/70'
+              }`}
+            >
+              <Heart className="w-3.5 h-3.5" />
+              <span>Favoritos</span>
+              {favoritesCount > 0 && (
+                <span className="text-[10px] px-1.5 py-0.2 rounded-full bg-white/20 text-white font-bold">
+                  {favoritesCount}
+                </span>
+              )}
+            </button>
+          </nav>
+
+          {/* Right Actions: Adult Lock Toggle & Settings */}
+          <div className="flex items-center gap-2.5">
+            {/* Adult PIN Toggle Pill */}
+            <button
+              onClick={handleAdultToggle}
+              className={`px-3 py-1.5 rounded-xl border text-xs font-semibold flex items-center gap-1.5 transition-all shadow-sm ${
+                isAdultUnlocked
+                  ? 'bg-rose-500/15 border-rose-500/40 text-rose-300 hover:bg-rose-500/25'
+                  : 'bg-zinc-900 border-white/10 text-zinc-400 hover:text-white hover:bg-zinc-800'
+              }`}
+              title={isAdultUnlocked ? 'Bloquear modo adulto (+18)' : 'Desbloquear canais adultos (+18) com PIN'}
+            >
+              {isAdultUnlocked ? (
+                <>
+                  <Unlock className="w-3.5 h-3.5 text-rose-400" />
+                  <span className="hidden sm:inline">+18 Ativo</span>
+                </>
+              ) : (
+                <>
+                  <Lock className="w-3.5 h-3.5 text-zinc-400" />
+                  <span className="hidden sm:inline">+18 Bloqueado</span>
+                </>
+              )}
+            </button>
+
+            {/* Online Status Pill */}
+            <div className="hidden lg:flex items-center gap-2 px-3 py-1.5 bg-zinc-900 border border-white/10 rounded-xl">
+              <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
+              <span className="text-[11px] font-medium text-zinc-300">Ao Vivo</span>
+            </div>
+
+            {/* Settings Button */}
+            <button
+              onClick={() => onTabChange('settings')}
+              className={`p-2 rounded-xl border transition-all ${
+                activeTab === 'settings'
+                  ? 'bg-red-600 text-white border-red-500 shadow-lg shadow-red-600/30'
+                  : 'bg-zinc-900 border-white/10 text-zinc-400 hover:text-white hover:bg-zinc-800'
+              }`}
+              title="Configurações de Listas e Proxy"
+            >
+              <Settings className="w-4 h-4" />
+            </button>
           </div>
         </div>
 
-        {/* Desktop Navigation Tabs */}
-        <nav className="hidden md:flex items-center gap-1 bg-zinc-900/80 border border-white/5 p-1 rounded-2xl">
+        {/* Mobile Navigation Sub-bar */}
+        <div className="md:hidden flex items-center justify-around border-t border-white/5 py-2 px-2 bg-zinc-950/95 overflow-x-auto scrollbar-none">
           <button
             onClick={() => onTabChange('tv')}
-            className={`px-3.5 py-1.5 rounded-xl text-xs font-semibold flex items-center gap-2 transition-all ${
-              activeTab === 'tv'
-                ? 'bg-red-600 text-white shadow-md shadow-red-600/20'
-                : 'text-zinc-400 hover:text-white hover:bg-zinc-800/60'
+            className={`px-3 py-1 rounded-xl text-xs font-medium flex items-center gap-1.5 whitespace-nowrap ${
+              activeTab === 'tv' ? 'bg-red-600 text-white' : 'text-zinc-400'
             }`}
           >
-            <Radio className="w-3.5 h-3.5" /> TV ao Vivo
+            <Radio className="w-3.5 h-3.5" /> TV
           </button>
-
           <button
             onClick={() => onTabChange('movies')}
-            className={`px-3.5 py-1.5 rounded-xl text-xs font-semibold flex items-center gap-2 transition-all ${
-              activeTab === 'movies'
-                ? 'bg-red-600 text-white shadow-md shadow-red-600/20'
-                : 'text-zinc-400 hover:text-white hover:bg-zinc-800/60'
+            className={`px-3 py-1 rounded-xl text-xs font-medium flex items-center gap-1.5 whitespace-nowrap ${
+              activeTab === 'movies' ? 'bg-red-600 text-white' : 'text-zinc-400'
             }`}
           >
             <Film className="w-3.5 h-3.5" /> Filmes
           </button>
-
           <button
             onClick={() => onTabChange('series')}
-            className={`px-3.5 py-1.5 rounded-xl text-xs font-semibold flex items-center gap-2 transition-all ${
-              activeTab === 'series'
-                ? 'bg-red-600 text-white shadow-md shadow-red-600/20'
-                : 'text-zinc-400 hover:text-white hover:bg-zinc-800/60'
+            className={`px-3 py-1 rounded-xl text-xs font-medium flex items-center gap-1.5 whitespace-nowrap ${
+              activeTab === 'series' ? 'bg-red-600 text-white' : 'text-zinc-400'
             }`}
           >
             <Tv className="w-3.5 h-3.5" /> Séries
           </button>
-
           <button
             onClick={() => onTabChange('favorites')}
-            className={`px-3.5 py-1.5 rounded-xl text-xs font-semibold flex items-center gap-2 transition-all ${
-              activeTab === 'favorites'
-                ? 'bg-red-600 text-white shadow-md shadow-red-600/20'
-                : 'text-zinc-400 hover:text-white hover:bg-zinc-800/60'
+            className={`px-3 py-1 rounded-xl text-xs font-medium flex items-center gap-1.5 whitespace-nowrap ${
+              activeTab === 'favorites' ? 'bg-red-600 text-white' : 'text-zinc-400'
             }`}
           >
-            <Heart className="w-3.5 h-3.5" />
-            <span>Favoritos</span>
-            {favoritesCount > 0 && (
-              <span className="text-[10px] px-1.5 py-0.2 rounded-full bg-white/20 text-white">
-                {favoritesCount}
-              </span>
-            )}
-          </button>
-        </nav>
-
-        {/* Right Actions: Settings & Status */}
-        <div className="flex items-center gap-3">
-          <div className="hidden lg:flex items-center gap-2 px-3 py-1 bg-zinc-900 border border-white/5 rounded-full">
-            <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
-            <span className="text-[11px] font-medium text-zinc-400">Online</span>
-          </div>
-
-          <button
-            onClick={() => onTabChange('settings')}
-            className={`p-2 rounded-xl border transition-all ${
-              activeTab === 'settings'
-                ? 'bg-red-600 text-white border-red-500'
-                : 'bg-zinc-900 text-zinc-400 border-white/5 hover:text-white hover:bg-zinc-800'
-            }`}
-            title="Ajustes e Configurações"
-          >
-            <Settings className="w-4 h-4" />
+            <Heart className="w-3.5 h-3.5" /> Favoritos ({favoritesCount})
           </button>
         </div>
-      </div>
+      </header>
 
-      {/* Mobile Navigation Bar */}
-      <div className="md:hidden flex items-center justify-around border-t border-white/5 bg-zinc-950 px-2 py-2">
-        <button
-          onClick={() => onTabChange('tv')}
-          className={`flex flex-col items-center gap-1 py-1 px-3 rounded-xl text-[10px] font-semibold transition-colors ${
-            activeTab === 'tv' ? 'text-red-500' : 'text-zinc-500 hover:text-zinc-300'
-          }`}
-        >
-          <Radio className="w-4 h-4" />
-          <span>Ao Vivo</span>
-        </button>
-
-        <button
-          onClick={() => onTabChange('movies')}
-          className={`flex flex-col items-center gap-1 py-1 px-3 rounded-xl text-[10px] font-semibold transition-colors ${
-            activeTab === 'movies' ? 'text-red-500' : 'text-zinc-500 hover:text-zinc-300'
-          }`}
-        >
-          <Film className="w-4 h-4" />
-          <span>Filmes</span>
-        </button>
-
-        <button
-          onClick={() => onTabChange('series')}
-          className={`flex flex-col items-center gap-1 py-1 px-3 rounded-xl text-[10px] font-semibold transition-colors ${
-            activeTab === 'series' ? 'text-red-500' : 'text-zinc-500 hover:text-zinc-300'
-          }`}
-        >
-          <Tv className="w-4 h-4" />
-          <span>Séries</span>
-        </button>
-
-        <button
-          onClick={() => onTabChange('favorites')}
-          className={`flex flex-col items-center gap-1 py-1 px-3 rounded-xl text-[10px] font-semibold transition-colors ${
-            activeTab === 'favorites' ? 'text-red-500' : 'text-zinc-500 hover:text-zinc-300'
-          }`}
-        >
-          <Heart className="w-4 h-4" />
-          <span>Favoritos</span>
-        </button>
-      </div>
-    </header>
+      {/* Parental PIN Modal */}
+      <PinModal
+        isOpen={isPinModalOpen}
+        onClose={() => setIsPinModalOpen(false)}
+        onSuccess={() => {
+          setIsAdultUnlocked(true);
+        }}
+      />
+    </>
   );
 };

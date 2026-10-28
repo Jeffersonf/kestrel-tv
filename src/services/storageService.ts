@@ -1,12 +1,15 @@
 import type { AppSettings, PlaybackProgress } from '../types';
 
-const SETTINGS_KEY = 'kestrel_settings_v2';
+const SETTINGS_KEY = 'kestrel_settings_v3';
 const FAVORITES_CHANNELS_KEY = 'kestrel_fav_channels_v1';
 const FAVORITES_VOD_KEY = 'kestrel_fav_vod_v1';
 const PROGRESS_PREFIX = 'kestrel_progress_';
+const ADULT_UNLOCKED_KEY = 'kestrel_adult_unlocked_v1';
+const ADULT_PIN_KEY = 'kestrel_adult_pin_v1';
+const DEFAULT_PIN = '0000';
 
 export const DEFAULT_SETTINGS: AppSettings = {
-  channelCatalogUrl: 'https://canais-saimo.pages.dev/catalogo.txt',
+  channelCatalogUrl: './data/catalogo.txt',
   vodCatalogUrl: 'https://filmes-saimo.pages.dev/',
   proxyUrl: 'https://saimo-tv.pages.dev/api/proxy?url=',
   useProxy: true,
@@ -18,7 +21,6 @@ export const storageService = {
       const data = localStorage.getItem(SETTINGS_KEY);
       if (data) {
         const parsed = JSON.parse(data);
-        // Garantir que proxies desatualizados como allorigins sejam migrados
         if (!parsed.proxyUrl || parsed.proxyUrl.includes('allorigins') || !parsed.useProxy) {
           parsed.proxyUrl = DEFAULT_SETTINGS.proxyUrl;
           parsed.useProxy = true;
@@ -104,6 +106,54 @@ export const storageService = {
       return data ? JSON.parse(data) : null;
     } catch {
       return null;
+    }
+  },
+
+  // ============================================
+  // Controle Parental (+18 / PIN)
+  // ============================================
+  isAdultUnlocked(): boolean {
+    try {
+      return sessionStorage.getItem(ADULT_UNLOCKED_KEY) === 'true';
+    } catch {
+      return false;
+    }
+  },
+
+  unlockAdult(pin: string): boolean {
+    const validPin = this.getAdultPin();
+    if (pin === validPin) {
+      try {
+        sessionStorage.setItem(ADULT_UNLOCKED_KEY, 'true');
+        window.dispatchEvent(new Event('kestrel_adult_state_change'));
+        return true;
+      } catch {}
+    }
+    return false;
+  },
+
+  lockAdult(): void {
+    try {
+      sessionStorage.removeItem(ADULT_UNLOCKED_KEY);
+      window.dispatchEvent(new Event('kestrel_adult_state_change'));
+    } catch {}
+  },
+
+  getAdultPin(): string {
+    try {
+      return localStorage.getItem(ADULT_PIN_KEY) || DEFAULT_PIN;
+    } catch {
+      return DEFAULT_PIN;
+    }
+  },
+
+  setAdultPin(newPin: string): boolean {
+    if (!newPin || newPin.length !== 4) return false;
+    try {
+      localStorage.setItem(ADULT_PIN_KEY, newPin);
+      return true;
+    } catch {
+      return false;
     }
   }
 };

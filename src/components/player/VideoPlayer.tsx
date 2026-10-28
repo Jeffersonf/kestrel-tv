@@ -2,7 +2,8 @@ import React, { useEffect, useRef, useState, useCallback, useMemo } from 'react'
 import Hls from 'hls.js';
 import { 
   Play, Pause, Volume2, VolumeX, Maximize, Minimize, 
-  RotateCcw, AlertCircle, RefreshCw, Layers, Check, ExternalLink
+  RotateCcw, AlertCircle, RefreshCw, ExternalLink,
+  PictureInPicture, Zap, HelpCircle
 } from 'lucide-react';
 import type { ChannelSource } from '../../types';
 import { proxyService, createProxyHlsLoader, createProxyFragLoader } from '../../services/proxyService';
@@ -27,7 +28,6 @@ export const VideoPlayer: React.FC<VideoPlayerProps> = ({
   const containerRef = useRef<HTMLDivElement>(null);
   const hlsRef = useRef<Hls | null>(null);
 
-  // Expande as fontes gerando opções diretas e roteadas pelo proxy oficial
   const playableSources = useMemo(() => {
     return proxyService.expandSources(sources);
   }, [sources]);
@@ -43,7 +43,7 @@ export const VideoPlayer: React.FC<VideoPlayerProps> = ({
   const [errorMsg, setErrorMsg] = useState<string | null>(null);
   const [statusNotice, setStatusNotice] = useState<string | null>(null);
   const [showControls, setShowControls] = useState(true);
-  const [showSourceMenu, setShowSourceMenu] = useState(false);
+  const [showShortcutsHelp, setShowShortcutsHelp] = useState(false);
 
   const controlsTimeoutRef = useRef<number | null>(null);
   const loadTimeoutRef = useRef<number | null>(null);
@@ -78,7 +78,6 @@ export const VideoPlayer: React.FC<VideoPlayerProps> = ({
 
     if (loadTimeoutRef.current) window.clearTimeout(loadTimeoutRef.current);
 
-    // Timeout de 10s para avançar se uma fonte travar
     loadTimeoutRef.current = window.setTimeout(() => {
       if (video.paused && video.readyState < 2) {
         console.warn('Timeout de carregamento na fonte:', streamUrl);
@@ -98,7 +97,6 @@ export const VideoPlayer: React.FC<VideoPlayerProps> = ({
         fragLoadingTimeOut: 20000,
       };
 
-      // Se for via proxy, injeta o resolver de chunks Kp do Saimo TV
       if (activeSource.isProxied) {
         hlsConfig.loader = createProxyHlsLoader(streamUrl);
         hlsConfig.fLoader = createProxyFragLoader(streamUrl);
@@ -148,7 +146,6 @@ export const VideoPlayer: React.FC<VideoPlayerProps> = ({
         }
       });
     } else if (video.canPlayType('application/vnd.apple.mpegurl') && isHls) {
-      // Suporte nativo Safari iOS / Mac
       video.src = streamUrl;
       video.addEventListener('loadedmetadata', () => {
         setIsLoading(false);
@@ -157,7 +154,6 @@ export const VideoPlayer: React.FC<VideoPlayerProps> = ({
         video.play().catch(() => setIsPlaying(false));
       }, { once: true });
     } else {
-      // Vídeo HTML5 direto (MP4, WebM)
       video.src = streamUrl;
       video.load();
       video.play().then(() => {
@@ -167,7 +163,6 @@ export const VideoPlayer: React.FC<VideoPlayerProps> = ({
       }).catch(() => setIsPlaying(false));
     }
 
-    // Retomar progresso se for VOD
     if (mediaId && !isLive) {
       const saved = storageService.getProgress(mediaId);
       if (saved && saved.currentTime > 5 && saved.currentTime < saved.duration - 30) {
@@ -184,16 +179,46 @@ export const VideoPlayer: React.FC<VideoPlayerProps> = ({
     };
   }, [currentSourceIndex, activeSource, isLive, mediaId, handleNextSource]);
 
-  // Salvar progresso de VOD
+  // Keyboard Shortcuts
   useEffect(() => {
-    if (isLive || !mediaId || duration <= 0) return;
-    const interval = setInterval(() => {
-      if (videoRef.current && currentTime > 5) {
-        storageService.saveProgress(mediaId, currentTime, duration);
+    const handleKeyDown = (e: KeyboardEvent) => {
+      // Ignorar se estiver digitando em input
+      if (['INPUT', 'TEXTAREA'].includes((e.target as HTMLElement)?.tagName)) return;
+
+      switch (e.key.toLowerCase()) {
+        case ' ':
+          e.preventDefault();
+          togglePlay();
+          break;
+        case 'f':
+          e.preventDefault();
+          toggleFullscreen();
+          break;
+        case 'm':
+          e.preventDefault();
+          toggleMute();
+          break;
+        case 'p':
+          e.preventDefault();
+          togglePiP();
+          break;
+        case 's':
+          e.preventDefault();
+          handleNextSource();
+          break;
+        case 'escape':
+          if (isFullscreen) {
+            document.exitFullscreen().catch(() => {});
+          } else if (onClose) {
+            onClose();
+          }
+          break;
       }
-    }, 5000);
-    return () => clearInterval(interval);
-  }, [isLive, mediaId, currentTime, duration]);
+    };
+
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
+  }, [isFullscreen, handleNextSource, onClose]);
 
   // Auto-hide controls
   const handleMouseMove = () => {
@@ -201,7 +226,7 @@ export const VideoPlayer: React.FC<VideoPlayerProps> = ({
     if (controlsTimeoutRef.current) window.clearTimeout(controlsTimeoutRef.current);
     controlsTimeoutRef.current = window.setTimeout(() => {
       if (isPlaying) setShowControls(false);
-    }, 3000);
+    }, 3500);
   };
 
   const togglePlay = () => {
@@ -219,6 +244,18 @@ export const VideoPlayer: React.FC<VideoPlayerProps> = ({
     if (!video) return;
     video.muted = !video.muted;
     setIsMuted(video.muted);
+  };
+
+  const togglePiP = async () => {
+    try {
+      if (document.pictureInPictureElement) {
+        await document.exitPictureInPicture();
+      } else if (videoRef.current) {
+        await videoRef.current.requestPictureInPicture();
+      }
+    } catch (e) {
+      console.warn('PiP não suportado:', e);
+    }
   };
 
   const handleVolumeChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -261,212 +298,242 @@ export const VideoPlayer: React.FC<VideoPlayerProps> = ({
   };
 
   return (
-    <div 
-      ref={containerRef}
-      onMouseMove={handleMouseMove}
-      className="relative w-full aspect-video bg-black rounded-2xl overflow-hidden group select-none shadow-2xl border border-white/5"
-    >
-      <video
-        ref={videoRef}
-        className="w-full h-full object-contain cursor-pointer"
-        onClick={togglePlay}
-        onPlay={() => { setIsPlaying(true); setIsLoading(false); }}
-        onPause={() => setIsPlaying(false)}
-        onTimeUpdate={() => {
-          if (videoRef.current) {
-            setCurrentTime(videoRef.current.currentTime);
-            setDuration(videoRef.current.duration || 0);
-          }
-        }}
-        onWaiting={() => setIsLoading(true)}
-        onPlaying={() => { setIsLoading(false); setStatusNotice(null); }}
-        onError={() => handleNextSource()}
-        playsInline
-      />
+    <div className="relative w-full flex flex-col gap-3">
+      {/* Ambient Cinema Backlight */}
+      <div className="relative w-full">
+        <div className="absolute -inset-2 bg-gradient-to-r from-red-600/20 via-red-500/10 to-rose-600/20 rounded-3xl blur-2xl opacity-60 pointer-events-none" />
 
-      {/* Loading & Status Overlay */}
-      {isLoading && (
-        <div className="absolute inset-0 flex items-center justify-center bg-black/60 backdrop-blur-sm pointer-events-none z-15">
-          <div className="flex flex-col items-center gap-3 text-center px-4">
-            <RefreshCw className="w-8 h-8 text-red-500 animate-spin" />
-            <span className="text-xs font-semibold text-zinc-200">
-              {statusNotice || `Conectando (${activeSource.name || `Fonte ${currentSourceIndex + 1}`})...`}
-            </span>
-          </div>
-        </div>
-      )}
+        <div 
+          ref={containerRef}
+          onMouseMove={handleMouseMove}
+          className="relative w-full aspect-video bg-black rounded-3xl overflow-hidden group select-none shadow-2xl border border-white/10"
+        >
+          <video
+            ref={videoRef}
+            className="w-full h-full object-contain cursor-pointer"
+            onClick={togglePlay}
+            onPlay={() => { setIsPlaying(true); setIsLoading(false); }}
+            onPause={() => setIsPlaying(false)}
+            onTimeUpdate={() => {
+              if (videoRef.current) {
+                setCurrentTime(videoRef.current.currentTime);
+                setDuration(videoRef.current.duration || 0);
+              }
+            }}
+            onWaiting={() => setIsLoading(true)}
+            onPlaying={() => { setIsLoading(false); setStatusNotice(null); }}
+            onError={() => handleNextSource()}
+            playsInline
+          />
 
-      {/* Error View */}
-      {errorMsg && (
-        <div className="absolute inset-0 flex items-center justify-center bg-zinc-950/95 p-6 z-20">
-          <div className="max-w-md text-center flex flex-col items-center gap-3">
-            <AlertCircle className="w-10 h-10 text-red-500" />
-            <h3 className="text-base font-semibold text-white">Transmissão Indisponível</h3>
-            <p className="text-xs text-zinc-400">{errorMsg}</p>
-            <div className="flex flex-wrap gap-2 justify-center mt-2">
-              <button 
-                onClick={() => { setCurrentSourceIndex(0); setErrorMsg(null); }}
-                className="px-3.5 py-1.5 bg-red-600 hover:bg-red-500 text-white text-xs font-semibold rounded-lg flex items-center gap-1.5"
-              >
-                <RotateCcw className="w-3.5 h-3.5" /> Tentar novamente
-              </button>
-              {activeSource?.url && (
-                <a 
-                  href={activeSource.url}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="px-3 py-1.5 bg-zinc-800 hover:bg-zinc-700 text-zinc-200 text-xs font-medium rounded-lg flex items-center gap-1.5"
-                >
-                  <ExternalLink className="w-3.5 h-3.5" /> Abrir no player externo
-                </a>
+          {/* Loading & Status Overlay */}
+          {isLoading && (
+            <div className="absolute inset-0 flex items-center justify-center bg-black/70 backdrop-blur-sm pointer-events-none z-15">
+              <div className="flex flex-col items-center gap-3 text-center px-4">
+                <RefreshCw className="w-10 h-10 text-red-500 animate-spin" />
+                <span className="text-xs font-semibold text-zinc-200">
+                  {statusNotice || `Sincronizando sinal (${activeSource.name || `Fonte ${currentSourceIndex + 1}`})...`}
+                </span>
+                <span className="text-[11px] text-zinc-500">Aguarde a conexão do buffer HLS</span>
+              </div>
+            </div>
+          )}
+
+          {/* Error View */}
+          {errorMsg && (
+            <div className="absolute inset-0 flex items-center justify-center bg-zinc-950/95 p-6 z-20">
+              <div className="max-w-md text-center flex flex-col items-center gap-3">
+                <AlertCircle className="w-12 h-12 text-red-500" />
+                <h3 className="text-lg font-bold text-white">Transmissão Indisponível</h3>
+                <p className="text-xs text-zinc-400">{errorMsg}</p>
+                <div className="flex flex-wrap gap-2.5 justify-center mt-3">
+                  <button 
+                    onClick={() => { setCurrentSourceIndex(0); setErrorMsg(null); }}
+                    className="px-4 py-2 bg-red-600 hover:bg-red-500 text-white text-xs font-semibold rounded-xl flex items-center gap-2 shadow-lg shadow-red-600/30"
+                  >
+                    <RotateCcw className="w-4 h-4" /> Tentar Novamente
+                  </button>
+                  {activeSource?.url && (
+                    <a 
+                      href={activeSource.url}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="px-4 py-2 bg-zinc-800 hover:bg-zinc-700 text-zinc-200 text-xs font-semibold rounded-xl flex items-center gap-2"
+                    >
+                      <ExternalLink className="w-4 h-4" /> Abrir Externamente
+                    </a>
+                  )}
+                  {onClose && (
+                    <button 
+                      onClick={onClose}
+                      className="px-4 py-2 bg-zinc-800 hover:bg-zinc-700 text-zinc-300 text-xs font-semibold rounded-xl"
+                    >
+                      Fechar
+                    </button>
+                  )}
+                </div>
+              </div>
+            </div>
+          )}
+
+          {/* Top Header Overlay */}
+          <div 
+            className={`absolute top-0 inset-x-0 p-4 bg-gradient-to-b from-black/90 via-black/50 to-transparent transition-opacity duration-300 flex items-center justify-between z-10 ${
+              showControls ? 'opacity-100' : 'opacity-0 pointer-events-none'
+            }`}
+          >
+            <div className="flex items-center gap-3">
+              {isLive && (
+                <span className="flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-red-600/20 text-red-400 border border-red-500/40 text-[10px] font-extrabold uppercase tracking-wider shadow-sm">
+                  <span className="w-2 h-2 rounded-full bg-red-500 animate-ping" />
+                  Ao Vivo
+                </span>
               )}
+              <h2 className="text-sm md:text-base font-bold text-white tracking-tight truncate max-w-sm md:max-w-xl">
+                {title}
+              </h2>
+            </div>
+
+            {/* Top Right Actions */}
+            <div className="flex items-center gap-2">
+              <button
+                onClick={() => setShowShortcutsHelp(!showShortcutsHelp)}
+                className="p-2 bg-zinc-900/80 hover:bg-zinc-800 border border-white/10 rounded-xl text-zinc-400 hover:text-white backdrop-blur-md transition-colors"
+                title="Atalhos de teclado"
+              >
+                <HelpCircle className="w-4 h-4" />
+              </button>
+
               {onClose && (
-                <button 
+                <button
                   onClick={onClose}
-                  className="px-3 py-1.5 bg-zinc-800 hover:bg-zinc-700 text-zinc-300 text-xs font-medium rounded-lg"
+                  className="px-3 py-1.5 bg-zinc-900/80 hover:bg-zinc-800 border border-white/10 rounded-xl text-zinc-300 hover:text-white backdrop-blur-md transition-colors text-xs font-semibold"
                 >
-                  Fechar
+                  ✕ Fechar
                 </button>
               )}
             </div>
           </div>
+
+          {/* Shortcuts Help Modal */}
+          {showShortcutsHelp && (
+            <div className="absolute inset-0 z-30 flex items-center justify-center p-4 bg-black/85 backdrop-blur-md">
+              <div className="max-w-xs w-full bg-zinc-900 border border-white/10 rounded-2xl p-5 text-left text-xs text-zinc-300 space-y-2.5">
+                <div className="flex items-center justify-between font-bold text-white pb-2 border-b border-white/10">
+                  <span>Atalhos de Teclado</span>
+                  <button onClick={() => setShowShortcutsHelp(false)} className="text-zinc-500 hover:text-white">✕</button>
+                </div>
+                <div className="flex justify-between"><span>Espaço</span><span className="font-mono text-zinc-400">Play / Pause</span></div>
+                <div className="flex justify-between"><span>F</span><span className="font-mono text-zinc-400">Tela Cheia</span></div>
+                <div className="flex justify-between"><span>M</span><span className="font-mono text-zinc-400">Mudo</span></div>
+                <div className="flex justify-between"><span>P</span><span className="font-mono text-zinc-400">Picture-in-Picture</span></div>
+                <div className="flex justify-between"><span>S</span><span className="font-mono text-zinc-400">Próximo Servidor</span></div>
+                <div className="flex justify-between"><span>Esc</span><span className="font-mono text-zinc-400">Fechar Player</span></div>
+              </div>
+            </div>
+          )}
+
+          {/* Bottom Controls Bar */}
+          <div 
+            className={`absolute bottom-0 inset-x-0 p-4 bg-gradient-to-t from-black/95 via-black/60 to-transparent transition-opacity duration-300 z-10 ${
+              showControls ? 'opacity-100' : 'opacity-0 pointer-events-none'
+            }`}
+          >
+            {!isLive && duration > 0 && (
+              <div className="flex items-center gap-2 mb-2 group/progress">
+                <span className="text-[11px] font-mono text-zinc-400 w-12 text-right">
+                  {formatTime(currentTime)}
+                </span>
+                <input
+                  type="range"
+                  min={0}
+                  max={duration}
+                  step={0.5}
+                  value={currentTime}
+                  onChange={handleSeek}
+                  className="flex-1 h-1.5 bg-zinc-800 accent-red-600 rounded-lg cursor-pointer transition-all hover:h-2"
+                />
+                <span className="text-[11px] font-mono text-zinc-400 w-12">
+                  {formatTime(duration)}
+                </span>
+              </div>
+            )}
+
+            <div className="flex items-center justify-between pt-1">
+              <div className="flex items-center gap-3">
+                <button
+                  onClick={togglePlay}
+                  className="p-2.5 rounded-2xl bg-white/10 hover:bg-white/20 text-white transition-all active:scale-95"
+                >
+                  {isPlaying ? <Pause className="w-4 h-4" /> : <Play className="w-4 h-4 fill-white" />}
+                </button>
+
+                <div className="flex items-center gap-2 group/vol">
+                  <button
+                    onClick={toggleMute}
+                    className="p-2 rounded-xl text-zinc-300 hover:text-white transition-colors"
+                  >
+                    {isMuted || volume === 0 ? <VolumeX className="w-4 h-4 text-red-400" /> : <Volume2 className="w-4 h-4" />}
+                  </button>
+                  <input
+                    type="range"
+                    min={0}
+                    max={1}
+                    step={0.05}
+                    value={isMuted ? 0 : volume}
+                    onChange={handleVolumeChange}
+                    className="w-20 h-1.5 bg-zinc-800 accent-red-600 rounded-lg cursor-pointer opacity-80 group-hover/vol:opacity-100 transition-opacity"
+                  />
+                </div>
+              </div>
+
+              <div className="flex items-center gap-2">
+                {/* PiP Button */}
+                <button
+                  onClick={togglePiP}
+                  className="p-2 rounded-xl text-zinc-300 hover:text-white hover:bg-white/10 transition-colors"
+                  title="Picture-in-Picture (P)"
+                >
+                  <PictureInPicture className="w-4 h-4" />
+                </button>
+
+                {/* Fullscreen Button */}
+                <button
+                  onClick={toggleFullscreen}
+                  className="p-2 rounded-xl text-zinc-300 hover:text-white hover:bg-white/10 transition-colors"
+                  title="Tela Cheia (F)"
+                >
+                  {isFullscreen ? <Minimize className="w-4 h-4" /> : <Maximize className="w-4 h-4" />}
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Multi-Server Quick Switch Bar */}
+      {playableSources.length > 1 && (
+        <div className="flex items-center gap-2 overflow-x-auto pb-1 px-1 scrollbar-none">
+          <span className="text-[11px] font-semibold text-zinc-400 uppercase tracking-wider flex items-center gap-1.5 mr-1 whitespace-nowrap">
+            <Zap className="w-3.5 h-3.5 text-amber-400" />
+            Servidores ({playableSources.length}):
+          </span>
+
+          {playableSources.map((src, i) => (
+            <button
+              key={i}
+              onClick={() => setCurrentSourceIndex(i)}
+              className={`px-3 py-1.5 rounded-xl text-xs font-semibold whitespace-nowrap transition-all duration-200 border ${
+                i === currentSourceIndex
+                  ? 'bg-red-600 text-white border-red-500 shadow-md shadow-red-600/30'
+                  : 'bg-zinc-900 border-white/10 text-zinc-400 hover:text-white hover:bg-zinc-800'
+              }`}
+            >
+              {src.name || `Servidor ${i + 1}`}
+            </button>
+          ))}
         </div>
       )}
-
-      {/* Top Header Controls */}
-      <div 
-        className={`absolute top-0 inset-x-0 p-4 bg-gradient-to-b from-black/80 via-black/40 to-transparent transition-opacity duration-300 flex items-center justify-between z-10 ${
-          showControls ? 'opacity-100' : 'opacity-0 pointer-events-none'
-        }`}
-      >
-        <div className="flex items-center gap-3">
-          {isLive && (
-            <span className="flex items-center gap-1.5 px-2 py-0.5 rounded-md bg-red-600/20 text-red-400 border border-red-500/30 text-[11px] font-bold uppercase tracking-wider">
-              <span className="w-1.5 h-1.5 rounded-full bg-red-500 animate-pulse" />
-              Ao Vivo
-            </span>
-          )}
-          <h2 className="text-sm md:text-base font-semibold text-white tracking-tight truncate max-w-sm md:max-w-xl">
-            {title}
-          </h2>
-        </div>
-
-        {/* Source Dropdown */}
-        <div className="flex items-center gap-2 relative">
-          {playableSources.length > 1 && (
-            <div className="relative">
-              <button
-                onClick={() => setShowSourceMenu(!showSourceMenu)}
-                className="px-2.5 py-1.5 bg-zinc-900/80 hover:bg-zinc-800 border border-white/10 rounded-lg text-xs font-medium text-zinc-200 flex items-center gap-1.5 backdrop-blur-md transition-colors"
-                title="Trocar fonte de streaming"
-              >
-                <Layers className="w-3.5 h-3.5 text-red-400" />
-                <span>{activeSource.name || `Fonte ${currentSourceIndex + 1}`}</span>
-              </button>
-
-              {showSourceMenu && (
-                <div className="absolute right-0 top-full mt-1.5 w-52 bg-zinc-900/95 border border-white/10 rounded-xl shadow-2xl backdrop-blur-xl p-1 z-30 flex flex-col gap-0.5 max-h-60 overflow-y-auto">
-                  <div className="px-2 py-1 text-[10px] uppercase font-semibold text-zinc-400 tracking-wider">
-                    Servidores Disponíveis
-                  </div>
-                  {playableSources.map((src, i) => (
-                    <button
-                      key={i}
-                      onClick={() => {
-                        setCurrentSourceIndex(i);
-                        setShowSourceMenu(false);
-                      }}
-                      className={`w-full text-left px-2.5 py-1.5 rounded-lg text-xs flex items-center justify-between transition-colors ${
-                        i === currentSourceIndex
-                          ? 'bg-red-600/20 text-red-400 font-semibold'
-                          : 'text-zinc-300 hover:bg-zinc-800/80'
-                      }`}
-                    >
-                      <span className="truncate">{src.name}</span>
-                      {i === currentSourceIndex && <Check className="w-3.5 h-3.5" />}
-                    </button>
-                  ))}
-                </div>
-              )}
-            </div>
-          )}
-
-          {onClose && (
-            <button
-              onClick={onClose}
-              className="p-1.5 bg-zinc-900/80 hover:bg-zinc-800 border border-white/10 rounded-lg text-zinc-300 hover:text-white backdrop-blur-md transition-colors text-xs font-medium"
-            >
-              ✕
-            </button>
-          )}
-        </div>
-      </div>
-
-      {/* Bottom Controls */}
-      <div 
-        className={`absolute bottom-0 inset-x-0 p-4 bg-gradient-to-t from-black/90 via-black/50 to-transparent transition-opacity duration-300 z-10 ${
-          showControls ? 'opacity-100' : 'opacity-0 pointer-events-none'
-        }`}
-      >
-        {!isLive && duration > 0 && (
-          <div className="flex items-center gap-2 mb-2 group/progress">
-            <span className="text-[11px] font-mono text-zinc-400 w-10 text-right">
-              {formatTime(currentTime)}
-            </span>
-            <input
-              type="range"
-              min={0}
-              max={duration}
-              step={0.5}
-              value={currentTime}
-              onChange={handleSeek}
-              className="flex-1 h-1 bg-zinc-800 accent-red-600 rounded-lg cursor-pointer transition-all hover:h-1.5"
-            />
-            <span className="text-[11px] font-mono text-zinc-400 w-10">
-              {formatTime(duration)}
-            </span>
-          </div>
-        )}
-
-        <div className="flex items-center justify-between pt-1">
-          <div className="flex items-center gap-3">
-            <button
-              onClick={togglePlay}
-              className="p-2 rounded-xl bg-white/10 hover:bg-white/20 text-white transition-all active:scale-95"
-            >
-              {isPlaying ? <Pause className="w-4 h-4" /> : <Play className="w-4 h-4 fill-white" />}
-            </button>
-
-            <div className="flex items-center gap-1.5 group/vol">
-              <button
-                onClick={toggleMute}
-                className="p-2 rounded-xl text-zinc-300 hover:text-white transition-colors"
-              >
-                {isMuted || volume === 0 ? <VolumeX className="w-4 h-4" /> : <Volume2 className="w-4 h-4" />}
-              </button>
-              <input
-                type="range"
-                min={0}
-                max={1}
-                step={0.05}
-                value={isMuted ? 0 : volume}
-                onChange={handleVolumeChange}
-                className="w-16 h-1 bg-zinc-800 accent-red-600 rounded-lg cursor-pointer opacity-80 group-hover/vol:opacity-100 transition-opacity"
-              />
-            </div>
-          </div>
-
-          <div className="flex items-center gap-2">
-            <button
-              onClick={toggleFullscreen}
-              className="p-2 rounded-xl text-zinc-300 hover:text-white transition-colors"
-              title="Tela cheia (F)"
-            >
-              {isFullscreen ? <Minimize className="w-4 h-4" /> : <Maximize className="w-4 h-4" />}
-            </button>
-          </div>
-        </div>
-      </div>
     </div>
   );
 };

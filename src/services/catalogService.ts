@@ -162,8 +162,23 @@ export const catalogService = {
       console.warn('Falha na busca direta do catálogo, tentando via proxy:', e);
     }
 
-    // 2. Tentar via proxy se a conexão direta falhar
-    if (useProxy && proxyUrl) {
+    // 2. Tentar carregar de ./data/catalogo.txt (cópia local independente)
+    if (channelCatalogUrl !== './data/catalogo.txt') {
+      try {
+        const res = await fetch('./data/catalogo.txt');
+        if (res.ok) {
+          const text = await res.text();
+          const parsed = parseChannelsFromText(text);
+          if (parsed.length > 0) {
+            cachedChannels = parsed;
+            return parsed;
+          }
+        }
+      } catch {}
+    }
+
+    // 3. Tentar via proxy se a conexão direta falhar
+    if (useProxy && proxyUrl && channelCatalogUrl.startsWith('http')) {
       try {
         const proxyFetchUrl = `${proxyUrl}${encodeURIComponent(channelCatalogUrl)}`;
         const res = await fetch(proxyFetchUrl);
@@ -180,7 +195,7 @@ export const catalogService = {
       }
     }
 
-    // 3. Tentar carregar do cache local
+    // 4. Tentar carregar do cache local
     try {
       const savedText = localStorage.getItem('kestrel_cached_catalogo');
       if (savedText) {

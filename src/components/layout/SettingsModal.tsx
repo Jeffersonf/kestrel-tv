@@ -1,14 +1,19 @@
 import React, { useState } from 'react';
-import { Settings, Shield, RefreshCw, Check, Globe } from 'lucide-react';
+import { Settings, Shield, RefreshCw, Check, Globe, Lock, KeyRound, Unlock } from 'lucide-react';
 import { storageService, DEFAULT_SETTINGS } from '../../services/storageService';
 import type { AppSettings } from '../../types';
 
 export const SettingsModal: React.FC = () => {
   const [settings, setSettings] = useState<AppSettings>(() => storageService.getSettings());
   const [savedSuccess, setSavedSuccess] = useState(false);
+  const [adultPin, setAdultPin] = useState(() => storageService.getAdultPin());
+  const [isAdultUnlocked, setIsAdultUnlocked] = useState(() => storageService.isAdultUnlocked());
 
   const handleSave = () => {
     storageService.saveSettings(settings);
+    if (adultPin && adultPin.length === 4 && /^\d{4}$/.test(adultPin)) {
+      storageService.setAdultPin(adultPin);
+    }
     setSavedSuccess(true);
     setTimeout(() => setSavedSuccess(false), 2500);
   };
@@ -16,25 +21,86 @@ export const SettingsModal: React.FC = () => {
   const handleReset = () => {
     setSettings(DEFAULT_SETTINGS);
     storageService.saveSettings(DEFAULT_SETTINGS);
+    storageService.setAdultPin('0000');
+    setAdultPin('0000');
     setSavedSuccess(true);
     setTimeout(() => setSavedSuccess(false), 2500);
+  };
+
+  const toggleAdultMode = () => {
+    if (isAdultUnlocked) {
+      storageService.lockAdult();
+      setIsAdultUnlocked(false);
+    } else {
+      const pinPrompt = prompt('Digite o PIN de 4 dígitos para desbloquear o modo adulto:');
+      if (pinPrompt) {
+        if (storageService.unlockAdult(pinPrompt)) {
+          setIsAdultUnlocked(true);
+          alert('Modo Adulto (+18) desbloqueado com sucesso!');
+        } else {
+          alert('PIN incorreto!');
+        }
+      }
+    }
   };
 
   return (
     <div className="w-full max-w-3xl mx-auto px-4 md:px-6 py-8 animate-in fade-in duration-200">
       <div className="bg-zinc-900 border border-white/10 rounded-3xl p-6 md:p-8 shadow-2xl space-y-6">
         <div>
-          <h2 className="text-xl md:text-2xl font-bold tracking-tight text-white flex items-center gap-2.5">
+          <h2 className="text-xl md:text-2xl font-black tracking-tight text-white flex items-center gap-2.5">
             <Settings className="w-5 h-5 text-red-500" />
             Ajustes e Configurações
           </h2>
           <p className="text-xs text-zinc-400 mt-1">
-            Personalize as fontes de catálogo, controle de proxy de streaming e parâmetros da aplicação.
+            Personalize as fontes de catálogo independentes, controle parental (+18) e parâmetros de proxy.
           </p>
         </div>
 
+        {/* Parental Control Section */}
+        <div className="p-4.5 rounded-2xl bg-zinc-950 border border-white/5 space-y-3">
+          <div className="flex items-center justify-between">
+            <div className="flex items-center gap-2.5">
+              <Lock className="w-4 h-4 text-rose-400" />
+              <div>
+                <h4 className="text-xs font-semibold text-white">Controle Parental (+18)</h4>
+                <p className="text-[11px] text-zinc-400">
+                  Proteja a exibição dos canais adultos com uma senha PIN numérica de 4 dígitos.
+                </p>
+              </div>
+            </div>
+
+            <button
+              onClick={toggleAdultMode}
+              className={`px-3 py-1.5 rounded-xl border text-xs font-semibold flex items-center gap-1.5 transition-all ${
+                isAdultUnlocked
+                  ? 'bg-rose-500/20 text-rose-300 border-rose-500/40 hover:bg-rose-500/30'
+                  : 'bg-zinc-900 border-white/10 text-zinc-400 hover:text-white'
+              }`}
+            >
+              {isAdultUnlocked ? <Unlock className="w-3.5 h-3.5" /> : <Lock className="w-3.5 h-3.5" />}
+              <span>{isAdultUnlocked ? 'Bloquear (+18)' : 'Desbloquear (+18)'}</span>
+            </button>
+          </div>
+
+          <div className="pt-2 border-t border-white/5 flex items-center justify-between gap-4">
+            <div className="flex items-center gap-2 text-xs text-zinc-300">
+              <KeyRound className="w-4 h-4 text-zinc-500" />
+              <span>Senha PIN atual (4 dígitos):</span>
+            </div>
+            <input
+              type="password"
+              maxLength={4}
+              value={adultPin}
+              onChange={(e) => setAdultPin(e.target.value)}
+              placeholder="0000"
+              className="w-24 px-3 py-1.5 bg-zinc-900 border border-white/10 rounded-xl text-xs text-white text-center font-mono tracking-widest focus:outline-none focus:border-red-500"
+            />
+          </div>
+        </div>
+
         {/* Proxy Section */}
-        <div className="p-4 rounded-2xl bg-zinc-950 border border-white/5 space-y-3">
+        <div className="p-4.5 rounded-2xl bg-zinc-950 border border-white/5 space-y-3">
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-2.5">
               <Shield className="w-4 h-4 text-red-400" />
@@ -81,15 +147,27 @@ export const SettingsModal: React.FC = () => {
           </div>
 
           <div>
-            <label className="text-xs font-medium text-zinc-300 block mb-1">
-              Catálogo de Canais (catalogo.txt):
-            </label>
+            <div className="flex items-center justify-between mb-1">
+              <label className="text-xs font-medium text-zinc-300">
+                Catálogo de Canais (catalogo.txt):
+              </label>
+              <button
+                type="button"
+                onClick={() => setSettings({ ...settings, channelCatalogUrl: './data/catalogo.txt' })}
+                className="text-[10px] text-red-400 hover:text-red-300 underline"
+              >
+                Usar Cópia Local Independente
+              </button>
+            </div>
             <input
               type="text"
               value={settings.channelCatalogUrl}
               onChange={(e) => setSettings({ ...settings, channelCatalogUrl: e.target.value })}
               className="w-full px-3.5 py-2 bg-zinc-950 border border-white/10 rounded-xl text-xs text-zinc-200 focus:outline-none focus:border-red-500 font-mono"
             />
+            <p className="text-[10px] text-zinc-500 mt-1">
+              Dica: Use <code>./data/catalogo.txt</code> para independência total ou uma URL externa personalizada.
+            </p>
           </div>
 
           <div>
@@ -109,7 +187,7 @@ export const SettingsModal: React.FC = () => {
         <div className="pt-4 border-t border-white/10 flex items-center justify-between">
           <button
             onClick={handleReset}
-            className="px-4 py-2 rounded-xl bg-zinc-800 hover:bg-zinc-700 text-zinc-300 text-xs font-medium flex items-center gap-2 transition-colors"
+            className="px-4 py-2.5 rounded-xl bg-zinc-800 hover:bg-zinc-700 text-zinc-300 text-xs font-medium flex items-center gap-2 transition-colors"
           >
             <RefreshCw className="w-3.5 h-3.5" />
             Restaurar Padrões
@@ -117,7 +195,7 @@ export const SettingsModal: React.FC = () => {
 
           <button
             onClick={handleSave}
-            className="px-6 py-2 rounded-xl bg-red-600 hover:bg-red-500 text-white text-xs font-semibold flex items-center gap-2 shadow-lg shadow-red-600/25 transition-all active:scale-95"
+            className="px-6 py-2.5 rounded-xl bg-red-600 hover:bg-red-500 text-white text-xs font-semibold flex items-center gap-2 shadow-lg shadow-red-600/25 transition-all active:scale-95"
           >
             {savedSuccess ? <Check className="w-4 h-4" /> : null}
             {savedSuccess ? 'Salvo com Sucesso!' : 'Salvar Alterações'}

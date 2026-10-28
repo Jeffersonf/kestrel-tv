@@ -2,20 +2,75 @@ import type { Channel } from '../types';
 
 export const FALLBACK_CHANNELS: Channel[] = [
   {
-    "id": "ch_1_a%26e",
+    "name": "CazéTV (Ao Vivo)",
+    "category": "Jogos & Esportes",
+    "logo": "https://commons.wikimedia.org/wiki/Special:FilePath/Caz%C3%A9TV_wordmark.svg?width=300",
+    "sources": [
+      {
+        "url": "https://amg01391-amg01391c10-tcl-br-9630.playouts.now.amagi.tv/playlist.m3u8",
+        "quality": "1080p FHD (Oficial TCL)"
+      },
+      {
+        "url": "https://stream.ads.ottera.tv/playlist.m3u8?network_id=16337",
+        "quality": "720p HD"
+      }
+    ],
+    "id": "ch_1_caz%C3%A9tv_(ao_vivo)"
+  },
+  {
+    "name": "NSports Ao Vivo",
+    "category": "Jogos & Esportes",
+    "logo": "https://mondrian.claro.com.br/channels/inverse/nsports.png",
+    "sources": [
+      {
+        "url": "https://ogc-nsprt-tcl-roku-syndication.otteravision.com/ogc/nsprt/nsprt_720p.m3u8",
+        "quality": "720p HD (Oficial Roku)"
+      },
+      {
+        "url": "https://stream.ads.ottera.tv/playlist.m3u8?network_id=16337",
+        "quality": "HD"
+      }
+    ],
+    "id": "ch_2_nsports_ao_vivo"
+  },
+  {
+    "name": "Red Bull TV Esportes",
+    "category": "Jogos & Esportes",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Red_Bull_TV_logo.svg/320px-Red_Bull_TV_logo.svg.png",
+    "sources": [
+      {
+        "url": "https://rbmn-live.akamaized.net/hls/live/590964/BoRB-AT/master.m3u8",
+        "quality": "1080p FHD (Oficial)"
+      }
+    ],
+    "id": "ch_3_red_bull_tv_esportes"
+  },
+  {
+    "name": "FIFA+ Ao Vivo",
+    "category": "Jogos & Esportes",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/FIFA%2B_logo.svg/320px-FIFA%2B_logo.svg.png",
+    "sources": [
+      {
+        "url": "https://fifa-fifaplus1-1-br.samsung.wurl.tv/playlist.m3u8",
+        "quality": "1080p FHD (Samsung TV Plus)"
+      }
+    ],
+    "id": "ch_4_fifa%2B_ao_vivo"
+  },
+  {
     "name": "A&E",
     "category": "Documentários",
     "logo": "https://img.faz-o-eli.online/ae.png",
     "sources": [
       {
-        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/ae/ae.m3u8",
-        "quality": "FHD · 1920x1080"
-      },
-      {
-        "url": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/1b7db4ddf16c76651b18ad11bb1af6ff/error.txt",
+        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/88b8aefdec5f0ef1cdc7477e04e7cdfa/error.txt",
         "quality": "Qualidade não informada",
         "referer": "https://w7.embedtv.cc/",
         "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
+      },
+      {
+        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/ae/ae.m3u8",
+        "quality": "FHD · 1920x1080"
       },
       {
         "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1MDg2Lm0zdTg.m3u8",
@@ -89,10 +144,10 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1MDg4Lm0zdTg.m3u8",
         "quality": "SD"
       }
-    ]
+    ],
+    "id": "ch_5_a%26e"
   },
   {
-    "id": "ch_2_adult%20swim",
     "name": "Adult Swim",
     "category": "Variedades",
     "logo": "https://img.faz-o-eli.online/adultswim.png",
@@ -104,7 +159,7 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
       },
       {
-        "url": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/1fe0e49f84df1e8cca835f172f436cdf/error.txt",
+        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/aade359ef7e7d0d9682e2e5825345d6d/error.txt",
         "quality": "Qualidade não informada",
         "referer": "https://w7.embedtv.cc/",
         "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
@@ -180,24 +235,24 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzQyMDQ5Lm0zdTg.m3u8",
         "quality": "HD"
       }
-    ]
+    ],
+    "id": "ch_6_adult_swim"
   },
   {
-    "id": "ch_3_amc",
     "name": "AMC",
     "category": "Filmes e Séries",
     "logo": "https://img.faz-o-eli.online/amc.png",
     "sources": [
       {
-        "url": "https://dadinhodetapioca.fun/play/amc.html",
-        "quality": "FHD",
-        "referer": "https://dadinhodetapioca.fun/"
-      },
-      {
-        "url": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/f660226dc9ed2c342543bdde49b57cd4/error.txt",
+        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/bd2aca80ba2bb4c9c7d58b110dd9f96c/error.txt",
         "quality": "Qualidade não informada",
         "referer": "https://w7.embedtv.cc/",
         "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
+      },
+      {
+        "url": "https://dadinhodetapioca.fun/play/amc.html",
+        "quality": "FHD",
+        "referer": "https://dadinhodetapioca.fun/"
       },
       {
         "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/amc/amc.m3u8",
@@ -275,10 +330,10 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1Mjk2Lm0zdTg.m3u8",
         "quality": "SD"
       }
-    ]
+    ],
+    "id": "ch_7_amc"
   },
   {
-    "id": "ch_4_animal%20planet",
     "name": "Animal Planet",
     "category": "Documentários",
     "logo": "https://img.faz-o-eli.online/animalplanet.png",
@@ -290,7 +345,7 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
       },
       {
-        "url": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/fe281942bd4be4abe80ee7c30742d566/error.txt",
+        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/847c797790cf3e5db3f674499481eb6e/error.txt",
         "quality": "Qualidade não informada",
         "referer": "https://w7.embedtv.cc/",
         "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
@@ -398,10 +453,10 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1MDA4Lm0zdTg.m3u8",
         "quality": "SD"
       }
-    ]
+    ],
+    "id": "ch_8_animal_planet"
   },
   {
-    "id": "ch_5_band",
     "name": "Band",
     "category": "TV Aberta",
     "logo": "https://mondrian.claro.com.br/channels/inverse/band.png",
@@ -446,10 +501,10 @@ export const FALLBACK_CHANNELS: Channel[] = [
       {
         "url": "https://vipwaytvcdn.multtv.tv.br:5444/TVThathi_Band/720p/index.m3u8"
       }
-    ]
+    ],
+    "id": "ch_9_band"
   },
   {
-    "id": "ch_6_cartoon%20network",
     "name": "Cartoon Network",
     "category": "Infantil",
     "logo": "https://img.faz-o-eli.online/cartoonnetwork.png",
@@ -461,7 +516,7 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
       },
       {
-        "url": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/13e7136f7a738fca5e5276642ab5bb76/error.txt",
+        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/b9399cc1add67ffa4a4fb3ef51335b36/error.txt",
         "quality": "Qualidade não informada",
         "referer": "https://w7.embedtv.cc/",
         "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
@@ -565,10 +620,10 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1NDAxLm0zdTg.m3u8",
         "quality": "SD"
       }
-    ]
+    ],
+    "id": "ch_10_cartoon_network"
   },
   {
-    "id": "ch_7_cnn%20brasil",
     "name": "CNN Brasil",
     "category": "Notícias",
     "logo": "https://img.faz-o-eli.online/cnnbrasil.png",
@@ -577,12 +632,6 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "https://aws.s13-s1001604.lat/stream/4b31648104a3eabb9f1982ff6513147d/cnnbrasil.m3u8",
         "quality": "HD · 1280x720",
         "referer": "https://meufut.top/cnn-brasil",
-        "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
-      },
-      {
-        "url": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/1435bdb61beda26009b69f297ee79a7d/error.txt",
-        "quality": "Qualidade não informada",
-        "referer": "https://w7.embedtv.cc/",
         "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
       },
       {
@@ -606,6 +655,12 @@ export const FALLBACK_CHANNELS: Channel[] = [
       {
         "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1NDY0Lm0zdTg.m3u8",
         "quality": "FHD"
+      },
+      {
+        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/07c3fcccfd4cdc050020dd59b9697e40/error.txt",
+        "quality": "Qualidade não informada",
+        "referer": "https://w7.embedtv.cc/",
+        "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
       },
       {
         "url": "https://amg01391-sbtinfast-amg01391c4-lg-br-4597.playouts.now.amagi.tv/playlist/amg01391-addigital-cnnbrasil-lgbr/playlist.m3u8",
@@ -690,10 +745,10 @@ export const FALLBACK_CHANNELS: Channel[] = [
       {
         "url": "https://amg01391-sbtinfast-amg01391c4-lg-br-4597.playouts.now.amagi.tv/ts-us-e2-n2/playlist/amg01391-addigital-cnnbrasil-lgbr/cb573e1e7b6c608d84c83f60cef24282967b3dcb0e6c886470af4a9765d97800dbe8ae84ae5b910c4c9e1fc061017d360439cd1dd56c49c1da63b820743c4b21fdcde00080dd0d0cb1df11292ca36265299a7369cc350f7bd2ec5a2f803ebe764c53cb017c593f88f258a8744cc59e0a957f39e8fc8b307b24455a9c5a43e6a64ed6abb64244dd6ebfb102488b2f57f38117ced415e9d48746cf128627ec159cc4f196da11d7d28c32f85ee7360d5b762e988421a12e3cdcabf2e3842f1052243c67a4c5b1ec4f268f4b3124929df89e15319753eb5fec5338ae14900fa53d8f79a30aa69b3ec8577e6c23335083d15a7332acedaf99b9415b2cba49c39bbf404ce39f277948895dd9372737da9aa171d49445c6e671c2dc036c70de7d9c9094e523964cde88487292e054d24c634366160b855ceda96cd416ed79bdc21c1bfb2c2eb0b75ade8fd552312d1ac8d01e9c2412b7df8494cc4e15fe204a0aa630821b3265c2623827a535afce752ca8361a89300afe5a1e8956b3ed7fa2e988b346739ef6f36fd323afb903d9f3428e683f520dfab20f57574370d5a137586237930bb49d9aa1440806ede5c4b195006f496a4112298fe5a821cedc8e7953468f0354151e7a209f0ad266c81309517ebb79fd984925d5487157a9cd5670536f84c7a28e81c2b82d9876d0ddf22a203d4d19d31601216b93fbcd6ef4364f716d4ec2684046ae0c4e4dfa9faab4c0d78eaf7b923c8c04fe968932a6a54d2d6641655a4e274dd8/197/1920x1080_7582265/index.m3u8"
       }
-    ]
+    ],
+    "id": "ch_11_cnn_brasil"
   },
   {
-    "id": "ch_8_cnn%20brasil%20money",
     "name": "CNN Brasil Money",
     "category": "Notícias",
     "logo": "https://mondrian.claro.com.br/channels/inverse/cnn-brasil-money.png",
@@ -762,10 +817,10 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "http://332nr7hbfu.xyz:80/live/999913/S3CvUB/295482.m3u8",
         "quality": "FHD · 1920x1080"
       }
-    ]
+    ],
+    "id": "ch_12_cnn_brasil_money"
   },
   {
-    "id": "ch_9_e%21",
     "name": "E!",
     "category": "Variedades",
     "logo": "https://commons.wikimedia.org/wiki/Special:FilePath/E%21_Logo_Flat_2012.svg?width=300",
@@ -850,12 +905,12 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1MTAwLm0zdTg.m3u8",
         "quality": "SD"
       }
-    ]
+    ],
+    "id": "ch_13_e!"
   },
   {
-    "id": "ch_10_ge%20tv",
     "name": "GE TV",
-    "category": "Esportes",
+    "category": "Jogos & Esportes",
     "logo": "https://mondrian.claro.com.br/channels/inverse/ge-tv.png",
     "sources": [
       {
@@ -908,10 +963,10 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvMjExODE2MS5tM3U4.m3u8",
         "quality": "SD"
       }
-    ]
+    ],
+    "id": "ch_14_ge_tv"
   },
   {
-    "id": "ch_11_globonews",
     "name": "GloboNews",
     "category": "Notícias",
     "logo": "https://img.faz-o-eli.online/globonews.png",
@@ -923,7 +978,7 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
       },
       {
-        "url": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/1cbf31d298dbed3cc7860b5048f124f8/error.txt",
+        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/f3a5862f221237de091a5cfdee339c76/error.txt",
         "quality": "Qualidade não informada",
         "referer": "https://w7.embedtv.cc/",
         "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
@@ -1029,23 +1084,23 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1NDcxLm0zdTg.m3u8",
         "quality": "SD"
       }
-    ]
+    ],
+    "id": "ch_15_globonews"
   },
   {
-    "id": "ch_12_globoplay%20novelas",
     "name": "Globoplay Novelas",
     "category": "Filmes e Séries",
     "logo": "https://img.faz-o-eli.online/globonovelas.prev.png",
     "sources": [
       {
-        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/globonovelas/globonovelas.m3u8",
-        "quality": "Qualidade não informada"
-      },
-      {
-        "url": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/413378fc4dbd6d341fe78086f6e4da64/error.txt",
+        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/55a9732537da5a058ab4fedb2904cf80/error.txt",
         "quality": "Qualidade não informada",
         "referer": "https://w7.embedtv.cc/",
         "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
+      },
+      {
+        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/globonovelas/globonovelas.m3u8",
+        "quality": "Qualidade não informada"
       },
       {
         "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1MTQ5Lm0zdTg.m3u8",
@@ -1147,23 +1202,23 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1MTUxLm0zdTg.m3u8",
         "quality": "SD"
       }
-    ]
+    ],
+    "id": "ch_16_globoplay_novelas"
   },
   {
-    "id": "ch_13_gnt",
     "name": "GNT",
     "category": "Variedades",
     "logo": "https://img.faz-o-eli.online/gnt.png",
     "sources": [
       {
-        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/gnt/gnt.m3u8",
-        "quality": "HD · 1280x720"
-      },
-      {
-        "url": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/637d23a1ad8303278ae6ae6beacc63c5/error.txt",
+        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/384dccb02044b9703602763a4a514e04/error.txt",
         "quality": "Qualidade não informada",
         "referer": "https://w7.embedtv.cc/",
         "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
+      },
+      {
+        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/gnt/gnt.m3u8",
+        "quality": "HD · 1280x720"
       },
       {
         "url": "https://16-5-0-235.sslip.io/gnt/index.m3u8"
@@ -1268,10 +1323,10 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1MTEyLm0zdTg.m3u8",
         "quality": "SD"
       }
-    ]
+    ],
+    "id": "ch_17_gnt"
   },
   {
-    "id": "ch_14_history",
     "name": "History",
     "category": "Documentários",
     "logo": "https://img.faz-o-eli.online/history.png",
@@ -1283,7 +1338,7 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
       },
       {
-        "url": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/ea03a02f8bad99cf5287d1117d09da98/error.txt",
+        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/03b263d45890d365b1c558fbfb2540d9/error.txt",
         "quality": "Qualidade não informada",
         "referer": "https://w7.embedtv.cc/",
         "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
@@ -1403,24 +1458,24 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1MDUyLm0zdTg.m3u8",
         "quality": "SD"
       }
-    ]
+    ],
+    "id": "ch_18_history"
   },
   {
-    "id": "ch_15_history%202",
     "name": "History 2",
     "category": "Documentários",
     "logo": "https://img.faz-o-eli.online/history2.png",
     "sources": [
       {
-        "url": "https://dadinhodetapioca.fun/play/history2.html",
-        "quality": "FHD",
-        "referer": "https://dadinhodetapioca.fun/"
-      },
-      {
-        "url": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/428abb613618bd37338d21178abd344d/error.txt",
+        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/d3f60f62492ba516571cb0c2e1986bb9/error.txt",
         "quality": "Qualidade não informada",
         "referer": "https://w7.embedtv.cc/",
         "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
+      },
+      {
+        "url": "https://dadinhodetapioca.fun/play/history2.html",
+        "quality": "FHD",
+        "referer": "https://dadinhodetapioca.fun/"
       },
       {
         "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/history2/history2.m3u8",
@@ -1482,10 +1537,10 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "http://corruptx.org:80/live/hfp5ejnrey/zq0u3kzads/304500.m3u8",
         "quality": "HD"
       }
-    ]
+    ],
+    "id": "ch_19_history_2"
   },
   {
-    "id": "ch_16_jovem%20pan%20news",
     "name": "Jovem Pan News",
     "category": "Notícias",
     "logo": "https://www.tvlogo.org/brazil/jovem-pan-news-br.png",
@@ -1569,10 +1624,10 @@ export const FALLBACK_CHANNELS: Channel[] = [
       {
         "url": "https://amg01391-amg01391c3-tcl-spain-5038.playouts.now.amagi.tv/playlist1080-p.m3u8"
       }
-    ]
+    ],
+    "id": "ch_20_jovem_pan_news"
   },
   {
-    "id": "ch_17_megapix",
     "name": "Megapix",
     "category": "Filmes e Séries",
     "logo": "https://img.faz-o-eli.online/megapix.png",
@@ -1584,7 +1639,7 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
       },
       {
-        "url": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/11a74a03a4906c8e0d1a27c587439908/error.txt",
+        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/291ef8b9e9ad80e39ef2a2bd870c821c/error.txt",
         "quality": "Qualidade não informada",
         "referer": "https://w7.embedtv.cc/",
         "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
@@ -1694,24 +1749,24 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1MzE5Lm0zdTg.m3u8",
         "quality": "SD"
       }
-    ]
+    ],
+    "id": "ch_21_megapix"
   },
   {
-    "id": "ch_18_multishow",
     "name": "Multishow",
     "category": "Variedades",
     "logo": "https://img.faz-o-eli.online/multishow.png",
     "sources": [
       {
-        "url": "https://aws.s13-s1001604.lat/stream/20aa200451a750a1367af30f8268595a/multishow.m3u8",
-        "quality": "HD · 1280x720",
-        "referer": "https://meufut.top/multishow",
+        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/a2bb656cdb461a7db6d90e934fdc74b2/error.txt",
+        "quality": "Qualidade não informada",
+        "referer": "https://w7.embedtv.cc/",
         "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
       },
       {
-        "url": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/0df5e314f22ddf26b7a090e309828f65/error.txt",
-        "quality": "Qualidade não informada",
-        "referer": "https://w7.embedtv.cc/",
+        "url": "https://aws.s13-s1001604.lat/stream/20aa200451a750a1367af30f8268595a/multishow.m3u8",
+        "quality": "HD · 1280x720",
+        "referer": "https://meufut.top/multishow",
         "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
       },
       {
@@ -1799,23 +1854,23 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1MTMyLm0zdTg.m3u8",
         "quality": "SD"
       }
-    ]
+    ],
+    "id": "ch_22_multishow"
   },
   {
-    "id": "ch_19_premiere%202",
     "name": "Premiere 2",
-    "category": "Esportes",
+    "category": "Jogos & Esportes",
     "logo": "https://img.faz-o-eli.online/premiere.png",
     "sources": [
       {
-        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/premiere2/premiere2.m3u8",
-        "quality": "HD · 1280x720"
-      },
-      {
-        "url": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/929b48e734b5124dc93ca7e8dbbfc9e2/error.txt",
+        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/53642c8dfee785c9212c3adc0d9026c7/error.txt",
         "quality": "Qualidade não informada",
         "referer": "https://w7.embedtv.cc/",
         "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
+      },
+      {
+        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/premiere2/premiere2.m3u8",
+        "quality": "HD · 1280x720"
       },
       {
         "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/premiere/premiere.m3u8",
@@ -1908,23 +1963,23 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzQ4MzQyLm0zdTg.m3u8",
         "quality": "SD"
       }
-    ]
+    ],
+    "id": "ch_23_premiere_2"
   },
   {
-    "id": "ch_20_premiere%203",
     "name": "Premiere 3",
-    "category": "Esportes",
+    "category": "Jogos & Esportes",
     "logo": "https://img.faz-o-eli.online/premiere.png",
     "sources": [
       {
-        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/premiere3/premiere3.m3u8",
-        "quality": "HD · 1280x720"
-      },
-      {
-        "url": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/93201fb7d2ce1a38b8e4ac39b1d1d31a/error.txt",
+        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/9a34ec0bc8346d28e5f07c52d79f1c05/error.txt",
         "quality": "Qualidade não informada",
         "referer": "https://w7.embedtv.cc/",
         "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
+      },
+      {
+        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/premiere3/premiere3.m3u8",
+        "quality": "HD · 1280x720"
       },
       {
         "url": "https://16-5-0-235.sslip.io/premiere3/index.m3u8"
@@ -2021,23 +2076,23 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzQ4MzQ1Lm0zdTg.m3u8",
         "quality": "SD"
       }
-    ]
+    ],
+    "id": "ch_24_premiere_3"
   },
   {
-    "id": "ch_21_premiere%204",
     "name": "Premiere 4",
-    "category": "Esportes",
+    "category": "Jogos & Esportes",
     "logo": "https://img.faz-o-eli.online/premiere.png",
     "sources": [
       {
-        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/premiere4/premiere4.m3u8",
-        "quality": "HD · 1280x720"
-      },
-      {
-        "url": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/0d92ae9490799778f6995c3cc61c8ee5/error.txt",
+        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/f6406f6ac40d211c11d4bee1f77799f1/error.txt",
         "quality": "Qualidade não informada",
         "referer": "https://w7.embedtv.cc/",
         "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
+      },
+      {
+        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/premiere4/premiere4.m3u8",
+        "quality": "HD · 1280x720"
       },
       {
         "url": "https://16-5-0-235.sslip.io/premiere4/index.m3u8"
@@ -2126,24 +2181,24 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzQ4MzQ4Lm0zdTg.m3u8",
         "quality": "SD"
       }
-    ]
+    ],
+    "id": "ch_25_premiere_4"
   },
   {
-    "id": "ch_22_premiere%205",
     "name": "Premiere 5",
-    "category": "Esportes",
+    "category": "Jogos & Esportes",
     "logo": "https://img.faz-o-eli.online/premiere.png",
     "sources": [
+      {
+        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/dbb05abf5ba0263b0895b8ad62a06a7a/error.txt",
+        "quality": "Qualidade não informada",
+        "referer": "https://w7.embedtv.cc/",
+        "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
+      },
       {
         "url": "https://dadinhodetapioca.fun/play/premiere5.html",
         "quality": "FHD",
         "referer": "https://dadinhodetapioca.fun/"
-      },
-      {
-        "url": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/812eb1bfdfffe3e3390a5b4a4e8f8b57/error.txt",
-        "quality": "Qualidade não informada",
-        "referer": "https://w7.embedtv.cc/",
-        "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
       },
       {
         "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/premiere5/premiere5.m3u8",
@@ -2244,12 +2299,12 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzQ4MzUxLm0zdTg.m3u8",
         "quality": "SD"
       }
-    ]
+    ],
+    "id": "ch_26_premiere_5"
   },
   {
-    "id": "ch_23_premiere%206",
     "name": "Premiere 6",
-    "category": "Esportes",
+    "category": "Jogos & Esportes",
     "logo": "https://mondrian.claro.com.br/channels/inverse/premiere.png",
     "sources": [
       {
@@ -2351,12 +2406,12 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzQ4MzU0Lm0zdTg.m3u8",
         "quality": "SD"
       }
-    ]
+    ],
+    "id": "ch_27_premiere_6"
   },
   {
-    "id": "ch_24_premiere%207",
     "name": "Premiere 7",
-    "category": "Esportes",
+    "category": "Jogos & Esportes",
     "logo": "https://img.faz-o-eli.online/premiere.png",
     "sources": [
       {
@@ -2450,12 +2505,12 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzQ4MzU3Lm0zdTg.m3u8",
         "quality": "SD"
       }
-    ]
+    ],
+    "id": "ch_28_premiere_7"
   },
   {
-    "id": "ch_25_premiere%208",
     "name": "Premiere 8",
-    "category": "Esportes",
+    "category": "Jogos & Esportes",
     "logo": "https://mondrian.claro.com.br/channels/inverse/premiere.png",
     "sources": [
       {
@@ -2545,12 +2600,12 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "http://45.185.11.126:8000/play/a05l/index.m3u8",
         "quality": "FHD · 1920x1080"
       }
-    ]
+    ],
+    "id": "ch_29_premiere_8"
   },
   {
-    "id": "ch_26_premiere%20clubes",
     "name": "Premiere Clubes",
-    "category": "Esportes",
+    "category": "Jogos & Esportes",
     "logo": "https://img.faz-o-eli.online/premiere.png",
     "sources": [
       {
@@ -2560,7 +2615,7 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
       },
       {
-        "url": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/e820a1a4da38cc48b7fa9d4e79637064/error.txt",
+        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/23868c7d5fa2918f720058576d31584a/error.txt",
         "quality": "Qualidade não informada",
         "referer": "https://w7.embedtv.cc/",
         "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
@@ -2647,10 +2702,10 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "http://45.185.11.126:8000/play/a06g/index.m3u8",
         "quality": "FHD · 1920x1080"
       }
-    ]
+    ],
+    "id": "ch_30_premiere_clubes"
   },
   {
-    "id": "ch_27_sbt",
     "name": "SBT",
     "category": "TV Aberta",
     "logo": "https://mondrian.claro.com.br/channels/inverse/sbt.png",
@@ -2703,10 +2758,10 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "http://corruptx.org:80/live/hfp5ejnrey/zq0u3kzads/30120.m3u8",
         "quality": "HD"
       }
-    ]
+    ],
+    "id": "ch_31_sbt"
   },
   {
-    "id": "ch_28_sbt%20news",
     "name": "SBT News",
     "category": "Notícias",
     "logo": "https://mondrian.claro.com.br/channels/inverse/sbt-news.png",
@@ -2738,10 +2793,10 @@ export const FALLBACK_CHANNELS: Channel[] = [
       {
         "url": "https://sbtnews.maissbt.com/3.m3u8"
       }
-    ]
+    ],
+    "id": "ch_32_sbt_news"
   },
   {
-    "id": "ch_29_sony%20channel",
     "name": "Sony Channel",
     "category": "Filmes e Séries",
     "logo": "https://img.faz-o-eli.online/sonychannel.png",
@@ -2751,7 +2806,7 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "quality": "HD · 1280x720"
       },
       {
-        "url": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/c3231d6dce61c659180bb8645ef54969/error.txt",
+        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/ce3b9c75cda7d27415c833c9a999fad5/error.txt",
         "quality": "Qualidade não informada",
         "referer": "https://w7.embedtv.cc/",
         "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
@@ -2828,12 +2883,12 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1MzI3Lm0zdTg.m3u8",
         "quality": "SD"
       }
-    ]
+    ],
+    "id": "ch_33_sony_channel"
   },
   {
-    "id": "ch_30_sportv",
     "name": "SporTV",
-    "category": "Esportes",
+    "category": "Jogos & Esportes",
     "logo": "https://img.faz-o-eli.online/sportv.png",
     "sources": [
       {
@@ -2843,7 +2898,7 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
       },
       {
-        "url": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/65b761ca1e8106dff0e9ba4e9900e059/error.txt",
+        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/d4b93407c8e2e95b00d9cae0990d47ae/error.txt",
         "quality": "Qualidade não informada",
         "referer": "https://w7.embedtv.cc/",
         "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
@@ -2962,24 +3017,24 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "http://332nr7hbfu.xyz:80/live/999913/S3CvUB/131132.m3u8",
         "quality": "SD · 852x480"
       }
-    ]
+    ],
+    "id": "ch_34_sportv"
   },
   {
-    "id": "ch_31_sportv%202",
     "name": "SporTV 2",
-    "category": "Esportes",
+    "category": "Jogos & Esportes",
     "logo": "https://img.faz-o-eli.online/sportv2.png",
     "sources": [
+      {
+        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/583376e665ab4a7be7696a48f7485c14/error.txt",
+        "quality": "Qualidade não informada",
+        "referer": "https://w7.embedtv.cc/",
+        "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
+      },
       {
         "url": "https://dadinhodetapioca.fun/play/sportv2.html",
         "quality": "FHD",
         "referer": "https://dadinhodetapioca.fun/"
-      },
-      {
-        "url": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/23ae854b151edd4aa4db60bf885a2f9e/error.txt",
-        "quality": "Qualidade não informada",
-        "referer": "https://w7.embedtv.cc/",
-        "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
       },
       {
         "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/sportv2/sportv2.m3u8",
@@ -3060,24 +3115,24 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI0NzQwLm0zdTg.m3u8",
         "quality": "SD"
       }
-    ]
+    ],
+    "id": "ch_35_sportv_2"
   },
   {
-    "id": "ch_32_sportv%203",
     "name": "SporTV 3",
-    "category": "Esportes",
+    "category": "Jogos & Esportes",
     "logo": "https://img.faz-o-eli.online/sportv3.png",
     "sources": [
+      {
+        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/f91e4cbe649600e698fd671e2a8d7ea0/error.txt",
+        "quality": "Qualidade não informada",
+        "referer": "https://w7.embedtv.cc/",
+        "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
+      },
       {
         "url": "https://dadinhodetapioca.fun/play/sportv3.html",
         "quality": "FHD",
         "referer": "https://dadinhodetapioca.fun/"
-      },
-      {
-        "url": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/808372ce0338c47307119133401beebd/error.txt",
-        "quality": "Qualidade não informada",
-        "referer": "https://w7.embedtv.cc/",
-        "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
       },
       {
         "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/sportv3/sportv3.m3u8",
@@ -3170,23 +3225,23 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI0NzQ0Lm0zdTg.m3u8",
         "quality": "SD"
       }
-    ]
+    ],
+    "id": "ch_36_sportv_3"
   },
   {
-    "id": "ch_33_canal%20off",
     "name": "Canal OFF",
-    "category": "Esportes",
+    "category": "Jogos & Esportes",
     "logo": "https://img.faz-o-eli.online/off.png",
     "sources": [
       {
-        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/off/off.m3u8",
-        "quality": "HD · 1280x720"
-      },
-      {
-        "url": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/6e304f19a9b875ae903399bab6fbd661/error.txt",
+        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/95c0c4c76d7121191d8c2164d9ba6de3/error.txt",
         "quality": "Qualidade não informada",
         "referer": "https://w7.embedtv.cc/",
         "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
+      },
+      {
+        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/off/off.m3u8",
+        "quality": "HD · 1280x720"
       },
       {
         "url": "http://64.31.23.207:80/59471019/60849037/518583.m3u8",
@@ -3248,24 +3303,24 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "http://45.185.11.126:8000/play/a07t/index.m3u8",
         "quality": "FHD · 1920x1080"
       }
-    ]
+    ],
+    "id": "ch_37_canal_off"
   },
   {
-    "id": "ch_34_telecine%20action",
     "name": "Telecine Action",
     "category": "Filmes e Séries",
     "logo": "https://img.faz-o-eli.online/telecineaction.png",
     "sources": [
       {
-        "url": "https://dadinhodetapioca.fun/play/telecineaction.html",
-        "quality": "FHD",
-        "referer": "https://dadinhodetapioca.fun/"
-      },
-      {
-        "url": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/8623b04f6a4b9b3e08888ba4d1df6411/error.txt",
+        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/19169227b38228adaf6515f4075c6255/error.txt",
         "quality": "Qualidade não informada",
         "referer": "https://w7.embedtv.cc/",
         "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
+      },
+      {
+        "url": "https://dadinhodetapioca.fun/play/telecineaction.html",
+        "quality": "FHD",
+        "referer": "https://dadinhodetapioca.fun/"
       },
       {
         "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/telecineaction/telecineaction.m3u8",
@@ -3379,10 +3434,10 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzQ4Mzc5Lm0zdTg.m3u8",
         "quality": "SD"
       }
-    ]
+    ],
+    "id": "ch_38_telecine_action"
   },
   {
-    "id": "ch_35_telecine%20pipoca",
     "name": "Telecine Pipoca",
     "category": "Filmes e Séries",
     "logo": "https://img.faz-o-eli.online/telecinepipoca.png",
@@ -3484,10 +3539,10 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "http://45.185.11.126:8000/play/a08g/index.m3u8",
         "quality": "FHD · 1920x1080"
       }
-    ]
+    ],
+    "id": "ch_39_telecine_pipoca"
   },
   {
-    "id": "ch_36_telecine%20premium",
     "name": "Telecine Premium",
     "category": "Filmes e Séries",
     "logo": "https://img.faz-o-eli.online/telecinepremium.png",
@@ -3498,7 +3553,7 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "referer": "https://dadinhodetapioca.fun/"
       },
       {
-        "url": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/1da8e18d767880b7fa5094b60fc714e3/error.txt",
+        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/a47100046c32c6403466555d35dd55fb/error.txt",
         "quality": "Qualidade não informada",
         "referer": "https://w7.embedtv.cc/",
         "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
@@ -3611,10 +3666,10 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzQ4Mzc2Lm0zdTg.m3u8",
         "quality": "SD"
       }
-    ]
+    ],
+    "id": "ch_40_telecine_premium"
   },
   {
-    "id": "ch_37_tv%20brasil",
     "name": "TV Brasil",
     "category": "TV Aberta",
     "logo": "https://mondrian.claro.com.br/channels/inverse/tv-brasil.png",
@@ -3677,10 +3732,10 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "http://332nr7hbfu.xyz:80/live/999913/S3CvUB/71816.m3u8",
         "quality": "FHD · 1920x1080"
       }
-    ]
+    ],
+    "id": "ch_41_tv_brasil"
   },
   {
-    "id": "ch_38_universal%20premiere",
     "name": "Universal Premiere",
     "category": "Filmes e Séries",
     "logo": "https://mondrian.claro.com.br/channels/inverse/universal-premiere.png",
@@ -3689,10 +3744,10 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "http://45.185.11.126:8000/play/a08m/index.m3u8",
         "quality": "FHD · 1920x1080"
       }
-    ]
+    ],
+    "id": "ch_42_universal_premiere"
   },
   {
-    "id": "ch_39_universal%20reality",
     "name": "Universal Reality",
     "category": "Filmes e Séries",
     "logo": "https://mondrian.claro.com.br/channels/inverse/universal-reality.png",
@@ -3717,10 +3772,10 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvMTc1MjMyNC5tM3U4.m3u8",
         "quality": "HD"
       }
-    ]
+    ],
+    "id": "ch_43_universal_reality"
   },
   {
-    "id": "ch_40_warner",
     "name": "Warner",
     "category": "Filmes e Séries",
     "logo": "https://img.faz-o-eli.online/warnerchannel.png",
@@ -3731,7 +3786,7 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "referer": "https://dadinhodetapioca.fun/"
       },
       {
-        "url": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/1e8f8256bb9b5326c342f3a3be2844cb/error.txt",
+        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/3aec09245d4b83b891d69d078790428a/error.txt",
         "quality": "Qualidade não informada",
         "referer": "https://w7.embedtv.cc/",
         "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
@@ -3812,10 +3867,10 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "http://corruptx.org:80/live/hfp5ejnrey/zq0u3kzads/9220.m3u8",
         "quality": "HD"
       }
-    ]
+    ],
+    "id": "ch_44_warner"
   },
   {
-    "id": "ch_41_impd",
     "name": "IMPD",
     "category": "Variedades",
     "logo": "https://d5pgibznjcs0s.cloudfront.net/46d92cf6-4807-45c6-9bfd-b38f80288c86/en/images/logo_full.png",
@@ -3831,10 +3886,10 @@ export const FALLBACK_CHANNELS: Channel[] = [
       {
         "url": "https://68882bdaf156a.streamlock.net/impd/ngrp:impd_all/chunklist_w766912441_b2691072.m3u8"
       }
-    ]
+    ],
+    "id": "ch_45_impd"
   },
   {
-    "id": "ch_42_globo%20sp",
     "name": "Globo SP",
     "category": "TV Aberta",
     "logo": "https://img.faz-o-eli.online/globosp.png",
@@ -3846,7 +3901,7 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
       },
       {
-        "url": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/9d72f23ca18446b0eb54489bdcb83d29/error.txt",
+        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/0a3f908b929b0e6ef32df80820a3fdbd/error.txt",
         "quality": "Qualidade não informada",
         "referer": "https://w7.embedtv.cc/",
         "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
@@ -3914,10 +3969,10 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "http://332nr7hbfu.xyz:80/live/999913/S3CvUB/72040.m3u8",
         "quality": "FHD · 1920x1080"
       }
-    ]
+    ],
+    "id": "ch_46_globo_sp"
   },
   {
-    "id": "ch_43_cartoonito",
     "name": "Cartoonito",
     "category": "Infantil",
     "logo": "https://img.faz-o-eli.online/cartoonito.png",
@@ -3929,7 +3984,7 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
       },
       {
-        "url": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/855d7a3e388dbb9c840df2e36186616f/error.txt",
+        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/e71f498def2db9ccef02e6e33f1fb454/error.txt",
         "quality": "Qualidade não informada",
         "referer": "https://w7.embedtv.cc/",
         "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
@@ -4020,10 +4075,10 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1NDA1Lm0zdTg.m3u8",
         "quality": "SD"
       }
-    ]
+    ],
+    "id": "ch_47_cartoonito"
   },
   {
-    "id": "ch_44_cinemax",
     "name": "Cinemax",
     "category": "Filmes e Séries",
     "logo": "https://img.faz-o-eli.online/cinemax.png",
@@ -4033,7 +4088,7 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "quality": "HD · 1280x720"
       },
       {
-        "url": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/b01a4b919f58bdb9b827e38395dd5a32/error.txt",
+        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/dd86bfa9bcb6a7ac4c845c436f9a7f15/error.txt",
         "quality": "Qualidade não informada",
         "referer": "https://w7.embedtv.cc/",
         "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
@@ -4114,10 +4169,10 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1MzExLm0zdTg.m3u8",
         "quality": "SD"
       }
-    ]
+    ],
+    "id": "ch_48_cinemax"
   },
   {
-    "id": "ch_45_discovery%20channel",
     "name": "Discovery Channel",
     "category": "Documentários",
     "logo": "https://img.faz-o-eli.online/discoverychannel.png",
@@ -4129,7 +4184,7 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
       },
       {
-        "url": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/0aa98ae14c30281804070bea378ef1fc/error.txt",
+        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/ef788417269a3b916fa9b954c8136d38/error.txt",
         "quality": "Qualidade não informada",
         "referer": "https://w7.embedtv.cc/",
         "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
@@ -4245,10 +4300,10 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1MDIwLm0zdTg.m3u8",
         "quality": "SD"
       }
-    ]
+    ],
+    "id": "ch_49_discovery_channel"
   },
   {
-    "id": "ch_46_discovery%20kids",
     "name": "Discovery Kids",
     "category": "Infantil",
     "logo": "https://img.faz-o-eli.online/discoverykids.png",
@@ -4257,12 +4312,6 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "https://aws.s13-s1001604.lat/stream/86c15a533bf883acfde634c9b2077da0/discoverykids.m3u8",
         "quality": "HD · 1280x720",
         "referer": "https://meufut.top/discovery-kids",
-        "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
-      },
-      {
-        "url": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/da2b2cddb11130c84ccee4dea9d7a17b/error.txt",
-        "quality": "Qualidade não informada",
-        "referer": "https://w7.embedtv.cc/",
         "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
       },
       {
@@ -4287,6 +4336,12 @@ export const FALLBACK_CHANNELS: Channel[] = [
       {
         "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1NDA3Lm0zdTg.m3u8",
         "quality": "FHD"
+      },
+      {
+        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/0ce2f30af691ebeb0eab4d07b031c907/error.txt",
+        "quality": "Qualidade não informada",
+        "referer": "https://w7.embedtv.cc/",
+        "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
       },
       {
         "url": "http://64.31.23.207:80/59471019/60849037/297946.m3u8",
@@ -4364,10 +4419,10 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1NDA5Lm0zdTg.m3u8",
         "quality": "SD"
       }
-    ]
+    ],
+    "id": "ch_50_discovery_kids"
   },
   {
-    "id": "ch_47_discovery%20theater",
     "name": "Discovery Theater",
     "category": "Documentários",
     "logo": "https://img.faz-o-eli.online/discoverytheater.png",
@@ -4376,12 +4431,6 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "https://dadinhodetapioca.fun/play/discoverytheater.html",
         "quality": "FHD",
         "referer": "https://dadinhodetapioca.fun/"
-      },
-      {
-        "url": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/e52c0ce973d82ec5d9147231bda5d1fe/error.txt",
-        "quality": "Qualidade não informada",
-        "referer": "https://w7.embedtv.cc/",
-        "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
       },
       {
         "url": "http://138.204.86.4:8080/DISCOVERY_THEATER_HD/index.m3u8",
@@ -4394,6 +4443,12 @@ export const FALLBACK_CHANNELS: Channel[] = [
       {
         "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1MDMwLm0zdTg.m3u8",
         "quality": "FHD"
+      },
+      {
+        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/53bc92aa7cade39f054816d89f5d24bd/error.txt",
+        "quality": "Qualidade não informada",
+        "referer": "https://w7.embedtv.cc/",
+        "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
       },
       {
         "url": "http://64.31.23.207:80/59471019/60849037/297954.m3u8",
@@ -4479,12 +4534,12 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1MDMyLm0zdTg.m3u8",
         "quality": "SD"
       }
-    ]
+    ],
+    "id": "ch_51_discovery_theater"
   },
   {
-    "id": "ch_48_espn",
     "name": "ESPN",
-    "category": "Esportes",
+    "category": "Jogos & Esportes",
     "logo": "https://img.faz-o-eli.online/espn.png",
     "sources": [
       {
@@ -4494,7 +4549,7 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
       },
       {
-        "url": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/ec08ea1c348775198ca7f591f909506d/error.txt",
+        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/b5effc33c1848e4f0ff6f89295642e20/error.txt",
         "quality": "Qualidade não informada",
         "referer": "https://w7.embedtv.cc/",
         "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
@@ -4616,12 +4671,12 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "http://corruptx.org:80/live/hfp5ejnrey/zq0u3kzads/598918.m3u8",
         "quality": "HD"
       }
-    ]
+    ],
+    "id": "ch_52_espn"
   },
   {
-    "id": "ch_49_espn%202",
     "name": "ESPN 2",
-    "category": "Esportes",
+    "category": "Jogos & Esportes",
     "logo": "https://img.faz-o-eli.online/espn2.png",
     "sources": [
       {
@@ -4629,7 +4684,7 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "quality": "HD · 1280x720"
       },
       {
-        "url": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/79c6f0e71d5702edc0b15514c1bd9c20/error.txt",
+        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/62f5abcce049f75e52031599456334dc/error.txt",
         "quality": "Qualidade não informada",
         "referer": "https://w7.embedtv.cc/",
         "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
@@ -4717,12 +4772,12 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1NTI0Lm0zdTg.m3u8",
         "quality": "SD"
       }
-    ]
+    ],
+    "id": "ch_53_espn_2"
   },
   {
-    "id": "ch_50_espn%204",
     "name": "ESPN 4",
-    "category": "Esportes",
+    "category": "Jogos & Esportes",
     "logo": "https://img.faz-o-eli.online/espn4.png",
     "sources": [
       {
@@ -4730,7 +4785,7 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "quality": "HD · 1280x720"
       },
       {
-        "url": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/9d12d5a982da1202e1eaa0b64d2178ba/error.txt",
+        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/e0c88bb2a1753c87f83b2b01e269b51a/error.txt",
         "quality": "Qualidade não informada",
         "referer": "https://w7.embedtv.cc/",
         "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
@@ -4842,23 +4897,23 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1NTMyLm0zdTg.m3u8",
         "quality": "SD"
       }
-    ]
+    ],
+    "id": "ch_54_espn_4"
   },
   {
-    "id": "ch_51_espn%205",
     "name": "ESPN 5",
-    "category": "Esportes",
+    "category": "Jogos & Esportes",
     "logo": "https://img.faz-o-eli.online/espn5.png",
     "sources": [
       {
-        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/espn5/espn5.m3u8",
-        "quality": "HD · 1280x720"
-      },
-      {
-        "url": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/a788938acf695e2f9acb92cc9685738c/error.txt",
+        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/433c11bcf1d5ec34721d8de73245ca76/error.txt",
         "quality": "Qualidade não informada",
         "referer": "https://w7.embedtv.cc/",
         "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
+      },
+      {
+        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/espn5/espn5.m3u8",
+        "quality": "HD · 1280x720"
       },
       {
         "url": "https://16-5-0-235.sslip.io/espn5/index.m3u8"
@@ -4939,23 +4994,23 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1NTM2Lm0zdTg.m3u8",
         "quality": "SD"
       }
-    ]
+    ],
+    "id": "ch_55_espn_5"
   },
   {
-    "id": "ch_52_espn%206",
     "name": "ESPN 6",
-    "category": "Esportes",
+    "category": "Jogos & Esportes",
     "logo": "https://img.faz-o-eli.online/espn6.png",
     "sources": [
       {
-        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/espn6/espn6.m3u8",
-        "quality": "HD · 1280x720"
-      },
-      {
-        "url": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/01a0dfa550c704c770a79d7c60cb3542/error.txt",
+        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/6e5b147da553df9bd66bfecf362267ef/error.txt",
         "quality": "Qualidade não informada",
         "referer": "https://w7.embedtv.cc/",
         "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
+      },
+      {
+        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/espn6/espn6.m3u8",
+        "quality": "HD · 1280x720"
       },
       {
         "url": "https://16-5-0-235.sslip.io/espn6/index.m3u8"
@@ -5032,24 +5087,24 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1NTQwLm0zdTg.m3u8",
         "quality": "SD"
       }
-    ]
+    ],
+    "id": "ch_56_espn_6"
   },
   {
-    "id": "ch_53_hbo",
     "name": "HBO",
     "category": "Filmes e Séries",
     "logo": "https://img.faz-o-eli.online/hbo.png",
     "sources": [
       {
-        "url": "https://dadinhodetapioca.fun/play/hbo.html",
-        "quality": "FHD",
-        "referer": "https://dadinhodetapioca.fun/"
-      },
-      {
-        "url": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/105883c87300786312e73b3490d640b5/error.txt",
+        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/692c8a457cfd6bc868cfea12ca938214/error.txt",
         "quality": "Qualidade não informada",
         "referer": "https://w7.embedtv.cc/",
         "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
+      },
+      {
+        "url": "https://dadinhodetapioca.fun/play/hbo.html",
+        "quality": "FHD",
+        "referer": "https://dadinhodetapioca.fun/"
       },
       {
         "url": "http://138.204.86.4:8080/HBO/index.m3u8",
@@ -5167,24 +5222,24 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1NTQ0Lm0zdTg.m3u8",
         "quality": "SD"
       }
-    ]
+    ],
+    "id": "ch_57_hbo"
   },
   {
-    "id": "ch_54_hbo2",
     "name": "HBO2",
     "category": "Filmes e Séries",
     "logo": "https://img.faz-o-eli.online/hbo2.png",
     "sources": [
       {
-        "url": "https://dadinhodetapioca.fun/play/hbo2.html",
-        "quality": "FHD",
-        "referer": "https://dadinhodetapioca.fun/"
-      },
-      {
-        "url": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/5310327dc37d9610afda6e013b6669e5/error.txt",
+        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/575460dfdaaba6fc03cb2b7224662909/error.txt",
         "quality": "Qualidade não informada",
         "referer": "https://w7.embedtv.cc/",
         "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
+      },
+      {
+        "url": "https://dadinhodetapioca.fun/play/hbo2.html",
+        "quality": "FHD",
+        "referer": "https://dadinhodetapioca.fun/"
       },
       {
         "url": "http://138.204.86.4:8080/HBO2/index.m3u8",
@@ -5282,24 +5337,24 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1NTQ4Lm0zdTg.m3u8",
         "quality": "SD"
       }
-    ]
+    ],
+    "id": "ch_58_hbo2"
   },
   {
-    "id": "ch_55_hbo%20family",
     "name": "HBO Family",
     "category": "Filmes e Séries",
     "logo": "https://img.faz-o-eli.online/hbofamily.png",
     "sources": [
       {
-        "url": "https://dadinhodetapioca.fun/play/hbofamily.html",
-        "quality": "FHD",
-        "referer": "https://dadinhodetapioca.fun/"
-      },
-      {
-        "url": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/dc66a296f5e4f105ed128fa9ce2d5bdd/error.txt",
+        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/b861516da26de936d373b90c7bddd8a8/error.txt",
         "quality": "Qualidade não informada",
         "referer": "https://w7.embedtv.cc/",
         "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
+      },
+      {
+        "url": "https://dadinhodetapioca.fun/play/hbofamily.html",
+        "quality": "FHD",
+        "referer": "https://dadinhodetapioca.fun/"
       },
       {
         "url": "http://138.204.86.4:8080/HBO_FAMILY/index.m3u8",
@@ -5389,10 +5444,10 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1NTUyLm0zdTg.m3u8",
         "quality": "SD"
       }
-    ]
+    ],
+    "id": "ch_59_hbo_family"
   },
   {
-    "id": "ch_56_hbo%20mundi",
     "name": "HBO Mundi",
     "category": "Filmes e Séries",
     "logo": "https://img.faz-o-eli.online/hbomundi.png",
@@ -5402,7 +5457,7 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "quality": "HD · 1280x720"
       },
       {
-        "url": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/1604120d505b57d41a2515c0276dfbef/error.txt",
+        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/e6576acf6dd245e12a66873869982f6c/error.txt",
         "quality": "Qualidade não informada",
         "referer": "https://w7.embedtv.cc/",
         "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
@@ -5515,24 +5570,24 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1NTU2Lm0zdTg.m3u8",
         "quality": "SD"
       }
-    ]
+    ],
+    "id": "ch_60_hbo_mundi"
   },
   {
-    "id": "ch_57_hbo%20plus",
     "name": "HBO Plus",
     "category": "Filmes e Séries",
     "logo": "https://img.faz-o-eli.online/hboplus.png",
     "sources": [
       {
-        "url": "https://dadinhodetapioca.fun/play/hboplus.html",
-        "quality": "FHD",
-        "referer": "https://dadinhodetapioca.fun/"
-      },
-      {
-        "url": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/5897251f4f6f7973b82e305e5df552da/error.txt",
+        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/142cdbde27f344bcf3ae8eab9454dc81/error.txt",
         "quality": "Qualidade não informada",
         "referer": "https://w7.embedtv.cc/",
         "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
+      },
+      {
+        "url": "https://dadinhodetapioca.fun/play/hboplus.html",
+        "quality": "FHD",
+        "referer": "https://dadinhodetapioca.fun/"
       },
       {
         "url": "http://138.204.86.4:8080/HBO_PLUS/index.m3u8",
@@ -5646,24 +5701,24 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1NTYwLm0zdTg.m3u8",
         "quality": "SD"
       }
-    ]
+    ],
+    "id": "ch_61_hbo_plus"
   },
   {
-    "id": "ch_58_hbo%20pop",
     "name": "HBO Pop",
     "category": "Filmes e Séries",
     "logo": "https://img.faz-o-eli.online/hbopop.png",
     "sources": [
       {
-        "url": "https://dadinhodetapioca.fun/play/hbopop.html",
-        "quality": "FHD",
-        "referer": "https://dadinhodetapioca.fun/"
-      },
-      {
-        "url": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/f521b6c1da22fc81f1bb5482e3334aa5/error.txt",
+        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/2565c251ab74219a03e4b4fdb879e1ac/error.txt",
         "quality": "Qualidade não informada",
         "referer": "https://w7.embedtv.cc/",
         "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
+      },
+      {
+        "url": "https://dadinhodetapioca.fun/play/hbopop.html",
+        "quality": "FHD",
+        "referer": "https://dadinhodetapioca.fun/"
       },
       {
         "url": "http://138.204.86.4:8080/HBO_POP_HD/index.m3u8",
@@ -5785,10 +5840,10 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1NTY0Lm0zdTg.m3u8",
         "quality": "SD"
       }
-    ]
+    ],
+    "id": "ch_62_hbo_pop"
   },
   {
-    "id": "ch_59_hbo%20signature",
     "name": "HBO Signature",
     "category": "Filmes e Séries",
     "logo": "https://mondrian.claro.com.br/channels/inverse/hbo-signature.png",
@@ -5906,10 +5961,10 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1NTY4Lm0zdTg.m3u8",
         "quality": "SD"
       }
-    ]
+    ],
+    "id": "ch_63_hbo_signature"
   },
   {
-    "id": "ch_60_hbo%20xtreme",
     "name": "HBO Xtreme",
     "category": "Filmes e Séries",
     "logo": "https://mondrian.claro.com.br/channels/inverse/hbo-xtreme.png",
@@ -6027,10 +6082,10 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1NTcyLm0zdTg.m3u8",
         "quality": "SD"
       }
-    ]
+    ],
+    "id": "ch_64_hbo_xtreme"
   },
   {
-    "id": "ch_61_record",
     "name": "Record",
     "category": "TV Aberta",
     "logo": "https://mondrian.claro.com.br/channels/inverse/record-tv.png",
@@ -6056,10 +6111,10 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "http://corruptx.org:80/live/hfp5ejnrey/zq0u3kzads/35842.m3u8",
         "quality": "HD"
       }
-    ]
+    ],
+    "id": "ch_65_record"
   },
   {
-    "id": "ch_62_space",
     "name": "Space",
     "category": "Filmes e Séries",
     "logo": "https://img.faz-o-eli.online/space.png",
@@ -6071,7 +6126,7 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
       },
       {
-        "url": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/5879bf1c2285de181a7a4bc31d401f58/error.txt",
+        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/4b298b8f3b2b2c93e8c77e2326d679a3/error.txt",
         "quality": "Qualidade não informada",
         "referer": "https://w7.embedtv.cc/",
         "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
@@ -6151,10 +6206,10 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1MzMxLm0zdTg.m3u8",
         "quality": "SD"
       }
-    ]
+    ],
+    "id": "ch_66_space"
   },
   {
-    "id": "ch_63_tnt",
     "name": "TNT",
     "category": "Filmes e Séries",
     "logo": "https://img.faz-o-eli.online/tnt.png",
@@ -6163,12 +6218,6 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "https://dadinhodetapioca.fun/play/tnt.html",
         "quality": "FHD",
         "referer": "https://dadinhodetapioca.fun/"
-      },
-      {
-        "url": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/0d2656e95eb76a04cfebdba828a06645/error.txt",
-        "quality": "Qualidade não informada",
-        "referer": "https://w7.embedtv.cc/",
-        "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
       },
       {
         "url": "http://45.162.64.114/TNT/index.m3u8",
@@ -6281,10 +6330,10 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1MzUwLm0zdTg.m3u8",
         "quality": "SD"
       }
-    ]
+    ],
+    "id": "ch_67_tnt"
   },
   {
-    "id": "ch_64_tnt%20s%C3%A9ries",
     "name": "TNT Séries",
     "category": "Filmes e Séries",
     "logo": "https://img.faz-o-eli.online/tntseries.png",
@@ -6296,7 +6345,7 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
       },
       {
-        "url": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/29fca01abec0adb6488ba1f6b0ce068b/error.txt",
+        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/c47a55f30f719ec3a75fcc79960ab8da/error.txt",
         "quality": "Qualidade não informada",
         "referer": "https://w7.embedtv.cc/",
         "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
@@ -6400,10 +6449,10 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1MzU4Lm0zdTg.m3u8",
         "quality": "SD"
       }
-    ]
+    ],
+    "id": "ch_68_tnt_s%C3%A9ries"
   },
   {
-    "id": "ch_65_universal%20tv",
     "name": "Universal TV",
     "category": "Filmes e Séries",
     "logo": "https://img.faz-o-eli.online/universaltv.png",
@@ -6415,7 +6464,7 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
       },
       {
-        "url": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/fb0fab07ea304421d05a75a23832f6c7/error.txt",
+        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/d8a16e530b281f562699d07a63bcfb19/error.txt",
         "quality": "Qualidade não informada",
         "referer": "https://w7.embedtv.cc/",
         "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
@@ -6506,10 +6555,10 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1MzYyLm0zdTg.m3u8",
         "quality": "SD"
       }
-    ]
+    ],
+    "id": "ch_69_universal_tv"
   },
   {
-    "id": "ch_66_discovery%20turbo",
     "name": "Discovery Turbo",
     "category": "Documentários",
     "logo": "https://img.faz-o-eli.online/discoveryturbo.png",
@@ -6518,12 +6567,6 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "https://aws.s13-s1001604.lat/stream/2e2f7fcdd9620e2618134f77cfb70e16/discoveryturbo.m3u8",
         "quality": "HD · 1280x720",
         "referer": "https://meufut.top/discovery-turbo",
-        "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
-      },
-      {
-        "url": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/b6c28d16f5c4170e1d749822082b1a3e/error.txt",
-        "quality": "Qualidade não informada",
-        "referer": "https://w7.embedtv.cc/",
         "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
       },
       {
@@ -6547,6 +6590,12 @@ export const FALLBACK_CHANNELS: Channel[] = [
       {
         "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1MDM0Lm0zdTg.m3u8",
         "quality": "FHD"
+      },
+      {
+        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/40eb11d05b4b31fccaadda44f0192c96/error.txt",
+        "quality": "Qualidade não informada",
+        "referer": "https://w7.embedtv.cc/",
+        "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
       },
       {
         "url": "http://64.31.23.207:80/59471019/60849037/297942.m3u8",
@@ -6644,10 +6693,10 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1MDM2Lm0zdTg.m3u8",
         "quality": "SD"
       }
-    ]
+    ],
+    "id": "ch_70_discovery_turbo"
   },
   {
-    "id": "ch_67_usa%20network",
     "name": "USA Network",
     "category": "Filmes e Séries",
     "logo": "https://mondrian.claro.com.br/channels/inverse/usa.png",
@@ -6696,10 +6745,10 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "http://vivlar.me:80/live/497238/KK8Kdy/72341.m3u8",
         "quality": "SD"
       }
-    ]
+    ],
+    "id": "ch_71_usa_network"
   },
   {
-    "id": "ch_68_telecine%20fun",
     "name": "Telecine Fun",
     "category": "Filmes e Séries",
     "logo": "https://img.faz-o-eli.online/telecinefun.png",
@@ -6709,7 +6758,7 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "quality": "HD · 1280x720"
       },
       {
-        "url": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/4b79b105f8dc24157196edd0979ff5e0/error.txt",
+        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/8b1b48c629b16b1b1a5a40d81bcd4373/error.txt",
         "quality": "Qualidade não informada",
         "referer": "https://w7.embedtv.cc/",
         "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
@@ -6814,10 +6863,10 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzQ4Mzg1Lm0zdTg.m3u8",
         "quality": "SD"
       }
-    ]
+    ],
+    "id": "ch_72_telecine_fun"
   },
   {
-    "id": "ch_69_telecine%20cult",
     "name": "Telecine Cult",
     "category": "Filmes e Séries",
     "logo": "https://img.faz-o-eli.online/telecinecult.png",
@@ -6828,7 +6877,7 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "referer": "https://dadinhodetapioca.fun/"
       },
       {
-        "url": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/4a6398027c92182ebf21408d20ac36a3/error.txt",
+        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/6596e0d29e070ed4106e35cd57d181d2/error.txt",
         "quality": "Qualidade não informada",
         "referer": "https://w7.embedtv.cc/",
         "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
@@ -6929,10 +6978,10 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzQ4MzgyLm0zdTg.m3u8",
         "quality": "SD"
       }
-    ]
+    ],
+    "id": "ch_73_telecine_cult"
   },
   {
-    "id": "ch_70_telecine%20touch",
     "name": "Telecine Touch",
     "category": "Filmes e Séries",
     "logo": "https://img.faz-o-eli.online/telecinetouch.png",
@@ -6943,7 +6992,7 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "referer": "https://dadinhodetapioca.fun/"
       },
       {
-        "url": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/3376111d98eaf7b3417787c940169f06/error.txt",
+        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/bb5d21dc07a14ff3f69f97e23ea72499/error.txt",
         "quality": "Qualidade não informada",
         "referer": "https://w7.embedtv.cc/",
         "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
@@ -7056,10 +7105,10 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzQ4MzkwLm0zdTg.m3u8",
         "quality": "HD"
       }
-    ]
+    ],
+    "id": "ch_74_telecine_touch"
   },
   {
-    "id": "ch_71_sony%20movies",
     "name": "SONY Movies",
     "category": "Filmes e Séries",
     "logo": "https://www.tvlogo.org/brazil/sony-movies-br.png",
@@ -7080,10 +7129,10 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzYwNzIyLm0zdTg.m3u8",
         "quality": "HD"
       }
-    ]
+    ],
+    "id": "ch_75_sony_movies"
   },
   {
-    "id": "ch_72_globo",
     "name": "Globo",
     "category": "TV Aberta",
     "logo": "https://mondrian.claro.com.br/channels/inverse/globo.png",
@@ -7092,10 +7141,10 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "http://138.204.86.4:8080/GLOBO_HD/index.m3u8",
         "quality": "FHD · 1920x1080"
       }
-    ]
+    ],
+    "id": "ch_76_globo"
   },
   {
-    "id": "ch_73_tooncast",
     "name": "Tooncast",
     "category": "Infantil",
     "logo": "https://mondrian.claro.com.br/channels/inverse/tooncast.png",
@@ -7137,10 +7186,10 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1NDMzLm0zdTg.m3u8",
         "quality": "SD"
       }
-    ]
+    ],
+    "id": "ch_77_tooncast"
   },
   {
-    "id": "ch_74_tlc",
     "name": "TLC",
     "category": "Variedades",
     "logo": "https://img.faz-o-eli.online/tlc.png",
@@ -7151,7 +7200,7 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "referer": "https://dadinhodetapioca.fun/"
       },
       {
-        "url": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/2588ec57330710aeb47a23d6ac4b791d/error.txt",
+        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/948f4308cc7317ec0f826b1fd26f1afe/error.txt",
         "quality": "Qualidade não informada",
         "referer": "https://w7.embedtv.cc/",
         "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
@@ -7240,10 +7289,10 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "http://332nr7hbfu.xyz:80/live/999913/S3CvUB/72371.m3u8",
         "quality": "FHD · 1920x1080"
       }
-    ]
+    ],
+    "id": "ch_78_tlc"
   },
   {
-    "id": "ch_75_arte%201",
     "name": "Arte 1",
     "category": "Variedades",
     "logo": "https://mondrian.claro.com.br/channels/inverse/arte1.png",
@@ -7316,10 +7365,10 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvMTQ1NDM3Mi5tM3U4.m3u8",
         "quality": "HD"
       }
-    ]
+    ],
+    "id": "ch_79_arte_1"
   },
   {
-    "id": "ch_76_tnt%20novelas",
     "name": "TNT Novelas",
     "category": "Filmes e Séries",
     "logo": "https://img.faz-o-eli.online/tntnovelas.png",
@@ -7330,7 +7379,7 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "referer": "https://dadinhodetapioca.fun/"
       },
       {
-        "url": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/88b36e024bae29b388aeb09ff1960178/error.txt",
+        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/01b14977b5d3d47312eb06081c5ffc53/error.txt",
         "quality": "Qualidade não informada",
         "referer": "https://w7.embedtv.cc/",
         "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
@@ -7411,10 +7460,10 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1MzU0Lm0zdTg.m3u8",
         "quality": "SD"
       }
-    ]
+    ],
+    "id": "ch_80_tnt_novelas"
   },
   {
-    "id": "ch_77_discovery%20science",
     "name": "Discovery Science",
     "category": "Documentários",
     "logo": "https://img.faz-o-eli.online/discoveryscience.png",
@@ -7423,12 +7472,6 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "https://dadinhodetapioca.fun/play/discoveryscience.html",
         "quality": "FHD",
         "referer": "https://dadinhodetapioca.fun/"
-      },
-      {
-        "url": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/99e4d7bf5b59f8be149830945ee11238/error.txt",
-        "quality": "Qualidade não informada",
-        "referer": "https://w7.embedtv.cc/",
-        "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
       },
       {
         "url": "http://138.204.86.4:8080/DISCOVERY_SCIENCE_HD/index.m3u8",
@@ -7441,6 +7484,12 @@ export const FALLBACK_CHANNELS: Channel[] = [
       {
         "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1MDI2Lm0zdTg.m3u8",
         "quality": "FHD"
+      },
+      {
+        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/906736bd7449e0b498e4d470b0f68b1e/error.txt",
+        "quality": "Qualidade não informada",
+        "referer": "https://w7.embedtv.cc/",
+        "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
       },
       {
         "url": "http://64.31.23.207:80/59471019/60849037/297951.m3u8",
@@ -7522,24 +7571,24 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1MDI4Lm0zdTg.m3u8",
         "quality": "SD"
       }
-    ]
+    ],
+    "id": "ch_81_discovery_science"
   },
   {
-    "id": "ch_78_axn",
     "name": "AXN",
     "category": "Filmes e Séries",
     "logo": "https://img.faz-o-eli.online/axn.png",
     "sources": [
       {
-        "url": "https://dadinhodetapioca.fun/play/axn.html",
-        "quality": "FHD",
-        "referer": "https://dadinhodetapioca.fun/"
-      },
-      {
-        "url": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/632dfc81fd94b424976a242ed565ad57/error.txt",
+        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/808f75177af4a3cf8fd010cbc3433db2/error.txt",
         "quality": "Qualidade não informada",
         "referer": "https://w7.embedtv.cc/",
         "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
+      },
+      {
+        "url": "https://dadinhodetapioca.fun/play/axn.html",
+        "quality": "FHD",
+        "referer": "https://dadinhodetapioca.fun/"
       },
       {
         "url": "http://138.204.86.4:8080/AXN_HD/index.m3u8",
@@ -7629,10 +7678,10 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1MzAwLm0zdTg.m3u8",
         "quality": "SD"
       }
-    ]
+    ],
+    "id": "ch_82_axn"
   },
   {
-    "id": "ch_79_tcm",
     "name": "TCM",
     "category": "Filmes e Séries",
     "logo": "https://img.faz-o-eli.online/tcm.png",
@@ -7642,7 +7691,7 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "quality": "Qualidade não informada"
       },
       {
-        "url": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/1a2df0c99de08a512e4c29ef7cd0fa52/error.txt",
+        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/256f1f08c9e0040fbfa0d775b232926a/error.txt",
         "quality": "Qualidade não informada",
         "referer": "https://w7.embedtv.cc/",
         "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
@@ -7663,10 +7712,10 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1MzQ3Lm0zdTg.m3u8",
         "quality": "SD"
       }
-    ]
+    ],
+    "id": "ch_83_tcm"
   },
   {
-    "id": "ch_80_band%20news",
     "name": "Band News",
     "category": "Notícias",
     "logo": "https://img.faz-o-eli.online/bandnews.png",
@@ -7675,12 +7724,6 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "https://dadinhodetapioca.fun/play/bandnews.html",
         "quality": "FHD",
         "referer": "https://dadinhodetapioca.fun/"
-      },
-      {
-        "url": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/e2c70c39f98807c5f722486ada2857da/error.txt",
-        "quality": "Qualidade não informada",
-        "referer": "https://w7.embedtv.cc/",
-        "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
       },
       {
         "url": "http://45.162.64.114/BAND_NEWS/index.m3u8",
@@ -7693,6 +7736,12 @@ export const FALLBACK_CHANNELS: Channel[] = [
       {
         "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1NDYwLm0zdTg.m3u8",
         "quality": "FHD"
+      },
+      {
+        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/0e889a39ba6232f8651b18ddb7e4968f/error.txt",
+        "quality": "Qualidade não informada",
+        "referer": "https://w7.embedtv.cc/",
+        "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
       },
       {
         "url": "http://45.177.114.115/BAND_NEWS/index.m3u8",
@@ -7762,24 +7811,18 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1NDYyLm0zdTg.m3u8",
         "quality": "SD"
       }
-    ]
+    ],
+    "id": "ch_84_band_news"
   },
   {
-    "id": "ch_81_band%20sports%20hd",
     "name": "BAND SPORTS HD",
-    "category": "Esportes",
+    "category": "Jogos & Esportes",
     "logo": "https://img.faz-o-eli.online/bandsports.png",
     "sources": [
       {
         "url": "https://aws.s13-s1001604.lat/stream/01465ed93fe93c584f3cce07f12b3f5e/bandsports.m3u8",
         "quality": "HD · 1280x720",
         "referer": "https://meufut.top/band-sports",
-        "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
-      },
-      {
-        "url": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/dc7c15c248deaf415ef77ff3b1b93e69/error.txt",
-        "quality": "Qualidade não informada",
-        "referer": "https://w7.embedtv.cc/",
         "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
       },
       {
@@ -7803,6 +7846,12 @@ export const FALLBACK_CHANNELS: Channel[] = [
       },
       {
         "url": "https://16-5-0-235.sslip.io/bandsports/index.m3u8"
+      },
+      {
+        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/aa99fb2d8839271b568aecf9f8a2fb6b/error.txt",
+        "quality": "Qualidade não informada",
+        "referer": "https://w7.embedtv.cc/",
+        "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
       },
       {
         "url": "http://170.83.16.50/BAND_SPORTS/index.m3u8",
@@ -7884,10 +7933,10 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "http://332nr7hbfu.xyz:80/live/999913/S3CvUB/71801.m3u8",
         "quality": "FHD · 1920x1080"
       }
-    ]
+    ],
+    "id": "ch_85_band_sports_hd"
   },
   {
-    "id": "ch_82_redetv%21",
     "name": "RedeTV!",
     "category": "TV Aberta",
     "logo": "https://www.tvlogo.org/brazil/rede-tv-br.png",
@@ -7912,10 +7961,10 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1MDczLm0zdTg.m3u8",
         "quality": "HD"
       }
-    ]
+    ],
+    "id": "ch_86_redetv!"
   },
   {
-    "id": "ch_83_tv%20cultura",
     "name": "TV Cultura",
     "category": "TV Aberta",
     "logo": "https://img.faz-o-eli.online/cultura.png",
@@ -7927,7 +7976,7 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
       },
       {
-        "url": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/b005ec83ec30652c8274b59da7031c5b/error.txt",
+        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/b313c9f79dac3003d60d678ff03861f9/error.txt",
         "quality": "Qualidade não informada",
         "referer": "https://w7.embedtv.cc/",
         "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
@@ -7976,10 +8025,10 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "https://5b33b873179a2.streamlock.net:1443/live/livestream/playlist.m3u8",
         "quality": "FHD · 1920x1080"
       }
-    ]
+    ],
+    "id": "ch_87_tv_cultura"
   },
   {
-    "id": "ch_84_terra%20viva",
     "name": "Terra Viva",
     "category": "Variedades",
     "logo": "https://www.tvlogo.org/brazil/terraviva-br.png",
@@ -7996,12 +8045,12 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "http://45.177.114.115/TERRAVIVA/index.m3u8",
         "quality": "HD · 1280x720"
       }
-    ]
+    ],
+    "id": "ch_88_terra_viva"
   },
   {
-    "id": "ch_85_woohoo",
     "name": "Woohoo",
-    "category": "Esportes",
+    "category": "Jogos & Esportes",
     "logo": "https://mondrian.claro.com.br/channels/inverse/woohoo.png",
     "sources": [
       {
@@ -8076,12 +8125,12 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1MTU1Lm0zdTg.m3u8",
         "quality": "SD"
       }
-    ]
+    ],
+    "id": "ch_89_woohoo"
   },
   {
-    "id": "ch_86_espn%203",
     "name": "ESPN 3",
-    "category": "Esportes",
+    "category": "Jogos & Esportes",
     "logo": "https://img.faz-o-eli.online/espn3.png",
     "sources": [
       {
@@ -8089,7 +8138,7 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "quality": "HD · 1280x720"
       },
       {
-        "url": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/9d372ec0a6b47861ad28a95577ef9de8/error.txt",
+        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/aca83578cae37dbea69ce93da97efa5f/error.txt",
         "quality": "Qualidade não informada",
         "referer": "https://w7.embedtv.cc/",
         "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
@@ -8189,10 +8238,10 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1NTI4Lm0zdTg.m3u8",
         "quality": "SD"
       }
-    ]
+    ],
+    "id": "ch_90_espn_3"
   },
   {
-    "id": "ch_87_tv%20gazeta",
     "name": "TV Gazeta",
     "category": "TV Aberta",
     "logo": "https://mondrian.claro.com.br/channels/inverse/tv-gazeta.png",
@@ -8220,10 +8269,10 @@ export const FALLBACK_CHANNELS: Channel[] = [
       {
         "url": "https://video08.logicahost.com.br/tvc21/tvc21/chunklist_w930922724.m3u8"
       }
-    ]
+    ],
+    "id": "ch_91_tv_gazeta"
   },
   {
-    "id": "ch_88_record%20news",
     "name": "Record News",
     "category": "Notícias",
     "logo": "https://mondrian.claro.com.br/channels/inverse/recordnews.png",
@@ -8321,10 +8370,10 @@ export const FALLBACK_CHANNELS: Channel[] = [
       {
         "url": "https://run-rnw-rn.otteravision.com/rnw/rn/rnw_rn_720p_high.m3u8"
       }
-    ]
+    ],
+    "id": "ch_92_record_news"
   },
   {
-    "id": "ch_89_can%C3%A7%C3%A3o%20nova",
     "name": "Canção Nova",
     "category": "TV Aberta",
     "logo": "https://img.faz-o-eli.online/cancaonova.png",
@@ -8375,10 +8424,10 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzQwNTY4Lm0zdTg.m3u8",
         "quality": "HD"
       }
-    ]
+    ],
+    "id": "ch_93_can%C3%A7%C3%A3o_nova"
   },
   {
-    "id": "ch_90_tv%20aparecida",
     "name": "TV Aparecida",
     "category": "TV Aberta",
     "logo": "https://mondrian.claro.com.br/channels/inverse/tv-aparecida.png",
@@ -8457,23 +8506,23 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzQwNTc5Lm0zdTg.m3u8",
         "quality": "HD"
       }
-    ]
+    ],
+    "id": "ch_94_tv_aparecida"
   },
   {
-    "id": "ch_91_rede%20vida",
     "name": "Rede Vida",
     "category": "TV Aberta",
     "logo": "https://img.faz-o-eli.online/redevida.png",
     "sources": [
       {
-        "url": "https://d12e4o88jd8gex.cloudfront.net/out/v1/cea3de0b76ac4e82ab8ee0fd3f17ce12/index.m3u8",
-        "quality": "HD · 1280x720"
-      },
-      {
-        "url": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/3b42fc4949f916e5f364698325eb04db/error.txt",
+        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/f0a68c15591a6aac1f8c46bd4455c771/error.txt",
         "quality": "Qualidade não informada",
         "referer": "https://w7.embedtv.cc/",
         "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
+      },
+      {
+        "url": "https://d12e4o88jd8gex.cloudfront.net/out/v1/cea3de0b76ac4e82ab8ee0fd3f17ce12/index.m3u8",
+        "quality": "HD · 1280x720"
       },
       {
         "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/redevida/redevida.m3u8",
@@ -8539,24 +8588,24 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzQwNTc1Lm0zdTg.m3u8",
         "quality": "HD"
       }
-    ]
+    ],
+    "id": "ch_95_rede_vida"
   },
   {
-    "id": "ch_92_discovery%20id",
     "name": "Discovery ID",
     "category": "Documentários",
     "logo": "https://mondrian.claro.com.br/channels/inverse/investigacao-discovery.png",
     "sources": [
       {
-        "url": "https://dadinhodetapioca.fun/play/discoveryid.html",
-        "quality": "FHD",
-        "referer": "https://dadinhodetapioca.fun/"
-      },
-      {
-        "url": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/02c8198d8aa7f4e7d32a445cfc72d189/error.txt",
+        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/66aef9f85005844bd5ef797a080b44e7/error.txt",
         "quality": "Qualidade não informada",
         "referer": "https://w7.embedtv.cc/",
         "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
+      },
+      {
+        "url": "https://dadinhodetapioca.fun/play/discoveryid.html",
+        "quality": "FHD",
+        "referer": "https://dadinhodetapioca.fun/"
       },
       {
         "url": "http://45.162.64.114/DISCOVERY_ID/index.m3u8",
@@ -8630,12 +8679,12 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "http://corruptx.org:80/live/hfp5ejnrey/zq0u3kzads/30172.m3u8",
         "quality": "HD"
       }
-    ]
+    ],
+    "id": "ch_96_discovery_id"
   },
   {
-    "id": "ch_93_fish%20tv",
     "name": "Fish TV",
-    "category": "Esportes",
+    "category": "Jogos & Esportes",
     "logo": "https://mondrian.claro.com.br/channels/inverse/fish-tv.png",
     "sources": [
       {
@@ -8698,10 +8747,10 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1MTA0Lm0zdTg.m3u8",
         "quality": "SD"
       }
-    ]
+    ],
+    "id": "ch_97_fish_tv"
   },
   {
-    "id": "ch_94_box%20kids%20tv",
     "name": "Box Kids TV",
     "category": "Infantil",
     "logo": "https://www.tvlogo.org/brazil/box-kids-tv-br.png",
@@ -8710,12 +8759,12 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "http://170.83.49.66:8083/BOXKIDSHD/index.m3u8",
         "quality": "HD · 1280x720"
       }
-    ]
+    ],
+    "id": "ch_98_box_kids_tv"
   },
   {
-    "id": "ch_95_x%20sports",
     "name": "X Sports",
-    "category": "Esportes",
+    "category": "Jogos & Esportes",
     "logo": "https://img.faz-o-eli.online/xsports.png",
     "sources": [
       {
@@ -8725,7 +8774,7 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
       },
       {
-        "url": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/da451f76e40d859654fad0d9a3a37227/error.txt",
+        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/b4edce3e3781b488a30d3381ed70c596/error.txt",
         "quality": "Qualidade não informada",
         "referer": "https://w7.embedtv.cc/",
         "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
@@ -8789,12 +8838,12 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvMTgxMTcyOS5tM3U4.m3u8",
         "quality": "HD"
       }
-    ]
+    ],
+    "id": "ch_99_x_sports"
   },
   {
-    "id": "ch_96_n%20sports",
     "name": "N SPORTS",
-    "category": "Esportes",
+    "category": "Jogos & Esportes",
     "logo": "https://mondrian.claro.com.br/channels/inverse/nsports.png",
     "sources": [
       {
@@ -8816,10 +8865,10 @@ export const FALLBACK_CHANNELS: Channel[] = [
       {
         "url": "https://ogc-nsprt-tcl-roku-syndication.otteravision.com/ogc/nsprt/nsprt_720p.m3u8"
       }
-    ]
+    ],
+    "id": "ch_100_n_sports"
   },
   {
-    "id": "ch_97_music%20box%20brazil",
     "name": "Music Box Brazil",
     "category": "Variedades",
     "logo": "https://img.faz-o-eli.online/musicboxbrazil.png",
@@ -8892,23 +8941,23 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "http://332nr7hbfu.xyz:80/live/999913/S3CvUB/72184.m3u8",
         "quality": "FHD · 1920x1080"
       }
-    ]
+    ],
+    "id": "ch_101_music_box_brazil"
   },
   {
-    "id": "ch_98_band%20sp",
     "name": "Band SP",
     "category": "TV Aberta",
     "logo": "https://img.faz-o-eli.online/band.png",
     "sources": [
       {
-        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/bandsp/bandsp.m3u8",
-        "quality": "HD · 1280x720"
-      },
-      {
-        "url": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/d79edfa24c234be4dc1636515045ab7a/error.txt",
+        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/3f1c855b96d44f101844fe6c0f3a4169/error.txt",
         "quality": "Qualidade não informada",
         "referer": "https://w7.embedtv.cc/",
         "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
+      },
+      {
+        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/bandsp/bandsp.m3u8",
+        "quality": "HD · 1280x720"
       },
       {
         "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvMjIwNjc5MC5tM3U4.m3u8",
@@ -8978,10 +9027,10 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvMjIwNjc4OS5tM3U4.m3u8",
         "quality": "HD"
       }
-    ]
+    ],
+    "id": "ch_102_band_sp"
   },
   {
-    "id": "ch_99_band%20rs",
     "name": "Band RS",
     "category": "TV Aberta",
     "logo": "https://mondrian.claro.com.br/channels/inverse/band.png",
@@ -8998,23 +9047,23 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvODE2MDI2Lm0zdTg.m3u8",
         "quality": "HD"
       }
-    ]
+    ],
+    "id": "ch_103_band_rs"
   },
   {
-    "id": "ch_100_sbt%20sp",
     "name": "SBT SP",
     "category": "TV Aberta",
     "logo": "https://img.faz-o-eli.online/sbt.png",
     "sources": [
       {
-        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/sbtsp/sbtsp.m3u8",
-        "quality": "FHD · 1920x1080"
-      },
-      {
-        "url": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/6f93b6515d29b67670d8ded8e08ad8a0/error.txt",
+        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/6482664b5e9285db5996ad4185782f54/error.txt",
         "quality": "Qualidade não informada",
         "referer": "https://w7.embedtv.cc/",
         "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
+      },
+      {
+        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/sbtsp/sbtsp.m3u8",
+        "quality": "FHD · 1920x1080"
       },
       {
         "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL3BhbGRpLnBybzo4MC9saXZlL3RvbmluaG8wMi9DYjQ5ODAzNy83Nzk2My5tM3U4.m3u8",
@@ -9072,23 +9121,23 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "http://332nr7hbfu.xyz:80/live/999913/S3CvUB/77963.m3u8",
         "quality": "FHD · 1920x1080"
       }
-    ]
+    ],
+    "id": "ch_104_sbt_sp"
   },
   {
-    "id": "ch_101_record%20sp",
     "name": "Record SP",
     "category": "TV Aberta",
     "logo": "https://img.faz-o-eli.online/record.png",
     "sources": [
       {
-        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/recordsp/recordsp.m3u8",
-        "quality": "HD · 1280x720"
-      },
-      {
-        "url": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/f42ad1a3fbb5ad6e35ccb2ed1e8fd67f/error.txt",
+        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/2512c21ec640403f7e9cd87e2ea3e0f7/error.txt",
         "quality": "Qualidade não informada",
         "referer": "https://w7.embedtv.cc/",
         "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
+      },
+      {
+        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/recordsp/recordsp.m3u8",
+        "quality": "HD · 1280x720"
       },
       {
         "url": "http://64.31.23.207:80/59471019/60849037/324389.m3u8",
@@ -9134,10 +9183,10 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "http://corruptx.org:80/live/hfp5ejnrey/zq0u3kzads/38065.m3u8",
         "quality": "HD"
       }
-    ]
+    ],
+    "id": "ch_105_record_sp"
   },
   {
-    "id": "ch_102_canal%20rural",
     "name": "Canal Rural",
     "category": "Variedades",
     "logo": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/brazil/canal-rural-br.png",
@@ -9206,10 +9255,10 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1MDY0Lm0zdTg.m3u8",
         "quality": "HD"
       }
-    ]
+    ],
+    "id": "ch_106_canal_rural"
   },
   {
-    "id": "ch_103_agro%20mais",
     "name": "Agro Mais",
     "category": "Variedades",
     "logo": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/brazil/agro-mais-br.png",
@@ -9278,10 +9327,10 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "http://332nr7hbfu.xyz:80/live/999913/S3CvUB/71764.m3u8",
         "quality": "FHD · 1920x1080"
       }
-    ]
+    ],
+    "id": "ch_107_agro_mais"
   },
   {
-    "id": "ch_104_cnt",
     "name": "CNT",
     "category": "TV Aberta",
     "logo": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/brazil/rede-cnt-br.png",
@@ -9298,10 +9347,10 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "http://170.83.49.66:8083/REDECNTHD/index.m3u8",
         "quality": "HD · 1280x720"
       }
-    ]
+    ],
+    "id": "ch_108_cnt"
   },
   {
-    "id": "ch_105_tv%20pai%20eterno",
     "name": "TV Pai Eterno",
     "category": "Variedades",
     "logo": "https://img.faz-o-eli.online/tvpaieterno.png",
@@ -9313,7 +9362,7 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
       },
       {
-        "url": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/85700ed53b29877bdd745b9ac8ea80c2/error.txt",
+        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/895d4048b0486a18da15f15e91c18589/error.txt",
         "quality": "Qualidade não informada",
         "referer": "https://w7.embedtv.cc/",
         "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
@@ -9354,10 +9403,10 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzQwNTg2Lm0zdTg.m3u8",
         "quality": "HD"
       }
-    ]
+    ],
+    "id": "ch_109_tv_pai_eterno"
   },
   {
-    "id": "ch_106_playtv",
     "name": "PlayTV",
     "category": "TV Aberta",
     "logo": "https://i.imgur.com/Ikrj3lk.png",
@@ -9378,10 +9427,10 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzYwNzEyLm0zdTg.m3u8",
         "quality": "HD"
       }
-    ]
+    ],
+    "id": "ch_110_playtv"
   },
   {
-    "id": "ch_107_rede%20brasil",
     "name": "Rede Brasil",
     "category": "TV Aberta",
     "logo": "https://i.imgur.com/TXJKwzZ.png",
@@ -9397,10 +9446,10 @@ export const FALLBACK_CHANNELS: Channel[] = [
       {
         "url": "https://video09.logicahost.com.br/redebrasiloficial/redebrasiloficial/playlist.m3u8"
       }
-    ]
+    ],
+    "id": "ch_111_rede_brasil"
   },
   {
-    "id": "ch_108_rede%20gospel",
     "name": "Rede Gospel",
     "category": "Variedades",
     "logo": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/brazil/rede-gospel-br.png",
@@ -9465,10 +9514,10 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvMjEzNDk4Mi5tM3U4.m3u8",
         "quality": "HD"
       }
-    ]
+    ],
+    "id": "ch_112_rede_gospel"
   },
   {
-    "id": "ch_109_trace%20brazuca",
     "name": "Trace Brazuca",
     "category": "Variedades",
     "logo": "https://mondrian.claro.com.br/channels/inverse/trace-brazuca.png",
@@ -9541,10 +9590,10 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "http://332nr7hbfu.xyz:80/live/999913/S3CvUB/72386.m3u8",
         "quality": "FHD · 1920x1080"
       }
-    ]
+    ],
+    "id": "ch_113_trace_brazuca"
   },
   {
-    "id": "ch_110_tv%20c%C3%A2mara",
     "name": "TV Câmara",
     "category": "TV Aberta",
     "logo": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/brazil/tv-camara-br.png",
@@ -9569,10 +9618,10 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1MDgwLm0zdTg.m3u8",
         "quality": "HD"
       }
-    ]
+    ],
+    "id": "ch_114_tv_c%C3%A2mara"
   },
   {
-    "id": "ch_111_tv%20evangelizar",
     "name": "TV Evangelizar",
     "category": "Variedades",
     "logo": "https://i.imgur.com/IrYR7Kp.png",
@@ -9597,10 +9646,10 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzQwNTgyLm0zdTg.m3u8",
         "quality": "HD"
       }
-    ]
+    ],
+    "id": "ch_115_tv_evangelizar"
   },
   {
-    "id": "ch_112_tv%20justi%C3%A7a",
     "name": "TV Justiça",
     "category": "TV Aberta",
     "logo": "https://mondrian.claro.com.br/channels/inverse/tv-justica.png",
@@ -9625,10 +9674,10 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzYwNzI2Lm0zdTg.m3u8",
         "quality": "HD"
       }
-    ]
+    ],
+    "id": "ch_116_tv_justi%C3%A7a"
   },
   {
-    "id": "ch_113_tv%20novo%20tempo",
     "name": "TV Novo Tempo",
     "category": "Variedades",
     "logo": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/brazil/novo-tempo-br.png",
@@ -9697,10 +9746,10 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzQwNTg0Lm0zdTg.m3u8",
         "quality": "HD"
       }
-    ]
+    ],
+    "id": "ch_117_tv_novo_tempo"
   },
   {
-    "id": "ch_114_tv%20senado",
     "name": "TV Senado",
     "category": "TV Aberta",
     "logo": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/brazil/tv-senado-br.png",
@@ -9725,10 +9774,10 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1MDg0Lm0zdTg.m3u8",
         "quality": "HD"
       }
-    ]
+    ],
+    "id": "ch_118_tv_senado"
   },
   {
-    "id": "ch_115_rit",
     "name": "RIT",
     "category": "Variedades",
     "logo": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/brazil/rit-br.png",
@@ -9748,10 +9797,10 @@ export const FALLBACK_CHANNELS: Channel[] = [
       {
         "url": "https://stream.ecast.com.br/rit-tv/tracks-v1a1/mono.m3u8"
       }
-    ]
+    ],
+    "id": "ch_119_rit"
   },
   {
-    "id": "ch_116_discovery%20home%20%26%20health",
     "name": "Discovery Home & Health",
     "category": "Documentários",
     "logo": "https://img.faz-o-eli.online/discoveryhh.png",
@@ -9762,18 +9811,18 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "referer": "https://dadinhodetapioca.fun/"
       },
       {
-        "url": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/1871de993f1c8638fcf2db31daa832c9/error.txt",
-        "quality": "Qualidade não informada",
-        "referer": "https://w7.embedtv.cc/",
-        "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
-      },
-      {
         "url": "http://45.162.64.114/DISCOVERY_H_H/index.m3u8",
         "quality": "HD · 1280x720"
       },
       {
         "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/discoveryhh/discoveryhh.m3u8",
         "quality": "Qualidade não informada"
+      },
+      {
+        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/ece60d9c347f933fa902bf2b6f53de49/error.txt",
+        "quality": "Qualidade não informada",
+        "referer": "https://w7.embedtv.cc/",
+        "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
       },
       {
         "url": "http://64.31.23.207:80/59471019/60849037/297939.m3u8",
@@ -9867,10 +9916,10 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "http://corruptx.org:80/live/hfp5ejnrey/zq0u3kzads/30149.m3u8",
         "quality": "HD"
       }
-    ]
+    ],
+    "id": "ch_120_discovery_home_%26_health"
   },
   {
-    "id": "ch_117_canal%20agro",
     "name": "Canal Agro",
     "category": "Variedades",
     "logo": "",
@@ -9887,10 +9936,10 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "http://168.197.104.22/AGRO_CANAL/index.m3u8",
         "quality": "HD · 1280x720"
       }
-    ]
+    ],
+    "id": "ch_121_canal_agro"
   },
   {
-    "id": "ch_118_blits%20tv",
     "name": "Blits TV",
     "category": "Variedades",
     "logo": "https://i.imgur.com/FO4QTRf.jpeg",
@@ -9899,10 +9948,10 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "https://stmv1.transmissaodigital.com/blitstv/blitstv/playlist.m3u8",
         "quality": "FHD · 1920x1080"
       }
-    ]
+    ],
+    "id": "ch_122_blits_tv"
   },
   {
-    "id": "ch_119_cnbc",
     "name": "CNBC",
     "category": "Notícias",
     "logo": "https://raw.githubusercontent.com/tv-logo/tv-logos/main/countries/united-states/cnbc-us.png",
@@ -9911,10 +9960,10 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvOTg2NjMyLm0zdTg.m3u8",
         "quality": "HD"
       }
-    ]
+    ],
+    "id": "ch_123_cnbc"
   },
   {
-    "id": "ch_120_com%20brasil",
     "name": "Com Brasil",
     "category": "Variedades",
     "logo": "https://i.imgur.com/GrjGwKM.png",
@@ -9929,10 +9978,10 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "https://dfr80qz435crc.cloudfront.net/EFGH/Amagi/NewCo/New_Brasil_BR/New_Brasil.m3u8",
         "quality": "FHD · 1920x1080"
       }
-    ]
+    ],
+    "id": "ch_124_com_brasil"
   },
   {
-    "id": "ch_121_sesc%20tv",
     "name": "SESC TV",
     "category": "TV Aberta",
     "logo": "https://i.imgur.com/Mu8O6CV.png",
@@ -9949,10 +9998,10 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "http://186.219.52.187/sesc_tv/index.m3u8",
         "quality": "SD · 720x576"
       }
-    ]
+    ],
+    "id": "ch_125_sesc_tv"
   },
   {
-    "id": "ch_122_tvideonews",
     "name": "TVideoNews",
     "category": "Notícias",
     "logo": "https://i.imgur.com/vstHOYx.png",
@@ -9964,24 +10013,24 @@ export const FALLBACK_CHANNELS: Channel[] = [
       {
         "url": "https://video01.logicahost.com.br/tvideonews/tvideonews/chunklist_w1659802033.m3u8"
       }
-    ]
+    ],
+    "id": "ch_126_tvideonews"
   },
   {
-    "id": "ch_123_assombra%C3%A7%C3%B5es",
     "name": "Assombrações",
-    "category": "24 Horas",
+    "category": "Variedades",
     "logo": "https://images.pluto.tv/channels/620d1512c7986a0007220213/colorLogoPNG.png",
     "sources": [
       {
         "url": "https://jmp2.uk/plu-620d1512c7986a0007220213.m3u8",
         "quality": "HD · 1280x720"
       }
-    ]
+    ],
+    "id": "ch_127_assombra%C3%A7%C3%B5es"
   },
   {
-    "id": "ch_124_bob%20esponja%20cal%C3%A7a%20quadrada",
     "name": "Bob Esponja Calça Quadrada",
-    "category": "24 Horas",
+    "category": "Variedades",
     "logo": "https://images.pluto.tv/channels/62545c0b002f4b0007688b61/colorLogoPNG.png",
     "sources": [
       {
@@ -10080,22 +10129,22 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "http://vaiagora.vip:80/live/5q8VUj/5BeUd8/138075.m3u8",
         "quality": "HD · 1280x720"
       }
-    ]
+    ],
+    "id": "ch_128_bob_esponja_cal%C3%A7a_quadrada"
   },
   {
-    "id": "ch_125_boruto%3A%20naruto%20next%20generations",
     "name": "Boruto: Naruto Next Generations",
-    "category": "24 Horas",
+    "category": "Variedades",
     "logo": "https://images.pluto.tv/channels/656f389c3944b60008e5bdab/colorLogoPNG.png",
     "sources": [
       {
         "url": "https://jmp2.uk/plu-656f389c3944b60008e5bdab.m3u8",
         "quality": "SD · 1216x684"
       }
-    ]
+    ],
+    "id": "ch_129_boruto%3A_naruto_next_generations"
   },
   {
-    "id": "ch_126_canal%20educacao",
     "name": "Canal Educacao",
     "category": "TV Aberta",
     "logo": "https://i.imgur.com/OOB7nrS.png",
@@ -10112,10 +10161,10 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "http://45.177.114.115/CANAL_EDUCACAO/index.m3u8",
         "quality": "FHD · 1920x1080"
       }
-    ]
+    ],
+    "id": "ch_130_canal_educacao"
   },
   {
-    "id": "ch_127_canal%20futura",
     "name": "Canal Futura",
     "category": "TV Aberta",
     "logo": "https://i.imgur.com/LgynEBC.png",
@@ -10136,10 +10185,10 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "http://332nr7hbfu.xyz:80/live/999913/S3CvUB/71962.m3u8",
         "quality": "FHD · 1920x1080"
       }
-    ]
+    ],
+    "id": "ch_131_canal_futura"
   },
   {
-    "id": "ch_128_canal%20gov",
     "name": "Canal Gov",
     "category": "TV Aberta",
     "logo": "https://i.imgur.com/rHPY0Yv.png",
@@ -10160,10 +10209,10 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzYwNzAzLm0zdTg.m3u8",
         "quality": "HD"
       }
-    ]
+    ],
+    "id": "ch_132_canal_gov"
   },
   {
-    "id": "ch_129_canal%20uol",
     "name": "Canal UOL",
     "category": "Notícias",
     "logo": "https://conteudo.imguol.com.br/c/play/logo_canaluol_2024.svg",
@@ -10176,10 +10225,10 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "http://45.185.11.126:8000/play/a0a4/index.m3u8",
         "quality": "FHD · 1920x1080"
       }
-    ]
+    ],
+    "id": "ch_133_canal_uol"
   },
   {
-    "id": "ch_130_canal%20do%20boi",
     "name": "Canal do Boi",
     "category": "Variedades",
     "logo": "https://i.imgur.com/pVM5MhS.png",
@@ -10228,10 +10277,10 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1MDYzLm0zdTg.m3u8",
         "quality": "HD"
       }
-    ]
+    ],
+    "id": "ch_134_canal_do_boi"
   },
   {
-    "id": "ch_131_chef%20tv",
     "name": "Chef TV",
     "category": "Variedades",
     "logo": "https://i.imgur.com/UYksTee.png",
@@ -10240,10 +10289,10 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "http://168.197.104.22/CHEF_TV/index.m3u8",
         "quality": "FHD · 1920x1080"
       }
-    ]
+    ],
+    "id": "ch_135_chef_tv"
   },
   {
-    "id": "ch_132_cultura%20fast",
     "name": "Cultura Fast",
     "category": "TV Aberta",
     "logo": "",
@@ -10252,10 +10301,10 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "https://fpa-gateway.tvcultura.com.br:8181/memfs/606caef0-a290-413d-9f1f-8fcdb3a73831.m3u8",
         "quality": "HD · 1280x720"
       }
-    ]
+    ],
+    "id": "ch_136_cultura_fast"
   },
   {
-    "id": "ch_133_dumdum",
     "name": "DumDum",
     "category": "Infantil",
     "logo": "https://upload.wikimedia.org/wikipedia/commons/c/c0/DumDum_logo.svg",
@@ -10284,10 +10333,10 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1NDM3Lm0zdTg.m3u8",
         "quality": "SD"
       }
-    ]
+    ],
+    "id": "ch_137_dumdum"
   },
   {
-    "id": "ch_134_futura",
     "name": "Futura",
     "category": "TV Aberta",
     "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Canal_Futura.png/960px-Canal_Futura.png",
@@ -10348,10 +10397,10 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1MDY5Lm0zdTg.m3u8",
         "quality": "HD"
       }
-    ]
+    ],
+    "id": "ch_138_futura"
   },
   {
-    "id": "ch_135_kpoptv%20play",
     "name": "KpopTV Play",
     "category": "Variedades",
     "logo": "https://i.imgur.com/Tf0vweF.png",
@@ -10360,10 +10409,10 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "https://giatv.bozztv.com/giatv/giatv-kpoptvplay/kpoptvplay/playlist.m3u8",
         "quality": "HD · 1280x720"
       }
-    ]
+    ],
+    "id": "ch_139_kpoptv_play"
   },
   {
-    "id": "ch_136_mtv%20biggest%20pop",
     "name": "MTV Biggest Pop",
     "category": "Variedades",
     "logo": "https://images.pluto.tv/channels/6047fbdbbb776a0007e7f2ff/colorLogoPNG.png",
@@ -10372,10 +10421,10 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "https://jmp2.uk/plu-6047fbdbbb776a0007e7f2ff.m3u8",
         "quality": "HD · 1280x720"
       }
-    ]
+    ],
+    "id": "ch_140_mtv_biggest_pop"
   },
   {
-    "id": "ch_137_mtv%20rocks",
     "name": "MTV Rocks",
     "category": "Variedades",
     "logo": "https://images.pluto.tv/channels/66a01e07d2d50d0008100d6a/colorLogoPNG.png",
@@ -10384,12 +10433,12 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "https://jmp2.uk/plu-66a01e07d2d50d0008100d6a.m3u8",
         "quality": "SD · 1216x684"
       }
-    ]
+    ],
+    "id": "ch_141_mtv_rocks"
   },
   {
-    "id": "ch_138_masterchef",
     "name": "MasterChef",
-    "category": "24 Horas",
+    "category": "Variedades",
     "logo": "https://images.pluto.tv/channels/6077045b6031bd00078de127/colorLogoPNG_1785430539950.png",
     "sources": [
       {
@@ -10399,10 +10448,10 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/masterchef/masterchef.m3u8",
         "quality": "Qualidade não informada"
       }
-    ]
+    ],
+    "id": "ch_142_masterchef"
   },
   {
-    "id": "ch_139_mytime%20movie%20network",
     "name": "MyTime Movie Network",
     "category": "Filmes e Séries",
     "logo": "https://i.imgur.com/aiGQtzI.png",
@@ -10411,10 +10460,10 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "https://appletree-mytime-samsungbrazil.amagi.tv/playlist.m3u8",
         "quality": "HD · 1280x720"
       }
-    ]
+    ],
+    "id": "ch_143_mytime_movie_network"
   },
   {
-    "id": "ch_140_nickonline",
     "name": "NickOnline",
     "category": "Infantil",
     "logo": "https://x1colegal.com/logo.png",
@@ -10426,10 +10475,10 @@ export const FALLBACK_CHANNELS: Channel[] = [
       {
         "url": "https://x1colegal.com/hls/0/stream.m3u8"
       }
-    ]
+    ],
+    "id": "ch_144_nickonline"
   },
   {
-    "id": "ch_141_nicktoons%20brasil",
     "name": "NickToons Brasil",
     "category": "Infantil",
     "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Nicktoons_logo_%282023%29.svg/330px-Nicktoons_logo_%282023%29.svg.png",
@@ -10438,10 +10487,10 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "https://stmv2.srvif.com/nicktoons/nicktoons/playlist.m3u8",
         "quality": "SD · 854x480"
       }
-    ]
+    ],
+    "id": "ch_145_nicktoons_brasil"
   },
   {
-    "id": "ch_142_nickelodeon",
     "name": "Nickelodeon",
     "category": "Infantil",
     "logo": "https://img.faz-o-eli.online/nickelodeon.png",
@@ -10450,34 +10499,34 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "https://stmv2.srvif.com/gafeab/gafeab/playlist.m3u8",
         "quality": "SD · 854x480"
       }
-    ]
+    ],
+    "id": "ch_146_nickelodeon"
   },
   {
-    "id": "ch_143_nickelodeon%20icarly",
     "name": "Nickelodeon iCarly",
-    "category": "24 Horas",
+    "category": "Variedades",
     "logo": "https://images.pluto.tv/channels/620ff46e0a576e0007dc2f89/colorLogoPNG.png",
     "sources": [
       {
         "url": "https://jmp2.uk/plu-620ff46e0a576e0007dc2f89.m3u8",
         "quality": "SD · 1216x684"
       }
-    ]
+    ],
+    "id": "ch_147_nickelodeon_icarly"
   },
   {
-    "id": "ch_144_pluto%20tv%20anime",
     "name": "Pluto TV Anime",
-    "category": "Pluto TV",
+    "category": "Variedades",
     "logo": "https://images.pluto.tv/channels/5f12136385bccc00070142ed/colorLogoPNG_1785430875394.png",
     "sources": [
       {
         "url": "https://jmp2.uk/plu-5f12136385bccc00070142ed.m3u8",
         "quality": "SD · 1216x684"
       }
-    ]
+    ],
+    "id": "ch_148_pluto_tv_anime"
   },
   {
-    "id": "ch_145_rede%20tv%21",
     "name": "Rede TV!",
     "category": "TV Aberta",
     "logo": "https://i.imgur.com/ZJgD38F.png",
@@ -10508,10 +10557,10 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1MDczLm0zdTg.m3u8",
         "quality": "HD"
       }
-    ]
+    ],
+    "id": "ch_149_rede_tv!"
   },
   {
-    "id": "ch_146_runtime",
     "name": "Runtime",
     "category": "Filmes e Séries",
     "logo": "https://images.pluto.tv/channels/62c5d32e2c48f9000715b6e9/colorLogoPNG.png",
@@ -10520,22 +10569,22 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "https://stream.ads.ottera.tv/playlist.m3u8?network_id=2153",
         "quality": "HD · 1280x720"
       }
-    ]
+    ],
+    "id": "ch_150_runtime"
   },
   {
-    "id": "ch_147_smithsonian%20channel%20pluto%20tv",
     "name": "Smithsonian Channel Pluto TV",
-    "category": "Pluto TV",
+    "category": "Variedades",
     "logo": "https://images.pluto.tv/channels/6298bd10d88ef000073f16b7/colorLogoPNG.png",
     "sources": [
       {
         "url": "https://jmp2.uk/plu-6298bd10d88ef000073f16b7.m3u8",
         "quality": "HD · 1280x720"
       }
-    ]
+    ],
+    "id": "ch_151_smithsonian_channel_pluto_tv"
   },
   {
-    "id": "ch_148_travel%20box%20brazil",
     "name": "Travel Box Brazil",
     "category": "Variedades",
     "logo": "https://i.imgur.com/3tBJERH.png",
@@ -10596,12 +10645,12 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "http://332nr7hbfu.xyz:80/live/999913/S3CvUB/72393.m3u8",
         "quality": "SD · 852x480"
       }
-    ]
+    ],
+    "id": "ch_152_travel_box_brazil"
   },
   {
-    "id": "ch_149_aeroporto%20area%20restrita",
     "name": "AEROPORTO AREA RESTRITA",
-    "category": "24 Horas",
+    "category": "Variedades",
     "logo": "https://img.faz-o-eli.online/24h.png",
     "sources": [
       {
@@ -10636,24 +10685,24 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "http://vaiagora.vip:80/live/5q8VUj/5BeUd8/150490.m3u8",
         "quality": "HD · 1280x720"
       }
-    ]
+    ],
+    "id": "ch_153_aeroporto_area_restrita"
   },
   {
-    "id": "ch_150_filhinho%20da%20mamae",
     "name": "FILHINHO DA MAMAE",
-    "category": "24 Horas",
+    "category": "Variedades",
     "logo": "https://img.faz-o-eli.online/24h.png",
     "sources": [
       {
         "url": "http://64.31.23.207:80/59471019/60849037/2945301.m3u8",
         "quality": "HD · 1280x720"
       }
-    ]
+    ],
+    "id": "ch_154_filhinho_da_mamae"
   },
   {
-    "id": "ch_151_amazon%20prime%20video%2001",
     "name": "Amazon Prime Video 01",
-    "category": "Esportes",
+    "category": "Jogos & Esportes",
     "logo": "https://img.faz-o-eli.online/primevideo.png",
     "sources": [
       {
@@ -10668,12 +10717,12 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "http://corruptx.org:80/live/hfp5ejnrey/zq0u3kzads/292698.m3u8",
         "quality": "HD · 1280x720"
       }
-    ]
+    ],
+    "id": "ch_155_amazon_prime_video_01"
   },
   {
-    "id": "ch_152_amazon%20prime%20video%2002",
     "name": "Amazon Prime Video 02",
-    "category": "Esportes",
+    "category": "Jogos & Esportes",
     "logo": "https://img.faz-o-eli.online/primevideo.png",
     "sources": [
       {
@@ -10688,60 +10737,60 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "http://corruptx.org:80/live/hfp5ejnrey/zq0u3kzads/121180.m3u8",
         "quality": "FHD · 1920x1080"
       }
-    ]
+    ],
+    "id": "ch_156_amazon_prime_video_02"
   },
   {
-    "id": "ch_153_amazon%20prime%20video%2003",
     "name": "Amazon Prime Video 03",
-    "category": "Esportes",
+    "category": "Jogos & Esportes",
     "logo": "http://www.fontedecanais.gs/logos/canais/primevideo.png",
     "sources": [
       {
         "url": "http://64.31.23.207:80/59471019/60849037/3460181.m3u8",
         "quality": "HD · 1280x720"
       }
-    ]
+    ],
+    "id": "ch_157_amazon_prime_video_03"
   },
   {
-    "id": "ch_154_canal%20goat%20%28jogo%201%29",
     "name": "Canal GOAT (Jogo 1)",
-    "category": "Esportes",
+    "category": "Jogos & Esportes",
     "logo": "http://logos.appscms.xyz/logos/2025/canalgoat.png",
     "sources": [
       {
         "url": "http://64.31.23.207:80/59471019/60849037/3460243.m3u8",
         "quality": "HD · 1280x720"
       }
-    ]
+    ],
+    "id": "ch_158_canal_goat_(jogo_1)"
   },
   {
-    "id": "ch_155_canal%20goat%20%28jogo%202%29",
     "name": "Canal GOAT (Jogo 2)",
-    "category": "Esportes",
+    "category": "Jogos & Esportes",
     "logo": "http://logos.appscms.xyz/logos/2025/canalgoat.png",
     "sources": [
       {
         "url": "http://64.31.23.207:80/59471019/60849037/3460244.m3u8",
         "quality": "HD · 1280x720"
       }
-    ]
+    ],
+    "id": "ch_159_canal_goat_(jogo_2)"
   },
   {
-    "id": "ch_156_canal%20goat%20%28jogo%203%29",
     "name": "Canal GOAT (Jogo 3)",
-    "category": "Esportes",
+    "category": "Jogos & Esportes",
     "logo": "http://logos.appscms.xyz/logos/2025/canalgoat.png",
     "sources": [
       {
         "url": "http://64.31.23.207:80/59471019/60849037/3460245.m3u8",
         "quality": "HD · 1280x720"
       }
-    ]
+    ],
+    "id": "ch_160_canal_goat_(jogo_3)"
   },
   {
-    "id": "ch_157_combate",
     "name": "Combate",
-    "category": "Esportes",
+    "category": "Jogos & Esportes",
     "logo": "https://img.faz-o-eli.online/combate.png",
     "sources": [
       {
@@ -10751,7 +10800,7 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
       },
       {
-        "url": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/65e844e58c94b710154166d96f5bb2b4/error.txt",
+        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/c269edc69ec6a971ebf980eab5ffdf0e/error.txt",
         "quality": "Qualidade não informada",
         "referer": "https://w7.embedtv.cc/",
         "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
@@ -10861,149 +10910,149 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1NTE2Lm0zdTg.m3u8",
         "quality": "SD"
       }
-    ]
+    ],
+    "id": "ch_161_combate"
   },
   {
-    "id": "ch_158_dazn%20%28jogo%201%29",
     "name": "DAZN (Jogo 1)",
-    "category": "Esportes",
+    "category": "Jogos & Esportes",
     "logo": "http://logos.appscms.xyz/logos/2025/dazn.png",
     "sources": [
       {
         "url": "http://64.31.23.207:80/59471019/60849037/3460239.m3u8",
         "quality": "FHD · 1920x1080"
       }
-    ]
+    ],
+    "id": "ch_162_dazn_(jogo_1)"
   },
   {
-    "id": "ch_159_dazn%20%28jogo%204%29",
     "name": "DAZN (Jogo 4)",
-    "category": "Esportes",
+    "category": "Jogos & Esportes",
     "logo": "http://logos.appscms.xyz/logos/2025/dazn.png",
     "sources": [
       {
         "url": "http://64.31.23.207:80/59471019/60849037/3460242.m3u8",
         "quality": "SD · 640x360"
       }
-    ]
+    ],
+    "id": "ch_163_dazn_(jogo_4)"
   },
   {
-    "id": "ch_160_disney%2B%2001",
     "name": "Disney+ 01",
-    "category": "Esportes",
+    "category": "Jogos & Esportes",
     "logo": "http://www.fontedecanais.me/logos/canais/disneyplus.png",
     "sources": [
       {
         "url": "http://corruptx.org:80/live/hfp5ejnrey/zq0u3kzads/1169096.m3u8",
         "quality": "HD"
       }
-    ]
+    ],
+    "id": "ch_164_disney%2B_01"
   },
   {
-    "id": "ch_161_disney%2B%2002",
     "name": "Disney+ 02",
-    "category": "Esportes",
+    "category": "Jogos & Esportes",
     "logo": "http://www.fontedecanais.me/logos/canais/disneyplus.png",
     "sources": [
       {
         "url": "http://corruptx.org:80/live/hfp5ejnrey/zq0u3kzads/1169098.m3u8",
         "quality": "HD"
       }
-    ]
+    ],
+    "id": "ch_165_disney%2B_02"
   },
   {
-    "id": "ch_162_nba%2001",
     "name": "NBA 01",
-    "category": "Esportes",
+    "category": "Jogos & Esportes",
     "logo": "http://www.fontedecanais.me/logos/canais/nba.png",
     "sources": [
       {
         "url": "http://64.31.23.207:80/59471019/60849037/514097.m3u8",
         "quality": "FHD · 1920x1080"
       }
-    ]
+    ],
+    "id": "ch_166_nba_01"
   },
   {
-    "id": "ch_163_n%20sports%20%28jogo%201%29",
     "name": "N Sports (Jogo 1)",
-    "category": "Esportes",
+    "category": "Jogos & Esportes",
     "logo": "https://img.faz-o-eli.online/nsports.png",
     "sources": [
       {
         "url": "http://64.31.23.207:80/59471019/60849037/3460254.m3u8",
         "quality": "FHD · 1920x1080"
       }
-    ]
+    ],
+    "id": "ch_167_n_sports_(jogo_1)"
   },
   {
-    "id": "ch_164_paramount%2B%20%28jogo%201%29",
     "name": "Paramount+ (Jogo 1)",
-    "category": "Esportes",
+    "category": "Jogos & Esportes",
     "logo": "https://img.faz-o-eli.online/paramountplus.png",
     "sources": [
       {
-        "url": "http://64.31.23.207:80/59471019/60849037/3460273.m3u8",
-        "quality": "HD · 1280x720"
-      },
-      {
-        "url": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/ac7bf2bbcd75a64dc73f663b5d99f79c/error.txt",
+        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/d167ace822e2ab6c2dffe84fe531f854/error.txt",
         "quality": "Qualidade não informada",
         "referer": "https://w7.embedtv.cc/",
         "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
+      },
+      {
+        "url": "http://64.31.23.207:80/59471019/60849037/3460273.m3u8",
+        "quality": "HD · 1280x720"
       }
-    ]
+    ],
+    "id": "ch_168_paramount%2B_(jogo_1)"
   },
   {
-    "id": "ch_165_paramount%2B%20%28jogo%202%29",
     "name": "Paramount+ (Jogo 2)",
-    "category": "Esportes",
+    "category": "Jogos & Esportes",
     "logo": "https://www.fontedecanais.gs/logos/canais/paramountplus.png",
     "sources": [
       {
         "url": "http://64.31.23.207:80/59471019/60849037/3460172.m3u8",
         "quality": "HD · 1280x720"
       }
-    ]
+    ],
+    "id": "ch_169_paramount%2B_(jogo_2)"
   },
   {
-    "id": "ch_166_paramount%2B%20%28jogo%203%29",
     "name": "Paramount+ (Jogo 3)",
-    "category": "Esportes",
+    "category": "Jogos & Esportes",
     "logo": "https://www.fontedecanais.gs/logos/canais/paramountplus.png",
     "sources": [
       {
         "url": "http://64.31.23.207:80/59471019/60849037/3460173.m3u8",
         "quality": "HD · 1280x720"
       }
-    ]
+    ],
+    "id": "ch_170_paramount%2B_(jogo_3)"
   },
   {
-    "id": "ch_167_paramount%2B%20%28jogo%206%29",
     "name": "Paramount+ (Jogo 6)",
-    "category": "Esportes",
+    "category": "Jogos & Esportes",
     "logo": "https://logos.appscms.xyz/logos/2025/Paramount.png",
     "sources": [
       {
         "url": "http://64.31.23.207:80/59471019/60849037/3460278.m3u8",
         "quality": "HD · 1280x720"
       }
-    ]
+    ],
+    "id": "ch_171_paramount%2B_(jogo_6)"
   },
   {
-    "id": "ch_168_sportynet%2001",
     "name": "SportyNet 01",
-    "category": "Esportes",
+    "category": "Jogos & Esportes",
     "logo": "https://img.faz-o-eli.online/sportynet.png",
     "sources": [
       {
-        "url": "http://64.31.23.207:80/59471019/60849037/3460158.m3u8",
-        "quality": "HD · 1280x720"
-      },
-      {
-        "url": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/fca2dde0562b977ba1cf9059c32aa408/error.txt",
+        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/a4902683ba7d47f944a3d8987447f169/error.txt",
         "quality": "Qualidade não informada",
         "referer": "https://w7.embedtv.cc/",
         "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
+      },
+      {
+        "url": "http://64.31.23.207:80/59471019/60849037/3460158.m3u8",
+        "quality": "HD · 1280x720"
       },
       {
         "url": "http://64.31.23.207:80/59471019/60849037/3460269.m3u8",
@@ -11041,12 +11090,12 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "http://vivlar.me:80/live/497238/KK8Kdy/184571.m3u8",
         "quality": "SD"
       }
-    ]
+    ],
+    "id": "ch_172_sportynet_01"
   },
   {
-    "id": "ch_169_ufc%20fight%20pass%2001",
     "name": "UFC Fight Pass 01",
-    "category": "Esportes",
+    "category": "Jogos & Esportes",
     "logo": "https://img.faz-o-eli.online/ufcfightpass.png",
     "sources": [
       {
@@ -11054,7 +11103,7 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "quality": "HD · 1280x720"
       },
       {
-        "url": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/178e6b2f293f138a537a1f42fc350791/error.txt",
+        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/f8e7528d650ddf40f813ff09721ef3a6/error.txt",
         "quality": "Qualidade não informada",
         "referer": "https://w7.embedtv.cc/",
         "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
@@ -11067,12 +11116,12 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "http://corruptx.org:80/live/hfp5ejnrey/zq0u3kzads/2403505.m3u8",
         "quality": "FHD · 1920x1080"
       }
-    ]
+    ],
+    "id": "ch_173_ufc_fight_pass_01"
   },
   {
-    "id": "ch_170_ufc%20fight%20pass%2003",
     "name": "UFC Fight Pass 03",
-    "category": "Esportes",
+    "category": "Jogos & Esportes",
     "logo": "http://logos.imperioapps.top/UFC_FIGHT_PASS.png",
     "sources": [
       {
@@ -11083,10 +11132,10 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "http://64.31.23.207:80/59471019/60849037/297550.m3u8",
         "quality": "HD · 1280x720"
       }
-    ]
+    ],
+    "id": "ch_174_ufc_fight_pass_03"
   },
   {
-    "id": "ch_171_canal%20brasil",
     "name": "Canal Brasil",
     "category": "Filmes e Séries",
     "logo": "https://img.faz-o-eli.online/canalbrasil.png",
@@ -11151,10 +11200,10 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1MzA0Lm0zdTg.m3u8",
         "quality": "SD"
       }
-    ]
+    ],
+    "id": "ch_175_canal_brasil"
   },
   {
-    "id": "ch_172_cine%20sky%2001",
     "name": "Cine SKY 01",
     "category": "Filmes e Séries",
     "logo": "http://www.fontedecanais.dev/logos/canais/cinesky.png",
@@ -11163,10 +11212,10 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "http://corruptx.org:80/live/hfp5ejnrey/zq0u3kzads/13071.m3u8",
         "quality": "Qualidade não informada"
       }
-    ]
+    ],
+    "id": "ch_176_cine_sky_01"
   },
   {
-    "id": "ch_173_cine%20sky%2002",
     "name": "Cine SKY 02",
     "category": "Filmes e Séries",
     "logo": "http://www.fontedecanais.org/logos/canais/cinesky.png",
@@ -11175,10 +11224,10 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "http://corruptx.org:80/live/hfp5ejnrey/zq0u3kzads/13072.m3u8",
         "quality": "HD · 1920x804"
       }
-    ]
+    ],
+    "id": "ch_177_cine_sky_02"
   },
   {
-    "id": "ch_174_cine%20sky%2003",
     "name": "Cine SKY 03",
     "category": "Filmes e Séries",
     "logo": "http://www.fontedecanais.org/logos/canais/cinesky.png",
@@ -11187,10 +11236,10 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "http://corruptx.org:80/live/hfp5ejnrey/zq0u3kzads/13073.m3u8",
         "quality": "HD · 1920x800"
       }
-    ]
+    ],
+    "id": "ch_178_cine_sky_03"
   },
   {
-    "id": "ch_175_cine%20sky%2005",
     "name": "Cine SKY 05",
     "category": "Filmes e Séries",
     "logo": "http://www.fontedecanais.org/logos/canais/cinesky.png",
@@ -11199,10 +11248,10 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "http://corruptx.org:80/live/hfp5ejnrey/zq0u3kzads/13075.m3u8",
         "quality": "FHD · 1920x1080"
       }
-    ]
+    ],
+    "id": "ch_179_cine_sky_05"
   },
   {
-    "id": "ch_176_lifetime",
     "name": "Lifetime",
     "category": "Filmes e Séries",
     "logo": "http://www.fontedecanais.me/logos/canais/lifetime.png",
@@ -11287,10 +11336,10 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1MTE2Lm0zdTg.m3u8",
         "quality": "SD"
       }
-    ]
+    ],
+    "id": "ch_180_lifetime"
   },
   {
-    "id": "ch_177_max%2001",
     "name": "MAX 01",
     "category": "Filmes e Séries",
     "logo": "http://www.fontedecanais.gs/logos/canais/max.png",
@@ -11307,10 +11356,10 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "http://corruptx.org:80/live/hfp5ejnrey/zq0u3kzads/594007.m3u8",
         "quality": "FHD"
       }
-    ]
+    ],
+    "id": "ch_181_max_01"
   },
   {
-    "id": "ch_178_max%2002",
     "name": "MAX 02",
     "category": "Filmes e Séries",
     "logo": "http://www.fontedecanais.gs/logos/canais/max.png",
@@ -11331,23 +11380,23 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1MTgyLm0zdTg.m3u8",
         "quality": "HD"
       }
-    ]
+    ],
+    "id": "ch_182_max_02"
   },
   {
-    "id": "ch_179_studio%20universal",
     "name": "Studio Universal",
     "category": "Filmes e Séries",
     "logo": "https://img.faz-o-eli.online/studiouniversal.png",
     "sources": [
       {
-        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/studiouniversal/studiouniversal.m3u8",
-        "quality": "HD · 1280x720"
-      },
-      {
-        "url": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/ca0202c724c22a2fbcbfd93b96dfe01d/error.txt",
+        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/c4982046a69006ed190cad060acd88a4/error.txt",
         "quality": "Qualidade não informada",
         "referer": "https://w7.embedtv.cc/",
         "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
+      },
+      {
+        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/studiouniversal/studiouniversal.m3u8",
+        "quality": "HD · 1280x720"
       },
       {
         "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1MzM3Lm0zdTg.m3u8",
@@ -11421,23 +11470,23 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1MzM5Lm0zdTg.m3u8",
         "quality": "SD"
       }
-    ]
+    ],
+    "id": "ch_183_studio_universal"
   },
   {
-    "id": "ch_180_gloob",
     "name": "Gloob",
     "category": "Infantil",
     "logo": "https://img.faz-o-eli.online/gloob.png",
     "sources": [
       {
-        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/gloob/gloob.m3u8",
-        "quality": "HD · 1280x720"
-      },
-      {
-        "url": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/5dac114726f038e6885ebae720ab9686/error.txt",
+        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/edb0d7b92ee7ce5d95d97aa1590706de/error.txt",
         "quality": "Qualidade não informada",
         "referer": "https://w7.embedtv.cc/",
         "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
+      },
+      {
+        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/gloob/gloob.m3u8",
+        "quality": "HD · 1280x720"
       },
       {
         "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1NDE1Lm0zdTg.m3u8",
@@ -11511,10 +11560,10 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1NDE3Lm0zdTg.m3u8",
         "quality": "SD"
       }
-    ]
+    ],
+    "id": "ch_184_gloob"
   },
   {
-    "id": "ch_181_gloobinho",
     "name": "Gloobinho",
     "category": "Infantil",
     "logo": "https://logos.imperioapps.top/GLOBINHO.png",
@@ -11595,10 +11644,10 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1NDIxLm0zdTg.m3u8",
         "quality": "SD"
       }
-    ]
+    ],
+    "id": "ch_185_gloobinho"
   },
   {
-    "id": "ch_182_tv%20r%C3%A1%20tim%20bum",
     "name": "TV Rá Tim Bum",
     "category": "Infantil",
     "logo": "https://logos.imperioapps.top/TV_RA_TIM_BUM.png",
@@ -11667,10 +11716,10 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzQ0OTgyLm0zdTg.m3u8",
         "quality": "HD"
       }
-    ]
+    ],
+    "id": "ch_186_tv_r%C3%A1_tim_bum"
   },
   {
-    "id": "ch_183_band%20campinas",
     "name": "Band Campinas",
     "category": "TV Aberta",
     "logo": "http://www.fontedecanais.me/logos/canais/band.png",
@@ -11687,10 +11736,10 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "http://corruptx.org:80/live/hfp5ejnrey/zq0u3kzads/20522.m3u8",
         "quality": "HD"
       }
-    ]
+    ],
+    "id": "ch_187_band_campinas"
   },
   {
-    "id": "ch_184_band%20curitiba",
     "name": "Band Curitiba",
     "category": "TV Aberta",
     "logo": "http://www.fontedecanais.me/logos/canais/band.png",
@@ -11703,10 +11752,10 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "http://64.31.23.207:80/59471019/60849037/324355.m3u8",
         "quality": "SD · 854x480"
       }
-    ]
+    ],
+    "id": "ch_188_band_curitiba"
   },
   {
-    "id": "ch_185_band%20mg",
     "name": "Band MG",
     "category": "TV Aberta",
     "logo": "http://www.fontedecanais.me/logos/canais/band.png",
@@ -11719,10 +11768,10 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "http://64.31.23.207:80/59471019/60849037/324361.m3u8",
         "quality": "HD · 1280x720"
       }
-    ]
+    ],
+    "id": "ch_189_band_mg"
   },
   {
-    "id": "ch_186_band%20par%C3%A1",
     "name": "Band Pará",
     "category": "TV Aberta",
     "logo": "http://www.fontedecanais.me/logos/canais/band.png",
@@ -11731,10 +11780,10 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "http://64.31.23.207:80/59471019/60849037/324362.m3u8",
         "quality": "HD · 1280x720"
       }
-    ]
+    ],
+    "id": "ch_190_band_par%C3%A1"
   },
   {
-    "id": "ch_187_band%20recife%20tv%20tribuna",
     "name": "Band Recife TV Tribuna",
     "category": "TV Aberta",
     "logo": "http://www.fontedecanais.me/logos/canais/band.png",
@@ -11747,23 +11796,23 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "http://64.31.23.207:80/59471019/60849037/324365.m3u8",
         "quality": "HD · 1280x720"
       }
-    ]
+    ],
+    "id": "ch_191_band_recife_tv_tribuna"
   },
   {
-    "id": "ch_188_band%20rj",
     "name": "Band RJ",
     "category": "TV Aberta",
     "logo": "https://img.faz-o-eli.online/band.png",
     "sources": [
       {
-        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/bandrj/bandrj.m3u8",
-        "quality": "Qualidade não informada"
-      },
-      {
-        "url": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/284b43f93b4499845e985274bb3f0647/error.txt",
+        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/f41e6cefa7867e5419e4c64e0e6ce0ff/error.txt",
         "quality": "Qualidade não informada",
         "referer": "https://w7.embedtv.cc/",
         "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
+      },
+      {
+        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/bandrj/bandrj.m3u8",
+        "quality": "Qualidade não informada"
       },
       {
         "url": "http://64.31.23.207:80/59471019/60849037/324366.m3u8",
@@ -11773,10 +11822,10 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "http://corruptx.org:80/live/hfp5ejnrey/zq0u3kzads/20524.m3u8",
         "quality": "HD · 1280x720"
       }
-    ]
+    ],
+    "id": "ch_192_band_rj"
   },
   {
-    "id": "ch_189_band%20rn",
     "name": "Band RN",
     "category": "TV Aberta",
     "logo": "http://www.fontedecanais.me/logos/canais/band.png",
@@ -11789,10 +11838,10 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvMTgwNTM5NC5tM3U4.m3u8",
         "quality": "HD"
       }
-    ]
+    ],
+    "id": "ch_193_band_rn"
   },
   {
-    "id": "ch_190_band%20sergipe",
     "name": "Band Sergipe",
     "category": "TV Aberta",
     "logo": "http://www.fontedecanais.me/logos/canais/band.png",
@@ -11801,10 +11850,10 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "http://64.31.23.207:80/59471019/60849037/324370.m3u8",
         "quality": "HD · 1280x720"
       }
-    ]
+    ],
+    "id": "ch_194_band_sergipe"
   },
   {
-    "id": "ch_191_rede%20fam%C3%ADlia",
     "name": "Rede Família",
     "category": "TV Aberta",
     "logo": "http://www.fontedecanais.gs/logos/canais/redefamilia.png",
@@ -11813,10 +11862,10 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzYwNzE3Lm0zdTg.m3u8",
         "quality": "HD"
       }
-    ]
+    ],
+    "id": "ch_195_rede_fam%C3%ADlia"
   },
   {
-    "id": "ch_192_sbt%20alterosa",
     "name": "SBT Alterosa",
     "category": "TV Aberta",
     "logo": "http://www.fontedecanais.me/logos/canais/sbt.png",
@@ -11841,10 +11890,10 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "http://vivlar.me:80/live/497238/KK8Kdy/218366.m3u8",
         "quality": "FHD"
       }
-    ]
+    ],
+    "id": "ch_196_sbt_alterosa"
   },
   {
-    "id": "ch_193_sbt%20ba",
     "name": "SBT BA",
     "category": "TV Aberta",
     "logo": "http://www.fontedecanais.me/logos/canais/sbt.png",
@@ -11857,10 +11906,10 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "https://cdn.live.br1.jmvstream.com/w/LVW-9359/LVW9359_XSyReL0QVf/playlist.m3u8",
         "quality": "FHD · 1920x1080"
       }
-    ]
+    ],
+    "id": "ch_197_sbt_ba"
   },
   {
-    "id": "ch_194_sbt%20go",
     "name": "SBT GO",
     "category": "TV Aberta",
     "logo": "http://www.fontedecanais.me/logos/canais/sbt.png",
@@ -11869,10 +11918,10 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "http://64.31.23.207:80/59471019/60849037/324291.m3u8",
         "quality": "HD · 1280x720"
       }
-    ]
+    ],
+    "id": "ch_198_sbt_go"
   },
   {
-    "id": "ch_195_sbt%20londrina",
     "name": "SBT Londrina",
     "category": "TV Aberta",
     "logo": "http://www.fontedecanais.me/logos/canais/sbt.png",
@@ -11881,10 +11930,10 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "http://64.31.23.207:80/59471019/60849037/324312.m3u8",
         "quality": "FHD · 1920x1080"
       }
-    ]
+    ],
+    "id": "ch_199_sbt_londrina"
   },
   {
-    "id": "ch_196_sbt%20maring%C3%A1",
     "name": "SBT Maringá",
     "category": "TV Aberta",
     "logo": "http://www.fontedecanais.me/logos/canais/sbt.png",
@@ -11893,10 +11942,10 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "http://64.31.23.207:80/59471019/60849037/324311.m3u8",
         "quality": "FHD · 1920x1080"
       }
-    ]
+    ],
+    "id": "ch_200_sbt_maring%C3%A1"
   },
   {
-    "id": "ch_197_sbt%20mg",
     "name": "SBT MG",
     "category": "TV Aberta",
     "logo": "http://www.fontedecanais.me/logos/canais/sbt.png",
@@ -11909,10 +11958,10 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "http://64.31.23.207:80/59471019/60849037/324310.m3u8",
         "quality": "HD · 1280x720"
       }
-    ]
+    ],
+    "id": "ch_201_sbt_mg"
   },
   {
-    "id": "ch_198_sbt%20pi",
     "name": "SBT PI",
     "category": "TV Aberta",
     "logo": "http://www.fontedecanais.me/logos/canais/sbt.png",
@@ -11925,10 +11974,10 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "http://corruptx.org:80/live/hfp5ejnrey/zq0u3kzads/131432.m3u8",
         "quality": "HD"
       }
-    ]
+    ],
+    "id": "ch_202_sbt_pi"
   },
   {
-    "id": "ch_199_sbt%20pr",
     "name": "SBT PR",
     "category": "TV Aberta",
     "logo": "http://www.fontedecanais.me/logos/canais/sbt.png",
@@ -11941,23 +11990,23 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "http://corruptx.org:80/live/hfp5ejnrey/zq0u3kzads/88432.m3u8",
         "quality": "HD"
       }
-    ]
+    ],
+    "id": "ch_203_sbt_pr"
   },
   {
-    "id": "ch_200_sbt%20rj",
     "name": "SBT RJ",
     "category": "TV Aberta",
     "logo": "https://img.faz-o-eli.online/sbt.png",
     "sources": [
       {
-        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/sbtrj/sbtrj.m3u8",
-        "quality": "FHD · 1920x1080"
-      },
-      {
-        "url": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/1a91e73b10e408a1dbcb94a1e0f85c78/error.txt",
+        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/9ea3501e9658e2f75a3cecd8d3836029/error.txt",
         "quality": "Qualidade não informada",
         "referer": "https://w7.embedtv.cc/",
         "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
+      },
+      {
+        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/sbtrj/sbtrj.m3u8",
+        "quality": "FHD · 1920x1080"
       },
       {
         "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL3BhbGRpLnBybzo4MC9saXZlL3RvbmluaG8wMi9DYjQ5ODAzNy8xMDg2ODEubTN1OA.m3u8",
@@ -12011,10 +12060,10 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "http://332nr7hbfu.xyz:80/live/999913/S3CvUB/108682.m3u8",
         "quality": "HD · 1280x720"
       }
-    ]
+    ],
+    "id": "ch_204_sbt_rj"
   },
   {
-    "id": "ch_201_tve%20bahia",
     "name": "TVE Bahia",
     "category": "TV Aberta",
     "logo": "http://i.imgur.com/IWGyp65.jpeg",
@@ -12027,10 +12076,10 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvMTQ0NjcyMS5tM3U4.m3u8",
         "quality": "HD"
       }
-    ]
+    ],
+    "id": "ch_205_tve_bahia"
   },
   {
-    "id": "ch_202_tv%20goiania",
     "name": "Tv Goiania",
     "category": "TV Aberta",
     "logo": "http://www.fontedecanais.me/logos/canais/band.png",
@@ -12039,10 +12088,10 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "http://64.31.23.207:80/59471019/60849037/324373.m3u8",
         "quality": "HD · 1280x720"
       }
-    ]
+    ],
+    "id": "ch_206_tv_goiania"
   },
   {
-    "id": "ch_203_bis",
     "name": "BIS",
     "category": "Variedades",
     "logo": "http://www.fontedecanais.me/logos/canais/bis.png",
@@ -12127,10 +12176,10 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1MDkyLm0zdTg.m3u8",
         "quality": "SD"
       }
-    ]
+    ],
+    "id": "ch_207_bis"
   },
   {
-    "id": "ch_204_food%20network",
     "name": "Food Network",
     "category": "Variedades",
     "logo": "https://img.faz-o-eli.online/foodnetwork.png",
@@ -12142,12 +12191,6 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
       },
       {
-        "url": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/18ead783ad88b86745c94272f893d3a4/error.txt",
-        "quality": "Qualidade não informada",
-        "referer": "https://w7.embedtv.cc/",
-        "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
-      },
-      {
         "url": "https://dadinhodetapioca.fun/play/foodnetwork.html",
         "quality": "FHD",
         "referer": "https://dadinhodetapioca.fun/"
@@ -12156,6 +12199,12 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "https://aws.s13-s1001604.lat/stream/8975189bb51c75df99a767cdecf542d0/foodnetwork.m3u8",
         "quality": "HD · 1280x720",
         "referer": "https://meufut.top/foodnetwork",
+        "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
+      },
+      {
+        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/a4d27fa6b4dda06ffbb8588a8a6d0a72/error.txt",
+        "quality": "Qualidade não informada",
+        "referer": "https://w7.embedtv.cc/",
         "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
       },
       {
@@ -12238,10 +12287,10 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1MTA4Lm0zdTg.m3u8",
         "quality": "SD"
       }
-    ]
+    ],
+    "id": "ch_208_food_network"
   },
   {
-    "id": "ch_205_modo%20viagem",
     "name": "Modo Viagem",
     "category": "Variedades",
     "logo": "http://www.fontedecanais.me/logos/canais/modoviagem.png",
@@ -12314,23 +12363,17 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1MTIwLm0zdTg.m3u8",
         "quality": "SD"
       }
-    ]
+    ],
+    "id": "ch_209_modo_viagem"
   },
   {
-    "id": "ch_206_24h%20chaves",
     "name": "24H Chaves",
-    "category": "24 Horas",
+    "category": "Variedades",
     "logo": "https://img.faz-o-eli.online/24h.png",
     "sources": [
       {
         "url": "http://vivlar.me:80/live/497238/KK8Kdy/137139.m3u8",
         "quality": "SD · 640x480"
-      },
-      {
-        "url": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/b924cf25911969d34942d9820e4b361c/error.txt",
-        "quality": "Qualidade não informada",
-        "referer": "https://w7.embedtv.cc/",
-        "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
       },
       {
         "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/24h_chaves/24h_chaves.m3u8",
@@ -12359,6 +12402,12 @@ export const FALLBACK_CHANNELS: Channel[] = [
       {
         "url": "http://vivlar.me:80/live/497238/KK8Kdy/137145.m3u8",
         "quality": "SD · 640x480"
+      },
+      {
+        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/191facaf2db19660ead85260f17833fe/error.txt",
+        "quality": "Qualidade não informada",
+        "referer": "https://w7.embedtv.cc/",
+        "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
       },
       {
         "url": "http://vaiagora.vip:80/live/5q8VUj/5BeUd8/137139.m3u8",
@@ -12396,12 +12445,12 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "http://corruptx.org:80/live/hfp5ejnrey/zq0u3kzads/1169219.m3u8",
         "quality": "SD · 640x480"
       }
-    ]
+    ],
+    "id": "ch_210_24h_chaves"
   },
   {
-    "id": "ch_207_24h%20dragon%20ball%20z",
     "name": "24H Dragon Ball Z",
-    "category": "24 Horas",
+    "category": "Variedades",
     "logo": "https://img.faz-o-eli.online/24h.png",
     "sources": [
       {
@@ -12411,7 +12460,7 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
       },
       {
-        "url": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/16056736bbc1336f355fe2986bf5b9a1/error.txt",
+        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/97b3bd64ce4065d8d841b2172416ff45/error.txt",
         "quality": "Qualidade não informada",
         "referer": "https://w7.embedtv.cc/",
         "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
@@ -12430,30 +12479,30 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "http://corruptx.org:80/live/hfp5ejnrey/zq0u3kzads/1169226.m3u8",
         "quality": "HD · 1280x720"
       }
-    ]
+    ],
+    "id": "ch_211_24h_dragon_ball_z"
   },
   {
-    "id": "ch_208_24h%20naruto%20cl%C3%A1ssico",
     "name": "24H Naruto Clássico",
-    "category": "24 Horas",
+    "category": "Variedades",
     "logo": "https://img.faz-o-eli.online/24h.png",
     "sources": [
       {
-        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/24h_naruto/24h_naruto.m3u8",
-        "quality": "Qualidade não informada"
-      },
-      {
-        "url": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/72226e74e0332117007c1f624e042e0f/error.txt",
+        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/2b02da29160d63be1c25959087679733/error.txt",
         "quality": "Qualidade não informada",
         "referer": "https://w7.embedtv.cc/",
         "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
+      },
+      {
+        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/24h_naruto/24h_naruto.m3u8",
+        "quality": "Qualidade não informada"
       }
-    ]
+    ],
+    "id": "ch_212_24h_naruto_cl%C3%A1ssico"
   },
   {
-    "id": "ch_209_24h%20os%20simpsons",
     "name": "24H Os Simpsons",
-    "category": "24 Horas",
+    "category": "Variedades",
     "logo": "https://img.faz-o-eli.online/24h.png",
     "sources": [
       {
@@ -12463,7 +12512,7 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
       },
       {
-        "url": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/cc6618cc2edcda4ef8b46964c78c5372/error.txt",
+        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/cf2512a0c0d622b2cd9aabae82f53f82/error.txt",
         "quality": "Qualidade não informada",
         "referer": "https://w7.embedtv.cc/",
         "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
@@ -12738,12 +12787,12 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "http://corruptx.org:80/live/hfp5ejnrey/zq0u3kzads/1169244.m3u8",
         "quality": "HD · 1280x720"
       }
-    ]
+    ],
+    "id": "ch_213_24h_os_simpsons"
   },
   {
-    "id": "ch_210_24h%20pica%20pau",
     "name": "24H Pica Pau",
-    "category": "24 Horas",
+    "category": "Variedades",
     "logo": "https://img.faz-o-eli.online/24h.png",
     "sources": [
       {
@@ -12751,14 +12800,14 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "quality": "SD · 640x480"
       },
       {
-        "url": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/685daf0e77de9001fd264918f98a3e41/error.txt",
+        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/24h_picapau/24h_picapau.m3u8",
+        "quality": "Qualidade não informada"
+      },
+      {
+        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/5b0e5b177ec11d09b29568ea0c7a3de5/error.txt",
         "quality": "Qualidade não informada",
         "referer": "https://w7.embedtv.cc/",
         "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
-      },
-      {
-        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/24h_picapau/24h_picapau.m3u8",
-        "quality": "Qualidade não informada"
       },
       {
         "url": "http://vaiagora.vip:80/live/5q8VUj/5BeUd8/136821.m3u8",
@@ -12768,24 +12817,18 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "http://332nr7hbfu.xyz:80/live/999913/S3CvUB/136821.m3u8",
         "quality": "SD · 640x480"
       }
-    ]
+    ],
+    "id": "ch_214_24h_pica_pau"
   },
   {
-    "id": "ch_211_24h%20todo%20mundo%20odeia%20o%20cris",
     "name": "24H Todo Mundo Odeia o Cris",
-    "category": "24 Horas",
+    "category": "Variedades",
     "logo": "https://img.faz-o-eli.online/24h.png",
     "sources": [
       {
         "url": "https://aws.s13-s1001604.lat/stream/02bde299980d2c1a30e472930d0a76d8/24h_odeiachris.m3u8",
         "quality": "HD · 1280x720",
         "referer": "https://meufut.top/todo-mundo-odeia-o-cris",
-        "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
-      },
-      {
-        "url": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/fd255572076524384430343473ca456e/error.txt",
-        "quality": "Qualidade não informada",
-        "referer": "https://w7.embedtv.cc/",
         "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
       },
       {
@@ -12815,6 +12858,12 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "quality": "HD · 1280x720"
       },
       {
+        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/1830d00b7498222e2b34831696a9869b/error.txt",
+        "quality": "Qualidade não informada",
+        "referer": "https://w7.embedtv.cc/",
+        "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
+      },
+      {
         "url": "http://vaiagora.vip:80/live/5q8VUj/5BeUd8/135469.m3u8",
         "quality": "HD · 1280x720"
       },
@@ -12834,23 +12883,17 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "http://corruptx.org:80/live/hfp5ejnrey/zq0u3kzads/1169249.m3u8",
         "quality": "SD · 624x352"
       }
-    ]
+    ],
+    "id": "ch_215_24h_todo_mundo_odeia_o_cris"
   },
   {
-    "id": "ch_212_24h%20friends",
     "name": "24H Friends",
-    "category": "24 Horas",
+    "category": "Variedades",
     "logo": "https://img.faz-o-eli.online/24h.png",
     "sources": [
       {
         "url": "http://vivlar.me:80/live/497238/KK8Kdy/138814.m3u8",
         "quality": "HD · 1280x720"
-      },
-      {
-        "url": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/6cf82f1875719591bf890718480a1859/error.txt",
-        "quality": "Qualidade não informada",
-        "referer": "https://w7.embedtv.cc/",
-        "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
       },
       {
         "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/24h_friends/24h_friends.m3u8",
@@ -12893,6 +12936,12 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "quality": "HD · 1280x720"
       },
       {
+        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/d77b9a31678546e0a1eb70374fbbd805/error.txt",
+        "quality": "Qualidade não informada",
+        "referer": "https://w7.embedtv.cc/",
+        "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
+      },
+      {
         "url": "http://vaiagora.vip:80/live/5q8VUj/5BeUd8/138814.m3u8",
         "quality": "HD · 1280x720"
       },
@@ -12932,10 +12981,10 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "http://vaiagora.vip:80/live/5q8VUj/5BeUd8/138823.m3u8",
         "quality": "HD · 1280x720"
       }
-    ]
+    ],
+    "id": "ch_216_24h_friends"
   },
   {
-    "id": "ch_213_discovery%20world",
     "name": "Discovery World",
     "category": "Documentários",
     "logo": "https://img.faz-o-eli.online/discoveryworld.png",
@@ -12944,12 +12993,6 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "https://dadinhodetapioca.fun/play/discoveryworld.html",
         "quality": "FHD",
         "referer": "https://dadinhodetapioca.fun/"
-      },
-      {
-        "url": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/5a75f9813af8f20650457fa00ec07974/error.txt",
-        "quality": "Qualidade não informada",
-        "referer": "https://w7.embedtv.cc/",
-        "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
       },
       {
         "url": "http://45.162.64.114/DISCOVERY_WORLD/index.m3u8",
@@ -12966,6 +13009,12 @@ export const FALLBACK_CHANNELS: Channel[] = [
       {
         "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1MDM4Lm0zdTg.m3u8",
         "quality": "FHD"
+      },
+      {
+        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/12071a9b4b353521e7ba660c30e4428d/error.txt",
+        "quality": "Qualidade não informada",
+        "referer": "https://w7.embedtv.cc/",
+        "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
       },
       {
         "url": "http://vaiagora.vip:80/live/5q8VUj/5BeUd8/103509.m3u8",
@@ -13043,23 +13092,23 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1MDQwLm0zdTg.m3u8",
         "quality": "SD"
       }
-    ]
+    ],
+    "id": "ch_217_discovery_world"
   },
   {
-    "id": "ch_214_cazetv%201",
     "name": "CazeTV 1",
-    "category": "Esportes",
+    "category": "Jogos & Esportes",
     "logo": "https://img.faz-o-eli.online/cazetv.png",
     "sources": [
       {
-        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/caze1/caze1.m3u8",
-        "quality": "FHD · 1920x1080"
-      },
-      {
-        "url": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/b975399acb7a1d8cba5315adbf9685ef/error.txt",
+        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/d131c9322a9dbfe8ea7ff5c9fa7ea1ed/error.txt",
         "quality": "Qualidade não informada",
         "referer": "https://w7.embedtv.cc/",
         "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
+      },
+      {
+        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/caze1/caze1.m3u8",
+        "quality": "FHD · 1920x1080"
       },
       {
         "url": "http://corruptx.org:80/live/hfp5ejnrey/zq0u3kzads/227520.m3u8",
@@ -13073,308 +13122,308 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "http://corruptx.org:80/live/hfp5ejnrey/zq0u3kzads/245797.m3u8",
         "quality": "FHD"
       }
-    ]
+    ],
+    "id": "ch_218_cazetv_1"
   },
   {
-    "id": "ch_215_cazetv%202",
     "name": "CazeTV 2",
-    "category": "Esportes",
+    "category": "Jogos & Esportes",
     "logo": "https://img.faz-o-eli.online/cazetv.png",
     "sources": [
+      {
+        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/125ceb72d65dce89d343e6b1bcda90ec/error.txt",
+        "quality": "Qualidade não informada",
+        "referer": "https://w7.embedtv.cc/",
+        "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
+      },
       {
         "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/caze2/caze2.m3u8",
         "quality": "FHD · 1920x1080"
       },
       {
-        "url": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/eb507dbffbcf42a7b51d41859b945657/error.txt",
-        "quality": "Qualidade não informada",
-        "referer": "https://w7.embedtv.cc/",
-        "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
-      },
-      {
         "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL3BhbGRpLnBybzo4MC9saXZlL3RvbmluaG8wMi9DYjQ5ODAzNy8zODQ0NjMubTN1OA.m3u8",
         "quality": "FHD"
       }
-    ]
+    ],
+    "id": "ch_219_cazetv_2"
   },
   {
-    "id": "ch_216_pt%20-%20a%20bola",
     "name": "PT - A Bola",
-    "category": "Esportes",
+    "category": "Jogos & Esportes",
     "logo": "https://img.faz-o-eli.online/pt_abola.png",
     "sources": [
       {
-        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/pt_abola/pt_abola.m3u8",
-        "quality": "Qualidade não informada"
-      },
-      {
-        "url": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/92e2459844dcfdee989b996ab4c73837/error.txt",
+        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/039811f38852528561f62c3046e6701f/error.txt",
         "quality": "Qualidade não informada",
         "referer": "https://w7.embedtv.cc/",
         "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
+      },
+      {
+        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/pt_abola/pt_abola.m3u8",
+        "quality": "Qualidade não informada"
       }
-    ]
+    ],
+    "id": "ch_220_pt_-_a_bola"
   },
   {
-    "id": "ch_217_pt%20-%20benfica%20tv",
     "name": "PT - Benfica TV",
-    "category": "Esportes",
+    "category": "Jogos & Esportes",
     "logo": "https://img.faz-o-eli.online/pt_benficatv.prev.png",
     "sources": [
       {
-        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/pt_benficatv/pt_benficatv.m3u8",
-        "quality": "Qualidade não informada"
-      },
-      {
-        "url": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/b32854020b72a36408a62728e00997bc/error.txt",
+        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/80019bbd22a1c4987edd7810ccf410cc/error.txt",
         "quality": "Qualidade não informada",
         "referer": "https://w7.embedtv.cc/",
         "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
+      },
+      {
+        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/pt_benficatv/pt_benficatv.m3u8",
+        "quality": "Qualidade não informada"
       }
-    ]
+    ],
+    "id": "ch_221_pt_-_benfica_tv"
   },
   {
-    "id": "ch_218_pt%20-%20canal%2011",
     "name": "PT - Canal 11",
-    "category": "Esportes",
+    "category": "Jogos & Esportes",
     "logo": "https://img.faz-o-eli.online/pt_canal11.prev.png",
     "sources": [
       {
-        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/pt_canal11/pt_canal11.m3u8",
-        "quality": "Qualidade não informada"
-      },
-      {
-        "url": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/405b0d8b4b4f995a64e6bebe40b9ffb0/error.txt",
+        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/04f16dd33cbeefd803b8c58d7f927f9b/error.txt",
         "quality": "Qualidade não informada",
         "referer": "https://w7.embedtv.cc/",
         "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
+      },
+      {
+        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/pt_canal11/pt_canal11.m3u8",
+        "quality": "Qualidade não informada"
       }
-    ]
+    ],
+    "id": "ch_222_pt_-_canal_11"
   },
   {
-    "id": "ch_219_pt%20-%20eleven%201",
     "name": "PT - Eleven 1",
-    "category": "Esportes",
+    "category": "Jogos & Esportes",
     "logo": "https://img.faz-o-eli.online/pt_eleven1.prev.png",
     "sources": [
       {
-        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/pt_eleven1/pt_eleven1.m3u8",
-        "quality": "Qualidade não informada"
-      },
-      {
-        "url": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/8102c32c9a1e3253e075f6a95c132287/error.txt",
+        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/11495a4f12c1f88292dfce0078846221/error.txt",
         "quality": "Qualidade não informada",
         "referer": "https://w7.embedtv.cc/",
         "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
+      },
+      {
+        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/pt_eleven1/pt_eleven1.m3u8",
+        "quality": "Qualidade não informada"
       }
-    ]
+    ],
+    "id": "ch_223_pt_-_eleven_1"
   },
   {
-    "id": "ch_220_pt%20-%20eleven%202",
     "name": "PT - Eleven 2",
-    "category": "Esportes",
+    "category": "Jogos & Esportes",
     "logo": "https://img.faz-o-eli.online/pt_eleven2.prev.png",
     "sources": [
       {
-        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/pt_eleven2/pt_eleven2.m3u8",
-        "quality": "Qualidade não informada"
-      },
-      {
-        "url": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/e8bd1fd84ce4361c3640cacb33037500/error.txt",
+        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/5f7e7a01290473667a2cdbd4cdf9d2a0/error.txt",
         "quality": "Qualidade não informada",
         "referer": "https://w7.embedtv.cc/",
         "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
+      },
+      {
+        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/pt_eleven2/pt_eleven2.m3u8",
+        "quality": "Qualidade não informada"
       }
-    ]
+    ],
+    "id": "ch_224_pt_-_eleven_2"
   },
   {
-    "id": "ch_221_pt%20-%20eleven%203",
     "name": "PT - Eleven 3",
-    "category": "Esportes",
+    "category": "Jogos & Esportes",
     "logo": "https://img.faz-o-eli.online/pt_eleven3.prev.png",
     "sources": [
       {
-        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/pt_eleven3/pt_eleven3.m3u8",
-        "quality": "Qualidade não informada"
-      },
-      {
-        "url": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/91abd644b76379b58df5146532940ecb/error.txt",
+        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/4e9892ed2cd2facdf283b426f15a5dbf/error.txt",
         "quality": "Qualidade não informada",
         "referer": "https://w7.embedtv.cc/",
         "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
+      },
+      {
+        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/pt_eleven3/pt_eleven3.m3u8",
+        "quality": "Qualidade não informada"
       }
-    ]
+    ],
+    "id": "ch_225_pt_-_eleven_3"
   },
   {
-    "id": "ch_222_pt%20-%20sporttv%201",
     "name": "PT - Sporttv 1",
-    "category": "Esportes",
+    "category": "Jogos & Esportes",
     "logo": "https://img.faz-o-eli.online/sportv.png",
     "sources": [
+      {
+        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/e5a3aab5250ee8d0be4400972cceb704/error.txt",
+        "quality": "Qualidade não informada",
+        "referer": "https://w7.embedtv.cc/",
+        "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
+      },
       {
         "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/pt_sportv1/pt_sportv1.m3u8",
         "quality": "Qualidade não informada"
-      },
+      }
+    ],
+    "id": "ch_226_pt_-_sporttv_1"
+  },
+  {
+    "name": "PT - Sporttv 2",
+    "category": "Jogos & Esportes",
+    "logo": "https://img.faz-o-eli.online/sportv.png",
+    "sources": [
       {
-        "url": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/39056125beaab338e14bb91289d7e91f/error.txt",
+        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/640368350ec7b17351a19cf23e863e61/error.txt",
         "quality": "Qualidade não informada",
         "referer": "https://w7.embedtv.cc/",
         "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
-      }
-    ]
-  },
-  {
-    "id": "ch_223_pt%20-%20sporttv%202",
-    "name": "PT - Sporttv 2",
-    "category": "Esportes",
-    "logo": "https://img.faz-o-eli.online/sportv.png",
-    "sources": [
+      },
       {
         "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/pt_sportv2/pt_sportv2.m3u8",
         "quality": "Qualidade não informada"
-      },
+      }
+    ],
+    "id": "ch_227_pt_-_sporttv_2"
+  },
+  {
+    "name": "PT - Sporttv 3",
+    "category": "Jogos & Esportes",
+    "logo": "https://img.faz-o-eli.online/sportv.png",
+    "sources": [
       {
-        "url": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/3c1d9fb6cda44531616d55a2da621629/error.txt",
+        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/13e7e3a1a41b29730f3b5761253d3a16/error.txt",
         "quality": "Qualidade não informada",
         "referer": "https://w7.embedtv.cc/",
         "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
-      }
-    ]
-  },
-  {
-    "id": "ch_224_pt%20-%20sporttv%203",
-    "name": "PT - Sporttv 3",
-    "category": "Esportes",
-    "logo": "https://img.faz-o-eli.online/sportv.png",
-    "sources": [
+      },
       {
         "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/pt_sportv3/pt_sportv3.m3u8",
         "quality": "Qualidade não informada"
-      },
+      }
+    ],
+    "id": "ch_228_pt_-_sporttv_3"
+  },
+  {
+    "name": "PT - Sporttv 4",
+    "category": "Jogos & Esportes",
+    "logo": "https://img.faz-o-eli.online/sportv.png",
+    "sources": [
       {
-        "url": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/153da83a891f19ba928b356f29175436/error.txt",
+        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/a9227e8e94d10a26760af844de3f328f/error.txt",
         "quality": "Qualidade não informada",
         "referer": "https://w7.embedtv.cc/",
         "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
-      }
-    ]
-  },
-  {
-    "id": "ch_225_pt%20-%20sporttv%204",
-    "name": "PT - Sporttv 4",
-    "category": "Esportes",
-    "logo": "https://img.faz-o-eli.online/sportv.png",
-    "sources": [
+      },
       {
         "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/pt_sportv4/pt_sportv4.m3u8",
         "quality": "Qualidade não informada"
-      },
+      }
+    ],
+    "id": "ch_229_pt_-_sporttv_4"
+  },
+  {
+    "name": "PT - Sporttv 5",
+    "category": "Jogos & Esportes",
+    "logo": "https://img.faz-o-eli.online/sportv.png",
+    "sources": [
       {
-        "url": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/0008e20619fb06eebd49a36f880507a4/error.txt",
+        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/0fecb2ec5984cc8bd303ce18e7afdbf2/error.txt",
         "quality": "Qualidade não informada",
         "referer": "https://w7.embedtv.cc/",
         "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
-      }
-    ]
-  },
-  {
-    "id": "ch_226_pt%20-%20sporttv%205",
-    "name": "PT - Sporttv 5",
-    "category": "Esportes",
-    "logo": "https://img.faz-o-eli.online/sportv.png",
-    "sources": [
+      },
       {
         "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/pt_sportv5/pt_sportv5.m3u8",
         "quality": "Qualidade não informada"
-      },
+      }
+    ],
+    "id": "ch_230_pt_-_sporttv_5"
+  },
+  {
+    "name": "PT - Sporttv 6",
+    "category": "Jogos & Esportes",
+    "logo": "https://img.faz-o-eli.online/sportv.png",
+    "sources": [
       {
-        "url": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/ede5cd60e9a02e307181b0709c962242/error.txt",
+        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/c32eb4cfab719f478c533cc1d4156b4f/error.txt",
         "quality": "Qualidade não informada",
         "referer": "https://w7.embedtv.cc/",
         "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
-      }
-    ]
-  },
-  {
-    "id": "ch_227_pt%20-%20sporttv%206",
-    "name": "PT - Sporttv 6",
-    "category": "Esportes",
-    "logo": "https://img.faz-o-eli.online/sportv.png",
-    "sources": [
+      },
       {
         "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/pt_sportv6/pt_sportv6.m3u8",
         "quality": "Qualidade não informada"
-      },
-      {
-        "url": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/d864a7e9157ab16954333a5ac58086d7/error.txt",
-        "quality": "Qualidade não informada",
-        "referer": "https://w7.embedtv.cc/",
-        "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
       }
-    ]
+    ],
+    "id": "ch_231_pt_-_sporttv_6"
   },
   {
-    "id": "ch_228_pt%20-%20sporttv%207",
     "name": "PT - Sporttv 7",
-    "category": "Esportes",
+    "category": "Jogos & Esportes",
     "logo": "https://img.faz-o-eli.online/sportv.png",
     "sources": [
       {
-        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/pt_sportv7/pt_sportv7.m3u8",
-        "quality": "Qualidade não informada"
-      },
-      {
-        "url": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/8ae80507b659040eae0633ef6626f553/error.txt",
+        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/789019e66da5de28faa4845480861b44/error.txt",
         "quality": "Qualidade não informada",
         "referer": "https://w7.embedtv.cc/",
         "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
+      },
+      {
+        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/pt_sportv7/pt_sportv7.m3u8",
+        "quality": "Qualidade não informada"
       }
-    ]
+    ],
+    "id": "ch_232_pt_-_sporttv_7"
   },
   {
-    "id": "ch_229_sportynet%2B%201",
     "name": "SportyNet+ 1",
-    "category": "Esportes",
+    "category": "Jogos & Esportes",
     "logo": "https://img.faz-o-eli.online/sportynet.png",
     "sources": [
+      {
+        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/a3644ff901247b7d612e184ac04b9436/error.txt",
+        "quality": "Qualidade não informada",
+        "referer": "https://w7.embedtv.cc/",
+        "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
+      },
       {
         "url": "http://332nr7hbfu.xyz:80/live/999913/S3CvUB/184570.m3u8",
         "quality": "HD · 1280x720"
       },
       {
-        "url": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/b1983db833457935685b13034a063b7c/error.txt",
-        "quality": "Qualidade não informada",
-        "referer": "https://w7.embedtv.cc/",
-        "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
-      },
-      {
         "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzU3Nzk5Lm0zdTg.m3u8",
         "quality": "HD"
       }
-    ]
+    ],
+    "id": "ch_233_sportynet%2B_1"
   },
   {
-    "id": "ch_230_sportynet%2B%202",
     "name": "SportyNet+ 2",
-    "category": "Esportes",
+    "category": "Jogos & Esportes",
     "logo": "https://img.faz-o-eli.online/sportynet.png",
     "sources": [
       {
-        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzU3ODAwLm0zdTg.m3u8",
-        "quality": "HD"
-      },
-      {
-        "url": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/3465e19856c73155e131f88a80f50eb8/error.txt",
+        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/f9da9645ae351af80a912350a13739b8/error.txt",
         "quality": "Qualidade não informada",
         "referer": "https://w7.embedtv.cc/",
         "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
+      },
+      {
+        "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzU3ODAwLm0zdTg.m3u8",
+        "quality": "HD"
       }
-    ]
+    ],
+    "id": "ch_234_sportynet%2B_2"
   },
   {
-    "id": "ch_231_sportynet%2B%203",
     "name": "SportyNet+ 3",
-    "category": "Esportes",
+    "category": "Jogos & Esportes",
     "logo": "https://img.faz-o-eli.online/sportynet.png",
     "sources": [
       {
@@ -13382,7 +13431,7 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "quality": "FHD · 1920x1080"
       },
       {
-        "url": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/611cf59ffd90c43038baed05f594f362/error.txt",
+        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/9c58cd0958d4771118111fb3a82590e3/error.txt",
         "quality": "Qualidade não informada",
         "referer": "https://w7.embedtv.cc/",
         "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
@@ -13391,131 +13440,131 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzU3ODAxLm0zdTg.m3u8",
         "quality": "HD"
       }
-    ]
+    ],
+    "id": "ch_235_sportynet%2B_3"
   },
   {
-    "id": "ch_232_globo%20am",
     "name": "Globo AM",
     "category": "TV Aberta",
     "logo": "https://img.faz-o-eli.online/globosp.png",
     "sources": [
       {
-        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/globoam/globoam.m3u8",
-        "quality": "Qualidade não informada"
-      },
-      {
-        "url": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/02cc172b33088945d0d0a6af2831c4f1/error.txt",
+        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/0864306316555512a8114d9e3a2af6e1/error.txt",
         "quality": "Qualidade não informada",
         "referer": "https://w7.embedtv.cc/",
         "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
+      },
+      {
+        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/globoam/globoam.m3u8",
+        "quality": "Qualidade não informada"
       }
-    ]
+    ],
+    "id": "ch_236_globo_am"
   },
   {
-    "id": "ch_233_globo%20ce",
     "name": "Globo CE",
     "category": "TV Aberta",
     "logo": "https://img.faz-o-eli.online/globosp.png",
     "sources": [
       {
-        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/globoce/globoce.m3u8",
-        "quality": "Qualidade não informada"
-      },
-      {
-        "url": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/4dec695b2e2e9c5a1b660a6dcf0a431b/error.txt",
+        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/f0d091a0016011d3c87d91ff377452ea/error.txt",
         "quality": "Qualidade não informada",
         "referer": "https://w7.embedtv.cc/",
         "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
+      },
+      {
+        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/globoce/globoce.m3u8",
+        "quality": "Qualidade não informada"
       }
-    ]
+    ],
+    "id": "ch_237_globo_ce"
   },
   {
-    "id": "ch_234_globo%20es",
     "name": "Globo ES",
     "category": "TV Aberta",
     "logo": "https://img.faz-o-eli.online/globosp.png",
     "sources": [
       {
-        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/globoes/globoes.m3u8",
-        "quality": "HD · 1280x720"
-      },
-      {
-        "url": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/781d3fec7cb82d39af255037422dfba9/error.txt",
+        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/79dea27a5437aeba56cc9cfebd304507/error.txt",
         "quality": "Qualidade não informada",
         "referer": "https://w7.embedtv.cc/",
         "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
+      },
+      {
+        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/globoes/globoes.m3u8",
+        "quality": "HD · 1280x720"
       }
-    ]
+    ],
+    "id": "ch_238_globo_es"
   },
   {
-    "id": "ch_235_globo%20go",
     "name": "Globo GO",
     "category": "TV Aberta",
     "logo": "https://img.faz-o-eli.online/globosp.png",
     "sources": [
       {
-        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/globogo/globogo.m3u8",
-        "quality": "Qualidade não informada"
-      },
-      {
-        "url": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/55b3459bb5b585501368e52761b6b3b3/error.txt",
+        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/f92160390194ae37c9806bf81d31315f/error.txt",
         "quality": "Qualidade não informada",
         "referer": "https://w7.embedtv.cc/",
         "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
+      },
+      {
+        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/globogo/globogo.m3u8",
+        "quality": "Qualidade não informada"
       }
-    ]
+    ],
+    "id": "ch_239_globo_go"
   },
   {
-    "id": "ch_236_globo%20pb",
     "name": "Globo PB",
     "category": "TV Aberta",
     "logo": "https://img.faz-o-eli.online/globosp.png",
     "sources": [
       {
-        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/globopb/globopb.m3u8",
-        "quality": "Qualidade não informada"
-      },
-      {
-        "url": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/20984c2220da77977762393f0c3ec426/error.txt",
+        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/8a94b0691085966c3e82a6e2d138e70e/error.txt",
         "quality": "Qualidade não informada",
         "referer": "https://w7.embedtv.cc/",
         "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
+      },
+      {
+        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/globopb/globopb.m3u8",
+        "quality": "Qualidade não informada"
       }
-    ]
+    ],
+    "id": "ch_240_globo_pb"
   },
   {
-    "id": "ch_237_globo%20pe",
     "name": "Globo PE",
     "category": "TV Aberta",
     "logo": "https://img.faz-o-eli.online/globosp.png",
     "sources": [
       {
-        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/globope/globope.m3u8",
-        "quality": "Qualidade não informada"
-      },
-      {
-        "url": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/cb2d9f040712715db091f21bf04ab50c/error.txt",
+        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/c75ec72cac11b0291256a248f108d060/error.txt",
         "quality": "Qualidade não informada",
         "referer": "https://w7.embedtv.cc/",
         "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
+      },
+      {
+        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/globope/globope.m3u8",
+        "quality": "Qualidade não informada"
       }
-    ]
+    ],
+    "id": "ch_241_globo_pe"
   },
   {
-    "id": "ch_238_globo%20rj",
     "name": "Globo RJ",
     "category": "TV Aberta",
     "logo": "https://img.faz-o-eli.online/globorj.png",
     "sources": [
       {
-        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/globorj/globorj.m3u8",
-        "quality": "FHD · 1920x1080"
-      },
-      {
-        "url": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/ed2db35b67b0d1b134795406bbbe0ea2/error.txt",
+        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/431c543a298242c49342f3bfbd603873/error.txt",
         "quality": "Qualidade não informada",
         "referer": "https://w7.embedtv.cc/",
         "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
+      },
+      {
+        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/globorj/globorj.m3u8",
+        "quality": "FHD · 1920x1080"
       },
       {
         "url": "https://16-5-0-235.sslip.io/globorj/index.m3u8"
@@ -13572,28 +13621,28 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "http://332nr7hbfu.xyz:80/live/999913/S3CvUB/72025.m3u8",
         "quality": "FHD · 1920x1080"
       }
-    ]
+    ],
+    "id": "ch_242_globo_rj"
   },
   {
-    "id": "ch_239_globo%20rs",
     "name": "Globo RS",
     "category": "TV Aberta",
     "logo": "https://img.faz-o-eli.online/globosp.png",
     "sources": [
       {
-        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/globors/globors.m3u8",
-        "quality": "FHD · 1920x1080"
-      },
-      {
-        "url": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/c0846a57e4abf412570f6d207bacebd3/error.txt",
+        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/0e2cb283612d134c82f6650b428aa030/error.txt",
         "quality": "Qualidade não informada",
         "referer": "https://w7.embedtv.cc/",
         "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
+      },
+      {
+        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/globors/globors.m3u8",
+        "quality": "FHD · 1920x1080"
       }
-    ]
+    ],
+    "id": "ch_243_globo_rs"
   },
   {
-    "id": "ch_240_record%20go",
     "name": "Record GO",
     "category": "TV Aberta",
     "logo": "https://img.faz-o-eli.online/record.png",
@@ -13603,7 +13652,7 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "quality": "Qualidade não informada"
       },
       {
-        "url": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/b63ce5452e3a49529827863ea2c8c73d/error.txt",
+        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/9fe4a5b9115ab89a51f64d481288116e/error.txt",
         "quality": "Qualidade não informada",
         "referer": "https://w7.embedtv.cc/",
         "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
@@ -13628,23 +13677,23 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "http://corruptx.org:80/live/hfp5ejnrey/zq0u3kzads/106097.m3u8",
         "quality": "HD"
       }
-    ]
+    ],
+    "id": "ch_244_record_go"
   },
   {
-    "id": "ch_241_record%20mg",
     "name": "Record MG",
     "category": "TV Aberta",
     "logo": "https://img.faz-o-eli.online/record.png",
     "sources": [
       {
-        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/recordmg/recordmg.m3u8",
-        "quality": "HD · 1280x720"
-      },
-      {
-        "url": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/08ae1dcd4f583bedc87703c17b0bfbce/error.txt",
+        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/c7d142437fb572b09b99c3d15961484a/error.txt",
         "quality": "Qualidade não informada",
         "referer": "https://w7.embedtv.cc/",
         "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
+      },
+      {
+        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/recordmg/recordmg.m3u8",
+        "quality": "HD · 1280x720"
       },
       {
         "url": "http://corruptx.org:80/live/hfp5ejnrey/zq0u3kzads/9055.m3u8",
@@ -13654,23 +13703,23 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "http://corruptx.org:80/live/hfp5ejnrey/zq0u3kzads/9054.m3u8",
         "quality": "HD"
       }
-    ]
+    ],
+    "id": "ch_245_record_mg"
   },
   {
-    "id": "ch_242_record%20rj",
     "name": "Record RJ",
     "category": "TV Aberta",
     "logo": "https://img.faz-o-eli.online/record.png",
     "sources": [
       {
-        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/recordrj/recordrj.m3u8",
-        "quality": "HD · 1280x720"
-      },
-      {
-        "url": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/099896b7ceb6440c0e64a7961b799253/error.txt",
+        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/0d95cee9d6175371148e1be107a69410/error.txt",
         "quality": "Qualidade não informada",
         "referer": "https://w7.embedtv.cc/",
         "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
+      },
+      {
+        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/recordrj/recordrj.m3u8",
+        "quality": "HD · 1280x720"
       },
       {
         "url": "http://corruptx.org:80/live/hfp5ejnrey/zq0u3kzads/106095.m3u8",
@@ -13684,10 +13733,10 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "http://corruptx.org:80/live/hfp5ejnrey/zq0u3kzads/9063.m3u8",
         "quality": "HD"
       }
-    ]
+    ],
+    "id": "ch_246_record_rj"
   },
   {
-    "id": "ch_243_hgtv",
     "name": "HGTV",
     "category": "Variedades",
     "logo": "https://img.faz-o-eli.online/hgtv.png",
@@ -13699,12 +13748,6 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
       },
       {
-        "url": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/25524b346f1591c96a8b4565e02dddd2/error.txt",
-        "quality": "Qualidade não informada",
-        "referer": "https://w7.embedtv.cc/",
-        "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
-      },
-      {
         "url": "https://dadinhodetapioca.fun/play/hgtv.html",
         "quality": "FHD",
         "referer": "https://dadinhodetapioca.fun/"
@@ -13713,6 +13756,12 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "https://aws.s13-s1001604.lat/stream/0b7ed4f2d49df88f285464007159254d/hgtv.m3u8",
         "quality": "HD · 1280x720",
         "referer": "https://meufut.top/hgtv",
+        "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
+      },
+      {
+        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/005e9e04035fc5202bcfbdc77215d42f/error.txt",
+        "quality": "Qualidade não informada",
+        "referer": "https://w7.embedtv.cc/",
         "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
       },
       {
@@ -13787,33 +13836,33 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1MDQ4Lm0zdTg.m3u8",
         "quality": "SD"
       }
-    ]
+    ],
+    "id": "ch_247_hgtv"
   },
   {
-    "id": "ch_244_mtv",
     "name": "MTV",
     "category": "Variedades",
     "logo": "https://img.faz-o-eli.online/mtv.png",
     "sources": [
       {
-        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/mtv/mtv.m3u8",
-        "quality": "FHD · 1536x1024"
-      },
-      {
-        "url": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/4573c03095cbbc19e0f21c96eadf89c2/error.txt",
+        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/b76fa08b992b542d15b3cc2505e5a44b/error.txt",
         "quality": "Qualidade não informada",
         "referer": "https://w7.embedtv.cc/",
         "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
       },
       {
+        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/mtv/mtv.m3u8",
+        "quality": "FHD · 1536x1024"
+      },
+      {
         "url": "https://16-5-0-235.sslip.io/mtv/index.m3u8"
       }
-    ]
+    ],
+    "id": "ch_248_mtv"
   },
   {
-    "id": "ch_245_a%20fazenda%2018%201",
     "name": "A Fazenda 18 1",
-    "category": "PPV",
+    "category": "Jogos & Esportes",
     "logo": "https://img.faz-o-eli.online/afazenda2.png",
     "sources": [
       {
@@ -13823,7 +13872,7 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
       },
       {
-        "url": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/08e61cbdc286bd9f15f6e607a9b26061/error.txt",
+        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/cdc44d393ff177c1b80ecf2248667bdd/error.txt",
         "quality": "Qualidade não informada",
         "referer": "https://w7.embedtv.cc/",
         "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
@@ -13842,123 +13891,123 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "http://corruptx.org:80/live/hfp5ejnrey/zq0u3kzads/2470061.m3u8",
         "quality": "HD · 1280x720"
       }
-    ]
+    ],
+    "id": "ch_249_a_fazenda_18_1"
   },
   {
-    "id": "ch_246_a%20fazenda%2018%202",
     "name": "A Fazenda 18 2",
-    "category": "PPV",
+    "category": "Jogos & Esportes",
     "logo": "https://img.faz-o-eli.online/afazenda2.png",
     "sources": [
+      {
+        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/2c5b175edd80868ef2d3c8c8a5cd5362/error.txt",
+        "quality": "Qualidade não informada",
+        "referer": "https://w7.embedtv.cc/",
+        "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
+      },
       {
         "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/afazenda2/afazenda2.m3u8",
         "quality": "Qualidade não informada"
       },
       {
-        "url": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/4960bff7bcdb7a7737121c7bd4aef8b4/error.txt",
+        "url": "http://corruptx.org:80/live/hfp5ejnrey/zq0u3kzads/2470062.m3u8",
+        "quality": "HD · 1280x720"
+      }
+    ],
+    "id": "ch_250_a_fazenda_18_2"
+  },
+  {
+    "name": "A Fazenda 18 3",
+    "category": "Jogos & Esportes",
+    "logo": "https://img.faz-o-eli.online/afazenda2.png",
+    "sources": [
+      {
+        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/d0211c7944e91ed9fd2d2dd835552a5a/error.txt",
         "quality": "Qualidade não informada",
         "referer": "https://w7.embedtv.cc/",
         "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
       },
-      {
-        "url": "http://corruptx.org:80/live/hfp5ejnrey/zq0u3kzads/2470062.m3u8",
-        "quality": "HD · 1280x720"
-      }
-    ]
-  },
-  {
-    "id": "ch_247_a%20fazenda%2018%203",
-    "name": "A Fazenda 18 3",
-    "category": "PPV",
-    "logo": "https://img.faz-o-eli.online/afazenda2.png",
-    "sources": [
       {
         "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/afazenda3/afazenda3.m3u8",
         "quality": "Qualidade não informada"
       },
       {
-        "url": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/9fdc577b5776b22a71ba97b3b8d12bee/error.txt",
+        "url": "http://corruptx.org:80/live/hfp5ejnrey/zq0u3kzads/2470063.m3u8",
+        "quality": "HD · 1280x720"
+      }
+    ],
+    "id": "ch_251_a_fazenda_18_3"
+  },
+  {
+    "name": "A Fazenda 18 4",
+    "category": "Jogos & Esportes",
+    "logo": "https://img.faz-o-eli.online/afazenda2.png",
+    "sources": [
+      {
+        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/560c69af814fdfb21c8df00814a4d537/error.txt",
         "quality": "Qualidade não informada",
         "referer": "https://w7.embedtv.cc/",
         "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
       },
-      {
-        "url": "http://corruptx.org:80/live/hfp5ejnrey/zq0u3kzads/2470063.m3u8",
-        "quality": "HD · 1280x720"
-      }
-    ]
-  },
-  {
-    "id": "ch_248_a%20fazenda%2018%204",
-    "name": "A Fazenda 18 4",
-    "category": "PPV",
-    "logo": "https://img.faz-o-eli.online/afazenda2.png",
-    "sources": [
       {
         "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/afazenda4/afazenda4.m3u8",
         "quality": "Qualidade não informada"
       },
       {
-        "url": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/d8c8a68841986d504e20288095c3425a/error.txt",
+        "url": "http://corruptx.org:80/live/hfp5ejnrey/zq0u3kzads/2470064.m3u8",
+        "quality": "HD · 1280x720"
+      }
+    ],
+    "id": "ch_252_a_fazenda_18_4"
+  },
+  {
+    "name": "A Fazenda 18 5",
+    "category": "Jogos & Esportes",
+    "logo": "https://img.faz-o-eli.online/afazenda2.png",
+    "sources": [
+      {
+        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/3e4a116cb2ae9acc19d5bd9bbab7398b/error.txt",
         "quality": "Qualidade não informada",
         "referer": "https://w7.embedtv.cc/",
         "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
       },
-      {
-        "url": "http://corruptx.org:80/live/hfp5ejnrey/zq0u3kzads/2470064.m3u8",
-        "quality": "HD · 1280x720"
-      }
-    ]
-  },
-  {
-    "id": "ch_249_a%20fazenda%2018%205",
-    "name": "A Fazenda 18 5",
-    "category": "PPV",
-    "logo": "https://img.faz-o-eli.online/afazenda2.png",
-    "sources": [
       {
         "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/afazenda5/afazenda5.m3u8",
         "quality": "Qualidade não informada"
       },
       {
-        "url": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/be2f670031f7ff21ebe291c84412a668/error.txt",
-        "quality": "Qualidade não informada",
-        "referer": "https://w7.embedtv.cc/",
-        "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
-      },
-      {
         "url": "http://corruptx.org:80/live/hfp5ejnrey/zq0u3kzads/2470065.m3u8",
         "quality": "HD · 1280x720"
       }
-    ]
+    ],
+    "id": "ch_253_a_fazenda_18_5"
   },
   {
-    "id": "ch_250_cazetv%203",
     "name": "CazeTV 3",
-    "category": "Esportes",
+    "category": "Jogos & Esportes",
     "logo": "https://img.faz-o-eli.online/cazetv.png",
     "sources": [
       {
         "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/caze3/caze3.m3u8",
         "quality": "FHD · 1920x1080"
       }
-    ]
+    ],
+    "id": "ch_254_cazetv_3"
   },
   {
-    "id": "ch_251_globo%20df",
     "name": "Globo DF",
     "category": "TV Aberta",
     "logo": "https://img.faz-o-eli.online/globosp.png",
     "sources": [
       {
-        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/globodf/globodf.m3u8",
-        "quality": "HD · 1280x720"
-      },
-      {
-        "url": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/97896cd6c9be45afc2a88fd964da4cd2/error.txt",
+        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/9a31ec5c099675d9db9f81ad1e6cf0a1/error.txt",
         "quality": "Qualidade não informada",
         "referer": "https://w7.embedtv.cc/",
         "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
+      },
+      {
+        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/globodf/globodf.m3u8",
+        "quality": "HD · 1280x720"
       },
       {
         "url": "http://vaiagora.vip:80/live/5q8VUj/5BeUd8/131151.m3u8",
@@ -13984,23 +14033,23 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "http://vivlar.me:80/live/497238/KK8Kdy/131116.m3u8",
         "quality": "SD"
       }
-    ]
+    ],
+    "id": "ch_255_globo_df"
   },
   {
-    "id": "ch_252_globo%20mg",
     "name": "Globo MG",
     "category": "TV Aberta",
     "logo": "https://img.faz-o-eli.online/globosp.png",
     "sources": [
       {
-        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/globomg/globomg.m3u8",
-        "quality": "FHD · 1920x1080"
-      },
-      {
-        "url": "https://de0d6aa7bdb37f9e0728cdc87ce80833.s25-cloudfront-net.lat/stream/342578ca3ff76a4836fa041c5d2e5c45/error.txt",
+        "url": "https://8cc92f775b4063fd8bfd2577376b0698.s25-cloudfront-net.lat/stream/d286ed1e1b23af65df45cfb8baad2c88/error.txt",
         "quality": "Qualidade não informada",
         "referer": "https://w7.embedtv.cc/",
         "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
+      },
+      {
+        "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/globomg/globomg.m3u8",
+        "quality": "FHD · 1920x1080"
       },
       {
         "url": "http://vaiagora.vip:80/live/5q8VUj/5BeUd8/131200.m3u8",
@@ -14034,10 +14083,10 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "http://corruptx.org:80/live/hfp5ejnrey/zq0u3kzads/1168940.m3u8",
         "quality": "HD"
       }
-    ]
+    ],
+    "id": "ch_256_globo_mg"
   },
   {
-    "id": "ch_253_max%2003",
     "name": "MAX 03",
     "category": "Filmes e Séries",
     "logo": "https://img.faz-o-eli.online/max.png",
@@ -14054,24 +14103,24 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzI1MTgzLm0zdTg.m3u8",
         "quality": "HD"
       }
-    ]
+    ],
+    "id": "ch_257_max_03"
   },
   {
-    "id": "ch_254_amazon%20prime%20video%2004",
     "name": "Amazon Prime Video 04",
-    "category": "Esportes",
+    "category": "Jogos & Esportes",
     "logo": "https://img.faz-o-eli.online/primevideo.png",
     "sources": [
       {
         "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/primevideo4/primevideo4.m3u8",
         "quality": "FHD · 1920x1080"
       }
-    ]
+    ],
+    "id": "ch_258_amazon_prime_video_04"
   },
   {
-    "id": "ch_255_sportv%204",
     "name": "SporTV 4",
-    "category": "Esportes",
+    "category": "Jogos & Esportes",
     "logo": "https://img.faz-o-eli.online/sportv4.png",
     "sources": [
       {
@@ -14114,10 +14163,10 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "http://corruptx.org:80/live/hfp5ejnrey/zq0u3kzads/570369.m3u8",
         "quality": "FHD"
       }
-    ]
+    ],
+    "id": "ch_259_sportv_4"
   },
   {
-    "id": "ch_256_star%20channel",
     "name": "Star Channel",
     "category": "Filmes e Séries",
     "logo": "https://img.faz-o-eli.online/starchannel.png",
@@ -14126,10 +14175,10 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/starchannel/starchannel.m3u8",
         "quality": "Qualidade não informada"
       }
-    ]
+    ],
+    "id": "ch_260_star_channel"
   },
   {
-    "id": "ch_257_curta",
     "name": "Curta",
     "category": "Documentários",
     "logo": "https://img.faz-o-eli.online/curta.png",
@@ -14182,10 +14231,10 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "http://332nr7hbfu.xyz:80/live/999913/S3CvUB/71855.m3u8",
         "quality": "FHD · 1920x1080"
       }
-    ]
+    ],
+    "id": "ch_261_curta"
   },
   {
-    "id": "ch_258_dog%20tv",
     "name": "DOG TV",
     "category": "Variedades",
     "logo": "https://mondrian.claro.com.br/channels/inverse/dog-tv.png",
@@ -14230,10 +14279,10 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "http://332nr7hbfu.xyz:80/live/999913/S3CvUB/76922.m3u8",
         "quality": "FHD · 1920x1080"
       }
-    ]
+    ],
+    "id": "ch_262_dog_tv"
   },
   {
-    "id": "ch_259_eurochannel",
     "name": "Eurochannel",
     "category": "Notícias",
     "logo": "",
@@ -14278,10 +14327,10 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvMTc1MjMyNy5tM3U4.m3u8",
         "quality": "HD"
       }
-    ]
+    ],
+    "id": "ch_263_eurochannel"
   },
   {
-    "id": "ch_260_fashiontv",
     "name": "FashionTV",
     "category": "Variedades",
     "logo": "https://i.imgur.com/1jtRh4S.png",
@@ -14330,10 +14379,10 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzYwNzA3Lm0zdTg.m3u8",
         "quality": "HD"
       }
-    ]
+    ],
+    "id": "ch_264_fashiontv"
   },
   {
-    "id": "ch_261_film%26arts",
     "name": "Film&Arts",
     "category": "Filmes e Séries",
     "logo": "https://img.faz-o-eli.online/filmarts.png",
@@ -14386,22 +14435,22 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzYwNzA4Lm0zdTg.m3u8",
         "quality": "HD"
       }
-    ]
+    ],
+    "id": "ch_265_film%26arts"
   },
   {
-    "id": "ch_262_formula%201%20tv",
     "name": "Formula 1 TV",
-    "category": "PPV",
+    "category": "Jogos & Esportes",
     "logo": "",
     "sources": [
       {
         "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvOTc3MDQwLm0zdTg.m3u8",
         "quality": "HD"
       }
-    ]
+    ],
+    "id": "ch_266_formula_1_tv"
   },
   {
-    "id": "ch_263_france%2024",
     "name": "France 24",
     "category": "Notícias",
     "logo": "https://mondrian.claro.com.br/channels/inverse/france-24.png",
@@ -14446,10 +14495,10 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "http://332nr7hbfu.xyz:80/live/999913/S3CvUB/104906.m3u8",
         "quality": "FHD · 1920x1080"
       }
-    ]
+    ],
+    "id": "ch_267_france_24"
   },
   {
-    "id": "ch_264_markket",
     "name": "Markket",
     "category": "Variedades",
     "logo": "https://mondrian.claro.com.br/channels/inverse/markket.png",
@@ -14498,12 +14547,12 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "http://332nr7hbfu.xyz:80/live/999913/S3CvUB/164030.m3u8",
         "quality": "FHD · 1920x1080"
       }
-    ]
+    ],
+    "id": "ch_268_markket"
   },
   {
-    "id": "ch_265_nba%20league%20pass%201",
     "name": "NBA League Pass 1",
-    "category": "Esportes",
+    "category": "Jogos & Esportes",
     "logo": "https://i.imgur.com/ynW8fZF.png",
     "sources": [
       {
@@ -14534,12 +14583,12 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "http://332nr7hbfu.xyz:80/live/999913/S3CvUB/140516.m3u8",
         "quality": "FHD · 1920x1080"
       }
-    ]
+    ],
+    "id": "ch_269_nba_league_pass_1"
   },
   {
-    "id": "ch_266_nba%20league%20pass%202",
     "name": "NBA League Pass 2",
-    "category": "Esportes",
+    "category": "Jogos & Esportes",
     "logo": "https://i.imgur.com/ynW8fZF.png",
     "sources": [
       {
@@ -14566,12 +14615,12 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "http://vivlar.me:80/live/497238/KK8Kdy/140521.m3u8",
         "quality": "SD"
       }
-    ]
+    ],
+    "id": "ch_270_nba_league_pass_2"
   },
   {
-    "id": "ch_267_nba%20league%20pass%203",
     "name": "NBA League Pass 3",
-    "category": "Esportes",
+    "category": "Jogos & Esportes",
     "logo": "https://i.imgur.com/ynW8fZF.png",
     "sources": [
       {
@@ -14598,12 +14647,12 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "http://vivlar.me:80/live/497238/KK8Kdy/140524.m3u8",
         "quality": "SD"
       }
-    ]
+    ],
+    "id": "ch_271_nba_league_pass_3"
   },
   {
-    "id": "ch_268_sportynet%204",
     "name": "SportyNet 4",
-    "category": "Esportes",
+    "category": "Jogos & Esportes",
     "logo": "https://img.faz-o-eli.online/sportynet.png",
     "sources": [
       {
@@ -14634,12 +14683,12 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvNzU3ODAyLm0zdTg.m3u8",
         "quality": "HD"
       }
-    ]
+    ],
+    "id": "ch_272_sportynet_4"
   },
   {
-    "id": "ch_269_sportynet",
     "name": "SportyNet",
-    "category": "Esportes",
+    "category": "Jogos & Esportes",
     "logo": "https://img.faz-o-eli.online/sportynet.png",
     "sources": [
       {
@@ -14655,10 +14704,10 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/sportynetplus3/sportynetplus3.m3u8",
         "quality": "Qualidade não informada"
       }
-    ]
+    ],
+    "id": "ch_273_sportynet"
   },
   {
-    "id": "ch_270_paramount%20%2B%204",
     "name": "Paramount + 4",
     "category": "Variedades",
     "logo": "https://vipcanais.net/images/paramountplus.png",
@@ -14691,10 +14740,10 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "http://332nr7hbfu.xyz:80/live/999913/S3CvUB/72992.m3u8",
         "quality": "SD · 852x480"
       }
-    ]
+    ],
+    "id": "ch_274_paramount_%2B_4"
   },
   {
-    "id": "ch_271_paramount%20channel",
     "name": "Paramount Channel",
     "category": "Filmes e Séries",
     "logo": "https://mondrian.claro.com.br/channels/inverse/paramount-network.png",
@@ -14715,10 +14764,10 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "http://332nr7hbfu.xyz:80/live/999913/S3CvUB/72219.m3u8",
         "quality": "HD · 1280x720"
       }
-    ]
+    ],
+    "id": "ch_275_paramount_channel"
   },
   {
-    "id": "ch_272_prime%20box%20brazil",
     "name": "Prime Box Brazil",
     "category": "Variedades",
     "logo": "https://img.faz-o-eli.online/primeboxbrazil.png",
@@ -14759,10 +14808,10 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "http://332nr7hbfu.xyz:80/live/999913/S3CvUB/72269.m3u8",
         "quality": "HD · 1280x720"
       }
-    ]
+    ],
+    "id": "ch_276_prime_box_brazil"
   },
   {
-    "id": "ch_273_sabor%20%26%20arte",
     "name": "Sabor & Arte",
     "category": "Variedades",
     "logo": "https://mondrian.claro.com.br/channels/inverse/sabor-e-arte.png",
@@ -14807,12 +14856,12 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvMTc1MjMyMC5tM3U4.m3u8",
         "quality": "HD"
       }
-    ]
+    ],
+    "id": "ch_277_sabor_%26_arte"
   },
   {
-    "id": "ch_274_ufc%20fight%20pass",
     "name": "UFC Fight Pass",
-    "category": "PPV",
+    "category": "Jogos & Esportes",
     "logo": "https://img.faz-o-eli.online/ufcfightpass.png",
     "sources": [
       {
@@ -14855,10 +14904,10 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "http://vivlar.me:80/live/497238/KK8Kdy/184048.m3u8",
         "quality": "SD"
       }
-    ]
+    ],
+    "id": "ch_278_ufc_fight_pass"
   },
   {
-    "id": "ch_275_zoomoo",
     "name": "Zoomoo",
     "category": "Infantil",
     "logo": "https://img.faz-o-eli.online/zoomoo.png",
@@ -14911,12 +14960,12 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "http://332nr7hbfu.xyz:80/live/999913/S3CvUB/104934.m3u8",
         "quality": "FHD · 1920x1080"
       }
-    ]
+    ],
+    "id": "ch_279_zoomoo"
   },
   {
-    "id": "ch_276_101%20dalmatas",
     "name": "101 Dalmatas",
-    "category": "24 Horas",
+    "category": "Variedades",
     "logo": "http://24horas.cc:80/images/9c6a2f33abeeef86c653c2cfb53e30b3.jpg",
     "sources": [
       {
@@ -14931,12 +14980,12 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "http://corruptx.org:80/live/hfp5ejnrey/zq0u3kzads/1169265.m3u8",
         "quality": "HD · 1280x720"
       }
-    ]
+    ],
+    "id": "ch_280_101_dalmatas"
   },
   {
-    "id": "ch_277_a%20beleza%20secreta%20dos%20animais",
     "name": "A Beleza Secreta dos Animais",
-    "category": "24 Horas",
+    "category": "Variedades",
     "logo": "http://24horas.cc:80/images/841daa83c5587e962d6922d8d873a7e3.jpg",
     "sources": [
       {
@@ -14947,12 +14996,12 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "http://vaiagora.vip:80/live/5q8VUj/5BeUd8/138011.m3u8",
         "quality": "HD · 1280x720"
       }
-    ]
+    ],
+    "id": "ch_281_a_beleza_secreta_dos_animais"
   },
   {
-    "id": "ch_278_aladdin",
     "name": "Aladdin",
-    "category": "24 Horas",
+    "category": "Variedades",
     "logo": "http://24horas.cc:80/images/07b77f17e21144dcbd7933ee82820906.jpg",
     "sources": [
       {
@@ -14963,12 +15012,12 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "http://vaiagora.vip:80/live/5q8VUj/5BeUd8/138730.m3u8",
         "quality": "SD · 630x480"
       }
-    ]
+    ],
+    "id": "ch_282_aladdin"
   },
   {
-    "id": "ch_279_as%20aventuras%20do%20gato%20de%20botas",
     "name": "As Aventuras do Gato de Botas",
-    "category": "24 Horas",
+    "category": "Variedades",
     "logo": "http://24horas.cc:80/images/10eb05c9613316dfb3cb1a39efdf13e0.jpg",
     "sources": [
       {
@@ -14979,12 +15028,12 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "http://vaiagora.vip:80/live/5q8VUj/5BeUd8/140528.m3u8",
         "quality": "HD · 1280x720"
       }
-    ]
+    ],
+    "id": "ch_283_as_aventuras_do_gato_de_botas"
   },
   {
-    "id": "ch_280_cameras%20escondidas%20silvio%20santos",
     "name": "Cameras Escondidas Silvio Santos",
-    "category": "24 Horas",
+    "category": "Variedades",
     "logo": "https://img.faz-o-eli.online/24h.png",
     "sources": [
       {
@@ -14995,12 +15044,12 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "http://vaiagora.vip:80/live/5q8VUj/5BeUd8/152014.m3u8",
         "quality": "HD · 1280x720"
       }
-    ]
+    ],
+    "id": "ch_284_cameras_escondidas_silvio_santos"
   },
   {
-    "id": "ch_281_caverna%20do%20dragao",
     "name": "Caverna do Dragao",
-    "category": "24 Horas",
+    "category": "Variedades",
     "logo": "http://24horas.cc:80/images/7ba1bfdb706316720d0ba2bafbfd7347.jpg",
     "sources": [
       {
@@ -15019,12 +15068,12 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "http://corruptx.org:80/live/hfp5ejnrey/zq0u3kzads/1169215.m3u8",
         "quality": "HD · 960x720"
       }
-    ]
+    ],
+    "id": "ch_285_caverna_do_dragao"
   },
   {
-    "id": "ch_282_chapolin%20colorado",
     "name": "Chapolin Colorado",
-    "category": "24 Horas",
+    "category": "Variedades",
     "logo": "http://24horas.cc:80/images/77e8debc90dbfd7e69d9decf09b9e05e.jpg",
     "sources": [
       {
@@ -15087,12 +15136,12 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "http://corruptx.org:80/live/hfp5ejnrey/zq0u3kzads/1169217.m3u8",
         "quality": "HD · 1280x720"
       }
-    ]
+    ],
+    "id": "ch_286_chapolin_colorado"
   },
   {
-    "id": "ch_283_dois%20homens%20e%20meio",
     "name": "Dois Homens e Meio",
-    "category": "24 Horas",
+    "category": "Variedades",
     "logo": "http://24horas.cc:80/images/66a6edec30215e33b34d9a1a1fd25393.jpg",
     "sources": [
       {
@@ -15195,12 +15244,12 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "http://corruptx.org:80/live/hfp5ejnrey/zq0u3kzads/1169221.m3u8",
         "quality": "HD · 1280x720"
       }
-    ]
+    ],
+    "id": "ch_287_dois_homens_e_meio"
   },
   {
-    "id": "ch_284_dora%20aventureira",
     "name": "Dora Aventureira",
-    "category": "24 Horas",
+    "category": "Variedades",
     "logo": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/j30WV7vDXXorlbdKEHgl74stDml.jpg",
     "sources": [
       {
@@ -15215,12 +15264,12 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "http://corruptx.org:80/live/hfp5ejnrey/zq0u3kzads/1169304.m3u8",
         "quality": "SD · 720x480"
       }
-    ]
+    ],
+    "id": "ch_288_dora_aventureira"
   },
   {
-    "id": "ch_285_dragon%20ball%20super%20-%20saga%20deus%20da%20destruicao%20bills",
     "name": "Dragon Ball Super - Saga Deus da Destruicao Bills",
-    "category": "24 Horas",
+    "category": "Variedades",
     "logo": "http://24horas.cc:80/images/626e71bf1e9d0b71d194c9359413ced6.jpg",
     "sources": [
       {
@@ -15231,12 +15280,12 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "http://vaiagora.vip:80/live/5q8VUj/5BeUd8/135484.m3u8",
         "quality": "HD · 1280x720"
       }
-    ]
+    ],
+    "id": "ch_289_dragon_ball_super_-_saga_deus_da_destruicao_bills"
   },
   {
-    "id": "ch_286_dragon%20ball%20super%20-%20trunks%20do%20futuro",
     "name": "Dragon Ball Super - Trunks do Futuro",
-    "category": "24 Horas",
+    "category": "Variedades",
     "logo": "http://24horas.cc:80/images/626e71bf1e9d0b71d194c9359413ced6.jpg",
     "sources": [
       {
@@ -15247,12 +15296,12 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "http://vaiagora.vip:80/live/5q8VUj/5BeUd8/135487.m3u8",
         "quality": "HD · 1280x720"
       }
-    ]
+    ],
+    "id": "ch_290_dragon_ball_super_-_trunks_do_futuro"
   },
   {
-    "id": "ch_287_escolinha%20do%20professor%20raimundo",
     "name": "Escolinha do Professor Raimundo",
-    "category": "24 Horas",
+    "category": "Variedades",
     "logo": "http://24horas.cc:80/images/151df67d8d15f1c0c39c7779f27935b6.jpg",
     "sources": [
       {
@@ -15263,12 +15312,12 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "http://vaiagora.vip:80/live/5q8VUj/5BeUd8/137611.m3u8",
         "quality": "SD · 594x456"
       }
-    ]
+    ],
+    "id": "ch_291_escolinha_do_professor_raimundo"
   },
   {
-    "id": "ch_288_eu%20a%20patroa%20e%20as%20criancas",
     "name": "Eu a Patroa e as Criancas",
-    "category": "24 Horas",
+    "category": "Variedades",
     "logo": "http://24horas.cc:80/images/f8d46ebce886f39998603845cd3fc331.jpg",
     "sources": [
       {
@@ -15311,12 +15360,12 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "http://vaiagora.vip:80/live/5q8VUj/5BeUd8/138024.m3u8",
         "quality": "HD · 1280x720"
       }
-    ]
+    ],
+    "id": "ch_292_eu_a_patroa_e_as_criancas"
   },
   {
-    "id": "ch_289_game%20shakers",
     "name": "Game Shakers",
-    "category": "24 Horas",
+    "category": "Variedades",
     "logo": "http://24horas.cc:80/images/e1b30a8cf50dbe4b7da802f634c686b3.jpg",
     "sources": [
       {
@@ -15343,12 +15392,12 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "http://vaiagora.vip:80/live/5q8VUj/5BeUd8/138009.m3u8",
         "quality": "HD · 1280x720"
       }
-    ]
+    ],
+    "id": "ch_293_game_shakers"
   },
   {
-    "id": "ch_290_he%20man%20e%20os%20defensores%20do%20universo",
     "name": "He Man e Os Defensores do Universo",
-    "category": "24 Horas",
+    "category": "Variedades",
     "logo": "http://24horas.cc:80/images/66c305ee7bff6c27854be94434b46c7e.jpg",
     "sources": [
       {
@@ -15359,12 +15408,12 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "http://vaiagora.vip:80/live/5q8VUj/5BeUd8/135514.m3u8",
         "quality": "SD · 704x574"
       }
-    ]
+    ],
+    "id": "ch_294_he_man_e_os_defensores_do_universo"
   },
   {
-    "id": "ch_291_largados%20e%20pelados",
     "name": "Largados e Pelados",
-    "category": "24 Horas",
+    "category": "Variedades",
     "logo": "http://24horas.cc:80/images/2246772d199347c5251faaac1a270575.jpg",
     "sources": [
       {
@@ -15455,12 +15504,12 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "http://vaiagora.vip:80/live/5q8VUj/5BeUd8/145938.m3u8",
         "quality": "HD · 1280x720"
       }
-    ]
+    ],
+    "id": "ch_295_largados_e_pelados"
   },
   {
-    "id": "ch_292_mestres%20da%20sobrevivencia",
     "name": "Mestres da Sobrevivencia",
-    "category": "24 Horas",
+    "category": "Variedades",
     "logo": "http://24horas.cc:80/images/401f441af8a5f5b0211c085d1d755d95.jpg",
     "sources": [
       {
@@ -15471,12 +15520,12 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "http://vaiagora.vip:80/live/5q8VUj/5BeUd8/137129.m3u8",
         "quality": "HD · 1280x720"
       }
-    ]
+    ],
+    "id": "ch_296_mestres_da_sobrevivencia"
   },
   {
-    "id": "ch_293_nicky%20ricky%20dicky%20e%20dawn",
     "name": "Nicky Ricky Dicky e Dawn",
-    "category": "24 Horas",
+    "category": "Variedades",
     "logo": "http://24horas.cc:80/images/fa42fec0efcb2f9a242913cad45ccba8.jpg",
     "sources": [
       {
@@ -15511,12 +15560,12 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "http://vaiagora.vip:80/live/5q8VUj/5BeUd8/145942.m3u8",
         "quality": "HD · 1280x720"
       }
-    ]
+    ],
+    "id": "ch_297_nicky_ricky_dicky_e_dawn"
   },
   {
-    "id": "ch_294_um%20maluco%20no%20pedaco",
     "name": "Um Maluco no Pedaco",
-    "category": "24 Horas",
+    "category": "Variedades",
     "logo": "http://24horas.cc:80/images/3e3d6036a0a8a0f316aff080eca66868.jpg",
     "sources": [
       {
@@ -15571,12 +15620,12 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "http://corruptx.org:80/live/hfp5ejnrey/zq0u3kzads/1169252.m3u8",
         "quality": "HD · 1280x960"
       }
-    ]
+    ],
+    "id": "ch_298_um_maluco_no_pedaco"
   },
   {
-    "id": "ch_295_fcf%20tv%201",
     "name": "FCF TV 1",
-    "category": "PPV",
+    "category": "Jogos & Esportes",
     "logo": "",
     "sources": [
       {
@@ -15587,12 +15636,12 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "http://332nr7hbfu.xyz:80/live/999913/S3CvUB/247976.m3u8",
         "quality": "FHD · 1920x1080"
       }
-    ]
+    ],
+    "id": "ch_299_fcf_tv_1"
   },
   {
-    "id": "ch_296_carros%20irado",
     "name": "Carros Irado",
-    "category": "24 Horas",
+    "category": "Variedades",
     "logo": "http://24horas.cc:80/images/2dd914ca34a6a1ad2bdbb727f3e51140.jpg",
     "sources": [
       {
@@ -15667,10 +15716,10 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "http://vaiagora.vip:80/live/5q8VUj/5BeUd8/255232.m3u8",
         "quality": "HD · 1280x720"
       }
-    ]
+    ],
+    "id": "ch_300_carros_irado"
   },
   {
-    "id": "ch_297_cnbc%20brasil",
     "name": "CNBC Brasil",
     "category": "Notícias",
     "logo": "",
@@ -15719,10 +15768,10 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "http://332nr7hbfu.xyz:80/live/999913/S3CvUB/295477.m3u8",
         "quality": "FHD · 1920x1080"
       }
-    ]
+    ],
+    "id": "ch_301_cnbc_brasil"
   },
   {
-    "id": "ch_298_brasileirao%20serie%20a",
     "name": "Brasileirao Serie A",
     "category": "Variedades",
     "logo": "",
@@ -15755,12 +15804,12 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "http://332nr7hbfu.xyz:80/live/999913/S3CvUB/317063.m3u8",
         "quality": "FHD · 1920x1080"
       }
-    ]
+    ],
+    "id": "ch_302_brasileirao_serie_a"
   },
   {
-    "id": "ch_299_andorra%20x%20malta",
     "name": "Andorra x Malta",
-    "category": "Esportes",
+    "category": "Jogos & Esportes",
     "logo": "",
     "sources": [
       {
@@ -15771,24 +15820,24 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "http://vivlar.me:80/live/497238/KK8Kdy/317686.m3u8",
         "quality": "FHD · 1920x1080"
       }
-    ]
+    ],
+    "id": "ch_303_andorra_x_malta"
   },
   {
-    "id": "ch_300_portugal%20x%20pa%C3%ADs%20de%20gales",
     "name": "Portugal x País de Gales",
-    "category": "Esportes",
+    "category": "Jogos & Esportes",
     "logo": "",
     "sources": [
       {
         "url": "http://vaiagora.vip:80/live/5q8VUj/5BeUd8/317690.m3u8",
         "quality": "FHD · 1920x1080"
       }
-    ]
+    ],
+    "id": "ch_304_portugal_x_pa%C3%ADs_de_gales"
   },
   {
-    "id": "ch_301_%C3%A1ustria%20x%20israel",
     "name": "Áustria x Israel",
-    "category": "Esportes",
+    "category": "Jogos & Esportes",
     "logo": "",
     "sources": [
       {
@@ -15799,12 +15848,12 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "http://vivlar.me:80/live/497238/KK8Kdy/317691.m3u8",
         "quality": "FHD · 1920x1080"
       }
-    ]
+    ],
+    "id": "ch_305_%C3%A1ustria_x_israel"
   },
   {
-    "id": "ch_302_kosovo%20x%20irlanda",
     "name": "Kosovo x Irlanda",
-    "category": "Esportes",
+    "category": "Jogos & Esportes",
     "logo": "",
     "sources": [
       {
@@ -15815,12 +15864,12 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "http://vivlar.me:80/live/497238/KK8Kdy/317692.m3u8",
         "quality": "FHD · 1920x1080"
       }
-    ]
+    ],
+    "id": "ch_306_kosovo_x_irlanda"
   },
   {
-    "id": "ch_303_liechtenstein%20x%20litu%C3%A2nia",
     "name": "Liechtenstein x Lituânia",
-    "category": "Esportes",
+    "category": "Jogos & Esportes",
     "logo": "",
     "sources": [
       {
@@ -15831,12 +15880,12 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "http://vivlar.me:80/live/497238/KK8Kdy/317693.m3u8",
         "quality": "FHD · 1920x1080"
       }
-    ]
+    ],
+    "id": "ch_307_liechtenstein_x_litu%C3%A2nia"
   },
   {
-    "id": "ch_304_informa%C3%A7%C3%B5es%20em%20breve",
     "name": "Informações em Breve",
-    "category": "Esportes",
+    "category": "Jogos & Esportes",
     "logo": "",
     "sources": [
       {
@@ -15903,12 +15952,12 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "http://vivlar.me:80/live/497238/KK8Kdy/318085.m3u8",
         "quality": "FHD · 1920x1080"
       }
-    ]
+    ],
+    "id": "ch_308_informa%C3%A7%C3%B5es_em_breve"
   },
   {
-    "id": "ch_305_gladiadores%20da%20natureza",
     "name": "Gladiadores da Natureza",
-    "category": "24 Horas",
+    "category": "Variedades",
     "logo": "https://img.faz-o-eli.online/24h.png",
     "sources": [
       {
@@ -15919,10 +15968,10 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "http://vaiagora.vip:80/live/5q8VUj/5BeUd8/371456.m3u8",
         "quality": "FHD · 1920x1080"
       }
-    ]
+    ],
+    "id": "ch_309_gladiadores_da_natureza"
   },
   {
-    "id": "ch_306_a%20fazenda%20cam%201",
     "name": "A Fazenda Cam 1",
     "category": "Variedades",
     "logo": "https://img.faz-o-eli.online/afazenda2.png",
@@ -15935,10 +15984,10 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "http://vivlar.me:80/live/497238/KK8Kdy/397317.m3u8",
         "quality": "FHD"
       }
-    ]
+    ],
+    "id": "ch_310_a_fazenda_cam_1"
   },
   {
-    "id": "ch_307_a%20fazenda%20cam%202",
     "name": "A Fazenda Cam 2",
     "category": "Variedades",
     "logo": "https://img.faz-o-eli.online/afazenda2.png",
@@ -15951,10 +16000,10 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "http://vivlar.me:80/live/497238/KK8Kdy/397320.m3u8",
         "quality": "FHD"
       }
-    ]
+    ],
+    "id": "ch_311_a_fazenda_cam_2"
   },
   {
-    "id": "ch_308_a%20fazenda%20cam%203",
     "name": "A Fazenda Cam 3",
     "category": "Variedades",
     "logo": "https://img.faz-o-eli.online/afazenda2.png",
@@ -15967,10 +16016,10 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "http://vivlar.me:80/live/497238/KK8Kdy/397321.m3u8",
         "quality": "FHD"
       }
-    ]
+    ],
+    "id": "ch_312_a_fazenda_cam_3"
   },
   {
-    "id": "ch_309_a%20fazenda%20cam%204",
     "name": "A Fazenda Cam 4",
     "category": "Variedades",
     "logo": "https://img.faz-o-eli.online/afazenda2.png",
@@ -15983,10 +16032,10 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "http://vivlar.me:80/live/497238/KK8Kdy/397322.m3u8",
         "quality": "FHD"
       }
-    ]
+    ],
+    "id": "ch_313_a_fazenda_cam_4"
   },
   {
-    "id": "ch_310_a%20fazenda%20cam%205",
     "name": "A Fazenda Cam 5",
     "category": "Variedades",
     "logo": "https://img.faz-o-eli.online/afazenda2.png",
@@ -15999,10 +16048,10 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "http://vivlar.me:80/live/497238/KK8Kdy/397323.m3u8",
         "quality": "FHD"
       }
-    ]
+    ],
+    "id": "ch_314_a_fazenda_cam_5"
   },
   {
-    "id": "ch_311_a%20fazenda%20cam%206",
     "name": "A Fazenda Cam 6",
     "category": "Variedades",
     "logo": "https://img.faz-o-eli.online/afazenda2.png",
@@ -16015,10 +16064,10 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "http://vivlar.me:80/live/497238/KK8Kdy/397324.m3u8",
         "quality": "FHD"
       }
-    ]
+    ],
+    "id": "ch_315_a_fazenda_cam_6"
   },
   {
-    "id": "ch_312_max%2007",
     "name": "MAX 07",
     "category": "Filmes e Séries",
     "logo": "http://i.postimg.cc/L52gtQpb/BeDFSlD.png",
@@ -16027,10 +16076,10 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvOTg2MDQ5Lm0zdTg.m3u8",
         "quality": "HD"
       }
-    ]
+    ],
+    "id": "ch_316_max_07"
   },
   {
-    "id": "ch_313_max%2008",
     "name": "MAX 08",
     "category": "Filmes e Séries",
     "logo": "http://i.postimg.cc/L52gtQpb/BeDFSlD.png",
@@ -16039,34 +16088,34 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "https://frostview.squareweb.app/relay/m/aHR0cDovL2Fic29sdXRvLnRvcC9saXZlLzIzMzczMTkyOS80MTAzMTQ1ODcvMTQ0ODQzMC5tM3U4.m3u8",
         "quality": "HD"
       }
-    ]
+    ],
+    "id": "ch_317_max_08"
   },
   {
-    "id": "ch_314_premiere%208%20mosaico",
     "name": "PREMIERE 8 MOSAICO",
-    "category": "Esportes",
+    "category": "Jogos & Esportes",
     "logo": "http://1.bp.blogspot.com/-9NsHz_itoFc/Xk70dxuLv7I/AAAAAAAACGQ/wCExIoJZ8xgbleziCR-Guhr-AkuLgFhVQCLcBGAsYHQ/s1600/premiere_2.png",
     "sources": [
       {
         "url": "http://corruptx.org:80/live/hfp5ejnrey/zq0u3kzads/30063.m3u8",
         "quality": "FHD"
       }
-    ]
+    ],
+    "id": "ch_318_premiere_8_mosaico"
   },
   {
-    "id": "ch_315_jogos%20de%20hoje",
     "name": "JOGOS DE HOJE",
-    "category": "Esportes",
+    "category": "Jogos & Esportes",
     "logo": "",
     "sources": [
       {
         "url": "http://corruptx.org:80/live/hfp5ejnrey/zq0u3kzads/339310.m3u8",
         "quality": "HD · 1280x720"
       }
-    ]
+    ],
+    "id": "ch_319_jogos_de_hoje"
   },
   {
-    "id": "ch_316_a%20fazenda%2018%20mosaico",
     "name": "A FAZENDA 18 MOSAICO",
     "category": "Variedades",
     "logo": "https://img.faz-o-eli.online/afazenda2.png",
@@ -16075,22 +16124,22 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "http://corruptx.org:80/live/hfp5ejnrey/zq0u3kzads/2470067.m3u8",
         "quality": "HD · 1280x720"
       }
-    ]
+    ],
+    "id": "ch_320_a_fazenda_18_mosaico"
   },
   {
-    "id": "ch_317_chapolin",
     "name": "CHAPOLIN",
-    "category": "24 Horas",
+    "category": "Variedades",
     "logo": "http://24horas.cc:80/images/77e8debc90dbfd7e69d9decf09b9e05e.jpg",
     "sources": [
       {
         "url": "http://corruptx.org:80/live/hfp5ejnrey/zq0u3kzads/1169216.m3u8",
         "quality": "HD · 1280x720"
       }
-    ]
+    ],
+    "id": "ch_321_chapolin"
   },
   {
-    "id": "ch_318_disney%20plus%201",
     "name": "Disney Plus 1",
     "category": "Filmes e Séries",
     "logo": "https://vipcanais.net/images/disneyplus.png",
@@ -16105,10 +16154,10 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/disneyplus1/disneyplus1.m3u8",
         "quality": "Qualidade não informada"
       }
-    ]
+    ],
+    "id": "ch_322_disney_plus_1"
   },
   {
-    "id": "ch_319_disney%20plus%202",
     "name": "Disney Plus 2",
     "category": "Filmes e Séries",
     "logo": "https://vipcanais.net/images/disneyplus.png",
@@ -16117,10 +16166,10 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/disneyplus2/disneyplus2.m3u8",
         "quality": "Qualidade não informada"
       }
-    ]
+    ],
+    "id": "ch_323_disney_plus_2"
   },
   {
-    "id": "ch_320_disney%20plus%203",
     "name": "Disney Plus 3",
     "category": "Filmes e Séries",
     "logo": "https://vipcanais.net/images/disneyplus.png",
@@ -16129,10 +16178,10 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/disneyplus3/disneyplus3.m3u8",
         "quality": "Qualidade não informada"
       }
-    ]
+    ],
+    "id": "ch_324_disney_plus_3"
   },
   {
-    "id": "ch_321_paramount%20plus%201",
     "name": "Paramount Plus 1",
     "category": "Filmes e Séries",
     "logo": "https://vipcanais.net/images/paramountplus.png",
@@ -16151,10 +16200,10 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/paramountplus/paramountplus.m3u8",
         "quality": "Qualidade não informada"
       }
-    ]
+    ],
+    "id": "ch_325_paramount_plus_1"
   },
   {
-    "id": "ch_322_paramount%20plus%202",
     "name": "Paramount Plus 2",
     "category": "Filmes e Séries",
     "logo": "https://vipcanais.net/images/paramountplus.png",
@@ -16167,10 +16216,10 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/paramountplus2/paramountplus2.m3u8",
         "quality": "Qualidade não informada"
       }
-    ]
+    ],
+    "id": "ch_326_paramount_plus_2"
   },
   {
-    "id": "ch_323_prime%20video%203",
     "name": "Prime Video 3",
     "category": "Filmes e Séries",
     "logo": "https://vipcanais.net/images/amazonprimevideo.png",
@@ -16179,10 +16228,10 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "https://fallback1.nexustvplay.bbroot.com/nxs/stream/primevideo3/primevideo3.m3u8",
         "quality": "Qualidade não informada"
       }
-    ]
+    ],
+    "id": "ch_327_prime_video_3"
   },
   {
-    "id": "ch_324_anime%20channel%20tv",
     "name": "Anime Channel TV",
     "category": "Infantil",
     "logo": "",
@@ -16193,10 +16242,10 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "referer": "https://meufut.top/anime-tv",
         "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
       }
-    ]
+    ],
+    "id": "ch_328_anime_channel_tv"
   },
   {
-    "id": "ch_325_otaku%20sign%20tv",
     "name": "Otaku Sign TV",
     "category": "Infantil",
     "logo": "",
@@ -16205,10 +16254,10 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "https://stmv1.srvif.com/anime/anime/playlist.m3u8",
         "quality": "SD · 1024x576"
       }
-    ]
+    ],
+    "id": "ch_329_otaku_sign_tv"
   },
   {
-    "id": "ch_326_geekdot",
     "name": "Geekdot",
     "category": "Infantil",
     "logo": "",
@@ -16217,10 +16266,10 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "https://stream.ichibansys.com:3764/hybrid/play.m3u8",
         "quality": "HD · 1280x720"
       }
-    ]
+    ],
+    "id": "ch_330_geekdot"
   },
   {
-    "id": "ch_327_nbx%20tv%20kids",
     "name": "NBX TV Kids",
     "category": "Infantil",
     "logo": "",
@@ -16229,10 +16278,10 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "https://stmv4.voxtvhd.com.br/bnxkids/bnxkids/playlist.m3u8",
         "quality": "FHD · 1920x1080"
       }
-    ]
+    ],
+    "id": "ch_331_nbx_tv_kids"
   },
   {
-    "id": "ch_328_sbc%20kids",
     "name": "SBC Kids",
     "category": "Infantil",
     "logo": "",
@@ -16241,10 +16290,10 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "https://video01.brascast.com/rede1220/rede1220/playlist.m3u8",
         "quality": "FHD · 1920x1080"
       }
-    ]
+    ],
+    "id": "ch_332_sbc_kids"
   },
   {
-    "id": "ch_329_rede%20crian%C3%A7as",
     "name": "Rede Crianças",
     "category": "Infantil",
     "logo": "",
@@ -16253,10 +16302,10 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "https://video08.logicahost.com.br/kanucatv/kanucatv/playlist.m3u8",
         "quality": "HD · 1280x720"
       }
-    ]
+    ],
+    "id": "ch_333_rede_crian%C3%A7as"
   },
   {
-    "id": "ch_330_kuriakos%20kids",
     "name": "Kuriakos Kids",
     "category": "Infantil",
     "logo": "",
@@ -16265,10 +16314,10 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "https://w2.manasat.com/kkids/smil:kkids.smil/playlist.m3u8",
         "quality": "FHD · 1920x1080"
       }
-    ]
+    ],
+    "id": "ch_334_kuriakos_kids"
   },
   {
-    "id": "ch_331_gospel%20cartoon",
     "name": "Gospel Cartoon",
     "category": "Infantil",
     "logo": "",
@@ -16277,10 +16326,10 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "https://stmv1.srvif.com/gospelcartoon/gospelcartoon/playlist.m3u8",
         "quality": "SD · 640x360"
       }
-    ]
+    ],
+    "id": "ch_335_gospel_cartoon"
   },
   {
-    "id": "ch_332_jetsons%20tv",
     "name": "Jetsons TV",
     "category": "Infantil",
     "logo": "",
@@ -16289,12 +16338,12 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "https://stmv1.srvif.com/jetsontv/jetsontv/playlist.m3u8",
         "quality": "SD · 640x480"
       }
-    ]
+    ],
+    "id": "ch_336_jetsons_tv"
   },
   {
-    "id": "ch_333_24h%20os%20smurfs",
     "name": "24H Os Smurfs",
-    "category": "24 Horas",
+    "category": "Variedades",
     "logo": "https://img.faz-o-eli.online/24h.png",
     "sources": [
       {
@@ -16303,10 +16352,10 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "referer": "https://meufut.top/the-smurfs-tv",
         "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
       }
-    ]
+    ],
+    "id": "ch_337_24h_os_smurfs"
   },
   {
-    "id": "ch_334_tv%20a%20cr%C3%ADtica",
     "name": "TV A Crítica",
     "category": "TV Aberta",
     "logo": "",
@@ -16317,12 +16366,12 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "referer": "https://meufut.top/tv-a-critica",
         "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
       }
-    ]
+    ],
+    "id": "ch_338_tv_a_cr%C3%ADtica"
   },
   {
-    "id": "ch_335_fifa%2B%20portugu%C3%AAs",
     "name": "FIFA+ Português",
-    "category": "Esportes",
+    "category": "Jogos & Esportes",
     "logo": "",
     "sources": [
       {
@@ -16335,10 +16384,10 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "https://e3be9ac5.wurl.com/master/f36d25e7e52f1ba8d7e56eb859c636563214f541/TEctYnJfRklGQVBsdXNQb3J0dWd1ZXNlX0hMUw/playlist.m3u8",
         "quality": "SD"
       }
-    ]
+    ],
+    "id": "ch_339_fifa%2B_portugu%C3%AAs"
   },
   {
-    "id": "ch_336_viva",
     "name": "Viva",
     "category": "Variedades",
     "logo": "https://img.faz-o-eli.online/viva.png",
@@ -16349,10 +16398,10 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "referer": "https://meufut.top/viva",
         "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
       }
-    ]
+    ],
+    "id": "ch_340_viva"
   },
   {
-    "id": "ch_337_comedy%20central",
     "name": "Comedy Central",
     "category": "Variedades",
     "logo": "https://img.faz-o-eli.online/comedycentral.png",
@@ -16363,10 +16412,10 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "referer": "https://meufut.top/comedy-central",
         "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
       }
-    ]
+    ],
+    "id": "ch_341_comedy_central"
   },
   {
-    "id": "ch_338_globo%20bahia",
     "name": "Globo Bahia",
     "category": "TV Aberta",
     "logo": "https://img.faz-o-eli.online/globo.png",
@@ -16375,10 +16424,10 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "http://hls1.sua.tv/live/globotvbahiafhdbr2/s.m3u8",
         "quality": "FHD · 1920x1080"
       }
-    ]
+    ],
+    "id": "ch_342_globo_bahia"
   },
   {
-    "id": "ch_339_runtime%20a%C3%A7%C3%A3o",
     "name": "Runtime Ação",
     "category": "Filmes e Séries",
     "logo": "",
@@ -16387,10 +16436,10 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "https://run-rt-ra.otteravision.com/run/rt_ra/rt_ra_720.m3u8",
         "quality": "HD · 1280x720"
       }
-    ]
+    ],
+    "id": "ch_343_runtime_a%C3%A7%C3%A3o"
   },
   {
-    "id": "ch_340_dreamworks",
     "name": "DreamWorks",
     "category": "Infantil",
     "logo": "https://img.faz-o-eli.online/dreamworks.png",
@@ -16399,10 +16448,10 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "https://origin-07.nxplay.com.br/DREAMWORKS/index.m3u8",
         "quality": "FHD · 1920x1080"
       }
-    ]
+    ],
+    "id": "ch_344_dreamworks"
   },
   {
-    "id": "ch_341_top%20tv",
     "name": "Top TV",
     "category": "Músicas",
     "logo": "",
@@ -16411,10 +16460,10 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "https://isaocorp.cloudecast.com/toptv/index.m3u8",
         "quality": "FHD · 1920x1080"
       }
-    ]
+    ],
+    "id": "ch_345_top_tv"
   },
   {
-    "id": "ch_342_moviesphere%20brazil",
     "name": "MovieSphere Brazil",
     "category": "Filmes e Séries",
     "logo": "",
@@ -16423,10 +16472,10 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "https://amg00353-amg00353c29-plex-us-3205.playouts.now.amagi.tv/ts-us-e2-n2/playlist/amg00353-lionsgatetvfast-moviespherebrazil-plexus/playlist.m3u8",
         "quality": "FHD · 1920x1080"
       }
-    ]
+    ],
+    "id": "ch_346_moviesphere_brazil"
   },
   {
-    "id": "ch_343_trace%20urban",
     "name": "Trace Urban",
     "category": "Músicas",
     "logo": "",
@@ -16435,10 +16484,10 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "https://amg01076-lightningintern-traceurban-xiaomi-m78n3.amagi.tv/playlist/amg01076-lightningintern-traceurban-xiaomi/playlist.m3u8",
         "quality": "HD · 1280x720"
       }
-    ]
+    ],
+    "id": "ch_347_trace_urban"
   },
   {
-    "id": "ch_344_sony%20one%20classics",
     "name": "Sony One Classics",
     "category": "Filmes e Séries",
     "logo": "",
@@ -16447,10 +16496,10 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "https://spt-sonyoneclassicas-1-br.samsung.wurl.tv/playlist.m3u8",
         "quality": "HD · 1280x720"
       }
-    ]
+    ],
+    "id": "ch_348_sony_one_classics"
   },
   {
-    "id": "ch_345_classique%20faroeste",
     "name": "Classique Faroeste",
     "category": "Filmes e Séries",
     "logo": "",
@@ -16459,10 +16508,10 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "https://amogonetworx-grjngo-1-eu.plex.wurl.tv/playlist.m3u8",
         "quality": "HD · 1280x720"
       }
-    ]
+    ],
+    "id": "ch_349_classique_faroeste"
   },
   {
-    "id": "ch_346_loading%20tv",
     "name": "Loading TV",
     "category": "Infantil",
     "logo": "",
@@ -16471,10 +16520,10 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "https://stmv1.srvif.com/loadingtv/loadingtv/playlist.m3u8",
         "quality": "HD · 1280x720"
       }
-    ]
+    ],
+    "id": "ch_350_loading_tv"
   },
   {
-    "id": "ch_347_retr%C3%B4%20cartoon",
     "name": "Retrô Cartoon",
     "category": "Infantil",
     "logo": "",
@@ -16483,10 +16532,10 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "https://stmv1.video.brstream.com.br/retrotv/retrotv/playlist.m3u8",
         "quality": "HD · 1280x720"
       }
-    ]
+    ],
+    "id": "ch_351_retr%C3%B4_cartoon"
   },
   {
-    "id": "ch_348_retro%20music",
     "name": "Retro Music",
     "category": "Músicas",
     "logo": "",
@@ -16495,10 +16544,10 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "https://newstream.mediawork.cz/retrotv/smil:retrotv_new.smil/playlist.m3u8",
         "quality": "HD · 1280x720"
       }
-    ]
+    ],
+    "id": "ch_352_retro_music"
   },
   {
-    "id": "ch_349_now%20rock",
     "name": "Now Rock",
     "category": "Músicas",
     "logo": "",
@@ -16507,10 +16556,10 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "https://lightning-now90s-rakuten.amagi.tv/playlist.m3u8",
         "quality": "HD · 1280x720"
       }
-    ]
+    ],
+    "id": "ch_353_now_rock"
   },
   {
-    "id": "ch_350_tv%20cl%C3%A1ssicos",
     "name": "TV Clássicos",
     "category": "Filmes e Séries",
     "logo": "",
@@ -16519,6 +16568,1716 @@ export const FALLBACK_CHANNELS: Channel[] = [
         "url": "https://stmv2.painelvideocast.com.br/multicanais/multicanais/playlist.m3u8",
         "quality": "HD · 1280x720"
       }
-    ]
+    ],
+    "id": "ch_354_tv_cl%C3%A1ssicos"
+  },
+  {
+    "name": "Sexy Hot",
+    "category": "Adulto (+18)",
+    "logo": "https://mondrian.claro.com.br/channels/inverse/sexy-hot.png",
+    "sources": [
+      {
+        "url": "https://canais.fazoeli.co.za/fontes/smart/sexyhot.m3u8"
+      },
+      {
+        "url": "http://vaiagora.vip:80/5q8VUj/5BeUd8/180157.ts",
+        "quality": "4K"
+      },
+      {
+        "url": "http://vaiagora.vip:80/5q8VUj/5BeUd8/180153.ts",
+        "quality": "FHD"
+      },
+      {
+        "url": "http://vaiagora.vip:80/5q8VUj/5BeUd8/180156.ts",
+        "quality": "FHD"
+      },
+      {
+        "url": "http://vaiagora.vip:80/5q8VUj/5BeUd8/180154.ts",
+        "quality": "HD"
+      },
+      {
+        "url": "http://vaiagora.vip:80/5q8VUj/5BeUd8/72310.ts",
+        "quality": "SD"
+      },
+      {
+        "url": "http://vivlar.me:80/497238/KK8Kdy/180157.ts",
+        "quality": "4K"
+      },
+      {
+        "url": "http://vivlar.me:80/497238/KK8Kdy/180153.ts",
+        "quality": "FHD"
+      },
+      {
+        "url": "http://vivlar.me:80/497238/KK8Kdy/180156.ts",
+        "quality": "FHD"
+      },
+      {
+        "url": "http://vivlar.me:80/497238/KK8Kdy/180154.ts",
+        "quality": "HD"
+      },
+      {
+        "url": "http://vivlar.me:80/497238/KK8Kdy/72310.ts",
+        "quality": "SD"
+      }
+    ],
+    "id": "ch_355_sexy_hot"
+  },
+  {
+    "name": "Playboy TV",
+    "category": "Adulto (+18)",
+    "logo": "https://mondrian.claro.com.br/channels/inverse/playboy-tv.png",
+    "sources": [
+      {
+        "url": "https://canais.fazoeli.co.za/fontes/smart/playboy.m3u8"
+      },
+      {
+        "url": "http://vaiagora.vip:80/5q8VUj/5BeUd8/72221.ts",
+        "quality": "FHD"
+      },
+      {
+        "url": "http://vaiagora.vip:80/5q8VUj/5BeUd8/72224.ts",
+        "quality": "FHD"
+      },
+      {
+        "url": "http://vaiagora.vip:80/5q8VUj/5BeUd8/72222.ts",
+        "quality": "HD"
+      },
+      {
+        "url": "http://vaiagora.vip:80/5q8VUj/5BeUd8/72223.ts",
+        "quality": "SD"
+      },
+      {
+        "url": "http://vivlar.me:80/497238/KK8Kdy/72221.ts",
+        "quality": "FHD"
+      },
+      {
+        "url": "http://vivlar.me:80/497238/KK8Kdy/72224.ts",
+        "quality": "FHD"
+      },
+      {
+        "url": "http://vivlar.me:80/497238/KK8Kdy/72222.ts",
+        "quality": "HD"
+      },
+      {
+        "url": "http://vivlar.me:80/497238/KK8Kdy/72223.ts",
+        "quality": "SD"
+      }
+    ],
+    "id": "ch_356_playboy_tv"
+  },
+  {
+    "name": "Anal",
+    "category": "Adulto (+18)",
+    "logo": "",
+    "sources": [
+      {
+        "url": "https://cdn.adultiptv.net/anal.m3u8",
+        "quality": "HD · 1280x720"
+      }
+    ],
+    "id": "ch_357_anal"
+  },
+  {
+    "name": "Asian",
+    "category": "Adulto (+18)",
+    "logo": "",
+    "sources": [
+      {
+        "url": "https://cdn.adultiptv.net/asian.m3u8",
+        "quality": "HD · 1280x720"
+      }
+    ],
+    "id": "ch_358_asian"
+  },
+  {
+    "name": "Big Ass",
+    "category": "Adulto (+18)",
+    "logo": "",
+    "sources": [
+      {
+        "url": "https://cdn.adultiptv.net/bigass.m3u8",
+        "quality": "HD · 1280x720"
+      }
+    ],
+    "id": "ch_359_big_ass"
+  },
+  {
+    "name": "Big Dick",
+    "category": "Adulto (+18)",
+    "logo": "",
+    "sources": [
+      {
+        "url": "https://cdn.adultiptv.net/bigdick.m3u8",
+        "quality": "HD · 1280x720"
+      }
+    ],
+    "id": "ch_360_big_dick"
+  },
+  {
+    "name": "Big Tits",
+    "category": "Adulto (+18)",
+    "logo": "",
+    "sources": [
+      {
+        "url": "https://cdn.adultiptv.net/bigtits.m3u8",
+        "quality": "HD · 1280x720"
+      }
+    ],
+    "id": "ch_361_big_tits"
+  },
+  {
+    "name": "Blowjob",
+    "category": "Adulto (+18)",
+    "logo": "",
+    "sources": [
+      {
+        "url": "https://cdn.adultiptv.net/blowjob.m3u8",
+        "quality": "HD · 1280x720"
+      }
+    ],
+    "id": "ch_362_blowjob"
+  },
+  {
+    "name": "Compilation",
+    "category": "Adulto (+18)",
+    "logo": "",
+    "sources": [
+      {
+        "url": "https://cdn.adultiptv.net/compilation.m3u8",
+        "quality": "HD · 1280x720"
+      }
+    ],
+    "id": "ch_363_compilation"
+  },
+  {
+    "name": "Cuckold",
+    "category": "Adulto (+18)",
+    "logo": "",
+    "sources": [
+      {
+        "url": "https://cdn.adultiptv.net/cuckold.m3u8",
+        "quality": "HD · 1280x720"
+      }
+    ],
+    "id": "ch_364_cuckold"
+  },
+  {
+    "name": "Fetish",
+    "category": "Adulto (+18)",
+    "logo": "",
+    "sources": [
+      {
+        "url": "https://cdn.adultiptv.net/fetish.m3u8",
+        "quality": "HD · 1280x720"
+      }
+    ],
+    "id": "ch_365_fetish"
+  },
+  {
+    "name": "Gangbang",
+    "category": "Adulto (+18)",
+    "logo": "",
+    "sources": [
+      {
+        "url": "https://cdn.adultiptv.net/gangbang.m3u8",
+        "quality": "HD · 1280x720"
+      }
+    ],
+    "id": "ch_366_gangbang"
+  },
+  {
+    "name": "Gay",
+    "category": "Adulto (+18)",
+    "logo": "",
+    "sources": [
+      {
+        "url": "https://cdn.adultiptv.net/gay.m3u8",
+        "quality": "HD · 1280x720"
+      }
+    ],
+    "id": "ch_367_gay"
+  },
+  {
+    "name": "Hardcore",
+    "category": "Adulto (+18)",
+    "logo": "",
+    "sources": [
+      {
+        "url": "https://cdn.adultiptv.net/hardcore.m3u8",
+        "quality": "HD · 1280x720"
+      }
+    ],
+    "id": "ch_368_hardcore"
+  },
+  {
+    "name": "Interracial",
+    "category": "Adulto (+18)",
+    "logo": "",
+    "sources": [
+      {
+        "url": "https://cdn.adultiptv.net/interracial.m3u8",
+        "quality": "HD · 1280x720"
+      }
+    ],
+    "id": "ch_369_interracial"
+  },
+  {
+    "name": "Live Cams",
+    "category": "Adulto (+18)",
+    "logo": "",
+    "sources": [
+      {
+        "url": "https://cdn.adultiptv.net/livecams.m3u8",
+        "quality": "HD · 1280x720"
+      }
+    ],
+    "id": "ch_370_live_cams"
+  },
+  {
+    "name": "Pornstar",
+    "category": "Adulto (+18)",
+    "logo": "",
+    "sources": [
+      {
+        "url": "https://cdn.adultiptv.net/pornstar.m3u8",
+        "quality": "HD · 1280x720"
+      }
+    ],
+    "id": "ch_371_pornstar"
+  },
+  {
+    "name": "POV",
+    "category": "Adulto (+18)",
+    "logo": "",
+    "sources": [
+      {
+        "url": "https://cdn.adultiptv.net/pov.m3u8",
+        "quality": "HD · 1280x720"
+      }
+    ],
+    "id": "ch_372_pov"
+  },
+  {
+    "name": "Rough",
+    "category": "Adulto (+18)",
+    "logo": "",
+    "sources": [
+      {
+        "url": "https://cdn.adultiptv.net/rough.m3u8",
+        "quality": "HD · 1280x720"
+      }
+    ],
+    "id": "ch_373_rough"
+  },
+  {
+    "name": "Russian",
+    "category": "Adulto (+18)",
+    "logo": "",
+    "sources": [
+      {
+        "url": "https://cdn.adultiptv.net/russian.m3u8",
+        "quality": "HD · 1280x720"
+      }
+    ],
+    "id": "ch_374_russian"
+  },
+  {
+    "name": "Threesome",
+    "category": "Adulto (+18)",
+    "logo": "",
+    "sources": [
+      {
+        "url": "https://cdn.adultiptv.net/threesome.m3u8",
+        "quality": "HD · 1280x720"
+      }
+    ],
+    "id": "ch_375_threesome"
+  },
+  {
+    "name": "Woman",
+    "category": "Adulto (+18)",
+    "logo": "",
+    "sources": [
+      {
+        "url": "https://live.redtraffic.net/woman.m3u8",
+        "quality": "HD · 1280x720"
+      }
+    ],
+    "id": "ch_376_woman"
+  },
+  {
+    "name": "MyCam Anal",
+    "category": "Adulto (+18)",
+    "logo": "",
+    "sources": [
+      {
+        "url": "https://live.mycamtv.com/anal.m3u8",
+        "quality": "HD · 1280x720"
+      }
+    ],
+    "id": "ch_377_mycam_anal"
+  },
+  {
+    "name": "MyCam Asian",
+    "category": "Adulto (+18)",
+    "logo": "",
+    "sources": [
+      {
+        "url": "https://live.mycamtv.com/asian.m3u8",
+        "quality": "HD · 1280x720"
+      }
+    ],
+    "id": "ch_378_mycam_asian"
+  },
+  {
+    "name": "MyCam Big Ass",
+    "category": "Adulto (+18)",
+    "logo": "",
+    "sources": [
+      {
+        "url": "https://live.mycamtv.com/defstream.m3u8",
+        "quality": "FHD · 1920x1080"
+      }
+    ],
+    "id": "ch_379_mycam_big_ass"
+  },
+  {
+    "name": "MyCam Big Tits",
+    "category": "Adulto (+18)",
+    "logo": "",
+    "sources": [
+      {
+        "url": "https://live.mycamtv.com/bigtits.m3u8",
+        "quality": "HD · 1280x720"
+      }
+    ],
+    "id": "ch_380_mycam_big_tits"
+  },
+  {
+    "name": "MyCam Blonde",
+    "category": "Adulto (+18)",
+    "logo": "",
+    "sources": [
+      {
+        "url": "https://live.mycamtv.com/blonde.m3u8",
+        "quality": "HD · 1280x720"
+      }
+    ],
+    "id": "ch_381_mycam_blonde"
+  },
+  {
+    "name": "MyCam Brunette",
+    "category": "Adulto (+18)",
+    "logo": "",
+    "sources": [
+      {
+        "url": "https://live.mycamtv.com/brunette.m3u8",
+        "quality": "HD · 1280x720"
+      }
+    ],
+    "id": "ch_382_mycam_brunette"
+  },
+  {
+    "name": "MyCam Latina",
+    "category": "Adulto (+18)",
+    "logo": "",
+    "sources": [
+      {
+        "url": "https://live.mycamtv.com/latina.m3u8",
+        "quality": "HD · 1280x720"
+      }
+    ],
+    "id": "ch_383_mycam_latina"
+  },
+  {
+    "name": "MyCam Squirt",
+    "category": "Adulto (+18)",
+    "logo": "",
+    "sources": [
+      {
+        "url": "https://live.mycamtv.com/squirt.m3u8",
+        "quality": "FHD · 1920x1080"
+      }
+    ],
+    "id": "ch_384_mycam_squirt"
+  },
+  {
+    "name": "MyCam White",
+    "category": "Adulto (+18)",
+    "logo": "",
+    "sources": [
+      {
+        "url": "https://live.mycamtv.com/white.m3u8",
+        "quality": "FHD · 1920x1080"
+      }
+    ],
+    "id": "ch_385_mycam_white"
+  },
+  {
+    "name": "Jenny Live",
+    "category": "Adulto (+18)",
+    "logo": "",
+    "sources": [
+      {
+        "url": "https://59ec5453559f0.streamlock.net/JennyLive/JennyLive/playlist.m3u8",
+        "quality": "FHD · 1920x1080"
+      }
+    ],
+    "id": "ch_386_jenny_live"
+  },
+  {
+    "name": "Miami TV Mexico",
+    "category": "Adulto (+18)",
+    "logo": "",
+    "sources": [
+      {
+        "url": "https://59ec5453559f0.streamlock.net/mexicotv/smil:miamitvmexico/playlist.m3u8",
+        "quality": "HD · 1280x720"
+      }
+    ],
+    "id": "ch_387_miami_tv_mexico"
+  },
+  {
+    "name": "O-la-la!",
+    "category": "Adulto (+18)",
+    "logo": "https://i.imgur.com/6aOmZs4.png",
+    "sources": [
+      {
+        "url": "http://31.148.48.15/O-la-la/index.m3u8"
+      }
+    ],
+    "id": "ch_388_o-la-la!"
+  },
+  {
+    "name": "Playboy TV Latin America",
+    "category": "Adulto (+18)",
+    "logo": "https://i.imgur.com/B3DMUM9.png",
+    "sources": [
+      {
+        "url": "http://190.11.225.124:5000/live/playboy_hd/playlist.m3u8",
+        "quality": "FHD · 1920x1080"
+      }
+    ],
+    "id": "ch_389_playboy_tv_latin_america"
+  },
+  {
+    "name": "Penthouse TV",
+    "category": "Adulto (+18)",
+    "logo": "",
+    "sources": [
+      {
+        "url": "http://s1w8pqrh.megatv.fun/iptv/VZEVDE3KMBMVGUR9Y2EEL7EF/5010/index.m3u8",
+        "quality": "FHD · 1920x1080"
+      }
+    ],
+    "id": "ch_390_penthouse_tv"
+  },
+  {
+    "name": "Penthouse TV 2",
+    "category": "Adulto (+18)",
+    "logo": "",
+    "sources": [
+      {
+        "url": "http://s1w8pqrh.megatv.fun/iptv/VZEVDE3KMBMVGUR9Y2EEL7EF/5012/index.m3u8",
+        "quality": "SD · 1024x576"
+      }
+    ],
+    "id": "ch_391_penthouse_tv_2"
+  },
+  {
+    "name": "21 Sexture",
+    "category": "Adulto (+18)",
+    "logo": "",
+    "sources": [
+      {
+        "url": "http://s1w8pqrh.megatv.fun/iptv/VZEVDE3KMBMVGUR9Y2EEL7EF/6164/index.m3u8",
+        "quality": "FHD · 1920x1080"
+      }
+    ],
+    "id": "ch_392_21_sexture"
+  },
+  {
+    "name": "SexArt",
+    "category": "Adulto (+18)",
+    "logo": "",
+    "sources": [
+      {
+        "url": "http://s1w8pqrh.megatv.fun/iptv/VZEVDE3KMBMVGUR9Y2EEL7EF/6165/index.m3u8",
+        "quality": "HD · 1686x720"
+      }
+    ],
+    "id": "ch_393_sexart"
+  },
+  {
+    "name": "Adult Time",
+    "category": "Adulto (+18)",
+    "logo": "",
+    "sources": [
+      {
+        "url": "http://s1w8pqrh.megatv.fun/iptv/VZEVDE3KMBMVGUR9Y2EEL7EF/6166/index.m3u8",
+        "quality": "FHD · 1920x1080"
+      }
+    ],
+    "id": "ch_394_adult_time"
+  },
+  {
+    "name": "My Cam TV 1",
+    "category": "Adulto (+18)",
+    "logo": "",
+    "sources": [
+      {
+        "url": "http://s1w8pqrh.megatv.fun/iptv/VZEVDE3KMBMVGUR9Y2EEL7EF/6167/index.m3u8",
+        "quality": "HD · 1280x720"
+      }
+    ],
+    "id": "ch_395_my_cam_tv_1"
+  },
+  {
+    "name": "Analized",
+    "category": "Adulto (+18)",
+    "logo": "",
+    "sources": [
+      {
+        "url": "http://s1w8pqrh.megatv.fun/iptv/VZEVDE3KMBMVGUR9Y2EEL7EF/6168/index.m3u8",
+        "quality": "HD · 1280x720"
+      }
+    ],
+    "id": "ch_396_analized"
+  },
+  {
+    "name": "Angel Trans",
+    "category": "Adulto (+18)",
+    "logo": "",
+    "sources": [
+      {
+        "url": "http://s1w8pqrh.megatv.fun/iptv/VZEVDE3KMBMVGUR9Y2EEL7EF/6169/index.m3u8",
+        "quality": "HD · 1280x720"
+      }
+    ],
+    "id": "ch_397_angel_trans"
+  },
+  {
+    "name": "Babes",
+    "category": "Adulto (+18)",
+    "logo": "",
+    "sources": [
+      {
+        "url": "http://s1w8pqrh.megatv.fun/iptv/VZEVDE3KMBMVGUR9Y2EEL7EF/6171/index.m3u8",
+        "quality": "FHD · 1920x1080"
+      }
+    ],
+    "id": "ch_398_babes"
+  },
+  {
+    "name": "Bang Bros",
+    "category": "Adulto (+18)",
+    "logo": "",
+    "sources": [
+      {
+        "url": "http://s1w8pqrh.megatv.fun/iptv/VZEVDE3KMBMVGUR9Y2EEL7EF/6173/index.m3u8",
+        "quality": "FHD · 1920x1080"
+      }
+    ],
+    "id": "ch_399_bang_bros"
+  },
+  {
+    "name": "Bang",
+    "category": "Adulto (+18)",
+    "logo": "",
+    "sources": [
+      {
+        "url": "http://s1w8pqrh.megatv.fun/iptv/VZEVDE3KMBMVGUR9Y2EEL7EF/6174/index.m3u8",
+        "quality": "FHD · 1920x1080"
+      }
+    ],
+    "id": "ch_400_bang"
+  },
+  {
+    "name": "Bang Bros 2",
+    "category": "Adulto (+18)",
+    "logo": "",
+    "sources": [
+      {
+        "url": "http://s1w8pqrh.megatv.fun/iptv/VZEVDE3KMBMVGUR9Y2EEL7EF/6175/index.m3u8",
+        "quality": "HD · 1280x720"
+      }
+    ],
+    "id": "ch_401_bang_bros_2"
+  },
+  {
+    "name": "My Cam TV 2",
+    "category": "Adulto (+18)",
+    "logo": "",
+    "sources": [
+      {
+        "url": "http://s1w8pqrh.megatv.fun/iptv/VZEVDE3KMBMVGUR9Y2EEL7EF/6176/index.m3u8",
+        "quality": "HD · 1280x720"
+      }
+    ],
+    "id": "ch_402_my_cam_tv_2"
+  },
+  {
+    "name": "InteRacial",
+    "category": "Adulto (+18)",
+    "logo": "",
+    "sources": [
+      {
+        "url": "http://s1w8pqrh.megatv.fun/iptv/VZEVDE3KMBMVGUR9Y2EEL7EF/6177/index.m3u8",
+        "quality": "HD · 1280x720"
+      }
+    ],
+    "id": "ch_403_interacial"
+  },
+  {
+    "name": "Blacked",
+    "category": "Adulto (+18)",
+    "logo": "",
+    "sources": [
+      {
+        "url": "http://s1w8pqrh.megatv.fun/iptv/VZEVDE3KMBMVGUR9Y2EEL7EF/6178/index.m3u8",
+        "quality": "FHD · 1920x1080"
+      }
+    ],
+    "id": "ch_404_blacked"
+  },
+  {
+    "name": "My Cam TV 3",
+    "category": "Adulto (+18)",
+    "logo": "",
+    "sources": [
+      {
+        "url": "http://s1w8pqrh.megatv.fun/iptv/VZEVDE3KMBMVGUR9Y2EEL7EF/6180/index.m3u8",
+        "quality": "HD · 1280x720"
+      }
+    ],
+    "id": "ch_405_my_cam_tv_3"
+  },
+  {
+    "name": "Brazzers",
+    "category": "Adulto (+18)",
+    "logo": "",
+    "sources": [
+      {
+        "url": "http://s1w8pqrh.megatv.fun/iptv/VZEVDE3KMBMVGUR9Y2EEL7EF/6181/index.m3u8",
+        "quality": "FHD · 1920x1080"
+      }
+    ],
+    "id": "ch_406_brazzers"
+  },
+  {
+    "name": "Brazzers 2",
+    "category": "Adulto (+18)",
+    "logo": "",
+    "sources": [
+      {
+        "url": "http://s1w8pqrh.megatv.fun/iptv/VZEVDE3KMBMVGUR9Y2EEL7EF/6182/index.m3u8",
+        "quality": "FHD · 1920x1080"
+      }
+    ],
+    "id": "ch_407_brazzers_2"
+  },
+  {
+    "name": "My Cam TV 4",
+    "category": "Adulto (+18)",
+    "logo": "",
+    "sources": [
+      {
+        "url": "http://s1w8pqrh.megatv.fun/iptv/VZEVDE3KMBMVGUR9Y2EEL7EF/6183/index.m3u8",
+        "quality": "HD · 1280x720"
+      }
+    ],
+    "id": "ch_408_my_cam_tv_4"
+  },
+  {
+    "name": "Cento X Cento",
+    "category": "Adulto (+18)",
+    "logo": "",
+    "sources": [
+      {
+        "url": "http://s1w8pqrh.megatv.fun/iptv/VZEVDE3KMBMVGUR9Y2EEL7EF/6184/index.m3u8",
+        "quality": "HD · 1280x720"
+      }
+    ],
+    "id": "ch_409_cento_x_cento"
+  },
+  {
+    "name": "Cherry Pimps",
+    "category": "Adulto (+18)",
+    "logo": "",
+    "sources": [
+      {
+        "url": "http://s1w8pqrh.megatv.fun/iptv/VZEVDE3KMBMVGUR9Y2EEL7EF/6185/index.m3u8",
+        "quality": "FHD · 1920x1080"
+      }
+    ],
+    "id": "ch_410_cherry_pimps"
+  },
+  {
+    "name": "Club Sweethearts",
+    "category": "Adulto (+18)",
+    "logo": "",
+    "sources": [
+      {
+        "url": "http://s1w8pqrh.megatv.fun/iptv/VZEVDE3KMBMVGUR9Y2EEL7EF/6186/index.m3u8",
+        "quality": "FHD · 1920x1080"
+      }
+    ],
+    "id": "ch_411_club_sweethearts"
+  },
+  {
+    "name": "My Cam TV 5",
+    "category": "Adulto (+18)",
+    "logo": "",
+    "sources": [
+      {
+        "url": "http://s1w8pqrh.megatv.fun/iptv/VZEVDE3KMBMVGUR9Y2EEL7EF/6187/index.m3u8",
+        "quality": "HD · 1280x720"
+      }
+    ],
+    "id": "ch_412_my_cam_tv_5"
+  },
+  {
+    "name": "My Cam TV 6",
+    "category": "Adulto (+18)",
+    "logo": "",
+    "sources": [
+      {
+        "url": "http://s1w8pqrh.megatv.fun/iptv/VZEVDE3KMBMVGUR9Y2EEL7EF/6188/index.m3u8",
+        "quality": "HD · 1280x720"
+      }
+    ],
+    "id": "ch_413_my_cam_tv_6"
+  },
+  {
+    "name": "Cum Louder",
+    "category": "Adulto (+18)",
+    "logo": "",
+    "sources": [
+      {
+        "url": "http://s1w8pqrh.megatv.fun/iptv/VZEVDE3KMBMVGUR9Y2EEL7EF/6189/index.m3u8",
+        "quality": "FHD · 1920x1080"
+      }
+    ],
+    "id": "ch_414_cum_louder"
+  },
+  {
+    "name": "Cum 4K",
+    "category": "Adulto (+18)",
+    "logo": "",
+    "sources": [
+      {
+        "url": "http://s1w8pqrh.megatv.fun/iptv/VZEVDE3KMBMVGUR9Y2EEL7EF/6190/index.m3u8",
+        "quality": "4K · 3840x2160"
+      }
+    ],
+    "id": "ch_415_cum_4k"
+  },
+  {
+    "name": "Daughter Swap",
+    "category": "Adulto (+18)",
+    "logo": "",
+    "sources": [
+      {
+        "url": "http://s1w8pqrh.megatv.fun/iptv/VZEVDE3KMBMVGUR9Y2EEL7EF/6191/index.m3u8",
+        "quality": "HD · 1280x720"
+      }
+    ],
+    "id": "ch_416_daughter_swap"
+  },
+  {
+    "name": "Brazzers 3",
+    "category": "Adulto (+18)",
+    "logo": "",
+    "sources": [
+      {
+        "url": "http://s1w8pqrh.megatv.fun/iptv/VZEVDE3KMBMVGUR9Y2EEL7EF/6192/index.m3u8",
+        "quality": "FHD · 1920x1080"
+      }
+    ],
+    "id": "ch_417_brazzers_3"
+  },
+  {
+    "name": "DDF Network",
+    "category": "Adulto (+18)",
+    "logo": "",
+    "sources": [
+      {
+        "url": "http://s1w8pqrh.megatv.fun/iptv/VZEVDE3KMBMVGUR9Y2EEL7EF/6193/index.m3u8",
+        "quality": "FHD · 1920x1080"
+      }
+    ],
+    "id": "ch_418_ddf_network"
+  },
+  {
+    "name": "DDF Network 2",
+    "category": "Adulto (+18)",
+    "logo": "",
+    "sources": [
+      {
+        "url": "http://s1w8pqrh.megatv.fun/iptv/VZEVDE3KMBMVGUR9Y2EEL7EF/6194/index.m3u8",
+        "quality": "FHD · 1920x1080"
+      }
+    ],
+    "id": "ch_419_ddf_network_2"
+  },
+  {
+    "name": "XXX",
+    "category": "Adulto (+18)",
+    "logo": "",
+    "sources": [
+      {
+        "url": "http://s1w8pqrh.megatv.fun/iptv/VZEVDE3KMBMVGUR9Y2EEL7EF/6195/index.m3u8",
+        "quality": "FHD · 1920x1080"
+      }
+    ],
+    "id": "ch_420_xxx"
+  },
+  {
+    "name": "DP",
+    "category": "Adulto (+18)",
+    "logo": "",
+    "sources": [
+      {
+        "url": "http://s1w8pqrh.megatv.fun/iptv/VZEVDE3KMBMVGUR9Y2EEL7EF/6196/index.m3u8",
+        "quality": "FHD · 1920x1080"
+      }
+    ],
+    "id": "ch_421_dp"
+  },
+  {
+    "name": "Dorcel Club",
+    "category": "Adulto (+18)",
+    "logo": "",
+    "sources": [
+      {
+        "url": "http://s1w8pqrh.megatv.fun/iptv/VZEVDE3KMBMVGUR9Y2EEL7EF/6197/index.m3u8",
+        "quality": "FHD · 1920x1080"
+      }
+    ],
+    "id": "ch_422_dorcel_club"
+  },
+  {
+    "name": "Deep Lush",
+    "category": "Adulto (+18)",
+    "logo": "",
+    "sources": [
+      {
+        "url": "http://s1w8pqrh.megatv.fun/iptv/VZEVDE3KMBMVGUR9Y2EEL7EF/6198/index.m3u8",
+        "quality": "FHD · 1920x1080"
+      }
+    ],
+    "id": "ch_423_deep_lush"
+  },
+  {
+    "name": "Evil Angel",
+    "category": "Adulto (+18)",
+    "logo": "",
+    "sources": [
+      {
+        "url": "http://s1w8pqrh.megatv.fun/iptv/VZEVDE3KMBMVGUR9Y2EEL7EF/6199/index.m3u8",
+        "quality": "FHD · 1920x1080"
+      }
+    ],
+    "id": "ch_424_evil_angel"
+  },
+  {
+    "name": "XXX 2",
+    "category": "Adulto (+18)",
+    "logo": "",
+    "sources": [
+      {
+        "url": "http://s1w8pqrh.megatv.fun/iptv/VZEVDE3KMBMVGUR9Y2EEL7EF/6200/index.m3u8",
+        "quality": "HD · 1280x720"
+      }
+    ],
+    "id": "ch_425_xxx_2"
+  },
+  {
+    "name": "Sex Privé",
+    "category": "Adulto (+18)",
+    "logo": "https://mondrian.claro.com.br/channels/inverse/sex-prive.png",
+    "sources": [
+      {
+        "url": "https://cdn-mg1.satlabscloud.com.br/SEX_PRIVE/index.m3u8?token=ulDZjn1kAAan1kzoXmUL1B84gijOI6v7",
+        "quality": "FHD · 1920x1080"
+      }
+    ],
+    "id": "ch_426_sex_priv%C3%A9"
+  },
+  {
+    "name": "A Casa das Brasileirinhas",
+    "category": "Adulto (+18)",
+    "logo": "http://24horas.cc:80/images/508f0d666609e140b531f552b60c3478.jpg",
+    "sources": [
+      {
+        "url": "http://vaiagora.vip:80/5q8VUj/5BeUd8/140487.ts",
+        "quality": "HD · 1280x960"
+      },
+      {
+        "url": "http://vaiagora.vip:80/5q8VUj/5BeUd8/140488.ts",
+        "quality": "HD · 1280x720"
+      },
+      {
+        "url": "http://vaiagora.vip:80/5q8VUj/5BeUd8/140489.ts",
+        "quality": "HD · 1280x720"
+      },
+      {
+        "url": "http://vaiagora.vip:80/5q8VUj/5BeUd8/140490.ts",
+        "quality": "HD · 1280x720"
+      },
+      {
+        "url": "http://vaiagora.vip:80/5q8VUj/5BeUd8/140491.ts",
+        "quality": "HD · 1280x720"
+      },
+      {
+        "url": "http://vivlar.me:80/497238/KK8Kdy/140487.ts",
+        "quality": "HD · 1280x960"
+      },
+      {
+        "url": "http://vivlar.me:80/497238/KK8Kdy/140488.ts",
+        "quality": "HD · 1280x720"
+      },
+      {
+        "url": "http://vivlar.me:80/497238/KK8Kdy/140489.ts",
+        "quality": "HD · 1280x720"
+      },
+      {
+        "url": "http://vivlar.me:80/497238/KK8Kdy/140490.ts",
+        "quality": "HD · 1280x720"
+      },
+      {
+        "url": "http://vivlar.me:80/497238/KK8Kdy/140491.ts",
+        "quality": "HD · 1280x720"
+      }
+    ],
+    "id": "ch_427_a_casa_das_brasileirinhas"
+  },
+  {
+    "name": "All Anal",
+    "category": "Adulto (+18)",
+    "logo": "http://vaiagora.vip/images/22219a38e43a2a4d58d0dd34c43a14c7.jpg",
+    "sources": [
+      {
+        "url": "http://vaiagora.vip:80/5q8VUj/5BeUd8/166035.ts",
+        "quality": "HD · 1280x720"
+      },
+      {
+        "url": "http://vaiagora.vip:80/5q8VUj/5BeUd8/166036.ts",
+        "quality": "HD · 1280x720"
+      },
+      {
+        "url": "http://vaiagora.vip:80/5q8VUj/5BeUd8/166037.ts",
+        "quality": "HD · 1280x720"
+      },
+      {
+        "url": "http://vaiagora.vip:80/5q8VUj/5BeUd8/166038.ts",
+        "quality": "HD · 1280x720"
+      },
+      {
+        "url": "http://vaiagora.vip:80/5q8VUj/5BeUd8/166039.ts",
+        "quality": "HD · 1280x720"
+      },
+      {
+        "url": "http://vaiagora.vip:80/5q8VUj/5BeUd8/166040.ts",
+        "quality": "HD · 1280x720"
+      },
+      {
+        "url": "http://vaiagora.vip:80/5q8VUj/5BeUd8/166041.ts",
+        "quality": "HD · 1280x720"
+      },
+      {
+        "url": "http://vivlar.me:80/497238/KK8Kdy/166035.ts",
+        "quality": "HD · 1280x720"
+      },
+      {
+        "url": "http://vivlar.me:80/497238/KK8Kdy/166036.ts",
+        "quality": "HD · 1280x720"
+      },
+      {
+        "url": "http://vivlar.me:80/497238/KK8Kdy/166037.ts",
+        "quality": "HD · 1280x720"
+      },
+      {
+        "url": "http://vivlar.me:80/497238/KK8Kdy/166038.ts",
+        "quality": "HD · 1280x720"
+      },
+      {
+        "url": "http://vivlar.me:80/497238/KK8Kdy/166039.ts",
+        "quality": "HD · 1280x720"
+      },
+      {
+        "url": "http://vivlar.me:80/497238/KK8Kdy/166040.ts",
+        "quality": "HD · 1280x720"
+      },
+      {
+        "url": "http://vivlar.me:80/497238/KK8Kdy/166041.ts",
+        "quality": "HD · 1280x720"
+      }
+    ],
+    "id": "ch_428_all_anal"
+  },
+  {
+    "name": "Anal Only",
+    "category": "Adulto (+18)",
+    "logo": "http://vaiagora.vip/images/22219a38e43a2a4d58d0dd34c43a14c7.jpg",
+    "sources": [
+      {
+        "url": "http://vaiagora.vip:80/5q8VUj/5BeUd8/149544.ts",
+        "quality": "HD · 1280x720"
+      },
+      {
+        "url": "http://vivlar.me:80/497238/KK8Kdy/149544.ts",
+        "quality": "HD · 1280x720"
+      }
+    ],
+    "id": "ch_429_anal_only"
+  },
+  {
+    "name": "Filmes Adultos",
+    "category": "Adulto (+18)",
+    "logo": "http://24horas.cc:80/images/f859ff8b3b8b08745491656f1dab6019.jpg",
+    "sources": [
+      {
+        "url": "http://vaiagora.vip:80/5q8VUj/5BeUd8/140536.ts",
+        "quality": "HD · 1280x720"
+      },
+      {
+        "url": "http://vaiagora.vip:80/5q8VUj/5BeUd8/140537.ts",
+        "quality": "HD · 1280x720"
+      },
+      {
+        "url": "http://vaiagora.vip:80/5q8VUj/5BeUd8/140538.ts",
+        "quality": "HD · 1280x720"
+      },
+      {
+        "url": "http://vaiagora.vip:80/5q8VUj/5BeUd8/140539.ts",
+        "quality": "HD · 1280x720"
+      },
+      {
+        "url": "http://vaiagora.vip:80/5q8VUj/5BeUd8/140540.ts",
+        "quality": "SD · 854x480"
+      },
+      {
+        "url": "http://vaiagora.vip:80/5q8VUj/5BeUd8/149545.ts",
+        "quality": "HD · 1280x720"
+      },
+      {
+        "url": "http://vaiagora.vip:80/5q8VUj/5BeUd8/150115.ts",
+        "quality": "HD · 1280x938"
+      },
+      {
+        "url": "http://vaiagora.vip:80/5q8VUj/5BeUd8/150116.ts",
+        "quality": "HD · 1280x720"
+      },
+      {
+        "url": "http://vaiagora.vip:80/5q8VUj/5BeUd8/150492.ts",
+        "quality": "HD · 1280x720"
+      },
+      {
+        "url": "http://vaiagora.vip:80/5q8VUj/5BeUd8/150493.ts",
+        "quality": "HD · 1280x720"
+      },
+      {
+        "url": "http://vaiagora.vip:80/5q8VUj/5BeUd8/155424.ts",
+        "quality": "HD · 1280x720"
+      },
+      {
+        "url": "http://vaiagora.vip:80/5q8VUj/5BeUd8/155425.ts",
+        "quality": "HD · 1280x720"
+      },
+      {
+        "url": "http://vaiagora.vip:80/5q8VUj/5BeUd8/155426.ts",
+        "quality": "HD · 1280x720"
+      },
+      {
+        "url": "http://vaiagora.vip:80/5q8VUj/5BeUd8/155427.ts",
+        "quality": "HD · 1280x720"
+      },
+      {
+        "url": "http://vaiagora.vip:80/5q8VUj/5BeUd8/155428.ts",
+        "quality": "HD · 1280x720"
+      },
+      {
+        "url": "http://vaiagora.vip:80/5q8VUj/5BeUd8/225349.ts",
+        "quality": "HD · 1280x720"
+      },
+      {
+        "url": "http://vaiagora.vip:80/5q8VUj/5BeUd8/225348.ts",
+        "quality": "HD · 1280x720"
+      },
+      {
+        "url": "http://vaiagora.vip:80/5q8VUj/5BeUd8/225347.ts",
+        "quality": "HD · 1280x720"
+      },
+      {
+        "url": "http://vaiagora.vip:80/5q8VUj/5BeUd8/225346.ts",
+        "quality": "SD · 1280x688"
+      },
+      {
+        "url": "http://vaiagora.vip:80/5q8VUj/5BeUd8/225345.ts",
+        "quality": "HD · 1280x720"
+      },
+      {
+        "url": "http://vaiagora.vip:80/5q8VUj/5BeUd8/225344.ts",
+        "quality": "HD · 1280x720"
+      },
+      {
+        "url": "http://vaiagora.vip:80/5q8VUj/5BeUd8/225343.ts",
+        "quality": "HD · 1280x720"
+      },
+      {
+        "url": "http://vaiagora.vip:80/5q8VUj/5BeUd8/225342.ts",
+        "quality": "HD · 1280x720"
+      },
+      {
+        "url": "http://vaiagora.vip:80/5q8VUj/5BeUd8/225341.ts",
+        "quality": "HD · 1280x720"
+      },
+      {
+        "url": "http://vaiagora.vip:80/5q8VUj/5BeUd8/225340.ts",
+        "quality": "HD · 1280x720"
+      },
+      {
+        "url": "http://vaiagora.vip:80/5q8VUj/5BeUd8/225339.ts",
+        "quality": "HD · 1280x720"
+      },
+      {
+        "url": "http://vaiagora.vip:80/5q8VUj/5BeUd8/225338.ts",
+        "quality": "HD · 1280x720"
+      },
+      {
+        "url": "http://vaiagora.vip:80/5q8VUj/5BeUd8/225337.ts",
+        "quality": "HD · 1280x720"
+      },
+      {
+        "url": "http://vaiagora.vip:80/5q8VUj/5BeUd8/225336.ts",
+        "quality": "HD · 1280x720"
+      },
+      {
+        "url": "http://vaiagora.vip:80/5q8VUj/5BeUd8/225335.ts",
+        "quality": "HD · 1280x720"
+      },
+      {
+        "url": "http://vaiagora.vip:80/5q8VUj/5BeUd8/225334.ts",
+        "quality": "HD · 1280x720"
+      },
+      {
+        "url": "http://vaiagora.vip:80/5q8VUj/5BeUd8/225333.ts",
+        "quality": "HD · 1280x720"
+      },
+      {
+        "url": "http://vaiagora.vip:80/5q8VUj/5BeUd8/225332.ts",
+        "quality": "HD · 1280x720"
+      },
+      {
+        "url": "http://vivlar.me:80/497238/KK8Kdy/140536.ts",
+        "quality": "HD · 1280x720"
+      },
+      {
+        "url": "http://vivlar.me:80/497238/KK8Kdy/140537.ts",
+        "quality": "HD · 1280x720"
+      },
+      {
+        "url": "http://vivlar.me:80/497238/KK8Kdy/140538.ts",
+        "quality": "HD · 1280x720"
+      },
+      {
+        "url": "http://vivlar.me:80/497238/KK8Kdy/140539.ts",
+        "quality": "HD · 1280x720"
+      },
+      {
+        "url": "http://vivlar.me:80/497238/KK8Kdy/140540.ts",
+        "quality": "SD · 854x480"
+      },
+      {
+        "url": "http://vivlar.me:80/497238/KK8Kdy/149545.ts",
+        "quality": "HD · 1280x720"
+      },
+      {
+        "url": "http://vivlar.me:80/497238/KK8Kdy/150115.ts",
+        "quality": "HD · 1280x938"
+      },
+      {
+        "url": "http://vivlar.me:80/497238/KK8Kdy/150116.ts",
+        "quality": "HD · 1280x720"
+      },
+      {
+        "url": "http://vivlar.me:80/497238/KK8Kdy/150492.ts",
+        "quality": "HD · 1280x720"
+      },
+      {
+        "url": "http://vivlar.me:80/497238/KK8Kdy/150493.ts",
+        "quality": "HD · 1280x720"
+      },
+      {
+        "url": "http://vivlar.me:80/497238/KK8Kdy/155424.ts",
+        "quality": "HD · 1280x720"
+      },
+      {
+        "url": "http://vivlar.me:80/497238/KK8Kdy/155425.ts",
+        "quality": "HD · 1280x720"
+      },
+      {
+        "url": "http://vivlar.me:80/497238/KK8Kdy/155426.ts",
+        "quality": "HD · 1280x720"
+      },
+      {
+        "url": "http://vivlar.me:80/497238/KK8Kdy/155427.ts",
+        "quality": "HD · 1280x720"
+      },
+      {
+        "url": "http://vivlar.me:80/497238/KK8Kdy/155428.ts",
+        "quality": "HD · 1280x720"
+      },
+      {
+        "url": "http://vivlar.me:80/497238/KK8Kdy/225349.ts",
+        "quality": "HD · 1280x720"
+      },
+      {
+        "url": "http://vivlar.me:80/497238/KK8Kdy/225348.ts",
+        "quality": "HD · 1280x720"
+      },
+      {
+        "url": "http://vivlar.me:80/497238/KK8Kdy/225347.ts",
+        "quality": "HD · 1280x720"
+      },
+      {
+        "url": "http://vivlar.me:80/497238/KK8Kdy/225346.ts",
+        "quality": "SD · 1280x688"
+      },
+      {
+        "url": "http://vivlar.me:80/497238/KK8Kdy/225345.ts",
+        "quality": "HD · 1280x720"
+      },
+      {
+        "url": "http://vivlar.me:80/497238/KK8Kdy/225344.ts",
+        "quality": "HD · 1280x720"
+      },
+      {
+        "url": "http://vivlar.me:80/497238/KK8Kdy/225343.ts",
+        "quality": "HD · 1280x720"
+      },
+      {
+        "url": "http://vivlar.me:80/497238/KK8Kdy/225342.ts",
+        "quality": "HD · 1280x720"
+      },
+      {
+        "url": "http://vivlar.me:80/497238/KK8Kdy/225341.ts",
+        "quality": "HD · 1280x720"
+      },
+      {
+        "url": "http://vivlar.me:80/497238/KK8Kdy/225340.ts",
+        "quality": "HD · 1280x720"
+      },
+      {
+        "url": "http://vivlar.me:80/497238/KK8Kdy/225339.ts",
+        "quality": "HD · 1280x720"
+      },
+      {
+        "url": "http://vivlar.me:80/497238/KK8Kdy/225338.ts",
+        "quality": "HD · 1280x720"
+      },
+      {
+        "url": "http://vivlar.me:80/497238/KK8Kdy/225337.ts",
+        "quality": "HD · 1280x720"
+      },
+      {
+        "url": "http://vivlar.me:80/497238/KK8Kdy/225336.ts",
+        "quality": "HD · 1280x720"
+      },
+      {
+        "url": "http://vivlar.me:80/497238/KK8Kdy/225335.ts",
+        "quality": "HD · 1280x720"
+      },
+      {
+        "url": "http://vivlar.me:80/497238/KK8Kdy/225334.ts",
+        "quality": "HD · 1280x720"
+      },
+      {
+        "url": "http://vivlar.me:80/497238/KK8Kdy/225333.ts",
+        "quality": "HD · 1280x720"
+      },
+      {
+        "url": "http://vivlar.me:80/497238/KK8Kdy/225332.ts",
+        "quality": "HD · 1280x720"
+      }
+    ],
+    "id": "ch_430_filmes_adultos"
+  },
+  {
+    "name": "Filmes Trans",
+    "category": "Adulto (+18)",
+    "logo": "http://24horas.cc:80/images/f859ff8b3b8b08745491656f1dab6019.jpg",
+    "sources": [
+      {
+        "url": "http://vaiagora.vip:80/5q8VUj/5BeUd8/145382.ts",
+        "quality": "HD · 1280x720"
+      },
+      {
+        "url": "http://vaiagora.vip:80/5q8VUj/5BeUd8/145383.ts",
+        "quality": "HD · 1280x720"
+      },
+      {
+        "url": "http://vaiagora.vip:80/5q8VUj/5BeUd8/149546.ts",
+        "quality": "FHD · 1920x1080"
+      },
+      {
+        "url": "http://vaiagora.vip:80/5q8VUj/5BeUd8/149547.ts",
+        "quality": "HD · 1280x720"
+      },
+      {
+        "url": "http://vaiagora.vip:80/5q8VUj/5BeUd8/150117.ts",
+        "quality": "HD · 1280x720"
+      },
+      {
+        "url": "http://vaiagora.vip:80/5q8VUj/5BeUd8/155441.ts",
+        "quality": "HD · 1280x720"
+      },
+      {
+        "url": "http://vaiagora.vip:80/5q8VUj/5BeUd8/155442.ts",
+        "quality": "HD · 1280x720"
+      },
+      {
+        "url": "http://vaiagora.vip:80/5q8VUj/5BeUd8/155443.ts",
+        "quality": "HD · 1280x720"
+      },
+      {
+        "url": "http://vaiagora.vip:80/5q8VUj/5BeUd8/155444.ts",
+        "quality": "HD · 1280x720"
+      },
+      {
+        "url": "http://vaiagora.vip:80/5q8VUj/5BeUd8/155445.ts",
+        "quality": "HD · 1280x720"
+      },
+      {
+        "url": "http://vaiagora.vip:80/5q8VUj/5BeUd8/155446.ts",
+        "quality": "HD · 1280x720"
+      },
+      {
+        "url": "http://vaiagora.vip:80/5q8VUj/5BeUd8/155447.ts",
+        "quality": "HD · 1280x720"
+      },
+      {
+        "url": "http://vaiagora.vip:80/5q8VUj/5BeUd8/155448.ts",
+        "quality": "HD · 1280x720"
+      },
+      {
+        "url": "http://vaiagora.vip:80/5q8VUj/5BeUd8/155449.ts",
+        "quality": "HD · 1280x720"
+      },
+      {
+        "url": "http://vaiagora.vip:80/5q8VUj/5BeUd8/155450.ts",
+        "quality": "HD · 1280x720"
+      },
+      {
+        "url": "http://vivlar.me:80/497238/KK8Kdy/145382.ts",
+        "quality": "HD · 1280x720"
+      },
+      {
+        "url": "http://vivlar.me:80/497238/KK8Kdy/145383.ts",
+        "quality": "HD · 1280x720"
+      },
+      {
+        "url": "http://vivlar.me:80/497238/KK8Kdy/149546.ts",
+        "quality": "FHD · 1920x1080"
+      },
+      {
+        "url": "http://vivlar.me:80/497238/KK8Kdy/149547.ts",
+        "quality": "HD · 1280x720"
+      },
+      {
+        "url": "http://vivlar.me:80/497238/KK8Kdy/150117.ts",
+        "quality": "HD · 1280x720"
+      },
+      {
+        "url": "http://vivlar.me:80/497238/KK8Kdy/155441.ts",
+        "quality": "HD · 1280x720"
+      },
+      {
+        "url": "http://vivlar.me:80/497238/KK8Kdy/155442.ts",
+        "quality": "HD · 1280x720"
+      },
+      {
+        "url": "http://vivlar.me:80/497238/KK8Kdy/155443.ts",
+        "quality": "HD · 1280x720"
+      },
+      {
+        "url": "http://vivlar.me:80/497238/KK8Kdy/155444.ts",
+        "quality": "HD · 1280x720"
+      },
+      {
+        "url": "http://vivlar.me:80/497238/KK8Kdy/155445.ts",
+        "quality": "HD · 1280x720"
+      },
+      {
+        "url": "http://vivlar.me:80/497238/KK8Kdy/155446.ts",
+        "quality": "HD · 1280x720"
+      },
+      {
+        "url": "http://vivlar.me:80/497238/KK8Kdy/155447.ts",
+        "quality": "HD · 1280x720"
+      },
+      {
+        "url": "http://vivlar.me:80/497238/KK8Kdy/155448.ts",
+        "quality": "HD · 1280x720"
+      },
+      {
+        "url": "http://vivlar.me:80/497238/KK8Kdy/155449.ts",
+        "quality": "HD · 1280x720"
+      },
+      {
+        "url": "http://vivlar.me:80/497238/KK8Kdy/155450.ts",
+        "quality": "HD · 1280x720"
+      }
+    ],
+    "id": "ch_431_filmes_trans"
+  },
+  {
+    "name": "Fuck Studies",
+    "category": "Adulto (+18)",
+    "logo": "http://vaiagora.vip/images/22219a38e43a2a4d58d0dd34c43a14c7.jpg",
+    "sources": [
+      {
+        "url": "http://vaiagora.vip:80/5q8VUj/5BeUd8/169085.ts",
+        "quality": "HD · 1280x720"
+      },
+      {
+        "url": "http://vaiagora.vip:80/5q8VUj/5BeUd8/169086.ts",
+        "quality": "HD · 1280x720"
+      },
+      {
+        "url": "http://vaiagora.vip:80/5q8VUj/5BeUd8/169087.ts",
+        "quality": "HD · 1280x720"
+      },
+      {
+        "url": "http://vivlar.me:80/497238/KK8Kdy/169085.ts",
+        "quality": "HD · 1280x720"
+      },
+      {
+        "url": "http://vivlar.me:80/497238/KK8Kdy/169086.ts",
+        "quality": "HD · 1280x720"
+      },
+      {
+        "url": "http://vivlar.me:80/497238/KK8Kdy/169087.ts",
+        "quality": "HD · 1280x720"
+      }
+    ],
+    "id": "ch_432_fuck_studies"
+  },
+  {
+    "name": "Homossexual Masculino",
+    "category": "Adulto (+18)",
+    "logo": "http://24horas.cc:80/images/23282a88114949d0a31f5fbee6dd0733.jpg",
+    "sources": [
+      {
+        "url": "http://vaiagora.vip:80/5q8VUj/5BeUd8/140492.ts",
+        "quality": "HD · 1280x720"
+      },
+      {
+        "url": "http://vaiagora.vip:80/5q8VUj/5BeUd8/140493.ts",
+        "quality": "SD · 848x472"
+      },
+      {
+        "url": "http://vivlar.me:80/497238/KK8Kdy/140492.ts",
+        "quality": "HD · 1280x720"
+      },
+      {
+        "url": "http://vivlar.me:80/497238/KK8Kdy/140493.ts",
+        "quality": "SD · 848x472"
+      }
+    ],
+    "id": "ch_433_homossexual_masculino"
+  },
+  {
+    "name": "Interesseiras",
+    "category": "Adulto (+18)",
+    "logo": "http://vaiagora.vip/images/22219a38e43a2a4d58d0dd34c43a14c7.jpg",
+    "sources": [
+      {
+        "url": "http://vaiagora.vip:80/5q8VUj/5BeUd8/149606.ts",
+        "quality": "HD · 1280x720"
+      },
+      {
+        "url": "http://vivlar.me:80/497238/KK8Kdy/149606.ts",
+        "quality": "HD · 1280x720"
+      }
+    ],
+    "id": "ch_434_interesseiras"
+  },
+  {
+    "name": "Lets Try Anal",
+    "category": "Adulto (+18)",
+    "logo": "http://24horas.cc:80/images/f859ff8b3b8b08745491656f1dab6019.jpg",
+    "sources": [
+      {
+        "url": "http://vaiagora.vip:80/5q8VUj/5BeUd8/140760.ts",
+        "quality": "HD · 1280x720"
+      },
+      {
+        "url": "http://vaiagora.vip:80/5q8VUj/5BeUd8/141499.ts",
+        "quality": "HD · 1280x720"
+      },
+      {
+        "url": "http://vaiagora.vip:80/5q8VUj/5BeUd8/141500.ts",
+        "quality": "HD · 1280x720"
+      },
+      {
+        "url": "http://vivlar.me:80/497238/KK8Kdy/140760.ts",
+        "quality": "HD · 1280x720"
+      },
+      {
+        "url": "http://vivlar.me:80/497238/KK8Kdy/141499.ts",
+        "quality": "HD · 1280x720"
+      },
+      {
+        "url": "http://vivlar.me:80/497238/KK8Kdy/141500.ts",
+        "quality": "HD · 1280x720"
+      }
+    ],
+    "id": "ch_435_lets_try_anal"
+  },
+  {
+    "name": "MissaX",
+    "category": "Adulto (+18)",
+    "logo": "http://vaiagora.vip/images/22219a38e43a2a4d58d0dd34c43a14c7.jpg",
+    "sources": [
+      {
+        "url": "http://vaiagora.vip:80/5q8VUj/5BeUd8/169088.ts",
+        "quality": "HD · 1280x720"
+      },
+      {
+        "url": "http://vaiagora.vip:80/5q8VUj/5BeUd8/169089.ts",
+        "quality": "HD · 1280x720"
+      },
+      {
+        "url": "http://vaiagora.vip:80/5q8VUj/5BeUd8/169090.ts",
+        "quality": "HD · 1280x720"
+      },
+      {
+        "url": "http://vaiagora.vip:80/5q8VUj/5BeUd8/169091.ts",
+        "quality": "HD · 1280x720"
+      },
+      {
+        "url": "http://vaiagora.vip:80/5q8VUj/5BeUd8/169092.ts",
+        "quality": "HD · 1280x720"
+      },
+      {
+        "url": "http://vaiagora.vip:80/5q8VUj/5BeUd8/169093.ts",
+        "quality": "HD · 1280x720"
+      },
+      {
+        "url": "http://vaiagora.vip:80/5q8VUj/5BeUd8/169094.ts",
+        "quality": "HD · 1280x720"
+      },
+      {
+        "url": "http://vaiagora.vip:80/5q8VUj/5BeUd8/169095.ts",
+        "quality": "HD · 1280x720"
+      },
+      {
+        "url": "http://vaiagora.vip:80/5q8VUj/5BeUd8/169096.ts",
+        "quality": "HD · 1280x720"
+      },
+      {
+        "url": "http://vivlar.me:80/497238/KK8Kdy/169088.ts",
+        "quality": "HD · 1280x720"
+      },
+      {
+        "url": "http://vivlar.me:80/497238/KK8Kdy/169089.ts",
+        "quality": "HD · 1280x720"
+      },
+      {
+        "url": "http://vivlar.me:80/497238/KK8Kdy/169090.ts",
+        "quality": "HD · 1280x720"
+      },
+      {
+        "url": "http://vivlar.me:80/497238/KK8Kdy/169091.ts",
+        "quality": "HD · 1280x720"
+      },
+      {
+        "url": "http://vivlar.me:80/497238/KK8Kdy/169092.ts",
+        "quality": "HD · 1280x720"
+      },
+      {
+        "url": "http://vivlar.me:80/497238/KK8Kdy/169093.ts",
+        "quality": "HD · 1280x720"
+      },
+      {
+        "url": "http://vivlar.me:80/497238/KK8Kdy/169094.ts",
+        "quality": "HD · 1280x720"
+      },
+      {
+        "url": "http://vivlar.me:80/497238/KK8Kdy/169095.ts",
+        "quality": "HD · 1280x720"
+      },
+      {
+        "url": "http://vivlar.me:80/497238/KK8Kdy/169096.ts",
+        "quality": "HD · 1280x720"
+      }
+    ],
+    "id": "ch_436_missax"
+  },
+  {
+    "name": "Pornhub Yinyleon",
+    "category": "Adulto (+18)",
+    "logo": "http://vaiagora.vip/images/22219a38e43a2a4d58d0dd34c43a14c7.jpg",
+    "sources": [
+      {
+        "url": "http://vaiagora.vip:80/5q8VUj/5BeUd8/149548.ts",
+        "quality": "HD · 1280x720"
+      },
+      {
+        "url": "http://vivlar.me:80/497238/KK8Kdy/149548.ts",
+        "quality": "HD · 1280x720"
+      }
+    ],
+    "id": "ch_437_pornhub_yinyleon"
+  },
+  {
+    "name": "Teste de Fudelidade",
+    "category": "Adulto (+18)",
+    "logo": "http://24horas.cc:80/images/3e81163f7309a5a4f01613ff430db818.jpg",
+    "sources": [
+      {
+        "url": "http://vaiagora.vip:80/5q8VUj/5BeUd8/140761.ts",
+        "quality": "HD · 1280x728"
+      },
+      {
+        "url": "http://vaiagora.vip:80/5q8VUj/5BeUd8/140762.ts",
+        "quality": "HD · 1280x720"
+      },
+      {
+        "url": "http://vaiagora.vip:80/5q8VUj/5BeUd8/145384.ts",
+        "quality": "HD · 1280x728"
+      },
+      {
+        "url": "http://vivlar.me:80/497238/KK8Kdy/140761.ts",
+        "quality": "HD · 1280x728"
+      },
+      {
+        "url": "http://vivlar.me:80/497238/KK8Kdy/140762.ts",
+        "quality": "HD · 1280x720"
+      },
+      {
+        "url": "http://vivlar.me:80/497238/KK8Kdy/145384.ts",
+        "quality": "HD · 1280x728"
+      }
+    ],
+    "id": "ch_438_teste_de_fudelidade"
+  },
+  {
+    "name": "Tweetney",
+    "category": "Adulto (+18)",
+    "logo": "http://vaiagora.vip/images/22219a38e43a2a4d58d0dd34c43a14c7.jpg",
+    "sources": [
+      {
+        "url": "http://vaiagora.vip:80/5q8VUj/5BeUd8/169097.ts",
+        "quality": "HD · 1280x720"
+      },
+      {
+        "url": "http://vivlar.me:80/497238/KK8Kdy/169097.ts",
+        "quality": "HD · 1280x720"
+      }
+    ],
+    "id": "ch_439_tweetney"
   }
 ];
