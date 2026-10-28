@@ -1,8 +1,8 @@
 import React from 'react';
-import { Radio, Film, Tv, Heart, Settings, Play, Download } from 'lucide-react';
+import { Radio, Film, Tv, Heart, Settings, Play, Download, Trophy } from 'lucide-react';
 import { usePwaInstall } from '../../hooks/usePwaInstall';
 
-export type NavTab = 'tv' | 'movies' | 'series' | 'favorites' | 'settings';
+export type NavTab = 'tv' | 'football' | 'movies' | 'series' | 'favorites' | 'settings';
 
 interface HeaderProps {
   activeTab: NavTab;
@@ -19,14 +19,14 @@ export const Header: React.FC<HeaderProps> = ({
 
   return (
     <>
-      <header className="sticky top-0 z-40 w-full bg-zinc-950/85 backdrop-blur-2xl border-b border-white/10 transition-all shadow-lg shadow-black/20">
+      <header className="sticky top-0 z-40 w-full bg-zinc-950/90 backdrop-blur-2xl border-b border-white/10 transition-all shadow-xl shadow-black/40">
         <div className="max-w-7xl mx-auto px-4 md:px-6 h-16 flex items-center justify-between">
           {/* Brand Logo */}
           <div
             onClick={() => onTabChange('tv')}
             className="flex items-center gap-3 cursor-pointer group select-none"
           >
-            <div className="w-9 h-9 rounded-2xl bg-gradient-to-br from-red-600 via-red-600 to-rose-700 flex items-center justify-center text-white shadow-lg shadow-red-600/30 group-hover:scale-105 group-hover:shadow-red-600/50 transition-all duration-300">
+            <div className="w-9 h-9 rounded-2xl bg-gradient-to-br from-red-600 via-red-600 to-rose-700 flex items-center justify-center text-white shadow-lg shadow-red-600/40 group-hover:scale-105 group-hover:shadow-red-600/60 transition-all duration-300">
               <Play className="w-4 h-4 fill-white ml-0.5" />
             </div>
             <div className="flex flex-col">
@@ -34,7 +34,7 @@ export const Header: React.FC<HeaderProps> = ({
                 kestrel<span className="text-red-500 font-extrabold">TV</span>
               </span>
               <span className="text-[9px] uppercase font-bold tracking-widest text-zinc-400 mt-0.5">
-                Stream & Live Player
+                Smart TV & Live Stream
               </span>
             </div>
           </div>
@@ -50,6 +50,18 @@ export const Header: React.FC<HeaderProps> = ({
               }`}
             >
               <Radio className="w-3.5 h-3.5" /> TV ao Vivo
+            </button>
+
+            <button
+              onClick={() => onTabChange('football')}
+              className={`px-4 py-2 rounded-xl text-xs font-semibold flex items-center gap-2 transition-all duration-200 ${
+                activeTab === 'football'
+                  ? 'bg-gradient-to-r from-amber-500 to-yellow-600 text-black font-bold shadow-lg shadow-amber-500/20 scale-100'
+                  : 'text-amber-300/80 hover:text-amber-300 hover:bg-amber-500/10'
+              }`}
+            >
+              <Trophy className="w-3.5 h-3.5 text-amber-400" />
+              <span>Futebol & Santos</span>
             </button>
 
             <button
@@ -92,9 +104,9 @@ export const Header: React.FC<HeaderProps> = ({
             </button>
           </nav>
 
-          {/* Right Actions: Adult Lock Toggle & Settings */}
+          {/* Right Actions: Install PWA & Settings */}
           <div className="flex items-center gap-2.5">
-                        {/* Install PWA Button */}
+            {/* Install PWA Button */}
             {!isInstalled && (
               <button
                 onClick={promptInstall}
@@ -137,6 +149,16 @@ export const Header: React.FC<HeaderProps> = ({
           >
             <Radio className="w-3.5 h-3.5" /> TV
           </button>
+
+          <button
+            onClick={() => onTabChange('football')}
+            className={`px-3 py-1 rounded-xl text-xs font-medium flex items-center gap-1.5 whitespace-nowrap ${
+              activeTab === 'football' ? 'bg-amber-500 text-black font-bold' : 'text-amber-400'
+            }`}
+          >
+            <Trophy className="w-3.5 h-3.5" /> Santos & Futebol
+          </button>
+
           <button
             onClick={() => onTabChange('movies')}
             className={`px-3 py-1 rounded-xl text-xs font-medium flex items-center gap-1.5 whitespace-nowrap ${
@@ -145,6 +167,7 @@ export const Header: React.FC<HeaderProps> = ({
           >
             <Film className="w-3.5 h-3.5" /> Filmes
           </button>
+
           <button
             onClick={() => onTabChange('series')}
             className={`px-3 py-1 rounded-xl text-xs font-medium flex items-center gap-1.5 whitespace-nowrap ${
@@ -153,6 +176,7 @@ export const Header: React.FC<HeaderProps> = ({
           >
             <Tv className="w-3.5 h-3.5" /> Séries
           </button>
+
           <button
             onClick={() => onTabChange('favorites')}
             className={`px-3 py-1 rounded-xl text-xs font-medium flex items-center gap-1.5 whitespace-nowrap ${

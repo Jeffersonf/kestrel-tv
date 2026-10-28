@@ -8,7 +8,31 @@ Disponível online via **GitHub Pages**: [https://jeffersonf.github.io/kestrel-t
 
 ## ✨ O Que Há de Novo
 
-### 1. 🚀 Arquitetura Zero Custo / Zero Cota Cloudflare:
+### 1. 📺 Design de Smart TV Autêntica (10-Foot Living Room UI):
+- **TV Player Central em Tela Cheia:**
+  - A TV fica sempre ligada em destaque absoluto com iluminação ambiente suave (cinema backlight).
+- **Banner OSD de TV (On-Screen Display):**
+  - Ao mudar de canal ou apertar a tecla `I`, surge um banner elegante translúcido no rodapé com o número do canal (`CH 001`), logo oficial, nome, badge `AO VIVO`, resolução HD/FHD, velocidade em tempo real (`Mb/s`), status `Zero Cota (Direto)` e relógio. Some automaticamente após 3.5 segundos.
+- **Zapping de Canais por Teclado e Controle:**
+  - `▲ Seta Cima / ▼ Seta Baixo`: Zapping imediato de canal (`CH+ / CH-`).
+  - **Teclado Numérico Direto:** Digite o número do canal (ex: `1`, `10`, `50`) e a TV sintoniza instantaneamente.
+  - Tecla `G`: Abre o **Guia de Canais (EPG)** translúcido sem parar o áudio ou vídeo da TV.
+  - Tecla `R`: Abre o **Controle Remoto Virtual** flutuante.
+- **Carrosséis de Smart TV (Trilhos de Conteúdo):**
+  - Fileiras horizontais estilo Android TV / Apple TV categorizadas por Esportes, TV Aberta, Filmes, Séries, Infantil, Notícias e Música com foco visual `scale-105`.
+- **Controle Remoto de TV Virtual Flutuante:**
+  - Widget realista de controle remoto com D-Pad direcional, botões CH+/CH-, VOL+/VOL-, teclado numérico completo, botão Guia, Info, Mute e Power.
+
+### 2. ⚽ Grade de Futebol ao Vivo com Destaque Supremo do Santos FC:
+- **Card Heroico do Santos Futebol Clube (Peixe):**
+  - Destaque alvinegro e dourado com o escudo oficial do Santos FC, acompanhamento dos próximos confrontos da temporada e placar recente.
+  - **Botão Direto de 1 Clique:** "Assistir Santos ao Vivo" que sintoniza na hora o canal que transmite o Peixe (Premiere, SporTV ou CazéTV).
+- **Grade Completa de Jogos com Dados em Tempo Real:**
+  - Integração com placares e calendário ao vivo (Brasileirão Série A, Série B, Copa Libertadores e UEFA Champions League).
+  - Cards de partidas com escudos oficiais dos clubes, placares em tempo real e canais de transmissão.
+  - Clique em qualquer jogo para sintonizar diretamente a transmissão ao vivo na TV!
+
+### 3. 🚀 Arquitetura Zero Custo / Zero Cota Cloudflare:
 - **Suporte Completo a PWA (Progressive Web App):**
   - Instale com 1 clique no celular (Android / iOS) ou computador (Chrome / Edge).
   - Ícones adaptativos em alta definição (192x192, 512x512, SVG vetorial) e Service Worker com cache inteligente do shell da aplicação.

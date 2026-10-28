@@ -122,6 +122,10 @@ function parseChannelsFromText(text: string): Channel[] {
     }
   }
 
+  channels.forEach((ch, idx) => {
+    ch.number = idx + 1;
+  });
+
   return channels;
 }
 

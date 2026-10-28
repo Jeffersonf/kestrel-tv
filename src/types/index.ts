@@ -9,6 +9,7 @@ export interface ChannelSource {
 
 export interface Channel {
   id: string;
+  number?: number;
   name: string;
   category: string;
   logo: string;

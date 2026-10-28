@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Header, type NavTab } from './components/layout/Header';
-import { LiveTvView } from './components/tv/LiveTvView';
+import { SmartTvView } from './components/tv/SmartTvView';
+import { FootballHub } from './components/football/FootballHub';
 import { VodView } from './components/vod/VodView';
 import { FavoritesView } from './components/layout/FavoritesView';
 import { SettingsModal } from './components/layout/SettingsModal';
@@ -11,6 +12,7 @@ export function App() {
   const [activeTab, setActiveTab] = useState<NavTab>('tv');
   const [favoritesCount, setFavoritesCount] = useState(0);
   const [isSecretAdultOpen, setIsSecretAdultOpen] = useState(false);
+  const [overrideChannelKeyword, setOverrideChannelKeyword] = useState<string | null>(null);
 
   useEffect(() => {
     const updateFavCount = () => {
@@ -78,6 +80,11 @@ export function App() {
     setIsSecretAdultOpen(false);
   };
 
+  const handlePlayFootballChannel = (keyword: string) => {
+    setOverrideChannelKeyword(keyword);
+    setActiveTab('tv');
+  };
+
   return (
     <div className="min-h-screen bg-[#09090b] text-zinc-100 flex flex-col font-sans selection:bg-red-600/30 selection:text-white">
       {/* Top Header */}
@@ -89,7 +96,16 @@ export function App() {
 
       {/* Main View Area */}
       <main className="flex-1 pb-16">
-        {activeTab === 'tv' && <LiveTvView />}
+        {activeTab === 'tv' && (
+          <SmartTvView
+            onOpenFootball={() => setActiveTab('football')}
+            overrideChannelKeyword={overrideChannelKeyword}
+            onClearOverrideChannel={() => setOverrideChannelKeyword(null)}
+          />
+        )}
+        {activeTab === 'football' && (
+          <FootballHub onPlayChannelKeyword={handlePlayFootballChannel} />
+        )}
         {(activeTab === 'movies' || activeTab === 'series') && <VodView />}
         {activeTab === 'favorites' && <FavoritesView />}
         {activeTab === 'settings' && <SettingsModal />}
@@ -106,10 +122,10 @@ export function App() {
           <div className="flex items-center gap-2">
             <span className="font-bold text-zinc-300">kestrelTV</span>
             <span>•</span>
-            <span>Stream & Live Player</span>
+            <span>Smart TV & Live Sports Player</span>
           </div>
           <p className="text-[11px] text-zinc-600">
-            Interface para reprodução de streams públicos e compatibilidade HLS/MP4.
+            Design de Smart TV com zapping de canal, grade ao vivo do Santos FC e transmissões HLS/MP4.
           </p>
         </div>
       </footer>
