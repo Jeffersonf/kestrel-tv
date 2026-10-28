@@ -106,6 +106,17 @@ export const Header: React.FC<HeaderProps> = ({
 
           {/* Right Actions: Install PWA & Settings */}
           <div className="flex items-center gap-2.5">
+            {/* Android TV APK Download */}
+            <a
+              href="./downloads/kestrel-tv.apk"
+              download="kestrel-tv.apk"
+              title="Baixar APK Nativo para Android TV (Mi Box 3 / TV Box)"
+              className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-cyan-500/10 hover:bg-cyan-500/20 border border-cyan-500/30 text-cyan-300 hover:text-white text-xs font-semibold shadow-sm transition-all active:scale-95"
+            >
+              <Tv className="w-3.5 h-3.5 text-cyan-400" />
+              <span className="hidden sm:inline">Baixar APK TV</span>
+            </a>
+
             {/* Install PWA Button */}
             {!isInstalled && (
               <button
