@@ -40,7 +40,7 @@ function formatEpoch(sec: number): string {
   });
 }
 
-const INITIAL_RENDER_LIMIT = 150;
+const INITIAL_RENDER_LIMIT = 300;
 
 export const LiveTvView: React.FC<LiveTvViewProps> = ({
   channels,

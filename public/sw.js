@@ -1,5 +1,5 @@
 // kestrelTV Service Worker - PWA Shell Cache
-const CACHE_NAME = 'kestrel-tv-shell-v3';
+const CACHE_NAME = 'kestrel-tv-shell-v4';
 const STATIC_ASSETS = [
   './',
   './index.html',

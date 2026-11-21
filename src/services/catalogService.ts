@@ -271,6 +271,27 @@ function finalizeChannels(
   return result;
 }
 
+function normalizeNameKey(name: string): string {
+  return name.toLowerCase().replace(/[^a-z0-9]+/g, '');
+}
+
+function mergeWithOpenFastChannels(saimoChannels: Channel[]): Channel[] {
+  const openFast = FALLBACK_CHANNELS.filter((c) => c.id.startsWith('pub_'));
+  const seenNames = new Set(saimoChannels.map((c) => normalizeNameKey(c.name)));
+  const combined = [...saimoChannels];
+
+  for (const ch of openFast) {
+    const key = normalizeNameKey(ch.name);
+    if (!seenNames.has(key)) {
+      seenNames.add(key);
+      combined.push(ch);
+    }
+  }
+
+  const { hasCustomProxy, isHttpPage } = getSourceEnvironment();
+  return finalizeChannels(combined, hasCustomProxy, isHttpPage);
+}
+
 export const catalogService = {
   getFallbackChannels(): Channel[] {
     return finalizeChannels(FALLBACK_CHANNELS, false, false);
@@ -288,6 +309,7 @@ export const catalogService = {
     loadDisabledHosts().catch(() => {});
 
     const { channelCatalogUrl } = storageService.getSettings();
+    const isDefaultSaimo = channelCatalogUrl.includes('canais-saimo.pages.dev');
 
     // 1. Buscar catálogo vivo oficial do Saimo (ou URL configurada pelo usuário)
     if (channelCatalogUrl?.trim()) {
@@ -301,11 +323,12 @@ export const catalogService = {
           const text = await res.text();
           const parsed = parseCatalogText(text);
           if (parsed.length > 0) {
-            cachedChannels = parsed;
+            const finalChannels = isDefaultSaimo ? mergeWithOpenFastChannels(parsed) : parsed;
+            cachedChannels = finalChannels;
             try {
-              localStorage.setItem('kestrel_cached_catalogo_v2', text);
+              localStorage.setItem('kestrel_cached_catalogo_v3', text);
             } catch {}
-            return parsed;
+            return finalChannels;
           }
         }
       } catch (e) {
@@ -328,12 +351,12 @@ export const catalogService = {
 
     // 3. Cache local no navegador
     try {
-      const savedText = localStorage.getItem('kestrel_cached_catalogo_v2');
+      const savedText = localStorage.getItem('kestrel_cached_catalogo_v3');
       if (savedText) {
         const parsed = parseCatalogText(savedText);
         if (parsed.length > 0) {
-          cachedChannels = parsed;
-          return parsed;
+          cachedChannels = isDefaultSaimo ? mergeWithOpenFastChannels(parsed) : parsed;
+          return cachedChannels;
         }
       }
     } catch {}
