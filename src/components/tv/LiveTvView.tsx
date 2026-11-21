@@ -52,8 +52,7 @@ const CATEGORY_ORDER = [
   'Documentários',
   'Variedades',
   '24 Horas',
-  'Abertos & FAST',
-  'FAST Internacional',
+  'Abertos BR & FAST',
 ];
 
 export const LiveTvView: React.FC<LiveTvViewProps> = ({

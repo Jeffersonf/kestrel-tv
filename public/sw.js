@@ -1,5 +1,5 @@
 // kestrelTV Service Worker - Network-First para HTML + Cache para assets com hash
-const CACHE_NAME = 'kestrel-tv-shell-v5';
+const CACHE_NAME = 'kestrel-tv-shell-v6';
 const STATIC_ASSETS = [
   './manifest.json',
   './icons/icon-192.png',
