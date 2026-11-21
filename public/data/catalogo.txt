@@ -1,5 +1,5 @@
-# kestrelTV - Saimo Live + Canais Abertos/FAST verificados (HTTPS+CORS)
-# 213 canais
+# kestrelTV - Saimo Live + Abertos & FAST + FAST Internacional (HTTPS+CORS)
+# 396 canais
 
 canal: Band
 categoria: TV Aberta
@@ -492,540 +492,540 @@ logo: https://1.embedcanaisdetv.com/images/record.png
 fonte: https://net11.sattvgo.com.br/RECORD_DF/index.m3u8?token=RGnYBgq1dxRk5Eur690t0mpVo01rfWpPLxrMx
 
 canal: 1001 Noites
-categoria: Variedades
+categoria: Abertos & FAST
 logo: https://i.imgur.com/dWA9y2J.png
 fonte: https://cpbr.appflux.com.br:2000/hls/1001noites/1001noites.m3u8
 nome: BR
 
 canal: +MaisUm
-categoria: Filmes e Séries
+categoria: Abertos & FAST
 logo: https://i.ibb.co/ZRDvqJcf/Logo-Mais-Um-original-sem-fundo.png
 fonte: https://stream.ichibansys.com:3230/hybrid/play.m3u8
 nome: BR
 
 canal: Adesso TV
-categoria: TV Aberta
+categoria: Abertos & FAST
 logo: https://i.imgur.com/KgetM8j.png
 fonte: https://cdn.jmvstream.com/w/LVW-9715/LVW9715_12B26T62tm/playlist.m3u8
 nome: BR
 
 canal: Amazon Sat
-categoria: Variedades
+categoria: Abertos & FAST
 logo: https://i.imgur.com/7rjCS5i.png
 fonte: https://amazonsat.brasilstream.com.br/hls/amazonsat/index.m3u8
 nome: BR
 
 canal: Angel TV Portuguese
-categoria: Variedades
+categoria: Abertos & FAST
 logo: https://i.imgur.com/qKLEGU7.png
 fonte: https://janya-digimix.akamaized.net/vglive-sk-382409/portuese/ngrp:angelportuguese_all/playlist.m3u8
 nome: BR
 
 canal: Araruna TV
-categoria: TV Aberta
+categoria: Abertos & FAST
 logo: https://i.imgur.com/jl39ula.png
 fonte: https://video05.logicahost.com.br/ararunatv/ararunatv/playlist.m3u8
 nome: BR
 
 canal: Aratu On
-categoria: Notícias
+categoria: Abertos & FAST
 logo: https://i.imgur.com/Ht4jCab.png
 fonte: https://cdn.live.br1.jmvstream.com/w/LVW-9359/LVW9359_XSyReL0QVf/playlist.m3u8
 nome: BR
 
 canal: AWTV
-categoria: Filmes e Séries
+categoria: Abertos & FAST
 logo: https://i.imgur.com/2tdMyef.png
 fonte: https://awtv.nuvemplay.live/hls/stream.m3u8
 nome: BR
 
 canal: Bem Mais TV
-categoria: TV Aberta
+categoria: Abertos & FAST
 logo: https://bemmaistv.com.br/wp-content/uploads/2025/08/0LASAmOtt4-150x150.jpg
 fonte: https://video09.logicahost.com.br/bemmaistv01/bemmaistv01/playlist.m3u8
 nome: BR
 
 canal: Canal FDR
-categoria: TV Aberta
+categoria: Abertos & FAST
 logo: https://i.imgur.com/7SE4CkE.png
 fonte: https://v-us-01.wisestream.io/memfs/e4ade538-7924-4359-81ef-b9d4dd229e91.m3u8
 nome: BR
 
 canal: Canal Metropolitano de Noticias
-categoria: Notícias
+categoria: Abertos & FAST
 logo: https://i.imgur.com/G0x4xqa.png
 fonte: https://stmv5.samcast.com.br/claudio8701/claudio8701/playlist.m3u8
 nome: BR
 
 canal: Catve2
-categoria: TV Aberta
+categoria: Abertos & FAST
 logo: https://i.imgur.com/qiVfsfB.png
 fonte: https://5b33b873179a2.streamlock.net:1443/catve2/catve2/playlist.m3u8
 nome: BR
 
 canal: Catve FM
-categoria: TV Aberta
+categoria: Abertos & FAST
 logo: https://i.imgur.com/w89yw36.png
 fonte: https://5b33b873179a2.streamlock.net:1443/radiocamera/livestream/playlist.m3u8
 nome: BR
 
 canal: Catve Master TV
-categoria: TV Aberta
+categoria: Abertos & FAST
 logo: https://i.imgur.com/4m7Iazm.png
 fonte: https://5b33b873179a2.streamlock.net:1443/mastertv/livestream/playlist.m3u8
 nome: BR
 
 canal: Chroma TV
-categoria: Variedades
+categoria: Abertos & FAST
 logo: https://i.imgur.com/SnaIMgj.png
 fonte: https://5c483b9d1019c.streamlock.net/8054/8054/playlist.m3u8
 nome: BR
 
 canal: Classique TV
-categoria: Filmes e Séries
+categoria: Abertos & FAST
 logo: https://i.imgur.com/rHxcraT.png
 fonte: https://stmv1.srvif.com/classique/classique/playlist.m3u8
 nome: BR
 
 canal: Conecta Mais TV
-categoria: Variedades
+categoria: Abertos & FAST
 logo: https://i.imgur.com/qHwTWlz.png
 fonte: https://adylnet.streampool.net/10324/live/hls/Conecta/index.m3u8
 nome: BR
 
 canal: ConecTV Brasil
-categoria: TV Aberta
+categoria: Abertos & FAST
 logo: https://i.imgur.com/XN6jjMR.png
 fonte: https://stream01.msolutionbrasil.com.br/hls/conectv/live.m3u8
 nome: BR
 
 canal: Conexao TV
-categoria: TV Aberta
+categoria: Abertos & FAST
 logo: https://i.imgur.com/CJ9SPsZ.png
 fonte: https://5a57bda70564a.streamlock.net/conexaotv/conexaotv.sdp/playlist.m3u8
 nome: BR
 
 canal: Despertar TV
-categoria: Variedades
+categoria: Abertos & FAST
 logo: https://res.cloudinary.com/dpkehkbpv/image/upload/v1721839192/logo/mixtv/despertar_tv_ieb2l3.png
 fonte: https://br.conectmy.com.br/DespertarTV/index.m3u8
 nome: BR
 
 canal: ElyTV
-categoria: Variedades
+categoria: Abertos & FAST
 logo: https://i.imgur.com/1eHNe91.png
 fonte: https://stmv1.srvsite.com/ely/ely/playlist.m3u8
 nome: BR
 
 canal: EUTV
-categoria: TV Aberta
+categoria: Abertos & FAST
 logo: https://i.imgur.com/8PxpamC.png
 fonte: https://cdn.jmvstream.com/w/LVW-8719/LVW8719_AcLVAxWy5J/playlist.m3u8
 nome: BR
 
 canal: Fala Litoral
-categoria: TV Aberta
+categoria: Abertos & FAST
 logo: https://i.imgur.com/NF6PL8O.png
 fonte: https://5c483b9d1019c.streamlock.net/falalitoraltv/falalitoraltv/playlist.m3u8
 nome: BR
 
 canal: Fonte TV
-categoria: Variedades
+categoria: Abertos & FAST
 logo: https://i.imgur.com/7q2BmNc.png
 fonte: https://59fb88a1b1108.streamlock.net/fonte/_definst_/fontetv/chunklist_w1224511652.m3u8
 nome: BR
 
 canal: Gospel Movie TV
-categoria: Filmes e Séries
+categoria: Abertos & FAST
 logo: https://i.imgur.com/cQN3nWt.png
 fonte: https://stmv1.srvif.com/gospelf/gospelf/playlist.m3u8
 nome: BR
 
 canal: ISTV (Brazil)
-categoria: TV Aberta
+categoria: Abertos & FAST
 logo: https://i.imgur.com/RUKVrOH.png
 fonte: https://stmv1.srvstm.com/sistema7933/sistema7933/playlist.m3u8
 nome: BR
 
 canal: J3NEWS TV
-categoria: Notícias
+categoria: Abertos & FAST
 logo: https://i.imgur.com/lezIQyL.png
 fonte: https://video01.brascast.com/d92ebb4f/d92ebb4f/playlist.m3u8
 nome: BR
 
 canal: L!ke
-categoria: Variedades
+categoria: Abertos & FAST
 logo: https://i.imgur.com/chHsCzB.png
 fonte: https://cnl-cl.otteravision.com/cnl/cl_h265/cl_h265.m3u8
 nome: BR
 
 canal: Lamore Rock Show WebTV
-categoria: Músicas
+categoria: Abertos & FAST
 logo: https://www.lamorerockshowwebtv.com.br/wp-content/uploads/2024/11/logo_rockshow.avif
 fonte: https://a.cdni.live/rodrigo2364/rodrigo2364/playlist.m3u8
 nome: BR
 
 canal: NickOnline Bob Esponja
-categoria: Infantil
+categoria: Abertos & FAST
 logo: https://x1colegal.com/nickonlinebobesponja.png
 fonte: https://bob.x1colegal.com/hls/stream.m3u8
 nome: BR
 
 canal: NTV (Brazil)
-categoria: TV Aberta
+categoria: Abertos & FAST
 logo: https://i.imgur.com/n79nkVC.png
 fonte: https://cdn.livespanel.com/nossatv/nossatv/playlist.m3u8
 nome: BR
 
 canal: O Dia TV
-categoria: TV Aberta
+categoria: Abertos & FAST
 logo: https://i.imgur.com/1LUbAVP.png
 fonte: https://6836041ea1117.streamlock.net/tvodia/tvodia/playlist.m3u8
 nome: BR
 
 canal: Petlovers TV
-categoria: Variedades
+categoria: Abertos & FAST
 logo: https://petloverstv.com.br/storage/357/config/yqP4nOugWRxRFCmgLqXF4gRKyM9ybsAOfHgUaqPt.png
 fonte: https://video04.logicahost.com.br/petloverstv/petloverstv/playlist.m3u8
 nome: BR
 
 canal: Plena TV
-categoria: Notícias
+categoria: Abertos & FAST
 logo: https://i.imgur.com/lH4RT7b.png
 fonte: https://cdn.jmvstream.com/w/LVW-9591/LVW9591_PmXtgATnaS/playlist.m3u8
 nome: BR
 
 canal: Plenitude TV
-categoria: Variedades
+categoria: Abertos & FAST
 fonte: https://strv.painelvox.top/plenitude/plenitude/playlist.m3u8
 nome: BR
 
 canal: RBATV
-categoria: TV Aberta
+categoria: Abertos & FAST
 logo: https://i.imgur.com/ZWFxlU1.png
 fonte: https://cdn.live.br1.jmvstream.com/w/LVW-15748/LVW15748_Yed7yzLuRC/playlist.m3u8
 nome: BR
 
 canal: Red Bull TV BR
-categoria: Esportes
+categoria: Abertos & FAST
 logo: https://images.pluto.tv/channels/5e7cb84a172a0f0007da69e4/colorLogoPNG.png
 fonte: https://d03ae6b5c6724c24867e97a3dc04934a.mediatailor.us-west-2.amazonaws.com/v1/master/ba62fe743df0fe93366eba3a257d792884136c7f/LINEAR-1026-WORBBRPTFAST-WHALETVPLUS/1026/hls/master/playlist.m3u8
 nome: BR
 
 canal: Rede Meio Norte
-categoria: Variedades
+categoria: Abertos & FAST
 logo: https://i.imgur.com/KVdTi0M.png
 fonte: https://maystreaming.cloudecast.com/redemeio/index.m3u8
 nome: BR
 
 canal: Rede Minas
-categoria: TV Aberta
+categoria: Abertos & FAST
 logo: https://i.imgur.com/MtQWAHv.png
 fonte: https://8hzcavccys.zoeweb.tv/redeminas/ngrp:redeminas_all/playlist.m3u8
 nome: BR
 
 canal: Rede NGT
-categoria: Variedades
+categoria: Abertos & FAST
 logo: https://i.imgur.com/ZFN1R4B.png
 fonte: https://isaocorp.cloudecast.com/ngt/index.m3u8
 nome: BR
 
 canal: Rede SPTV
-categoria: TV Aberta
+categoria: Abertos & FAST
 logo: https://i.imgur.com/kh3LGAP.png
 fonte: https://video01.logicahost.com.br/websptv/websptv/playlist.m3u8
 nome: BR
 
 canal: Rede TV! Mais
-categoria: TV Aberta
+categoria: Abertos & FAST
 logo: https://i.ibb.co/F0Tm2WP/2103f4c07b851d64b4c96955765a9a95.png
 fonte: https://cdn.live.br1.jmvstream.com/webtv/AVJ-15235/playlist/playlist.m3u8
 nome: BR
 
 canal: Retro Cartoon
-categoria: Filmes e Séries
+categoria: Abertos & FAST
 logo: https://i.imgur.com/hIlEfhl.png
 fonte: https://stmv1.video.brstream.com.br/retrotv/retrotv/chunklist_w1069200121.m3u8
 nome: BR
 
 canal: SBT Interior
-categoria: TV Aberta
+categoria: Abertos & FAST
 logo: https://i.imgur.com/IkZfa4j.png
 fonte: https://cdn.jmvstream.com/w/LVW-10801/LVW10801_Xvg4R0u57n/playlist.m3u8
 nome: BR
 
 canal: SBT Nova Mutum
-categoria: TV Aberta
+categoria: Abertos & FAST
 logo: https://upload.wikimedia.org/wikipedia/pt/d/d0/Logotipo_do_SBT_Nova_Mutum.png
 fonte: https://video09.logicahost.com.br/sbtmutum/sbtmutum/playlist.m3u8
 nome: BR
 
 canal: SIC TV
-categoria: TV Aberta
+categoria: Abertos & FAST
 logo: https://i.imgur.com/mHxQyB2.png
 fonte: https://parecisfmlive.brasilstream.com.br/hls/parecisfmlive/index.m3u8
 nome: BR
 
 canal: SOU TV
-categoria: TV Aberta
+categoria: Abertos & FAST
 logo: https://i.ibb.co/8cKmCNm/ezgif-com-gif-maker.png
 fonte: https://video10.logicahost.com.br/soutv/soutv/playlist.m3u8
 nome: BR
 
 canal: STZ TV
-categoria: Notícias
+categoria: Abertos & FAST
 logo: https://i.imgur.com/SeF2I7q.png
 fonte: https://cdn.live.br1.jmvstream.com/webtv/AVJ-12952/playlist/playlist.m3u8
 nome: BR
 
 canal: TCM 10 HD
-categoria: Notícias
+categoria: Abertos & FAST
 logo: https://i.imgur.com/aMuMVvB.png
 fonte: https://live.tcm10.com.br/tcm10hd/stream.m3u8
 nome: BR
 
 canal: Times Brasil
-categoria: Notícias
+categoria: Abertos & FAST
 logo: https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Times_Brasil_CNBC_logo_2025.svg/960px-Times_Brasil_CNBC_logo_2025.svg.png
 fonte: https://ssai2-ads.api.leiniao.com/global-adinsertion-api/hls/live/v2/21fdb6dd7491406bba86497a24390a25/playlist.m3u8
 nome: BR
 
 canal: TV A Critica
-categoria: Variedades
+categoria: Abertos & FAST
 logo: https://i.imgur.com/j51rBro.png
 fonte: https://cdn.live.br1.jmvstream.com/w/LVW-20715/LVW20715_50E3x2MCm2/playlist.m3u8
 nome: BR
 
 canal: TV A Folha
-categoria: Notícias
+categoria: Abertos & FAST
 logo: https://i.imgur.com/I7XGMhj.png
 fonte: https://video01.logicahost.com.br/tvafolha/tvafolha/playlist.m3u8
 nome: BR
 
 canal: TV Aldeia
-categoria: TV Aberta
+categoria: Abertos & FAST
 logo: https://i.imgur.com/rsfnv4Z.png
 fonte: https://stmv1.samcast.com.br/giovane7843/giovane7843/playlist.m3u8
 nome: BR
 
 canal: TV Alianca Catarinense
-categoria: TV Aberta
+categoria: Abertos & FAST
 logo: https://i.imgur.com/eqmOhtP.png
 fonte: https://video01.logicahost.com.br/tvalianca/tvalianca/playlist.m3u8
 nome: BR
 
 canal: TV Alternativa
-categoria: TV Aberta
+categoria: Abertos & FAST
 logo: https://i.imgur.com/wM9xXhc.png
 fonte: https://stmv5.samcast.com.br/wagner7919/wagner7919/playlist.m3u8
 nome: BR
 
 canal: TV BRICS Portuguese
-categoria: TV Aberta
+categoria: Abertos & FAST
 logo: https://i.imgur.com/vLpm8tN.png
 fonte: https://porbrics.mediacdn.ru/cdn/brics/portuguese/playlist.m3u8
 nome: BR
 
 canal: TV Brusque
-categoria: Notícias
+categoria: Abertos & FAST
 logo: https://i.imgur.com/J2EAZPS.png
 fonte: https://5ad482a77183d.streamlock.net/rodrigotvbrusque.com.br/5d880199c902eb4a1e8df00d/playlist.m3u8
 nome: BR
 
 canal: TV Camara (Brazil)
-categoria: TV Aberta
+categoria: Abertos & FAST
 logo: https://i.imgur.com/Sdou1Ab.png
 fonte: https://stream3.camara.gov.br/tv1/manifest.m3u8
 nome: BR
 
 canal: TV Cidade Verde Cuiaba
-categoria: Variedades
+categoria: Abertos & FAST
 logo: https://i.imgur.com/e67h04h.png
 fonte: https://televisaocidadeverde.brasilstream.com.br/hls/televisaocidadeverde/index.m3u8
 nome: BR
 
 canal: TV Clube
-categoria: Variedades
+categoria: Abertos & FAST
 logo: https://i.imgur.com/CpXjcyE.png
 fonte: https://5c483b9d1019c.streamlock.net/8186/8186/playlist.m3u8
 nome: BR
 
 canal: TV Comunitaria
-categoria: TV Aberta
+categoria: Abertos & FAST
 logo: https://i.imgur.com/uxefHY3.png
 fonte: https://5b7f3c45ab7c2.streamlock.net/8008/smil:8008.smil/playlist.m3u8?DVR=
 nome: BR
 
 canal: TV Curuca
-categoria: Variedades
+categoria: Abertos & FAST
 logo: https://i.imgur.com/JdCKNZ4.png
 fonte: https://stmv1.srvif.com/tvcurucasp/tvcurucasp/playlist.m3u8
 nome: BR
 
 canal: TV Difusao
-categoria: TV Aberta
+categoria: Abertos & FAST
 logo: https://storage.googleapis.com/soultv-prod-media/media/brand/LOGO_TV_DIFUS%C3%83O_100x100px_doiivZN.png
 fonte: https://tvdsoultv.acessaradios.com.br/tvdsoultv/tvdsoultv.stream/playlist.m3u8
 nome: BR
 
 canal: TV Guara
-categoria: Variedades
+categoria: Abertos & FAST
 logo: https://i.imgur.com/8PErNBT.png
 fonte: https://video02.logicahost.com.br/tvguara23/tvguara23/playlist.m3u8
 nome: BR
 
 canal: TV Guarapari
-categoria: TV Aberta
+categoria: Abertos & FAST
 logo: https://i.imgur.com/eDNzwK0.png
 fonte: https://video.welltecnologia.com.br/tvguarapari/tvguarapari/playlist.m3u8
 nome: BR
 
 canal: TV Life America
-categoria: Variedades
+categoria: Abertos & FAST
 logo: https://i.imgur.com/HZI0ilU.png
 fonte: https://streaming.cloudecast.com/hls/tvlifeamerica/index.m3u8
 nome: BR
 
 canal: TV Litoral RN
-categoria: TV Aberta
+categoria: Abertos & FAST
 logo: https://upload.wikimedia.org/wikipedia/commons/3/3e/TV_LITORAL_RN.jpg
 fonte: https://5ad482a77183d.streamlock.net/tvnordesteegmail.com/tvnordesteegmail.com/playlist.m3u8
 nome: BR
 
 canal: TV Mais Marica
-categoria: TV Aberta
+categoria: Abertos & FAST
 logo: https://i.imgur.com/lgCRX7q.png
 fonte: https://5cf4a2c2512a2.streamlock.net/tvmaismarica/tvmaismarica/playlist.m3u8
 nome: BR
 
 canal: TV Mana Brasil
-categoria: Variedades
+categoria: Abertos & FAST
 logo: https://i.imgur.com/AFb712e.png
 fonte: https://w1.manasat.com/tvmana-brasil/smil:tvmana-brasil.smil/playlist.m3u8
 nome: BR
 
 canal: TV Marajoara
-categoria: TV Aberta
+categoria: Abertos & FAST
 logo: https://i.imgur.com/9d9vBN7.png
 fonte: https://tv02.zas.media:1936/tvmarajoara/tvmarajoara/playlist.m3u8
 nome: BR
 
 canal: TV Metropole
-categoria: TV Aberta
+categoria: Abertos & FAST
 logo: https://i.imgur.com/bJyjLpg.png
 fonte: https://cdn-fundacao-2110.ciclano.io:1443/fundacao-2110/fundacao-2110/playlist.m3u8
 nome: BR
 
 canal: TV Padre Cicero
-categoria: Variedades
+categoria: Abertos & FAST
 logo: https://i.imgur.com/Y7b29VG.png
 fonte: https://video01.logicahost.com.br/tvpadrecicero/tvpadrecicero/playlist.m3u8
 nome: BR
 
 canal: TV Pantanal MS
-categoria: Variedades
+categoria: Abertos & FAST
 logo: https://i.imgur.com/0FOmktl.png
 fonte: https://5a2b083e9f360.streamlock.net/tvpantanal/tvpantanal.sdp/playlist.m3u8
 nome: BR
 
 canal: TV Passo Fundo
-categoria: TV Aberta
+categoria: Abertos & FAST
 logo: https://i.imgur.com/QFE6TiV.png
 fonte: https://5a57bda70564a.streamlock.net/tvpasso/tvpasso.sdp/playlist.m3u8
 nome: BR
 
 canal: TV Petropolis
-categoria: TV Aberta
+categoria: Abertos & FAST
 logo: https://web2.petropolis.rj.gov.br/imc/film-commission/uploads/profissional/perfil/785b645d9c574b4d88504a85dbd6ef37.png
 fonte: https://video02.logicahost.com.br/tvpetropolis/tvpetropolis/playlist.m3u8
 nome: BR
 
 canal: TV Sao Raimundo
-categoria: TV Aberta
+categoria: Abertos & FAST
 logo: https://i.imgur.com/f34CQIG.png
 fonte: https://stmv1.voxtvhd.com.br/9030/9030/playlist.m3u8
 nome: BR
 
 canal: TV Series
-categoria: Filmes e Séries
+categoria: Abertos & FAST
 logo: https://i.imgur.com/Ff5mj0o.png
 fonte: https://stmv1.srvif.com/tvserie/tvserie/playlist.m3u8
 nome: BR
 
 canal: TV Sim Cachoeiro
-categoria: Notícias
+categoria: Abertos & FAST
 logo: https://i.imgur.com/t5oUK3C.png
 fonte: https://5cf4a2c2512a2.streamlock.net/8104/8104/playlist.m3u8
 nome: BR
 
 canal: TV Terceiro Anjo
-categoria: Variedades
+categoria: Abertos & FAST
 logo: https://i.imgur.com/PExKWNv.png
 fonte: https://streamer1.streamhost.org/salive/GMI3anjoh/playlist.m3u8
 nome: BR
 
 canal: TV UFOP
-categoria: TV Aberta
+categoria: Abertos & FAST
 logo: https://raw.githubusercontent.com/daniloroxette/tvufop/refs/heads/main/images/tvufop_logo.png
 fonte: https://app.tvufop.com.br/hls/tvufop.m3u8
 nome: BR
 
 canal: TV Universal
-categoria: Variedades
+categoria: Abertos & FAST
 logo: https://i.imgur.com/TIsk5zN.png
 fonte: https://644398c.ha.azioncdn.net/primary/tvuniversal_480p.sdp/playlist.m3u8
 nome: BR
 
 canal: TV+Pet
-categoria: Variedades
+categoria: Abertos & FAST
 logo: https://www.tvmaispet.com.br/images/tvpet-logo.png
 fonte: https://stmv5.samcast.com.br/tvmaispet6354/tvmaispet6354/playlist.m3u8
 nome: BR
 
 canal: TVCOM Maceio
-categoria: TV Aberta
+categoria: Abertos & FAST
 logo: https://i.imgur.com/IE7IZzi.png
 fonte: https://srv5.zcast.com.br/tvcommaceio/tvcommaceio/playlist.m3u8
 nome: BR
 
 canal: TVE RS
-categoria: TV Aberta
+categoria: Abertos & FAST
 logo: https://i.imgur.com/MQ6lJpS.png
 fonte: https://streaming.procergs.com.br:8443/tve/stve/playlist.m3u8
 nome: BR
 
 canal: TVitape
-categoria: TV Aberta
+categoria: Abertos & FAST
 logo: https://i.imgur.com/XeqcwKe.png
 fonte: https://stream01.msolutionbrasil.com.br/hls/tvitape/live.m3u8
 nome: BR
 
 canal: TVLatinaSat
-categoria: TV Aberta
+categoria: Abertos & FAST
 logo: https://latinasat.com.br/logo.png
 fonte: https://www.latinasat.com.br/hls/live/stream/index.m3u8
 nome: BR
 
 canal: TVNBN
-categoria: TV Aberta
+categoria: Abertos & FAST
 logo: https://i.imgur.com/zoHBxn1.png
 fonte: https://cdn.jmvstream.com/w/LVW-8410/LVW8410_uiZOVm6vz1/playlist.m3u8
 nome: BR
 
 canal: UMA TV
-categoria: Variedades
+categoria: Abertos & FAST
 logo: https://i.imgur.com/m0RVb79.png
 fonte: https://umatv.nuvemplay.live/hls/stream.m3u8
 nome: BR
 
 canal: Unisul TV
-categoria: TV Aberta
+categoria: Abertos & FAST
 logo: https://i.imgur.com/N0TvAFz.png
 fonte: https://sitetv.brasilstream.com.br/hls/sitetv/index.m3u8?token=
 nome: BR
 
 canal: VEJA+ TV
-categoria: Notícias
+categoria: Abertos & FAST
 logo: https://i.imgur.com/n0pxHo4.png
 fonte: https://gpa-vja.otteravision.com/gpa/vja/vja.m3u8
 nome: BR
@@ -1033,43 +1033,43 @@ fonte: https://gpa-vja-samsungtvplus-br.otteravision.com/gpa/vja/vja.m3u8
 nome: Samsung BR
 
 canal: ADB TV
-categoria: Variedades
+categoria: Abertos & FAST
 logo: https://i.ibb.co/HGfTJwt/ADBTV.jpg
 fonte: https://live-tv.waytv.pt/adbtv/adbtv/playlist.m3u8
 nome: POR
 
 canal: ARTV
-categoria: TV Aberta
+categoria: Abertos & FAST
 logo: https://i.imgur.com/y00t9hr.png
 fonte: https://playout172.livextend.cloud/liveiframe/_definst_/liveartvabr/playlist.m3u8
 nome: POR
 
 canal: BabyFirst
-categoria: Infantil
+categoria: Abertos & FAST
 logo: https://i.imgur.com/WxLHBwu.png
 fonte: https://cdn.fast.jwp.services/v1/channel/1_jB6940Ei_TvhvIHDL/manifest.m3u8
 nome: POR
 
 canal: Cartoon Network Western Europe Portugal
-categoria: Infantil
+categoria: Abertos & FAST
 logo: https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Cartoon_Network_2010_logo.svg/960px-Cartoon_Network_2010_logo.svg.png
 fonte: https://vuvuu-geil-m3u8.yaskar661.workers.dev/?url=https%3A%2F%2Fvavoo.to%2Fvavoo-iptv%2Fplay%2F327818589842dbaee1327c
 nome: POR
 
 canal: CINDIE TV
-categoria: Filmes e Séries
+categoria: Abertos & FAST
 logo: https://a.jsrdn.com/hls/23208/cindie-tv/logo_20250225_222520_68.png
 fonte: https://cc-hqw8u5r1nshjc.akamaized.net/scheduler/scheduleMaster/352.m3u8
 nome: POR
 
 canal: CNN Portugal
-categoria: Notícias
+categoria: Abertos & FAST
 logo: https://i.imgur.com/bc6tYVZ.png
 fonte: https://github.com/thomraider12/canaistvpt/raw/main/m3u8s/cnnpt.m3u8
 nome: POR
 
 canal: EbS
-categoria: TV Aberta
+categoria: Abertos & FAST
 logo: https://i.imgur.com/DIIRPNN.png
 fonte: https://streams.prd.commavservices.eu/live/ebs/index.m3u8
 nome: POR
@@ -1077,229 +1077,1321 @@ fonte: https://streams.prd.commavservices.eu/live/ebsplus/index.m3u8
 nome: POR
 
 canal: Famatv
-categoria: Músicas
+categoria: Abertos & FAST
 logo: https://i.ibb.co/tMmRp18/Fama-TV-cor-whitebg-hotizontal.jpg
 fonte: https://tv2.fastcast4u.com:3310/live/famatvlive.m3u8
 nome: POR
 
 canal: KK TV
-categoria: Variedades
+categoria: Abertos & FAST
 logo: https://i.imgur.com/jWOB0oU.png
 fonte: https://w1.manasat.com/ktv-angola/smil:ktv-angola.smil/playlist.m3u8
 nome: POR
 
 canal: Kuriakos Cine
-categoria: Filmes e Séries
+categoria: Abertos & FAST
 logo: https://i.imgur.com/CZViCwB.jpg
 fonte: https://w2.manasat.com/kcine/smil:kcine.smil/playlist.m3u8
 nome: POR
 
 canal: Kuriakos TV
-categoria: Variedades
+categoria: Abertos & FAST
 logo: https://i.imgur.com/xdAW0D5.png
 fonte: https://w1.manasat.com/ktv/smil:ktv.smil/playlist.m3u8
 nome: POR
 
 canal: Mana Igreja Online
-categoria: Variedades
+categoria: Abertos & FAST
 logo: https://i.imgur.com/0IUvfcJ.png
 fonte: https://w1.manasat.com/igrejaonline/smil:igrejaonline.smil/playlist.m3u8
 nome: POR
 
 canal: MNTV
-categoria: Notícias
+categoria: Abertos & FAST
 logo: https://mntv.co.mz/wp-content/uploads/2025/11/Prancheta-4_1-1.png
 fonte: https://www.khuwemultimedia.com/hls/mntv/mntv.m3u8
 nome: POR
 
 canal: Muzangala TV
-categoria: Músicas
+categoria: Abertos & FAST
 logo: https://i.imgur.com/fBeaJoS.png
 fonte: https://5cf4a2c2512a2.streamlock.net/tvmuzangala/tvmuzangala/playlist.m3u8
 nome: POR
 
 canal: Nickelodeon (Portugal)
-categoria: Infantil
+categoria: Abertos & FAST
 logo: https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Nickelodeon_2009_logo.svg/960px-Nickelodeon_2009_logo.svg.png
 fonte: https://vuvuu-geil-m3u8.yaskar661.workers.dev/?url=https%3A%2F%2Fvavoo.to%2Fvavoo-iptv%2Fplay%2F398241518529a84217dd1f
 nome: POR
 
 canal: ON FM
-categoria: Músicas
+categoria: Abertos & FAST
 logo: https://onfmwordpressfiles.ams3.digitaloceanspaces.com/wp-content/uploads/2023/03/17130121/logo-on-fm.png
 fonte: https://5ce9406b73c33.streamlock.net/ONFM/livestream/playlist.m3u8
 nome: POR
 
 canal: Porto Canal
-categoria: TV Aberta
+categoria: Abertos & FAST
 logo: https://i.imgur.com/DwziwMY.png
 fonte: https://pull-live-156-1.global.ssl.fastly.net/pc5865dc25400thmb-ea6bf03b14fa318f7133/smil:pc1-jhrgyuoqe5865db-68tkgb14fa318f7133f03.smil/playlist.m3u8
 nome: POR
 
 canal: Radio Sines
-categoria: Músicas
+categoria: Abertos & FAST
 logo: https://i.imgur.com/Oe6F1nL.png
 fonte: https://load-balancer.azotosolutions.com/cdnedge19/smil:live19.smil/playlist.m3u8
 nome: POR
 
 canal: Rede Impacto Gospel TV
-categoria: Variedades
+categoria: Abertos & FAST
 logo: https://redeimpactogospel.com/assets/logo-512.png
 fonte: https://radiosnet.site/hls/redeimpactogospeltv/redeimpactogospeltv.m3u8
 nome: POR
 
 canal: RFPtv
-categoria: Músicas
+categoria: Abertos & FAST
 logo: https://i.imgur.com/I60nQuR.png
 fonte: https://video03.logicahost.com.br/rfptv/rfptv/playlist.m3u8
 nome: POR
 
 canal: RTP Mundo
-categoria: TV Aberta
+categoria: Abertos & FAST
 logo: https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/RTP_Mundo.svg/1920px-RTP_Mundo.svg.png
 fonte: https://n-5-2.eu.cdn-redge.media/livehls/oeu/mt/live/rtp_internacional/live.livx/playlist.m3u8
 nome: POR
 
 canal: SBN TV Global
-categoria: Variedades
+categoria: Abertos & FAST
 logo: https://i.imgur.com/NJu6oYB.png
 fonte: https://watch.sardius.media/channels/Ea867F3e1F56B06/site_8D363D13Eb/live.m3u8
 nome: POR
 
 canal: SIC Alta Definicao
-categoria: TV Aberta
+categoria: Abertos & FAST
 logo: https://i.imgur.com/VdPwyQv.png
 fonte: https://production-fast-sic.content.okast.tv/fa2e8c4385712f9aa54bbe52b1bd9b6b/channels/d9070446-8448-455e-8075-773b1ba12562/fc831b20-f252-4e7d-8cc5-2d05f4d43c1c/media_.m3u8
 nome: POR
 
 canal: SIC Replay
-categoria: TV Aberta
+categoria: Abertos & FAST
 logo: https://i.imgur.com/fj84mXz.png
 fonte: https://production-fast-sic.content.okast.tv/fa2e8c4385712f9a7dce4ff2dcebac2e/channels/d9070446-8448-455e-8075-773b1ba12562/d47eae0f-ad77-414a-9a1d-2a6628ba18c3/media_.m3u8
 nome: POR
 
 canal: TV Cidade
-categoria: Músicas
+categoria: Abertos & FAST
 logo: https://i.imgur.com/gmSu21X.jpg
 fonte: https://stmv1.srvif.com/tvcidade/tvcidade/playlist.m3u8
 nome: POR
 
 canal: TV Mana 1
-categoria: Variedades
+categoria: Abertos & FAST
 logo: https://i.imgur.com/6jNqpTP.png
 fonte: https://w1.manasat.com/tvmana-1/smil:tvmana-1.smil/playlist.m3u8
 nome: POR
 
 canal: TV Mana 2
-categoria: Variedades
+categoria: Abertos & FAST
 logo: https://i.imgur.com/VYNjVov.png
 fonte: https://w1.manasat.com/tvmana-2/smil:tvmana-2.smil/playlist.m3u8
 nome: POR
 
 canal: TV Mana Mocambique
-categoria: Variedades
+categoria: Abertos & FAST
 logo: https://i.imgur.com/R5YrV5s.png
 fonte: https://w2.manasat.com/tvmana-mz/smil:tvmana-mz.smil/playlist.m3u8
 nome: POR
 
 canal: TV Show Fortaleza
-categoria: TV Aberta
+categoria: Abertos & FAST
 logo: https://static.wixstatic.com/media/9af6b8_e963e864c8fb40d3954f5c1c8cab1b40~mv2.png
 fonte: https://stmv8.samcast.com.br/raimundoanselmolimamororo1908/raimundoanselmolimamororo1908/playlist.m3u8
 nome: POR
 
 canal: TV Zimbo
-categoria: TV Aberta
+categoria: Abertos & FAST
 logo: https://i.imgur.com/SFD8CBh.png
 fonte: https://sgn-cdn-video.vods2africa.com/Tv-Zimbo/index.fmp4.m3u8
 nome: POR
 
 canal: TVI
-categoria: TV Aberta
+categoria: Abertos & FAST
 logo: https://i.imgur.com/H8Tgl7m.png
 fonte: https://raw.githubusercontent.com/thomraider12/canaistvpt/main/m3u8s/tvi.m3u8
 nome: POR
 
 canal: TVI Ficcao
-categoria: Filmes e Séries
+categoria: Abertos & FAST
 logo: https://cdn.iol.pt/img/logostvi/branco/tvificcao.png
 fonte: https://raw.githubusercontent.com/thomraider12/canaistvpt/main/m3u8s/tvificcao.m3u8
 nome: POR
 
 canal: TVI Reality
-categoria: TV Aberta
+categoria: Abertos & FAST
 logo: https://i.imgur.com/C9rxqA5.png
 fonte: https://raw.githubusercontent.com/thomraider12/canaistvpt/main/m3u8s/tvireality.m3u8
 nome: POR
 
 canal: V+ TVI
-categoria: TV Aberta
+categoria: Abertos & FAST
 logo: https://upload.wikimedia.org/wikipedia/pt/e/ef/V%2BTVI_Logo.png
 fonte: https://raw.githubusercontent.com/thomraider12/canaistvpt/main/m3u8s/vmaistvi.m3u8
 nome: POR
 
 canal: XITE Nuevo Latino
-categoria: Músicas
+categoria: Abertos & FAST
 logo: https://i.imgur.com/2qyl2y3.png
 fonte: https://d3bsgqzbpkrvbb.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-w288eaw03izg1/XITE_Nuevo_Latino.m3u8
 nome: POR
 
 canal: XITE Siempre Latino
-categoria: Músicas
+categoria: Abertos & FAST
 logo: https://i.imgur.com/bwmIEgG.png
 fonte: https://d1xc25jm9e0l4b.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-xplkt8i7m24dc/XITE_Siempre_Latino.m3u8
 nome: POR
 
 canal: Mana Church Online
-categoria: Variedades
+categoria: Abertos & FAST
 logo: https://i.imgur.com/FRDJSim.png
 fonte: https://w2.manasat.com/church-online/smil:church-online.smil/playlist.m3u8
 nome: PT
 
 canal: Mana Cirkev Online
-categoria: Variedades
+categoria: Abertos & FAST
 logo: https://i.imgur.com/tYhXeRq.png
 fonte: https://w2.manasat.com/cirkev-online/smil:cirkev-online.smil/playlist.m3u8
 nome: PT
 
 canal: Mana Eglise Online
-categoria: Variedades
+categoria: Abertos & FAST
 logo: https://i.imgur.com/xQYly8O.png
 fonte: https://w2.manasat.com/eglise-online/smil:eglise-online.smil/playlist.m3u8
 nome: PT
 
 canal: Mana Iglesia Online
-categoria: Variedades
+categoria: Abertos & FAST
 logo: https://i.imgur.com/0IUvfcJ.png
 fonte: https://w2.manasat.com/iglesia-online/smil:iglesia-online.smil/playlist.m3u8
 nome: PT
 
 canal: Mana Tserkov' Onlayn
-categoria: Variedades
+categoria: Abertos & FAST
 logo: https://i.imgur.com/PruXLqS.png
 fonte: https://w2.manasat.com/tserkov-online/smil:tserkov-online.smil/playlist.m3u8
 nome: PT
 
 canal: Trailers UK
-categoria: Notícias
+categoria: Abertos & FAST
 logo: https://i.imgur.com/RwZ1hCN.png
 fonte: https://amg01821-lovetvchannels-lovemagazineuk-samsungse-p1sf1.amagi.tv/playlist/amg01821-lovetvchannels-lovemagazineuk-samsungse/playlist.m3u8
 nome: PT
 
 canal: TV Mana English
-categoria: Variedades
+categoria: Abertos & FAST
 logo: https://i.imgur.com/I66IkCw.png
 fonte: https://w1.manasat.com/tvmana-english/smil:tvmana-english.smil/playlist.m3u8
 nome: PT
 
 canal: TV Mana Espanhol
-categoria: Variedades
+categoria: Abertos & FAST
 logo: https://i.imgur.com/sUlrSwP.png
 fonte: https://w1.manasat.com/tvmana-espanol/smil:tvmana-espanol.smil/playlist.m3u8
 nome: PT
 
 canal: TV Mana Russkiy
-categoria: Variedades
+categoria: Abertos & FAST
 logo: https://i.imgur.com/fACHqmY.png
 fonte: https://w1.manasat.com/tvmana-leste/smil:tvmana-leste.smil/playlist.m3u8
 nome: PT
+
+canal: FIFA+
+categoria: FAST Internacional
+logo: https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/FIFA%2B_(2025).svg/960px-FIFA%2B_(2025).svg.png
+fonte: https://95cedebd.wurl.com/master/f36d25e7e52f1ba8d7e56eb859c636563214f541/Vml6aW9fRklGQVBsdXNFbmdsaXNoX0hMUw/playlist.m3u8
+nome: FAST (Sports)
+
+canal: FIFA+ Hispanic America
+categoria: FAST Internacional
+logo: https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/FIFA%2B_(2025).svg/960px-FIFA%2B_(2025).svg.png
+fonte: https://6c849fb3.wurl.com/master/f36d25e7e52f1ba8d7e56eb859c636563214f541/TEctbXhfRklGQVBsdXNTcGFuaXNoLTFfSExT/playlist.m3u8
+nome: FAST (Sports)
+
+canal: FIFA+ United States
+categoria: FAST Internacional
+logo: https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/FIFA%2B_(2025).svg/960px-FIFA%2B_(2025).svg.png
+fonte: https://d2w9q46ikgrcwx.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-of5cbk3sav3w5/v1/sysdata_s_p_a_fifa_7/samsungheadend_us/latest/main/hls/playlist.m3u8
+nome: FAST (Sports)
+
+canal: FIFA+ Women
+categoria: FAST Internacional
+logo: https://i.imgur.com/xy9ZxVO.png
+fonte: https://cffda8ff.wurl.com/master/f36d25e7e52f1ba8d7e56eb859c636563214f541/U2Ftc3VuZy1nYl9GSUZBUGx1c3dvbWVuX0hMUw/playlist.m3u8
+nome: FAST (Sports)
+
+canal: FightBox
+categoria: FAST Internacional
+logo: https://i.imgur.com/mRsnztA.png
+fonte: https://webtvstream.bhtelecom.ba/fightbox.m3u8
+nome: FAST (Sports)
+
+canal: FightBox HD
+categoria: FAST Internacional
+logo: https://i.imgur.com/mRsnztA.png
+fonte: https://nosignal1.antenaplay.ro/hls/fightbox-hd/index.m3u8
+nome: FAST (Sports)
+
+canal: FloRacing
+categoria: FAST Internacional
+logo: https://images.fubo.tv/channel-config-ui/station-logos/on-dark/floracing-white.png
+fonte: https://amg02278-amg02278c1-flosports-worldwide-7592.playouts.now.amagi.tv/playlist.m3u8
+nome: FAST (Sports)
+
+canal: NBA AntenaPlay
+categoria: FAST Internacional
+logo: https://assets.antenaplay.ro/2024/10/25/HmBMStln2f1qwN0tAXpG.png
+fonte: https://stream1.antenaplay.ro/promo/nba-meci/playlist.m3u8
+nome: FAST (Sports)
+
+canal: Persiana Fight
+categoria: FAST Internacional
+fonte: https://fighthls.persiana.live/hls/stream.m3u8
+nome: FAST (Sports)
+
+canal: Red Bull TV
+categoria: FAST Internacional
+logo: https://images.pluto.tv/channels/5e7cb84a172a0f0007da69e4/colorLogoPNG.png
+fonte: https://3ea22335.wurl.com/master/f36d25e7e52f1ba8d7e56eb859c636563214f541/UmFrdXRlblRWLWdiX1JlZEJ1bGxUVl9ITFM/playlist.m3u8
+nome: FAST (Sports)
+
+canal: Red Bull TV SD
+categoria: FAST Internacional
+logo: https://images.pluto.tv/channels/5e7cb84a172a0f0007da69e4/colorLogoPNG.png
+fonte: https://rbmn-live.akamaized.net/hls/live/590964/BoRB-AT/master.m3u8
+nome: FAST (Sports)
+
+canal: Red Bull TV US
+categoria: FAST Internacional
+logo: https://images.pluto.tv/channels/5e7cb84a172a0f0007da69e4/colorLogoPNG.png
+fonte: https://0b73ace69ebb45eaa249bb87837cb958.mediatailor.us-west-2.amazonaws.com/v1/master/ba62fe743df0fe93366eba3a257d792884136c7f/LINEAR-644-WORBUSENFAST-LG_US/644/lgtv/hls/master/playlist.m3u8
+nome: FAST (Sports)
+
+canal: Sky Racing 1
+categoria: FAST Internacional
+logo: https://i.imgur.com/Hf0EiaW.png
+fonte: https://636ffd31f0e12.streamlock.net/RacingStream1/RacingStream1/playlist.m3u8
+nome: FAST (Sports)
+
+canal: Tennis Channel 2
+categoria: FAST Internacional
+logo: https://image-resizer-cloud-cdn.api.cms.amdvids.com/image/7382296F-97F6-4450-B77B-8FE331FC04F6/3-1x1.png
+fonte: https://mumbai-edge.smartplaytv.in/Tennis2/index.m3u8
+nome: FAST (Sports)
+
+canal: Tennis Channel
+categoria: FAST Internacional
+logo: https://i.imgur.com/tsljAnY.png
+fonte: https://cdn-ue1-prod.tsv2.amagi.tv/linear/amg01444-tennischannelth-tennischannelnl-samsungnl/playlist.m3u8
+nome: FAST (Sports)
+
+canal: 24 Hour Free Movies
+categoria: FAST Internacional
+logo: https://i.imgur.com/iSVnzR1.png
+fonte: https://d1j2u714xk898n.cloudfront.net/scheduler/scheduleMaster/145.m3u8
+nome: FAST (Movies)
+
+canal: 30A TV Classic Movies
+categoria: FAST Internacional
+fonte: https://30a-tv.com/feeds/pzaz/30atvmovies.m3u8
+nome: FAST (Movies)
+
+canal: ABN Bible Movies Channel
+categoria: FAST Internacional
+logo: https://i.imgur.com/NCqZdaL.png
+fonte: https://mediaserver.abnvideos.com/streams/abnbiblemovies.m3u8
+nome: FAST (Movies)
+
+canal: Action
+categoria: FAST Internacional
+logo: https://i.imgur.com/Zv9VsVq.png
+fonte: https://r.eu.cdn-redge.media/livehls/oeu/mt/live/action/live.livx/playlist.m3u8
+nome: FAST (Movies)
+
+canal: All Time Movies
+categoria: FAST Internacional
+logo: https://yt3.googleusercontent.com/U4INXhwmEUOABHoemQBpI6C9t4jb9iBmDvZ3ZT3lAb9Au_jVl32NL8XDpy-9cBjRJ2LP69Ovzg=s900-c-k-c0x00ffffff-no-rj
+fonte: https://fta.ektv.in/live/54/54_0.m3u8
+nome: FAST (Movies)
+
+canal: AMC Thrillers
+categoria: FAST Internacional
+logo: https://i.imgur.com/EVD0aIt.png
+fonte: https://amc-rushbyamc-1-us.vizio.wurl.tv/playlist.m3u8
+nome: FAST (Movies)
+
+canal: ARTFLIX Movie Classics
+categoria: FAST Internacional
+logo: https://i.imgur.com/5pOZQB4.png
+fonte: https://amogonetworx-artflix-1-nl.samsung.wurl.tv/playlist.m3u8
+nome: FAST (Movies)
+
+canal: Asianet Movies
+categoria: FAST Internacional
+logo: https://i.imgur.com/cps67hs.png
+fonte: https://da86m1sqpm3o0.cloudfront.net/28072023/smil:asianetmovies.smil/chunklist_b1928000.m3u8
+nome: FAST (Movies)
+
+canal: B4U Movies
+categoria: FAST Internacional
+logo: https://i.imgur.com/M9kMFJl.png
+fonte: https://amg00877-b4unew-amg00877c2-xiaomi-in-5489.playouts.now.amagi.tv/playlist.m3u8
+nome: FAST (Movies)
+
+canal: Bhojpuri Cinema
+categoria: FAST Internacional
+logo: https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_BHOJPURI_CINEMA/images/LOGO_HD/image.png
+fonte: https://live-bhojpuri.akamaized.net/liveabr/playlist.m3u8
+nome: FAST (Movies)
+
+canal: Bollywood Classic Romania
+categoria: FAST Internacional
+logo: https://i.imgur.com/ugPo6ca.png
+fonte: https://hls02ns.antenaplay.ro/hls/bollywood-sd/index.m3u8
+nome: FAST (Movies)
+
+canal: Cinemaraton Plus (1080i)
+categoria: FAST Internacional
+logo: https://assets.antenaplay.ro/2026/03/10/RMNdkVBCTNfsogsYqHaB.png
+fonte: https://hls02ns.antenaplay.ro/hls/cinemaraton-plus-hd/index.m3u8
+nome: FAST (Movies)
+
+canal: Cinemax Latin America
+categoria: FAST Internacional
+logo: https://i.imgur.com/cZWoJWD.png
+fonte: https://streaming.onnethn.com/CINEMAX/playlist.m3u8
+nome: FAST (Movies)
+
+canal: City Eden KinoAction
+categoria: FAST Internacional
+logo: https://i.imgur.com/uuzuvD0.png
+fonte: https://cityeden.catcast.tv/content/41333/index.m3u8
+nome: FAST (Movies)
+
+canal: Colors Cineplex
+categoria: FAST Internacional
+logo: https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_COLORS_CINEPLEX/images/LOGO_HD/image.png
+fonte: https://raw.githubusercontent.com/amazeyourself/adaptive-streams/refs/heads/main/streams/gb/YuppTV/ColorsCineplexUK.m3u8
+nome: FAST (Movies)
+
+canal: ETV Cinema
+categoria: FAST Internacional
+logo: https://dtil.tmsimg.com/assets/s143026_ld_h15_aa.png?lock=720x540
+fonte: https://yupplivegcpusa.yuppcdn.net/100823/smil:etvcinema.smil/playlist.m3u8?hdnts=st=1735898689~exp=1835898688~acl=*~hmac=f5fe24724fe05481e3841f9eb5ab8efdee0a3dd83645ae9dcf45703f525bab7b
+nome: FAST (Movies)
+
+canal: ETV Cinema HD
+categoria: FAST Internacional
+logo: https://dtil.tmsimg.com/assets/s143026_ld_h15_aa.png?lock=720x540
+fonte: https://d1z9okhs5q5o80.cloudfront.net/e8903f8e970841deb594cc7c7f11bc8a/etv6N316.m3u8
+nome: FAST (Movies)
+
+canal: FILMBOX+ Comedy Romania
+categoria: FAST Internacional
+logo: https://spiintl.com/data/files/kcfinderUploadDir/images/filmboxplus/filmbox%2Bcomedy.png
+fonte: https://nosignal1.antenaplay.ro/hls/fb-comedy-hd/index.m3u8
+nome: FAST (Movies)
+
+canal: Goldmines Action
+categoria: FAST Internacional
+logo: https://yt3.googleusercontent.com/_X6U6bMLF-pTu5wBMFwsSI6aubGrXk2B0kUKdGiLIMqFLyDIne4Ot4ro76BS1S8fX3pWcCwS=s900-c-k-c0x00ffffff-no-rj
+fonte: https://fta.ektv.in/live/584/master.m3u8
+nome: FAST (Movies)
+
+canal: Grand Cinema
+categoria: FAST Internacional
+fonte: https://gcinemahls.wns.live/hls/stream.m3u8
+nome: FAST (Movies)
+
+canal: Gravitas Movies
+categoria: FAST Internacional
+logo: https://i.imgur.com/H2hD4vT.png
+fonte: https://d6dg3ebeih71x.cloudfront.net/Gravitas_Movies.m3u8
+nome: FAST (Movies)
+
+canal: Grjngo Western Movies
+categoria: FAST Internacional
+logo: https://i.imgur.com/wFqhK3p.png
+fonte: https://amogonetworx-grjngo-3-dk.samsung.wurl.tv/playlist.m3u8
+nome: FAST (Movies)
+
+canal: Hallmark Movies & More
+categoria: FAST Internacional
+logo: https://provider-static.plex.tv/epg/cms/production/29af70d1-d3ba-4a16-bc4d-bd99e7e7def4/hallmark-movies-and-more_color.png
+fonte: https://dbrb49pjoymg4.cloudfront.net/v1/master/3fec3e5cac39a52b2132f9c66c83dae043dc17d4/prod_default_xumo-ams-aws/master.m3u8?ads.xumo_channelId=99991709
+nome: FAST (Movies)
+
+canal: Harbin Movie Channel
+categoria: FAST Internacional
+logo: https://www.tvchinese.net/uploads/tv/haerbin.jpg
+fonte: https://stream.hrbtv.net/yspd/playlist.m3u8
+nome: FAST (Movies)
+
+canal: Jalsha Movies
+categoria: FAST Internacional
+logo: https://i.imgur.com/25eWjX2.png
+fonte: https://box.bbaria.net:8083/Jalsha_Movie/tracks-v1a1/mono.m3u8
+nome: FAST (Movies)
+
+canal: KidsFlix
+categoria: FAST Internacional
+logo: https://i.imgur.com/4Pn0ADQ.png
+fonte: https://stream-us-east-1.getpublica.com/playlist.m3u8?network_id=50
+nome: FAST (Movies)
+
+canal: Maha Movie
+categoria: FAST Internacional
+logo: https://jiotvimages.cdn.jio.com/dare_images/images/Maha_Movies.png
+fonte: https://fta.ektv.in/live/48/48_0.m3u8
+nome: FAST (Movies)
+
+canal: Maverick Black Cinema
+categoria: FAST Internacional
+logo: https://images.fubo.tv/station_logos/maverick_black_cinema_c.png
+fonte: https://maverick-maverick-black-cinema-3-us.roku.wurl.tv/playlist.m3u8
+nome: FAST (Movies)
+
+canal: Maxcine Comedy
+categoria: FAST Internacional
+logo: https://gia.tv/streams/pptv/208730.png
+fonte: https://183.giatvcdn.com/giatvplayout7/giatv-208730/playlist.m3u8
+nome: FAST (Movies)
+
+canal: Maxcine Kids
+categoria: FAST Internacional
+logo: https://gia.tv/streams/pptv/209909.png
+fonte: https://183.giatvcdn.com/giatvplayout7/giatv-209909/playlist.m3u8
+nome: FAST (Movies)
+
+canal: MH One Movies
+categoria: FAST Internacional
+fonte: https://fta.ektv.in/live/639/master.m3u8
+nome: FAST (Movies)
+
+canal: Movie Punjab
+categoria: FAST Internacional
+logo: https://papaji.freetvindia.com/media/900_FreeTV_Movie_punjab.png
+fonte: https://mumt01.tangotv.in/O5aw8Zn3MOVIEPUNJAB/index.m3u8
+nome: FAST (Movies)
+
+canal: Movies Action
+categoria: FAST Internacional
+logo: https://i.imgur.com/NIVhISa.png
+fonte: https://shd-amg-fast.edgenextcdn.net/tx011/playlist.m3u8
+nome: FAST (Movies)
+
+canal: Movies Thriller
+categoria: FAST Internacional
+logo: https://i.imgur.com/JWihdcl.png
+fonte: https://shd-amg-fast.edgenextcdn.net/tx012/playlist.m3u8
+nome: FAST (Movies)
+
+canal: Movies! KPVM-LD
+categoria: FAST Internacional
+logo: https://i.imgur.com/gAGn3mK.png
+fonte: https://2-fss-2.streamhoster.com/pl_120/206858-4412962-1/playlist.m3u8
+nome: FAST (Movies)
+
+canal: MovieSphere
+categoria: FAST Internacional
+logo: https://i.imgur.com/h1ejU90.png
+fonte: https://amg00353-lionsgatestudio-moviesphere-xumo-zh5u0.amagi.tv/playlist.m3u8
+nome: FAST (Movies)
+
+canal: MovieSphere Gold WFXT
+categoria: FAST Internacional
+logo: https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/MovieSphere_Gold_2025_logo.svg/500px-MovieSphere_Gold_2025_logo.svg.png
+fonte: https://cdn-uw2-prod.tsv2.amagi.tv/linear/amg01438-ewscrippscompan-ionmystery-tablo/playlist.m3u8
+nome: FAST (Movies)
+
+canal: My Cinema Europe
+categoria: FAST Internacional
+logo: https://i.imgur.com/jz0d8tH.png
+fonte: https://op-group1-densxvisionhd-1.dens.tv/h/h18/index.m3u8
+nome: FAST (Movies)
+
+canal: NEW K.MOVIES
+categoria: FAST Internacional
+logo: https://i.imgur.com/wCgirjc.png
+fonte: https://ads.its-newid.net/api/manifest.m3u8?ads.service_id=GB1700007PK&channel_id=newid_343&tp=samsung_tvplus
+nome: FAST (Movies)
+
+canal: ON Movies
+categoria: FAST Internacional
+logo: https://i.ibb.co/fdbgvtT8/IMG-2523.webp
+fonte: https://freem3u.xyz/api/live/play.m3u8?vid=181
+nome: FAST (Movies)
+
+canal: Oscar Movies Bhojpuri
+categoria: FAST Internacional
+logo: https://dtil.tmsimg.com/assets/s143638_ld_h9_ab.png?lock=720x540
+fonte: https://cdn.pishow.tv/ott/live/233/master.m3u8
+nome: FAST (Movies)
+
+canal: Persiana Cinema
+categoria: FAST Internacional
+logo: https://i.imgur.com/hgIro9r.png
+fonte: https://cinehls.persiana.live/hls/stream.m3u8
+nome: FAST (Movies)
+
+canal: Popcorn Central
+categoria: FAST Internacional
+logo: https://i.imgur.com/ULGVjyC.png
+fonte: https://oly-ftvpc.otteravision.com/oly/ftvpc/ftvpc.m3u8
+nome: FAST (Movies)
+
+canal: Public Movies
+categoria: FAST Internacional
+logo: https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_PUBLIC_MOVIES/images/LOGO_HD/image.png
+fonte: https://fta.ektv.in/live/239/master.m3u8
+nome: FAST (Movies)
+
+canal: Rakuten TV Family Movies
+categoria: FAST Internacional
+logo: https://i.imgur.com/Meew6eX.png
+fonte: https://b0d59c8c98974e708e5ccb9a27cdfdfc.mediatailor.eu-west-1.amazonaws.com/v1/master/0547f18649bd788bec7b67b746e47670f558b6b2/production-LiveChannel-6205/master.m3u8
+nome: FAST (Movies)
+
+canal: Rakuten TV Family Movies Germany
+categoria: FAST Internacional
+logo: https://i.imgur.com/Meew6eX.png
+fonte: https://af230031eeac45f3b78d4f8a13265105.mediatailor.eu-west-1.amazonaws.com/v1/master/0547f18649bd788bec7b67b746e47670f558b6b2/production-LiveChannel-6209/master.m3u8
+nome: FAST (Movies)
+
+canal: Rotana Cinema Egypt
+categoria: FAST Internacional
+logo: https://i.imgur.com/dGlKoLW.png
+fonte: https://rotana.hibridcdn.net/rotananet/cinemamasr_net-7Y83PP5adWixDF93/playlist.m3u8
+nome: FAST (Movies)
+
+canal: Rotana Cinema KSA
+categoria: FAST Internacional
+logo: https://i.imgur.com/pGgp38I.png
+fonte: https://rotana.hibridcdn.net/rotananet/cinema_net-7Y83PP5adWixDF93/playlist.m3u8
+nome: FAST (Movies)
+
+canal: Shubh Cinema TV
+categoria: FAST Internacional
+logo: https://i.imgur.com/RQhorAG.png
+fonte: https://d393sxaxig6bax.cloudfront.net/out/v1/589cf2cf44bf42bb941e817a2240d62e/index.m3u8
+nome: FAST (Movies)
+
+canal: Silk Way Cinema
+categoria: FAST Internacional
+logo: https://www.cableman.ru/sites/default/files/Silk-way-CINEMA.png
+fonte: https://stream.qazcdn.net/ex6r514/silkwaycinema/index.m3u8
+nome: FAST (Movies)
+
+canal: Soneri Cinema
+categoria: FAST Internacional
+logo: https://papaji.freetvindia.com/media/1056_FreeTV_Soneri_Cinema.png
+fonte: https://samitaorigin.tangotv.in/SONERICINEMA/SAMITAORIGIN/index.m3u8
+nome: FAST (Movies)
+
+canal: Sony Movies (United States)
+categoria: FAST Internacional
+logo: https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Sony_Movies_Logo.svg/500px-Sony_Movies_Logo.svg.png
+fonte: https://a-cdn.klowdtv.com/live1/smc_720p/playlist.m3u8
+nome: FAST (Movies)
+
+canal: Sony One Hits Action
+categoria: FAST Internacional
+logo: https://i.imgur.com/pXsZEsR.png
+fonte: https://5098a8b860504a3690fd2e7c0a18d68f.mediatailor.us-west-2.amazonaws.com/v1/master/ba62fe743df0fe93366eba3a257d792884136c7f/LINEAR-817-FR-SONYONEHITSACTION-LG_FR/playlist.m3u8
+nome: FAST (Movies)
+
+canal: Star Maa Movies HD
+categoria: FAST Internacional
+logo: https://dtil.tmsimg.com/assets/s143826_ld_h15_aa.png?lock=720x540
+fonte: https://da86m1sqpm3o0.cloudfront.net/28072023/smil:maamovies.smil/chunklist_b2628000.m3u8
+nome: FAST (Movies)
+
+canal: The Movie Club
+categoria: FAST Internacional
+logo: https://tvpnlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/IN38000072R_20260325T012318SQUARE.png
+fonte: https://mumbai-edge.smartplaytv.in/TheMovieClub/index.m3u8
+nome: FAST (Movies)
+
+canal: The Movie Club +2
+categoria: FAST Internacional
+logo: https://tvpnlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/IN40000100Y_20260204T004058SQUARE.png
+fonte: https://d3gnyty2vddhsg.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/pb-ytipwjqub3kf8/TMC2_IN.m3u8?ads.ads_cdn=cf&ads.cdn=cf
+nome: FAST (Movies)
+
+canal: TVCARiB Cinema
+categoria: FAST Internacional
+logo: https://i.imgur.com/fvGlwKo.png
+fonte: https://cdn.mycloudstream.io/hls/live/broadcast/l3vslw4i/index.m3u8
+nome: FAST (Movies)
+
+canal: Whiplash Cinema
+categoria: FAST Internacional
+logo: https://whiplash.cc/assets/img/channels/whiplashcinema.png
+fonte: https://cdn.whiplash.cc/whiplash-cinema/index.m3u8
+nome: FAST (Movies)
+
+canal: ZB Cinema
+categoria: FAST Internacional
+logo: https://jiotvimages.cdn.jio.com/dare_images/images/ZBCINEMA.png
+fonte: https://server.zillarbarta.com/ZBCINEMA/index.m3u8
+nome: FAST (Movies)
+
+canal: Zee Cinema APAC
+categoria: FAST Internacional
+logo: https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_ZEE_CINEMA/images/LOGO_HD/LOGO_HD_image.png
+fonte: https://raw.githubusercontent.com/amazeyourself/adaptive-streams/refs/heads/main/streams/sg/YuppTV/ZeeCinemaAPAC.m3u8
+nome: FAST (Movies)
+
+canal: 4 Music
+categoria: FAST Internacional
+fonte: https://musichls.persiana.live/hls/stream.m3u8
+nome: FAST (Music)
+
+canal: 7S Music
+categoria: FAST Internacional
+logo: https://i.imgur.com/zDiIhdN.png
+fonte: https://cdn.pishow.tv/ott/live/1257/master.m3u8
+nome: FAST (Music)
+
+canal: 30A Music
+categoria: FAST Internacional
+logo: https://i.imgur.com/gNWg9tl.png
+fonte: https://30a-tv.com/music.m3u8
+nome: FAST (Music)
+
+canal: A2i Music
+categoria: FAST Internacional
+logo: https://i.imgur.com/Fykhzxh.jpg
+fonte: https://stream.sen-gt.com/A2iMusic/myStream/playlist.m3u8
+nome: FAST (Music)
+
+canal: B4U Music
+categoria: FAST Internacional
+logo: https://dtil.tmsimg.com/assets/s158141_ld_h15_aa.png?lock=720x540
+fonte: https://amg00877-b4unew-amg00877c3-xiaomi-in-5474.playouts.now.amagi.tv/720p/index.m3u8
+nome: FAST (Music)
+
+canal: California Music Channel
+categoria: FAST Internacional
+logo: https://i.imgur.com/FyNot5W.png
+fonte: https://cmc-cmctv-cineverse.amagi.tv/playlist.m3u8
+nome: FAST (Music)
+
+canal: City Eden Classic Music
+categoria: FAST Internacional
+logo: https://i.imgur.com/l7BE8l6.png
+fonte: https://cityeden.catcast.tv/content/47400/index.m3u8
+nome: FAST (Music)
+
+canal: CMC-USA Country Music Channel
+categoria: FAST Internacional
+logo: https://i.imgur.com/QsANRSu.png
+fonte: https://hwlive.streamingmediahosting.com/14215-live/0_obd393sh/playlist.m3u8
+nome: FAST (Music)
+
+canal: Deluxe Music
+categoria: FAST Internacional
+logo: https://i.imgur.com/HimuPPb.png
+fonte: https://sdn-global-live-streaming-packager-cache.3qsdn.com/13456/13456_264_live.m3u8
+nome: FAST (Music)
+
+canal: Dhoom Music
+categoria: FAST Internacional
+logo: https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_DHOOM_MUSIC/images/LOGO_HD/image.png
+fonte: https://cdn.pishow.tv/ott/live/1456/master.m3u8
+nome: FAST (Music)
+
+canal: Epic Music Digital
+categoria: FAST Internacional
+logo: https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_SHOWBOX/images/LOGO_HD/image.png
+fonte: https://cc-3cyxq80qusspd.akamaized.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-3cyxq80qusspd/playlist.m3u8
+nome: FAST (Music)
+
+canal: ETV Music
+categoria: FAST Internacional
+logo: https://jiotvimages.cdn.jio.com/dare_images/images/ETVMusic12.png
+fonte: https://d3q3jhzdhmsx48.cloudfront.net/78e9244a64104ef48987207cea0cf20b/index.m3u8
+nome: FAST (Music)
+
+canal: FMTV
+categoria: FAST Internacional
+logo: https://i.imgur.com/vPxvbVv.png
+fonte: https://s2.tvdatta.com:3307/hybrid/play.m3u8
+nome: FAST (Music)
+
+canal: Hare Krsna Music
+categoria: FAST Internacional
+logo: https://jiotvimages.cdn.jio.com/dare_images/images/Hare_Krsna_music.png
+fonte: https://d1y1fq5zo7b6pt.cloudfront.net/v1/master/071c0467fcd02420cdf0d8a1ca3524b96c27a151/hkmusic/HKTV/HKMusic/playlist.m3u8
+nome: FAST (Music)
+
+canal: JooMusic
+categoria: FAST Internacional
+logo: https://i.imgur.com/KHuKQQL.png
+fonte: https://livecdn.live247stream.com/joomusic/tv/playlist.m3u8
+nome: FAST (Music)
+
+canal: KN Music TV
+categoria: FAST Internacional
+logo: https://www.knmusictv.com/wp-content/uploads/2026/01/LOGO2112.png
+fonte: https://cdn4.yayin.com.tr/kntv/tracks-v1a1/mono.m3u8
+nome: FAST (Music)
+
+canal: Kral Pop TV
+categoria: FAST Internacional
+logo: https://i.imgur.com/ch365lh.png
+fonte: https://dogus-live.daioncdn.net/kralpoptv/playlist.m3u8
+nome: FAST (Music)
+
+canal: M6 Music
+categoria: FAST Internacional
+logo: https://static.wikia.nocookie.net/logopedia/images/6/68/M6music-95cde0867d.svg/revision/latest?cb=20200412210630
+fonte: https://r.eu.cdn-redge.media/livehls/oeu/mt/live/m6_music_hits/live.livx/playlist.m3u8
+nome: FAST (Music)
+
+canal: MasMusica FM
+categoria: FAST Internacional
+logo: https://i.imgur.com/tCg7owd.png
+fonte: https://movil.ejeserver.com/live/masmusica.m3u8
+nome: FAST (Music)
+
+canal: Megogo Music
+categoria: FAST Internacional
+logo: https://upload.wikimedia.org/wikipedia/commons/0/04/MEGOGO_Music_%28%D1%82%D0%B5%D0%BB%D0%B5%D0%BA%D0%B0%D0%BD%D0%B0%D0%BB%29.png
+fonte: https://ext.cdn.nashnet.tv/228.0.2.214/index.m3u8
+nome: FAST (Music)
+
+canal: Mh 1 Music
+categoria: FAST Internacional
+logo: https://dtil.tmsimg.com/assets/s143539_ld_h15_aa.png?lock=720x540
+fonte: https://livestream.jswk.online/playlisttest/live/playlist.m3u8
+nome: FAST (Music)
+
+canal: Movie Music by Stingray
+categoria: FAST Internacional
+logo: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2CSpCdAxnLpqebMLZh6h7vMPk6LYpdqkVHA&s
+fonte: https://lotus.stingray.com/manifest/cmusic-cme004-montreal/samsungtvplus/master.m3u8
+nome: FAST (Music)
+
+canal: Music IL
+categoria: FAST Internacional
+logo: https://i.imgur.com/tTVOc31.png
+fonte: https://r.il.cdn-redge.media/livehls/oil/freetv/live/music_il/live.livx/playlist.m3u8
+nome: FAST (Music)
+
+canal: Music India
+categoria: FAST Internacional
+logo: https://dtil.tmsimg.com/assets/s143563_ld_h15_aa.png?lock=720x540
+fonte: https://fta.ektv.in/live/158/master.m3u8
+nome: FAST (Music)
+
+canal: Music Information Channel
+categoria: FAST Internacional
+logo: https://i.imgur.com/OUPGCWG.png
+fonte: https://mic.siar.us/mic/live/mic.m3u8
+nome: FAST (Music)
+
+canal: Music TV Granada
+categoria: FAST Internacional
+logo: https://i.ibb.co/Swd9NP7n/music-tv-granada.png
+fonte: https://cloudvideo.servers10.com:8081/8032/index.m3u8
+nome: FAST (Music)
+
+canal: NASHE Music
+categoria: FAST Internacional
+logo: https://i.imgur.com/ienkbOc.png
+fonte: https://cdn15.live-tv.cloud/ua_infinitas_tv/nashemus-abr/playlist.m3u8
+nome: FAST (Music)
+
+canal: NEW K-POP
+categoria: FAST Internacional
+logo: https://i.imgur.com/B7ILXMc.png
+fonte: https://ads.its-newid.net/api/manifest.m3u8?ads.service_id=GB17000088V&channel_id=newid_086&tp=samsung_tvplus
+nome: FAST (Music)
+
+canal: NogoumFMTV
+categoria: FAST Internacional
+logo: https://i.imgur.com/krp3kgv.png
+fonte: https://nogoumtv.nrpstream.com/hls/stream.m3u8
+nome: FAST (Music)
+
+canal: ON Music
+categoria: FAST Internacional
+logo: https://i.ibb.co/DHk2gv86/IMG-2524.webp
+fonte: https://freem3u.xyz/api/live/play.m3u8?vid=185
+nome: FAST (Music)
+
+canal: Oxygen Music
+categoria: FAST Internacional
+logo: https://oxygenmusic.hu/static/media/logo.png
+fonte: https://oxygenmusic.hu:2443/hls/oxygenmusic.m3u8
+nome: FAST (Music)
+
+canal: POP World TV
+categoria: FAST Internacional
+logo: https://i.imgur.com/LQB6G3s.jpg
+fonte: https://janus.xpbroadcasting.com:8443/hls/popworld.m3u8
+nome: FAST (Music)
+
+canal: PTC Music
+categoria: FAST Internacional
+logo: https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_PTC_MUSIC/images/LOGO_HD/image.png
+fonte: https://d2lk5u59tns74c.cloudfront.net/out/v1/f913cf893c594f73b114216e74a2efbc/index.m3u8
+nome: FAST (Music)
+
+canal: Public Music
+categoria: FAST Internacional
+logo: https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_PUBLIC_MUSIC/images/LOGO_HD/image.png
+fonte: https://fta.ektv.in/live/240/master.m3u8
+nome: FAST (Music)
+
+canal: Punjabi Music HD
+categoria: FAST Internacional
+logo: https://papaji.freetvindia.com/media/Punjabi_Music_HD.png
+fonte: https://samitaorigin.tangotv.in/PUNJABIMUSICHD/SAMITAORIGIN/index.m3u8
+nome: FAST (Music)
+
+canal: Qwest TV Jazz & Beyond
+categoria: FAST Internacional
+logo: https://i.imgur.com/89yWH5L.png
+fonte: https://samsungau-qwestjazz-samsungtv-zw2jc.amagi.tv/playlist/samsungau-qwestjazz-samsungtv/playlist.m3u8
+nome: FAST (Music)
+
+canal: Retro Music TV
+categoria: FAST Internacional
+logo: https://i.imgur.com/pyOjdZs.png
+fonte: https://stream.mediawork.cz/retrotv/retrotvHQ1/playlist.m3u8
+nome: FAST (Music)
+
+canal: Retromusica Television
+categoria: FAST Internacional
+logo: https://cdn.m3u.cl/logo/1765_Retromusica_Television.png
+fonte: https://vdochile.com:3864/stream/play.m3u8
+nome: FAST (Music)
+
+canal: Rock TV (Romania)
+categoria: FAST Internacional
+logo: https://i.imgur.com/VB88A5V.png
+fonte: https://tv.broadcasting.ro/rocktv/85c83a80-4f71-4f2d-a8d6-43f676896bcb.m3u8
+nome: FAST (Music)
+
+canal: Rotana Music
+categoria: FAST Internacional
+logo: https://i.imgur.com/2zFQbQi.png
+fonte: https://rotana.hibridcdn.net/rotananet/music_net-7Y83PP5adWixDF93/playlist.m3u8
+nome: FAST (Music)
+
+canal: Sol Musica
+categoria: FAST Internacional
+logo: https://i.imgur.com/rbJrmPw.png
+fonte: https://d2glyu450vvghm.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-21u4g5cjglv02/sm.m3u8
+nome: FAST (Music)
+
+canal: Steelbird Music
+categoria: FAST Internacional
+logo: https://jiotvimages.cdn.jio.com/dare_images/images/Steelbird_Music.png
+fonte: https://cdn2.in/SteelbirdMusicTVhls/live.m3u8
+nome: FAST (Music)
+
+canal: Stingray Classic Rock
+categoria: FAST Internacional
+logo: https://i.imgur.com/FBgu8yB.png
+fonte: https://lotus.stingray.com/manifest/ose-101ads-montreal/samsungtvplus/master.m3u8
+nome: FAST (Music)
+
+canal: Stingray Classica
+categoria: FAST Internacional
+logo: https://i.imgur.com/nh1k5RC.png
+fonte: https://lotus.stingray.com/manifest/classica-cla008-montreal/samsungtvplus/master.m3u8
+nome: FAST (Music)
+
+canal: Stingray DJAZZ
+categoria: FAST Internacional
+logo: https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Stingray_Djazz.png/960px-Stingray_Djazz.png
+fonte: https://lotus.stingray.com/manifest/djazz-djaads-montreal/samsungtvplus/master.m3u8
+nome: FAST (Music)
+
+canal: Stingray Rock Alternative
+categoria: FAST Internacional
+logo: https://i.imgur.com/mt8ulVX.png
+fonte: https://lotus.stingray.com/manifest/ose-102ads-montreal/samsungtvplus/master.m3u8
+nome: FAST (Music)
+
+canal: Stingray Smooth Jazz
+categoria: FAST Internacional
+logo: https://i.imgur.com/h1DsOzH.png
+fonte: https://lotus.stingray.com/manifest/ose-140ads-montreal/samsungtvplus/master.m3u8
+nome: FAST (Music)
+
+canal: Stingray Today's K-Pop
+categoria: FAST Internacional
+logo: https://i.imgur.com/mMbntB5.png
+fonte: https://lotus.stingray.com/manifest/ose-317ads-montreal/samsungtvplus/master.m3u8
+nome: FAST (Music)
+
+canal: Stingray Today's Latin Pop
+categoria: FAST Internacional
+logo: https://i.imgur.com/Os3kRRP.png
+fonte: https://lotus.stingray.com/manifest/ose-190ads-montreal/samsungtvplus/master.m3u8
+nome: FAST (Music)
+
+canal: Supermusica TV
+categoria: FAST Internacional
+logo: https://i.imgur.com/MiVs42N.jpeg
+fonte: https://backupmaxmedia.hvmultiplay.com/hls/stream4/supermusica.m3u8
+nome: FAST (Music)
+
+canal: Tarang Music
+categoria: FAST Internacional
+logo: https://i.imgur.com/oSm8zFD.png
+fonte: https://livetv.tarangplus.in/tarangmusic-origin/live/playlist.m3u8
+nome: FAST (Music)
+
+canal: Tele7music (576i)
+categoria: FAST Internacional
+logo: https://i.imgur.com/11b5W8u.png
+fonte: https://live.tele7music.ro/hls/stream/index.m3u8
+nome: FAST (Music)
+
+canal: Tequila Music TV
+categoria: FAST Internacional
+logo: https://tequilamusic.net/imagini/tv-logo.png
+fonte: https://stream.tequilamusic.net/hls/tequila_tv.m3u8
+nome: FAST (Music)
+
+canal: Totalmusic 80s
+categoria: FAST Internacional
+logo: https://static.elektamedia.com/ch/tmc_80s.png
+fonte: https://cdn.global.elektamedia.com/live/c7eds/Totalmusic_80s/SA_LIVE_hls_enc/master.m3u8
+nome: FAST (Music)
+
+canal: Totalmusic 2000s
+categoria: FAST Internacional
+fonte: https://cdn.global.elektamedia.com/live/c7eds/Totalmusic_00s/SA_LIVE_hls_enc/master.m3u8
+nome: FAST (Music)
+
+canal: Totalmusic
+categoria: FAST Internacional
+logo: https://static.elektamedia.com/ch/tmc_main.png
+fonte: https://cdn.global.elektamedia.com/live/c7eds/Totalmusic/SA_LIVE_hls_enc/master.m3u8
+nome: FAST (Music)
+
+canal: Totalmusic Concerts
+categoria: FAST Internacional
+logo: https://static.elektamedia.com/ch/tmc_concerts.png
+fonte: https://cdn.global.elektamedia.com/live/c7eds/Totalmusic_Concerts/SA_LIVE_hls_enc/master.m3u8
+nome: FAST (Music)
+
+canal: Totalmusic Dance
+categoria: FAST Internacional
+logo: https://static.elektamedia.com/ch/tmc_dance.png
+fonte: https://cdn.global.elektamedia.com/live/c7eds/Totalmusic_Dance/SA_LIVE_hls_enc/master.m3u8
+nome: FAST (Music)
+
+canal: Vantage Rock
+categoria: FAST Internacional
+logo: https://vantagetv.ee/vantage_rock.png
+fonte: https://hls.vantagetv.ee/vrock_stream/index.m3u8
+nome: FAST (Music)
+
+canal: Vevo Hip Hop
+categoria: FAST Internacional
+logo: https://i.imgur.com/Lbc9cYw.png
+fonte: https://d3vgs3ro3x6v8a.cloudfront.net/Vevo_Hip_Hop.m3u8
+nome: FAST (Music)
+
+canal: Vevo Latino
+categoria: FAST Internacional
+logo: https://i.imgur.com/D7SwmuB.png
+fonte: https://amg00056-amg00056c13-rakuten-es-3246.playouts.now.amagi.tv/playlist.m3u8
+nome: FAST (Music)
+
+canal: Vevo R&B
+categoria: FAST Internacional
+logo: https://images.pluto.tv/channels/5da0d83f66c9700009b96d0e/featuredImage.jpg
+fonte: https://d1hf773q57zx9s.cloudfront.net/Vevo_R_B.m3u8
+nome: FAST (Music)
+
+canal: Vintage Music
+categoria: FAST Internacional
+logo: https://i.imgur.com/KImqYnN.jpeg
+fonte: https://59ef525c24caa.streamlock.net/vmtv/tvvintage/playlist.m3u8
+nome: FAST (Music)
+
+canal: XITE Just Chill
+categoria: FAST Internacional
+logo: https://provider-static.plex.tv/epg/cms/production/927dd614-017d-49dd-9eb9-0ed79d09084e/xitejustchill_logo_light_-_Arlette_FiranRDX.png
+fonte: https://dvnftgdlbnemm.cloudfront.net/XITE_Just_Chill.m3u8
+nome: FAST (Music)
+
+canal: XITE Rock x Metal
+categoria: FAST Internacional
+logo: https://i.imgur.com/uIIUIuN.png
+fonte: https://d198ro05q94rc4.cloudfront.net/XITE_Rock_On.m3u8
+nome: FAST (Music)
+
+canal: YRF Music
+categoria: FAST Internacional
+logo: https://i.imgur.com/pKj3F4M.png
+fonte: https://cdn-uw2-prod.tsv2.amagi.tv/linear/amg01412-xiaomiasia-yrfmusic-xiaomi/playlist.m3u8
+nome: FAST (Music)
+
+canal: YRF Music Nepal
+categoria: FAST Internacional
+logo: https://i.imgur.com/mxx05Z9.png
+fonte: https://vidaa.kableone.com/hls/live/2111218/YrfMusic/1.m3u8
+nome: FAST (Music)
+
+canal: ZB Music
+categoria: FAST Internacional
+logo: https://jiotvimages.cdn.jio.com/dare_images/images/zbmusic.png
+fonte: https://server.zillarbarta.com/zbmusic/index.m3u8
+nome: FAST (Music)
+
+canal: Asharq Documentary
+categoria: FAST Internacional
+logo: https://i.imgur.com/v6VsFEt.png
+fonte: https://svs.itworkscdn.net/asharqdocumentarylive/asharqdocumentary.smil/playlist_dvr.m3u8
+nome: FAST (Doc)
+
+canal: Autentic History
+categoria: FAST Internacional
+logo: https://d3b6luslimvglo.cloudfront.net/images/79/rlaxximages/channels-rescaled/icon-white/autentichistory_white.png
+fonte: https://9e754fa707344ccca6d84955c8fcaf36.mediatailor.us-east-1.amazonaws.com/v1/master/44f73ba4d03e9607dcd9bebdcb8494d86964f1d8/RlaxxTV-eu_AutenticHistory/playlist.m3u8
+nome: FAST (Doc)
+
+canal: Bloomberg Originals
+categoria: FAST Internacional
+logo: https://jiotvimages.cdn.jio.com/dare_images/images/Bloomberg_Originals.png
+fonte: https://bloomberg.com/media-manifest/streams/qt.m3u8
+nome: FAST (Doc)
+
+canal: Bloomberg Originals SD
+categoria: FAST Internacional
+logo: https://jiotvimages.cdn.jio.com/dare_images/images/Bloomberg_Originals.png
+fonte: https://86fdc85a.wurl.com/master/f36d25e7e52f1ba8d7e56eb859c636563214f541/TEctZ2JfQmxvb21iZXJnT3JpZ2luYWxzX0hMUw/playlist.m3u8
+nome: FAST (Doc)
+
+canal: CGTN Documentary
+categoria: FAST Internacional
+logo: https://i.imgur.com/JHv0WxM.png
+fonte: https://amg00405-rakutentv-cgtndocumentary-rakuten-0ql8j.amagi.tv/master.m3u8
+nome: FAST (Doc)
+
+canal: Documentary+
+categoria: FAST Internacional
+logo: https://i.imgur.com/x57klfS.png
+fonte: https://ef79b15c8c7c46c7a9de9d33001dbd07.mediatailor.us-west-2.amazonaws.com/v1/master/ba62fe743df0fe93366eba3a257d792884136c7f/LINEAR-859-DOCUMENTARYPLUS-DOCUMENTARYPLUS/mt/documentaryplus/859/hls/master/playlist.m3u8
+nome: FAST (Doc)
+
+canal: History Asia
+categoria: FAST Internacional
+logo: https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/History_%282021%29.svg/500px-History_%282021%29.svg.png
+fonte: https://freem3u.xyz/api/live/play.m3u8?vid=9856
+nome: FAST (Doc)
+
+canal: INWILD
+categoria: FAST Internacional
+logo: https://cdn.uc.assets.prezly.com/92770c71-9d6f-400f-8311-38e9cfec52c2/InWild_landscape-green.png
+fonte: https://amg00861-terninternation-inwild-samsunguk-w5wic.amagi.tv/playlist/amg00861-terninternation-inwild-samsunguk/playlist.m3u8
+nome: FAST (Doc)
+
+canal: Karbala Documentary
+categoria: FAST Internacional
+logo: https://www.karbala-tv.iq/documentary/static/img/logo.png
+fonte: https://ktvlive.online/stream/hls/ch3.m3u8
+nome: FAST (Doc)
+
+canal: RT Documentary
+categoria: FAST Internacional
+logo: https://i.imgur.com/aeu5zIC.png
+fonte: https://rt-rtd.rttv.com/dvr/rtdoc/playlist.m3u8
+nome: FAST (Doc)
+
+canal: Terra Mater WILD
+categoria: FAST Internacional
+logo: https://i.imgur.com/EbMK3Ph.png
+fonte: https://53ff3982.wurl.com/master/f36d25e7e52f1ba8d7e56eb859c636563214f541/UmxheHhUVi1ldV9UZXJyYU1hdGVyV2lsZF9ITFM/playlist.m3u8
+nome: FAST (Doc)
+
+canal: WildEarth
+categoria: FAST Internacional
+logo: https://i.imgur.com/Vhv5gjN.png
+fonte: https://dqga3jatxofgx.cloudfront.net/WildEarth.m3u8
+nome: FAST (Doc)
+
+canal: 4 Fun Kids (576i)
+categoria: FAST Internacional
+logo: https://i.imgur.com/2JO5Y8c.png
+fonte: https://stream.4fun.tv:8889/hls/4fk.m3u8
+nome: FAST (Kids)
+
+canal: 13 Kids
+categoria: FAST Internacional
+logo: https://i.imgur.com/8WJUbSD.png
+fonte: https://origin.dpsgo.com/ssai/event/LhHrVtyeQkKZ-Ye_xEU75g/master.m3u8
+nome: FAST (Kids)
+
+canal: ABC Kids
+categoria: FAST Internacional
+logo: https://static.wikia.nocookie.net/logopedia/images/2/29/ABC_Kids_%282020%29.svg/revision/latest/scale-to-width-down/512
+fonte: https://c.mjh.nz/abc-kids.m3u8
+nome: FAST (Kids)
+
+canal: Akili Kids!
+categoria: FAST Internacional
+logo: https://i.imgur.com/xFm2co6.png
+fonte: https://m6.livecdn.io/akilikids.co.ke/akilikids.smil/playlist.m3u8
+nome: FAST (Kids)
+
+canal: BeJoy.kids
+categoria: FAST Internacional
+logo: https://bejoy.kids/wp-content/uploads/2025/09/Logo_Bejoy.png
+fonte: https://stream.paroledivita.org/bejoy.m3u8
+nome: FAST (Kids)
+
+canal: Bravo! Kids TV
+categoria: FAST Internacional
+logo: https://i.imgur.com/JcJ6fQ9.png
+fonte: https://streaming.radiohub.hr/RadioHub_WEB_streaming/BHWUC27pGZ/3.m3u8
+nome: FAST (Kids)
+
+canal: Cartoon Network (Pakistan)
+categoria: FAST Internacional
+logo: https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Cartoon_Network_2010_logo.svg/960px-Cartoon_Network_2010_logo.svg.png
+fonte: https://vodzong.mjunoon.tv:8087/streamtest/cartoon-network-87/live/87H/chunks.m3u8
+nome: FAST (Kids)
+
+canal: Cartoon Network Asia
+categoria: FAST Internacional
+logo: https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Cartoon_Network_2010_logo.svg/960px-Cartoon_Network_2010_logo.svg.png
+fonte: https://cdn4.skygo.mn/live/disk1/Cartoon_Network/HLSv3-FTA/Cartoon_Network.m3u8
+nome: FAST (Kids)
+
+canal: Cartoonito HD
+categoria: FAST Internacional
+logo: https://i.imgur.com/6vYWCD0.png
+fonte: https://boing.akamaized.net/6380673432112/eu-central-1/6284318116001/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJob3N0Ijoib3dwbnN1LmVncmVzcy5haGc3NmwiLCJhY2NvdW50X2lkIjoiNjI4NDMxODExNjAwMSIsImVobiI6ImJvaW5nLmFrYW1haXplZC5uZXQiLCJpc3MiOiJibGl2ZS1wbGF5YmFjay1zb3VyY2UtYXBpIiwic3ViIjoicGF0aG1hcHRva2VuIiwiYXVkIjpbIjYyODQzMTgxMTYwMDEiXSwianRpIjoiNjM4MDY3MzQzMjExMiJ9.WACYETOZxZYmZHRpxwRrATxVZQBdSoeaWdfhtLKx1kI/playlist-hls.m3u8
+nome: FAST (Kids)
+
+canal: Dios Te Ve Kids
+categoria: FAST Internacional
+logo: https://i.imgur.com/GnZicVH.png
+fonte: https://s.emisoras.tv:8081/diostevekids/index.m3u8
+nome: FAST (Kids)
+
+canal: EBS Kids
+categoria: FAST Internacional
+logo: https://i.imgur.com/62oo8Bx.png
+fonte: https://ebsonair.ebs.co.kr/ebsufamilypc/familypc1m/playlist.m3u8
+nome: FAST (Kids)
+
+canal: Epic Kids Digital
+categoria: FAST Internacional
+logo: https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_GUBBARE/images/LOGO_HD/image.png
+fonte: https://cc-t8lqe1o99pszu.akamaized.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-t8lqe1o99pszu/playlist.m3u8
+nome: FAST (Kids)
+
+canal: Extrema Kids TV
+categoria: FAST Internacional
+logo: https://www.vivalivetv.com/public/files/shows/0/1/3027-294x165-FFFFFF.jpg
+fonte: https://627bb251f23c7.streamlock.net:444/ExtremaKids/ExtremaKids/playlist.m3u8
+nome: FAST (Kids)
+
+canal: HappyKids
+categoria: FAST Internacional
+logo: https://i.imgur.com/cPrUCFw.png
+fonte: https://dil9xdvretp0f.cloudfront.net/index.m3u8
+nome: FAST (Kids)
+
+canal: JapanimTV
+categoria: FAST Internacional
+logo: https://static-cdn.jtvnw.net/jtv_user_pictures/6b97e19f-4243-4d48-b794-ff8cf54d795f-profile_image-300x300.png
+fonte: https://foxkidstv.be:3369/stream/play.m3u8
+nome: FAST (Kids)
+
+canal: Logos TV Kids
+categoria: FAST Internacional
+logo: https://i.imgur.com/Kr3U3Ub.png
+fonte: https://streamer1.streamhost.org/salive/logoskidsH/playlist.m3u8
+nome: FAST (Kids)
+
+canal: ON Kids
+categoria: FAST Internacional
+logo: https://i.ibb.co/RGsg8XfM/IMG-2512.webp
+fonte: https://freem3u.xyz/api/live/play.m3u8?vid=179
+nome: FAST (Kids)
+
+canal: PBS Kids
+categoria: FAST Internacional
+logo: https://i.imgur.com/fg8c9WK.png
+fonte: https://livestream.pbskids.org/out/v1/14507d931bbe48a69287e4850e53443c/est.m3u8
+nome: FAST (Kids)
+
+canal: PBS Kids Alaska
+categoria: FAST Internacional
+logo: https://i.imgur.com/ambc9le.png
+fonte: https://livestream.pbskids.org/out/v1/94b88ad58fc14f84a9382341f1c00b82/akst.m3u8
+nome: FAST (Kids)
+
+canal: PBS Kids Eastern/Central
+categoria: FAST Internacional
+logo: https://upload.wikimedia.org/wikipedia/commons/e/e3/PBS_Kids_logo_%282022%29.svg
+fonte: https://2-fss-2.streamhoster.com/pl_140/amlst:200914-1298290/playlist.m3u8
+nome: FAST (Kids)
+
+canal: PBS Kids Hawaii
+categoria: FAST Internacional
+logo: https://i.imgur.com/ambc9le.png
+fonte: https://livestream.pbskids.org/out/v1/aa31792fee094b24b09045483f04d150/hast.m3u8
+nome: FAST (Kids)
+
+canal: PBS Kids Mountain
+categoria: FAST Internacional
+logo: https://upload.wikimedia.org/wikipedia/commons/e/e3/PBS_Kids_logo_%282022%29.svg
+fonte: https://livestream.pbskids.org/out/v1/3fe3030a2c8045a3932f4289d9eba3e6/mst.m3u8
+nome: FAST (Kids)
+
+canal: PBS Kids Pacific
+categoria: FAST Internacional
+logo: https://upload.wikimedia.org/wikipedia/commons/e/e3/PBS_Kids_logo_%282022%29.svg
+fonte: https://livestream.pbskids.org/out/v1/11f2e6b73eaa4887b3746cb863960e79/pst.m3u8
+nome: FAST (Kids)
+
+canal: Sat 7 Kids
+categoria: FAST Internacional
+logo: https://i.imgur.com/M0ik0i2.png
+fonte: https://svs.itworkscdn.net/sat7kidslive/sat7kids.smil/playlist_dvr.m3u8
+nome: FAST (Kids)
+
+canal: TVCARiB Kids & Teens
+categoria: FAST Internacional
+logo: https://i.imgur.com/fvGlwKo.png
+fonte: https://cdn.mycloudstream.io/hls/live/broadcast/nro19k2h/index.m3u8
+nome: FAST (Kids)
+
+canal: TVOKids
+categoria: FAST Internacional
+logo: https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tvokids-logo.svg/960px-Tvokids-logo.svg.png
+fonte: https://fastly.live.brightcove.com/6369851620112/us-east-1/15364602001/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJob3N0IjoicGZncmlmLmVncmVzcy50N2M3emwiLCJhY2NvdW50X2lkIjoiMTUzNjQ2MDIwMDEiLCJlaG4iOiJmYXN0bHkubGl2ZS5icmlnaHRjb3ZlLmNvbSIsImlzcyI6ImJsaXZlLXBsYXliYWNrLXNvdXJjZS1hcGkiLCJzdWIiOiJwYXRobWFwdG9rZW4iLCJhdWQiOlsiMTUzNjQ2MDIwMDEiXSwianRpIjoiNjM2OTg1MTYyMDExMiJ9.zRE6fD9JwdbNLUIK5zgvlTAvXCQ3HeeE5p0yH0Pd3-Q/playlist-hls.m3u8
+nome: FAST (Kids)
+
+canal: Xtrema Cartoons
+categoria: FAST Internacional
+logo: https://i.imgur.com/X2d8y4e.png
+fonte: https://stmv6.voxtvhd.com.br/xtremacartoons/xtremacartoons/playlist.m3u8
+nome: FAST (Kids)
+
+canal: ZB Cartoon
+categoria: FAST Internacional
+logo: https://jiotvimages.cdn.jio.com/dare_images/images/zbcatun.png
+fonte: https://server.zillarbarta.com/zbcatun/video.m3u8
+nome: FAST (Kids)

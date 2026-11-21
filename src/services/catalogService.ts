@@ -276,7 +276,9 @@ function normalizeNameKey(name: string): string {
 }
 
 function mergeWithOpenFastChannels(saimoChannels: Channel[]): Channel[] {
-  const openFast = FALLBACK_CHANNELS.filter((c) => c.id.startsWith('pub_'));
+  const openFast = FALLBACK_CHANNELS.filter(
+    (c) => c.id.startsWith('pub_') || c.id.startsWith('intl_')
+  );
   const seenNames = new Set(saimoChannels.map((c) => normalizeNameKey(c.name)));
   const combined = [...saimoChannels];
 
@@ -326,7 +328,7 @@ export const catalogService = {
             const finalChannels = isDefaultSaimo ? mergeWithOpenFastChannels(parsed) : parsed;
             cachedChannels = finalChannels;
             try {
-              localStorage.setItem('kestrel_cached_catalogo_v3', text);
+              localStorage.setItem('kestrel_cached_catalogo_v4', text);
             } catch {}
             return finalChannels;
           }
@@ -351,7 +353,7 @@ export const catalogService = {
 
     // 3. Cache local no navegador
     try {
-      const savedText = localStorage.getItem('kestrel_cached_catalogo_v3');
+      const savedText = localStorage.getItem('kestrel_cached_catalogo_v4');
       if (savedText) {
         const parsed = parseCatalogText(savedText);
         if (parsed.length > 0) {

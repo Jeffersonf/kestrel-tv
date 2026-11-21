@@ -1,8 +1,6 @@
-// kestrelTV Service Worker - PWA Shell Cache
-const CACHE_NAME = 'kestrel-tv-shell-v4';
+// kestrelTV Service Worker - Network-First para HTML + Cache para assets com hash
+const CACHE_NAME = 'kestrel-tv-shell-v5';
 const STATIC_ASSETS = [
-  './',
-  './index.html',
   './manifest.json',
   './icons/icon-192.png',
   './icons/icon-512.png',
@@ -34,7 +32,6 @@ self.addEventListener('activate', (event) => {
 self.addEventListener('fetch', (event) => {
   const url = event.request.url;
 
-  // Streams, playlists externas e EPG devem ir direto para a rede
   if (
     event.request.method !== 'GET' ||
     url.includes('.m3u8') ||
@@ -49,23 +46,33 @@ self.addEventListener('fetch', (event) => {
     return;
   }
 
+  // Navegação / index.html sempre tenta rede primeiro para não prender em versão antiga
+  if (event.request.mode === 'navigate' || url.endsWith('/') || url.endsWith('/index.html')) {
+    event.respondWith(
+      fetch(event.request)
+        .then((networkResponse) => {
+          if (networkResponse && networkResponse.status === 200) {
+            const copy = networkResponse.clone();
+            caches.open(CACHE_NAME).then((cache) => cache.put(event.request, copy));
+          }
+          return networkResponse;
+        })
+        .catch(() => caches.match(event.request).then((res) => res || caches.match('./index.html')))
+    );
+    return;
+  }
+
+  // Assets com hash e ícones
   event.respondWith(
     caches.match(event.request).then((cachedResponse) => {
-      const fetchPromise = fetch(event.request).then((networkResponse) => {
+      if (cachedResponse) return cachedResponse;
+      return fetch(event.request).then((networkResponse) => {
         if (networkResponse && networkResponse.status === 200 && networkResponse.type === 'basic') {
-          const responseToCache = networkResponse.clone();
-          caches.open(CACHE_NAME).then((cache) => {
-            cache.put(event.request, responseToCache);
-          });
+          const copy = networkResponse.clone();
+          caches.open(CACHE_NAME).then((cache) => cache.put(event.request, copy));
         }
         return networkResponse;
-      }).catch(() => {
-        if (event.request.mode === 'navigate') {
-          return caches.match('./index.html');
-        }
       });
-
-      return cachedResponse || fetchPromise;
     })
   );
 });

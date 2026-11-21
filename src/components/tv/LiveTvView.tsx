@@ -40,7 +40,21 @@ function formatEpoch(sec: number): string {
   });
 }
 
-const INITIAL_RENDER_LIMIT = 300;
+const INITIAL_RENDER_LIMIT = 500;
+
+const CATEGORY_ORDER = [
+  'TV Aberta',
+  'Esportes',
+  'Filmes e Séries',
+  'Notícias',
+  'Infantil',
+  'Músicas',
+  'Documentários',
+  'Variedades',
+  '24 Horas',
+  'Abertos & FAST',
+  'FAST Internacional',
+];
 
 export const LiveTvView: React.FC<LiveTvViewProps> = ({
   channels,
@@ -185,7 +199,14 @@ export const LiveTvView: React.FC<LiveTvViewProps> = ({
     for (const ch of channels) {
       counts.set(ch.category, (counts.get(ch.category) || 0) + 1);
     }
-    return Array.from(counts.entries()).sort((a, b) => b[1] - a[1]);
+    return Array.from(counts.entries()).sort((a, b) => {
+      const ia = CATEGORY_ORDER.indexOf(a[0]);
+      const ib = CATEGORY_ORDER.indexOf(b[0]);
+      if (ia !== -1 && ib !== -1) return ia - ib;
+      if (ia !== -1) return -1;
+      if (ib !== -1) return 1;
+      return b[1] - a[1];
+    });
   }, [channels]);
 
   const filteredChannels = useMemo(() => {
