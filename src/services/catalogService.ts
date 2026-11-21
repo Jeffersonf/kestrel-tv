@@ -3,19 +3,23 @@ import { storageService } from './storageService';
 import { FALLBACK_CHANNELS } from './fallbackChannels';
 
 let cachedChannels: Channel[] | null = null;
-const disabledHosts = new Set<string>([
+
+// Domínios sabidamente mortos/offline (404, SSL expirado ou desativados)
+const DEAD_HOSTS = new Set<string>([
   'desativado.invalid',
+  's25-cloudfront-net.lat',
+  's23-cloudfront-net.lat',
+  'cdn10embed.xyz',
+  'v-us-01.wisestream.io',
   'corruptx.org',
   'hubby.cx',
   'up.kiwi',
   'tvonhdbr.com',
   'aws.s13-s1001604.lat',
-  's23-cloudfront-net.lat',
-  's25-cloudfront-net.lat',
-  'cdn10embed.xyz',
-  'cdn8embed.xyz',
   '16-5-0-235.sslip.io',
 ]);
+
+const flaggedHosts = new Set<string>();
 
 async function loadDisabledHosts(): Promise<void> {
   try {
@@ -27,7 +31,7 @@ async function loadDisabledHosts(): Promise<void> {
       const data = await res.json();
       if (Array.isArray(data.desativados)) {
         for (const h of data.desativados) {
-          if (typeof h === 'string') disabledHosts.add(h.trim().toLowerCase());
+          if (typeof h === 'string') flaggedHosts.add(h.trim().toLowerCase());
         }
       }
     }
@@ -36,11 +40,11 @@ async function loadDisabledHosts(): Promise<void> {
   }
 }
 
-function isHostDisabled(urlStr: string): boolean {
+function matchesHostList(urlStr: string, list: Set<string>): boolean {
   if (!urlStr) return true;
   try {
     const host = new URL(urlStr).hostname.toLowerCase();
-    for (const d of disabledHosts) {
+    for (const d of list) {
       if (host === d || host.endsWith(`.${d}`)) return true;
     }
     return false;
@@ -55,32 +59,52 @@ function isAdultText(text: string): boolean {
   );
 }
 
-function isPlayableChannelSource(src: ChannelSource & { clearKey?: string }): boolean {
-  const url = (src.url || '').trim().toLowerCase();
-  if (!url.startsWith('http://') && !url.startsWith('https://')) return false;
-  if (src.clearKey || url.includes('.mpd')) return false;
-  if (url.includes('desativado.invalid')) return false;
+function isPlayableInCurrentContext(
+  src: ChannelSource & { clearKey?: string },
+  hasCustomProxy: boolean,
+  isHttpPage: boolean
+): boolean {
+  const raw = (src.url || '').trim();
+  const lower = raw.toLowerCase();
+
+  if (!lower.startsWith('http://') && !lower.startsWith('https://')) return false;
+  if (src.clearKey || lower.includes('.mpd')) return false;
+  if (matchesHostList(raw, DEAD_HOSTS)) return false;
+
+  // Browsers não podem forjar Referer/User-Agent nem carregar HTTP em HTTPS sem proxy
+  if (!hasCustomProxy) {
+    if (src.referer || src.agent) return false;
+    if (!isHttpPage && lower.startsWith('http://')) return false;
+    if (lower.includes('mais.uol.com.br')) return false;
+  }
+
   return true;
 }
 
 export function scoreSource(url: string): number {
   if (!url) return -100;
-  if (isHostDisabled(url)) return -50;
+  if (matchesHostList(url, DEAD_HOSTS)) return -50;
+  if (matchesHostList(url, flaggedHosts)) return -10;
+
   const u = url.toLowerCase();
   if (u.includes('amagi.tv') || u.includes('maissbt.com') || u.includes('ebc.com.br')) return 100;
-  if (u.includes('multtv.tv.br') || u.includes('cloudfront.net')) return 95;
-  if (u.includes('sattvgo.com.br') || u.includes('nxtv.com.br')) return 90;
-  if (u.includes('dadinhodetapioca.fun')) return 85;
+  if (u.includes('multtv.tv.br') || u.includes('cloudfront.net') || u.includes('wurl.')) return 95;
+  if (u.includes('sattvgo.com.br') || u.includes('nxtv.com.br') || u.includes('satlabscloud.com.br')) return 90;
+  if (u.includes('otteravision.com') || u.includes('ottera.tv')) return 85;
   if (u.startsWith('https://')) return 70;
   return 20;
 }
 
-function sortAndFilterSources(sources: (ChannelSource & { clearKey?: string })[]): ChannelSource[] {
+function sortAndFilterSources(
+  sources: (ChannelSource & { clearKey?: string })[],
+  hasCustomProxy: boolean,
+  isHttpPage: boolean
+): ChannelSource[] {
   const seen = new Set<string>();
   const valid: ChannelSource[] = [];
 
   for (const s of sources) {
-    if (!isPlayableChannelSource(s)) continue;
+    if (!isPlayableInCurrentContext(s, hasCustomProxy, isHttpPage)) continue;
     const cleanUrl = s.url.trim();
     if (seen.has(cleanUrl)) continue;
     seen.add(cleanUrl);
@@ -97,7 +121,15 @@ function sortAndFilterSources(sources: (ChannelSource & { clearKey?: string })[]
   return valid;
 }
 
+function getSourceEnvironment(): { hasCustomProxy: boolean; isHttpPage: boolean } {
+  const settings = storageService.getSettings();
+  const hasCustomProxy = Boolean(settings.useProxy && settings.proxyUrl?.trim());
+  const isHttpPage = typeof window !== 'undefined' && window.location.protocol === 'http:';
+  return { hasCustomProxy, isHttpPage };
+}
+
 function parseM3uPlaylist(text: string): Channel[] {
+  const { hasCustomProxy, isHttpPage } = getSourceEnvironment();
   const channels: Channel[] = [];
   const byName = new Map<string, Channel>();
   let meta: { name: string; logo: string; category: string } | null = null;
@@ -139,7 +171,7 @@ function parseM3uPlaylist(text: string): Channel[] {
     }
   }
 
-  return finalizeChannels(channels);
+  return finalizeChannels(channels, hasCustomProxy, isHttpPage);
 }
 
 function parseCatalogText(text: string): Channel[] {
@@ -147,6 +179,7 @@ function parseCatalogText(text: string): Channel[] {
     return parseM3uPlaylist(text);
   }
 
+  const { hasCustomProxy, isHttpPage } = getSourceEnvironment();
   const channels: Channel[] = [];
   let currentChannel: Partial<Channel> | null = null;
   let currentSource: (Partial<ChannelSource> & { clearKey?: string }) | null = null;
@@ -159,7 +192,11 @@ function parseCatalogText(text: string): Channel[] {
     }
     if (isAdultText(`${currentChannel.category || ''} ${currentChannel.name}`)) return;
 
-    const cleanSources = sortAndFilterSources((currentChannel.sources || []) as ChannelSource[]);
+    const cleanSources = sortAndFilterSources(
+      (currentChannel.sources || []) as ChannelSource[],
+      hasCustomProxy,
+      isHttpPage
+    );
     if (cleanSources.length > 0) {
       channels.push({
         id: `ch_${channels.length + 1}_${encodeURIComponent(currentChannel.name.toLowerCase())}`,
@@ -212,14 +249,18 @@ function parseCatalogText(text: string): Channel[] {
   }
 
   commitChannel();
-  return finalizeChannels(channels);
+  return finalizeChannels(channels, hasCustomProxy, isHttpPage);
 }
 
-function finalizeChannels(rawList: Channel[]): Channel[] {
+function finalizeChannels(
+  rawList: Channel[],
+  hasCustomProxy: boolean,
+  isHttpPage: boolean
+): Channel[] {
   const result: Channel[] = [];
   for (const ch of rawList) {
     if (isAdultText(`${ch.category} ${ch.name}`)) continue;
-    const sources = sortAndFilterSources(ch.sources);
+    const sources = sortAndFilterSources(ch.sources, hasCustomProxy, isHttpPage);
     if (sources.length === 0) continue;
     result.push({
       ...ch,
@@ -230,31 +271,9 @@ function finalizeChannels(rawList: Channel[]): Channel[] {
   return result;
 }
 
-function mergeSaimoWithFallback(primary: Channel[]): Channel[] {
-  const fallbackClean = finalizeChannels(FALLBACK_CHANNELS);
-  const byName = new Map<string, Channel>();
-
-  for (const ch of primary) {
-    byName.set(ch.name.toLowerCase().trim(), { ...ch, sources: [...ch.sources] });
-  }
-
-  for (const fb of fallbackClean) {
-    const key = fb.name.toLowerCase().trim();
-    const existing = byName.get(key);
-    if (existing) {
-      existing.sources = sortAndFilterSources([...existing.sources, ...fb.sources]);
-      if (!existing.logo && fb.logo) existing.logo = fb.logo;
-    } else {
-      byName.set(key, fb);
-    }
-  }
-
-  return finalizeChannels(Array.from(byName.values()));
-}
-
 export const catalogService = {
   getFallbackChannels(): Channel[] {
-    return finalizeChannels(FALLBACK_CHANNELS);
+    return finalizeChannels(FALLBACK_CHANNELS, false, false);
   },
 
   invalidateCache(): void {
@@ -269,9 +288,8 @@ export const catalogService = {
     loadDisabledHosts().catch(() => {});
 
     const { channelCatalogUrl } = storageService.getSettings();
-    const isSaimoLive = channelCatalogUrl.includes('canais-saimo.pages.dev');
 
-    // 1. Tentar URL configurada pelo usuário (padrão: catálogo vivo do Saimo)
+    // 1. Buscar catálogo vivo oficial do Saimo (ou URL configurada pelo usuário)
     if (channelCatalogUrl?.trim()) {
       try {
         const controller = new AbortController();
@@ -283,12 +301,11 @@ export const catalogService = {
           const text = await res.text();
           const parsed = parseCatalogText(text);
           if (parsed.length > 0) {
-            const finalChannels = isSaimoLive ? mergeSaimoWithFallback(parsed) : parsed;
-            cachedChannels = finalChannels;
+            cachedChannels = parsed;
             try {
-              localStorage.setItem('kestrel_cached_catalogo', text);
+              localStorage.setItem('kestrel_cached_catalogo_v2', text);
             } catch {}
-            return finalChannels;
+            return parsed;
           }
         }
       } catch (e) {
@@ -311,18 +328,18 @@ export const catalogService = {
 
     // 3. Cache local no navegador
     try {
-      const savedText = localStorage.getItem('kestrel_cached_catalogo');
+      const savedText = localStorage.getItem('kestrel_cached_catalogo_v2');
       if (savedText) {
         const parsed = parseCatalogText(savedText);
         if (parsed.length > 0) {
-          cachedChannels = isSaimoLive ? mergeSaimoWithFallback(parsed) : parsed;
-          return cachedChannels;
+          cachedChannels = parsed;
+          return parsed;
         }
       }
     } catch {}
 
-    // 4. Fallback interno garantido (Saimo original limpo)
-    const fb = finalizeChannels(FALLBACK_CHANNELS);
+    // 4. Fallback embutido (apenas canais Saimo ativos)
+    const fb = finalizeChannels(FALLBACK_CHANNELS, false, false);
     cachedChannels = fb;
     return fb;
   },
