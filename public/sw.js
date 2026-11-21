@@ -1,5 +1,5 @@
-// kestrelTV Service Worker - PWA & Zero Proxy Mode Support
-const CACHE_NAME = 'kestrel-tv-shell-v1';
+// kestrelTV Service Worker - PWA Shell Cache
+const CACHE_NAME = 'kestrel-tv-shell-v2';
 const STATIC_ASSETS = [
   './',
   './index.html',
@@ -34,18 +34,21 @@ self.addEventListener('activate', (event) => {
 self.addEventListener('fetch', (event) => {
   const url = event.request.url;
 
-  // Streams de vídeo (.m3u8, .ts, etc.) e chamadas de API NÃO devem ser cacheadas
+  // Streams, playlists externas e EPG devem ir direto para a rede
   if (
-    url.includes('.m3u8') || 
-    url.includes('.ts') || 
-    url.includes('/api/') || 
-    url.includes('stream') || 
+    event.request.method !== 'GET' ||
+    url.includes('.m3u8') ||
+    url.includes('.m3u') ||
+    url.includes('.ts') ||
+    url.includes('catalogo.txt') ||
+    url.includes('epg.json') ||
+    url.includes('/api/') ||
+    url.includes('stream') ||
     url.includes('proxy')
   ) {
-    return; // Passa direto para a rede
+    return;
   }
 
-  // Estratégia Stale-While-Revalidate para o Shell do App
   event.respondWith(
     caches.match(event.request).then((cachedResponse) => {
       const fetchPromise = fetch(event.request).then((networkResponse) => {
@@ -57,7 +60,6 @@ self.addEventListener('fetch', (event) => {
         }
         return networkResponse;
       }).catch(() => {
-        // Modo offline fallback para a página principal
         if (event.request.mode === 'navigate') {
           return caches.match('./index.html');
         }

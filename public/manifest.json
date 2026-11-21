@@ -1,12 +1,12 @@
 {
-  "name": "kestrelTV - TV ao Vivo, Filmes e Séries",
+  "name": "kestrelTV — TV ao Vivo",
   "short_name": "kestrelTV",
-  "description": "Seu streaming independente de canais ao vivo, filmes, séries e esportes.",
+  "description": "Player web e PWA limpo de TV ao vivo pensado para TV e celular.",
   "start_url": "./",
   "scope": "./",
   "display": "standalone",
   "background_color": "#09090b",
-  "theme_color": "#dc2626",
+  "theme_color": "#09090b",
   "orientation": "any",
   "icons": [
     {
@@ -28,5 +28,5 @@
       "purpose": "any maskable"
     }
   ],
-  "categories": ["entertainment", "video", "sports", "tv"]
+  "categories": ["entertainment", "video", "tv"]
 }

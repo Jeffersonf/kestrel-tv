@@ -14,11 +14,11 @@ export default {
         accent: {
           DEFAULT: '#dc2626',
           hover: '#ef4444',
-          subtle: 'rgba(220, 38, 38, 0.15)',
+          subtle: 'rgba(220, 38, 38, 0.14)',
         }
       },
       fontFamily: {
-        sans: ['Inter', 'system-ui', '-apple-system', 'sans-serif'],
+        sans: ['Plus Jakarta Sans', 'Inter', 'system-ui', '-apple-system', 'sans-serif'],
       }
     },
   },

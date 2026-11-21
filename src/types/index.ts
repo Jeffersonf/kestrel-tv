@@ -4,7 +4,6 @@ export interface ChannelSource {
   quality?: string;
   referer?: string;
   agent?: string;
-  clearKey?: string;
 }
 
 export interface Channel {
@@ -16,48 +15,23 @@ export interface Channel {
   sources: ChannelSource[];
 }
 
-export interface MediaItem {
-  id: string;
+export interface EpgProgram {
+  start: number;
+  end: number;
   title: string;
-  type: 'movie' | 'series';
-  year?: string;
-  letter?: string;
-  chunk?: number;
-  episodesCount?: number;
-  sources?: Record<string, string[]>;
-  poster?: string;
-  genres?: string[];
+  description?: string;
 }
 
-export interface SeriesEpisode {
-  season: number;
-  episode: number;
-  version: string; // 'dub' | 'leg'
-  urls: string[];
-}
-
-export interface TMDBMetadata {
-  tmdbId?: number;
-  title?: string;
-  overview?: string;
-  posterUrl?: string;
-  backdropUrl?: string;
-  rating?: number;
-  releaseYear?: string;
-  genres?: string[];
-}
-
-export interface PlaybackProgress {
-  id: string;
-  currentTime: number;
-  duration: number;
-  updatedAt: number;
+export interface ChannelEpgStatus {
+  current: EpgProgram | null;
+  next: EpgProgram | null;
+  progressPercent: number;
 }
 
 export interface AppSettings {
   channelCatalogUrl: string;
-  vodCatalogUrl: string;
+  epgUrl: string;
   proxyUrl: string;
   useProxy: boolean;
-  zeroProxyMode?: boolean;
+  zeroProxyMode: boolean;
 }
